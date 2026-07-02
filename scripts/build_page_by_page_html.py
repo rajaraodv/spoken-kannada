@@ -623,10 +623,64 @@ def page_shell(title: str, body: str, relative_prefix: str = "") -> str:
     h1 {{ margin: 0; font-size: clamp(2rem, 5vw, 3.7rem); line-height: 1; letter-spacing: 0; }}
     .intro {{ max-width: 860px; color: var(--muted); }}
     .note {{ border-left: 4px solid var(--warn); background: #fff7ed; padding: 12px 14px; max-width: 920px; }}
-    .chapter-grid {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; margin-top: 28px; }}
-    .chapter-card {{ display: grid; gap: 8px; text-decoration: none; color: inherit; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 16px; }}
-    .chapter-card strong {{ font-size: 1.1rem; }}
+    .chapter-grid {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(292px, 1fr)); gap: 16px; margin-top: 28px; }}
+    .chapter-card {{
+      --card-accent: #2563eb;
+      --card-accent-soft: #eff6ff;
+      display: grid;
+      gap: 14px;
+      position: relative;
+      overflow: hidden;
+      min-height: 218px;
+      text-decoration: none;
+      color: inherit;
+      background: linear-gradient(180deg, #ffffff, #fbfbfd);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 14px 34px rgba(29,29,31,.06);
+      transition: transform .16s ease, box-shadow .16s ease, border-color .16s ease;
+    }}
+    .chapter-card::before {{
+      content: "";
+      position: absolute;
+      inset: 0 0 auto;
+      height: 5px;
+      background: var(--card-accent);
+    }}
+    .chapter-card::after {{
+      content: "";
+      position: absolute;
+      right: -34px;
+      top: -44px;
+      width: 132px;
+      height: 132px;
+      border-radius: 999px;
+      background: var(--card-accent-soft);
+      z-index: 0;
+    }}
+    .chapter-card > * {{ position: relative; z-index: 1; }}
+    .chapter-card:hover {{ transform: translateY(-2px); border-color: color-mix(in srgb, var(--card-accent) 34%, var(--line)); box-shadow: 0 18px 42px rgba(29,29,31,.09); }}
+    .chapter-card.complete {{ border-color: rgba(22, 163, 74, .35); box-shadow: 0 16px 38px rgba(22, 163, 74, .12); }}
+    .chapter-card strong {{ font-size: 1.18rem; line-height: 1.25; }}
     .chapter-card span {{ color: var(--muted); }}
+    .chapter-card-top {{ display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; }}
+    .chapter-status {{ display: inline-flex; align-items: center; gap: 6px; padding: 7px 10px; border-radius: 999px; background: var(--card-accent-soft); color: var(--card-accent); font-size: .78rem; font-weight: 900; }}
+    .chapter-card.complete .chapter-status {{ background: #ecfdf5; color: #047857; }}
+    .chapter-meta {{ display: grid; gap: 3px; }}
+    .chapter-meta span {{ font-size: .74rem; font-weight: 900; letter-spacing: .14em; text-transform: uppercase; }}
+    .chapter-meta strong {{ font-size: 2rem; line-height: 1; color: var(--ink); }}
+    .chapter-concept {{ display: grid; gap: 5px; }}
+    .chapter-label {{ color: var(--muted); font-size: .74rem; font-weight: 900; letter-spacing: .14em; text-transform: uppercase; }}
+    .chapter-concept-title {{ color: var(--ink); }}
+    .chapter-concept-subtitle {{ font-size: .93rem; line-height: 1.4; }}
+    .chapter-meter {{ height: 8px; border-radius: 999px; overflow: hidden; background: #ececf0; }}
+    .chapter-meter span {{ display: block; width: var(--percent, 0%); height: 100%; background: var(--card-accent); border-radius: inherit; }}
+    .chapter-card.complete .chapter-meter span {{ background: #16a34a; }}
+    .chapter-reward-line {{ display: grid; grid-template-columns: 1fr auto; gap: 8px; align-items: center; font-size: .88rem; font-weight: 850; color: var(--muted); }}
+    .chapter-reward-line span {{ display: inline-flex; align-items: center; min-height: 30px; }}
+    .chapter-reward-line span:last-child {{ justify-content: center; padding: 6px 9px; border-radius: 999px; background: #f5f5f7; color: var(--ink); }}
+    .chapter-card.complete .chapter-reward-line span:last-child {{ background: #ecfdf5; color: #047857; }}
     .topbar {{ display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between; margin-bottom: 22px; }}
     .topbar a {{ color: var(--accent); font-weight: 800; text-decoration: none; }}
     .chapter-nav {{ display: flex; gap: 10px; flex-wrap: wrap; margin: 22px 0; }}
@@ -653,7 +707,7 @@ def page_shell(title: str, body: str, relative_prefix: str = "") -> str:
       height: 100vh;
       padding: 20px 12px;
       display: grid;
-      grid-template-rows: auto 1fr;
+      grid-template-rows: auto 1fr auto;
       justify-items: center;
       gap: 18px;
       background: rgba(255, 255, 255, .86);
@@ -699,6 +753,59 @@ def page_shell(title: str, body: str, relative_prefix: str = "") -> str:
       border-color: var(--line);
       box-shadow: inset 0 1px 0 rgba(255,255,255,.74);
     }}
+    .rail-account {{
+      width: 100%;
+      display: grid;
+      justify-items: center;
+      gap: 8px;
+      padding-top: 10px;
+      border-top: 1px solid var(--line);
+    }}
+    .rail-account .auth-panel {{
+      display: grid;
+      justify-items: center;
+      gap: 8px;
+      width: 100%;
+      color: var(--muted);
+      font-size: .68rem;
+      font-weight: 800;
+      text-align: center;
+    }}
+    .account-dot {{
+      width: 34px;
+      height: 34px;
+      display: grid;
+      place-items: center;
+      border-radius: 999px;
+      background: #f5f5f7;
+      border: 1px solid var(--line);
+      color: var(--ink);
+      font-size: .9rem;
+      font-weight: 900;
+    }}
+    .rail-account .auth-panel span:not(.account-dot) {{
+      display: none;
+    }}
+    .rail-account .auth-panel a {{
+      display: grid;
+      place-items: center;
+      width: 100%;
+      min-height: 28px;
+      border: 1px solid transparent;
+      border-radius: 9px;
+      background: transparent;
+      color: #6b7280;
+      padding: 0;
+      font: inherit;
+      font-size: .68rem;
+      font-weight: 850;
+      text-decoration: none;
+    }}
+    .rail-account .auth-panel a:hover {{
+      color: var(--ink);
+      background: #ffffff;
+      border-color: var(--line);
+    }}
     .rail-tools {{
       display: grid;
       gap: 18px;
@@ -727,14 +834,91 @@ def page_shell(title: str, body: str, relative_prefix: str = "") -> str:
     .lesson-workspace {{
       width: min(100%, 1120px);
       margin: 0 auto;
-      padding: 24px 28px 56px;
+      padding: 18px 28px 56px;
+    }}
+    .lesson-toolbar {{
+      position: sticky;
+      top: 0;
+      z-index: 6;
+      display: block;
+      margin: -18px -28px 18px;
+      padding: 8px 28px;
+      background: rgba(247, 247, 248, .86);
+      border-bottom: 0;
+      backdrop-filter: blur(22px);
+    }}
+    .progress-hud {{
+      display: grid;
+      grid-template-columns: 430px 160px 160px minmax(220px, 1fr);
+      column-gap: 0;
+      align-items: center;
+      width: 100%;
+      max-width: 1120px;
+      margin: 0 auto;
+      min-height: 78px;
+      padding: 14px 18px;
+      border: 1px solid #e5e7eb;
+      border-radius: 22px;
+      background: #ffffff;
+      box-shadow: 0 14px 36px rgba(29,29,31,.065);
+    }}
+    .hud-main {{ display: contents; }}
+    .hud-progress {{
+      display: grid;
+      grid-template-columns: 44px 280px;
+      align-items: center;
+      gap: 14px;
+      min-width: 0;
+      padding: 0 24px 0 0;
+    }}
+    .hud-icon {{
+      width: 44px;
+      height: 44px;
+      display: grid;
+      place-items: center;
+      border-radius: 999px;
+      font-size: 1.22rem;
+      background: #ecfdf3;
+      border: 1px solid #dcfce7;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.8);
+    }}
+    .hud-progress-row {{
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: baseline;
+      color: var(--muted);
+      font-size: .72rem;
+      font-weight: 900;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }}
+    .hud-progress-row strong {{
+      color: var(--ink);
+      font-size: .92rem;
+      letter-spacing: 0;
+      text-transform: none;
+    }}
+    .hud-progress-track {{
+      height: 7px;
+      overflow: hidden;
+      border-radius: 999px;
+      background: #e5e7eb;
+      margin-top: 4px;
+    }}
+    .hud-progress-fill {{
+      width: var(--hud-progress, 0%);
+      height: 100%;
+      border-radius: inherit;
+      background: linear-gradient(90deg, #34c759, #30d158);
+      transition: width .22s ease;
     }}
     .lesson-header {{
       display: grid;
       grid-template-columns: minmax(0, 1fr) auto;
       gap: 18px;
       align-items: end;
-      margin-bottom: 14px;
+      margin-bottom: 10px;
     }}
     .lesson-kicker {{
       margin: 0 0 6px;
@@ -753,22 +937,12 @@ def page_shell(title: str, body: str, relative_prefix: str = "") -> str:
     }}
     .lesson-subtitle {{
       max-width: 680px;
-      margin: 6px 0 0;
+      margin: 4px 0 0;
       color: #5d6470;
       font-size: .92rem;
       line-height: 1.45;
     }}
-    .progress-card {{
-      display: block;
-      min-width: 190px;
-      align-items: center;
-      padding: 0;
-      border: 0;
-      border-radius: 0;
-      background: transparent;
-      box-shadow: none;
-      backdrop-filter: none;
-    }}
+    .progress-card {{ display: none; }}
     .progress-icon {{
       display: none;
     }}
@@ -798,35 +972,193 @@ def page_shell(title: str, body: str, relative_prefix: str = "") -> str:
       background: #2f8f7a;
       transition: width .22s ease;
     }}
+    .reward-stat {{
+      display: grid;
+      grid-template-columns: 42px max-content;
+      align-items: center;
+      gap: 10px;
+      align-items: center;
+      min-width: 0;
+      position: relative;
+      border: 0;
+      border-left: 1px solid #e5e7eb;
+      border-radius: 0;
+      background: transparent;
+      padding: 0 22px;
+      box-shadow: none;
+    }}
+    .reward-stat::before {{
+      content: attr(data-icon);
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 999px;
+      background: #eef4ff;
+      color: #2563eb;
+      font-size: 1.15rem;
+      border: 1px solid rgba(96, 165, 250, .18);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.75);
+    }}
+    .reward-stat:nth-child(1)::before {{ background: #eef4ff; color: #2563eb; }}
+    .reward-stat:nth-child(2)::before {{ background: #f3e8ff; color: #7c3aed; }}
+    .reward-stat:nth-child(3)::before {{ background: #fb923c; color: #fb923c; }}
+    .reward-stat span {{
+      display: block;
+      color: var(--muted);
+      font-size: .82rem;
+      font-weight: 720;
+      text-transform: none;
+      letter-spacing: 0;
+    }}
+    .reward-stat strong {{
+      display: block;
+      margin: 0 0 2px;
+      color: var(--ink);
+      font-size: 1rem;
+      line-height: 1;
+      font-weight: 900;
+    }}
+    .badge-strip {{
+      display: grid;
+      grid-template-columns: 50px minmax(120px, 1fr);
+      align-items: center;
+      gap: 14px;
+      margin: 0;
+      padding: 0 0 0 22px;
+      border: 0;
+      border-left: 1px solid #e5e7eb;
+      border-radius: 0;
+      background: transparent;
+      box-shadow: none;
+    }}
+    .badge-strip::before {{
+      content: "🌱";
+      width: 50px;
+      height: 50px;
+      display: grid;
+      place-items: center;
+      border-radius: 999px;
+      background: #ecfdf3;
+      border: 1px solid #dcfce7;
+      font-size: 1.28rem;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.75);
+    }}
+    .badge-strip::after {{ display: none; }}
+    .badge-chip {{
+      display: inline-flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 4px;
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+      padding: 0;
+      color: var(--ink);
+      font-size: 1.08rem;
+      line-height: 1.1;
+      font-weight: 900;
+      box-shadow: none;
+    }}
+    .badge-chip small {{
+      color: var(--muted);
+      display: block;
+      font-size: .82rem;
+      font-weight: 720;
+    }}
+    .badge-link {{
+      text-decoration: none;
+      transition: transform .14s ease, border-color .14s ease, box-shadow .14s ease;
+    }}
+    .badge-link:hover {{
+      transform: none;
+      color: #111827;
+      box-shadow: none;
+    }}
+    .badge-chip.empty {{ color: var(--muted); background: #ffffff; }}
+    .next-badge-chip {{
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: 1px dashed #d1d5db;
+      border-radius: 999px;
+      background: #f9fafb;
+      padding: 7px 9px;
+      color: #4b5563;
+      font-size: .76rem;
+      font-weight: 850;
+    }}
+    .streak-panel {{
+      display: none;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      margin: 0 0 14px;
+      padding: 8px 12px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: #ffffff;
+    }}
+    .streak-panel strong {{ font-size: .9rem; }}
+    .streak-grid {{
+      display: grid;
+      grid-template-columns: repeat(14, 11px);
+      gap: 4px;
+    }}
+    .streak-cell {{
+      width: 11px;
+      height: 11px;
+      border-radius: 3px;
+      background: #e5e7eb;
+      border: 1px solid rgba(0,0,0,.03);
+    }}
+    .streak-cell.level-1 {{ background: #bbf7d0; }}
+    .streak-cell.level-2 {{ background: #86efac; }}
+    .streak-cell.level-3 {{ background: #22c55e; }}
+    .streak-cell.level-4 {{ background: #15803d; }}
     .lesson-controls {{
-      display: flex;
+      display: none;
       justify-content: space-between;
       align-items: center;
       gap: 12px;
-      margin: 0 0 12px;
-      padding: 10px 0 0;
+      margin: 0 0 10px;
+      padding: 8px 0 0;
       border-top: 1px solid var(--line);
     }}
+    .auth-panel {{
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--muted);
+      font-size: .82rem;
+      font-weight: 700;
+    }}
+    .auth-panel a,
+    .auth-panel button {{
+      display: none;
+    }}
+    .auth-panel strong {{ color: var(--ink); }}
     .scene-pager {{
       display: flex;
       align-items: center;
       gap: 12px;
     }}
     .scene-pill {{
-      min-width: 112px;
+      min-width: 98px;
       padding: 0;
       border: 0;
       border-radius: 0;
       background: transparent;
       color: var(--muted);
       text-align: center;
-      font-size: .9rem;
+      font-size: .82rem;
       font-weight: 700;
       box-shadow: none;
     }}
     .scene-arrow {{
-      width: 34px;
-      height: 34px;
+      width: 30px;
+      height: 30px;
       border: 1px solid var(--line);
       border-radius: 10px;
       display: grid;
@@ -854,12 +1186,12 @@ def page_shell(title: str, body: str, relative_prefix: str = "") -> str:
     .visual-practice > p {{ margin: 0 0 14px; color: var(--muted); }}
     .snippet-stack {{
       display: grid;
-      gap: 18px;
+      gap: 16px;
     }}
     .snippet-card {{
       position: relative;
       border: 1px solid var(--line);
-      border-radius: 22px;
+      border-radius: 18px;
       overflow: hidden;
       background: var(--panel);
       box-shadow: 0 12px 34px rgba(0, 0, 0, .06);
@@ -868,6 +1200,24 @@ def page_shell(title: str, body: str, relative_prefix: str = "") -> str:
       border-color: rgba(52, 199, 89, .55);
       box-shadow: 0 22px 56px rgba(52, 199, 89, .18);
     }}
+    .completed-scene {{
+      display: none;
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      z-index: 2;
+      align-items: center;
+      gap: 7px;
+      padding: 9px 12px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #dcfce7, #ecfeff);
+      color: #047857;
+      border: 1px solid rgba(16, 185, 129, .35);
+      font-size: .84rem;
+      font-weight: 900;
+      box-shadow: 0 12px 28px rgba(16, 185, 129, .18);
+    }}
+    .snippet-card.completed .completed-scene {{ display: inline-flex; }}
     .snippet-card.retry-shake {{
       animation: retry-shake .32s ease;
     }}
@@ -879,35 +1229,36 @@ def page_shell(title: str, body: str, relative_prefix: str = "") -> str:
       object-fit: contain;
       object-position: center;
       background: var(--soft);
+      border-bottom: 1px solid var(--line);
     }}
     .snippet-card svg {{ width: 100%; height: auto; display: block; }}
     .snippet-body {{
-      padding: clamp(14px, 2.2vw, 22px);
+      padding: clamp(11px, 1.8vw, 18px);
       background: rgba(255, 255, 255, .96);
       border-bottom: 1px solid var(--line);
     }}
     .snippet-body h4 {{
       margin: 0;
       color: #4b5563;
-      font-size: clamp(1rem, 1.7vw, 1.18rem);
+      font-size: clamp(.92rem, 1.4vw, 1.04rem);
       font-weight: 800;
     }}
     .snippet-heading {{
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 16px;
-      margin-bottom: 14px;
+      gap: 12px;
+      margin-bottom: 10px;
     }}
     .snippet-topic {{
       display: flex;
       align-items: center;
-      gap: 14px;
+      gap: 10px;
       min-width: 0;
     }}
     .snippet-topic-icon {{
-      width: 42px;
-      height: 42px;
+      width: 34px;
+      height: 34px;
       flex: 0 0 auto;
       border-radius: 999px;
       display: grid;
@@ -922,26 +1273,26 @@ def page_shell(title: str, body: str, relative_prefix: str = "") -> str:
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      padding: 6px 10px;
+      padding: 4px 8px;
       border-radius: 999px;
       background: #f5f5f7;
       color: #6b7280;
       border: 1px solid var(--line);
-      font-size: .78rem;
+      font-size: .72rem;
       font-weight: 800;
     }}
     .snippet-line {{
       display: grid;
-      gap: 2px;
-      margin: 0 0 12px;
-      padding: 14px 18px;
-      border: 1px solid rgba(0, 0, 0, .08);
-      border-radius: 14px;
+      gap: 1px;
+      margin: 0 0 10px;
+      padding: 10px 14px;
+      border: 1px solid rgba(0, 0, 0, .07);
+      border-radius: 12px;
       background: #ffffff;
       box-shadow: inset 0 1px 0 rgba(255, 255, 255, .72);
     }}
     .snippet-line strong {{
-      font-size: clamp(1.28rem, 2.4vw, 1.9rem);
+      font-size: clamp(1.06rem, 1.9vw, 1.52rem);
       line-height: 1.12;
       color: var(--ink);
       font-weight: 850;
@@ -949,18 +1300,18 @@ def page_shell(title: str, body: str, relative_prefix: str = "") -> str:
     .snippet-line span {{
       color: var(--ink);
       font-weight: 720;
-      font-size: clamp(1rem, 1.8vw, 1.28rem);
+      font-size: clamp(.9rem, 1.45vw, 1.06rem);
       line-height: 1.15;
       font-style: italic;
     }}
     .kannada-script {{
       color: var(--ink);
-      font-size: clamp(1.18rem, 2.25vw, 1.72rem);
+      font-size: clamp(1rem, 1.8vw, 1.38rem);
       font-weight: 850;
       line-height: 1.12;
     }}
     .original-roman {{
-      margin: 0 0 16px;
+      margin: 0 0 10px;
       color: var(--muted);
       font-size: .95rem;
       font-weight: 650;
@@ -972,7 +1323,97 @@ def page_shell(title: str, body: str, relative_prefix: str = "") -> str:
       line-height: 1.45;
     }}
     .grammar-note strong {{ color: var(--ink); }}
+    .practice-panel {{
+      margin: 0;
+      padding: 18px;
+      border-top: 1px solid rgba(255,255,255,.08);
+      background:
+        radial-gradient(circle at 8% 0%, rgba(249, 115, 22, .10), transparent 28%),
+        linear-gradient(135deg, #050505, #111111);
+      color: #ffffff;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.08);
+    }}
+    .sentence-panel {{
+      margin: 0 0 14px;
+    }}
+    .sentence-panel .snippet-line {{
+      margin: 0;
+      border-color: rgba(255,255,255,.12);
+      background: rgba(255,255,255,.08);
+      box-shadow: 0 14px 34px rgba(0, 0, 0, .18);
+      backdrop-filter: blur(16px);
+    }}
+    .sentence-panel .snippet-line strong {{
+      color: #ffffff;
+    }}
+    .sentence-panel .snippet-line span {{
+      color: rgba(255,255,255,.82);
+    }}
+    .sentence-panel .kannada-script {{
+      color: #fed7aa;
+    }}
+    .sentence-panel .grammar-note {{
+      margin: 10px 0 0;
+      color: rgba(255,255,255,.72);
+    }}
+    .sentence-panel .original-roman {{
+      margin: 10px 0 0;
+      color: rgba(255,255,255,.62);
+    }}
+    .practice-panel-top {{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      margin-bottom: 12px;
+    }}
+    .practice-panel-title {{
+      display: grid;
+      gap: 2px;
+      color: #ffffff;
+      font-weight: 900;
+    }}
+    .practice-panel-title span {{
+      color: #fed7aa;
+      font-size: .78rem;
+      font-weight: 850;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+    }}
+    .practice-panel-title small {{
+      color: rgba(255,255,255,.64);
+      font-size: .84rem;
+      font-weight: 800;
+    }}
     .listen-row {{ display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; align-items: center; }}
+    .card-voice-picker {{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+      margin: 0;
+      color: rgba(255,255,255,.68);
+      font-size: .82rem;
+      font-weight: 700;
+    }}
+    .card-voice-picker > span {{ display: none; }}
+    .voice-choice {{
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: 999px;
+      background: rgba(255,255,255,.08);
+      color: rgba(255,255,255,.78);
+      padding: 6px 10px;
+      font: inherit;
+      font-size: .8rem;
+      font-weight: 750;
+      line-height: 1;
+      cursor: pointer;
+    }}
+    .voice-choice.active {{
+      border-color: rgba(251, 146, 60, .72);
+      background: rgba(249, 115, 22, .20);
+      color: #ffffff;
+    }}
     .speak-btn {{
       border: 1px solid #d9d9df;
       background: linear-gradient(#ffffff, #fafafa);
@@ -996,30 +1437,31 @@ def page_shell(title: str, body: str, relative_prefix: str = "") -> str:
     }}
     .speak-btn:hover {{
       transform: translateY(-1px);
-      border-color: #c7c7cf;
-      background: linear-gradient(#ffffff, #f5f5f7);
-      box-shadow: 0 2px 4px rgba(0, 0, 0, .06), 0 10px 22px rgba(29, 29, 31, .055);
+      border-color: rgba(255,255,255,.26);
+      background: rgba(255,255,255,.13);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, .18);
     }}
     .speak-btn[data-lang="en-IN"] {{
-      color: #1d1d1f;
-      border-color: #d9d9df;
-      background: linear-gradient(#ffffff, #fafafa);
+      color: #ffffff;
+      border-color: rgba(255,255,255,.14);
+      background: rgba(255,255,255,.08);
     }}
     .speak-btn[data-lang="kn-IN"] {{
-      color: #1d1d1f;
-      border-color: #d9d9df;
-      background: linear-gradient(#ffffff, #fafafa);
+      color: #ffffff;
+      border-color: rgba(255,255,255,.14);
+      background: rgba(255,255,255,.08);
     }}
     .practice-btn {{
       color: #ffffff;
-      border-color: #1d1d1f;
-      background: #1d1d1f;
+      border-color: #f97316;
+      background: linear-gradient(135deg, #fb923c, #ea580c);
       min-width: 0;
+      box-shadow: 0 12px 26px rgba(249, 115, 22, .24);
     }}
     .practice-btn:hover {{
-      border-color: #000000;
-      background: #000000;
-      box-shadow: 0 10px 22px rgba(29, 29, 31, .16);
+      border-color: #ea580c;
+      background: linear-gradient(135deg, #f97316, #c2410c);
+      box-shadow: 0 14px 30px rgba(249, 115, 22, .32);
     }}
     .speak-btn:active {{ transform: translateY(1px); }}
     .speak-btn[disabled] {{ opacity: .6; cursor: wait; }}
@@ -1038,7 +1480,7 @@ def page_shell(title: str, body: str, relative_prefix: str = "") -> str:
     }}
     .speak-btn[data-lang="en-IN"] .btn-icon {{ background: transparent; }}
     .speak-btn[data-lang="kn-IN"] .btn-icon {{ background: transparent; }}
-    .practice-btn .btn-icon {{ background: transparent; color: #ffffff; }}
+    .practice-btn .btn-icon {{ background: rgba(255,255,255,.18); color: #ffffff; }}
     .practice-feedback {{
       display: none;
       margin-top: 12px;
@@ -1249,8 +1691,31 @@ def page_shell(title: str, body: str, relative_prefix: str = "") -> str:
       .chapter-rail a {{ min-width: 44px; }}
       .rail-tools {{ display: none; }}
       .lesson-workspace {{ padding: 24px 14px 48px; }}
+      .lesson-toolbar {{
+        grid-template-columns: 1fr;
+        margin: -24px -14px 18px;
+        padding: 10px 14px;
+      }}
+      .progress-hud {{
+        grid-template-columns: 1fr;
+        border-radius: 20px;
+        padding: 16px;
+        gap: 14px;
+      }}
+      .hud-progress {{ grid-template-columns: 44px 1fr; padding: 0; }}
+      .hud-icon, .reward-stat::before, .badge-strip::before {{
+        width: 42px;
+        height: 42px;
+        font-size: 1.1rem;
+      }}
+      .reward-stat {{ border-left: 0; padding: 0; grid-template-columns: 42px 1fr; }}
+      .badge-strip {{ border-left: 0; padding: 0; grid-template-columns: 42px 1fr 38px; }}
       .lesson-header {{ grid-template-columns: 1fr; }}
       .lesson-controls {{ align-items: stretch; flex-direction: column; }}
+      .reward-dashboard {{ gap: 6px; }}
+      .badge-strip {{ justify-content: flex-start; }}
+      .streak-panel {{ align-items: flex-start; flex-direction: column; }}
+      .auth-panel {{ align-items: flex-start; flex-direction: column; }}
       .scene-pager {{ justify-content: space-between; }}
       .listen-row {{ grid-template-columns: 1fr; gap: 12px; }}
       .snippet-heading {{ align-items: flex-start; }}
@@ -1260,6 +1725,7 @@ def page_shell(title: str, body: str, relative_prefix: str = "") -> str:
       table {{ min-width: 760px; }}
       .snippet-card {{ overflow-x: visible; }}
       .snippet-card img {{ min-width: 0; }}
+      .practice-panel-top {{ align-items: flex-start; flex-direction: column; }}
       .speak-btn {{ flex: 1 1 100%; }}
     }}
   </style>
@@ -1274,6 +1740,17 @@ def page_shell(title: str, body: str, relative_prefix: str = "") -> str:
     let activeRecorder = null;
     let activeStream = null;
     let feedbackAudioContext = null;
+    let selectedKannadaSpeaker = localStorage.getItem("kannadaSpeaker") || "priya";
+    let currentUser = null;
+    let currentProgress = null;
+
+    document.addEventListener("click", function (event) {{
+      const voiceButton = event.target.closest("[data-voice-speaker]");
+      if (!voiceButton) return;
+      selectedKannadaSpeaker = voiceButton.getAttribute("data-voice-speaker") || "priya";
+      localStorage.setItem("kannadaSpeaker", selectedKannadaSpeaker);
+      syncVoiceButtons();
+    }});
 
     document.addEventListener("click", function (event) {{
       const button = event.target.closest("[data-speak]");
@@ -1293,10 +1770,180 @@ def page_shell(title: str, body: str, relative_prefix: str = "") -> str:
     }});
 
     setupSceneProgress();
+    syncVoiceButtons();
+    loadSignedInUser();
+
+    function syncVoiceButtons() {{
+      document.querySelectorAll("[data-voice-speaker]").forEach((button) => {{
+        const active = button.getAttribute("data-voice-speaker") === selectedKannadaSpeaker;
+        button.classList.toggle("active", active);
+        button.setAttribute("aria-pressed", active ? "true" : "false");
+      }});
+    }}
+
+    async function loadSignedInUser() {{
+      const panel = document.querySelector("[data-auth-panel]");
+      const callbackUrl = encodeURIComponent(window.location.pathname + window.location.search);
+      try {{
+        const response = await fetch("/api/me", {{ cache: "no-store" }});
+        const data = await response.json();
+        currentProgress = data.progress || null;
+        applyProgress(currentProgress);
+        if (!data.authenticated) {{
+          if (panel) panel.innerHTML = '<span class="account-dot" title="Sign in">?</span><a href="/sign-in?callbackUrl=' + callbackUrl + '">Sign in</a>';
+          return;
+        }}
+        currentUser = data.user;
+        const name = data.user?.name || data.user?.email || "Learner";
+        const initial = name.trim().slice(0, 1).toUpperCase() || "U";
+        if (panel) panel.innerHTML = '<span class="account-dot" title="' + escapeHtml(name) + '">' + escapeHtml(initial) + '</span><a href="/progress">Progress</a><a href="/sign-out?callbackUrl=' + callbackUrl + '">Sign out</a>';
+      }} catch {{
+        if (panel) panel.innerHTML = '<span class="account-dot" title="Offline">!</span>';
+      }}
+    }}
+
+    function applyProgress(progress) {{
+      paintChapterDashboard(progress);
+      paintSceneCards(progress);
+      paintChapterIndex(progress);
+    }}
+
+    function progressPercent(completed, total) {{
+      if (!total) return 0;
+      return Math.min(100, Math.round((Number(completed || 0) / Number(total || 0)) * 100));
+    }}
+
+    function chapterProgress(progress, chapterNumber) {{
+      return (progress?.chapters || []).find((item) => Number(item.chapter) === Number(chapterNumber)) || null;
+    }}
+
+    function sceneProgressMap(progress, chapterNumber) {{
+      const map = new Map();
+      (progress?.scenes || [])
+        .filter((scene) => Number(scene.chapter) === Number(chapterNumber))
+        .forEach((scene) => map.set(String(scene.scene_index), scene));
+      return map;
+    }}
+
+    function renderBadges(badges, summary) {{
+      const current = badges && badges.length ? badges[badges.length - 1] : null;
+      const currentHtml = current
+        ? '<a class="badge-chip badge-link" href="/progress" title="' + escapeHtml(current.description || "View badge details") + '">' + escapeHtml(current.label || "Badge") + '<small>Current badge</small></a>'
+        : '<a class="badge-chip badge-link empty" href="/progress">No badge<small>Current badge</small></a>';
+      return currentHtml;
+    }}
+
+    function renderStreakGrid(cells) {{
+      const values = cells && cells.length ? cells : Array.from({{ length: 28 }}, () => ({{ level: 0, count: 0, date: "" }}));
+      return values.map((cell) => '<span class="streak-cell level-' + Number(cell.level || 0) + '" title="' + escapeHtml((cell.date || "") + ": " + Number(cell.count || 0) + " tries") + '"></span>').join("");
+    }}
+
+    function paintChapterDashboard(progress) {{
+      const app = document.querySelector(".learning-app");
+      if (!app) return;
+      const chapterNumber = Number(app.getAttribute("data-chapter") || "0");
+      const chapter = chapterProgress(progress, chapterNumber);
+      const total = Number(chapter?.total_scenes || app.getAttribute("data-scene-total") || 0);
+      const completed = Number(chapter?.completed_scenes || 0);
+      const percent = progressPercent(completed, total);
+      const summary = progress?.summary || {{}};
+      const fields = {{
+        completed: completed + " / " + total,
+        chapterPoints: Number(chapter?.total_points || 0),
+        totalPoints: Number(summary.totalPoints || 0),
+        streakDays: Number(summary.streakDays || 0),
+      }};
+      Object.entries(fields).forEach(([key, value]) => {{
+        document.querySelectorAll("[data-reward-" + key + "]").forEach((node) => node.textContent = String(value));
+      }});
+      document.querySelectorAll("[data-completion-percent]").forEach((node) => node.textContent = percent + "%");
+      document.querySelectorAll("[data-hud-progress-fill]").forEach((node) => node.style.setProperty("--hud-progress", percent + "%"));
+      document.querySelectorAll("[data-badge-strip]").forEach((node) => node.innerHTML = renderBadges(summary.badges || [], summary));
+      document.querySelectorAll("[data-streak-grid]").forEach((node) => node.innerHTML = renderStreakGrid(summary.streakGrid || []));
+    }}
+
+    function paintSceneCards(progress) {{
+      const app = document.querySelector(".learning-app");
+      if (!app) return;
+      const chapterNumber = Number(app.getAttribute("data-chapter") || "0");
+      const scenes = sceneProgressMap(progress, chapterNumber);
+      document.querySelectorAll("[data-scene-card]").forEach((card) => {{
+        const index = card.getAttribute("data-scene-index") || "";
+        const scene = scenes.get(index);
+        const done = scene?.status === "completed";
+        card.classList.toggle("completed", done);
+        card.classList.toggle("correct", done);
+        const badge = card.querySelector("[data-completed-scene]");
+        if (badge && scene) {{
+          badge.textContent = done
+            ? "✓ 100% · " + Number(scene.points_earned || 0) + " pts"
+            : Number(scene.attempts || 0) + " tries";
+        }}
+      }});
+    }}
+
+    function paintChapterIndex(progress) {{
+      document.querySelectorAll("[data-chapter-card]").forEach((card) => {{
+        const chapterNumber = Number(card.getAttribute("data-chapter-card") || "0");
+        const total = Number(card.getAttribute("data-total-scenes") || "0");
+        const chapter = chapterProgress(progress, chapterNumber);
+        const completed = Number(chapter?.completed_scenes || 0);
+        const percent = progressPercent(completed, Number(chapter?.total_scenes || total));
+        const complete = Boolean(chapter?.completed_at) || (total > 0 && completed >= total);
+        card.classList.toggle("complete", complete);
+        const status = card.querySelector("[data-chapter-status]");
+        const count = card.querySelector("[data-chapter-count]");
+        const points = card.querySelector("[data-chapter-points]");
+        const meter = card.querySelector("[data-chapter-meter]");
+        if (status) status.textContent = complete ? "✓ 100% complete" : completed > 0 ? "In progress" : "Start";
+        if (count) count.textContent = completed + " / " + (Number(chapter?.total_scenes || total) || "?") + " sentences";
+        if (points) points.textContent = Number(chapter?.total_points || 0) + " points · " + Number(chapter?.total_attempts || 0) + " tries";
+        if (meter) meter.style.setProperty("--percent", percent + "%");
+      }});
+    }}
+
+    function escapeHtml(value) {{
+      return String(value)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }}
+
+    async function savePracticeProgress(button, result) {{
+      const card = button.closest(".snippet-card");
+      if (!card || !currentUser) return;
+      const payload = {{
+        chapter: Number(card.getAttribute("data-chapter") || "0"),
+        conversationId: card.getAttribute("data-conversation-id") || "",
+        sceneIndex: Number(card.getAttribute("data-scene-index") || "0"),
+        expected: button.getAttribute("data-expected") || "",
+        transcript: result.transcript || "",
+        score: typeof result.score === "number" ? result.score : null,
+        matched: result.matched === true,
+      }};
+      try {{
+        const response = await fetch("/api/progress/attempt", {{
+          method: "POST",
+          headers: {{ "Content-Type": "application/json" }},
+          body: JSON.stringify(payload),
+        }});
+        if (!response.ok) return;
+        const data = await response.json();
+        await loadSignedInUser();
+        if (data.progress?.chapterCompleted) {{
+          setPracticeFeedback(button, "good", "Chapter complete! Certificate earned.");
+        }} else if (payload.matched && data.progress?.pointsAwarded) {{
+          setPracticeFeedback(button, "good", "Correct! +" + data.progress.pointsAwarded + " points on try " + data.progress.attemptNumber + ".");
+        }}
+      }} catch {{
+        // Keep practice usable even if progress sync fails.
+      }}
+    }}
 
     async function playSarvamAudio(button, text, languageCode) {{
       const speaker = languageCode === "kn-IN"
-        ? (document.querySelector("[data-kannada-speaker]")?.value || "")
+        ? selectedKannadaSpeaker
         : "";
       const prebuiltAudio = button.getAttribute("data-audio") || "";
       const shouldUsePrebuiltAudio = Boolean(prebuiltAudio) && languageCode !== "kn-IN";
@@ -1578,10 +2225,12 @@ def page_shell(title: str, body: str, relative_prefix: str = "") -> str:
             }}
             if (result.matched) {{
               setPracticeFeedback(button, "good", "Correct! We heard: " + (result.transcript || expected));
+              savePracticeProgress(button, result);
               button.classList.add("correct");
               button.textContent = "✓ Correct";
               launchCelebration(button);
             }} else {{
+              savePracticeProgress(button, result);
               button.classList.remove("correct");
               launchRetryFeedback(button);
               setPracticeFeedback(
@@ -1629,15 +2278,39 @@ def page_shell(title: str, body: str, relative_prefix: str = "") -> str:
 
 def render_index(chapters: dict[int, list[PageConversation]]) -> str:
     cards = []
+    accents = [
+        ("#2563eb", "#eff6ff"),
+        ("#0f766e", "#ecfdf5"),
+        ("#c2410c", "#fff7ed"),
+        ("#7c3aed", "#f5f3ff"),
+        ("#be123c", "#fff1f2"),
+        ("#047857", "#ecfdf5"),
+    ]
     for chapter, convs in chapters.items():
         pages = sorted({conv.page for conv in convs})
         rows = sum(len(conv.rows) for conv in convs)
+        scene_total = len(load_chapter_visuals().get(str(chapter), {}).get("items", [])) or rows
+        accent, accent_soft = accents[(chapter - 1) % len(accents)]
         cards.append(
             f"""
-            <a class="chapter-card" href="chapters/{chapter_slug(chapter)}">
-              <strong>Chapter {chapter}</strong>
-              <span>{html.escape(LESSON_THEMES.get(chapter, "Everyday conversation"))}</span>
-              <span>{len(convs)} conversation sets · {rows} practice lines · pages {pages[0]}-{pages[-1]}</span>
+            <a class="chapter-card" style="--card-accent: {accent}; --card-accent-soft: {accent_soft};" data-chapter-card="{chapter}" data-total-scenes="{scene_total}" href="chapters/{chapter_slug(chapter)}">
+              <div class="chapter-card-top">
+                <div class="chapter-meta">
+                  <span>Chapter</span>
+                  <strong>{chapter:02d}</strong>
+                </div>
+                <span class="chapter-status" data-chapter-status>Start</span>
+              </div>
+              <div class="chapter-concept">
+                <span class="chapter-label">Concept</span>
+                <strong class="chapter-concept-title">{html.escape(LESSON_THEMES.get(chapter, "Everyday conversation"))}</strong>
+                <span class="chapter-concept-subtitle">{len(convs)} conversation sets · {rows} practice lines · pages {pages[0]}-{pages[-1]}</span>
+              </div>
+              <div class="chapter-meter" data-chapter-meter><span></span></div>
+              <div class="chapter-reward-line">
+                <span data-chapter-count>0 / {scene_total} sentences</span>
+                <span data-chapter-points>0 points · 0 tries</span>
+              </div>
             </a>
             """
         )
@@ -1662,8 +2335,31 @@ def render_chapter_sidebar(chapters: dict[int, list[PageConversation]], current:
         <nav class="chapter-rail" aria-label="Chapters">
           {''.join(links)}
         </nav>
+        <div class="rail-account">
+          <div class="auth-panel" data-auth-panel>
+            <span class="account-dot">...</span>
+          </div>
+        </div>
       </aside>
     """
+
+
+def render_card_voice_picker() -> str:
+    voices = [
+        ("gokul", "Gokul"),
+        ("neha", "Neha"),
+        ("simran", "Simran"),
+        ("rohan", "Rohan"),
+        ("advait", "Advait"),
+        ("suhani", "Suhani"),
+        ("mani", "Mani"),
+        ("kavya", "Kavya"),
+    ]
+    buttons = "".join(
+        f'<button class="voice-choice" type="button" data-voice-speaker="{value}" aria-pressed="false">{label}</button>'
+        for value, label in voices
+    )
+    return f'<div class="card-voice-picker" data-voice-picker><span>Kannada voice</span>{buttons}</div>'
 
 
 def render_row_practice(item: dict, index: int, prefix: str, corrections: dict[str, dict], chapter: int) -> str:
@@ -1691,8 +2387,10 @@ def render_row_practice(item: dict, index: int, prefix: str, corrections: dict[s
     audio_kn = item.get("audio_kn", "")
     audio_en_attr = f' data-audio="{html.escape(prefix + audio_en)}"' if audio_en else ""
     audio_kn_attr = f' data-audio="{html.escape(prefix + audio_kn)}"' if audio_kn else ""
+    conversation_id = html.escape(str(item.get("conversation", "")))
     return f"""
-      <article class="snippet-card" data-scene-card data-scene-index="{index}">
+      <article class="snippet-card" data-scene-card data-chapter="{chapter}" data-conversation-id="{conversation_id}" data-scene-index="{index}">
+        <span class="completed-scene" data-completed-scene>✓ Completed</span>
         <div class="snippet-body">
           <div class="snippet-heading">
             <div class="snippet-topic">
@@ -1701,12 +2399,21 @@ def render_row_practice(item: dict, index: int, prefix: str, corrections: dict[s
             </div>
             <span class="new-pill">✦ New</span>
           </div>
-          <div class="snippet-line">
-            <strong>{html.escape(english)}</strong>
-            {kannada_html}
-            <span>{html.escape(practice_roman)}</span>
-          </div>
+        </div>
+        <img src="{html.escape(img)}" alt="{html.escape(english)}" loading="lazy" />
+        <div class="practice-panel">
+          <div class="sentence-panel">
+            <div class="snippet-line">
+              <strong>{html.escape(english)}</strong>
+              {kannada_html}
+              <span>{html.escape(practice_roman)}</span>
+            </div>
 {original_html_line}
+          </div>
+          <div class="practice-panel-top">
+            <div class="practice-panel-title"><span>Practice the sentence above</span>Listen first, then say it in Kannada<small>Use the orange button when you are ready.</small></div>
+            {render_card_voice_picker()}
+          </div>
           <div class="listen-row">
             <button class="speak-btn" type="button" data-lang="en-IN" data-speak="{html.escape(english)}"{audio_en_attr}><span class="btn-icon">▶</span>Play English</button>
             <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="{html.escape(speak_kn)}"{audio_kn_attr}><span class="btn-icon">▶</span>Play Kannada</button>
@@ -1714,7 +2421,6 @@ def render_row_practice(item: dict, index: int, prefix: str, corrections: dict[s
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="{html.escape(img)}" alt="{html.escape(english)}" loading="lazy" />
       </article>
     """
 
@@ -1729,27 +2435,6 @@ def render_generated_visual_practice(chapter: int, visuals: dict[str, dict], cor
       <div class="visual-practice">
         <div class="snippet-stack">{''.join(cards)}</div>
       </div>
-    """
-
-
-def voice_toolbar() -> str:
-    return """
-      <label class="voice-toolbar">
-        Kannada voice
-        <select data-kannada-speaker>
-          <option value="priya">Priya</option>
-          <option value="shubh">Shubh</option>
-          <option value="aditya">Aditya</option>
-          <option value="ritu">Ritu</option>
-          <option value="neha">Neha</option>
-          <option value="rahul">Rahul</option>
-          <option value="pooja">Pooja</option>
-          <option value="rohan">Rohan</option>
-          <option value="kavya">Kavya</option>
-          <option value="amit">Amit</option>
-        </select>
-        <span class="voice-wave" aria-hidden="true">⌁</span>
-      </label>
     """
 
 
@@ -1807,30 +2492,36 @@ def render_chapter_page(
         )
     theme = html.escape(LESSON_THEMES.get(chapter, "Everyday conversation"))
     body = f"""
-      <div class="learning-app" data-scene-total="{scene_count}">
+      <div class="learning-app" data-chapter="{chapter}" data-scene-total="{scene_count}">
         {render_chapter_sidebar(chapters, chapter)}
         <div class="lesson-workspace">
+          <div class="lesson-toolbar" aria-label="Chapter progress">
+            <div class="progress-hud">
+              <div class="hud-progress">
+                <span class="hud-icon" aria-hidden="true">📖</span>
+                <div>
+                  <div class="hud-progress-row"><span>Chapter Progress</span><strong data-reward-completed>0 / {scene_count}</strong></div>
+                  <div class="hud-progress-track"><div class="hud-progress-fill" data-hud-progress-fill></div></div>
+                </div>
+              </div>
+              <div class="reward-stat" data-icon="★"><div><strong><span data-reward-totalPoints>0</span> pts</strong><span>Points</span></div></div>
+              <div class="reward-stat" data-icon="♨"><div><strong><span data-reward-streakDays>0</span> day</strong><span>Streak</span></div></div>
+              <div class="badge-strip" data-badge-strip><span class="badge-chip empty">Sign in to earn badges</span></div>
+            </div>
+          </div>
           <header class="lesson-header">
             <div>
               <p class="lesson-kicker">Chapter {chapter}</p>
               <h1 class="lesson-title">{theme}</h1>
-              <p class="lesson-subtitle">Scene-by-scene practice with audio and speaking checks.</p>
+              <p class="lesson-subtitle">Listen, look at the scene, then practice the Kannada sentence.</p>
             </div>
             <div class="progress-card">
               <div>
-                <div class="progress-label"><span>Progress</span><span class="progress-count"><span data-current-scene>1</span> / {scene_count}</span></div>
+                <div class="progress-label"><span>Scene</span><span class="progress-count"><span data-current-scene>1</span> / {scene_count}</span></div>
                 <div class="progress-track"><div class="progress-fill" data-progress-fill style="--progress: {100 / scene_count:.2f}%"></div></div>
               </div>
             </div>
           </header>
-          <div class="lesson-controls">
-            {voice_toolbar()}
-            <div class="scene-pager">
-              <button class="scene-arrow prev" type="button" data-scene-prev aria-label="Previous scene">←</button>
-              <span class="scene-pill">Scene <span data-current-scene>1</span> of {scene_count}</span>
-              <button class="scene-arrow next" type="button" data-scene-next aria-label="Next scene">→</button>
-            </div>
-          </div>
           {practice}
           <div class="lesson-tip"><span>💡 <strong>Tip:</strong> Listen to each word, then try saying it out loud. Practice makes it easy!</span><span class="tip-chip">🎧 Listening Tips</span></div>
           <details class="source-panel">
@@ -1873,7 +2564,8 @@ def render_visual_practice(page: int, corrections: dict[str, dict], prefix: str 
         )
         cards.append(
             f"""
-              <article class="snippet-card" data-scene-card data-scene-index="{index}">
+              <article class="snippet-card" data-scene-card data-chapter="1" data-conversation-id="{html.escape(str(item.get('conversation', '1')))}" data-scene-index="{index}">
+                <span class="completed-scene" data-completed-scene>✓ Completed</span>
                 <div class="snippet-body">
                   <div class="snippet-heading">
                     <div class="snippet-topic">
@@ -1882,13 +2574,22 @@ def render_visual_practice(page: int, corrections: dict[str, dict], prefix: str 
                     </div>
                     <span class="new-pill">✦ New</span>
                   </div>
-                  <div class="snippet-line">
-                    <strong>{html.escape(english)}</strong>
-                    {kannada_html}
-                    <span>{html.escape(practice_roman)}</span>
+                </div>
+                <img src="{html.escape(prefix + item['img'])}" alt="{html.escape(item['title'])}" loading="lazy" />
+                <div class="practice-panel">
+                  <div class="sentence-panel">
+                    <div class="snippet-line">
+                      <strong>{html.escape(english)}</strong>
+                      {kannada_html}
+                      <span>{html.escape(practice_roman)}</span>
+                    </div>
+                    {note_html}
+                    {original_html}
                   </div>
-                  {note_html}
-                  {original_html}
+                  <div class="practice-panel-top">
+                    <div class="practice-panel-title"><span>Practice the sentence above</span>Listen first, then say it in Kannada<small>Use the orange button when you are ready.</small></div>
+                    {render_card_voice_picker()}
+                  </div>
                   <div class="listen-row">
                     <button class="speak-btn" type="button" data-lang="en-IN" data-speak="{html.escape(english)}"><span class="btn-icon">▶</span>Play English</button>
                     <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="{html.escape(speak_kn)}"><span class="btn-icon">▶</span>Play Kannada</button>
@@ -1896,14 +2597,12 @@ def render_visual_practice(page: int, corrections: dict[str, dict], prefix: str 
                   </div>
                   <div class="practice-feedback" aria-live="polite"></div>
                 </div>
-                <img src="{html.escape(prefix + item['img'])}" alt="{html.escape(item['title'])}" loading="lazy" />
               </article>"""
         )
     return f"""
               <div class="visual-practice">
                 <h3>Chapter 1 Visual Practice</h3>
                 <p>Scroll scene by scene. Each image shows the context; tap a button to hear that exact sentence.</p>
-                {voice_toolbar()}
                 <div class="snippet-stack">{''.join(cards)}</div>
               </div>"""
 

@@ -31,10 +31,64 @@
     h1 { margin: 0; font-size: clamp(2rem, 5vw, 3.7rem); line-height: 1; letter-spacing: 0; }
     .intro { max-width: 860px; color: var(--muted); }
     .note { border-left: 4px solid var(--warn); background: #fff7ed; padding: 12px 14px; max-width: 920px; }
-    .chapter-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; margin-top: 28px; }
-    .chapter-card { display: grid; gap: 8px; text-decoration: none; color: inherit; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 16px; }
-    .chapter-card strong { font-size: 1.1rem; }
+    .chapter-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(292px, 1fr)); gap: 16px; margin-top: 28px; }
+    .chapter-card {
+      --card-accent: #2563eb;
+      --card-accent-soft: #eff6ff;
+      display: grid;
+      gap: 14px;
+      position: relative;
+      overflow: hidden;
+      min-height: 218px;
+      text-decoration: none;
+      color: inherit;
+      background: linear-gradient(180deg, #ffffff, #fbfbfd);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 14px 34px rgba(29,29,31,.06);
+      transition: transform .16s ease, box-shadow .16s ease, border-color .16s ease;
+    }
+    .chapter-card::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto;
+      height: 5px;
+      background: var(--card-accent);
+    }
+    .chapter-card::after {
+      content: "";
+      position: absolute;
+      right: -34px;
+      top: -44px;
+      width: 132px;
+      height: 132px;
+      border-radius: 999px;
+      background: var(--card-accent-soft);
+      z-index: 0;
+    }
+    .chapter-card > * { position: relative; z-index: 1; }
+    .chapter-card:hover { transform: translateY(-2px); border-color: color-mix(in srgb, var(--card-accent) 34%, var(--line)); box-shadow: 0 18px 42px rgba(29,29,31,.09); }
+    .chapter-card.complete { border-color: rgba(22, 163, 74, .35); box-shadow: 0 16px 38px rgba(22, 163, 74, .12); }
+    .chapter-card strong { font-size: 1.18rem; line-height: 1.25; }
     .chapter-card span { color: var(--muted); }
+    .chapter-card-top { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; }
+    .chapter-status { display: inline-flex; align-items: center; gap: 6px; padding: 7px 10px; border-radius: 999px; background: var(--card-accent-soft); color: var(--card-accent); font-size: .78rem; font-weight: 900; }
+    .chapter-card.complete .chapter-status { background: #ecfdf5; color: #047857; }
+    .chapter-meta { display: grid; gap: 3px; }
+    .chapter-meta span { font-size: .74rem; font-weight: 900; letter-spacing: .14em; text-transform: uppercase; }
+    .chapter-meta strong { font-size: 2rem; line-height: 1; color: var(--ink); }
+    .chapter-concept { display: grid; gap: 5px; }
+    .chapter-label { color: var(--muted); font-size: .74rem; font-weight: 900; letter-spacing: .14em; text-transform: uppercase; }
+    .chapter-concept-title { color: var(--ink); }
+    .chapter-concept-subtitle { font-size: .93rem; line-height: 1.4; }
+    .chapter-meter { height: 8px; border-radius: 999px; overflow: hidden; background: #ececf0; }
+    .chapter-meter span { display: block; width: var(--percent, 0%); height: 100%; background: var(--card-accent); border-radius: inherit; }
+    .chapter-card.complete .chapter-meter span { background: #16a34a; }
+    .chapter-reward-line { display: grid; grid-template-columns: 1fr auto; gap: 8px; align-items: center; font-size: .88rem; font-weight: 850; color: var(--muted); }
+    .chapter-reward-line span { display: inline-flex; align-items: center; min-height: 30px; }
+    .chapter-reward-line span:last-child { justify-content: center; padding: 6px 9px; border-radius: 999px; background: #f5f5f7; color: var(--ink); }
+    .chapter-card.complete .chapter-reward-line span:last-child { background: #ecfdf5; color: #047857; }
     .topbar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between; margin-bottom: 22px; }
     .topbar a { color: var(--accent); font-weight: 800; text-decoration: none; }
     .chapter-nav { display: flex; gap: 10px; flex-wrap: wrap; margin: 22px 0; }
@@ -61,7 +115,7 @@
       height: 100vh;
       padding: 20px 12px;
       display: grid;
-      grid-template-rows: auto 1fr;
+      grid-template-rows: auto 1fr auto;
       justify-items: center;
       gap: 18px;
       background: rgba(255, 255, 255, .86);
@@ -107,6 +161,59 @@
       border-color: var(--line);
       box-shadow: inset 0 1px 0 rgba(255,255,255,.74);
     }
+    .rail-account {
+      width: 100%;
+      display: grid;
+      justify-items: center;
+      gap: 8px;
+      padding-top: 10px;
+      border-top: 1px solid var(--line);
+    }
+    .rail-account .auth-panel {
+      display: grid;
+      justify-items: center;
+      gap: 8px;
+      width: 100%;
+      color: var(--muted);
+      font-size: .68rem;
+      font-weight: 800;
+      text-align: center;
+    }
+    .account-dot {
+      width: 34px;
+      height: 34px;
+      display: grid;
+      place-items: center;
+      border-radius: 999px;
+      background: #f5f5f7;
+      border: 1px solid var(--line);
+      color: var(--ink);
+      font-size: .9rem;
+      font-weight: 900;
+    }
+    .rail-account .auth-panel span:not(.account-dot) {
+      display: none;
+    }
+    .rail-account .auth-panel a {
+      display: grid;
+      place-items: center;
+      width: 100%;
+      min-height: 28px;
+      border: 1px solid transparent;
+      border-radius: 9px;
+      background: transparent;
+      color: #6b7280;
+      padding: 0;
+      font: inherit;
+      font-size: .68rem;
+      font-weight: 850;
+      text-decoration: none;
+    }
+    .rail-account .auth-panel a:hover {
+      color: var(--ink);
+      background: #ffffff;
+      border-color: var(--line);
+    }
     .rail-tools {
       display: grid;
       gap: 18px;
@@ -135,14 +242,91 @@
     .lesson-workspace {
       width: min(100%, 1120px);
       margin: 0 auto;
-      padding: 24px 28px 56px;
+      padding: 18px 28px 56px;
+    }
+    .lesson-toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 6;
+      display: block;
+      margin: -18px -28px 18px;
+      padding: 8px 28px;
+      background: rgba(247, 247, 248, .86);
+      border-bottom: 0;
+      backdrop-filter: blur(22px);
+    }
+    .progress-hud {
+      display: grid;
+      grid-template-columns: 430px 160px 160px minmax(220px, 1fr);
+      column-gap: 0;
+      align-items: center;
+      width: 100%;
+      max-width: 1120px;
+      margin: 0 auto;
+      min-height: 78px;
+      padding: 14px 18px;
+      border: 1px solid #e5e7eb;
+      border-radius: 22px;
+      background: #ffffff;
+      box-shadow: 0 14px 36px rgba(29,29,31,.065);
+    }
+    .hud-main { display: contents; }
+    .hud-progress {
+      display: grid;
+      grid-template-columns: 44px 280px;
+      align-items: center;
+      gap: 14px;
+      min-width: 0;
+      padding: 0 24px 0 0;
+    }
+    .hud-icon {
+      width: 44px;
+      height: 44px;
+      display: grid;
+      place-items: center;
+      border-radius: 999px;
+      font-size: 1.22rem;
+      background: #ecfdf3;
+      border: 1px solid #dcfce7;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.8);
+    }
+    .hud-progress-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: baseline;
+      color: var(--muted);
+      font-size: .72rem;
+      font-weight: 900;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .hud-progress-row strong {
+      color: var(--ink);
+      font-size: .92rem;
+      letter-spacing: 0;
+      text-transform: none;
+    }
+    .hud-progress-track {
+      height: 7px;
+      overflow: hidden;
+      border-radius: 999px;
+      background: #e5e7eb;
+      margin-top: 4px;
+    }
+    .hud-progress-fill {
+      width: var(--hud-progress, 0%);
+      height: 100%;
+      border-radius: inherit;
+      background: linear-gradient(90deg, #34c759, #30d158);
+      transition: width .22s ease;
     }
     .lesson-header {
       display: grid;
       grid-template-columns: minmax(0, 1fr) auto;
       gap: 18px;
       align-items: end;
-      margin-bottom: 14px;
+      margin-bottom: 10px;
     }
     .lesson-kicker {
       margin: 0 0 6px;
@@ -161,22 +345,12 @@
     }
     .lesson-subtitle {
       max-width: 680px;
-      margin: 6px 0 0;
+      margin: 4px 0 0;
       color: #5d6470;
       font-size: .92rem;
       line-height: 1.45;
     }
-    .progress-card {
-      display: block;
-      min-width: 190px;
-      align-items: center;
-      padding: 0;
-      border: 0;
-      border-radius: 0;
-      background: transparent;
-      box-shadow: none;
-      backdrop-filter: none;
-    }
+    .progress-card { display: none; }
     .progress-icon {
       display: none;
     }
@@ -206,35 +380,193 @@
       background: #2f8f7a;
       transition: width .22s ease;
     }
+    .reward-stat {
+      display: grid;
+      grid-template-columns: 42px max-content;
+      align-items: center;
+      gap: 10px;
+      align-items: center;
+      min-width: 0;
+      position: relative;
+      border: 0;
+      border-left: 1px solid #e5e7eb;
+      border-radius: 0;
+      background: transparent;
+      padding: 0 22px;
+      box-shadow: none;
+    }
+    .reward-stat::before {
+      content: attr(data-icon);
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 999px;
+      background: #eef4ff;
+      color: #2563eb;
+      font-size: 1.15rem;
+      border: 1px solid rgba(96, 165, 250, .18);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.75);
+    }
+    .reward-stat:nth-child(1)::before { background: #eef4ff; color: #2563eb; }
+    .reward-stat:nth-child(2)::before { background: #f3e8ff; color: #7c3aed; }
+    .reward-stat:nth-child(3)::before { background: #fb923c; color: #fb923c; }
+    .reward-stat span {
+      display: block;
+      color: var(--muted);
+      font-size: .82rem;
+      font-weight: 720;
+      text-transform: none;
+      letter-spacing: 0;
+    }
+    .reward-stat strong {
+      display: block;
+      margin: 0 0 2px;
+      color: var(--ink);
+      font-size: 1rem;
+      line-height: 1;
+      font-weight: 900;
+    }
+    .badge-strip {
+      display: grid;
+      grid-template-columns: 50px minmax(120px, 1fr);
+      align-items: center;
+      gap: 14px;
+      margin: 0;
+      padding: 0 0 0 22px;
+      border: 0;
+      border-left: 1px solid #e5e7eb;
+      border-radius: 0;
+      background: transparent;
+      box-shadow: none;
+    }
+    .badge-strip::before {
+      content: "🌱";
+      width: 50px;
+      height: 50px;
+      display: grid;
+      place-items: center;
+      border-radius: 999px;
+      background: #ecfdf3;
+      border: 1px solid #dcfce7;
+      font-size: 1.28rem;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.75);
+    }
+    .badge-strip::after { display: none; }
+    .badge-chip {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 4px;
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+      padding: 0;
+      color: var(--ink);
+      font-size: 1.08rem;
+      line-height: 1.1;
+      font-weight: 900;
+      box-shadow: none;
+    }
+    .badge-chip small {
+      color: var(--muted);
+      display: block;
+      font-size: .82rem;
+      font-weight: 720;
+    }
+    .badge-link {
+      text-decoration: none;
+      transition: transform .14s ease, border-color .14s ease, box-shadow .14s ease;
+    }
+    .badge-link:hover {
+      transform: none;
+      color: #111827;
+      box-shadow: none;
+    }
+    .badge-chip.empty { color: var(--muted); background: #ffffff; }
+    .next-badge-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: 1px dashed #d1d5db;
+      border-radius: 999px;
+      background: #f9fafb;
+      padding: 7px 9px;
+      color: #4b5563;
+      font-size: .76rem;
+      font-weight: 850;
+    }
+    .streak-panel {
+      display: none;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      margin: 0 0 14px;
+      padding: 8px 12px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: #ffffff;
+    }
+    .streak-panel strong { font-size: .9rem; }
+    .streak-grid {
+      display: grid;
+      grid-template-columns: repeat(14, 11px);
+      gap: 4px;
+    }
+    .streak-cell {
+      width: 11px;
+      height: 11px;
+      border-radius: 3px;
+      background: #e5e7eb;
+      border: 1px solid rgba(0,0,0,.03);
+    }
+    .streak-cell.level-1 { background: #bbf7d0; }
+    .streak-cell.level-2 { background: #86efac; }
+    .streak-cell.level-3 { background: #22c55e; }
+    .streak-cell.level-4 { background: #15803d; }
     .lesson-controls {
-      display: flex;
+      display: none;
       justify-content: space-between;
       align-items: center;
       gap: 12px;
-      margin: 0 0 12px;
-      padding: 10px 0 0;
+      margin: 0 0 10px;
+      padding: 8px 0 0;
       border-top: 1px solid var(--line);
     }
+    .auth-panel {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--muted);
+      font-size: .82rem;
+      font-weight: 700;
+    }
+    .auth-panel a,
+    .auth-panel button {
+      display: none;
+    }
+    .auth-panel strong { color: var(--ink); }
     .scene-pager {
       display: flex;
       align-items: center;
       gap: 12px;
     }
     .scene-pill {
-      min-width: 112px;
+      min-width: 98px;
       padding: 0;
       border: 0;
       border-radius: 0;
       background: transparent;
       color: var(--muted);
       text-align: center;
-      font-size: .9rem;
+      font-size: .82rem;
       font-weight: 700;
       box-shadow: none;
     }
     .scene-arrow {
-      width: 34px;
-      height: 34px;
+      width: 30px;
+      height: 30px;
       border: 1px solid var(--line);
       border-radius: 10px;
       display: grid;
@@ -262,12 +594,12 @@
     .visual-practice > p { margin: 0 0 14px; color: var(--muted); }
     .snippet-stack {
       display: grid;
-      gap: 18px;
+      gap: 16px;
     }
     .snippet-card {
       position: relative;
       border: 1px solid var(--line);
-      border-radius: 22px;
+      border-radius: 18px;
       overflow: hidden;
       background: var(--panel);
       box-shadow: 0 12px 34px rgba(0, 0, 0, .06);
@@ -276,6 +608,24 @@
       border-color: rgba(52, 199, 89, .55);
       box-shadow: 0 22px 56px rgba(52, 199, 89, .18);
     }
+    .completed-scene {
+      display: none;
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      z-index: 2;
+      align-items: center;
+      gap: 7px;
+      padding: 9px 12px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #dcfce7, #ecfeff);
+      color: #047857;
+      border: 1px solid rgba(16, 185, 129, .35);
+      font-size: .84rem;
+      font-weight: 900;
+      box-shadow: 0 12px 28px rgba(16, 185, 129, .18);
+    }
+    .snippet-card.completed .completed-scene { display: inline-flex; }
     .snippet-card.retry-shake {
       animation: retry-shake .32s ease;
     }
@@ -287,35 +637,36 @@
       object-fit: contain;
       object-position: center;
       background: var(--soft);
+      border-bottom: 1px solid var(--line);
     }
     .snippet-card svg { width: 100%; height: auto; display: block; }
     .snippet-body {
-      padding: clamp(14px, 2.2vw, 22px);
+      padding: clamp(11px, 1.8vw, 18px);
       background: rgba(255, 255, 255, .96);
       border-bottom: 1px solid var(--line);
     }
     .snippet-body h4 {
       margin: 0;
       color: #4b5563;
-      font-size: clamp(1rem, 1.7vw, 1.18rem);
+      font-size: clamp(.92rem, 1.4vw, 1.04rem);
       font-weight: 800;
     }
     .snippet-heading {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 16px;
-      margin-bottom: 14px;
+      gap: 12px;
+      margin-bottom: 10px;
     }
     .snippet-topic {
       display: flex;
       align-items: center;
-      gap: 14px;
+      gap: 10px;
       min-width: 0;
     }
     .snippet-topic-icon {
-      width: 42px;
-      height: 42px;
+      width: 34px;
+      height: 34px;
       flex: 0 0 auto;
       border-radius: 999px;
       display: grid;
@@ -330,26 +681,26 @@
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      padding: 6px 10px;
+      padding: 4px 8px;
       border-radius: 999px;
       background: #f5f5f7;
       color: #6b7280;
       border: 1px solid var(--line);
-      font-size: .78rem;
+      font-size: .72rem;
       font-weight: 800;
     }
     .snippet-line {
       display: grid;
-      gap: 2px;
-      margin: 0 0 12px;
-      padding: 14px 18px;
-      border: 1px solid rgba(0, 0, 0, .08);
-      border-radius: 14px;
+      gap: 1px;
+      margin: 0 0 10px;
+      padding: 10px 14px;
+      border: 1px solid rgba(0, 0, 0, .07);
+      border-radius: 12px;
       background: #ffffff;
       box-shadow: inset 0 1px 0 rgba(255, 255, 255, .72);
     }
     .snippet-line strong {
-      font-size: clamp(1.28rem, 2.4vw, 1.9rem);
+      font-size: clamp(1.06rem, 1.9vw, 1.52rem);
       line-height: 1.12;
       color: var(--ink);
       font-weight: 850;
@@ -357,18 +708,18 @@
     .snippet-line span {
       color: var(--ink);
       font-weight: 720;
-      font-size: clamp(1rem, 1.8vw, 1.28rem);
+      font-size: clamp(.9rem, 1.45vw, 1.06rem);
       line-height: 1.15;
       font-style: italic;
     }
     .kannada-script {
       color: var(--ink);
-      font-size: clamp(1.18rem, 2.25vw, 1.72rem);
+      font-size: clamp(1rem, 1.8vw, 1.38rem);
       font-weight: 850;
       line-height: 1.12;
     }
     .original-roman {
-      margin: 0 0 16px;
+      margin: 0 0 10px;
       color: var(--muted);
       font-size: .95rem;
       font-weight: 650;
@@ -380,7 +731,97 @@
       line-height: 1.45;
     }
     .grammar-note strong { color: var(--ink); }
+    .practice-panel {
+      margin: 0;
+      padding: 18px;
+      border-top: 1px solid rgba(255,255,255,.08);
+      background:
+        radial-gradient(circle at 8% 0%, rgba(249, 115, 22, .10), transparent 28%),
+        linear-gradient(135deg, #050505, #111111);
+      color: #ffffff;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.08);
+    }
+    .sentence-panel {
+      margin: 0 0 14px;
+    }
+    .sentence-panel .snippet-line {
+      margin: 0;
+      border-color: rgba(255,255,255,.12);
+      background: rgba(255,255,255,.08);
+      box-shadow: 0 14px 34px rgba(0, 0, 0, .18);
+      backdrop-filter: blur(16px);
+    }
+    .sentence-panel .snippet-line strong {
+      color: #ffffff;
+    }
+    .sentence-panel .snippet-line span {
+      color: rgba(255,255,255,.82);
+    }
+    .sentence-panel .kannada-script {
+      color: #fed7aa;
+    }
+    .sentence-panel .grammar-note {
+      margin: 10px 0 0;
+      color: rgba(255,255,255,.72);
+    }
+    .sentence-panel .original-roman {
+      margin: 10px 0 0;
+      color: rgba(255,255,255,.62);
+    }
+    .practice-panel-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      margin-bottom: 12px;
+    }
+    .practice-panel-title {
+      display: grid;
+      gap: 2px;
+      color: #ffffff;
+      font-weight: 900;
+    }
+    .practice-panel-title span {
+      color: #fed7aa;
+      font-size: .78rem;
+      font-weight: 850;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+    }
+    .practice-panel-title small {
+      color: rgba(255,255,255,.64);
+      font-size: .84rem;
+      font-weight: 800;
+    }
     .listen-row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; align-items: center; }
+    .card-voice-picker {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+      margin: 0;
+      color: rgba(255,255,255,.68);
+      font-size: .82rem;
+      font-weight: 700;
+    }
+    .card-voice-picker > span { display: none; }
+    .voice-choice {
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: 999px;
+      background: rgba(255,255,255,.08);
+      color: rgba(255,255,255,.78);
+      padding: 6px 10px;
+      font: inherit;
+      font-size: .8rem;
+      font-weight: 750;
+      line-height: 1;
+      cursor: pointer;
+    }
+    .voice-choice.active {
+      border-color: rgba(251, 146, 60, .72);
+      background: rgba(249, 115, 22, .20);
+      color: #ffffff;
+    }
     .speak-btn {
       border: 1px solid #d9d9df;
       background: linear-gradient(#ffffff, #fafafa);
@@ -404,30 +845,31 @@
     }
     .speak-btn:hover {
       transform: translateY(-1px);
-      border-color: #c7c7cf;
-      background: linear-gradient(#ffffff, #f5f5f7);
-      box-shadow: 0 2px 4px rgba(0, 0, 0, .06), 0 10px 22px rgba(29, 29, 31, .055);
+      border-color: rgba(255,255,255,.26);
+      background: rgba(255,255,255,.13);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, .18);
     }
     .speak-btn[data-lang="en-IN"] {
-      color: #1d1d1f;
-      border-color: #d9d9df;
-      background: linear-gradient(#ffffff, #fafafa);
+      color: #ffffff;
+      border-color: rgba(255,255,255,.14);
+      background: rgba(255,255,255,.08);
     }
     .speak-btn[data-lang="kn-IN"] {
-      color: #1d1d1f;
-      border-color: #d9d9df;
-      background: linear-gradient(#ffffff, #fafafa);
+      color: #ffffff;
+      border-color: rgba(255,255,255,.14);
+      background: rgba(255,255,255,.08);
     }
     .practice-btn {
       color: #ffffff;
-      border-color: #1d1d1f;
-      background: #1d1d1f;
+      border-color: #f97316;
+      background: linear-gradient(135deg, #fb923c, #ea580c);
       min-width: 0;
+      box-shadow: 0 12px 26px rgba(249, 115, 22, .24);
     }
     .practice-btn:hover {
-      border-color: #000000;
-      background: #000000;
-      box-shadow: 0 10px 22px rgba(29, 29, 31, .16);
+      border-color: #ea580c;
+      background: linear-gradient(135deg, #f97316, #c2410c);
+      box-shadow: 0 14px 30px rgba(249, 115, 22, .32);
     }
     .speak-btn:active { transform: translateY(1px); }
     .speak-btn[disabled] { opacity: .6; cursor: wait; }
@@ -446,7 +888,7 @@
     }
     .speak-btn[data-lang="en-IN"] .btn-icon { background: transparent; }
     .speak-btn[data-lang="kn-IN"] .btn-icon { background: transparent; }
-    .practice-btn .btn-icon { background: transparent; color: #ffffff; }
+    .practice-btn .btn-icon { background: rgba(255,255,255,.18); color: #ffffff; }
     .practice-feedback {
       display: none;
       margin-top: 12px;
@@ -657,8 +1099,31 @@
       .chapter-rail a { min-width: 44px; }
       .rail-tools { display: none; }
       .lesson-workspace { padding: 24px 14px 48px; }
+      .lesson-toolbar {
+        grid-template-columns: 1fr;
+        margin: -24px -14px 18px;
+        padding: 10px 14px;
+      }
+      .progress-hud {
+        grid-template-columns: 1fr;
+        border-radius: 20px;
+        padding: 16px;
+        gap: 14px;
+      }
+      .hud-progress { grid-template-columns: 44px 1fr; padding: 0; }
+      .hud-icon, .reward-stat::before, .badge-strip::before {
+        width: 42px;
+        height: 42px;
+        font-size: 1.1rem;
+      }
+      .reward-stat { border-left: 0; padding: 0; grid-template-columns: 42px 1fr; }
+      .badge-strip { border-left: 0; padding: 0; grid-template-columns: 42px 1fr 38px; }
       .lesson-header { grid-template-columns: 1fr; }
       .lesson-controls { align-items: stretch; flex-direction: column; }
+      .reward-dashboard { gap: 6px; }
+      .badge-strip { justify-content: flex-start; }
+      .streak-panel { align-items: flex-start; flex-direction: column; }
+      .auth-panel { align-items: flex-start; flex-direction: column; }
       .scene-pager { justify-content: space-between; }
       .listen-row { grid-template-columns: 1fr; gap: 12px; }
       .snippet-heading { align-items: flex-start; }
@@ -668,65 +1133,61 @@
       table { min-width: 760px; }
       .snippet-card { overflow-x: visible; }
       .snippet-card img { min-width: 0; }
+      .practice-panel-top { align-items: flex-start; flex-direction: column; }
       .speak-btn { flex: 1 1 100%; }
     }
   </style>
 </head>
 <body>
   <main>
-    
-      <div class="learning-app" data-scene-total="40">
-        
+
+      <div class="learning-app" data-chapter="16" data-scene-total="40">
+
       <aside class="side-rail" aria-label="Chapter navigation">
         <a class="rail-logo" href="../conversations-page-by-page.html" aria-label="All chapters">ಕ</a>
         <nav class="chapter-rail" aria-label="Chapters">
           <a class="" href="chapter-01.html" aria-label="Chapter 1">1</a><a class="" href="chapter-02.html" aria-label="Chapter 2">2</a><a class="" href="chapter-03.html" aria-label="Chapter 3">3</a><a class="" href="chapter-04.html" aria-label="Chapter 4">4</a><a class="" href="chapter-05.html" aria-label="Chapter 5">5</a><a class="" href="chapter-06.html" aria-label="Chapter 6">6</a><a class="" href="chapter-07.html" aria-label="Chapter 7">7</a><a class="" href="chapter-08.html" aria-label="Chapter 8">8</a><a class="" href="chapter-09.html" aria-label="Chapter 9">9</a><a class="" href="chapter-10.html" aria-label="Chapter 10">10</a><a class="" href="chapter-11.html" aria-label="Chapter 11">11</a><a class="" href="chapter-12.html" aria-label="Chapter 12">12</a><a class="" href="chapter-13.html" aria-label="Chapter 13">13</a><a class="" href="chapter-14.html" aria-label="Chapter 14">14</a><a class="" href="chapter-15.html" aria-label="Chapter 15">15</a><a class="active" href="chapter-16.html" aria-label="Chapter 16">16</a><a class="" href="chapter-17.html" aria-label="Chapter 17">17</a><a class="" href="chapter-18.html" aria-label="Chapter 18">18</a><a class="" href="chapter-19.html" aria-label="Chapter 19">19</a><a class="" href="chapter-20.html" aria-label="Chapter 20">20</a><a class="" href="chapter-21.html" aria-label="Chapter 21">21</a><a class="" href="chapter-22.html" aria-label="Chapter 22">22</a><a class="" href="chapter-23.html" aria-label="Chapter 23">23</a><a class="" href="chapter-24.html" aria-label="Chapter 24">24</a><a class="" href="chapter-25.html" aria-label="Chapter 25">25</a><a class="" href="chapter-26.html" aria-label="Chapter 26">26</a><a class="" href="chapter-27.html" aria-label="Chapter 27">27</a><a class="" href="chapter-28.html" aria-label="Chapter 28">28</a><a class="" href="chapter-29.html" aria-label="Chapter 29">29</a><a class="" href="chapter-30.html" aria-label="Chapter 30">30</a><a class="" href="chapter-31.html" aria-label="Chapter 31">31</a>
         </nav>
+        <div class="rail-account">
+          <div class="auth-panel" data-auth-panel>
+            <span class="account-dot">...</span>
+          </div>
+        </div>
       </aside>
-    
+
         <div class="lesson-workspace">
+          <div class="lesson-toolbar" aria-label="Chapter progress">
+            <div class="progress-hud">
+              <div class="hud-progress">
+                <span class="hud-icon" aria-hidden="true">📖</span>
+                <div>
+                  <div class="hud-progress-row"><span>Chapter Progress</span><strong data-reward-completed>0 / 40</strong></div>
+                  <div class="hud-progress-track"><div class="hud-progress-fill" data-hud-progress-fill></div></div>
+                </div>
+              </div>
+              <div class="reward-stat" data-icon="★"><div><strong><span data-reward-totalPoints>0</span> pts</strong><span>Points</span></div></div>
+              <div class="reward-stat" data-icon="♨"><div><strong><span data-reward-streakDays>0</span> day</strong><span>Streak</span></div></div>
+              <div class="badge-strip" data-badge-strip><span class="badge-chip empty">Sign in to earn badges</span></div>
+            </div>
+          </div>
           <header class="lesson-header">
             <div>
               <p class="lesson-kicker">Chapter 16</p>
               <h1 class="lesson-title">Duties, permission, obligation</h1>
-              <p class="lesson-subtitle">Scene-by-scene practice with audio and speaking checks.</p>
+              <p class="lesson-subtitle">Listen, look at the scene, then practice the Kannada sentence.</p>
             </div>
             <div class="progress-card">
               <div>
-                <div class="progress-label"><span>Progress</span><span class="progress-count"><span data-current-scene>1</span> / 40</span></div>
+                <div class="progress-label"><span>Scene</span><span class="progress-count"><span data-current-scene>1</span> / 40</span></div>
                 <div class="progress-track"><div class="progress-fill" data-progress-fill style="--progress: 2.50%"></div></div>
               </div>
             </div>
           </header>
-          <div class="lesson-controls">
-            
-      <label class="voice-toolbar">
-        Kannada voice
-        <select data-kannada-speaker>
-          <option value="priya">Priya</option>
-          <option value="shubh">Shubh</option>
-          <option value="aditya">Aditya</option>
-          <option value="ritu">Ritu</option>
-          <option value="neha">Neha</option>
-          <option value="rahul">Rahul</option>
-          <option value="pooja">Pooja</option>
-          <option value="rohan">Rohan</option>
-          <option value="kavya">Kavya</option>
-          <option value="amit">Amit</option>
-        </select>
-        <span class="voice-wave" aria-hidden="true">⌁</span>
-      </label>
-    
-            <div class="scene-pager">
-              <button class="scene-arrow prev" type="button" data-scene-prev aria-label="Previous scene">←</button>
-              <span class="scene-pill">Scene <span data-current-scene>1</span> of 40</span>
-              <button class="scene-arrow next" type="button" data-scene-next aria-label="Next scene">→</button>
-            </div>
-          </div>
-          
+
       <div class="visual-practice">
         <div class="snippet-stack">
-      <article class="snippet-card" data-scene-card data-scene-index="1">
+      <article class="snippet-card" data-scene-card data-chapter="16" data-conversation-id="1" data-scene-index="1">
+        <span class="completed-scene" data-completed-scene>✓ Completed</span>
         <div class="snippet-body">
           <div class="snippet-heading">
             <div class="snippet-topic">
@@ -735,12 +1196,21 @@
             </div>
             <span class="new-pill">✦ New</span>
           </div>
-          <div class="snippet-line">
-            <strong>Where do you have to go ?</strong>
-            <div class="kannada-script">ನೀವು ಎಲ್ಲಿಗೆ ಹೋಗಬೇಕು?</div>
-            <span>Neevu ellige hogabeku?</span>
-          </div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-16/conversation-1-01.svg" alt="Where do you have to go ?" loading="lazy" />
+        <div class="practice-panel">
+          <div class="sentence-panel">
+            <div class="snippet-line">
+              <strong>Where do you have to go ?</strong>
+              <div class="kannada-script">ನೀವು ಎಲ್ಲಿಗೆ ಹೋಗಬೇಕು?</div>
+              <span>Neevu ellige hogabeku?</span>
+            </div>
           <div class="original-roman">Original PDF: niinu ellig hoogbeeku ?</div>
+          </div>
+          <div class="practice-panel-top">
+            <div class="practice-panel-title"><span>Practice the sentence above</span>Listen first, then say it in Kannada<small>Use the orange button when you are ready.</small></div>
+            <div class="card-voice-picker" data-voice-picker><span>Kannada voice</span><button class="voice-choice" type="button" data-voice-speaker="gokul" aria-pressed="false">Gokul</button><button class="voice-choice" type="button" data-voice-speaker="neha" aria-pressed="false">Neha</button><button class="voice-choice" type="button" data-voice-speaker="simran" aria-pressed="false">Simran</button><button class="voice-choice" type="button" data-voice-speaker="rohan" aria-pressed="false">Rohan</button><button class="voice-choice" type="button" data-voice-speaker="advait" aria-pressed="false">Advait</button><button class="voice-choice" type="button" data-voice-speaker="suhani" aria-pressed="false">Suhani</button><button class="voice-choice" type="button" data-voice-speaker="mani" aria-pressed="false">Mani</button><button class="voice-choice" type="button" data-voice-speaker="kavya" aria-pressed="false">Kavya</button></div>
+          </div>
           <div class="listen-row">
             <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Where do you have to go ?"><span class="btn-icon">▶</span>Play English</button>
             <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನೀವು ಎಲ್ಲಿಗೆ ಹೋಗಬೇಕು?"><span class="btn-icon">▶</span>Play Kannada</button>
@@ -748,10 +1218,10 @@
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/chapter-visuals/chapter-16/conversation-1-01.svg" alt="Where do you have to go ?" loading="lazy" />
       </article>
-    
-      <article class="snippet-card" data-scene-card data-scene-index="2">
+
+      <article class="snippet-card" data-scene-card data-chapter="16" data-conversation-id="1" data-scene-index="2">
+        <span class="completed-scene" data-completed-scene>✓ Completed</span>
         <div class="snippet-body">
           <div class="snippet-heading">
             <div class="snippet-topic">
@@ -760,12 +1230,21 @@
             </div>
             <span class="new-pill">✦ New</span>
           </div>
-          <div class="snippet-line">
-            <strong>I have to go to school.</strong>
-            <div class="kannada-script">ನಾನು ಶಾಲೆಗೆ ಹೋಗಬೇಕು.</div>
-            <span>Naanu shaalege hogabeku.</span>
-          </div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-16/conversation-1-02.svg" alt="I have to go to school." loading="lazy" />
+        <div class="practice-panel">
+          <div class="sentence-panel">
+            <div class="snippet-line">
+              <strong>I have to go to school.</strong>
+              <div class="kannada-script">ನಾನು ಶಾಲೆಗೆ ಹೋಗಬೇಕು.</div>
+              <span>Naanu shaalege hogabeku.</span>
+            </div>
           <div class="original-roman">Original PDF: naanu skuulig hoogbeeku.</div>
+          </div>
+          <div class="practice-panel-top">
+            <div class="practice-panel-title"><span>Practice the sentence above</span>Listen first, then say it in Kannada<small>Use the orange button when you are ready.</small></div>
+            <div class="card-voice-picker" data-voice-picker><span>Kannada voice</span><button class="voice-choice" type="button" data-voice-speaker="gokul" aria-pressed="false">Gokul</button><button class="voice-choice" type="button" data-voice-speaker="neha" aria-pressed="false">Neha</button><button class="voice-choice" type="button" data-voice-speaker="simran" aria-pressed="false">Simran</button><button class="voice-choice" type="button" data-voice-speaker="rohan" aria-pressed="false">Rohan</button><button class="voice-choice" type="button" data-voice-speaker="advait" aria-pressed="false">Advait</button><button class="voice-choice" type="button" data-voice-speaker="suhani" aria-pressed="false">Suhani</button><button class="voice-choice" type="button" data-voice-speaker="mani" aria-pressed="false">Mani</button><button class="voice-choice" type="button" data-voice-speaker="kavya" aria-pressed="false">Kavya</button></div>
+          </div>
           <div class="listen-row">
             <button class="speak-btn" type="button" data-lang="en-IN" data-speak="I have to go to school."><span class="btn-icon">▶</span>Play English</button>
             <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನಾನು ಶಾಲೆಗೆ ಹೋಗಬೇಕು."><span class="btn-icon">▶</span>Play Kannada</button>
@@ -773,10 +1252,10 @@
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/chapter-visuals/chapter-16/conversation-1-02.svg" alt="I have to go to school." loading="lazy" />
       </article>
-    
-      <article class="snippet-card" data-scene-card data-scene-index="3">
+
+      <article class="snippet-card" data-scene-card data-chapter="16" data-conversation-id="1" data-scene-index="3">
+        <span class="completed-scene" data-completed-scene>✓ Completed</span>
         <div class="snippet-body">
           <div class="snippet-heading">
             <div class="snippet-topic">
@@ -785,12 +1264,21 @@
             </div>
             <span class="new-pill">✦ New</span>
           </div>
-          <div class="snippet-line">
-            <strong>When do you have to go ?</strong>
-            <div class="kannada-script">ನೀವು ಯಾವಾಗ ಹೋಗಬೇಕು?</div>
-            <span>Neevu yaavaga hogabeku?</span>
-          </div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-16/conversation-1-03.svg" alt="When do you have to go ?" loading="lazy" />
+        <div class="practice-panel">
+          <div class="sentence-panel">
+            <div class="snippet-line">
+              <strong>When do you have to go ?</strong>
+              <div class="kannada-script">ನೀವು ಯಾವಾಗ ಹೋಗಬೇಕು?</div>
+              <span>Neevu yaavaga hogabeku?</span>
+            </div>
           <div class="original-roman">Original PDF: yaavaag hoogbeeku ?</div>
+          </div>
+          <div class="practice-panel-top">
+            <div class="practice-panel-title"><span>Practice the sentence above</span>Listen first, then say it in Kannada<small>Use the orange button when you are ready.</small></div>
+            <div class="card-voice-picker" data-voice-picker><span>Kannada voice</span><button class="voice-choice" type="button" data-voice-speaker="gokul" aria-pressed="false">Gokul</button><button class="voice-choice" type="button" data-voice-speaker="neha" aria-pressed="false">Neha</button><button class="voice-choice" type="button" data-voice-speaker="simran" aria-pressed="false">Simran</button><button class="voice-choice" type="button" data-voice-speaker="rohan" aria-pressed="false">Rohan</button><button class="voice-choice" type="button" data-voice-speaker="advait" aria-pressed="false">Advait</button><button class="voice-choice" type="button" data-voice-speaker="suhani" aria-pressed="false">Suhani</button><button class="voice-choice" type="button" data-voice-speaker="mani" aria-pressed="false">Mani</button><button class="voice-choice" type="button" data-voice-speaker="kavya" aria-pressed="false">Kavya</button></div>
+          </div>
           <div class="listen-row">
             <button class="speak-btn" type="button" data-lang="en-IN" data-speak="When do you have to go ?"><span class="btn-icon">▶</span>Play English</button>
             <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನೀವು ಯಾವಾಗ ಹೋಗಬೇಕು?"><span class="btn-icon">▶</span>Play Kannada</button>
@@ -798,10 +1286,10 @@
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/chapter-visuals/chapter-16/conversation-1-03.svg" alt="When do you have to go ?" loading="lazy" />
       </article>
-    
-      <article class="snippet-card" data-scene-card data-scene-index="4">
+
+      <article class="snippet-card" data-scene-card data-chapter="16" data-conversation-id="1" data-scene-index="4">
+        <span class="completed-scene" data-completed-scene>✓ Completed</span>
         <div class="snippet-body">
           <div class="snippet-heading">
             <div class="snippet-topic">
@@ -810,12 +1298,21 @@
             </div>
             <span class="new-pill">✦ New</span>
           </div>
-          <div class="snippet-line">
-            <strong>I have to go at ten O’clock.</strong>
-            <div class="kannada-script">ನನಗೆ ಹತ್ತು ಗಂಟೆಗೆ ಹೋಗಬೇಕು.</div>
-            <span>Nanage hattu gantege hogabeku.</span>
-          </div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-16/conversation-1-04.svg" alt="I have to go at ten O’clock." loading="lazy" />
+        <div class="practice-panel">
+          <div class="sentence-panel">
+            <div class="snippet-line">
+              <strong>I have to go at ten O’clock.</strong>
+              <div class="kannada-script">ನನಗೆ ಹತ್ತು ಗಂಟೆಗೆ ಹೋಗಬೇಕು.</div>
+              <span>Nanage hattu gantege hogabeku.</span>
+            </div>
           <div class="original-roman">Original PDF: hattu gatnlege hoogbeeku.</div>
+          </div>
+          <div class="practice-panel-top">
+            <div class="practice-panel-title"><span>Practice the sentence above</span>Listen first, then say it in Kannada<small>Use the orange button when you are ready.</small></div>
+            <div class="card-voice-picker" data-voice-picker><span>Kannada voice</span><button class="voice-choice" type="button" data-voice-speaker="gokul" aria-pressed="false">Gokul</button><button class="voice-choice" type="button" data-voice-speaker="neha" aria-pressed="false">Neha</button><button class="voice-choice" type="button" data-voice-speaker="simran" aria-pressed="false">Simran</button><button class="voice-choice" type="button" data-voice-speaker="rohan" aria-pressed="false">Rohan</button><button class="voice-choice" type="button" data-voice-speaker="advait" aria-pressed="false">Advait</button><button class="voice-choice" type="button" data-voice-speaker="suhani" aria-pressed="false">Suhani</button><button class="voice-choice" type="button" data-voice-speaker="mani" aria-pressed="false">Mani</button><button class="voice-choice" type="button" data-voice-speaker="kavya" aria-pressed="false">Kavya</button></div>
+          </div>
           <div class="listen-row">
             <button class="speak-btn" type="button" data-lang="en-IN" data-speak="I have to go at ten O’clock."><span class="btn-icon">▶</span>Play English</button>
             <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನನಗೆ ಹತ್ತು ಗಂಟೆಗೆ ಹೋಗಬೇಕು."><span class="btn-icon">▶</span>Play Kannada</button>
@@ -823,10 +1320,10 @@
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/chapter-visuals/chapter-16/conversation-1-04.svg" alt="I have to go at ten O’clock." loading="lazy" />
       </article>
-    
-      <article class="snippet-card" data-scene-card data-scene-index="5">
+
+      <article class="snippet-card" data-scene-card data-chapter="16" data-conversation-id="1" data-scene-index="5">
+        <span class="completed-scene" data-completed-scene>✓ Completed</span>
         <div class="snippet-body">
           <div class="snippet-heading">
             <div class="snippet-topic">
@@ -835,12 +1332,21 @@
             </div>
             <span class="new-pill">✦ New</span>
           </div>
-          <div class="snippet-line">
-            <strong>Then, you have to read poetry now.</strong>
-            <div class="kannada-script">ನಂತರ, ನೀವು ಈಗ ಕವಿತೆಗಳನ್ನು ಓದಬೇಕು.</div>
-            <span>Nantara, neevu eega kavitegalannu odbeku.</span>
-          </div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-16/conversation-1-05.svg" alt="Then, you have to read poetry now." loading="lazy" />
+        <div class="practice-panel">
+          <div class="sentence-panel">
+            <div class="snippet-line">
+              <strong>Then, you have to read poetry now.</strong>
+              <div class="kannada-script">ನಂತರ, ನೀವು ಈಗ ಕವಿತೆಗಳನ್ನು ಓದಬೇಕು.</div>
+              <span>Nantara, neevu eega kavitegalannu odbeku.</span>
+            </div>
           <div class="original-roman">Original PDF: haagaadre niinu iiga padya</div>
+          </div>
+          <div class="practice-panel-top">
+            <div class="practice-panel-title"><span>Practice the sentence above</span>Listen first, then say it in Kannada<small>Use the orange button when you are ready.</small></div>
+            <div class="card-voice-picker" data-voice-picker><span>Kannada voice</span><button class="voice-choice" type="button" data-voice-speaker="gokul" aria-pressed="false">Gokul</button><button class="voice-choice" type="button" data-voice-speaker="neha" aria-pressed="false">Neha</button><button class="voice-choice" type="button" data-voice-speaker="simran" aria-pressed="false">Simran</button><button class="voice-choice" type="button" data-voice-speaker="rohan" aria-pressed="false">Rohan</button><button class="voice-choice" type="button" data-voice-speaker="advait" aria-pressed="false">Advait</button><button class="voice-choice" type="button" data-voice-speaker="suhani" aria-pressed="false">Suhani</button><button class="voice-choice" type="button" data-voice-speaker="mani" aria-pressed="false">Mani</button><button class="voice-choice" type="button" data-voice-speaker="kavya" aria-pressed="false">Kavya</button></div>
+          </div>
           <div class="listen-row">
             <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Then, you have to read poetry now."><span class="btn-icon">▶</span>Play English</button>
             <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನಂತರ, ನೀವು ಈಗ ಕವಿತೆಗಳನ್ನು ಓದಬೇಕು."><span class="btn-icon">▶</span>Play Kannada</button>
@@ -848,10 +1354,10 @@
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/chapter-visuals/chapter-16/conversation-1-05.svg" alt="Then, you have to read poetry now." loading="lazy" />
       </article>
-    
-      <article class="snippet-card" data-scene-card data-scene-index="6">
+
+      <article class="snippet-card" data-scene-card data-chapter="16" data-conversation-id="1" data-scene-index="6">
+        <span class="completed-scene" data-completed-scene>✓ Completed</span>
         <div class="snippet-body">
           <div class="snippet-heading">
             <div class="snippet-topic">
@@ -860,12 +1366,21 @@
             </div>
             <span class="new-pill">✦ New</span>
           </div>
-          <div class="snippet-line">
-            <strong>No, I have to write the lesson now.</strong>
-            <div class="kannada-script">ಇಲ್ಲ, ನಾನು ಈಗ ಪಾಠ ಬರೆಯಬೇಕು.</div>
-            <span>Illa, naanu eega paatha bareybeku.</span>
-          </div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-16/conversation-1-06.svg" alt="No, I have to write the lesson now." loading="lazy" />
+        <div class="practice-panel">
+          <div class="sentence-panel">
+            <div class="snippet-line">
+              <strong>No, I have to write the lesson now.</strong>
+              <div class="kannada-script">ಇಲ್ಲ, ನಾನು ಈಗ ಪಾಠ ಬರೆಯಬೇಕು.</div>
+              <span>Illa, naanu eega paatha bareybeku.</span>
+            </div>
           <div class="original-roman">Original PDF: oodbeeku.</div>
+          </div>
+          <div class="practice-panel-top">
+            <div class="practice-panel-title"><span>Practice the sentence above</span>Listen first, then say it in Kannada<small>Use the orange button when you are ready.</small></div>
+            <div class="card-voice-picker" data-voice-picker><span>Kannada voice</span><button class="voice-choice" type="button" data-voice-speaker="gokul" aria-pressed="false">Gokul</button><button class="voice-choice" type="button" data-voice-speaker="neha" aria-pressed="false">Neha</button><button class="voice-choice" type="button" data-voice-speaker="simran" aria-pressed="false">Simran</button><button class="voice-choice" type="button" data-voice-speaker="rohan" aria-pressed="false">Rohan</button><button class="voice-choice" type="button" data-voice-speaker="advait" aria-pressed="false">Advait</button><button class="voice-choice" type="button" data-voice-speaker="suhani" aria-pressed="false">Suhani</button><button class="voice-choice" type="button" data-voice-speaker="mani" aria-pressed="false">Mani</button><button class="voice-choice" type="button" data-voice-speaker="kavya" aria-pressed="false">Kavya</button></div>
+          </div>
           <div class="listen-row">
             <button class="speak-btn" type="button" data-lang="en-IN" data-speak="No, I have to write the lesson now."><span class="btn-icon">▶</span>Play English</button>
             <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಇಲ್ಲ, ನಾನು ಈಗ ಪಾಠ ಬರೆಯಬೇಕು."><span class="btn-icon">▶</span>Play Kannada</button>
@@ -873,10 +1388,10 @@
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/chapter-visuals/chapter-16/conversation-1-06.svg" alt="No, I have to write the lesson now." loading="lazy" />
       </article>
-    
-      <article class="snippet-card" data-scene-card data-scene-index="7">
+
+      <article class="snippet-card" data-scene-card data-chapter="16" data-conversation-id="1" data-scene-index="7">
+        <span class="completed-scene" data-completed-scene>✓ Completed</span>
         <div class="snippet-body">
           <div class="snippet-heading">
             <div class="snippet-topic">
@@ -885,12 +1400,21 @@
             </div>
             <span class="new-pill">✦ New</span>
           </div>
-          <div class="snippet-line">
-            <strong>No, you must read poetry new ; later on</strong>
-            <div class="kannada-script">ಇಲ್ಲ, ನೀವು ಹೊಸದಾಗಿ ಕಾವ್ಯವನ್ನು ಓದಬೇಕು; ಇಲ್ಲದಿದ್ದರೆ, ಅದು ನಿಮಗೆ ಅರ್ಥವಾಗುವುದಿಲ್ಲ.</div>
-            <span>Illa, neevu hosadagi kaavyavannu odbeku; illadiddare, neevu adannu odale illa embante.</span>
-          </div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-16/conversation-1-07.svg" alt="No, you must read poetry new ; later on" loading="lazy" />
+        <div class="practice-panel">
+          <div class="sentence-panel">
+            <div class="snippet-line">
+              <strong>No, you must read poetry new ; later on</strong>
+              <div class="kannada-script">ಇಲ್ಲ, ನೀವು ಹೊಸದಾಗಿ ಕಾವ್ಯವನ್ನು ಓದಬೇಕು; ಇಲ್ಲದಿದ್ದರೆ, ಅದು ನಿಮಗೆ ಅರ್ಥವಾಗುವುದಿಲ್ಲ.</div>
+              <span>Illa, neevu hosadagi kaavyavannu odbeku; illadiddare, neevu adannu odale illa embante.</span>
+            </div>
           <div class="original-roman">Original PDF: ida, naanu iiga paatha bariibeeku.</div>
+          </div>
+          <div class="practice-panel-top">
+            <div class="practice-panel-title"><span>Practice the sentence above</span>Listen first, then say it in Kannada<small>Use the orange button when you are ready.</small></div>
+            <div class="card-voice-picker" data-voice-picker><span>Kannada voice</span><button class="voice-choice" type="button" data-voice-speaker="gokul" aria-pressed="false">Gokul</button><button class="voice-choice" type="button" data-voice-speaker="neha" aria-pressed="false">Neha</button><button class="voice-choice" type="button" data-voice-speaker="simran" aria-pressed="false">Simran</button><button class="voice-choice" type="button" data-voice-speaker="rohan" aria-pressed="false">Rohan</button><button class="voice-choice" type="button" data-voice-speaker="advait" aria-pressed="false">Advait</button><button class="voice-choice" type="button" data-voice-speaker="suhani" aria-pressed="false">Suhani</button><button class="voice-choice" type="button" data-voice-speaker="mani" aria-pressed="false">Mani</button><button class="voice-choice" type="button" data-voice-speaker="kavya" aria-pressed="false">Kavya</button></div>
+          </div>
           <div class="listen-row">
             <button class="speak-btn" type="button" data-lang="en-IN" data-speak="No, you must read poetry new ; later on"><span class="btn-icon">▶</span>Play English</button>
             <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಇಲ್ಲ, ನೀವು ಹೊಸದಾಗಿ ಕಾವ್ಯವನ್ನು ಓದಬೇಕು; ಇಲ್ಲದಿದ್ದರೆ, ಅದು ನಿಮಗೆ ಅರ್ಥವಾಗುವುದಿಲ್ಲ."><span class="btn-icon">▶</span>Play Kannada</button>
@@ -898,10 +1422,10 @@
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/chapter-visuals/chapter-16/conversation-1-07.svg" alt="No, you must read poetry new ; later on" loading="lazy" />
       </article>
-    
-      <article class="snippet-card" data-scene-card data-scene-index="8">
+
+      <article class="snippet-card" data-scene-card data-chapter="16" data-conversation-id="1" data-scene-index="8">
+        <span class="completed-scene" data-completed-scene>✓ Completed</span>
         <div class="snippet-body">
           <div class="snippet-heading">
             <div class="snippet-topic">
@@ -910,12 +1434,21 @@
             </div>
             <span class="new-pill">✦ New</span>
           </div>
-          <div class="snippet-line">
-            <strong>you may write the lesson.</strong>
-            <div class="kannada-script">ನೀವು ಪಾಠವನ್ನು ಬರೆಯಬಹುದು.</div>
-            <span>Neevu paathavannu bareyabahudu.</span>
-          </div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-16/conversation-1-08.svg" alt="you may write the lesson." loading="lazy" />
+        <div class="practice-panel">
+          <div class="sentence-panel">
+            <div class="snippet-line">
+              <strong>you may write the lesson.</strong>
+              <div class="kannada-script">ನೀವು ಪಾಠವನ್ನು ಬರೆಯಬಹುದು.</div>
+              <span>Neevu paathavannu bareyabahudu.</span>
+            </div>
           <div class="original-roman">Original PDF: bee&lt;ja, niinu iiga padya</div>
+          </div>
+          <div class="practice-panel-top">
+            <div class="practice-panel-title"><span>Practice the sentence above</span>Listen first, then say it in Kannada<small>Use the orange button when you are ready.</small></div>
+            <div class="card-voice-picker" data-voice-picker><span>Kannada voice</span><button class="voice-choice" type="button" data-voice-speaker="gokul" aria-pressed="false">Gokul</button><button class="voice-choice" type="button" data-voice-speaker="neha" aria-pressed="false">Neha</button><button class="voice-choice" type="button" data-voice-speaker="simran" aria-pressed="false">Simran</button><button class="voice-choice" type="button" data-voice-speaker="rohan" aria-pressed="false">Rohan</button><button class="voice-choice" type="button" data-voice-speaker="advait" aria-pressed="false">Advait</button><button class="voice-choice" type="button" data-voice-speaker="suhani" aria-pressed="false">Suhani</button><button class="voice-choice" type="button" data-voice-speaker="mani" aria-pressed="false">Mani</button><button class="voice-choice" type="button" data-voice-speaker="kavya" aria-pressed="false">Kavya</button></div>
+          </div>
           <div class="listen-row">
             <button class="speak-btn" type="button" data-lang="en-IN" data-speak="you may write the lesson."><span class="btn-icon">▶</span>Play English</button>
             <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನೀವು ಪಾಠವನ್ನು ಬರೆಯಬಹುದು."><span class="btn-icon">▶</span>Play Kannada</button>
@@ -923,10 +1456,10 @@
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/chapter-visuals/chapter-16/conversation-1-08.svg" alt="you may write the lesson." loading="lazy" />
       </article>
-    
-      <article class="snippet-card" data-scene-card data-scene-index="9">
+
+      <article class="snippet-card" data-scene-card data-chapter="16" data-conversation-id="1" data-scene-index="9">
+        <span class="completed-scene" data-completed-scene>✓ Completed</span>
         <div class="snippet-body">
           <div class="snippet-heading">
             <div class="snippet-topic">
@@ -935,12 +1468,21 @@
             </div>
             <span class="new-pill">✦ New</span>
           </div>
-          <div class="snippet-line">
-            <strong>Goodness. I just cannot bear the sight of</strong>
-            <div class="kannada-script">ಒಳ್ಳೆಯದು. ನನಗೆ ಅದನ್ನು ನೋಡಲೂ ಸಾಧ್ಯವಾಗುತ್ತಿಲ್ಲ.</div>
-            <span>OLLeyadu. Nanage adannu nodalu saadhyaagilla.</span>
-          </div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-16/conversation-1-09.svg" alt="Goodness. I just cannot bear the sight of" loading="lazy" />
+        <div class="practice-panel">
+          <div class="sentence-panel">
+            <div class="snippet-line">
+              <strong>Goodness. I just cannot bear the sight of</strong>
+              <div class="kannada-script">ಒಳ್ಳೆಯದು. ನನಗೆ ಅದನ್ನು ನೋಡಲೂ ಸಾಧ್ಯವಾಗುತ್ತಿಲ್ಲ.</div>
+              <span>OLLeyadu. Nanage adannu nodalu saadhyaagilla.</span>
+            </div>
           <div class="original-roman">Original PDF: oodleebeeku ; aameele paatha</div>
+          </div>
+          <div class="practice-panel-top">
+            <div class="practice-panel-title"><span>Practice the sentence above</span>Listen first, then say it in Kannada<small>Use the orange button when you are ready.</small></div>
+            <div class="card-voice-picker" data-voice-picker><span>Kannada voice</span><button class="voice-choice" type="button" data-voice-speaker="gokul" aria-pressed="false">Gokul</button><button class="voice-choice" type="button" data-voice-speaker="neha" aria-pressed="false">Neha</button><button class="voice-choice" type="button" data-voice-speaker="simran" aria-pressed="false">Simran</button><button class="voice-choice" type="button" data-voice-speaker="rohan" aria-pressed="false">Rohan</button><button class="voice-choice" type="button" data-voice-speaker="advait" aria-pressed="false">Advait</button><button class="voice-choice" type="button" data-voice-speaker="suhani" aria-pressed="false">Suhani</button><button class="voice-choice" type="button" data-voice-speaker="mani" aria-pressed="false">Mani</button><button class="voice-choice" type="button" data-voice-speaker="kavya" aria-pressed="false">Kavya</button></div>
+          </div>
           <div class="listen-row">
             <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Goodness. I just cannot bear the sight of"><span class="btn-icon">▶</span>Play English</button>
             <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಒಳ್ಳೆಯದು. ನನಗೆ ಅದನ್ನು ನೋಡಲೂ ಸಾಧ್ಯವಾಗುತ್ತಿಲ್ಲ."><span class="btn-icon">▶</span>Play Kannada</button>
@@ -948,10 +1490,10 @@
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/chapter-visuals/chapter-16/conversation-1-09.svg" alt="Goodness. I just cannot bear the sight of" loading="lazy" />
       </article>
-    
-      <article class="snippet-card" data-scene-card data-scene-index="10">
+
+      <article class="snippet-card" data-scene-card data-chapter="16" data-conversation-id="1" data-scene-index="10">
+        <span class="completed-scene" data-completed-scene>✓ Completed</span>
         <div class="snippet-body">
           <div class="snippet-heading">
             <div class="snippet-topic">
@@ -960,12 +1502,21 @@
             </div>
             <span class="new-pill">✦ New</span>
           </div>
-          <div class="snippet-line">
-            <strong>poetry.</strong>
-            <div class="kannada-script">ಕವನ.</div>
-            <span>Kavana.</span>
-          </div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-16/conversation-1-10.svg" alt="poetry." loading="lazy" />
+        <div class="practice-panel">
+          <div class="sentence-panel">
+            <div class="snippet-line">
+              <strong>poetry.</strong>
+              <div class="kannada-script">ಕವನ.</div>
+              <span>Kavana.</span>
+            </div>
           <div class="original-roman">Original PDF: bariiboodu.</div>
+          </div>
+          <div class="practice-panel-top">
+            <div class="practice-panel-title"><span>Practice the sentence above</span>Listen first, then say it in Kannada<small>Use the orange button when you are ready.</small></div>
+            <div class="card-voice-picker" data-voice-picker><span>Kannada voice</span><button class="voice-choice" type="button" data-voice-speaker="gokul" aria-pressed="false">Gokul</button><button class="voice-choice" type="button" data-voice-speaker="neha" aria-pressed="false">Neha</button><button class="voice-choice" type="button" data-voice-speaker="simran" aria-pressed="false">Simran</button><button class="voice-choice" type="button" data-voice-speaker="rohan" aria-pressed="false">Rohan</button><button class="voice-choice" type="button" data-voice-speaker="advait" aria-pressed="false">Advait</button><button class="voice-choice" type="button" data-voice-speaker="suhani" aria-pressed="false">Suhani</button><button class="voice-choice" type="button" data-voice-speaker="mani" aria-pressed="false">Mani</button><button class="voice-choice" type="button" data-voice-speaker="kavya" aria-pressed="false">Kavya</button></div>
+          </div>
           <div class="listen-row">
             <button class="speak-btn" type="button" data-lang="en-IN" data-speak="poetry."><span class="btn-icon">▶</span>Play English</button>
             <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಕವನ."><span class="btn-icon">▶</span>Play Kannada</button>
@@ -973,10 +1524,10 @@
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/chapter-visuals/chapter-16/conversation-1-10.svg" alt="poetry." loading="lazy" />
       </article>
-    
-      <article class="snippet-card" data-scene-card data-scene-index="11">
+
+      <article class="snippet-card" data-scene-card data-chapter="16" data-conversation-id="1" data-scene-index="11">
+        <span class="completed-scene" data-completed-scene>✓ Completed</span>
         <div class="snippet-body">
           <div class="snippet-heading">
             <div class="snippet-topic">
@@ -985,12 +1536,21 @@
             </div>
             <span class="new-pill">✦ New</span>
           </div>
-          <div class="snippet-line">
-            <strong>Should I go to the market ?</strong>
-            <div class="kannada-script">ನಾನು ಮಾರುಕಟ್ಟೆಗೆ ಹೋಗಲ?</div>
-            <span>Naanu maarukatteyge hogale?</span>
-          </div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-16/conversation-1-11.svg" alt="Should I go to the market ?" loading="lazy" />
+        <div class="practice-panel">
+          <div class="sentence-panel">
+            <div class="snippet-line">
+              <strong>Should I go to the market ?</strong>
+              <div class="kannada-script">ನಾನು ಮಾರುಕಟ್ಟೆಗೆ ಹೋಗಲ?</div>
+              <span>Naanu maarukatteyge hogale?</span>
+            </div>
           <div class="original-roman">Original PDF: ayyoo, nange padya kancjre</div>
+          </div>
+          <div class="practice-panel-top">
+            <div class="practice-panel-title"><span>Practice the sentence above</span>Listen first, then say it in Kannada<small>Use the orange button when you are ready.</small></div>
+            <div class="card-voice-picker" data-voice-picker><span>Kannada voice</span><button class="voice-choice" type="button" data-voice-speaker="gokul" aria-pressed="false">Gokul</button><button class="voice-choice" type="button" data-voice-speaker="neha" aria-pressed="false">Neha</button><button class="voice-choice" type="button" data-voice-speaker="simran" aria-pressed="false">Simran</button><button class="voice-choice" type="button" data-voice-speaker="rohan" aria-pressed="false">Rohan</button><button class="voice-choice" type="button" data-voice-speaker="advait" aria-pressed="false">Advait</button><button class="voice-choice" type="button" data-voice-speaker="suhani" aria-pressed="false">Suhani</button><button class="voice-choice" type="button" data-voice-speaker="mani" aria-pressed="false">Mani</button><button class="voice-choice" type="button" data-voice-speaker="kavya" aria-pressed="false">Kavya</button></div>
+          </div>
           <div class="listen-row">
             <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Should I go to the market ?"><span class="btn-icon">▶</span>Play English</button>
             <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನಾನು ಮಾರುಕಟ್ಟೆಗೆ ಹೋಗಲ?"><span class="btn-icon">▶</span>Play Kannada</button>
@@ -998,10 +1558,10 @@
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/chapter-visuals/chapter-16/conversation-1-11.svg" alt="Should I go to the market ?" loading="lazy" />
       </article>
-    
-      <article class="snippet-card" data-scene-card data-scene-index="12">
+
+      <article class="snippet-card" data-scene-card data-chapter="16" data-conversation-id="1" data-scene-index="12">
+        <span class="completed-scene" data-completed-scene>✓ Completed</span>
         <div class="snippet-body">
           <div class="snippet-heading">
             <div class="snippet-topic">
@@ -1010,12 +1570,21 @@
             </div>
             <span class="new-pill">✦ New</span>
           </div>
-          <div class="snippet-line">
-            <strong>Yes, you must go to the market to-day.</strong>
-            <div class="kannada-script">ಹೌದು, ನೀವು ಇಂದು ಮಾರುಕಟ್ಟೆಗೆ ಹೋಗಬೇಕು.</div>
-            <span>Howdu, neevu indu maarukatte-ge hogabeku.</span>
-          </div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-16/conversation-1-12.svg" alt="Yes, you must go to the market to-day." loading="lazy" />
+        <div class="practice-panel">
+          <div class="sentence-panel">
+            <div class="snippet-line">
+              <strong>Yes, you must go to the market to-day.</strong>
+              <div class="kannada-script">ಹೌದು, ನೀವು ಇಂದು ಮಾರುಕಟ್ಟೆಗೆ ಹೋಗಬೇಕು.</div>
+              <span>Howdu, neevu indu maarukatte-ge hogabeku.</span>
+            </div>
           <div class="original-roman">Original PDF: aagalla.</div>
+          </div>
+          <div class="practice-panel-top">
+            <div class="practice-panel-title"><span>Practice the sentence above</span>Listen first, then say it in Kannada<small>Use the orange button when you are ready.</small></div>
+            <div class="card-voice-picker" data-voice-picker><span>Kannada voice</span><button class="voice-choice" type="button" data-voice-speaker="gokul" aria-pressed="false">Gokul</button><button class="voice-choice" type="button" data-voice-speaker="neha" aria-pressed="false">Neha</button><button class="voice-choice" type="button" data-voice-speaker="simran" aria-pressed="false">Simran</button><button class="voice-choice" type="button" data-voice-speaker="rohan" aria-pressed="false">Rohan</button><button class="voice-choice" type="button" data-voice-speaker="advait" aria-pressed="false">Advait</button><button class="voice-choice" type="button" data-voice-speaker="suhani" aria-pressed="false">Suhani</button><button class="voice-choice" type="button" data-voice-speaker="mani" aria-pressed="false">Mani</button><button class="voice-choice" type="button" data-voice-speaker="kavya" aria-pressed="false">Kavya</button></div>
+          </div>
           <div class="listen-row">
             <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Yes, you must go to the market to-day."><span class="btn-icon">▶</span>Play English</button>
             <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಹೌದು, ನೀವು ಇಂದು ಮಾರುಕಟ್ಟೆಗೆ ಹೋಗಬೇಕು."><span class="btn-icon">▶</span>Play Kannada</button>
@@ -1023,10 +1592,10 @@
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/chapter-visuals/chapter-16/conversation-1-12.svg" alt="Yes, you must go to the market to-day." loading="lazy" />
       </article>
-    
-      <article class="snippet-card" data-scene-card data-scene-index="13">
+
+      <article class="snippet-card" data-scene-card data-chapter="16" data-conversation-id="2" data-scene-index="13">
+        <span class="completed-scene" data-completed-scene>✓ Completed</span>
         <div class="snippet-body">
           <div class="snippet-heading">
             <div class="snippet-topic">
@@ -1035,12 +1604,21 @@
             </div>
             <span class="new-pill">✦ New</span>
           </div>
-          <div class="snippet-line">
-            <strong>What should I bring from there ?</strong>
-            <div class="kannada-script">ಅಲ್ಲಿಂದ ನಾನು ಏನು ತರಬೇಕು?</div>
-            <span>Allinda naanu enu tarabeku?</span>
-          </div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-16/conversation-2-01.svg" alt="What should I bring from there ?" loading="lazy" />
+        <div class="practice-panel">
+          <div class="sentence-panel">
+            <div class="snippet-line">
+              <strong>What should I bring from there ?</strong>
+              <div class="kannada-script">ಅಲ್ಲಿಂದ ನಾನು ಏನು ತರಬೇಕು?</div>
+              <span>Allinda naanu enu tarabeku?</span>
+            </div>
           <div class="original-roman">Original PDF: naanu maarkettige hoogbeekaa ?</div>
+          </div>
+          <div class="practice-panel-top">
+            <div class="practice-panel-title"><span>Practice the sentence above</span>Listen first, then say it in Kannada<small>Use the orange button when you are ready.</small></div>
+            <div class="card-voice-picker" data-voice-picker><span>Kannada voice</span><button class="voice-choice" type="button" data-voice-speaker="gokul" aria-pressed="false">Gokul</button><button class="voice-choice" type="button" data-voice-speaker="neha" aria-pressed="false">Neha</button><button class="voice-choice" type="button" data-voice-speaker="simran" aria-pressed="false">Simran</button><button class="voice-choice" type="button" data-voice-speaker="rohan" aria-pressed="false">Rohan</button><button class="voice-choice" type="button" data-voice-speaker="advait" aria-pressed="false">Advait</button><button class="voice-choice" type="button" data-voice-speaker="suhani" aria-pressed="false">Suhani</button><button class="voice-choice" type="button" data-voice-speaker="mani" aria-pressed="false">Mani</button><button class="voice-choice" type="button" data-voice-speaker="kavya" aria-pressed="false">Kavya</button></div>
+          </div>
           <div class="listen-row">
             <button class="speak-btn" type="button" data-lang="en-IN" data-speak="What should I bring from there ?"><span class="btn-icon">▶</span>Play English</button>
             <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಅಲ್ಲಿಂದ ನಾನು ಏನು ತರಬೇಕು?"><span class="btn-icon">▶</span>Play Kannada</button>
@@ -1048,10 +1626,10 @@
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/chapter-visuals/chapter-16/conversation-2-01.svg" alt="What should I bring from there ?" loading="lazy" />
       </article>
-    
-      <article class="snippet-card" data-scene-card data-scene-index="14">
+
+      <article class="snippet-card" data-scene-card data-chapter="16" data-conversation-id="2" data-scene-index="14">
+        <span class="completed-scene" data-completed-scene>✓ Completed</span>
         <div class="snippet-body">
           <div class="snippet-heading">
             <div class="snippet-topic">
@@ -1060,12 +1638,21 @@
             </div>
             <span class="new-pill">✦ New</span>
           </div>
-          <div class="snippet-line">
-            <strong>Vegetables and flowers should be brought.</strong>
-            <div class="kannada-script">ತರಕಾರಿ ಮತ್ತು ಹೂವುಗಳನ್ನು ತರಬೇಕು.</div>
-            <span>Tarakaari mattu hoovugalannu tarabeku.</span>
-          </div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-16/conversation-2-02.svg" alt="Vegetables and flowers should be brought." loading="lazy" />
+        <div class="practice-panel">
+          <div class="sentence-panel">
+            <div class="snippet-line">
+              <strong>Vegetables and flowers should be brought.</strong>
+              <div class="kannada-script">ತರಕಾರಿ ಮತ್ತು ಹೂವುಗಳನ್ನು ತರಬೇಕು.</div>
+              <span>Tarakaari mattu hoovugalannu tarabeku.</span>
+            </div>
           <div class="original-roman">Original PDF: haudu, ivatlu niivu hoogleebeeku.</div>
+          </div>
+          <div class="practice-panel-top">
+            <div class="practice-panel-title"><span>Practice the sentence above</span>Listen first, then say it in Kannada<small>Use the orange button when you are ready.</small></div>
+            <div class="card-voice-picker" data-voice-picker><span>Kannada voice</span><button class="voice-choice" type="button" data-voice-speaker="gokul" aria-pressed="false">Gokul</button><button class="voice-choice" type="button" data-voice-speaker="neha" aria-pressed="false">Neha</button><button class="voice-choice" type="button" data-voice-speaker="simran" aria-pressed="false">Simran</button><button class="voice-choice" type="button" data-voice-speaker="rohan" aria-pressed="false">Rohan</button><button class="voice-choice" type="button" data-voice-speaker="advait" aria-pressed="false">Advait</button><button class="voice-choice" type="button" data-voice-speaker="suhani" aria-pressed="false">Suhani</button><button class="voice-choice" type="button" data-voice-speaker="mani" aria-pressed="false">Mani</button><button class="voice-choice" type="button" data-voice-speaker="kavya" aria-pressed="false">Kavya</button></div>
+          </div>
           <div class="listen-row">
             <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Vegetables and flowers should be brought."><span class="btn-icon">▶</span>Play English</button>
             <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ತರಕಾರಿ ಮತ್ತು ಹೂವುಗಳನ್ನು ತರಬೇಕು."><span class="btn-icon">▶</span>Play Kannada</button>
@@ -1073,10 +1660,10 @@
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/chapter-visuals/chapter-16/conversation-2-02.svg" alt="Vegetables and flowers should be brought." loading="lazy" />
       </article>
-    
-      <article class="snippet-card" data-scene-card data-scene-index="15">
+
+      <article class="snippet-card" data-scene-card data-chapter="16" data-conversation-id="2" data-scene-index="15">
+        <span class="completed-scene" data-completed-scene>✓ Completed</span>
         <div class="snippet-body">
           <div class="snippet-heading">
             <div class="snippet-topic">
@@ -1085,12 +1672,21 @@
             </div>
             <span class="new-pill">✦ New</span>
           </div>
-          <div class="snippet-line">
-            <strong>Should I get sweets ?</strong>
-            <div class="kannada-script">ಸಿಹಿತಿಂಡಿಗಳು ತೆಗೆದುಕೊಳ್ಳಲ?</div>
-            <span>Sihitidigalu tegedukollale?</span>
-          </div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-16/conversation-2-03.svg" alt="Should I get sweets ?" loading="lazy" />
+        <div class="practice-panel">
+          <div class="sentence-panel">
+            <div class="snippet-line">
+              <strong>Should I get sweets ?</strong>
+              <div class="kannada-script">ಸಿಹಿತಿಂಡಿಗಳು ತೆಗೆದುಕೊಳ್ಳಲ?</div>
+              <span>Sihitidigalu tegedukollale?</span>
+            </div>
           <div class="original-roman">Original PDF: allinda een tarbeeku ?</div>
+          </div>
+          <div class="practice-panel-top">
+            <div class="practice-panel-title"><span>Practice the sentence above</span>Listen first, then say it in Kannada<small>Use the orange button when you are ready.</small></div>
+            <div class="card-voice-picker" data-voice-picker><span>Kannada voice</span><button class="voice-choice" type="button" data-voice-speaker="gokul" aria-pressed="false">Gokul</button><button class="voice-choice" type="button" data-voice-speaker="neha" aria-pressed="false">Neha</button><button class="voice-choice" type="button" data-voice-speaker="simran" aria-pressed="false">Simran</button><button class="voice-choice" type="button" data-voice-speaker="rohan" aria-pressed="false">Rohan</button><button class="voice-choice" type="button" data-voice-speaker="advait" aria-pressed="false">Advait</button><button class="voice-choice" type="button" data-voice-speaker="suhani" aria-pressed="false">Suhani</button><button class="voice-choice" type="button" data-voice-speaker="mani" aria-pressed="false">Mani</button><button class="voice-choice" type="button" data-voice-speaker="kavya" aria-pressed="false">Kavya</button></div>
+          </div>
           <div class="listen-row">
             <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Should I get sweets ?"><span class="btn-icon">▶</span>Play English</button>
             <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಸಿಹಿತಿಂಡಿಗಳು ತೆಗೆದುಕೊಳ್ಳಲ?"><span class="btn-icon">▶</span>Play Kannada</button>
@@ -1098,10 +1694,10 @@
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/chapter-visuals/chapter-16/conversation-2-03.svg" alt="Should I get sweets ?" loading="lazy" />
       </article>
-    
-      <article class="snippet-card" data-scene-card data-scene-index="16">
+
+      <article class="snippet-card" data-scene-card data-chapter="16" data-conversation-id="2" data-scene-index="16">
+        <span class="completed-scene" data-completed-scene>✓ Completed</span>
         <div class="snippet-body">
           <div class="snippet-heading">
             <div class="snippet-topic">
@@ -1110,12 +1706,21 @@
             </div>
             <span class="new-pill">✦ New</span>
           </div>
-          <div class="snippet-line">
-            <strong>Don’t bring sweets, 1 hate them.</strong>
-            <div class="kannada-script">ಸಿಹಿತಿಂಡಿಗಳನ್ನು ತರಬೇಡಿ, ಅವು ನನಗೆ ತುಂಬಾ ಇಷ್ಟವಿಲ್ಲ.</div>
-            <span>Sihiti-ndigalannu tarabetti-di, avu nanage tumba ishtavilla.</span>
-          </div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-16/conversation-2-04.svg" alt="Don’t bring sweets, 1 hate them." loading="lazy" />
+        <div class="practice-panel">
+          <div class="sentence-panel">
+            <div class="snippet-line">
+              <strong>Don’t bring sweets, 1 hate them.</strong>
+              <div class="kannada-script">ಸಿಹಿತಿಂಡಿಗಳನ್ನು ತರಬೇಡಿ, ಅವು ನನಗೆ ತುಂಬಾ ಇಷ್ಟವಿಲ್ಲ.</div>
+              <span>Sihiti-ndigalannu tarabetti-di, avu nanage tumba ishtavilla.</span>
+            </div>
           <div class="original-roman">Original PDF: tarkaari tarbeeku, huu harabeeku.</div>
+          </div>
+          <div class="practice-panel-top">
+            <div class="practice-panel-title"><span>Practice the sentence above</span>Listen first, then say it in Kannada<small>Use the orange button when you are ready.</small></div>
+            <div class="card-voice-picker" data-voice-picker><span>Kannada voice</span><button class="voice-choice" type="button" data-voice-speaker="gokul" aria-pressed="false">Gokul</button><button class="voice-choice" type="button" data-voice-speaker="neha" aria-pressed="false">Neha</button><button class="voice-choice" type="button" data-voice-speaker="simran" aria-pressed="false">Simran</button><button class="voice-choice" type="button" data-voice-speaker="rohan" aria-pressed="false">Rohan</button><button class="voice-choice" type="button" data-voice-speaker="advait" aria-pressed="false">Advait</button><button class="voice-choice" type="button" data-voice-speaker="suhani" aria-pressed="false">Suhani</button><button class="voice-choice" type="button" data-voice-speaker="mani" aria-pressed="false">Mani</button><button class="voice-choice" type="button" data-voice-speaker="kavya" aria-pressed="false">Kavya</button></div>
+          </div>
           <div class="listen-row">
             <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Don’t bring sweets, 1 hate them."><span class="btn-icon">▶</span>Play English</button>
             <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಸಿಹಿತಿಂಡಿಗಳನ್ನು ತರಬೇಡಿ, ಅವು ನನಗೆ ತುಂಬಾ ಇಷ್ಟವಿಲ್ಲ."><span class="btn-icon">▶</span>Play Kannada</button>
@@ -1123,10 +1728,10 @@
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/chapter-visuals/chapter-16/conversation-2-04.svg" alt="Don’t bring sweets, 1 hate them." loading="lazy" />
       </article>
-    
-      <article class="snippet-card" data-scene-card data-scene-index="17">
+
+      <article class="snippet-card" data-scene-card data-chapter="16" data-conversation-id="2" data-scene-index="17">
+        <span class="completed-scene" data-completed-scene>✓ Completed</span>
         <div class="snippet-body">
           <div class="snippet-heading">
             <div class="snippet-topic">
@@ -1135,12 +1740,21 @@
             </div>
             <span class="new-pill">✦ New</span>
           </div>
-          <div class="snippet-line">
-            <strong>May I bring fruits ?</strong>
-            <div class="kannada-script">ನಾನು ಹಣ್ಣುಗಳನ್ನು ತರಬಹುದೇ?</div>
-            <span>Naanu hannugalannu tarabahude?</span>
-          </div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-16/conversation-2-05.svg" alt="May I bring fruits ?" loading="lazy" />
+        <div class="practice-panel">
+          <div class="sentence-panel">
+            <div class="snippet-line">
+              <strong>May I bring fruits ?</strong>
+              <div class="kannada-script">ನಾನು ಹಣ್ಣುಗಳನ್ನು ತರಬಹುದೇ?</div>
+              <span>Naanu hannugalannu tarabahude?</span>
+            </div>
           <div class="original-roman">Original PDF: &#x27;mithaayi tarbeekaa ?</div>
+          </div>
+          <div class="practice-panel-top">
+            <div class="practice-panel-title"><span>Practice the sentence above</span>Listen first, then say it in Kannada<small>Use the orange button when you are ready.</small></div>
+            <div class="card-voice-picker" data-voice-picker><span>Kannada voice</span><button class="voice-choice" type="button" data-voice-speaker="gokul" aria-pressed="false">Gokul</button><button class="voice-choice" type="button" data-voice-speaker="neha" aria-pressed="false">Neha</button><button class="voice-choice" type="button" data-voice-speaker="simran" aria-pressed="false">Simran</button><button class="voice-choice" type="button" data-voice-speaker="rohan" aria-pressed="false">Rohan</button><button class="voice-choice" type="button" data-voice-speaker="advait" aria-pressed="false">Advait</button><button class="voice-choice" type="button" data-voice-speaker="suhani" aria-pressed="false">Suhani</button><button class="voice-choice" type="button" data-voice-speaker="mani" aria-pressed="false">Mani</button><button class="voice-choice" type="button" data-voice-speaker="kavya" aria-pressed="false">Kavya</button></div>
+          </div>
           <div class="listen-row">
             <button class="speak-btn" type="button" data-lang="en-IN" data-speak="May I bring fruits ?"><span class="btn-icon">▶</span>Play English</button>
             <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನಾನು ಹಣ್ಣುಗಳನ್ನು ತರಬಹುದೇ?"><span class="btn-icon">▶</span>Play Kannada</button>
@@ -1148,10 +1762,10 @@
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/chapter-visuals/chapter-16/conversation-2-05.svg" alt="May I bring fruits ?" loading="lazy" />
       </article>
-    
-      <article class="snippet-card" data-scene-card data-scene-index="18">
+
+      <article class="snippet-card" data-scene-card data-chapter="16" data-conversation-id="2" data-scene-index="18">
+        <span class="completed-scene" data-completed-scene>✓ Completed</span>
         <div class="snippet-body">
           <div class="snippet-heading">
             <div class="snippet-topic">
@@ -1160,12 +1774,21 @@
             </div>
             <span class="new-pill">✦ New</span>
           </div>
-          <div class="snippet-line">
-            <strong>Oh, yes. You may bring fruits. On the</strong>
-            <div class="kannada-script">ಓಹ್, ಹೌದು. ನೀವು ಹಣ್ಣುಗಳನ್ನು ತರಬಹುದು. ಮೇಲೆ</div>
-            <span>Oh, houdu. Neevu hannugalannu tarabahudu. Mele</span>
-          </div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-16/conversation-2-06.svg" alt="Oh, yes. You may bring fruits. On the" loading="lazy" />
+        <div class="practice-panel">
+          <div class="sentence-panel">
+            <div class="snippet-line">
+              <strong>Oh, yes. You may bring fruits. On the</strong>
+              <div class="kannada-script">ಓಹ್, ಹೌದು. ನೀವು ಹಣ್ಣುಗಳನ್ನು ತರಬಹುದು. ಮೇಲೆ</div>
+              <span>Oh, houdu. Neevu hannugalannu tarabahudu. Mele</span>
+            </div>
           <div class="original-roman">Original PDF: mithaayi tarbeetfi, adanna kan&lt;Jre</div>
+          </div>
+          <div class="practice-panel-top">
+            <div class="practice-panel-title"><span>Practice the sentence above</span>Listen first, then say it in Kannada<small>Use the orange button when you are ready.</small></div>
+            <div class="card-voice-picker" data-voice-picker><span>Kannada voice</span><button class="voice-choice" type="button" data-voice-speaker="gokul" aria-pressed="false">Gokul</button><button class="voice-choice" type="button" data-voice-speaker="neha" aria-pressed="false">Neha</button><button class="voice-choice" type="button" data-voice-speaker="simran" aria-pressed="false">Simran</button><button class="voice-choice" type="button" data-voice-speaker="rohan" aria-pressed="false">Rohan</button><button class="voice-choice" type="button" data-voice-speaker="advait" aria-pressed="false">Advait</button><button class="voice-choice" type="button" data-voice-speaker="suhani" aria-pressed="false">Suhani</button><button class="voice-choice" type="button" data-voice-speaker="mani" aria-pressed="false">Mani</button><button class="voice-choice" type="button" data-voice-speaker="kavya" aria-pressed="false">Kavya</button></div>
+          </div>
           <div class="listen-row">
             <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Oh, yes. You may bring fruits. On the"><span class="btn-icon">▶</span>Play English</button>
             <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಓಹ್, ಹೌದು. ನೀವು ಹಣ್ಣುಗಳನ್ನು ತರಬಹುದು. ಮೇಲೆ"><span class="btn-icon">▶</span>Play Kannada</button>
@@ -1173,10 +1796,10 @@
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/chapter-visuals/chapter-16/conversation-2-06.svg" alt="Oh, yes. You may bring fruits. On the" loading="lazy" />
       </article>
-    
-      <article class="snippet-card" data-scene-card data-scene-index="19">
+
+      <article class="snippet-card" data-scene-card data-chapter="16" data-conversation-id="2" data-scene-index="19">
+        <span class="completed-scene" data-completed-scene>✓ Completed</span>
         <div class="snippet-body">
           <div class="snippet-heading">
             <div class="snippet-topic">
@@ -1185,12 +1808,21 @@
             </div>
             <span class="new-pill">✦ New</span>
           </div>
-          <div class="snippet-line">
-            <strong>way you should handover the clothes to</strong>
-            <div class="kannada-script">ನೀವು ಬಟ್ಟೆಗಳನ್ನು ಎಲ್ಲಿಗೆ ಹಸ್ತಾಂತರಿಸಬೇಕು?</div>
-            <span>Neevu battegalannu ellige hastantarisabeku?</span>
-          </div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-16/conversation-2-07.svg" alt="way you should handover the clothes to" loading="lazy" />
+        <div class="practice-panel">
+          <div class="sentence-panel">
+            <div class="snippet-line">
+              <strong>way you should handover the clothes to</strong>
+              <div class="kannada-script">ನೀವು ಬಟ್ಟೆಗಳನ್ನು ಎಲ್ಲಿಗೆ ಹಸ್ತಾಂತರಿಸಬೇಕು?</div>
+              <span>Neevu battegalannu ellige hastantarisabeku?</span>
+            </div>
           <div class="original-roman">Original PDF: nange aagalla.</div>
+          </div>
+          <div class="practice-panel-top">
+            <div class="practice-panel-title"><span>Practice the sentence above</span>Listen first, then say it in Kannada<small>Use the orange button when you are ready.</small></div>
+            <div class="card-voice-picker" data-voice-picker><span>Kannada voice</span><button class="voice-choice" type="button" data-voice-speaker="gokul" aria-pressed="false">Gokul</button><button class="voice-choice" type="button" data-voice-speaker="neha" aria-pressed="false">Neha</button><button class="voice-choice" type="button" data-voice-speaker="simran" aria-pressed="false">Simran</button><button class="voice-choice" type="button" data-voice-speaker="rohan" aria-pressed="false">Rohan</button><button class="voice-choice" type="button" data-voice-speaker="advait" aria-pressed="false">Advait</button><button class="voice-choice" type="button" data-voice-speaker="suhani" aria-pressed="false">Suhani</button><button class="voice-choice" type="button" data-voice-speaker="mani" aria-pressed="false">Mani</button><button class="voice-choice" type="button" data-voice-speaker="kavya" aria-pressed="false">Kavya</button></div>
+          </div>
           <div class="listen-row">
             <button class="speak-btn" type="button" data-lang="en-IN" data-speak="way you should handover the clothes to"><span class="btn-icon">▶</span>Play English</button>
             <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನೀವು ಬಟ್ಟೆಗಳನ್ನು ಎಲ್ಲಿಗೆ ಹಸ್ತಾಂತರಿಸಬೇಕು?"><span class="btn-icon">▶</span>Play Kannada</button>
@@ -1198,10 +1830,10 @@
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/chapter-visuals/chapter-16/conversation-2-07.svg" alt="way you should handover the clothes to" loading="lazy" />
       </article>
-    
-      <article class="snippet-card" data-scene-card data-scene-index="20">
+
+      <article class="snippet-card" data-scene-card data-chapter="16" data-conversation-id="2" data-scene-index="20">
+        <span class="completed-scene" data-completed-scene>✓ Completed</span>
         <div class="snippet-body">
           <div class="snippet-heading">
             <div class="snippet-topic">
@@ -1210,12 +1842,21 @@
             </div>
             <span class="new-pill">✦ New</span>
           </div>
-          <div class="snippet-line">
-            <strong>the dhobi.</strong>
-            <div class="kannada-script">ಧೋಬಿ</div>
-            <span>Dhobi</span>
-          </div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-16/conversation-2-08.svg" alt="the dhobi." loading="lazy" />
+        <div class="practice-panel">
+          <div class="sentence-panel">
+            <div class="snippet-line">
+              <strong>the dhobi.</strong>
+              <div class="kannada-script">ಧೋಬಿ</div>
+              <span>Dhobi</span>
+            </div>
           <div class="original-roman">Original PDF: hannu tarabooda ?</div>
+          </div>
+          <div class="practice-panel-top">
+            <div class="practice-panel-title"><span>Practice the sentence above</span>Listen first, then say it in Kannada<small>Use the orange button when you are ready.</small></div>
+            <div class="card-voice-picker" data-voice-picker><span>Kannada voice</span><button class="voice-choice" type="button" data-voice-speaker="gokul" aria-pressed="false">Gokul</button><button class="voice-choice" type="button" data-voice-speaker="neha" aria-pressed="false">Neha</button><button class="voice-choice" type="button" data-voice-speaker="simran" aria-pressed="false">Simran</button><button class="voice-choice" type="button" data-voice-speaker="rohan" aria-pressed="false">Rohan</button><button class="voice-choice" type="button" data-voice-speaker="advait" aria-pressed="false">Advait</button><button class="voice-choice" type="button" data-voice-speaker="suhani" aria-pressed="false">Suhani</button><button class="voice-choice" type="button" data-voice-speaker="mani" aria-pressed="false">Mani</button><button class="voice-choice" type="button" data-voice-speaker="kavya" aria-pressed="false">Kavya</button></div>
+          </div>
           <div class="listen-row">
             <button class="speak-btn" type="button" data-lang="en-IN" data-speak="the dhobi."><span class="btn-icon">▶</span>Play English</button>
             <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಧೋಬಿ"><span class="btn-icon">▶</span>Play Kannada</button>
@@ -1223,10 +1864,10 @@
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/chapter-visuals/chapter-16/conversation-2-08.svg" alt="the dhobi." loading="lazy" />
       </article>
-    
-      <article class="snippet-card" data-scene-card data-scene-index="21">
+
+      <article class="snippet-card" data-scene-card data-chapter="16" data-conversation-id="2" data-scene-index="21">
+        <span class="completed-scene" data-completed-scene>✓ Completed</span>
         <div class="snippet-body">
           <div class="snippet-heading">
             <div class="snippet-topic">
@@ -1235,12 +1876,21 @@
             </div>
             <span class="new-pill">✦ New</span>
           </div>
-          <div class="snippet-line">
-            <strong>Ramu, you should wake up early in the</strong>
-            <div class="kannada-script">ರಾಮು, ನೀವು ಬೇಗ ಎಚ್ಚೆತ್ತುಕೊಳ್ಳಬೇಕು.</div>
-            <span>Ramu, neevu bega echetthukollabeku.</span>
-          </div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-16/conversation-2-09.svg" alt="Ramu, you should wake up early in the" loading="lazy" />
+        <div class="practice-panel">
+          <div class="sentence-panel">
+            <div class="snippet-line">
+              <strong>Ramu, you should wake up early in the</strong>
+              <div class="kannada-script">ರಾಮು, ನೀವು ಬೇಗ ಎಚ್ಚೆತ್ತುಕೊಳ್ಳಬೇಕು.</div>
+              <span>Ramu, neevu bega echetthukollabeku.</span>
+            </div>
           <div class="original-roman">Original PDF: oohoo, taraboodu ; haage</div>
+          </div>
+          <div class="practice-panel-top">
+            <div class="practice-panel-title"><span>Practice the sentence above</span>Listen first, then say it in Kannada<small>Use the orange button when you are ready.</small></div>
+            <div class="card-voice-picker" data-voice-picker><span>Kannada voice</span><button class="voice-choice" type="button" data-voice-speaker="gokul" aria-pressed="false">Gokul</button><button class="voice-choice" type="button" data-voice-speaker="neha" aria-pressed="false">Neha</button><button class="voice-choice" type="button" data-voice-speaker="simran" aria-pressed="false">Simran</button><button class="voice-choice" type="button" data-voice-speaker="rohan" aria-pressed="false">Rohan</button><button class="voice-choice" type="button" data-voice-speaker="advait" aria-pressed="false">Advait</button><button class="voice-choice" type="button" data-voice-speaker="suhani" aria-pressed="false">Suhani</button><button class="voice-choice" type="button" data-voice-speaker="mani" aria-pressed="false">Mani</button><button class="voice-choice" type="button" data-voice-speaker="kavya" aria-pressed="false">Kavya</button></div>
+          </div>
           <div class="listen-row">
             <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Ramu, you should wake up early in the"><span class="btn-icon">▶</span>Play English</button>
             <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ರಾಮು, ನೀವು ಬೇಗ ಎಚ್ಚೆತ್ತುಕೊಳ್ಳಬೇಕು."><span class="btn-icon">▶</span>Play Kannada</button>
@@ -1248,10 +1898,10 @@
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/chapter-visuals/chapter-16/conversation-2-09.svg" alt="Ramu, you should wake up early in the" loading="lazy" />
       </article>
-    
-      <article class="snippet-card" data-scene-card data-scene-index="22">
+
+      <article class="snippet-card" data-scene-card data-chapter="16" data-conversation-id="2" data-scene-index="22">
+        <span class="completed-scene" data-completed-scene>✓ Completed</span>
         <div class="snippet-body">
           <div class="snippet-heading">
             <div class="snippet-topic">
@@ -1260,12 +1910,21 @@
             </div>
             <span class="new-pill">✦ New</span>
           </div>
-          <div class="snippet-line">
-            <strong>morning tomorrow.</strong>
-            <div class="kannada-script">ನಾಳೆ ಬೆಳಿಗ್ಗೆ.</div>
-            <span>Naale beligge.</span>
-          </div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-16/conversation-2-10.svg" alt="morning tomorrow." loading="lazy" />
+        <div class="practice-panel">
+          <div class="sentence-panel">
+            <div class="snippet-line">
+              <strong>morning tomorrow.</strong>
+              <div class="kannada-script">ನಾಳೆ ಬೆಳಿಗ್ಗೆ.</div>
+              <span>Naale beligge.</span>
+            </div>
           <div class="original-roman">Original PDF: dhoobiige batte ko&lt;jabeeku.</div>
+          </div>
+          <div class="practice-panel-top">
+            <div class="practice-panel-title"><span>Practice the sentence above</span>Listen first, then say it in Kannada<small>Use the orange button when you are ready.</small></div>
+            <div class="card-voice-picker" data-voice-picker><span>Kannada voice</span><button class="voice-choice" type="button" data-voice-speaker="gokul" aria-pressed="false">Gokul</button><button class="voice-choice" type="button" data-voice-speaker="neha" aria-pressed="false">Neha</button><button class="voice-choice" type="button" data-voice-speaker="simran" aria-pressed="false">Simran</button><button class="voice-choice" type="button" data-voice-speaker="rohan" aria-pressed="false">Rohan</button><button class="voice-choice" type="button" data-voice-speaker="advait" aria-pressed="false">Advait</button><button class="voice-choice" type="button" data-voice-speaker="suhani" aria-pressed="false">Suhani</button><button class="voice-choice" type="button" data-voice-speaker="mani" aria-pressed="false">Mani</button><button class="voice-choice" type="button" data-voice-speaker="kavya" aria-pressed="false">Kavya</button></div>
+          </div>
           <div class="listen-row">
             <button class="speak-btn" type="button" data-lang="en-IN" data-speak="morning tomorrow."><span class="btn-icon">▶</span>Play English</button>
             <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನಾಳೆ ಬೆಳಿಗ್ಗೆ."><span class="btn-icon">▶</span>Play Kannada</button>
@@ -1273,10 +1932,10 @@
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/chapter-visuals/chapter-16/conversation-2-10.svg" alt="morning tomorrow." loading="lazy" />
       </article>
-    
-      <article class="snippet-card" data-scene-card data-scene-index="23">
+
+      <article class="snippet-card" data-scene-card data-chapter="16" data-conversation-id="3" data-scene-index="23">
+        <span class="completed-scene" data-completed-scene>✓ Completed</span>
         <div class="snippet-body">
           <div class="snippet-heading">
             <div class="snippet-topic">
@@ -1285,12 +1944,21 @@
             </div>
             <span class="new-pill">✦ New</span>
           </div>
-          <div class="snippet-line">
-            <strong>What should I do when I wake up ?</strong>
-            <div class="kannada-script">ನಾನು ಎಚ್ಚರವಾದಾಗ ಏನು ಮಾಡಬೇಕು?</div>
-            <span>Naanu ecchigaadaga enu maadabeku?</span>
-          </div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-16/conversation-3-01.svg" alt="What should I do when I wake up ?" loading="lazy" />
+        <div class="practice-panel">
+          <div class="sentence-panel">
+            <div class="snippet-line">
+              <strong>What should I do when I wake up ?</strong>
+              <div class="kannada-script">ನಾನು ಎಚ್ಚರವಾದಾಗ ಏನು ಮಾಡಬೇಕು?</div>
+              <span>Naanu ecchigaadaga enu maadabeku?</span>
+            </div>
           <div class="original-roman">Original PDF: raamuu, naaje bejigge beeg</div>
+          </div>
+          <div class="practice-panel-top">
+            <div class="practice-panel-title"><span>Practice the sentence above</span>Listen first, then say it in Kannada<small>Use the orange button when you are ready.</small></div>
+            <div class="card-voice-picker" data-voice-picker><span>Kannada voice</span><button class="voice-choice" type="button" data-voice-speaker="gokul" aria-pressed="false">Gokul</button><button class="voice-choice" type="button" data-voice-speaker="neha" aria-pressed="false">Neha</button><button class="voice-choice" type="button" data-voice-speaker="simran" aria-pressed="false">Simran</button><button class="voice-choice" type="button" data-voice-speaker="rohan" aria-pressed="false">Rohan</button><button class="voice-choice" type="button" data-voice-speaker="advait" aria-pressed="false">Advait</button><button class="voice-choice" type="button" data-voice-speaker="suhani" aria-pressed="false">Suhani</button><button class="voice-choice" type="button" data-voice-speaker="mani" aria-pressed="false">Mani</button><button class="voice-choice" type="button" data-voice-speaker="kavya" aria-pressed="false">Kavya</button></div>
+          </div>
           <div class="listen-row">
             <button class="speak-btn" type="button" data-lang="en-IN" data-speak="What should I do when I wake up ?"><span class="btn-icon">▶</span>Play English</button>
             <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನಾನು ಎಚ್ಚರವಾದಾಗ ಏನು ಮಾಡಬೇಕು?"><span class="btn-icon">▶</span>Play Kannada</button>
@@ -1298,10 +1966,10 @@
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/chapter-visuals/chapter-16/conversation-3-01.svg" alt="What should I do when I wake up ?" loading="lazy" />
       </article>
-    
-      <article class="snippet-card" data-scene-card data-scene-index="24">
+
+      <article class="snippet-card" data-scene-card data-chapter="16" data-conversation-id="3" data-scene-index="24">
+        <span class="completed-scene" data-completed-scene>✓ Completed</span>
         <div class="snippet-body">
           <div class="snippet-heading">
             <div class="snippet-topic">
@@ -1310,12 +1978,21 @@
             </div>
             <span class="new-pill">✦ New</span>
           </div>
-          <div class="snippet-line">
-            <strong>You should bathe ; and then worship.</strong>
-            <div class="kannada-script">ನೀವು ಸ್ನಾನ ಮಾಡಬೇಕು; ನಂತರ ಪೂಜಿಸಬೇಕು.</div>
-            <span>Neevu snana maadabeku; nanthara poojisabeku.</span>
-          </div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-16/conversation-3-02.svg" alt="You should bathe ; and then worship." loading="lazy" />
+        <div class="practice-panel">
+          <div class="sentence-panel">
+            <div class="snippet-line">
+              <strong>You should bathe ; and then worship.</strong>
+              <div class="kannada-script">ನೀವು ಸ್ನಾನ ಮಾಡಬೇಕು; ನಂತರ ಪೂಜಿಸಬೇಕು.</div>
+              <span>Neevu snana maadabeku; nanthara poojisabeku.</span>
+            </div>
           <div class="original-roman">Original PDF: eejabeeku.</div>
+          </div>
+          <div class="practice-panel-top">
+            <div class="practice-panel-title"><span>Practice the sentence above</span>Listen first, then say it in Kannada<small>Use the orange button when you are ready.</small></div>
+            <div class="card-voice-picker" data-voice-picker><span>Kannada voice</span><button class="voice-choice" type="button" data-voice-speaker="gokul" aria-pressed="false">Gokul</button><button class="voice-choice" type="button" data-voice-speaker="neha" aria-pressed="false">Neha</button><button class="voice-choice" type="button" data-voice-speaker="simran" aria-pressed="false">Simran</button><button class="voice-choice" type="button" data-voice-speaker="rohan" aria-pressed="false">Rohan</button><button class="voice-choice" type="button" data-voice-speaker="advait" aria-pressed="false">Advait</button><button class="voice-choice" type="button" data-voice-speaker="suhani" aria-pressed="false">Suhani</button><button class="voice-choice" type="button" data-voice-speaker="mani" aria-pressed="false">Mani</button><button class="voice-choice" type="button" data-voice-speaker="kavya" aria-pressed="false">Kavya</button></div>
+          </div>
           <div class="listen-row">
             <button class="speak-btn" type="button" data-lang="en-IN" data-speak="You should bathe ; and then worship."><span class="btn-icon">▶</span>Play English</button>
             <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನೀವು ಸ್ನಾನ ಮಾಡಬೇಕು; ನಂತರ ಪೂಜಿಸಬೇಕು."><span class="btn-icon">▶</span>Play Kannada</button>
@@ -1323,10 +2000,10 @@
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/chapter-visuals/chapter-16/conversation-3-02.svg" alt="You should bathe ; and then worship." loading="lazy" />
       </article>
-    
-      <article class="snippet-card" data-scene-card data-scene-index="25">
+
+      <article class="snippet-card" data-scene-card data-chapter="16" data-conversation-id="3" data-scene-index="25">
+        <span class="completed-scene" data-completed-scene>✓ Completed</span>
         <div class="snippet-body">
           <div class="snippet-heading">
             <div class="snippet-topic">
@@ -1335,12 +2012,21 @@
             </div>
             <span class="new-pill">✦ New</span>
           </div>
-          <div class="snippet-line">
-            <strong>English line needs cleanup</strong>
-            
-            <span>eddu een maa&lt;Jbeeku ?</span>
-          </div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-16/conversation-3-03.svg" alt="English line needs cleanup" loading="lazy" />
+        <div class="practice-panel">
+          <div class="sentence-panel">
+            <div class="snippet-line">
+              <strong>English line needs cleanup</strong>
 
+              <span>eddu een maa&lt;Jbeeku ?</span>
+            </div>
+
+          </div>
+          <div class="practice-panel-top">
+            <div class="practice-panel-title"><span>Practice the sentence above</span>Listen first, then say it in Kannada<small>Use the orange button when you are ready.</small></div>
+            <div class="card-voice-picker" data-voice-picker><span>Kannada voice</span><button class="voice-choice" type="button" data-voice-speaker="gokul" aria-pressed="false">Gokul</button><button class="voice-choice" type="button" data-voice-speaker="neha" aria-pressed="false">Neha</button><button class="voice-choice" type="button" data-voice-speaker="simran" aria-pressed="false">Simran</button><button class="voice-choice" type="button" data-voice-speaker="rohan" aria-pressed="false">Rohan</button><button class="voice-choice" type="button" data-voice-speaker="advait" aria-pressed="false">Advait</button><button class="voice-choice" type="button" data-voice-speaker="suhani" aria-pressed="false">Suhani</button><button class="voice-choice" type="button" data-voice-speaker="mani" aria-pressed="false">Mani</button><button class="voice-choice" type="button" data-voice-speaker="kavya" aria-pressed="false">Kavya</button></div>
+          </div>
           <div class="listen-row">
             <button class="speak-btn" type="button" data-lang="en-IN" data-speak="English line needs cleanup"><span class="btn-icon">▶</span>Play English</button>
             <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="eddu een maa&lt;Jbeeku ?"><span class="btn-icon">▶</span>Play Kannada</button>
@@ -1348,10 +2034,10 @@
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/chapter-visuals/chapter-16/conversation-3-03.svg" alt="English line needs cleanup" loading="lazy" />
       </article>
-    
-      <article class="snippet-card" data-scene-card data-scene-index="26">
+
+      <article class="snippet-card" data-scene-card data-chapter="16" data-conversation-id="3" data-scene-index="26">
+        <span class="completed-scene" data-completed-scene>✓ Completed</span>
         <div class="snippet-body">
           <div class="snippet-heading">
             <div class="snippet-topic">
@@ -1360,12 +2046,21 @@
             </div>
             <span class="new-pill">✦ New</span>
           </div>
-          <div class="snippet-line">
-            <strong>English line needs cleanup</strong>
-            
-            <span>snaana maacjbeeku ; aameele</span>
-          </div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-16/conversation-3-04.svg" alt="English line needs cleanup" loading="lazy" />
+        <div class="practice-panel">
+          <div class="sentence-panel">
+            <div class="snippet-line">
+              <strong>English line needs cleanup</strong>
 
+              <span>snaana maacjbeeku ; aameele</span>
+            </div>
+
+          </div>
+          <div class="practice-panel-top">
+            <div class="practice-panel-title"><span>Practice the sentence above</span>Listen first, then say it in Kannada<small>Use the orange button when you are ready.</small></div>
+            <div class="card-voice-picker" data-voice-picker><span>Kannada voice</span><button class="voice-choice" type="button" data-voice-speaker="gokul" aria-pressed="false">Gokul</button><button class="voice-choice" type="button" data-voice-speaker="neha" aria-pressed="false">Neha</button><button class="voice-choice" type="button" data-voice-speaker="simran" aria-pressed="false">Simran</button><button class="voice-choice" type="button" data-voice-speaker="rohan" aria-pressed="false">Rohan</button><button class="voice-choice" type="button" data-voice-speaker="advait" aria-pressed="false">Advait</button><button class="voice-choice" type="button" data-voice-speaker="suhani" aria-pressed="false">Suhani</button><button class="voice-choice" type="button" data-voice-speaker="mani" aria-pressed="false">Mani</button><button class="voice-choice" type="button" data-voice-speaker="kavya" aria-pressed="false">Kavya</button></div>
+          </div>
           <div class="listen-row">
             <button class="speak-btn" type="button" data-lang="en-IN" data-speak="English line needs cleanup"><span class="btn-icon">▶</span>Play English</button>
             <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="snaana maacjbeeku ; aameele"><span class="btn-icon">▶</span>Play Kannada</button>
@@ -1373,10 +2068,10 @@
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/chapter-visuals/chapter-16/conversation-3-04.svg" alt="English line needs cleanup" loading="lazy" />
       </article>
-    
-      <article class="snippet-card" data-scene-card data-scene-index="27">
+
+      <article class="snippet-card" data-scene-card data-chapter="16" data-conversation-id="3" data-scene-index="27">
+        <span class="completed-scene" data-completed-scene>✓ Completed</span>
         <div class="snippet-body">
           <div class="snippet-heading">
             <div class="snippet-topic">
@@ -1385,12 +2080,21 @@
             </div>
             <span class="new-pill">✦ New</span>
           </div>
-          <div class="snippet-line">
-            <strong>English line needs cleanup</strong>
-            
-            <span>puuje maacjbeeku.</span>
-          </div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-16/conversation-3-05.svg" alt="English line needs cleanup" loading="lazy" />
+        <div class="practice-panel">
+          <div class="sentence-panel">
+            <div class="snippet-line">
+              <strong>English line needs cleanup</strong>
 
+              <span>puuje maacjbeeku.</span>
+            </div>
+
+          </div>
+          <div class="practice-panel-top">
+            <div class="practice-panel-title"><span>Practice the sentence above</span>Listen first, then say it in Kannada<small>Use the orange button when you are ready.</small></div>
+            <div class="card-voice-picker" data-voice-picker><span>Kannada voice</span><button class="voice-choice" type="button" data-voice-speaker="gokul" aria-pressed="false">Gokul</button><button class="voice-choice" type="button" data-voice-speaker="neha" aria-pressed="false">Neha</button><button class="voice-choice" type="button" data-voice-speaker="simran" aria-pressed="false">Simran</button><button class="voice-choice" type="button" data-voice-speaker="rohan" aria-pressed="false">Rohan</button><button class="voice-choice" type="button" data-voice-speaker="advait" aria-pressed="false">Advait</button><button class="voice-choice" type="button" data-voice-speaker="suhani" aria-pressed="false">Suhani</button><button class="voice-choice" type="button" data-voice-speaker="mani" aria-pressed="false">Mani</button><button class="voice-choice" type="button" data-voice-speaker="kavya" aria-pressed="false">Kavya</button></div>
+          </div>
           <div class="listen-row">
             <button class="speak-btn" type="button" data-lang="en-IN" data-speak="English line needs cleanup"><span class="btn-icon">▶</span>Play English</button>
             <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="puuje maacjbeeku."><span class="btn-icon">▶</span>Play Kannada</button>
@@ -1398,10 +2102,10 @@
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/chapter-visuals/chapter-16/conversation-3-05.svg" alt="English line needs cleanup" loading="lazy" />
       </article>
-    
-      <article class="snippet-card" data-scene-card data-scene-index="28">
+
+      <article class="snippet-card" data-scene-card data-chapter="16" data-conversation-id="Continuation" data-scene-index="28">
+        <span class="completed-scene" data-completed-scene>✓ Completed</span>
         <div class="snippet-body">
           <div class="snippet-heading">
             <div class="snippet-topic">
@@ -1410,12 +2114,21 @@
             </div>
             <span class="new-pill">✦ New</span>
           </div>
-          <div class="snippet-line">
-            <strong>I worship ?</strong>
-            <div class="kannada-script">ನಾನು ಪೂಜಿಸುತ್ತೇನೆ?</div>
-            <span>Naanu poojisuttene?</span>
-          </div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-16/conversation-continuation-01.svg" alt="I worship ?" loading="lazy" />
+        <div class="practice-panel">
+          <div class="sentence-panel">
+            <div class="snippet-line">
+              <strong>I worship ?</strong>
+              <div class="kannada-script">ನಾನು ಪೂಜಿಸುತ್ತೇನೆ?</div>
+              <span>Naanu poojisuttene?</span>
+            </div>
           <div class="original-roman">Original PDF: puuje raaa&lt;j!eebeekaa ? Must</div>
+          </div>
+          <div class="practice-panel-top">
+            <div class="practice-panel-title"><span>Practice the sentence above</span>Listen first, then say it in Kannada<small>Use the orange button when you are ready.</small></div>
+            <div class="card-voice-picker" data-voice-picker><span>Kannada voice</span><button class="voice-choice" type="button" data-voice-speaker="gokul" aria-pressed="false">Gokul</button><button class="voice-choice" type="button" data-voice-speaker="neha" aria-pressed="false">Neha</button><button class="voice-choice" type="button" data-voice-speaker="simran" aria-pressed="false">Simran</button><button class="voice-choice" type="button" data-voice-speaker="rohan" aria-pressed="false">Rohan</button><button class="voice-choice" type="button" data-voice-speaker="advait" aria-pressed="false">Advait</button><button class="voice-choice" type="button" data-voice-speaker="suhani" aria-pressed="false">Suhani</button><button class="voice-choice" type="button" data-voice-speaker="mani" aria-pressed="false">Mani</button><button class="voice-choice" type="button" data-voice-speaker="kavya" aria-pressed="false">Kavya</button></div>
+          </div>
           <div class="listen-row">
             <button class="speak-btn" type="button" data-lang="en-IN" data-speak="I worship ?"><span class="btn-icon">▶</span>Play English</button>
             <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನಾನು ಪೂಜಿಸುತ್ತೇನೆ?"><span class="btn-icon">▶</span>Play Kannada</button>
@@ -1423,10 +2136,10 @@
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/chapter-visuals/chapter-16/conversation-continuation-01.svg" alt="I worship ?" loading="lazy" />
       </article>
-    
-      <article class="snippet-card" data-scene-card data-scene-index="29">
+
+      <article class="snippet-card" data-scene-card data-chapter="16" data-conversation-id="Continuation" data-scene-index="29">
+        <span class="completed-scene" data-completed-scene>✓ Completed</span>
         <div class="snippet-body">
           <div class="snippet-heading">
             <div class="snippet-topic">
@@ -1435,12 +2148,21 @@
             </div>
             <span class="new-pill">✦ New</span>
           </div>
-          <div class="snippet-line">
-            <strong>Yes, you must. Afterwards you may have</strong>
-            <div class="kannada-script">ಹೌದು, ನೀವು ಅದನ್ನು ತೆಗೆದುಕೊಳ್ಳಬೇಕು. ನಂತರ ನೀವು ಹೊಂದಬಹುದು</div>
-            <span>Howdu, neevu adannu tegedukollbeku. Nantara neevu hondabahudu</span>
-          </div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-16/conversation-continuation-02.svg" alt="Yes, you must. Afterwards you may have" loading="lazy" />
+        <div class="practice-panel">
+          <div class="sentence-panel">
+            <div class="snippet-line">
+              <strong>Yes, you must. Afterwards you may have</strong>
+              <div class="kannada-script">ಹೌದು, ನೀವು ಅದನ್ನು ತೆಗೆದುಕೊಳ್ಳಬೇಕು. ನಂತರ ನೀವು ಹೊಂದಬಹುದು</div>
+              <span>Howdu, neevu adannu tegedukollbeku. Nantara neevu hondabahudu</span>
+            </div>
           <div class="original-roman">Original PDF: haudu, puuje maa&lt;jleebeeku,</div>
+          </div>
+          <div class="practice-panel-top">
+            <div class="practice-panel-title"><span>Practice the sentence above</span>Listen first, then say it in Kannada<small>Use the orange button when you are ready.</small></div>
+            <div class="card-voice-picker" data-voice-picker><span>Kannada voice</span><button class="voice-choice" type="button" data-voice-speaker="gokul" aria-pressed="false">Gokul</button><button class="voice-choice" type="button" data-voice-speaker="neha" aria-pressed="false">Neha</button><button class="voice-choice" type="button" data-voice-speaker="simran" aria-pressed="false">Simran</button><button class="voice-choice" type="button" data-voice-speaker="rohan" aria-pressed="false">Rohan</button><button class="voice-choice" type="button" data-voice-speaker="advait" aria-pressed="false">Advait</button><button class="voice-choice" type="button" data-voice-speaker="suhani" aria-pressed="false">Suhani</button><button class="voice-choice" type="button" data-voice-speaker="mani" aria-pressed="false">Mani</button><button class="voice-choice" type="button" data-voice-speaker="kavya" aria-pressed="false">Kavya</button></div>
+          </div>
           <div class="listen-row">
             <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Yes, you must. Afterwards you may have"><span class="btn-icon">▶</span>Play English</button>
             <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಹೌದು, ನೀವು ಅದನ್ನು ತೆಗೆದುಕೊಳ್ಳಬೇಕು. ನಂತರ ನೀವು ಹೊಂದಬಹುದು"><span class="btn-icon">▶</span>Play Kannada</button>
@@ -1448,10 +2170,10 @@
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/chapter-visuals/chapter-16/conversation-continuation-02.svg" alt="Yes, you must. Afterwards you may have" loading="lazy" />
       </article>
-    
-      <article class="snippet-card" data-scene-card data-scene-index="30">
+
+      <article class="snippet-card" data-scene-card data-chapter="16" data-conversation-id="Continuation" data-scene-index="30">
+        <span class="completed-scene" data-completed-scene>✓ Completed</span>
         <div class="snippet-body">
           <div class="snippet-heading">
             <div class="snippet-topic">
@@ -1460,12 +2182,21 @@
             </div>
             <span class="new-pill">✦ New</span>
           </div>
-          <div class="snippet-line">
-            <strong>bank, school or college and at home on the following lines :</strong>
-            <div class="kannada-script">ಬ್ಯಾಂಕ್, ಶಾಲೆ ಅಥವಾ ಕಾಲೇಜು ಮತ್ತು ಮನೆಯಲ್ಲಿ ಈ ಕೆಳಗಿನ ರೀತಿಯಲ್ಲಿ</div>
-            <span>Bank, shaale athava college mattu maneyalli ee kelagina reetiyali</span>
-          </div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-16/conversation-continuation-03.svg" alt="bank, school or college and at home on the following lines :" loading="lazy" />
+        <div class="practice-panel">
+          <div class="sentence-panel">
+            <div class="snippet-line">
+              <strong>bank, school or college and at home on the following lines :</strong>
+              <div class="kannada-script">ಬ್ಯಾಂಕ್, ಶಾಲೆ ಅಥವಾ ಕಾಲೇಜು ಮತ್ತು ಮನೆಯಲ್ಲಿ ಈ ಕೆಳಗಿನ ರೀತಿಯಲ್ಲಿ</div>
+              <span>Bank, shaale athava college mattu maneyalli ee kelagina reetiyali</span>
+            </div>
           <div class="original-roman">Original PDF: aameele tijuji tinnaboodu breakfast.</div>
+          </div>
+          <div class="practice-panel-top">
+            <div class="practice-panel-title"><span>Practice the sentence above</span>Listen first, then say it in Kannada<small>Use the orange button when you are ready.</small></div>
+            <div class="card-voice-picker" data-voice-picker><span>Kannada voice</span><button class="voice-choice" type="button" data-voice-speaker="gokul" aria-pressed="false">Gokul</button><button class="voice-choice" type="button" data-voice-speaker="neha" aria-pressed="false">Neha</button><button class="voice-choice" type="button" data-voice-speaker="simran" aria-pressed="false">Simran</button><button class="voice-choice" type="button" data-voice-speaker="rohan" aria-pressed="false">Rohan</button><button class="voice-choice" type="button" data-voice-speaker="advait" aria-pressed="false">Advait</button><button class="voice-choice" type="button" data-voice-speaker="suhani" aria-pressed="false">Suhani</button><button class="voice-choice" type="button" data-voice-speaker="mani" aria-pressed="false">Mani</button><button class="voice-choice" type="button" data-voice-speaker="kavya" aria-pressed="false">Kavya</button></div>
+          </div>
           <div class="listen-row">
             <button class="speak-btn" type="button" data-lang="en-IN" data-speak="bank, school or college and at home on the following lines :"><span class="btn-icon">▶</span>Play English</button>
             <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಬ್ಯಾಂಕ್, ಶಾಲೆ ಅಥವಾ ಕಾಲೇಜು ಮತ್ತು ಮನೆಯಲ್ಲಿ ಈ ಕೆಳಗಿನ ರೀತಿಯಲ್ಲಿ"><span class="btn-icon">▶</span>Play Kannada</button>
@@ -1473,10 +2204,10 @@
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/chapter-visuals/chapter-16/conversation-continuation-03.svg" alt="bank, school or college and at home on the following lines :" loading="lazy" />
       </article>
-    
-      <article class="snippet-card" data-scene-card data-scene-index="31">
+
+      <article class="snippet-card" data-scene-card data-chapter="16" data-conversation-id="Continuation" data-scene-index="31">
+        <span class="completed-scene" data-completed-scene>✓ Completed</span>
         <div class="snippet-body">
           <div class="snippet-heading">
             <div class="snippet-topic">
@@ -1485,12 +2216,21 @@
             </div>
             <span class="new-pill">✦ New</span>
           </div>
-          <div class="snippet-line">
-            <strong>I should go to bed early,</strong>
-            <div class="kannada-script">ನಾನು ಬೇಗ ಮಲಗಬೇಕು,</div>
-            <span>Naanu bega malagabeku,</span>
-          </div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-16/conversation-continuation-04.svg" alt="I should go to bed early," loading="lazy" />
+        <div class="practice-panel">
+          <div class="sentence-panel">
+            <div class="snippet-line">
+              <strong>I should go to bed early,</strong>
+              <div class="kannada-script">ನಾನು ಬೇಗ ಮಲಗಬೇಕು,</div>
+              <span>Naanu bega malagabeku,</span>
+            </div>
           <div class="original-roman">Original PDF: haagaadre naanu beeg Then</div>
+          </div>
+          <div class="practice-panel-top">
+            <div class="practice-panel-title"><span>Practice the sentence above</span>Listen first, then say it in Kannada<small>Use the orange button when you are ready.</small></div>
+            <div class="card-voice-picker" data-voice-picker><span>Kannada voice</span><button class="voice-choice" type="button" data-voice-speaker="gokul" aria-pressed="false">Gokul</button><button class="voice-choice" type="button" data-voice-speaker="neha" aria-pressed="false">Neha</button><button class="voice-choice" type="button" data-voice-speaker="simran" aria-pressed="false">Simran</button><button class="voice-choice" type="button" data-voice-speaker="rohan" aria-pressed="false">Rohan</button><button class="voice-choice" type="button" data-voice-speaker="advait" aria-pressed="false">Advait</button><button class="voice-choice" type="button" data-voice-speaker="suhani" aria-pressed="false">Suhani</button><button class="voice-choice" type="button" data-voice-speaker="mani" aria-pressed="false">Mani</button><button class="voice-choice" type="button" data-voice-speaker="kavya" aria-pressed="false">Kavya</button></div>
+          </div>
           <div class="listen-row">
             <button class="speak-btn" type="button" data-lang="en-IN" data-speak="I should go to bed early,"><span class="btn-icon">▶</span>Play English</button>
             <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನಾನು ಬೇಗ ಮಲಗಬೇಕು,"><span class="btn-icon">▶</span>Play Kannada</button>
@@ -1498,10 +2238,10 @@
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/chapter-visuals/chapter-16/conversation-continuation-04.svg" alt="I should go to bed early," loading="lazy" />
       </article>
-    
-      <article class="snippet-card" data-scene-card data-scene-index="32">
+
+      <article class="snippet-card" data-scene-card data-chapter="16" data-conversation-id="Continuation" data-scene-index="32">
+        <span class="completed-scene" data-completed-scene>✓ Completed</span>
         <div class="snippet-body">
           <div class="snippet-heading">
             <div class="snippet-topic">
@@ -1510,12 +2250,21 @@
             </div>
             <span class="new-pill">✦ New</span>
           </div>
-          <div class="snippet-line">
-            <strong>Model A : Place of work -</strong>
-            <div class="kannada-script">ಮಾದರಿ ಎ: ಕೆಲಸದ ಸ್ಥಳ</div>
-            <span>Model A: Kaaryada sthaala</span>
-          </div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-16/conversation-continuation-05.svg" alt="Model A : Place of work -" loading="lazy" />
+        <div class="practice-panel">
+          <div class="sentence-panel">
+            <div class="snippet-line">
+              <strong>Model A : Place of work -</strong>
+              <div class="kannada-script">ಮಾದರಿ ಎ: ಕೆಲಸದ ಸ್ಥಳ</div>
+              <span>Model A: Kaaryada sthaala</span>
+            </div>
           <div class="original-roman">Original PDF: malagbeeku.</div>
+          </div>
+          <div class="practice-panel-top">
+            <div class="practice-panel-title"><span>Practice the sentence above</span>Listen first, then say it in Kannada<small>Use the orange button when you are ready.</small></div>
+            <div class="card-voice-picker" data-voice-picker><span>Kannada voice</span><button class="voice-choice" type="button" data-voice-speaker="gokul" aria-pressed="false">Gokul</button><button class="voice-choice" type="button" data-voice-speaker="neha" aria-pressed="false">Neha</button><button class="voice-choice" type="button" data-voice-speaker="simran" aria-pressed="false">Simran</button><button class="voice-choice" type="button" data-voice-speaker="rohan" aria-pressed="false">Rohan</button><button class="voice-choice" type="button" data-voice-speaker="advait" aria-pressed="false">Advait</button><button class="voice-choice" type="button" data-voice-speaker="suhani" aria-pressed="false">Suhani</button><button class="voice-choice" type="button" data-voice-speaker="mani" aria-pressed="false">Mani</button><button class="voice-choice" type="button" data-voice-speaker="kavya" aria-pressed="false">Kavya</button></div>
+          </div>
           <div class="listen-row">
             <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Model A : Place of work -"><span class="btn-icon">▶</span>Play English</button>
             <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಮಾದರಿ ಎ: ಕೆಲಸದ ಸ್ಥಳ"><span class="btn-icon">▶</span>Play Kannada</button>
@@ -1523,10 +2272,10 @@
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/chapter-visuals/chapter-16/conversation-continuation-05.svg" alt="Model A : Place of work -" loading="lazy" />
       </article>
-    
-      <article class="snippet-card" data-scene-card data-scene-index="33">
+
+      <article class="snippet-card" data-scene-card data-chapter="16" data-conversation-id="Continuation" data-scene-index="33">
+        <span class="completed-scene" data-completed-scene>✓ Completed</span>
         <div class="snippet-body">
           <div class="snippet-heading">
             <div class="snippet-topic">
@@ -1535,12 +2284,21 @@
             </div>
             <span class="new-pill">✦ New</span>
           </div>
-          <div class="snippet-line">
-            <strong>naanu hattu gaijtege kaceeriige hoogabeeku.</strong>
-            <div class="kannada-script">ನಾನು ಹತ್ತು ಗೋಡಂಬಿ ಕಡೆಯಿಂದ ಒಂದು ಕುಕ್ಕರ್-ಗೆ ಹಾಕಿ ಬೇಯಿಸಬೇಕು.</div>
-            <span>Naanu hattu godambi kadeyinda ondu kukkar-ge haaki beyisabeku.</span>
-          </div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-16/conversation-continuation-06.svg" alt="naanu hattu gaijtege kaceeriige hoogabeeku." loading="lazy" />
+        <div class="practice-panel">
+          <div class="sentence-panel">
+            <div class="snippet-line">
+              <strong>naanu hattu gaijtege kaceeriige hoogabeeku.</strong>
+              <div class="kannada-script">ನಾನು ಹತ್ತು ಗೋಡಂಬಿ ಕಡೆಯಿಂದ ಒಂದು ಕುಕ್ಕರ್-ಗೆ ಹಾಕಿ ಬೇಯಿಸಬೇಕು.</div>
+              <span>Naanu hattu godambi kadeyinda ondu kukkar-ge haaki beyisabeku.</span>
+            </div>
           <div class="original-roman">Original PDF: paatfia lesson malagu to sleep</div>
+          </div>
+          <div class="practice-panel-top">
+            <div class="practice-panel-title"><span>Practice the sentence above</span>Listen first, then say it in Kannada<small>Use the orange button when you are ready.</small></div>
+            <div class="card-voice-picker" data-voice-picker><span>Kannada voice</span><button class="voice-choice" type="button" data-voice-speaker="gokul" aria-pressed="false">Gokul</button><button class="voice-choice" type="button" data-voice-speaker="neha" aria-pressed="false">Neha</button><button class="voice-choice" type="button" data-voice-speaker="simran" aria-pressed="false">Simran</button><button class="voice-choice" type="button" data-voice-speaker="rohan" aria-pressed="false">Rohan</button><button class="voice-choice" type="button" data-voice-speaker="advait" aria-pressed="false">Advait</button><button class="voice-choice" type="button" data-voice-speaker="suhani" aria-pressed="false">Suhani</button><button class="voice-choice" type="button" data-voice-speaker="mani" aria-pressed="false">Mani</button><button class="voice-choice" type="button" data-voice-speaker="kavya" aria-pressed="false">Kavya</button></div>
+          </div>
           <div class="listen-row">
             <button class="speak-btn" type="button" data-lang="en-IN" data-speak="naanu hattu gaijtege kaceeriige hoogabeeku."><span class="btn-icon">▶</span>Play English</button>
             <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನಾನು ಹತ್ತು ಗೋಡಂಬಿ ಕಡೆಯಿಂದ ಒಂದು ಕುಕ್ಕರ್-ಗೆ ಹಾಕಿ ಬೇಯಿಸಬೇಕು."><span class="btn-icon">▶</span>Play Kannada</button>
@@ -1548,10 +2306,10 @@
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/chapter-visuals/chapter-16/conversation-continuation-06.svg" alt="naanu hattu gaijtege kaceeriige hoogabeeku." loading="lazy" />
       </article>
-    
-      <article class="snippet-card" data-scene-card data-scene-index="34">
+
+      <article class="snippet-card" data-scene-card data-chapter="16" data-conversation-id="Continuation" data-scene-index="34">
+        <span class="completed-scene" data-completed-scene>✓ Completed</span>
         <div class="snippet-body">
           <div class="snippet-heading">
             <div class="snippet-topic">
@@ -1560,12 +2318,21 @@
             </div>
             <span class="new-pill">✦ New</span>
           </div>
-          <div class="snippet-line">
-            <strong>saikal staan&lt;Jalli bi&lt;jabeeku.</strong>
-            <div class="kannada-script">ಸೈಕಲ್ ಸ್ಟಾನ್&lt;ಜಲ್ಲಿ ಬಿ&lt;ಜಬೀಕು.</div>
-            <span>Cycle stan&lt;jalli b&lt;jabeeku.</span>
-          </div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-16/conversation-continuation-07.svg" alt="saikal staan&lt;Jalli bi&lt;jabeeku." loading="lazy" />
+        <div class="practice-panel">
+          <div class="sentence-panel">
+            <div class="snippet-line">
+              <strong>saikal staan&lt;Jalli bi&lt;jabeeku.</strong>
+              <div class="kannada-script">ಸೈಕಲ್ ಸ್ಟಾನ್&lt;ಜಲ್ಲಿ ಬಿ&lt;ಜಬೀಕು.</div>
+              <span>Cycle stan&lt;jalli b&lt;jabeeku.</span>
+            </div>
           <div class="original-roman">Original PDF: tarkaari vegetables kaceeri office</div>
+          </div>
+          <div class="practice-panel-top">
+            <div class="practice-panel-title"><span>Practice the sentence above</span>Listen first, then say it in Kannada<small>Use the orange button when you are ready.</small></div>
+            <div class="card-voice-picker" data-voice-picker><span>Kannada voice</span><button class="voice-choice" type="button" data-voice-speaker="gokul" aria-pressed="false">Gokul</button><button class="voice-choice" type="button" data-voice-speaker="neha" aria-pressed="false">Neha</button><button class="voice-choice" type="button" data-voice-speaker="simran" aria-pressed="false">Simran</button><button class="voice-choice" type="button" data-voice-speaker="rohan" aria-pressed="false">Rohan</button><button class="voice-choice" type="button" data-voice-speaker="advait" aria-pressed="false">Advait</button><button class="voice-choice" type="button" data-voice-speaker="suhani" aria-pressed="false">Suhani</button><button class="voice-choice" type="button" data-voice-speaker="mani" aria-pressed="false">Mani</button><button class="voice-choice" type="button" data-voice-speaker="kavya" aria-pressed="false">Kavya</button></div>
+          </div>
           <div class="listen-row">
             <button class="speak-btn" type="button" data-lang="en-IN" data-speak="saikal staan&lt;Jalli bi&lt;jabeeku."><span class="btn-icon">▶</span>Play English</button>
             <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಸೈಕಲ್ ಸ್ಟಾನ್&lt;ಜಲ್ಲಿ ಬಿ&lt;ಜಬೀಕು."><span class="btn-icon">▶</span>Play Kannada</button>
@@ -1573,10 +2340,10 @@
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/chapter-visuals/chapter-16/conversation-continuation-07.svg" alt="saikal staan&lt;Jalli bi&lt;jabeeku." loading="lazy" />
       </article>
-    
-      <article class="snippet-card" data-scene-card data-scene-index="35">
+
+      <article class="snippet-card" data-scene-card data-chapter="16" data-conversation-id="Continuation" data-scene-index="35">
+        <span class="completed-scene" data-completed-scene>✓ Completed</span>
         <div class="snippet-body">
           <div class="snippet-heading">
             <div class="snippet-topic">
@@ -1585,12 +2352,21 @@
             </div>
             <span class="new-pill">✦ New</span>
           </div>
-          <div class="snippet-line">
-            <strong>aameele tapaal nootjbeeku.</strong>
-            <div class="kannada-script">ಆಮೇಲಿ ಟಪಾಲ್ ನೂಟ್‌ಬೀಕಿಕ್.</div>
-            <span>Aameli taapal Knootbeek.</span>
-          </div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-16/conversation-continuation-08.svg" alt="aameele tapaal nootjbeeku." loading="lazy" />
+        <div class="practice-panel">
+          <div class="sentence-panel">
+            <div class="snippet-line">
+              <strong>aameele tapaal nootjbeeku.</strong>
+              <div class="kannada-script">ಆಮೇಲಿ ಟಪಾಲ್ ನೂಟ್‌ಬೀಕಿಕ್.</div>
+              <span>Aameli taapal Knootbeek.</span>
+            </div>
           <div class="original-roman">Original PDF: kiilu to gather tapaal post</div>
+          </div>
+          <div class="practice-panel-top">
+            <div class="practice-panel-title"><span>Practice the sentence above</span>Listen first, then say it in Kannada<small>Use the orange button when you are ready.</small></div>
+            <div class="card-voice-picker" data-voice-picker><span>Kannada voice</span><button class="voice-choice" type="button" data-voice-speaker="gokul" aria-pressed="false">Gokul</button><button class="voice-choice" type="button" data-voice-speaker="neha" aria-pressed="false">Neha</button><button class="voice-choice" type="button" data-voice-speaker="simran" aria-pressed="false">Simran</button><button class="voice-choice" type="button" data-voice-speaker="rohan" aria-pressed="false">Rohan</button><button class="voice-choice" type="button" data-voice-speaker="advait" aria-pressed="false">Advait</button><button class="voice-choice" type="button" data-voice-speaker="suhani" aria-pressed="false">Suhani</button><button class="voice-choice" type="button" data-voice-speaker="mani" aria-pressed="false">Mani</button><button class="voice-choice" type="button" data-voice-speaker="kavya" aria-pressed="false">Kavya</button></div>
+          </div>
           <div class="listen-row">
             <button class="speak-btn" type="button" data-lang="en-IN" data-speak="aameele tapaal nootjbeeku."><span class="btn-icon">▶</span>Play English</button>
             <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಆಮೇಲಿ ಟಪಾಲ್ ನೂಟ್‌ಬೀಕಿಕ್."><span class="btn-icon">▶</span>Play Kannada</button>
@@ -1598,10 +2374,10 @@
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/chapter-visuals/chapter-16/conversation-continuation-08.svg" alt="aameele tapaal nootjbeeku." loading="lazy" />
       </article>
-    
-      <article class="snippet-card" data-scene-card data-scene-index="36">
+
+      <article class="snippet-card" data-scene-card data-chapter="16" data-conversation-id="Continuation" data-scene-index="36">
+        <span class="completed-scene" data-completed-scene>✓ Completed</span>
         <div class="snippet-body">
           <div class="snippet-heading">
             <div class="snippet-topic">
@@ -1610,12 +2386,21 @@
             </div>
             <span class="new-pill">✦ New</span>
           </div>
-          <div class="snippet-line">
-            <strong>ellariguu kaagadga) hanchbeeku</strong>
-            <div class="kannada-script">ಎಳ್ಳುಬಜ್ಜಿ</div>
-            <span>Elubazji</span>
-          </div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-16/conversation-continuation-09.svg" alt="ellariguu kaagadga) hanchbeeku" loading="lazy" />
+        <div class="practice-panel">
+          <div class="sentence-panel">
+            <div class="snippet-line">
+              <strong>ellariguu kaagadga) hanchbeeku</strong>
+              <div class="kannada-script">ಎಳ್ಳುಬಜ್ಜಿ</div>
+              <span>Elubazji</span>
+            </div>
           <div class="original-roman">Original PDF: huu flowers kaagda letter</div>
+          </div>
+          <div class="practice-panel-top">
+            <div class="practice-panel-title"><span>Practice the sentence above</span>Listen first, then say it in Kannada<small>Use the orange button when you are ready.</small></div>
+            <div class="card-voice-picker" data-voice-picker><span>Kannada voice</span><button class="voice-choice" type="button" data-voice-speaker="gokul" aria-pressed="false">Gokul</button><button class="voice-choice" type="button" data-voice-speaker="neha" aria-pressed="false">Neha</button><button class="voice-choice" type="button" data-voice-speaker="simran" aria-pressed="false">Simran</button><button class="voice-choice" type="button" data-voice-speaker="rohan" aria-pressed="false">Rohan</button><button class="voice-choice" type="button" data-voice-speaker="advait" aria-pressed="false">Advait</button><button class="voice-choice" type="button" data-voice-speaker="suhani" aria-pressed="false">Suhani</button><button class="voice-choice" type="button" data-voice-speaker="mani" aria-pressed="false">Mani</button><button class="voice-choice" type="button" data-voice-speaker="kavya" aria-pressed="false">Kavya</button></div>
+          </div>
           <div class="listen-row">
             <button class="speak-btn" type="button" data-lang="en-IN" data-speak="ellariguu kaagadga) hanchbeeku"><span class="btn-icon">▶</span>Play English</button>
             <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಎಳ್ಳುಬಜ್ಜಿ"><span class="btn-icon">▶</span>Play Kannada</button>
@@ -1623,10 +2408,10 @@
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/chapter-visuals/chapter-16/conversation-continuation-09.svg" alt="ellariguu kaagadga) hanchbeeku" loading="lazy" />
       </article>
-    
-      <article class="snippet-card" data-scene-card data-scene-index="37">
+
+      <article class="snippet-card" data-scene-card data-chapter="16" data-conversation-id="Continuation" data-scene-index="37">
+        <span class="completed-scene" data-completed-scene>✓ Completed</span>
         <div class="snippet-body">
           <div class="snippet-heading">
             <div class="snippet-topic">
@@ -1635,12 +2420,21 @@
             </div>
             <span class="new-pill">✦ New</span>
           </div>
-          <div class="snippet-line">
-            <strong>kaagadgalge uttara bariibeeku.</strong>
-            <div class="kannada-script">ಕಾಗಡ್ಗಲ್-ಗೆ ಉತ್ತರಾ ಬರೀಯಿಬೀಕು.</div>
-            <span>Kagadgulje-ge uttara bereyibeku.</span>
-          </div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-16/conversation-continuation-10.svg" alt="kaagadgalge uttara bariibeeku." loading="lazy" />
+        <div class="practice-panel">
+          <div class="sentence-panel">
+            <div class="snippet-line">
+              <strong>kaagadgalge uttara bariibeeku.</strong>
+              <div class="kannada-script">ಕಾಗಡ್ಗಲ್-ಗೆ ಉತ್ತರಾ ಬರೀಯಿಬೀಕು.</div>
+              <span>Kagadgulje-ge uttara bereyibeku.</span>
+            </div>
           <div class="original-roman">Original PDF: dhoobi washerman hancu to distribute</div>
+          </div>
+          <div class="practice-panel-top">
+            <div class="practice-panel-title"><span>Practice the sentence above</span>Listen first, then say it in Kannada<small>Use the orange button when you are ready.</small></div>
+            <div class="card-voice-picker" data-voice-picker><span>Kannada voice</span><button class="voice-choice" type="button" data-voice-speaker="gokul" aria-pressed="false">Gokul</button><button class="voice-choice" type="button" data-voice-speaker="neha" aria-pressed="false">Neha</button><button class="voice-choice" type="button" data-voice-speaker="simran" aria-pressed="false">Simran</button><button class="voice-choice" type="button" data-voice-speaker="rohan" aria-pressed="false">Rohan</button><button class="voice-choice" type="button" data-voice-speaker="advait" aria-pressed="false">Advait</button><button class="voice-choice" type="button" data-voice-speaker="suhani" aria-pressed="false">Suhani</button><button class="voice-choice" type="button" data-voice-speaker="mani" aria-pressed="false">Mani</button><button class="voice-choice" type="button" data-voice-speaker="kavya" aria-pressed="false">Kavya</button></div>
+          </div>
           <div class="listen-row">
             <button class="speak-btn" type="button" data-lang="en-IN" data-speak="kaagadgalge uttara bariibeeku."><span class="btn-icon">▶</span>Play English</button>
             <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಕಾಗಡ್ಗಲ್-ಗೆ ಉತ್ತರಾ ಬರೀಯಿಬೀಕು."><span class="btn-icon">▶</span>Play Kannada</button>
@@ -1648,10 +2442,10 @@
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/chapter-visuals/chapter-16/conversation-continuation-10.svg" alt="kaagadgalge uttara bariibeeku." loading="lazy" />
       </article>
-    
-      <article class="snippet-card" data-scene-card data-scene-index="38">
+
+      <article class="snippet-card" data-scene-card data-chapter="16" data-conversation-id="Continuation" data-scene-index="38">
+        <span class="completed-scene" data-completed-scene>✓ Completed</span>
         <div class="snippet-body">
           <div class="snippet-heading">
             <div class="snippet-topic">
@@ -1660,12 +2454,21 @@
             </div>
             <span class="new-pill">✦ New</span>
           </div>
-          <div class="snippet-line">
-            <strong>Model B : At home -</strong>
-            <div class="kannada-script">ಮಾದರಿ ಬಿ: ಮನೆಯಲ್ಲಿ</div>
-            <span>Model B: maneyalli</span>
-          </div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-16/conversation-continuation-11.svg" alt="Model B : At home -" loading="lazy" />
+        <div class="practice-panel">
+          <div class="sentence-panel">
+            <div class="snippet-line">
+              <strong>Model B : At home -</strong>
+              <div class="kannada-script">ಮಾದರಿ ಬಿ: ಮನೆಯಲ್ಲಿ</div>
+              <span>Model B: maneyalli</span>
+            </div>
           <div class="original-roman">Original PDF: batte clothes uttara reply</div>
+          </div>
+          <div class="practice-panel-top">
+            <div class="practice-panel-title"><span>Practice the sentence above</span>Listen first, then say it in Kannada<small>Use the orange button when you are ready.</small></div>
+            <div class="card-voice-picker" data-voice-picker><span>Kannada voice</span><button class="voice-choice" type="button" data-voice-speaker="gokul" aria-pressed="false">Gokul</button><button class="voice-choice" type="button" data-voice-speaker="neha" aria-pressed="false">Neha</button><button class="voice-choice" type="button" data-voice-speaker="simran" aria-pressed="false">Simran</button><button class="voice-choice" type="button" data-voice-speaker="rohan" aria-pressed="false">Rohan</button><button class="voice-choice" type="button" data-voice-speaker="advait" aria-pressed="false">Advait</button><button class="voice-choice" type="button" data-voice-speaker="suhani" aria-pressed="false">Suhani</button><button class="voice-choice" type="button" data-voice-speaker="mani" aria-pressed="false">Mani</button><button class="voice-choice" type="button" data-voice-speaker="kavya" aria-pressed="false">Kavya</button></div>
+          </div>
           <div class="listen-row">
             <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Model B : At home -"><span class="btn-icon">▶</span>Play English</button>
             <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಮಾದರಿ ಬಿ: ಮನೆಯಲ್ಲಿ"><span class="btn-icon">▶</span>Play Kannada</button>
@@ -1673,10 +2476,10 @@
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/chapter-visuals/chapter-16/conversation-continuation-11.svg" alt="Model B : At home -" loading="lazy" />
       </article>
-    
-      <article class="snippet-card" data-scene-card data-scene-index="39">
+
+      <article class="snippet-card" data-scene-card data-chapter="16" data-conversation-id="Continuation" data-scene-index="39">
+        <span class="completed-scene" data-completed-scene>✓ Completed</span>
         <div class="snippet-body">
           <div class="snippet-heading">
             <div class="snippet-topic">
@@ -1685,12 +2488,21 @@
             </div>
             <span class="new-pill">✦ New</span>
           </div>
-          <div class="snippet-line">
-            <strong>naanu aidu gantege hoogbeeku.</strong>
-            <div class="kannada-script">ನಾನು ಐದು ಗಂಟೆಗೆ ಹುಗ್ಬೀಕ್ಬೇಕು.</div>
-            <span>Naanu aidu gantege hugbekbeku.</span>
-          </div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-16/conversation-continuation-12.svg" alt="naanu aidu gantege hoogbeeku." loading="lazy" />
+        <div class="practice-panel">
+          <div class="sentence-panel">
+            <div class="snippet-line">
+              <strong>naanu aidu gantege hoogbeeku.</strong>
+              <div class="kannada-script">ನಾನು ಐದು ಗಂಟೆಗೆ ಹುಗ್ಬೀಕ್ಬೇಕು.</div>
+              <span>Naanu aidu gantege hugbekbeku.</span>
+            </div>
           <div class="original-roman">Original PDF: bejigge morning</div>
+          </div>
+          <div class="practice-panel-top">
+            <div class="practice-panel-title"><span>Practice the sentence above</span>Listen first, then say it in Kannada<small>Use the orange button when you are ready.</small></div>
+            <div class="card-voice-picker" data-voice-picker><span>Kannada voice</span><button class="voice-choice" type="button" data-voice-speaker="gokul" aria-pressed="false">Gokul</button><button class="voice-choice" type="button" data-voice-speaker="neha" aria-pressed="false">Neha</button><button class="voice-choice" type="button" data-voice-speaker="simran" aria-pressed="false">Simran</button><button class="voice-choice" type="button" data-voice-speaker="rohan" aria-pressed="false">Rohan</button><button class="voice-choice" type="button" data-voice-speaker="advait" aria-pressed="false">Advait</button><button class="voice-choice" type="button" data-voice-speaker="suhani" aria-pressed="false">Suhani</button><button class="voice-choice" type="button" data-voice-speaker="mani" aria-pressed="false">Mani</button><button class="voice-choice" type="button" data-voice-speaker="kavya" aria-pressed="false">Kavya</button></div>
+          </div>
           <div class="listen-row">
             <button class="speak-btn" type="button" data-lang="en-IN" data-speak="naanu aidu gantege hoogbeeku."><span class="btn-icon">▶</span>Play English</button>
             <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನಾನು ಐದು ಗಂಟೆಗೆ ಹುಗ್ಬೀಕ್ಬೇಕು."><span class="btn-icon">▶</span>Play Kannada</button>
@@ -1698,10 +2510,10 @@
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/chapter-visuals/chapter-16/conversation-continuation-12.svg" alt="naanu aidu gantege hoogbeeku." loading="lazy" />
       </article>
-    
-      <article class="snippet-card" data-scene-card data-scene-index="40">
+
+      <article class="snippet-card" data-scene-card data-chapter="16" data-conversation-id="Continuation" data-scene-index="40">
+        <span class="completed-scene" data-completed-scene>✓ Completed</span>
         <div class="snippet-body">
           <div class="snippet-heading">
             <div class="snippet-topic">
@@ -1710,12 +2522,21 @@
             </div>
             <span class="new-pill">✦ New</span>
           </div>
-          <div class="snippet-line">
-            <strong>tiijdi tinbeeku, kaafi ku&lt;jiibeeku.</strong>
-            <div class="kannada-script">ತಿಜ್‌ಡಿ, ತಿನ್‌ಬೀಕು, ಕಾಫಿ ಕು&lt;ಜಿಬೀಕು.</div>
-            <span>Teejdi, tinabeku, kaafi ku&lt;gibeku.</span>
-          </div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-16/conversation-continuation-13.svg" alt="tiijdi tinbeeku, kaafi ku&lt;jiibeeku." loading="lazy" />
+        <div class="practice-panel">
+          <div class="sentence-panel">
+            <div class="snippet-line">
+              <strong>tiijdi tinbeeku, kaafi ku&lt;jiibeeku.</strong>
+              <div class="kannada-script">ತಿಜ್‌ಡಿ, ತಿನ್‌ಬೀಕು, ಕಾಫಿ ಕು&lt;ಜಿಬೀಕು.</div>
+              <span>Teejdi, tinabeku, kaafi ku&lt;gibeku.</span>
+            </div>
           <div class="original-roman">Original PDF: tindi snacks</div>
+          </div>
+          <div class="practice-panel-top">
+            <div class="practice-panel-title"><span>Practice the sentence above</span>Listen first, then say it in Kannada<small>Use the orange button when you are ready.</small></div>
+            <div class="card-voice-picker" data-voice-picker><span>Kannada voice</span><button class="voice-choice" type="button" data-voice-speaker="gokul" aria-pressed="false">Gokul</button><button class="voice-choice" type="button" data-voice-speaker="neha" aria-pressed="false">Neha</button><button class="voice-choice" type="button" data-voice-speaker="simran" aria-pressed="false">Simran</button><button class="voice-choice" type="button" data-voice-speaker="rohan" aria-pressed="false">Rohan</button><button class="voice-choice" type="button" data-voice-speaker="advait" aria-pressed="false">Advait</button><button class="voice-choice" type="button" data-voice-speaker="suhani" aria-pressed="false">Suhani</button><button class="voice-choice" type="button" data-voice-speaker="mani" aria-pressed="false">Mani</button><button class="voice-choice" type="button" data-voice-speaker="kavya" aria-pressed="false">Kavya</button></div>
+          </div>
           <div class="listen-row">
             <button class="speak-btn" type="button" data-lang="en-IN" data-speak="tiijdi tinbeeku, kaafi ku&lt;jiibeeku."><span class="btn-icon">▶</span>Play English</button>
             <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ತಿಜ್‌ಡಿ, ತಿನ್‌ಬೀಕು, ಕಾಫಿ ಕು&lt;ಜಿಬೀಕು."><span class="btn-icon">▶</span>Play Kannada</button>
@@ -1723,17 +2544,16 @@
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/chapter-visuals/chapter-16/conversation-continuation-13.svg" alt="tiijdi tinbeeku, kaafi ku&lt;jiibeeku." loading="lazy" />
       </article>
     </div>
       </div>
-    
+
           <div class="lesson-tip"><span>💡 <strong>Tip:</strong> Listen to each word, then try saying it out loud. Practice makes it easy!</span><span class="tip-chip">🎧 Listening Tips</span></div>
           <details class="source-panel">
             <summary>Source conversations from PDF pages 59-60</summary>
             <section>
               <h2>Source Conversations</h2>
-              
+
       <article>
         <header>
           <h3>Chapter 16 · Conversation 1</h3>
@@ -1755,7 +2575,7 @@
 <tr><td>B</td><td>aagalla.</td><td>Yes, you must go to the market to-day.</td></tr></tbody>
         </table>
       </article>
-    
+
       <article>
         <header>
           <h3>Chapter 16 · Conversation 2</h3>
@@ -1775,7 +2595,7 @@
 <tr><td>B</td><td>dhoobiige batte ko&lt;jabeeku.</td><td>morning tomorrow.</td></tr></tbody>
         </table>
       </article>
-    
+
       <article>
         <header>
           <h3>Chapter 16 · Conversation 3</h3>
@@ -1790,7 +2610,7 @@
 <tr><td>A</td><td>puuje maacjbeeku.</td><td></td></tr></tbody>
         </table>
       </article>
-    
+
       <article>
         <header>
           <h3>Chapter 16 · Conversation Continuation</h3>
@@ -1813,9 +2633,9 @@
 <tr><td>B</td><td>tindi snacks</td><td>tiijdi tinbeeku, kaafi ku&lt;jiibeeku.</td></tr></tbody>
         </table>
       </article>
-    
+
             </section>
-            
+
             <details class="raw">
               <summary>Raw OCR for PDF page 59</summary>
               <pre>Lesson 16
@@ -1874,7 +2694,7 @@ morning tomorrow.
 What should I do when I wake up ?
 You should bathe ; and then worship.</pre>
             </details>
-            
+
             <details class="raw">
               <summary>Raw OCR for PDF page 60</summary>
               <pre>52
@@ -1913,11 +2733,11 @@ Model A : Place of work :
 niivu hattu gantddege een maadbeeku ?
 kaceeriili tapaal noo&lt;Jbeekaa ?</pre>
             </details>
-            
+
           </details>
         </div>
       </div>
-    
+
   </main>
   <script>
     const audioCache = new Map();
@@ -1925,6 +2745,17 @@ kaceeriili tapaal noo&lt;Jbeekaa ?</pre>
     let activeRecorder = null;
     let activeStream = null;
     let feedbackAudioContext = null;
+    let selectedKannadaSpeaker = localStorage.getItem("kannadaSpeaker") || "priya";
+    let currentUser = null;
+    let currentProgress = null;
+
+    document.addEventListener("click", function (event) {
+      const voiceButton = event.target.closest("[data-voice-speaker]");
+      if (!voiceButton) return;
+      selectedKannadaSpeaker = voiceButton.getAttribute("data-voice-speaker") || "priya";
+      localStorage.setItem("kannadaSpeaker", selectedKannadaSpeaker);
+      syncVoiceButtons();
+    });
 
     document.addEventListener("click", function (event) {
       const button = event.target.closest("[data-speak]");
@@ -1944,10 +2775,180 @@ kaceeriili tapaal noo&lt;Jbeekaa ?</pre>
     });
 
     setupSceneProgress();
+    syncVoiceButtons();
+    loadSignedInUser();
+
+    function syncVoiceButtons() {
+      document.querySelectorAll("[data-voice-speaker]").forEach((button) => {
+        const active = button.getAttribute("data-voice-speaker") === selectedKannadaSpeaker;
+        button.classList.toggle("active", active);
+        button.setAttribute("aria-pressed", active ? "true" : "false");
+      });
+    }
+
+    async function loadSignedInUser() {
+      const panel = document.querySelector("[data-auth-panel]");
+      const callbackUrl = encodeURIComponent(window.location.pathname + window.location.search);
+      try {
+        const response = await fetch("/api/me", { cache: "no-store" });
+        const data = await response.json();
+        currentProgress = data.progress || null;
+        applyProgress(currentProgress);
+        if (!data.authenticated) {
+          if (panel) panel.innerHTML = '<span class="account-dot" title="Sign in">?</span><a href="/sign-in?callbackUrl=' + callbackUrl + '">Sign in</a>';
+          return;
+        }
+        currentUser = data.user;
+        const name = data.user?.name || data.user?.email || "Learner";
+        const initial = name.trim().slice(0, 1).toUpperCase() || "U";
+        if (panel) panel.innerHTML = '<span class="account-dot" title="' + escapeHtml(name) + '">' + escapeHtml(initial) + '</span><a href="/progress">Progress</a><a href="/sign-out?callbackUrl=' + callbackUrl + '">Sign out</a>';
+      } catch {
+        if (panel) panel.innerHTML = '<span class="account-dot" title="Offline">!</span>';
+      }
+    }
+
+    function applyProgress(progress) {
+      paintChapterDashboard(progress);
+      paintSceneCards(progress);
+      paintChapterIndex(progress);
+    }
+
+    function progressPercent(completed, total) {
+      if (!total) return 0;
+      return Math.min(100, Math.round((Number(completed || 0) / Number(total || 0)) * 100));
+    }
+
+    function chapterProgress(progress, chapterNumber) {
+      return (progress?.chapters || []).find((item) => Number(item.chapter) === Number(chapterNumber)) || null;
+    }
+
+    function sceneProgressMap(progress, chapterNumber) {
+      const map = new Map();
+      (progress?.scenes || [])
+        .filter((scene) => Number(scene.chapter) === Number(chapterNumber))
+        .forEach((scene) => map.set(String(scene.scene_index), scene));
+      return map;
+    }
+
+    function renderBadges(badges, summary) {
+      const current = badges && badges.length ? badges[badges.length - 1] : null;
+      const currentHtml = current
+        ? '<a class="badge-chip badge-link" href="/progress" title="' + escapeHtml(current.description || "View badge details") + '">' + escapeHtml(current.label || "Badge") + '<small>Current badge</small></a>'
+        : '<a class="badge-chip badge-link empty" href="/progress">No badge<small>Current badge</small></a>';
+      return currentHtml;
+    }
+
+    function renderStreakGrid(cells) {
+      const values = cells && cells.length ? cells : Array.from({ length: 28 }, () => ({ level: 0, count: 0, date: "" }));
+      return values.map((cell) => '<span class="streak-cell level-' + Number(cell.level || 0) + '" title="' + escapeHtml((cell.date || "") + ": " + Number(cell.count || 0) + " tries") + '"></span>').join("");
+    }
+
+    function paintChapterDashboard(progress) {
+      const app = document.querySelector(".learning-app");
+      if (!app) return;
+      const chapterNumber = Number(app.getAttribute("data-chapter") || "0");
+      const chapter = chapterProgress(progress, chapterNumber);
+      const total = Number(chapter?.total_scenes || app.getAttribute("data-scene-total") || 0);
+      const completed = Number(chapter?.completed_scenes || 0);
+      const percent = progressPercent(completed, total);
+      const summary = progress?.summary || {};
+      const fields = {
+        completed: completed + " / " + total,
+        chapterPoints: Number(chapter?.total_points || 0),
+        totalPoints: Number(summary.totalPoints || 0),
+        streakDays: Number(summary.streakDays || 0),
+      };
+      Object.entries(fields).forEach(([key, value]) => {
+        document.querySelectorAll("[data-reward-" + key + "]").forEach((node) => node.textContent = String(value));
+      });
+      document.querySelectorAll("[data-completion-percent]").forEach((node) => node.textContent = percent + "%");
+      document.querySelectorAll("[data-hud-progress-fill]").forEach((node) => node.style.setProperty("--hud-progress", percent + "%"));
+      document.querySelectorAll("[data-badge-strip]").forEach((node) => node.innerHTML = renderBadges(summary.badges || [], summary));
+      document.querySelectorAll("[data-streak-grid]").forEach((node) => node.innerHTML = renderStreakGrid(summary.streakGrid || []));
+    }
+
+    function paintSceneCards(progress) {
+      const app = document.querySelector(".learning-app");
+      if (!app) return;
+      const chapterNumber = Number(app.getAttribute("data-chapter") || "0");
+      const scenes = sceneProgressMap(progress, chapterNumber);
+      document.querySelectorAll("[data-scene-card]").forEach((card) => {
+        const index = card.getAttribute("data-scene-index") || "";
+        const scene = scenes.get(index);
+        const done = scene?.status === "completed";
+        card.classList.toggle("completed", done);
+        card.classList.toggle("correct", done);
+        const badge = card.querySelector("[data-completed-scene]");
+        if (badge && scene) {
+          badge.textContent = done
+            ? "✓ 100% · " + Number(scene.points_earned || 0) + " pts"
+            : Number(scene.attempts || 0) + " tries";
+        }
+      });
+    }
+
+    function paintChapterIndex(progress) {
+      document.querySelectorAll("[data-chapter-card]").forEach((card) => {
+        const chapterNumber = Number(card.getAttribute("data-chapter-card") || "0");
+        const total = Number(card.getAttribute("data-total-scenes") || "0");
+        const chapter = chapterProgress(progress, chapterNumber);
+        const completed = Number(chapter?.completed_scenes || 0);
+        const percent = progressPercent(completed, Number(chapter?.total_scenes || total));
+        const complete = Boolean(chapter?.completed_at) || (total > 0 && completed >= total);
+        card.classList.toggle("complete", complete);
+        const status = card.querySelector("[data-chapter-status]");
+        const count = card.querySelector("[data-chapter-count]");
+        const points = card.querySelector("[data-chapter-points]");
+        const meter = card.querySelector("[data-chapter-meter]");
+        if (status) status.textContent = complete ? "✓ 100% complete" : completed > 0 ? "In progress" : "Start";
+        if (count) count.textContent = completed + " / " + (Number(chapter?.total_scenes || total) || "?") + " sentences";
+        if (points) points.textContent = Number(chapter?.total_points || 0) + " points · " + Number(chapter?.total_attempts || 0) + " tries";
+        if (meter) meter.style.setProperty("--percent", percent + "%");
+      });
+    }
+
+    function escapeHtml(value) {
+      return String(value)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }
+
+    async function savePracticeProgress(button, result) {
+      const card = button.closest(".snippet-card");
+      if (!card || !currentUser) return;
+      const payload = {
+        chapter: Number(card.getAttribute("data-chapter") || "0"),
+        conversationId: card.getAttribute("data-conversation-id") || "",
+        sceneIndex: Number(card.getAttribute("data-scene-index") || "0"),
+        expected: button.getAttribute("data-expected") || "",
+        transcript: result.transcript || "",
+        score: typeof result.score === "number" ? result.score : null,
+        matched: result.matched === true,
+      };
+      try {
+        const response = await fetch("/api/progress/attempt", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
+        });
+        if (!response.ok) return;
+        const data = await response.json();
+        await loadSignedInUser();
+        if (data.progress?.chapterCompleted) {
+          setPracticeFeedback(button, "good", "Chapter complete! Certificate earned.");
+        } else if (payload.matched && data.progress?.pointsAwarded) {
+          setPracticeFeedback(button, "good", "Correct! +" + data.progress.pointsAwarded + " points on try " + data.progress.attemptNumber + ".");
+        }
+      } catch {
+        // Keep practice usable even if progress sync fails.
+      }
+    }
 
     async function playSarvamAudio(button, text, languageCode) {
       const speaker = languageCode === "kn-IN"
-        ? (document.querySelector("[data-kannada-speaker]")?.value || "")
+        ? selectedKannadaSpeaker
         : "";
       const prebuiltAudio = button.getAttribute("data-audio") || "";
       const shouldUsePrebuiltAudio = Boolean(prebuiltAudio) && languageCode !== "kn-IN";
@@ -2229,10 +3230,12 @@ kaceeriili tapaal noo&lt;Jbeekaa ?</pre>
             }
             if (result.matched) {
               setPracticeFeedback(button, "good", "Correct! We heard: " + (result.transcript || expected));
+              savePracticeProgress(button, result);
               button.classList.add("correct");
               button.textContent = "✓ Correct";
               launchCelebration(button);
             } else {
+              savePracticeProgress(button, result);
               button.classList.remove("correct");
               launchRetryFeedback(button);
               setPracticeFeedback(
