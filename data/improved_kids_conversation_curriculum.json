@@ -43,7 +43,7 @@
   "chapters": [
     {
       "chapter": 1,
-      "title": "New friend, ice cream, and names",
+      "title": "Names and Ice Cream: greetings, names, likes",
       "why_this_helps_kids": "Start with the normal first-meeting pattern, but immediately make it fun with ice cream and favorite flavors.",
       "focus": [
         "hi",
@@ -258,11 +258,12 @@
         "introductions",
         "names",
         "likes"
-      ]
+      ],
+      "chapter_group": "Start speaking fast"
     },
     {
       "chapter": 2,
-      "title": "How are you, and what do you want to do?",
+      "title": "Recess Plans: feelings, choices, permission",
       "why_this_helps_kids": "Feelings become more engaging when they connect to games, snacks, and play plans.",
       "focus": [
         "how are you",
@@ -452,11 +453,12 @@
         "feelings through context",
         "permission",
         "later/again"
-      ]
+      ],
+      "chapter_group": "Start speaking fast"
     },
     {
       "chapter": 3,
-      "title": "Family, car drive, and weekend fun",
+      "title": "Family Car Drive: family, he/she/we, future plans",
       "why_this_helps_kids": "Family introductions are more memorable when tied to a weekend car ride or fun outing.",
       "focus": [
         "mother",
@@ -660,11 +662,12 @@
         "he/she/we",
         "future plans",
         "food"
-      ]
+      ],
+      "chapter_group": "Start speaking fast"
     },
     {
       "chapter": 4,
-      "title": "Classroom games and asking again",
+      "title": "Classroom Word Game: listen, repeat, ask again",
       "why_this_helps_kids": "Classroom survival phrases are easier when the scene includes a game and a friendly teacher.",
       "focus": [
         "listen",
@@ -829,11 +832,12 @@
         "classroom commands",
         "asking again",
         "listening/speaking"
-      ]
+      ],
+      "chapter_group": "Start speaking fast"
     },
     {
       "chapter": 5,
-      "title": "My toys, books, and game board",
+      "title": "Toys and Game Board: this/that, here/there, things",
       "why_this_helps_kids": "Object words should start with things kids care about: toys, books, pencils, and games.",
       "focus": [
         "this",
@@ -1028,11 +1032,12 @@
         "where",
         "school supplies",
         "games"
-      ]
+      ],
+      "chapter_group": "Start speaking fast"
     },
     {
       "chapter": 6,
-      "title": "Pasta, ice cream, and snacks",
+      "title": "Tense Drill 1 with Food: ate / eating / will eat",
       "why_this_helps_kids": "Food is one of the fastest ways to get kids speaking because they have strong preferences.",
       "focus": [
         "want",
@@ -1311,6 +1316,105 @@
             "future tense",
             "food"
           ]
+        },
+        {
+          "id": "6C",
+          "title": "Same food, three times",
+          "setting": "kitchen table",
+          "goal": "Show the same food idea in past, present, and future.",
+          "concepts_taught": [
+            "structured tense drill",
+            "past tense",
+            "present tense",
+            "future tense",
+            "food"
+          ],
+          "grammar_targets": [
+            "tense_past",
+            "tense_present",
+            "tense_future"
+          ],
+          "lines": [
+            {
+              "speaker": "Mom",
+              "english": "What did you eat yesterday?",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "tense_past",
+                "you"
+              ]
+            },
+            {
+              "speaker": "Child",
+              "english": "I ate pasta yesterday.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "tense_past",
+                "I"
+              ]
+            },
+            {
+              "speaker": "Mom",
+              "english": "What are you eating now?",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "tense_present",
+                "you"
+              ]
+            },
+            {
+              "speaker": "Child",
+              "english": "I am eating pasta now.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "tense_present",
+                "I"
+              ]
+            },
+            {
+              "speaker": "Mom",
+              "english": "What will you eat tomorrow?",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "tense_future",
+                "you"
+              ]
+            },
+            {
+              "speaker": "Child",
+              "english": "I will eat dosa tomorrow.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "tense_future",
+                "I"
+              ]
+            },
+            {
+              "speaker": "Mom",
+              "english": "Good. Yesterday, now, tomorrow: three different times.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "tense_past",
+                "tense_present",
+                "tense_future"
+              ]
+            }
+          ],
+          "keywords": [
+            "ate",
+            "eating",
+            "will eat",
+            "yesterday",
+            "now",
+            "tomorrow"
+          ]
         }
       ],
       "tone": "playful, kid-first, practical spoken Kannada",
@@ -1324,12 +1428,14 @@
       "source_concepts_currently_covered": [
         "food/snacks",
         "want/request",
-        "past/present/future"
-      ]
+        "past/present/future",
+        "structured tense drill"
+      ],
+      "chapter_group": "Fun topics with tense spiral"
     },
     {
       "chapter": 7,
-      "title": "Games we like",
+      "title": "Tense Drill 2 with Games: played / playing / will play",
       "why_this_helps_kids": "Preference language is more exciting when kids talk about board games, outdoor games, and winning.",
       "focus": [
         "like",
@@ -1591,6 +1697,104 @@
             "future tense",
             "games"
           ]
+        },
+        {
+          "id": "7C",
+          "title": "Same game, three times",
+          "setting": "living room floor",
+          "goal": "Compare played / playing / will play using the same game.",
+          "concepts_taught": [
+            "structured tense drill",
+            "past tense",
+            "present tense",
+            "future tense",
+            "games"
+          ],
+          "grammar_targets": [
+            "tense_past",
+            "tense_present",
+            "tense_future"
+          ],
+          "lines": [
+            {
+              "speaker": "Sara",
+              "english": "What did we play yesterday?",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "tense_past",
+                "we"
+              ]
+            },
+            {
+              "speaker": "Arjun",
+              "english": "We played Snake and Ladder.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "tense_past",
+                "we"
+              ]
+            },
+            {
+              "speaker": "Sara",
+              "english": "What are we playing now?",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "tense_present",
+                "we"
+              ]
+            },
+            {
+              "speaker": "Arjun",
+              "english": "We are playing hide and seek now.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "tense_present",
+                "we"
+              ]
+            },
+            {
+              "speaker": "Sara",
+              "english": "What will we play tomorrow?",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "tense_future",
+                "we"
+              ]
+            },
+            {
+              "speaker": "Arjun",
+              "english": "We will play cricket tomorrow.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "tense_future",
+                "we"
+              ]
+            },
+            {
+              "speaker": "Sara",
+              "english": "Yesterday we played, now we are playing, tomorrow we will play.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "tense_past",
+                "tense_present",
+                "tense_future",
+                "we"
+              ]
+            }
+          ],
+          "keywords": [
+            "played",
+            "playing",
+            "will play",
+            "game"
+          ]
         }
       ],
       "tone": "playful, kid-first, practical spoken Kannada",
@@ -1605,12 +1809,14 @@
         "games",
         "turn-taking",
         "past/present/future",
-        "try again"
-      ]
+        "try again",
+        "structured tense drill"
+      ],
+      "chapter_group": "Fun topics with tense spiral"
     },
     {
       "chapter": 8,
-      "title": "Where is the candy?",
+      "title": "Candy Hunt: where, here, there, under, behind",
       "why_this_helps_kids": "Location words become fun when kids search for candy, toys, or a ball.",
       "focus": [
         "where",
@@ -1780,11 +1986,12 @@
         "where/here/there",
         "under/behind",
         "things/places"
-      ]
+      ],
+      "chapter_group": "Fun topics with tense spiral"
     },
     {
       "chapter": 9,
-      "title": "Can I play?",
+      "title": "Can I Play?: permission and respectful asking",
       "why_this_helps_kids": "Permission phrases are practical when kids ask to play, borrow, go outside, or get a treat.",
       "focus": [
         "barabahuda",
@@ -1920,11 +2127,12 @@
         "permission",
         "borrow/return",
         "polite requests"
-      ]
+      ],
+      "chapter_group": "Polite and respectful speech"
     },
     {
       "chapter": 10,
-      "title": "Counting candies and birthdays",
+      "title": "Birthday Candies: numbers, age, comparisons",
       "why_this_helps_kids": "Numbers are more memorable with candies, snacks, birthdays, and game scores.",
       "focus": [
         "ondu",
@@ -2054,6 +2262,103 @@
             "candies",
             "how many"
           ]
+        },
+        {
+          "id": "10C",
+          "title": "Bigger scoop, smaller candy",
+          "setting": "birthday dessert table",
+          "goal": "Practice comparisons using treats and party games.",
+          "concepts_taught": [
+            "comparisons",
+            "bigger/smaller",
+            "more/less",
+            "party food"
+          ],
+          "grammar_targets": [
+            "comparisons",
+            "numbers",
+            "possessives"
+          ],
+          "lines": [
+            {
+              "speaker": "Child",
+              "english": "Your ice cream scoop is bigger than mine.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "you",
+                "I",
+                "comparison"
+              ]
+            },
+            {
+              "speaker": "Friend",
+              "english": "Yes, but your candy is bigger than mine.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "you",
+                "I",
+                "comparison"
+              ]
+            },
+            {
+              "speaker": "Child",
+              "english": "This red candy is smaller.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "this",
+                "comparison"
+              ]
+            },
+            {
+              "speaker": "Friend",
+              "english": "That blue candy is sweeter.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "that",
+                "comparison"
+              ]
+            },
+            {
+              "speaker": "Child",
+              "english": "Who has more sprinkles?",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "question_words",
+                "comparison"
+              ]
+            },
+            {
+              "speaker": "Friend",
+              "english": "You have more sprinkles than me.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "you",
+                "comparison"
+              ]
+            },
+            {
+              "speaker": "Child",
+              "english": "Let’s share and make it fair.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "we"
+              ]
+            }
+          ],
+          "keywords": [
+            "bigger",
+            "smaller",
+            "sweeter",
+            "more",
+            "share"
+          ]
         }
       ],
       "tone": "playful, kid-first, practical spoken Kannada",
@@ -2062,12 +2367,14 @@
         "numbers",
         "age",
         "birthday",
-        "how many"
-      ]
+        "how many",
+        "comparisons"
+      ],
+      "chapter_group": "Fun topics with tense spiral"
     },
     {
       "chapter": 11,
-      "title": "Morning routine",
+      "title": "Morning Routine: daily actions and ready/not ready",
       "why_this_helps_kids": "Routine language gives repeatable daily practice at home.",
       "focus": [
         "elu",
@@ -2219,11 +2526,12 @@
         "daily routine",
         "ready/not ready",
         "school time"
-      ]
+      ],
+      "chapter_group": "World around kids"
     },
     {
       "chapter": 12,
-      "title": "Polite words",
+      "title": "Polite Words: sorry, help, are you okay?",
       "why_this_helps_kids": "Please, sorry, thanks, and excuse me are high-value social phrases.",
       "focus": [
         "dayavittu",
@@ -2375,11 +2683,12 @@
         "sorry/help",
         "polite language",
         "are you okay"
-      ]
+      ],
+      "chapter_group": "Polite and respectful speech"
     },
     {
       "chapter": 13,
-      "title": "Clothes for a fun day out",
+      "title": "Getting Dressed: clothes, colors, where is it?",
       "why_this_helps_kids": "Clothes and colors matter when kids are getting ready for a party or outing.",
       "focus": [
         "ಅಂಗಿ",
@@ -2442,11 +2751,12 @@
         "clothes/colors",
         "where is it",
         "getting ready"
-      ]
+      ],
+      "chapter_group": "World around kids"
     },
     {
       "chapter": 14,
-      "title": "Body and health",
+      "title": "Nurse Room: body, health, medicine, rest",
       "why_this_helps_kids": "Keeps the later curriculum useful while making the context child-centered and image-friendly.",
       "focus": [
         "ಏನಾಯಿತು",
@@ -2500,11 +2810,12 @@
         "health",
         "body",
         "medicine/rest"
-      ]
+      ],
+      "chapter_group": "World around kids"
     },
     {
       "chapter": 15,
-      "title": "Weather",
+      "title": "Rainy Day: weather and outing plans",
       "why_this_helps_kids": "Keeps the later curriculum useful while making the context child-centered and image-friendly.",
       "focus": [
         "ಮಳೆ",
@@ -2559,11 +2870,12 @@
         "rain",
         "umbrella",
         "outing preparation"
-      ]
+      ],
+      "chapter_group": "World around kids"
     },
     {
       "chapter": 16,
-      "title": "Animals",
+      "title": "Animal Book: animals, likes, what is this?",
       "why_this_helps_kids": "Keeps the later curriculum useful while making the context child-centered and image-friendly.",
       "focus": [
         "ಪ್ರಾಣಿ",
@@ -2626,11 +2938,12 @@
         "animals",
         "likes",
         "what is this"
-      ]
+      ],
+      "chapter_group": "World around kids"
     },
     {
       "chapter": 17,
-      "title": "At the park: slides, swings, and games",
+      "title": "Park Story: past continuous and movement",
       "why_this_helps_kids": "Outdoor play gives natural reasons to use come, go, run, wait, and again.",
       "focus": [
         "ಆಡು",
@@ -2789,6 +3102,112 @@
             "I",
             "we"
           ]
+        },
+        {
+          "id": "17B",
+          "title": "What were you doing at the park?",
+          "setting": "park near the slide",
+          "goal": "Practice past continuous through a normal playground story.",
+          "concepts_taught": [
+            "past continuous",
+            "playground",
+            "what were you doing",
+            "while/when"
+          ],
+          "grammar_targets": [
+            "past_continuous",
+            "question_words",
+            "people_place_thing"
+          ],
+          "lines": [
+            {
+              "speaker": "Maya",
+              "english": "Ravi, I called you yesterday.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "I",
+                "tense_past"
+              ]
+            },
+            {
+              "speaker": "Ravi",
+              "english": "Sorry, I did not hear you.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "I",
+                "you",
+                "tense_past"
+              ]
+            },
+            {
+              "speaker": "Maya",
+              "english": "What were you doing?",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "you",
+                "past_continuous"
+              ]
+            },
+            {
+              "speaker": "Ravi",
+              "english": "I was playing on the slide.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "I",
+                "past_continuous"
+              ]
+            },
+            {
+              "speaker": "Maya",
+              "english": "Was Tara playing too?",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "he_she",
+                "past_continuous"
+              ]
+            },
+            {
+              "speaker": "Ravi",
+              "english": "Yes, she was climbing the ladder.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "he_she",
+                "past_continuous"
+              ]
+            },
+            {
+              "speaker": "Maya",
+              "english": "Were you both having fun?",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "you",
+                "past_continuous"
+              ]
+            },
+            {
+              "speaker": "Ravi",
+              "english": "Yes, we were laughing a lot.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "we",
+                "past_continuous"
+              ]
+            }
+          ],
+          "keywords": [
+            "was playing",
+            "were laughing",
+            "slide",
+            "ladder"
+          ]
         }
       ],
       "tone": "playful, kid-first, practical spoken Kannada",
@@ -2800,12 +3219,14 @@
       "source_concepts_currently_covered": [
         "park/play",
         "past/present/future",
-        "movement"
-      ]
+        "movement",
+        "past continuous"
+      ],
+      "chapter_group": "Fun topics with tense spiral"
     },
     {
       "chapter": 18,
-      "title": "Buying candy at a shop",
+      "title": "Candy Shop: price, buying, one/two",
       "why_this_helps_kids": "Small shopping scenes are fun and teach price, want, one, two, and thank you.",
       "focus": [
         "ಎಷ್ಟು",
@@ -2867,11 +3288,12 @@
         "price",
         "one/two",
         "candy"
-      ]
+      ],
+      "chapter_group": "World around kids"
     },
     {
       "chapter": 19,
-      "title": "Directions",
+      "title": "Finding Places: directions, left/right, near/far",
       "why_this_helps_kids": "Keeps the later curriculum useful while making the context child-centered and image-friendly.",
       "focus": [
         "ಎಲ್ಲಿ",
@@ -2931,11 +3353,12 @@
         "directions",
         "left/right",
         "places"
-      ]
+      ],
+      "chapter_group": "World around kids"
     },
     {
       "chapter": 20,
-      "title": "Bus ride, car drive, and going places",
+      "title": "Trip Talk: have been / had gone / will go",
       "why_this_helps_kids": "Transportation language is more fun when kids choose between bus, car, and a day trip.",
       "focus": [
         "ಹೇಗೆ",
@@ -3091,6 +3514,114 @@
             "I",
             "we"
           ]
+        },
+        {
+          "id": "20B",
+          "title": "Have you been there before?",
+          "setting": "car ride to a theme park",
+          "goal": "Introduce have been / had been through an exciting trip conversation.",
+          "concepts_taught": [
+            "past perfect",
+            "present perfect",
+            "theme park",
+            "travel"
+          ],
+          "grammar_targets": [
+            "present_perfect",
+            "past_perfect",
+            "question_words"
+          ],
+          "lines": [
+            {
+              "speaker": "Anu",
+              "english": "Are we going to Wonderla today?",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "tense_present",
+                "we"
+              ]
+            },
+            {
+              "speaker": "Dad",
+              "english": "Yes, we are going there now.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "tense_present",
+                "we",
+                "there"
+              ]
+            },
+            {
+              "speaker": "Anu",
+              "english": "Have you been there before?",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "you",
+                "present_perfect",
+                "there"
+              ]
+            },
+            {
+              "speaker": "Dad",
+              "english": "Yes, I have been there once.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "I",
+                "present_perfect",
+                "there"
+              ]
+            },
+            {
+              "speaker": "Anu",
+              "english": "Had you gone on the big ride?",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "you",
+                "past_perfect"
+              ]
+            },
+            {
+              "speaker": "Dad",
+              "english": "No, I had not gone on that ride.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "I",
+                "past_perfect",
+                "that"
+              ]
+            },
+            {
+              "speaker": "Anu",
+              "english": "Then let’s go together!",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "we"
+              ]
+            },
+            {
+              "speaker": "Dad",
+              "english": "Okay, but we will start with the small ride.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "we",
+                "tense_future"
+              ]
+            }
+          ],
+          "keywords": [
+            "have been",
+            "had gone",
+            "ride",
+            "theme park"
+          ]
         }
       ],
       "tone": "playful, kid-first, practical spoken Kannada",
@@ -3102,12 +3633,15 @@
       "source_concepts_currently_covered": [
         "transport",
         "car/bus",
-        "past/present/future"
-      ]
+        "past/present/future",
+        "past perfect",
+        "present perfect"
+      ],
+      "chapter_group": "Fun topics with tense spiral"
     },
     {
       "chapter": 21,
-      "title": "Library",
+      "title": "Library Day: books, reading, requests",
       "why_this_helps_kids": "Keeps the later curriculum useful while making the context child-centered and image-friendly.",
       "focus": [
         "ಪುಸ್ತಕ",
@@ -3163,11 +3697,12 @@
         "library/books",
         "reading",
         "requests"
-      ]
+      ],
+      "chapter_group": "World around kids"
     },
     {
       "chapter": 22,
-      "title": "Screen time",
+      "title": "Screen Time: after/before and permission",
       "why_this_helps_kids": "Keeps the later curriculum useful while making the context child-centered and image-friendly.",
       "focus": [
         "ನೋಡಬಹುದಾ",
@@ -3224,11 +3759,12 @@
         "screen time",
         "after/before",
         "permission"
-      ]
+      ],
+      "chapter_group": "World around kids"
     },
     {
       "chapter": 23,
-      "title": "Homework",
+      "title": "Homework Deal: conditionals and not yet",
       "why_this_helps_kids": "Keeps the later curriculum useful while making the context child-centered and image-friendly.",
       "focus": [
         "ಮುಗಿದಿದೆ",
@@ -3279,18 +3815,116 @@
             "ಇನ್ನೂ",
             "ಈಗ"
           ]
+        },
+        {
+          "id": "23B",
+          "title": "If homework is done, we can play",
+          "setting": "study table",
+          "goal": "Practice if/then conditionals through homework and game time.",
+          "concepts_taught": [
+            "conditionals",
+            "homework",
+            "games",
+            "if/then"
+          ],
+          "grammar_targets": [
+            "conditionals",
+            "future_tense",
+            "obligation_permission"
+          ],
+          "lines": [
+            {
+              "speaker": "Dad",
+              "english": "Is your homework done?",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "you",
+                "tense_present"
+              ]
+            },
+            {
+              "speaker": "Child",
+              "english": "Not yet.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "not_yet"
+              ]
+            },
+            {
+              "speaker": "Dad",
+              "english": "If you finish it, we can play Snake and Ladder.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "you",
+                "we",
+                "conditional"
+              ]
+            },
+            {
+              "speaker": "Child",
+              "english": "Really? Then I will finish fast.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "I",
+                "tense_future"
+              ]
+            },
+            {
+              "speaker": "Dad",
+              "english": "If you need help, call me.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "you",
+                "conditional"
+              ]
+            },
+            {
+              "speaker": "Child",
+              "english": "Okay, I need help with this word.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "I",
+                "this"
+              ]
+            },
+            {
+              "speaker": "Dad",
+              "english": "Good. After this, we can play.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "this",
+                "we",
+                "tense_future"
+              ]
+            }
+          ],
+          "keywords": [
+            "if",
+            "then",
+            "homework",
+            "play"
+          ]
         }
       ],
       "grammar_targets": [],
       "source_concepts_currently_covered": [
         "homework",
         "not yet",
-        "now/later"
-      ]
+        "now/later",
+        "conditionals"
+      ],
+      "chapter_group": "World around kids"
     },
     {
       "chapter": 24,
-      "title": "Helping at home",
+      "title": "Helping at Home: chores, bring/take, polite help",
       "why_this_helps_kids": "Keeps the later curriculum useful while making the context child-centered and image-friendly.",
       "focus": [
         "ಸಹಾಯ",
@@ -3344,11 +3978,12 @@
         "helping at home",
         "bring/take",
         "chores"
-      ]
+      ],
+      "chapter_group": "Polite and respectful speech"
     },
     {
       "chapter": 25,
-      "title": "Festival sweets and family fun",
+      "title": "Festival Sweets: made by, family, greetings",
       "why_this_helps_kids": "Festival scenes combine relatives, sweets, greetings, and excitement.",
       "focus": [
         "ಹಬ್ಬ",
@@ -3392,6 +4027,105 @@
             "ಅಜ್ಜ",
             "ಒಳ್ಳೆಯದಾಗಲಿ"
           ]
+        },
+        {
+          "id": "25B",
+          "title": "Sweets made by grandma",
+          "setting": "festival kitchen",
+          "goal": "Practice passive “made by” through festival sweets and cards.",
+          "concepts_taught": [
+            "passive",
+            "made by",
+            "festival",
+            "family"
+          ],
+          "grammar_targets": [
+            "passive_made_by",
+            "people_place_thing",
+            "past_tense"
+          ],
+          "lines": [
+            {
+              "speaker": "Child",
+              "english": "These laddus smell amazing.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "this",
+                "tense_present"
+              ]
+            },
+            {
+              "speaker": "Mom",
+              "english": "They were made by grandma.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "they",
+                "passive_made_by",
+                "tense_past"
+              ]
+            },
+            {
+              "speaker": "Child",
+              "english": "This card is pretty too.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "this",
+                "tense_present"
+              ]
+            },
+            {
+              "speaker": "Mom",
+              "english": "That card was made by Meena.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "that",
+                "passive_made_by",
+                "tense_past"
+              ]
+            },
+            {
+              "speaker": "Child",
+              "english": "Who made the rangoli?",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "question_words",
+                "tense_past"
+              ]
+            },
+            {
+              "speaker": "Mom",
+              "english": "The rangoli was made by your aunt.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "passive_made_by",
+                "tense_past",
+                "your"
+              ]
+            },
+            {
+              "speaker": "Child",
+              "english": "Everyone made something nice!",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "tense_past",
+                "quantifiers"
+              ]
+            }
+          ],
+          "keywords": [
+            "made by",
+            "laddus",
+            "card",
+            "rangoli",
+            "festival"
+          ]
         }
       ],
       "tone": "playful, kid-first, practical spoken Kannada",
@@ -3399,12 +4133,14 @@
       "source_concepts_currently_covered": [
         "festival/family",
         "sweets",
-        "greetings"
-      ]
+        "greetings",
+        "passive/made by"
+      ],
+      "chapter_group": "World around kids"
     },
     {
       "chapter": 26,
-      "title": "Phone call",
+      "title": "Respectful vs Casual: talking to elders and friends",
       "why_this_helps_kids": "Keeps the later curriculum useful while making the context child-centered and image-friendly.",
       "focus": [
         "ಹಲೋ",
@@ -3456,18 +4192,124 @@
             "ಅಜ್ಜಿ",
             "ಹೇಗಿದ್ದೀಯ"
           ]
+        },
+        {
+          "id": "26B",
+          "title": "Grandma and friend: same idea, different respect",
+          "setting": "phone call and playground",
+          "goal": "Show that Kannada uses respectful forms for elders and casual forms for friends.",
+          "concepts_taught": [
+            "respectful vs casual speech",
+            "elders",
+            "friends",
+            "same meaning different form"
+          ],
+          "grammar_targets": [
+            "speech_level_respectful",
+            "speech_level_casual",
+            "pronouns"
+          ],
+          "lines": [
+            {
+              "speaker": "Child",
+              "english": "Grandma, are you coming home?",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "you",
+                "tense_present"
+              ],
+              "speech_level": "respectful_elder_or_teacher",
+              "addressee": "Grandma"
+            },
+            {
+              "speaker": "Grandma",
+              "english": "Yes, I am coming this evening.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "I",
+                "tense_present"
+              ],
+              "speech_level": "respectful_elder_or_teacher",
+              "addressee": "Child"
+            },
+            {
+              "speaker": "Child",
+              "english": "Ravi, are you coming too?",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "you",
+                "tense_present"
+              ],
+              "speech_level": "casual_friend_or_younger",
+              "addressee": "Ravi"
+            },
+            {
+              "speaker": "Ravi",
+              "english": "Yes, I am coming now.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "I",
+                "tense_present"
+              ],
+              "speech_level": "casual_friend_or_younger",
+              "addressee": "Child"
+            },
+            {
+              "speaker": "Child",
+              "english": "Grandma, please sit here.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "here"
+              ],
+              "speech_level": "respectful_elder_or_teacher",
+              "addressee": "Grandma"
+            },
+            {
+              "speaker": "Child",
+              "english": "Ravi, sit here.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "here"
+              ],
+              "speech_level": "casual_friend_or_younger",
+              "addressee": "Ravi"
+            },
+            {
+              "speaker": "Narrator",
+              "english": "Same idea, but Kannada should sound more respectful with Grandma.",
+              "kannada": "",
+              "roman": ""
+            }
+          ],
+          "keywords": [
+            "grandma",
+            "friend",
+            "respectful",
+            "casual",
+            "come",
+            "sit"
+          ]
         }
       ],
       "grammar_targets": [],
       "source_concepts_currently_covered": [
         "phone calls",
         "how are you",
-        "family"
-      ]
+        "family",
+        "respectful vs casual speech",
+        "elders vs friends"
+      ],
+      "chapter_group": "Polite and respectful speech"
     },
     {
       "chapter": 27,
-      "title": "Planning a playdate",
+      "title": "Playdate Plans: time, visiting, respectful/casual speech",
       "why_this_helps_kids": "Kids often need language for visiting a friend, time, games, and snacks.",
       "focus": [
         "ಬರ್ತೀಯಾ",
@@ -3520,6 +4362,109 @@
             "ಮನೆ",
             "ಗಂಟೆ"
           ]
+        },
+        {
+          "id": "27B",
+          "title": "Asking teacher vs asking a friend",
+          "setting": "school and playground",
+          "goal": "Practice polite/respectful request vs casual friend request.",
+          "concepts_taught": [
+            "respectful vs casual speech",
+            "permission",
+            "requests",
+            "teacher vs friend"
+          ],
+          "grammar_targets": [
+            "speech_level_respectful",
+            "speech_level_casual",
+            "obligation_permission"
+          ],
+          "lines": [
+            {
+              "speaker": "Child",
+              "english": "Teacher, can I play after class?",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "I",
+                "permission"
+              ],
+              "speech_level": "respectful_elder_or_teacher",
+              "addressee": "Teacher"
+            },
+            {
+              "speaker": "Teacher",
+              "english": "Yes, after class you may play.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "you"
+              ],
+              "speech_level": "respectful_elder_or_teacher",
+              "addressee": "Child"
+            },
+            {
+              "speaker": "Child",
+              "english": "Ravi, can I play with you?",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "I",
+                "you"
+              ],
+              "speech_level": "casual_friend_or_younger",
+              "addressee": "Ravi"
+            },
+            {
+              "speaker": "Ravi",
+              "english": "Yes, come play with us.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "you",
+                "we"
+              ],
+              "speech_level": "casual_friend_or_younger",
+              "addressee": "Child"
+            },
+            {
+              "speaker": "Child",
+              "english": "Teacher, may I drink water?",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "I",
+                "permission"
+              ],
+              "speech_level": "respectful_elder_or_teacher",
+              "addressee": "Teacher"
+            },
+            {
+              "speaker": "Child",
+              "english": "Ravi, give me water, please.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "I"
+              ],
+              "speech_level": "casual_friend_or_younger",
+              "addressee": "Ravi"
+            },
+            {
+              "speaker": "Narrator",
+              "english": "With teachers and elders, Kannada should use the respectful form.",
+              "kannada": "",
+              "roman": ""
+            }
+          ],
+          "keywords": [
+            "teacher",
+            "friend",
+            "may I",
+            "can I",
+            "respectful",
+            "casual"
+          ]
         }
       ],
       "tone": "playful, kid-first, practical spoken Kannada",
@@ -3531,12 +4476,15 @@
       "source_concepts_currently_covered": [
         "playdates",
         "time",
-        "visiting homes"
-      ]
+        "visiting homes",
+        "respectful vs casual speech",
+        "teacher vs friend"
+      ],
+      "chapter_group": "Polite and respectful speech"
     },
     {
       "chapter": 28,
-      "title": "Story words",
+      "title": "Story Talk: who/that/where clauses",
       "why_this_helps_kids": "Keeps the later curriculum useful while making the context child-centered and image-friendly.",
       "focus": [
         "ಕಥೆ",
@@ -3592,18 +4540,118 @@
             "ಯಾರು",
             "ಏನು"
           ]
+        },
+        {
+          "id": "28B",
+          "title": "The book that made us laugh",
+          "setting": "reading corner",
+          "goal": "Practice relative clauses with books, friends, and places.",
+          "concepts_taught": [
+            "relative clauses",
+            "who/that/where",
+            "stories",
+            "friends"
+          ],
+          "grammar_targets": [
+            "relative_clauses",
+            "question_words",
+            "people_place_thing"
+          ],
+          "lines": [
+            {
+              "speaker": "Teacher",
+              "english": "Which book did you read?",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "you",
+                "tense_past"
+              ]
+            },
+            {
+              "speaker": "Child",
+              "english": "I read the book that has the funny monkey.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "I",
+                "relative_clause",
+                "tense_past"
+              ]
+            },
+            {
+              "speaker": "Teacher",
+              "english": "Who gave you that book?",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "you",
+                "that"
+              ]
+            },
+            {
+              "speaker": "Child",
+              "english": "The girl who sits near me gave it to me.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "relative_clause",
+                "here_there"
+              ]
+            },
+            {
+              "speaker": "Teacher",
+              "english": "Where did you read it?",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "you",
+                "tense_past"
+              ]
+            },
+            {
+              "speaker": "Child",
+              "english": "I read it in the place where we keep the cushions.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "I",
+                "we",
+                "relative_clause",
+                "tense_past"
+              ]
+            },
+            {
+              "speaker": "Teacher",
+              "english": "That sounds cozy.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "that"
+              ]
+            }
+          ],
+          "keywords": [
+            "who",
+            "that",
+            "where",
+            "book",
+            "story"
+          ]
         }
       ],
       "grammar_targets": [],
       "source_concepts_currently_covered": [
         "stories",
         "who/what",
-        "people/actions"
-      ]
+        "people/actions",
+        "relative clauses"
+      ],
+      "chapter_group": "World around kids"
     },
     {
       "chapter": 29,
-      "title": "Review: meeting people",
+      "title": "Review 1: meeting people naturally",
       "why_this_helps_kids": "Keeps the later curriculum useful while making the context child-centered and image-friendly.",
       "focus": [
         "ಹೆಸರು",
@@ -3667,11 +4715,12 @@
         "review greetings",
         "names",
         "feelings"
-      ]
+      ],
+      "chapter_group": "World around kids"
     },
     {
       "chapter": 30,
-      "title": "Review: asking for things",
+      "title": "Review 2: asking for things naturally",
       "why_this_helps_kids": "Keeps the later curriculum useful while making the context child-centered and image-friendly.",
       "focus": [
         "ಬೇಕು",
@@ -3737,11 +4786,12 @@
         "review wants",
         "which/that",
         "take/give"
-      ]
+      ],
+      "chapter_group": "World around kids"
     },
     {
       "chapter": 31,
-      "title": "Big review: playground adventure",
+      "title": "Big Review Adventure: mixed tenses, games, places",
       "why_this_helps_kids": "The final review should feel like a mini story with friends, games, snacks, and movement.",
       "focus": [
         "ಆಡು",
@@ -3915,6 +4965,104 @@
             "I",
             "we"
           ]
+        },
+        {
+          "id": "31C",
+          "title": "Mixed tense story: park, candy, and car ride",
+          "setting": "playground picnic",
+          "goal": "Mix past, present, and future in one story so kids hear the contrast.",
+          "concepts_taught": [
+            "mixed tense story",
+            "past tense",
+            "present tense",
+            "future tense",
+            "review"
+          ],
+          "grammar_targets": [
+            "tense_past",
+            "tense_present",
+            "tense_future"
+          ],
+          "lines": [
+            {
+              "speaker": "Maya",
+              "english": "Yesterday we went to the park.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "tense_past",
+                "we"
+              ]
+            },
+            {
+              "speaker": "Ravi",
+              "english": "Now we are eating candy.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "tense_present",
+                "we"
+              ]
+            },
+            {
+              "speaker": "Maya",
+              "english": "Later we will go for a car drive.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "tense_future",
+                "we"
+              ]
+            },
+            {
+              "speaker": "Ravi",
+              "english": "Yesterday I played on the slide.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "tense_past",
+                "I"
+              ]
+            },
+            {
+              "speaker": "Maya",
+              "english": "Now I am sitting under the tree.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "tense_present",
+                "I"
+              ]
+            },
+            {
+              "speaker": "Ravi",
+              "english": "Tomorrow I will bring Snake and Ladder.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "tense_future",
+                "I"
+              ]
+            },
+            {
+              "speaker": "Maya",
+              "english": "Good. Past, now, and later all in one story!",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "tense_past",
+                "tense_present",
+                "tense_future"
+              ]
+            }
+          ],
+          "keywords": [
+            "yesterday",
+            "now",
+            "later",
+            "tomorrow",
+            "mixed tense"
+          ]
         }
       ],
       "tone": "playful, kid-first, practical spoken Kannada",
@@ -3927,8 +5075,11 @@
         "review games",
         "where",
         "future plans",
-        "tense review"
-      ]
+        "tense review",
+        "structured tense drill",
+        "mixed tenses"
+      ],
+      "chapter_group": "Fun topics with tense spiral"
     }
   ],
   "grammar_spiral": {
@@ -4090,5 +5241,89 @@
       "habitual_actions",
       "passive_made_by"
     ]
+  },
+  "curriculum_structure": {
+    "chapter_groups": [
+      {
+        "group": "Start speaking fast",
+        "chapters": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "purpose": "Names, friends, family, classroom survival, this/that/here/there."
+      },
+      {
+        "group": "Fun topics with tense spiral",
+        "chapters": [
+          6,
+          7,
+          8,
+          10,
+          17,
+          20,
+          31
+        ],
+        "purpose": "Food, games, candy, birthdays, park, travel; repeatedly compare past, present, future."
+      },
+      {
+        "group": "Polite and respectful speech",
+        "chapters": [
+          9,
+          12,
+          24,
+          26,
+          27
+        ],
+        "purpose": "Asking permission, talking to elders/teachers vs friends/younger kids, requests and help."
+      },
+      {
+        "group": "World around kids",
+        "chapters": [
+          11,
+          13,
+          14,
+          15,
+          16,
+          18,
+          19,
+          21,
+          22,
+          23,
+          25,
+          28,
+          29,
+          30
+        ],
+        "purpose": "Daily routine, clothes, health, weather, animals, shopping, directions, reading, homework, festivals, stories, reviews."
+      }
+    ],
+    "tense_spiral_plan": {
+      "simple_pattern": "yesterday / now / tomorrow",
+      "goal": "Kids should see the same meaningful idea in past, present, and future many times before formal grammar labels matter.",
+      "drill_chapters": [
+        6,
+        7,
+        17,
+        20,
+        31
+      ]
+    },
+    "speech_level_plan": {
+      "goal": "Teach that Kannada changes depending on whether you talk to elders/teachers respectfully or to friends/younger kids casually.",
+      "labels": [
+        "respectful_elder_or_teacher",
+        "casual_friend_or_younger"
+      ],
+      "practice_chapters": [
+        9,
+        12,
+        24,
+        26,
+        27
+      ]
+    }
   }
 }

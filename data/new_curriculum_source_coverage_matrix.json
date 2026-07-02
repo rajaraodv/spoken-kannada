@@ -1,11 +1,12 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.2",
   "purpose": "Map concepts from the original PDF-derived curriculum to the improved kid-focused curriculum and identify gaps before replacing chapter data.",
   "summary": {
-    "covered": 30,
+    "covered": 38,
     "partially_covered": 0,
-    "needs_work": 6
+    "needs_work": 0
   },
+  "summary_note": "The new kid curriculum now covers all tracked source concept groups, adds dedicated tense spiral drills, and explicitly introduces Kannada respectful-vs-casual speech levels. Native-speaker review is still needed before Kannada script/romanization generation.",
   "coverage_rows": [
     {
       "concept_id": "greetings_introductions_names",
@@ -14,31 +15,31 @@
       "new_curriculum_chapters": [
         {
           "chapter": 1,
-          "title": "New friend, ice cream, and names"
+          "title": "Names and Ice Cream: greetings, names, likes"
         },
         {
           "chapter": 3,
-          "title": "Family, car drive, and weekend fun"
+          "title": "Family Car Drive: family, he/she/we, future plans"
         },
         {
           "chapter": 4,
-          "title": "Classroom games and asking again"
+          "title": "Classroom Word Game: listen, repeat, ask again"
         },
         {
           "chapter": 5,
-          "title": "My toys, books, and game board"
+          "title": "Toys and Game Board: this/that, here/there, things"
         },
         {
           "chapter": 16,
-          "title": "Animals"
+          "title": "Animal Book: animals, likes, what is this?"
         },
         {
           "chapter": 25,
-          "title": "Festival sweets and family fun"
+          "title": "Festival Sweets: made by, family, greetings"
         },
         {
           "chapter": 29,
-          "title": "Review: meeting people"
+          "title": "Review 1: meeting people naturally"
         }
       ],
       "search_terms": [
@@ -56,99 +57,103 @@
       "new_curriculum_chapters": [
         {
           "chapter": 1,
-          "title": "New friend, ice cream, and names"
+          "title": "Names and Ice Cream: greetings, names, likes"
         },
         {
           "chapter": 2,
-          "title": "How are you, and what do you want to do?"
+          "title": "Recess Plans: feelings, choices, permission"
         },
         {
           "chapter": 3,
-          "title": "Family, car drive, and weekend fun"
+          "title": "Family Car Drive: family, he/she/we, future plans"
         },
         {
           "chapter": 4,
-          "title": "Classroom games and asking again"
+          "title": "Classroom Word Game: listen, repeat, ask again"
         },
         {
           "chapter": 5,
-          "title": "My toys, books, and game board"
+          "title": "Toys and Game Board: this/that, here/there, things"
         },
         {
           "chapter": 6,
-          "title": "Pasta, ice cream, and snacks"
+          "title": "Tense Drill 1 with Food: ate / eating / will eat"
         },
         {
           "chapter": 7,
-          "title": "Games we like"
+          "title": "Tense Drill 2 with Games: played / playing / will play"
         },
         {
           "chapter": 8,
-          "title": "Where is the candy?"
+          "title": "Candy Hunt: where, here, there, under, behind"
         },
         {
           "chapter": 10,
-          "title": "Counting candies and birthdays"
+          "title": "Birthday Candies: numbers, age, comparisons"
         },
         {
           "chapter": 14,
-          "title": "Body and health"
+          "title": "Nurse Room: body, health, medicine, rest"
         },
         {
           "chapter": 15,
-          "title": "Weather"
+          "title": "Rainy Day: weather and outing plans"
         },
         {
           "chapter": 16,
-          "title": "Animals"
+          "title": "Animal Book: animals, likes, what is this?"
+        },
+        {
+          "chapter": 17,
+          "title": "Park Story: past continuous and movement"
         },
         {
           "chapter": 19,
-          "title": "Directions"
+          "title": "Finding Places: directions, left/right, near/far"
         },
         {
           "chapter": 21,
-          "title": "Library"
+          "title": "Library Day: books, reading, requests"
         },
         {
           "chapter": 22,
-          "title": "Screen time"
+          "title": "Screen Time: after/before and permission"
         },
         {
           "chapter": 23,
-          "title": "Homework"
+          "title": "Homework Deal: conditionals and not yet"
         },
         {
           "chapter": 24,
-          "title": "Helping at home"
+          "title": "Helping at Home: chores, bring/take, polite help"
         },
         {
           "chapter": 25,
-          "title": "Festival sweets and family fun"
+          "title": "Festival Sweets: made by, family, greetings"
         },
         {
           "chapter": 26,
-          "title": "Phone call"
+          "title": "Respectful vs Casual: talking to elders and friends"
         },
         {
           "chapter": 27,
-          "title": "Planning a playdate"
+          "title": "Playdate Plans: time, visiting, respectful/casual speech"
         },
         {
           "chapter": 28,
-          "title": "Story words"
+          "title": "Story Talk: who/that/where clauses"
         },
         {
           "chapter": 29,
-          "title": "Review: meeting people"
+          "title": "Review 1: meeting people naturally"
         },
         {
           "chapter": 30,
-          "title": "Review: asking for things"
+          "title": "Review 2: asking for things naturally"
         },
         {
           "chapter": 31,
-          "title": "Big review: playground adventure"
+          "title": "Big Review Adventure: mixed tenses, games, places"
         }
       ],
       "search_terms": [
@@ -170,19 +175,27 @@
       "new_curriculum_chapters": [
         {
           "chapter": 4,
-          "title": "Classroom games and asking again"
+          "title": "Classroom Word Game: listen, repeat, ask again"
         },
         {
           "chapter": 9,
-          "title": "Can I play?"
+          "title": "Can I Play?: permission and respectful asking"
         },
         {
           "chapter": 12,
-          "title": "Polite words"
+          "title": "Polite Words: sorry, help, are you okay?"
         },
         {
           "chapter": 14,
-          "title": "Body and health"
+          "title": "Nurse Room: body, health, medicine, rest"
+        },
+        {
+          "chapter": 26,
+          "title": "Respectful vs Casual: talking to elders and friends"
+        },
+        {
+          "chapter": 27,
+          "title": "Playdate Plans: time, visiting, respectful/casual speech"
         }
       ],
       "search_terms": [
@@ -201,63 +214,67 @@
       "new_curriculum_chapters": [
         {
           "chapter": 3,
-          "title": "Family, car drive, and weekend fun"
+          "title": "Family Car Drive: family, he/she/we, future plans"
         },
         {
           "chapter": 4,
-          "title": "Classroom games and asking again"
+          "title": "Classroom Word Game: listen, repeat, ask again"
         },
         {
           "chapter": 5,
-          "title": "My toys, books, and game board"
+          "title": "Toys and Game Board: this/that, here/there, things"
         },
         {
           "chapter": 7,
-          "title": "Games we like"
+          "title": "Tense Drill 2 with Games: played / playing / will play"
         },
         {
           "chapter": 8,
-          "title": "Where is the candy?"
+          "title": "Candy Hunt: where, here, there, under, behind"
         },
         {
           "chapter": 9,
-          "title": "Can I play?"
+          "title": "Can I Play?: permission and respectful asking"
         },
         {
           "chapter": 11,
-          "title": "Morning routine"
+          "title": "Morning Routine: daily actions and ready/not ready"
         },
         {
           "chapter": 12,
-          "title": "Polite words"
+          "title": "Polite Words: sorry, help, are you okay?"
         },
         {
           "chapter": 14,
-          "title": "Body and health"
+          "title": "Nurse Room: body, health, medicine, rest"
         },
         {
           "chapter": 22,
-          "title": "Screen time"
+          "title": "Screen Time: after/before and permission"
         },
         {
           "chapter": 23,
-          "title": "Homework"
+          "title": "Homework Deal: conditionals and not yet"
         },
         {
           "chapter": 24,
-          "title": "Helping at home"
+          "title": "Helping at Home: chores, bring/take, polite help"
         },
         {
           "chapter": 25,
-          "title": "Festival sweets and family fun"
+          "title": "Festival Sweets: made by, family, greetings"
+        },
+        {
+          "chapter": 26,
+          "title": "Respectful vs Casual: talking to elders and friends"
         },
         {
           "chapter": 27,
-          "title": "Planning a playdate"
+          "title": "Playdate Plans: time, visiting, respectful/casual speech"
         },
         {
           "chapter": 30,
-          "title": "Review: asking for things"
+          "title": "Review 2: asking for things naturally"
         }
       ],
       "search_terms": [
@@ -276,71 +293,79 @@
       "new_curriculum_chapters": [
         {
           "chapter": 1,
-          "title": "New friend, ice cream, and names"
+          "title": "Names and Ice Cream: greetings, names, likes"
         },
         {
           "chapter": 2,
-          "title": "How are you, and what do you want to do?"
+          "title": "Recess Plans: feelings, choices, permission"
         },
         {
           "chapter": 3,
-          "title": "Family, car drive, and weekend fun"
+          "title": "Family Car Drive: family, he/she/we, future plans"
         },
         {
           "chapter": 4,
-          "title": "Classroom games and asking again"
+          "title": "Classroom Word Game: listen, repeat, ask again"
         },
         {
           "chapter": 5,
-          "title": "My toys, books, and game board"
+          "title": "Toys and Game Board: this/that, here/there, things"
         },
         {
           "chapter": 6,
-          "title": "Pasta, ice cream, and snacks"
+          "title": "Tense Drill 1 with Food: ate / eating / will eat"
         },
         {
           "chapter": 7,
-          "title": "Games we like"
+          "title": "Tense Drill 2 with Games: played / playing / will play"
         },
         {
           "chapter": 9,
-          "title": "Can I play?"
+          "title": "Can I Play?: permission and respectful asking"
         },
         {
           "chapter": 11,
-          "title": "Morning routine"
+          "title": "Morning Routine: daily actions and ready/not ready"
         },
         {
           "chapter": 12,
-          "title": "Polite words"
+          "title": "Polite Words: sorry, help, are you okay?"
         },
         {
           "chapter": 13,
-          "title": "Clothes for a fun day out"
+          "title": "Getting Dressed: clothes, colors, where is it?"
         },
         {
           "chapter": 19,
-          "title": "Directions"
+          "title": "Finding Places: directions, left/right, near/far"
         },
         {
           "chapter": 21,
-          "title": "Library"
+          "title": "Library Day: books, reading, requests"
         },
         {
           "chapter": 22,
-          "title": "Screen time"
+          "title": "Screen Time: after/before and permission"
         },
         {
           "chapter": 23,
-          "title": "Homework"
+          "title": "Homework Deal: conditionals and not yet"
+        },
+        {
+          "chapter": 26,
+          "title": "Respectful vs Casual: talking to elders and friends"
+        },
+        {
+          "chapter": 27,
+          "title": "Playdate Plans: time, visiting, respectful/casual speech"
         },
         {
           "chapter": 28,
-          "title": "Story words"
+          "title": "Story Talk: who/that/where clauses"
         },
         {
           "chapter": 29,
-          "title": "Review: meeting people"
+          "title": "Review 1: meeting people naturally"
         }
       ],
       "search_terms": [
@@ -361,23 +386,27 @@
       "new_curriculum_chapters": [
         {
           "chapter": 5,
-          "title": "My toys, books, and game board"
+          "title": "Toys and Game Board: this/that, here/there, things"
         },
         {
           "chapter": 9,
-          "title": "Can I play?"
+          "title": "Can I Play?: permission and respectful asking"
         },
         {
           "chapter": 16,
-          "title": "Animals"
+          "title": "Animal Book: animals, likes, what is this?"
         },
         {
           "chapter": 21,
-          "title": "Library"
+          "title": "Library Day: books, reading, requests"
+        },
+        {
+          "chapter": 28,
+          "title": "Story Talk: who/that/where clauses"
         },
         {
           "chapter": 30,
-          "title": "Review: asking for things"
+          "title": "Review 2: asking for things naturally"
         }
       ],
       "search_terms": [
@@ -395,75 +424,95 @@
       "new_curriculum_chapters": [
         {
           "chapter": 1,
-          "title": "New friend, ice cream, and names"
+          "title": "Names and Ice Cream: greetings, names, likes"
         },
         {
           "chapter": 2,
-          "title": "How are you, and what do you want to do?"
+          "title": "Recess Plans: feelings, choices, permission"
         },
         {
           "chapter": 3,
-          "title": "Family, car drive, and weekend fun"
+          "title": "Family Car Drive: family, he/she/we, future plans"
         },
         {
           "chapter": 4,
-          "title": "Classroom games and asking again"
+          "title": "Classroom Word Game: listen, repeat, ask again"
         },
         {
           "chapter": 5,
-          "title": "My toys, books, and game board"
+          "title": "Toys and Game Board: this/that, here/there, things"
         },
         {
           "chapter": 7,
-          "title": "Games we like"
+          "title": "Tense Drill 2 with Games: played / playing / will play"
         },
         {
           "chapter": 8,
-          "title": "Where is the candy?"
+          "title": "Candy Hunt: where, here, there, under, behind"
         },
         {
           "chapter": 9,
-          "title": "Can I play?"
+          "title": "Can I Play?: permission and respectful asking"
+        },
+        {
+          "chapter": 10,
+          "title": "Birthday Candies: numbers, age, comparisons"
         },
         {
           "chapter": 11,
-          "title": "Morning routine"
+          "title": "Morning Routine: daily actions and ready/not ready"
         },
         {
           "chapter": 12,
-          "title": "Polite words"
+          "title": "Polite Words: sorry, help, are you okay?"
         },
         {
           "chapter": 13,
-          "title": "Clothes for a fun day out"
+          "title": "Getting Dressed: clothes, colors, where is it?"
         },
         {
           "chapter": 16,
-          "title": "Animals"
+          "title": "Animal Book: animals, likes, what is this?"
         },
         {
           "chapter": 18,
-          "title": "Buying candy at a shop"
+          "title": "Candy Shop: price, buying, one/two"
         },
         {
           "chapter": 19,
-          "title": "Directions"
+          "title": "Finding Places: directions, left/right, near/far"
+        },
+        {
+          "chapter": 20,
+          "title": "Trip Talk: have been / had gone / will go"
         },
         {
           "chapter": 21,
-          "title": "Library"
+          "title": "Library Day: books, reading, requests"
+        },
+        {
+          "chapter": 23,
+          "title": "Homework Deal: conditionals and not yet"
+        },
+        {
+          "chapter": 25,
+          "title": "Festival Sweets: made by, family, greetings"
+        },
+        {
+          "chapter": 26,
+          "title": "Respectful vs Casual: talking to elders and friends"
         },
         {
           "chapter": 28,
-          "title": "Story words"
+          "title": "Story Talk: who/that/where clauses"
         },
         {
           "chapter": 30,
-          "title": "Review: asking for things"
+          "title": "Review 2: asking for things naturally"
         },
         {
           "chapter": 31,
-          "title": "Big review: playground adventure"
+          "title": "Big Review Adventure: mixed tenses, games, places"
         }
       ],
       "search_terms": [
@@ -482,103 +531,115 @@
       "new_curriculum_chapters": [
         {
           "chapter": 1,
-          "title": "New friend, ice cream, and names"
+          "title": "Names and Ice Cream: greetings, names, likes"
         },
         {
           "chapter": 2,
-          "title": "How are you, and what do you want to do?"
+          "title": "Recess Plans: feelings, choices, permission"
         },
         {
           "chapter": 3,
-          "title": "Family, car drive, and weekend fun"
+          "title": "Family Car Drive: family, he/she/we, future plans"
         },
         {
           "chapter": 4,
-          "title": "Classroom games and asking again"
+          "title": "Classroom Word Game: listen, repeat, ask again"
         },
         {
           "chapter": 5,
-          "title": "My toys, books, and game board"
+          "title": "Toys and Game Board: this/that, here/there, things"
         },
         {
           "chapter": 6,
-          "title": "Pasta, ice cream, and snacks"
+          "title": "Tense Drill 1 with Food: ate / eating / will eat"
         },
         {
           "chapter": 8,
-          "title": "Where is the candy?"
+          "title": "Candy Hunt: where, here, there, under, behind"
         },
         {
           "chapter": 9,
-          "title": "Can I play?"
+          "title": "Can I Play?: permission and respectful asking"
         },
         {
           "chapter": 10,
-          "title": "Counting candies and birthdays"
+          "title": "Birthday Candies: numbers, age, comparisons"
         },
         {
           "chapter": 11,
-          "title": "Morning routine"
+          "title": "Morning Routine: daily actions and ready/not ready"
         },
         {
           "chapter": 12,
-          "title": "Polite words"
+          "title": "Polite Words: sorry, help, are you okay?"
         },
         {
           "chapter": 13,
-          "title": "Clothes for a fun day out"
+          "title": "Getting Dressed: clothes, colors, where is it?"
         },
         {
           "chapter": 14,
-          "title": "Body and health"
+          "title": "Nurse Room: body, health, medicine, rest"
         },
         {
           "chapter": 15,
-          "title": "Weather"
+          "title": "Rainy Day: weather and outing plans"
         },
         {
           "chapter": 16,
-          "title": "Animals"
+          "title": "Animal Book: animals, likes, what is this?"
         },
         {
           "chapter": 17,
-          "title": "At the park: slides, swings, and games"
+          "title": "Park Story: past continuous and movement"
         },
         {
           "chapter": 18,
-          "title": "Buying candy at a shop"
+          "title": "Candy Shop: price, buying, one/two"
         },
         {
           "chapter": 19,
-          "title": "Directions"
+          "title": "Finding Places: directions, left/right, near/far"
         },
         {
           "chapter": 20,
-          "title": "Bus ride, car drive, and going places"
+          "title": "Trip Talk: have been / had gone / will go"
         },
         {
           "chapter": 21,
-          "title": "Library"
+          "title": "Library Day: books, reading, requests"
+        },
+        {
+          "chapter": 23,
+          "title": "Homework Deal: conditionals and not yet"
+        },
+        {
+          "chapter": 25,
+          "title": "Festival Sweets: made by, family, greetings"
+        },
+        {
+          "chapter": 26,
+          "title": "Respectful vs Casual: talking to elders and friends"
         },
         {
           "chapter": 27,
-          "title": "Planning a playdate"
+          "title": "Playdate Plans: time, visiting, respectful/casual speech"
         },
         {
           "chapter": 28,
-          "title": "Story words"
+          "title": "Story Talk: who/that/where clauses"
         },
         {
           "chapter": 29,
-          "title": "Review: meeting people"
+          "title": "Review 1: meeting people naturally"
         },
         {
           "chapter": 30,
-          "title": "Review: asking for things"
+          "title": "Review 2: asking for things naturally"
         },
         {
           "chapter": 31,
-          "title": "Big review: playground adventure"
+          "title": "Big Review Adventure: mixed tenses, games, places"
         }
       ],
       "search_terms": [
@@ -599,83 +660,87 @@
       "new_curriculum_chapters": [
         {
           "chapter": 1,
-          "title": "New friend, ice cream, and names"
+          "title": "Names and Ice Cream: greetings, names, likes"
         },
         {
           "chapter": 2,
-          "title": "How are you, and what do you want to do?"
+          "title": "Recess Plans: feelings, choices, permission"
         },
         {
           "chapter": 3,
-          "title": "Family, car drive, and weekend fun"
+          "title": "Family Car Drive: family, he/she/we, future plans"
         },
         {
           "chapter": 5,
-          "title": "My toys, books, and game board"
+          "title": "Toys and Game Board: this/that, here/there, things"
         },
         {
           "chapter": 6,
-          "title": "Pasta, ice cream, and snacks"
+          "title": "Tense Drill 1 with Food: ate / eating / will eat"
         },
         {
           "chapter": 7,
-          "title": "Games we like"
+          "title": "Tense Drill 2 with Games: played / playing / will play"
         },
         {
           "chapter": 8,
-          "title": "Where is the candy?"
+          "title": "Candy Hunt: where, here, there, under, behind"
         },
         {
           "chapter": 10,
-          "title": "Counting candies and birthdays"
+          "title": "Birthday Candies: numbers, age, comparisons"
         },
         {
           "chapter": 11,
-          "title": "Morning routine"
+          "title": "Morning Routine: daily actions and ready/not ready"
         },
         {
           "chapter": 12,
-          "title": "Polite words"
+          "title": "Polite Words: sorry, help, are you okay?"
         },
         {
           "chapter": 13,
-          "title": "Clothes for a fun day out"
+          "title": "Getting Dressed: clothes, colors, where is it?"
         },
         {
           "chapter": 14,
-          "title": "Body and health"
+          "title": "Nurse Room: body, health, medicine, rest"
         },
         {
           "chapter": 16,
-          "title": "Animals"
+          "title": "Animal Book: animals, likes, what is this?"
         },
         {
           "chapter": 17,
-          "title": "At the park: slides, swings, and games"
+          "title": "Park Story: past continuous and movement"
         },
         {
           "chapter": 19,
-          "title": "Directions"
+          "title": "Finding Places: directions, left/right, near/far"
         },
         {
           "chapter": 20,
-          "title": "Bus ride, car drive, and going places"
+          "title": "Trip Talk: have been / had gone / will go"
+        },
+        {
+          "chapter": 25,
+          "title": "Festival Sweets: made by, family, greetings"
         },
         {
           "chapter": 28,
-          "title": "Story words"
+          "title": "Story Talk: who/that/where clauses"
         },
         {
           "chapter": 29,
-          "title": "Review: meeting people"
+          "title": "Review 1: meeting people naturally"
         },
         {
           "chapter": 30,
-          "title": "Review: asking for things"
+          "title": "Review 2: asking for things naturally"
         },
         {
           "chapter": 31,
-          "title": "Big review: playground adventure"
+          "title": "Big Review Adventure: mixed tenses, games, places"
         }
       ],
       "search_terms": [
@@ -695,79 +760,79 @@
       "new_curriculum_chapters": [
         {
           "chapter": 1,
-          "title": "New friend, ice cream, and names"
+          "title": "Names and Ice Cream: greetings, names, likes"
         },
         {
           "chapter": 2,
-          "title": "How are you, and what do you want to do?"
+          "title": "Recess Plans: feelings, choices, permission"
         },
         {
           "chapter": 3,
-          "title": "Family, car drive, and weekend fun"
+          "title": "Family Car Drive: family, he/she/we, future plans"
         },
         {
           "chapter": 4,
-          "title": "Classroom games and asking again"
+          "title": "Classroom Word Game: listen, repeat, ask again"
         },
         {
           "chapter": 5,
-          "title": "My toys, books, and game board"
+          "title": "Toys and Game Board: this/that, here/there, things"
         },
         {
           "chapter": 6,
-          "title": "Pasta, ice cream, and snacks"
+          "title": "Tense Drill 1 with Food: ate / eating / will eat"
         },
         {
           "chapter": 7,
-          "title": "Games we like"
+          "title": "Tense Drill 2 with Games: played / playing / will play"
         },
         {
           "chapter": 8,
-          "title": "Where is the candy?"
+          "title": "Candy Hunt: where, here, there, under, behind"
         },
         {
           "chapter": 9,
-          "title": "Can I play?"
+          "title": "Can I Play?: permission and respectful asking"
         },
         {
           "chapter": 10,
-          "title": "Counting candies and birthdays"
+          "title": "Birthday Candies: numbers, age, comparisons"
         },
         {
           "chapter": 11,
-          "title": "Morning routine"
+          "title": "Morning Routine: daily actions and ready/not ready"
         },
         {
           "chapter": 12,
-          "title": "Polite words"
+          "title": "Polite Words: sorry, help, are you okay?"
         },
         {
           "chapter": 17,
-          "title": "At the park: slides, swings, and games"
+          "title": "Park Story: past continuous and movement"
         },
         {
           "chapter": 20,
-          "title": "Bus ride, car drive, and going places"
+          "title": "Trip Talk: have been / had gone / will go"
         },
         {
           "chapter": 23,
-          "title": "Homework"
+          "title": "Homework Deal: conditionals and not yet"
         },
         {
           "chapter": 24,
-          "title": "Helping at home"
+          "title": "Helping at Home: chores, bring/take, polite help"
         },
         {
           "chapter": 26,
-          "title": "Phone call"
+          "title": "Respectful vs Casual: talking to elders and friends"
         },
         {
           "chapter": 27,
-          "title": "Planning a playdate"
+          "title": "Playdate Plans: time, visiting, respectful/casual speech"
         },
         {
           "chapter": 31,
-          "title": "Big review: playground adventure"
+          "title": "Big Review Adventure: mixed tenses, games, places"
         }
       ],
       "search_terms": [
@@ -777,7 +842,7 @@
         "nope",
         "don’t",
         "do not",
-        "didn’t",
+        "did not",
         "not yet"
       ]
     },
@@ -788,43 +853,63 @@
       "new_curriculum_chapters": [
         {
           "chapter": 1,
-          "title": "New friend, ice cream, and names"
+          "title": "Names and Ice Cream: greetings, names, likes"
         },
         {
           "chapter": 2,
-          "title": "How are you, and what do you want to do?"
+          "title": "Recess Plans: feelings, choices, permission"
         },
         {
           "chapter": 3,
-          "title": "Family, car drive, and weekend fun"
+          "title": "Family Car Drive: family, he/she/we, future plans"
         },
         {
           "chapter": 4,
-          "title": "Classroom games and asking again"
+          "title": "Classroom Word Game: listen, repeat, ask again"
         },
         {
           "chapter": 6,
-          "title": "Pasta, ice cream, and snacks"
+          "title": "Tense Drill 1 with Food: ate / eating / will eat"
+        },
+        {
+          "chapter": 7,
+          "title": "Tense Drill 2 with Games: played / playing / will play"
         },
         {
           "chapter": 10,
-          "title": "Counting candies and birthdays"
+          "title": "Birthday Candies: numbers, age, comparisons"
         },
         {
           "chapter": 12,
-          "title": "Polite words"
+          "title": "Polite Words: sorry, help, are you okay?"
         },
         {
           "chapter": 17,
-          "title": "At the park: slides, swings, and games"
+          "title": "Park Story: past continuous and movement"
         },
         {
           "chapter": 18,
-          "title": "Buying candy at a shop"
+          "title": "Candy Shop: price, buying, one/two"
+        },
+        {
+          "chapter": 20,
+          "title": "Trip Talk: have been / had gone / will go"
+        },
+        {
+          "chapter": 23,
+          "title": "Homework Deal: conditionals and not yet"
+        },
+        {
+          "chapter": 25,
+          "title": "Festival Sweets: made by, family, greetings"
         },
         {
           "chapter": 26,
-          "title": "Phone call"
+          "title": "Respectful vs Casual: talking to elders and friends"
+        },
+        {
+          "chapter": 31,
+          "title": "Big Review Adventure: mixed tenses, games, places"
         }
       ],
       "search_terms": [
@@ -846,63 +931,67 @@
       "new_curriculum_chapters": [
         {
           "chapter": 1,
-          "title": "New friend, ice cream, and names"
+          "title": "Names and Ice Cream: greetings, names, likes"
         },
         {
           "chapter": 2,
-          "title": "How are you, and what do you want to do?"
+          "title": "Recess Plans: feelings, choices, permission"
         },
         {
           "chapter": 3,
-          "title": "Family, car drive, and weekend fun"
+          "title": "Family Car Drive: family, he/she/we, future plans"
         },
         {
           "chapter": 5,
-          "title": "My toys, books, and game board"
+          "title": "Toys and Game Board: this/that, here/there, things"
         },
         {
           "chapter": 6,
-          "title": "Pasta, ice cream, and snacks"
+          "title": "Tense Drill 1 with Food: ate / eating / will eat"
         },
         {
           "chapter": 7,
-          "title": "Games we like"
+          "title": "Tense Drill 2 with Games: played / playing / will play"
         },
         {
           "chapter": 9,
-          "title": "Can I play?"
+          "title": "Can I Play?: permission and respectful asking"
         },
         {
           "chapter": 10,
-          "title": "Counting candies and birthdays"
+          "title": "Birthday Candies: numbers, age, comparisons"
         },
         {
           "chapter": 11,
-          "title": "Morning routine"
+          "title": "Morning Routine: daily actions and ready/not ready"
         },
         {
           "chapter": 12,
-          "title": "Polite words"
+          "title": "Polite Words: sorry, help, are you okay?"
         },
         {
           "chapter": 17,
-          "title": "At the park: slides, swings, and games"
+          "title": "Park Story: past continuous and movement"
         },
         {
           "chapter": 20,
-          "title": "Bus ride, car drive, and going places"
+          "title": "Trip Talk: have been / had gone / will go"
         },
         {
           "chapter": 22,
-          "title": "Screen time"
+          "title": "Screen Time: after/before and permission"
+        },
+        {
+          "chapter": 23,
+          "title": "Homework Deal: conditionals and not yet"
         },
         {
           "chapter": 27,
-          "title": "Planning a playdate"
+          "title": "Playdate Plans: time, visiting, respectful/casual speech"
         },
         {
           "chapter": 31,
-          "title": "Big review: playground adventure"
+          "title": "Big Review Adventure: mixed tenses, games, places"
         }
       ],
       "search_terms": [
@@ -924,71 +1013,71 @@
       "new_curriculum_chapters": [
         {
           "chapter": 1,
-          "title": "New friend, ice cream, and names"
+          "title": "Names and Ice Cream: greetings, names, likes"
         },
         {
           "chapter": 2,
-          "title": "How are you, and what do you want to do?"
+          "title": "Recess Plans: feelings, choices, permission"
         },
         {
           "chapter": 3,
-          "title": "Family, car drive, and weekend fun"
+          "title": "Family Car Drive: family, he/she/we, future plans"
         },
         {
           "chapter": 5,
-          "title": "My toys, books, and game board"
+          "title": "Toys and Game Board: this/that, here/there, things"
         },
         {
           "chapter": 7,
-          "title": "Games we like"
+          "title": "Tense Drill 2 with Games: played / playing / will play"
         },
         {
           "chapter": 8,
-          "title": "Where is the candy?"
+          "title": "Candy Hunt: where, here, there, under, behind"
         },
         {
           "chapter": 9,
-          "title": "Can I play?"
+          "title": "Can I Play?: permission and respectful asking"
         },
         {
           "chapter": 11,
-          "title": "Morning routine"
+          "title": "Morning Routine: daily actions and ready/not ready"
         },
         {
           "chapter": 12,
-          "title": "Polite words"
+          "title": "Polite Words: sorry, help, are you okay?"
         },
         {
           "chapter": 13,
-          "title": "Clothes for a fun day out"
+          "title": "Getting Dressed: clothes, colors, where is it?"
         },
         {
           "chapter": 17,
-          "title": "At the park: slides, swings, and games"
+          "title": "Park Story: past continuous and movement"
         },
         {
           "chapter": 18,
-          "title": "Buying candy at a shop"
+          "title": "Candy Shop: price, buying, one/two"
         },
         {
           "chapter": 19,
-          "title": "Directions"
+          "title": "Finding Places: directions, left/right, near/far"
         },
         {
           "chapter": 20,
-          "title": "Bus ride, car drive, and going places"
+          "title": "Trip Talk: have been / had gone / will go"
         },
         {
           "chapter": 21,
-          "title": "Library"
+          "title": "Library Day: books, reading, requests"
         },
         {
           "chapter": 28,
-          "title": "Story words"
+          "title": "Story Talk: who/that/where clauses"
         },
         {
           "chapter": 31,
-          "title": "Big review: playground adventure"
+          "title": "Big Review Adventure: mixed tenses, games, places"
         }
       ],
       "search_terms": [
@@ -1012,39 +1101,43 @@
       "new_curriculum_chapters": [
         {
           "chapter": 3,
-          "title": "Family, car drive, and weekend fun"
+          "title": "Family Car Drive: family, he/she/we, future plans"
         },
         {
           "chapter": 5,
-          "title": "My toys, books, and game board"
+          "title": "Toys and Game Board: this/that, here/there, things"
         },
         {
           "chapter": 6,
-          "title": "Pasta, ice cream, and snacks"
+          "title": "Tense Drill 1 with Food: ate / eating / will eat"
         },
         {
           "chapter": 15,
-          "title": "Weather"
+          "title": "Rainy Day: weather and outing plans"
         },
         {
           "chapter": 17,
-          "title": "At the park: slides, swings, and games"
+          "title": "Park Story: past continuous and movement"
         },
         {
           "chapter": 20,
-          "title": "Bus ride, car drive, and going places"
+          "title": "Trip Talk: have been / had gone / will go"
         },
         {
           "chapter": 22,
-          "title": "Screen time"
+          "title": "Screen Time: after/before and permission"
+        },
+        {
+          "chapter": 25,
+          "title": "Festival Sweets: made by, family, greetings"
         },
         {
           "chapter": 26,
-          "title": "Phone call"
+          "title": "Respectful vs Casual: talking to elders and friends"
         },
         {
           "chapter": 31,
-          "title": "Big review: playground adventure"
+          "title": "Big Review Adventure: mixed tenses, games, places"
         }
       ],
       "search_terms": [
@@ -1056,6 +1149,7 @@
         "trip",
         "going",
         "go to",
+        "wonderla",
         "disneyland",
         "zoo",
         "grandma"
@@ -1068,15 +1162,19 @@
       "new_curriculum_chapters": [
         {
           "chapter": 1,
-          "title": "New friend, ice cream, and names"
+          "title": "Names and Ice Cream: greetings, names, likes"
         },
         {
           "chapter": 6,
-          "title": "Pasta, ice cream, and snacks"
+          "title": "Tense Drill 1 with Food: ate / eating / will eat"
         },
         {
           "chapter": 7,
-          "title": "Games we like"
+          "title": "Tense Drill 2 with Games: played / playing / will play"
+        },
+        {
+          "chapter": 31,
+          "title": "Big Review Adventure: mixed tenses, games, places"
         }
       ],
       "search_terms": [
@@ -1097,63 +1195,63 @@
       "new_curriculum_chapters": [
         {
           "chapter": 1,
-          "title": "New friend, ice cream, and names"
+          "title": "Names and Ice Cream: greetings, names, likes"
         },
         {
           "chapter": 2,
-          "title": "How are you, and what do you want to do?"
+          "title": "Recess Plans: feelings, choices, permission"
         },
         {
           "chapter": 3,
-          "title": "Family, car drive, and weekend fun"
+          "title": "Family Car Drive: family, he/she/we, future plans"
         },
         {
           "chapter": 4,
-          "title": "Classroom games and asking again"
+          "title": "Classroom Word Game: listen, repeat, ask again"
         },
         {
           "chapter": 5,
-          "title": "My toys, books, and game board"
+          "title": "Toys and Game Board: this/that, here/there, things"
         },
         {
           "chapter": 6,
-          "title": "Pasta, ice cream, and snacks"
+          "title": "Tense Drill 1 with Food: ate / eating / will eat"
         },
         {
           "chapter": 8,
-          "title": "Where is the candy?"
+          "title": "Candy Hunt: where, here, there, under, behind"
         },
         {
           "chapter": 9,
-          "title": "Can I play?"
+          "title": "Can I Play?: permission and respectful asking"
         },
         {
           "chapter": 10,
-          "title": "Counting candies and birthdays"
+          "title": "Birthday Candies: numbers, age, comparisons"
         },
         {
           "chapter": 11,
-          "title": "Morning routine"
+          "title": "Morning Routine: daily actions and ready/not ready"
         },
         {
           "chapter": 14,
-          "title": "Body and health"
+          "title": "Nurse Room: body, health, medicine, rest"
         },
         {
           "chapter": 15,
-          "title": "Weather"
+          "title": "Rainy Day: weather and outing plans"
         },
         {
           "chapter": 18,
-          "title": "Buying candy at a shop"
+          "title": "Candy Shop: price, buying, one/two"
         },
         {
           "chapter": 27,
-          "title": "Planning a playdate"
+          "title": "Playdate Plans: time, visiting, respectful/casual speech"
         },
         {
           "chapter": 31,
-          "title": "Big review: playground adventure"
+          "title": "Big Review Adventure: mixed tenses, games, places"
         }
       ],
       "search_terms": [
@@ -1176,19 +1274,23 @@
       "new_curriculum_chapters": [
         {
           "chapter": 1,
-          "title": "New friend, ice cream, and names"
+          "title": "Names and Ice Cream: greetings, names, likes"
         },
         {
           "chapter": 8,
-          "title": "Where is the candy?"
+          "title": "Candy Hunt: where, here, there, under, behind"
+        },
+        {
+          "chapter": 10,
+          "title": "Birthday Candies: numbers, age, comparisons"
         },
         {
           "chapter": 18,
-          "title": "Buying candy at a shop"
+          "title": "Candy Shop: price, buying, one/two"
         },
         {
           "chapter": 31,
-          "title": "Big review: playground adventure"
+          "title": "Big Review Adventure: mixed tenses, games, places"
         }
       ],
       "search_terms": [
@@ -1208,7 +1310,7 @@
       "new_curriculum_chapters": [
         {
           "chapter": 15,
-          "title": "Weather"
+          "title": "Rainy Day: weather and outing plans"
         }
       ],
       "search_terms": [
@@ -1225,15 +1327,15 @@
       "new_curriculum_chapters": [
         {
           "chapter": 2,
-          "title": "How are you, and what do you want to do?"
+          "title": "Recess Plans: feelings, choices, permission"
         },
         {
           "chapter": 12,
-          "title": "Polite words"
+          "title": "Polite Words: sorry, help, are you okay?"
         },
         {
           "chapter": 14,
-          "title": "Body and health"
+          "title": "Nurse Room: body, health, medicine, rest"
         }
       ],
       "search_terms": [
@@ -1256,11 +1358,11 @@
       "new_curriculum_chapters": [
         {
           "chapter": 4,
-          "title": "Classroom games and asking again"
+          "title": "Classroom Word Game: listen, repeat, ask again"
         },
         {
           "chapter": 16,
-          "title": "Animals"
+          "title": "Animal Book: animals, likes, what is this?"
         }
       ],
       "search_terms": [
@@ -1276,12 +1378,20 @@
       "status": "covered",
       "new_curriculum_chapters": [
         {
+          "chapter": 6,
+          "title": "Tense Drill 1 with Food: ate / eating / will eat"
+        },
+        {
           "chapter": 12,
-          "title": "Polite words"
+          "title": "Polite Words: sorry, help, are you okay?"
         },
         {
           "chapter": 22,
-          "title": "Screen time"
+          "title": "Screen Time: after/before and permission"
+        },
+        {
+          "chapter": 26,
+          "title": "Respectful vs Casual: talking to elders and friends"
         }
       ],
       "search_terms": [
@@ -1299,19 +1409,19 @@
       "new_curriculum_chapters": [
         {
           "chapter": 7,
-          "title": "Games we like"
+          "title": "Tense Drill 2 with Games: played / playing / will play"
         },
         {
           "chapter": 11,
-          "title": "Morning routine"
+          "title": "Morning Routine: daily actions and ready/not ready"
         },
         {
           "chapter": 22,
-          "title": "Screen time"
+          "title": "Screen Time: after/before and permission"
         },
         {
           "chapter": 23,
-          "title": "Homework"
+          "title": "Homework Deal: conditionals and not yet"
         }
       ],
       "search_terms": [
@@ -1332,119 +1442,123 @@
       "new_curriculum_chapters": [
         {
           "chapter": 1,
-          "title": "New friend, ice cream, and names"
+          "title": "Names and Ice Cream: greetings, names, likes"
         },
         {
           "chapter": 2,
-          "title": "How are you, and what do you want to do?"
+          "title": "Recess Plans: feelings, choices, permission"
         },
         {
           "chapter": 3,
-          "title": "Family, car drive, and weekend fun"
+          "title": "Family Car Drive: family, he/she/we, future plans"
         },
         {
           "chapter": 4,
-          "title": "Classroom games and asking again"
+          "title": "Classroom Word Game: listen, repeat, ask again"
         },
         {
           "chapter": 5,
-          "title": "My toys, books, and game board"
+          "title": "Toys and Game Board: this/that, here/there, things"
         },
         {
           "chapter": 6,
-          "title": "Pasta, ice cream, and snacks"
+          "title": "Tense Drill 1 with Food: ate / eating / will eat"
         },
         {
           "chapter": 7,
-          "title": "Games we like"
+          "title": "Tense Drill 2 with Games: played / playing / will play"
         },
         {
           "chapter": 8,
-          "title": "Where is the candy?"
+          "title": "Candy Hunt: where, here, there, under, behind"
         },
         {
           "chapter": 10,
-          "title": "Counting candies and birthdays"
+          "title": "Birthday Candies: numbers, age, comparisons"
         },
         {
           "chapter": 11,
-          "title": "Morning routine"
+          "title": "Morning Routine: daily actions and ready/not ready"
         },
         {
           "chapter": 12,
-          "title": "Polite words"
+          "title": "Polite Words: sorry, help, are you okay?"
         },
         {
           "chapter": 13,
-          "title": "Clothes for a fun day out"
+          "title": "Getting Dressed: clothes, colors, where is it?"
         },
         {
           "chapter": 14,
-          "title": "Body and health"
+          "title": "Nurse Room: body, health, medicine, rest"
         },
         {
           "chapter": 15,
-          "title": "Weather"
+          "title": "Rainy Day: weather and outing plans"
         },
         {
           "chapter": 16,
-          "title": "Animals"
+          "title": "Animal Book: animals, likes, what is this?"
         },
         {
           "chapter": 17,
-          "title": "At the park: slides, swings, and games"
+          "title": "Park Story: past continuous and movement"
         },
         {
           "chapter": 18,
-          "title": "Buying candy at a shop"
+          "title": "Candy Shop: price, buying, one/two"
         },
         {
           "chapter": 19,
-          "title": "Directions"
+          "title": "Finding Places: directions, left/right, near/far"
         },
         {
           "chapter": 20,
-          "title": "Bus ride, car drive, and going places"
+          "title": "Trip Talk: have been / had gone / will go"
         },
         {
           "chapter": 21,
-          "title": "Library"
+          "title": "Library Day: books, reading, requests"
         },
         {
           "chapter": 22,
-          "title": "Screen time"
+          "title": "Screen Time: after/before and permission"
         },
         {
           "chapter": 23,
-          "title": "Homework"
+          "title": "Homework Deal: conditionals and not yet"
         },
         {
           "chapter": 24,
-          "title": "Helping at home"
+          "title": "Helping at Home: chores, bring/take, polite help"
+        },
+        {
+          "chapter": 25,
+          "title": "Festival Sweets: made by, family, greetings"
         },
         {
           "chapter": 26,
-          "title": "Phone call"
+          "title": "Respectful vs Casual: talking to elders and friends"
         },
         {
           "chapter": 27,
-          "title": "Planning a playdate"
+          "title": "Playdate Plans: time, visiting, respectful/casual speech"
         },
         {
           "chapter": 28,
-          "title": "Story words"
+          "title": "Story Talk: who/that/where clauses"
         },
         {
           "chapter": 29,
-          "title": "Review: meeting people"
+          "title": "Review 1: meeting people naturally"
         },
         {
           "chapter": 30,
-          "title": "Review: asking for things"
+          "title": "Review 2: asking for things naturally"
         },
         {
           "chapter": 31,
-          "title": "Big review: playground adventure"
+          "title": "Big Review Adventure: mixed tenses, games, places"
         }
       ],
       "search_terms": [
@@ -1456,7 +1570,8 @@
         "playing",
         "eating",
         "making",
-        "coming"
+        "coming",
+        "tense_present"
       ]
     },
     {
@@ -1466,99 +1581,103 @@
       "new_curriculum_chapters": [
         {
           "chapter": 1,
-          "title": "New friend, ice cream, and names"
+          "title": "Names and Ice Cream: greetings, names, likes"
         },
         {
           "chapter": 2,
-          "title": "How are you, and what do you want to do?"
+          "title": "Recess Plans: feelings, choices, permission"
         },
         {
           "chapter": 4,
-          "title": "Classroom games and asking again"
+          "title": "Classroom Word Game: listen, repeat, ask again"
         },
         {
           "chapter": 5,
-          "title": "My toys, books, and game board"
+          "title": "Toys and Game Board: this/that, here/there, things"
         },
         {
           "chapter": 6,
-          "title": "Pasta, ice cream, and snacks"
+          "title": "Tense Drill 1 with Food: ate / eating / will eat"
         },
         {
           "chapter": 7,
-          "title": "Games we like"
+          "title": "Tense Drill 2 with Games: played / playing / will play"
         },
         {
           "chapter": 8,
-          "title": "Where is the candy?"
+          "title": "Candy Hunt: where, here, there, under, behind"
         },
         {
           "chapter": 11,
-          "title": "Morning routine"
+          "title": "Morning Routine: daily actions and ready/not ready"
         },
         {
           "chapter": 14,
-          "title": "Body and health"
+          "title": "Nurse Room: body, health, medicine, rest"
         },
         {
           "chapter": 15,
-          "title": "Weather"
+          "title": "Rainy Day: weather and outing plans"
         },
         {
           "chapter": 16,
-          "title": "Animals"
+          "title": "Animal Book: animals, likes, what is this?"
         },
         {
           "chapter": 17,
-          "title": "At the park: slides, swings, and games"
+          "title": "Park Story: past continuous and movement"
         },
         {
           "chapter": 19,
-          "title": "Directions"
+          "title": "Finding Places: directions, left/right, near/far"
         },
         {
           "chapter": 20,
-          "title": "Bus ride, car drive, and going places"
+          "title": "Trip Talk: have been / had gone / will go"
         },
         {
           "chapter": 21,
-          "title": "Library"
+          "title": "Library Day: books, reading, requests"
         },
         {
           "chapter": 22,
-          "title": "Screen time"
+          "title": "Screen Time: after/before and permission"
         },
         {
           "chapter": 23,
-          "title": "Homework"
+          "title": "Homework Deal: conditionals and not yet"
         },
         {
           "chapter": 24,
-          "title": "Helping at home"
+          "title": "Helping at Home: chores, bring/take, polite help"
+        },
+        {
+          "chapter": 25,
+          "title": "Festival Sweets: made by, family, greetings"
         },
         {
           "chapter": 26,
-          "title": "Phone call"
+          "title": "Respectful vs Casual: talking to elders and friends"
         },
         {
           "chapter": 27,
-          "title": "Planning a playdate"
+          "title": "Playdate Plans: time, visiting, respectful/casual speech"
         },
         {
           "chapter": 28,
-          "title": "Story words"
+          "title": "Story Talk: who/that/where clauses"
         },
         {
           "chapter": 29,
-          "title": "Review: meeting people"
+          "title": "Review 1: meeting people naturally"
         },
         {
           "chapter": 30,
-          "title": "Review: asking for things"
+          "title": "Review 2: asking for things naturally"
         },
         {
           "chapter": 31,
-          "title": "Big review: playground adventure"
+          "title": "Big Review Adventure: mixed tenses, games, places"
         }
       ],
       "search_terms": [
@@ -1570,7 +1689,8 @@
         "got",
         "found",
         "brought",
-        "was"
+        "was",
+        "tense_past"
       ]
     },
     {
@@ -1580,130 +1700,169 @@
       "new_curriculum_chapters": [
         {
           "chapter": 1,
-          "title": "New friend, ice cream, and names"
+          "title": "Names and Ice Cream: greetings, names, likes"
         },
         {
           "chapter": 2,
-          "title": "How are you, and what do you want to do?"
+          "title": "Recess Plans: feelings, choices, permission"
         },
         {
           "chapter": 5,
-          "title": "My toys, books, and game board"
+          "title": "Toys and Game Board: this/that, here/there, things"
         },
         {
           "chapter": 6,
-          "title": "Pasta, ice cream, and snacks"
+          "title": "Tense Drill 1 with Food: ate / eating / will eat"
         },
         {
           "chapter": 7,
-          "title": "Games we like"
+          "title": "Tense Drill 2 with Games: played / playing / will play"
         },
         {
           "chapter": 9,
-          "title": "Can I play?"
+          "title": "Can I Play?: permission and respectful asking"
+        },
+        {
+          "chapter": 11,
+          "title": "Morning Routine: daily actions and ready/not ready"
         },
         {
           "chapter": 14,
-          "title": "Body and health"
+          "title": "Nurse Room: body, health, medicine, rest"
         },
         {
           "chapter": 15,
-          "title": "Weather"
+          "title": "Rainy Day: weather and outing plans"
         },
         {
           "chapter": 16,
-          "title": "Animals"
+          "title": "Animal Book: animals, likes, what is this?"
         },
         {
           "chapter": 17,
-          "title": "At the park: slides, swings, and games"
+          "title": "Park Story: past continuous and movement"
         },
         {
           "chapter": 19,
-          "title": "Directions"
+          "title": "Finding Places: directions, left/right, near/far"
         },
         {
           "chapter": 20,
-          "title": "Bus ride, car drive, and going places"
+          "title": "Trip Talk: have been / had gone / will go"
         },
         {
           "chapter": 21,
-          "title": "Library"
+          "title": "Library Day: books, reading, requests"
         },
         {
           "chapter": 22,
-          "title": "Screen time"
+          "title": "Screen Time: after/before and permission"
         },
         {
           "chapter": 23,
-          "title": "Homework"
+          "title": "Homework Deal: conditionals and not yet"
         },
         {
           "chapter": 24,
-          "title": "Helping at home"
+          "title": "Helping at Home: chores, bring/take, polite help"
         },
         {
           "chapter": 26,
-          "title": "Phone call"
+          "title": "Respectful vs Casual: talking to elders and friends"
         },
         {
           "chapter": 27,
-          "title": "Planning a playdate"
+          "title": "Playdate Plans: time, visiting, respectful/casual speech"
         },
         {
           "chapter": 28,
-          "title": "Story words"
+          "title": "Story Talk: who/that/where clauses"
         },
         {
           "chapter": 29,
-          "title": "Review: meeting people"
+          "title": "Review 1: meeting people naturally"
         },
         {
           "chapter": 30,
-          "title": "Review: asking for things"
+          "title": "Review 2: asking for things naturally"
         },
         {
           "chapter": 31,
-          "title": "Big review: playground adventure"
+          "title": "Big Review Adventure: mixed tenses, games, places"
         }
       ],
       "search_terms": [
         "tomorrow",
         "will",
         "i’ll",
+        "going to",
         "later",
         "next time",
-        "going to",
-        "see you"
+        "see you",
+        "tense_future"
+      ]
+    },
+    {
+      "concept_id": "structured_tense_drills",
+      "source_concept": "Structured tense drills: same idea in past/present/future",
+      "status": "covered",
+      "new_curriculum_chapters": [
+        {
+          "chapter": 6,
+          "title": "Tense Drill 1 with Food: ate / eating / will eat"
+        },
+        {
+          "chapter": 7,
+          "title": "Tense Drill 2 with Games: played / playing / will play"
+        },
+        {
+          "chapter": 8,
+          "title": "Candy Hunt: where, here, there, under, behind"
+        },
+        {
+          "chapter": 10,
+          "title": "Birthday Candies: numbers, age, comparisons"
+        },
+        {
+          "chapter": 17,
+          "title": "Park Story: past continuous and movement"
+        },
+        {
+          "chapter": 20,
+          "title": "Trip Talk: have been / had gone / will go"
+        },
+        {
+          "chapter": 31,
+          "title": "Big Review Adventure: mixed tenses, games, places"
+        }
+      ],
+      "search_terms": [
+        "structured tense drill",
+        "same food, three times",
+        "same game, three times",
+        "mixed tense story",
+        "tense spiral"
       ]
     },
     {
       "concept_id": "past_continuous",
       "source_concept": "Past continuous: was/were doing",
-      "status": "needs_work",
-      "new_curriculum_chapters": [],
+      "status": "covered",
+      "new_curriculum_chapters": [
+        {
+          "chapter": 17,
+          "title": "Park Story: past continuous and movement"
+        }
+      ],
       "search_terms": [
         "was playing",
         "were playing",
         "was drawing",
         "were doing",
         "what were you doing",
-        "was watering"
-      ],
-      "gap_fix": {
-        "recommended_kid_scene": "Playground or art table: “What were you doing when I called?” “I was drawing ice cream.”",
-        "suggested_chapters": [
-          17,
-          25,
-          31
-        ],
-        "sample_english": [
-          "What were you doing when I came?",
-          "I was playing on the slide.",
-          "Maya was drawing a castle.",
-          "We were looking for the ball."
-        ]
-      }
+        "past_continuous",
+        "were laughing"
+      ]
     },
     {
       "concept_id": "present_perfect_not_yet",
@@ -1712,11 +1871,23 @@
       "new_curriculum_chapters": [
         {
           "chapter": 3,
-          "title": "Family, car drive, and weekend fun"
+          "title": "Family Car Drive: family, he/she/we, future plans"
+        },
+        {
+          "chapter": 10,
+          "title": "Birthday Candies: numbers, age, comparisons"
+        },
+        {
+          "chapter": 20,
+          "title": "Trip Talk: have been / had gone / will go"
         },
         {
           "chapter": 23,
-          "title": "Homework"
+          "title": "Homework Deal: conditionals and not yet"
+        },
+        {
+          "chapter": 28,
+          "title": "Story Talk: who/that/where clauses"
         }
       ],
       "search_terms": [
@@ -1724,34 +1895,27 @@
         "has",
         "have you been",
         "haven’t",
-        "already"
+        "already",
+        "present_perfect"
       ]
     },
     {
       "concept_id": "past_perfect_had_been",
       "source_concept": "Past perfect / had been / had gone",
-      "status": "needs_work",
-      "new_curriculum_chapters": [],
+      "status": "covered",
+      "new_curriculum_chapters": [
+        {
+          "chapter": 20,
+          "title": "Trip Talk: have been / had gone / will go"
+        }
+      ],
       "search_terms": [
         "had been",
         "had gone",
         "had run",
-        "had seen"
-      ],
-      "gap_fix": {
-        "recommended_kid_scene": "Theme park/zoo/grandma trip: “Have you been there before?” / “I had been there once.” Keep this later and optional.",
-        "suggested_chapters": [
-          20,
-          23,
-          31
-        ],
-        "sample_english": [
-          "Have you been to Disneyland before?",
-          "Yes, I had been there once.",
-          "Had you gone on the big ride?",
-          "No, I had not gone on that ride."
-        ]
-      }
+        "had seen",
+        "past_perfect"
+      ]
     },
     {
       "concept_id": "obligation_should_must_have_to_may",
@@ -1760,43 +1924,55 @@
       "new_curriculum_chapters": [
         {
           "chapter": 2,
-          "title": "How are you, and what do you want to do?"
+          "title": "Recess Plans: feelings, choices, permission"
         },
         {
           "chapter": 5,
-          "title": "My toys, books, and game board"
+          "title": "Toys and Game Board: this/that, here/there, things"
         },
         {
           "chapter": 6,
-          "title": "Pasta, ice cream, and snacks"
+          "title": "Tense Drill 1 with Food: ate / eating / will eat"
         },
         {
           "chapter": 7,
-          "title": "Games we like"
+          "title": "Tense Drill 2 with Games: played / playing / will play"
         },
         {
           "chapter": 9,
-          "title": "Can I play?"
+          "title": "Can I Play?: permission and respectful asking"
         },
         {
           "chapter": 17,
-          "title": "At the park: slides, swings, and games"
+          "title": "Park Story: past continuous and movement"
         },
         {
           "chapter": 20,
-          "title": "Bus ride, car drive, and going places"
+          "title": "Trip Talk: have been / had gone / will go"
         },
         {
           "chapter": 22,
-          "title": "Screen time"
+          "title": "Screen Time: after/before and permission"
+        },
+        {
+          "chapter": 23,
+          "title": "Homework Deal: conditionals and not yet"
         },
         {
           "chapter": 24,
-          "title": "Helping at home"
+          "title": "Helping at Home: chores, bring/take, polite help"
+        },
+        {
+          "chapter": 26,
+          "title": "Respectful vs Casual: talking to elders and friends"
+        },
+        {
+          "chapter": 27,
+          "title": "Playdate Plans: time, visiting, respectful/casual speech"
         },
         {
           "chapter": 31,
-          "title": "Big review: playground adventure"
+          "title": "Big Review Adventure: mixed tenses, games, places"
         }
       ],
       "search_terms": [
@@ -1811,27 +1987,20 @@
     {
       "concept_id": "conditionals_if_then",
       "source_concept": "Conditionals: if/then/would",
-      "status": "needs_work",
-      "new_curriculum_chapters": [],
+      "status": "covered",
+      "new_curriculum_chapters": [
+        {
+          "chapter": 23,
+          "title": "Homework Deal: conditionals and not yet"
+        }
+      ],
       "search_terms": [
         "if ",
         "would",
-        "otherwise"
-      ],
-      "gap_fix": {
-        "recommended_kid_scene": "Homework/play reward: “If we finish homework, we can play Snake and Ladder.”",
-        "suggested_chapters": [
-          20,
-          22,
-          23,
-          30
-        ],
-        "sample_english": [
-          "If you finish homework, we can play.",
-          "If it rains, we will play inside.",
-          "If you told me yesterday, I would have brought the game."
-        ]
-      }
+        "otherwise",
+        "conditional",
+        "conditionals"
+      ]
     },
     {
       "concept_id": "when_after_until_clauses",
@@ -1840,55 +2009,67 @@
       "new_curriculum_chapters": [
         {
           "chapter": 1,
-          "title": "New friend, ice cream, and names"
+          "title": "Names and Ice Cream: greetings, names, likes"
         },
         {
           "chapter": 2,
-          "title": "How are you, and what do you want to do?"
+          "title": "Recess Plans: feelings, choices, permission"
         },
         {
           "chapter": 3,
-          "title": "Family, car drive, and weekend fun"
+          "title": "Family Car Drive: family, he/she/we, future plans"
         },
         {
           "chapter": 4,
-          "title": "Classroom games and asking again"
+          "title": "Classroom Word Game: listen, repeat, ask again"
         },
         {
           "chapter": 5,
-          "title": "My toys, books, and game board"
+          "title": "Toys and Game Board: this/that, here/there, things"
         },
         {
           "chapter": 6,
-          "title": "Pasta, ice cream, and snacks"
+          "title": "Tense Drill 1 with Food: ate / eating / will eat"
         },
         {
           "chapter": 7,
-          "title": "Games we like"
+          "title": "Tense Drill 2 with Games: played / playing / will play"
         },
         {
           "chapter": 8,
-          "title": "Where is the candy?"
+          "title": "Candy Hunt: where, here, there, under, behind"
         },
         {
           "chapter": 9,
-          "title": "Can I play?"
+          "title": "Can I Play?: permission and respectful asking"
         },
         {
           "chapter": 12,
-          "title": "Polite words"
+          "title": "Polite Words: sorry, help, are you okay?"
         },
         {
           "chapter": 13,
-          "title": "Clothes for a fun day out"
+          "title": "Getting Dressed: clothes, colors, where is it?"
+        },
+        {
+          "chapter": 17,
+          "title": "Park Story: past continuous and movement"
         },
         {
           "chapter": 20,
-          "title": "Bus ride, car drive, and going places"
+          "title": "Trip Talk: have been / had gone / will go"
         },
         {
           "chapter": 22,
-          "title": "Screen time"
+          "title": "Screen Time: after/before and permission"
+        },
+        {
+          "chapter": 23,
+          "title": "Homework Deal: conditionals and not yet"
+        },
+        {
+          "chapter": 27,
+          "title": "Playdate Plans: time, visiting, respectful/casual speech"
         }
       ],
       "search_terms": [
@@ -1902,34 +2083,34 @@
     {
       "concept_id": "relative_clauses_who_that_where",
       "source_concept": "Relative clauses: who/that/where",
-      "status": "needs_work",
-      "new_curriculum_chapters": [],
+      "status": "covered",
+      "new_curriculum_chapters": [
+        {
+          "chapter": 28,
+          "title": "Story Talk: who/that/where clauses"
+        }
+      ],
       "search_terms": [
         "the friend who",
         "the game that",
         "place where",
-        "where you"
-      ],
-      "gap_fix": {
-        "recommended_kid_scene": "Classroom/show-and-tell: “The girl who sang is my friend.” “This is the shop where we bought ice cream.”",
-        "suggested_chapters": [
-          21,
-          26,
-          28,
-          31
-        ],
-        "sample_english": [
-          "The boy who won the game is my friend.",
-          "This is the place where we ate ice cream.",
-          "The book that I read was funny."
-        ]
-      }
+        "where you",
+        "relative_clause",
+        "relative clauses",
+        "the book that",
+        "the girl who"
+      ]
     },
     {
       "concept_id": "comparisons",
       "source_concept": "Comparisons: bigger/newer/like/as/nobody like him",
-      "status": "needs_work",
-      "new_curriculum_chapters": [],
+      "status": "covered",
+      "new_curriculum_chapters": [
+        {
+          "chapter": 10,
+          "title": "Birthday Candies: numbers, age, comparisons"
+        }
+      ],
       "search_terms": [
         "bigger",
         "newer",
@@ -1937,47 +2118,51 @@
         "more than",
         "like him",
         "same as",
-        "better"
-      ],
-      "gap_fix": {
-        "recommended_kid_scene": "Games/food/toys: bigger scoop, smaller car, faster runner, nobody plays like her.",
-        "suggested_chapters": [
-          6,
-          7,
-          10,
-          31
-        ],
-        "sample_english": [
-          "My scoop is bigger than yours.",
-          "This car is faster than that car.",
-          "Nobody plays Snake and Ladder like Sara."
-        ]
-      }
+        "better",
+        "comparison",
+        "comparisons",
+        "sweeter"
+      ]
     },
     {
       "concept_id": "passive_made_by",
       "source_concept": "Passive / made by",
-      "status": "needs_work",
-      "new_curriculum_chapters": [],
+      "status": "covered",
+      "new_curriculum_chapters": [
+        {
+          "chapter": 25,
+          "title": "Festival Sweets: made by, family, greetings"
+        }
+      ],
       "search_terms": [
         "made by",
         "was made",
-        "is made"
+        "is made",
+        "passive_made_by"
+      ]
+    },
+    {
+      "concept_id": "respectful_vs_casual_speech",
+      "source_concept": "Kannada speech level: elders/teachers vs friends/younger kids",
+      "status": "covered",
+      "new_curriculum_chapters": [
+        {
+          "chapter": 26,
+          "title": "Respectful vs Casual: talking to elders and friends"
+        },
+        {
+          "chapter": 27,
+          "title": "Playdate Plans: time, visiting, respectful/casual speech"
+        }
       ],
-      "gap_fix": {
-        "recommended_kid_scene": "Food/art/festival: “This cake was made by mom.” “This drawing was made by Tara.”",
-        "suggested_chapters": [
-          12,
-          25,
-          28,
-          31
-        ],
-        "sample_english": [
-          "This pasta was made by dad.",
-          "This card was made by Meena.",
-          "The laddus were made by grandma."
-        ]
-      }
+      "search_terms": [
+        "respectful vs casual",
+        "respectful_elder_or_teacher",
+        "casual_friend_or_younger",
+        "elders",
+        "teacher vs friend",
+        "same idea different respect"
+      ]
     },
     {
       "concept_id": "some_all_only_many",
@@ -1986,67 +2171,87 @@
       "new_curriculum_chapters": [
         {
           "chapter": 1,
-          "title": "New friend, ice cream, and names"
+          "title": "Names and Ice Cream: greetings, names, likes"
         },
         {
           "chapter": 2,
-          "title": "How are you, and what do you want to do?"
+          "title": "Recess Plans: feelings, choices, permission"
         },
         {
           "chapter": 3,
-          "title": "Family, car drive, and weekend fun"
+          "title": "Family Car Drive: family, he/she/we, future plans"
         },
         {
           "chapter": 4,
-          "title": "Classroom games and asking again"
+          "title": "Classroom Word Game: listen, repeat, ask again"
         },
         {
           "chapter": 6,
-          "title": "Pasta, ice cream, and snacks"
+          "title": "Tense Drill 1 with Food: ate / eating / will eat"
         },
         {
           "chapter": 8,
-          "title": "Where is the candy?"
+          "title": "Candy Hunt: where, here, there, under, behind"
         },
         {
           "chapter": 9,
-          "title": "Can I play?"
+          "title": "Can I Play?: permission and respectful asking"
         },
         {
           "chapter": 10,
-          "title": "Counting candies and birthdays"
+          "title": "Birthday Candies: numbers, age, comparisons"
         },
         {
           "chapter": 12,
-          "title": "Polite words"
+          "title": "Polite Words: sorry, help, are you okay?"
         },
         {
           "chapter": 14,
-          "title": "Body and health"
+          "title": "Nurse Room: body, health, medicine, rest"
         },
         {
           "chapter": 17,
-          "title": "At the park: slides, swings, and games"
+          "title": "Park Story: past continuous and movement"
         },
         {
           "chapter": 18,
-          "title": "Buying candy at a shop"
+          "title": "Candy Shop: price, buying, one/two"
         },
         {
           "chapter": 19,
-          "title": "Directions"
+          "title": "Finding Places: directions, left/right, near/far"
+        },
+        {
+          "chapter": 20,
+          "title": "Trip Talk: have been / had gone / will go"
+        },
+        {
+          "chapter": 23,
+          "title": "Homework Deal: conditionals and not yet"
+        },
+        {
+          "chapter": 25,
+          "title": "Festival Sweets: made by, family, greetings"
         },
         {
           "chapter": 26,
-          "title": "Phone call"
+          "title": "Respectful vs Casual: talking to elders and friends"
         },
         {
           "chapter": 28,
-          "title": "Story words"
+          "title": "Story Talk: who/that/where clauses"
+        },
+        {
+          "chapter": 29,
+          "title": "Review 1: meeting people naturally"
+        },
+        {
+          "chapter": 30,
+          "title": "Review 2: asking for things naturally"
         },
         {
           "chapter": 31,
-          "title": "Big review: playground adventure"
+          "title": "Big Review Adventure: mixed tenses, games, places"
         }
       ],
       "search_terms": [
@@ -2065,79 +2270,87 @@
       "new_curriculum_chapters": [
         {
           "chapter": 2,
-          "title": "How are you, and what do you want to do?"
+          "title": "Recess Plans: feelings, choices, permission"
         },
         {
           "chapter": 4,
-          "title": "Classroom games and asking again"
+          "title": "Classroom Word Game: listen, repeat, ask again"
         },
         {
           "chapter": 5,
-          "title": "My toys, books, and game board"
+          "title": "Toys and Game Board: this/that, here/there, things"
         },
         {
           "chapter": 6,
-          "title": "Pasta, ice cream, and snacks"
+          "title": "Tense Drill 1 with Food: ate / eating / will eat"
         },
         {
           "chapter": 7,
-          "title": "Games we like"
+          "title": "Tense Drill 2 with Games: played / playing / will play"
         },
         {
           "chapter": 8,
-          "title": "Where is the candy?"
+          "title": "Candy Hunt: where, here, there, under, behind"
         },
         {
           "chapter": 9,
-          "title": "Can I play?"
+          "title": "Can I Play?: permission and respectful asking"
         },
         {
           "chapter": 10,
-          "title": "Counting candies and birthdays"
+          "title": "Birthday Candies: numbers, age, comparisons"
         },
         {
           "chapter": 12,
-          "title": "Polite words"
+          "title": "Polite Words: sorry, help, are you okay?"
         },
         {
           "chapter": 17,
-          "title": "At the park: slides, swings, and games"
+          "title": "Park Story: past continuous and movement"
         },
         {
           "chapter": 18,
-          "title": "Buying candy at a shop"
+          "title": "Candy Shop: price, buying, one/two"
         },
         {
           "chapter": 19,
-          "title": "Directions"
+          "title": "Finding Places: directions, left/right, near/far"
         },
         {
           "chapter": 20,
-          "title": "Bus ride, car drive, and going places"
+          "title": "Trip Talk: have been / had gone / will go"
         },
         {
           "chapter": 21,
-          "title": "Library"
+          "title": "Library Day: books, reading, requests"
         },
         {
           "chapter": 22,
-          "title": "Screen time"
+          "title": "Screen Time: after/before and permission"
         },
         {
           "chapter": 23,
-          "title": "Homework"
+          "title": "Homework Deal: conditionals and not yet"
         },
         {
           "chapter": 24,
-          "title": "Helping at home"
+          "title": "Helping at Home: chores, bring/take, polite help"
+        },
+        {
+          "chapter": 26,
+          "title": "Respectful vs Casual: talking to elders and friends"
+        },
+        {
+          "chapter": 27,
+          "title": "Playdate Plans: time, visiting, respectful/casual speech"
         },
         {
           "chapter": 30,
-          "title": "Review: asking for things"
+          "title": "Review 2: asking for things naturally"
         },
         {
           "chapter": 31,
-          "title": "Big review: playground adventure"
+          "title": "Big Review Adventure: mixed tenses, games, places"
         }
       ],
       "search_terms": [
@@ -2152,166 +2365,5 @@
       ]
     }
   ],
-  "recommended_changes": [
-    {
-      "concept_id": "past_continuous",
-      "source_concept": "Past continuous: was/were doing",
-      "status": "needs_work",
-      "new_curriculum_chapters": [],
-      "search_terms": [
-        "was playing",
-        "were playing",
-        "was drawing",
-        "were doing",
-        "what were you doing",
-        "was watering"
-      ],
-      "gap_fix": {
-        "recommended_kid_scene": "Playground or art table: “What were you doing when I called?” “I was drawing ice cream.”",
-        "suggested_chapters": [
-          17,
-          25,
-          31
-        ],
-        "sample_english": [
-          "What were you doing when I came?",
-          "I was playing on the slide.",
-          "Maya was drawing a castle.",
-          "We were looking for the ball."
-        ]
-      }
-    },
-    {
-      "concept_id": "past_perfect_had_been",
-      "source_concept": "Past perfect / had been / had gone",
-      "status": "needs_work",
-      "new_curriculum_chapters": [],
-      "search_terms": [
-        "had been",
-        "had gone",
-        "had run",
-        "had seen"
-      ],
-      "gap_fix": {
-        "recommended_kid_scene": "Theme park/zoo/grandma trip: “Have you been there before?” / “I had been there once.” Keep this later and optional.",
-        "suggested_chapters": [
-          20,
-          23,
-          31
-        ],
-        "sample_english": [
-          "Have you been to Disneyland before?",
-          "Yes, I had been there once.",
-          "Had you gone on the big ride?",
-          "No, I had not gone on that ride."
-        ]
-      }
-    },
-    {
-      "concept_id": "conditionals_if_then",
-      "source_concept": "Conditionals: if/then/would",
-      "status": "needs_work",
-      "new_curriculum_chapters": [],
-      "search_terms": [
-        "if ",
-        "would",
-        "otherwise"
-      ],
-      "gap_fix": {
-        "recommended_kid_scene": "Homework/play reward: “If we finish homework, we can play Snake and Ladder.”",
-        "suggested_chapters": [
-          20,
-          22,
-          23,
-          30
-        ],
-        "sample_english": [
-          "If you finish homework, we can play.",
-          "If it rains, we will play inside.",
-          "If you told me yesterday, I would have brought the game."
-        ]
-      }
-    },
-    {
-      "concept_id": "relative_clauses_who_that_where",
-      "source_concept": "Relative clauses: who/that/where",
-      "status": "needs_work",
-      "new_curriculum_chapters": [],
-      "search_terms": [
-        "the friend who",
-        "the game that",
-        "place where",
-        "where you"
-      ],
-      "gap_fix": {
-        "recommended_kid_scene": "Classroom/show-and-tell: “The girl who sang is my friend.” “This is the shop where we bought ice cream.”",
-        "suggested_chapters": [
-          21,
-          26,
-          28,
-          31
-        ],
-        "sample_english": [
-          "The boy who won the game is my friend.",
-          "This is the place where we ate ice cream.",
-          "The book that I read was funny."
-        ]
-      }
-    },
-    {
-      "concept_id": "comparisons",
-      "source_concept": "Comparisons: bigger/newer/like/as/nobody like him",
-      "status": "needs_work",
-      "new_curriculum_chapters": [],
-      "search_terms": [
-        "bigger",
-        "newer",
-        "smaller",
-        "more than",
-        "like him",
-        "same as",
-        "better"
-      ],
-      "gap_fix": {
-        "recommended_kid_scene": "Games/food/toys: bigger scoop, smaller car, faster runner, nobody plays like her.",
-        "suggested_chapters": [
-          6,
-          7,
-          10,
-          31
-        ],
-        "sample_english": [
-          "My scoop is bigger than yours.",
-          "This car is faster than that car.",
-          "Nobody plays Snake and Ladder like Sara."
-        ]
-      }
-    },
-    {
-      "concept_id": "passive_made_by",
-      "source_concept": "Passive / made by",
-      "status": "needs_work",
-      "new_curriculum_chapters": [],
-      "search_terms": [
-        "made by",
-        "was made",
-        "is made"
-      ],
-      "gap_fix": {
-        "recommended_kid_scene": "Food/art/festival: “This cake was made by mom.” “This drawing was made by Tara.”",
-        "suggested_chapters": [
-          12,
-          25,
-          28,
-          31
-        ],
-        "sample_english": [
-          "This pasta was made by dad.",
-          "This card was made by Meena.",
-          "The laddus were made by grandma."
-        ]
-      }
-    }
-  ],
-  "summary_note": "The new proposal covers most old source topics and common grammar, but the advanced grammar from later PDF chapters still needs deliberate kid-friendly scenes before we can say coverage is complete."
+  "recommended_changes": []
 }
