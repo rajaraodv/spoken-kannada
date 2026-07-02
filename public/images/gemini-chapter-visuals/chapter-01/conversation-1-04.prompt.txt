@@ -1,0 +1,79 @@
+Create one image for a spoken Kannada learning card.
+
+Purpose:
+This image teaches kids and English speakers one moment from a spoken Kannada conversation. It must show one person speaking to another person. The app will add the speech bubble and exact English/Kannada text after generation.
+
+Chapter:
+Chapter 1
+
+Conversation id:
+Conversation 1
+
+Conversation summary:
+Raju greets Shekhar, introduces nearby Mohan, asks who Shekhar is, asks about Sheela who is farther away, and then introduces nearby Shankar.
+
+Full conversation excerpt:
+A: Good Morning; B: Good Morning : A: I am Raju. A: He is Mohan. A: Who are you ? B: I am Shekhar, A: Who is she ? B: She is Sheela. B: He is Shankar.
+
+Current line:
+4
+
+Speaker:
+Raju
+
+Listener:
+Shekhar
+
+What is happening in this exact image:
+Raju is saying this sentence to Shekhar: "He is Mohan." Raju is pointing to nearby Mohan while speaking to Shekhar.
+
+English sentence for context only, do not render:
+He is Mohan.
+
+Kannada sentence for context only, do not render:
+ಅವರ ಹೆಸರು ಮೋಹನ್.
+
+Romanized Kannada for context only, do not render:
+Avara hesaru Mohan.
+
+Scene location:
+A bright school courtyard or classroom doorway in Karnataka where children are greeting and introducing friends.
+
+Scene details and props:
+warm Indian setting, simple picture-only posters, no readable background text, referenced person close to speaker/listener in foreground
+
+Character profiles and dress code:
+Raju: school-age boy; dress code: blue school shirt and dark shorts. Mohan: nearby friend; dress code: warm orange or tan shirt so he is distinct from Raju and Shekhar. Shekhar: learner/friend; dress code: green backpack or green accents.
+
+Visible named people:
+Named people who must be clearly visible and unobstructed: Raju, Mohan, Shekhar. Do not render any names, labels, blank boxes, white rectangles, or placeholder tags in the image.
+
+Layout and label safety:
+Controlled layout: place Raju on the left foreground, Mohan in the center or center-background, and Shekhar on the right foreground. Raju and Shekhar should not look like twins.
+
+Required staging: show exactly three schoolchildren. Raju is the speaker on the left, Shekhar is listening, and Mohan is a distinct third boy standing nearby in the foreground. Raju must point toward Mohan; do not merge Mohan and Shekhar into one person.
+
+Character continuity:
+Use a consistent modern children's storybook cartoon style for all Chapter 1 images.
+Raju: Indian boy or young male teacher depending on conversation; slim, side-parted black hair, expressive eyebrows, blue shirt. In conversation 2 he is an adult teacher with a book or folder.
+Shekhar: Indian boy/young man with rounder face, short wavy black hair, green shirt or backpack when learning. When he says he is a doctor, make him an adult doctor in a white coat with stethoscope.
+Mohan: Indian boy with darker tan/orange shirt, slightly taller than Raju and Shekhar, wavy hair, calm expression; visually distinct from Shekhar.
+Sheela: Indian girl with long tied-back hair or braid, pink/purple outfit, smaller/farther away when the sentence uses 'that person/she'.
+Shankar: Indian boy with maroon/purple shirt, shorter hair, different face shape from Mohan and Shekhar, nearby when introduced with 'this person'.
+Lalita: Indian adult woman, sari or salwar when discussed from a distance; nurse uniform/medical cue when the sentence says she is a nurse.
+Kiran: young Indian child, short, yellow shirt, round childlike face, visibly younger than adults.
+Father: adult Indian man, taller than Kiran, moustache or mature face, plain shirt and trousers.
+Teacher: adult Indian woman, sari, clearly older than Kiran.
+Manju: young Indian girl, smaller than Kiran, dress or school frock, childlike face.
+Keep faces, clothing colors, room/courtyard layout, lighting, and style consistent across adjacent images.
+A previous Chapter 1 image is attached. Use it as a visual reference for the same characters, faces, clothing, setting, lighting, room/courtyard layout, and style.
+
+Composition:
+Show the speaker and listener relationship immediately. Speaker should face, gesture, or point toward the listener or referenced person/object. If this/ivaru is implied, put the referenced person close. If that/avaru is implied, put the referenced person farther away.
+Leave clean wall/sky/board-free space near the top for a speech bubble that will be added later. Keep named characters unobstructed. Do not draw a speech bubble, name badge, blank label box, or name-badge text yourself.
+
+Style:
+Modern colorful children's storybook cartoon, warm Indian environment, expressive characters, clean readable 16:9 composition.
+
+Negative instructions:
+No text, no letters, no captions, no UI, no watermarks, no fake writing, no chalk writing, no random symbols, no generated speech bubble, no generated name labels, no blank white label rectangles.

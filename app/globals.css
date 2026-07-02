@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: "Baloo 2", system-ui, sans-serif;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(160deg, #fff7ed 0%, #fef2f2 40%, #f5f3ff 100%);
+  min-height: 100vh;
+  color: #3a2a1a;
+}
+
+.font-display {
+  font-family: var(--font-display), system-ui, sans-serif;
+}
+
+.kn {
+  font-family: var(--font-kannada), "Noto Sans Kannada", sans-serif;
+}
+
+/* Hide scrollbars on horizontal scrollers but keep them usable */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

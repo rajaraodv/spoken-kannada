@@ -1,0 +1,21 @@
+{
+  "page": 72,
+  "lesson": null,
+  "blocks": [
+    {
+      "type": "vocab",
+      "rows": [
+        {"speaker": "", "roman": "kattu", "english": "to build"},
+        {"speaker": "", "roman": "sikku", "english": "available"},
+        {"speaker": "", "roman": "nija", "english": "truth"},
+        {"speaker": "", "roman": "deevastaana", "english": "temple"},
+        {"speaker": "", "roman": "hasivu", "english": "hunger"},
+        {"speaker": "", "roman": "tanniiru", "english": "cool water"},
+        {"speaker": "", "roman": "saale", "english": "school"},
+        {"speaker": "", "roman": "hendti", "english": "wife"},
+        {"speaker": "", "roman": "saamaanu", "english": "things"},
+        {"speaker": "", "roman": "hana", "english": "money"}
+      ]
+    }
+  ]
+}

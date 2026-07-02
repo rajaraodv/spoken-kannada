@@ -1,0 +1,41 @@
+{
+  "page": 12,
+  "lesson": 2,
+  "blocks": [
+    {"type":"conversation","number":"1","rows":[
+      {"speaker":"A","roman":"namaskaara, Mr. Naidu.","english":"Good morning Mr. Naidu"},
+      {"speaker":"B","roman":"oohoo, namaskaara","english":"Hello ! goodmorning ;"},
+      {"speaker":"","roman":"banni kuutkoli","english":"Please come, be seated."},
+      {"speaker":"A","roman":"ivaru Mr. Prakaas.","english":"He is Mr. Prakash."},
+      {"speaker":"B","roman":"namaskaara kuutkoli","english":"Hello, please sit down."},
+      {"speaker":"","roman":"ivaru nimma sneehitraa ?","english":"Is he your friend ?"},
+      {"speaker":"A","roman":"alla, ivaru namma anna.","english":"No, he is my elder brother."},
+      {"speaker":"B","roman":"ivaru laayaraa ?","english":"Is he a lawyer ?"},
+      {"speaker":"A","roman":"alla, ivaru kavi","english":"No, he is a poet."}
+    ]},
+    {"type":"conversation","number":"2","rows":[
+      {"speaker":"A","roman":"Mr. Naaidu, adu eenu ?","english":"Mr. Naidu, what is that ?"},
+      {"speaker":"B","roman":"idu kate pustaka.","english":"This is a story book."},
+      {"speaker":"A","roman":"idu nimma pustakanaa ?","english":"Is this your book ?"},
+      {"speaker":"B","roman":"alla, idu nanna pustaka alla","english":"No this is not my book."},
+      {"speaker":"A","roman":"adara hesaru eenu ?","english":"What is its name ?"},
+      {"speaker":"B","roman":"idara hesaru 'Milana'","english":"Its name is 'Milana'."},
+      {"speaker":"","roman":"idu ketta pustaka","english":"It's a bad book."},
+      {"speaker":"A","roman":"nimma pustaka yaavdu ?","english":"Which is your book ?"},
+      {"speaker":"B","roman":"idu nanna hosa pustaka ?","english":"This is my new book."},
+      {"speaker":"","roman":"idu ollee pustaka","english":"This is a very good book."},
+      {"speaker":"","roman":"nimma hosa pustaka yaavdu","english":"Which is your new book ?"},
+      {"speaker":"A","roman":"'preema' nanna hosa pustaka","english":"'Prema' is my new book."},
+      {"speaker":"","roman":"adu tumba dodda pustaka","english":"That is a very big book."}
+    ]},
+    {"type":"conversation","number":"3","rows":[
+      {"speaker":"A","roman":"Mr. seekhar, nimma mane yaavadu?","english":"Mr. Shekhar, which is your house ?"},
+      {"speaker":"B","roman":"adu namma mane","english":"That is my house."},
+      {"speaker":"A","roman":"yaavdu ? dodda maneenaa ?","english":"Which one ?   That big house ?"},
+      {"speaker":"B","roman":"alla, cikka mane","english":"No, the small house."},
+      {"speaker":"A","roman":"ivara mane yaavdu ?","english":"Which is his house ?"},
+      {"speaker":"","roman":"adu ivara mane","english":"That is his house"},
+      {"speaker":"","roman":"adu tumba dodda mane","english":"That is a very big house."}
+    ]}
+  ]
+}

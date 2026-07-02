@@ -1,0 +1,53 @@
+{
+  "page": 35,
+  "lesson": null,
+  "blocks": [
+    {
+      "type": "conversation",
+      "number": "3",
+      "rows": [
+        {"speaker": "A", "roman": "naale beligge niivu maneeli irtiiraa ?", "english": "Will you be at home to-morrow morning ?"},
+        {"speaker": "B", "roman": "naale estu hottinalli ?", "english": "To-morrow at what time ?"},
+        {"speaker": "A", "roman": "sumaaru hattu gantege.", "english": "At about 10'o clock."},
+        {"speaker": "B", "roman": "illa, hattu gantege naanu maneeli iralla.", "english": "No, at 10 I'll not be at home."},
+        {"speaker": "", "roman": "astu hottinalli naanu aafiisalli irtiini.", "english": "At that time, I will be in the office."},
+        {"speaker": "A", "roman": "niivu yaavaagluu astu hottinall affisalli irtiiraa ?", "english": "Will you be in the office always at that time ?"},
+        {"speaker": "B", "roman": "saamaanyavaagi irtiini.", "english": "Normally I will be there."},
+        {"speaker": "A", "roman": "aafiisalli matte yaaryaaru irtaare?", "english": "Who else will be there In the office ?"},
+        {"speaker": "B", "roman": "namma meeneejar irtaare, taipist raani irtaale, obba javaana irtaane.", "english": "Tne manager will be there. Typist Rani will be there. One peon will be there."}
+      ]
+    },
+    {
+      "type": "conversation",
+      "number": "4",
+      "rows": [
+        {"speaker": "A", "roman": "nimma aafisalli taipraitaru elli rutte ?", "english": "Where will the typewriter be in your office ?"},
+        {"speaker": "B", "roman": "kannada taipraitar aa ruumalli irutte,", "english": "Kannada typewriter will be in that room."},
+        {"speaker": "A", "roman": "inglis taipraitar ellirutte ?", "english": "Where will the English Typewriter be?"},
+        {"speaker": "B", "roman": "eraduu allee irutve.", "english": "Both will be there only."},
+        {"speaker": "A", "roman": "alli haalegalu irutvaa ?", "english": "Will there be some sheets ?"},
+        {"speaker": "B", "roman": "istu hottinalli iralla.", "english": "They won't be there at this time."},
+        {"speaker": "", "roman": "avu taipist drayaar olagade irutve.", "english": "They will be in typist's desk."},
+        {"speaker": "A", "roman": "istu hottinalli taipist iralva ?", "english": "Won't there be the typist at this time?"},
+        {"speaker": "B", "roman": "iralla.", "english": "No,"},
+        {"speaker": "", "roman": "hattuuvareege irtaare.", "english": "He'll be there at 10-30."}
+      ]
+    },
+    {
+      "type": "vocab",
+      "rows": [
+        {"speaker": "", "roman": "olagade", "english": "inside"},
+        {"speaker": "", "roman": "horagade", "english": "outside"},
+        {"speaker": "", "roman": "javaana", "english": "peon"},
+        {"speaker": "", "roman": "cilre", "english": "change (of money)"},
+        {"speaker": "", "roman": "sumaaru", "english": "approximately"},
+        {"speaker": "", "roman": "beligge", "english": "morning"},
+        {"speaker": "", "roman": "taayi", "english": "mother"},
+        {"speaker": "", "roman": "tamma", "english": "younger brother"},
+        {"speaker": "", "roman": "haale", "english": "sheet of paper"},
+        {"speaker": "", "roman": "astu hottu", "english": "at/over/during that time"},
+        {"speaker": "", "roman": "istn hottu", "english": "at/over/during this time"}
+      ]
+    }
+  ]
+}

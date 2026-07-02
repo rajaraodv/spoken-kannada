@@ -1,0 +1,32 @@
+{
+  "page": 69, "lesson": 20,
+  "blocks": [
+    {"type":"conversation","number":"1","rows":[
+      {"speaker":"A","roman":"niinu dehalige hoogtiiraa ?","english":"Are you going to Delhi ?"},
+      {"speaker":"B","roman":"niivuu bandre hoogtiini.","english":"If you accompany, I will go."},
+      {"speaker":"A","roman":"dehaliyinda kaagda bandre naanuu bartiini, bardiddre baralla ; hortre yaava gaadiili hoogoona ?","english":"If I hear from Delhi, I will join you, otherwise, I am sorry. If at all we leave which train shall we take ?"},
+      {"speaker":"B","roman":"tiket sikkidre Jiitiiyalli hordoona ; sigdidre keekee ekspressalli hoogoona.","english":"If we get tickets let's leave by G.T., otherwise we will go by K.K. Express."},
+      {"speaker":"A","roman":"Jiitii madraasge estu gantege seerutte ?","english":"When does G.T. reach Madras ?"},
+      {"speaker":"B","roman":"samyakke sariyaagi hortre erdu gantege seerutte.","english":"If it leaves on time, it will reach at two o' clock."},
+      {"speaker":"A","roman":"naanu tilsidre sundaram steesange bartaare.","english":"If intimated Sundram, will come to the station."},
+      {"speaker":"B","roman":"niivu dudd kottre tiket tagootiini. daridra, tiket sigoode kasta.","english":"If you pay me, I will buy the tickets. It is a nuisance buying tickets."}
+    ]},
+    {"type":"conversation","number":"2","rows":[
+      {"speaker":"A","roman":"amma, caakleetu.","english":"Mummy, chacolate, please."},
+      {"speaker":"B","roman":"niinu skuulig hoodre kodtiini.","english":"If you go to school, I will give you one."},
+      {"speaker":"A","roman":"raajuu bandre naanu hoogtiini.","english":"If Raju comes. I will go."},
+      {"speaker":"B","roman":"avange jvara ildidre bartidda.","english":"If he had no fever, he would have come."},
+      {"speaker":"A","roman":"daridra, avnige sadaa kaayle.","english":"Heavens, he is always sick."}
+    ]},
+    {"type":"vocab","rows":[
+      {"speaker":"","roman":"gaadi","english":"train"},
+      {"speaker":"","roman":"sariyaagi","english":"exactly"},
+      {"speaker":"","roman":"tilisu","english":"to inform"},
+      {"speaker":"","roman":"duddu","english":"money"},
+      {"speaker":"","roman":"sadaa","english":"always"},
+      {"speaker":"","roman":"kaayle","english":"indisposition"},
+      {"speaker":"","roman":"saala","english":"loan"},
+      {"speaker":"","roman":"nalli","english":"tap"}
+    ]}
+  ]
+}

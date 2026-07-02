@@ -1,0 +1,54 @@
+{
+  "page": 40,
+  "lesson": 10,
+  "blocks": [
+    {
+      "type": "conversation",
+      "number": "1",
+      "rows": [
+        {"speaker": "A", "roman": "idu kaafiyaa tiiyaa ?", "english": "Is this coffee or tea ?"},
+        {"speaker": "B", "roman": "idu kaafi", "english": "This is coffee."},
+        {"speaker": "A", "roman": "kaafi bisiyaagideyaa ?", "english": "Is coffee hot ?"},
+        {"speaker": "B", "roman": "haudu, tumba bisiyaagide.", "english": "Yes, it is very hot."},
+        {"speaker": "A", "roman": "tindi eenide ?", "english": "What snackes do you have ?"},
+        {"speaker": "B", "roman": "tindi doose ide.", "english": "There are pancakes."},
+        {"speaker": "A", "roman": "doose bisiyaagideyaa ?", "english": "Is pancake hot ?"},
+        {"speaker": "B", "roman": "illa sumaaraagide.", "english": "Not quite hot."}
+      ]
+    },
+    {
+      "type": "conversation",
+      "number": "2",
+      "rows": [
+        {"speaker": "A", "roman": "benglore havaa iiga heegide ?", "english": "How is the Bangalore weather now ?"},
+        {"speaker": "B", "roman": "iiga cali tumba jaasti.", "english": "It is very cold now."},
+        {"speaker": "A", "roman": "male ilvaa ?", "english": "Is there no rain ?"},
+        {"speaker": "B", "roman": "hood tinglu tumba male ittu.", "english": "There was too much rain last month."},
+        {"speaker": "A", "roman": "ii tinglu puurti hiigee iratta ?", "english": "Will it be like this throughout this month ?"},
+        {"speaker": "B", "roman": "haudu, ii tinglu heccu-kammie caliinee", "english": "Yes, it is mostly cold this month."},
+        {"speaker": "A", "roman": "beesgeyalli sekhe jaasti iratta ?", "english": "Will it be very hot during summer ?"},
+        {"speaker": "B", "roman": "illa, bengluuralli jaasti sekhe iralla.", "english": "No, Bangalore will not be too hot during summer."}
+      ]
+    },
+    {
+      "type": "conversation",
+      "number": "3",
+      "rows": [
+        {"speaker": "A", "roman": "idu nim hosa kaara ?", "english": "Is this your new car ?"},
+        {"speaker": "B", "roman": "haudu, heegide ?", "english": "Yes, how is it ?"},
+        {"speaker": "A", "roman": "tumbaa cennaagide.", "english": "It is very fine."},
+        {"speaker": "B", "roman": "idu nim kaarin haagide alvaa ?", "english": "It is just like your car, isn't it ?"},
+        {"speaker": "A", "roman": "haudu, haagee ide.", "english": "Yes, it is exactly so."}
+      ]
+    },
+    {
+      "type": "vocab",
+      "rows": [
+        {"speaker": "", "roman": "cali", "english": "cold"},
+        {"speaker": "", "roman": "beesge", "english": "summer"},
+        {"speaker": "", "roman": "heccu-kammi", "english": "more or less"},
+        {"speaker": "", "roman": "jaasti", "english": "more"}
+      ]
+    }
+  ]
+}

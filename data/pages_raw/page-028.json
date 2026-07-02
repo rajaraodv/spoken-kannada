@@ -1,0 +1,48 @@
+{
+  "page": 28,
+  "lesson": 6,
+  "blocks": [
+    {
+      "type": "conversation",
+      "number": "1",
+      "rows": [
+        {"speaker": "A", "roman": "namaskaara, saar.", "english": "Good morning, sir."},
+        {"speaker": "", "roman": "cennagiddiiraa ?", "english": "How are you ?"},
+        {"speaker": "B", "roman": "yaaru ?", "english": "Who is it ?"},
+        {"speaker": "", "roman": "panditara makkalalvaa ?", "english": "Are you not Pandit's children ?"},
+        {"speaker": "A", "roman": "haudu, saar.", "english": "Yes sir."},
+        {"speaker": "B", "roman": "niinu gopi alveeno ?", "english": "Aren't yon Gopi ?"},
+        {"speaker": "A", "roman": "alla saar. naanu veenu.", "english": "No sir, I am Venu."},
+        {"speaker": "", "roman": "goopi nanaginta doddavanu.", "english": "Gopi is elder to me."},
+        {"speaker": "", "roman": "avaniginta doddavanu ravi.", "english": "Ravi is elder to him."},
+        {"speaker": "", "roman": "ivanu nanaginta cikkavanu.", "english": "He is younger to me."},
+        {"speaker": "B", "roman": "ramaa ninna tangi alvaa ?", "english": "Isn't Rama your younger sister ?"},
+        {"speaker": "A", "roman": "ayyoo, alla saar.", "english": "Oh ! No sir."},
+        {"speaker": "", "roman": "ramaa nam taayi hesaru.", "english": "Rama is my mother's name."},
+        {"speaker": "", "roman": "rameesanginta cikkavalu uma.", "english": "Uma is younger to Ramesha."},
+        {"speaker": "", "roman": "avalee ellariginta cikkavalu.", "english": "She is the youngest of all."},
+        {"speaker": "B", "roman": "haudu, haudu.", "english": "Yes, yes."},
+        {"speaker": "", "roman": "ramaa alla uma", "english": "It's not Rama, it's Uma."},
+        {"speaker": "", "roman": "avalu tumba jaane alvaa ?", "english": "Is she not very smart ?"},
+        {"speaker": "A", "roman": "haudu saar,", "english": "Yes, sis."},
+        {"speaker": "", "roman": "klaasalli avalu ellariginta jaane.", "english": "She is the smartest in the class."}
+      ]
+    },
+    {
+      "type": "conversation",
+      "number": "2",
+      "rows": [
+        {"speaker": "A", "roman": "nimma mane yaavdu ?", "english": "Which is your house ?"},
+        {"speaker": "B", "roman": "poost aafis pakkadde nammane.", "english": "The very next to post office is our house"},
+        {"speaker": "A", "roman": "tumba doddaa ?", "english": "Is it very big ?"},
+        {"speaker": "B", "roman": "nimma maneyastu doddalla.", "english": "It is not as big as your house."},
+        {"speaker": "", "roman": "aadre baadge matra nimma", "english": "But the rent is more than that of your"},
+        {"speaker": "", "roman": "maneginta heccu.", "english": "house."},
+        {"speaker": "A", "roman": "nimma gadiyaara tumba", "english": "Your watch is very fine."},
+        {"speaker": "", "roman": "cennaagide.", "english": ""},
+        {"speaker": "", "roman": "adu hosdaa ?", "english": "Is it a new one ?"},
+        {"speaker": "B", "roman": "astu hosdalla.", "english": "Not so new."}
+      ]
+    }
+  ]
+}

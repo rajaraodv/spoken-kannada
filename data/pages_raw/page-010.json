@@ -1,0 +1,39 @@
+{
+  "page": 10,
+  "lesson": null,
+  "blocks": [
+    {"type":"conversation","number":"","rows":[
+      {"speaker":"A","roman":"avala hesaru soroojaanaa ?","english":"Is her name Saroja ?"},
+      {"speaker":"B","roman":"alla,","english":"No,"},
+      {"speaker":"","roman":"avaa hesaru sarooja alla","english":"her name is not Saroja."},
+      {"speaker":"A","roman":"avalu yaaru ?","english":"Who is she ?"},
+      {"speaker":"B","roman":"avalu nanna tangi","english":"She is my younger sister."},
+      {"speaker":"A","roman":"avala hesaru eenu ?","english":"What is her name ?"},
+      {"speaker":"B","roman":"avala hesaru manju","english":"Her name is Manju."}
+    ]},
+    {"type":"vocab","rows":[
+      {"speaker":"","roman":"naanu","english":"I"},
+      {"speaker":"","roman":"naavu","english":"we"},
+      {"speaker":"","roman":"ninu","english":"you (sg)"},
+      {"speaker":"","roman":"niivu","english":"you"},
+      {"speaker":"","roman":"i/avanu","english":"he"},
+      {"speaker":"","roman":"i/avalu","english":"she"},
+      {"speaker":"","roman":"i/avaru","english":"they, he, she"},
+      {"speaker":"","roman":"hesaru","english":"name"},
+      {"speaker":"","roman":"magu","english":"child"},
+      {"speaker":"","roman":"yaaru","english":"who"},
+      {"speaker":"","roman":"maga","english":"son"},
+      {"speaker":"","roman":"nanna","english":"my"},
+      {"speaker":"","roman":"namma","english":"our"},
+      {"speaker":"","roman":"ninna","english":"your (Sg)"},
+      {"speaker":"","roman":"nimma","english":"your"},
+      {"speaker":"","roman":"avana","english":"his"},
+      {"speaker":"","roman":"avala","english":"her"},
+      {"speaker":"","roman":"avara","english":"their, his, her"},
+      {"speaker":"","roman":"tangi","english":"sister (younger)"},
+      {"speaker":"","roman":"tande","english":"father"},
+      {"speaker":"","roman":"eenu","english":"what"},
+      {"speaker":"","roman":"sneehitru","english":"friends"}
+    ]}
+  ]
+}

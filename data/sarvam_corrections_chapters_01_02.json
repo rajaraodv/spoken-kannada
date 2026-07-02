@@ -1,0 +1,602 @@
+{
+  "chapter-01:conversation-1:row-01": {
+    "chapter": 1,
+    "conversation": "1",
+    "row": 1,
+    "english": "Good Morning",
+    "original_roman": "namaskaara",
+    "sarvam_kannada": "ಗುಡ್ ಮಾರ್ನಿಂಗ್",
+    "sarvam_roman": "Good Morning",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-01:conversation-1:row-02": {
+    "chapter": 1,
+    "conversation": "1",
+    "row": 2,
+    "english": "Good Morning",
+    "original_roman": "namaskaara",
+    "sarvam_kannada": "ಗುಡ್ ಮಾರ್ನಿಂಗ್",
+    "sarvam_roman": "Good Morning",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-01:conversation-1:row-03": {
+    "chapter": 1,
+    "conversation": "1",
+    "row": 3,
+    "english": "I am Raju.",
+    "original_roman": "naanu raju",
+    "sarvam_kannada": "ನಾನು ರಾಜು.",
+    "sarvam_roman": "Naanu Raju.",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-01:conversation-1:row-04": {
+    "chapter": 1,
+    "conversation": "1",
+    "row": 4,
+    "english": "He is Mohan.",
+    "original_roman": "ivaru moohan",
+    "sarvam_kannada": "ಅವರು ಮೋಹನ್.",
+    "sarvam_roman": "Avaru Mohan.",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-01:conversation-1:row-05": {
+    "chapter": 1,
+    "conversation": "1",
+    "row": 5,
+    "english": "Who are you ?",
+    "original_roman": "niivu yaaru ?",
+    "sarvam_kannada": "ನೀವು ಯಾರು?",
+    "sarvam_roman": "Neevu yaaru?",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-01:conversation-1:row-06": {
+    "chapter": 1,
+    "conversation": "1",
+    "row": 6,
+    "english": "I am Shekhar,",
+    "original_roman": "naanu seekhar",
+    "sarvam_kannada": "ನಾನು ಶೇಖರ್,",
+    "sarvam_roman": "Naanu Shekhar,",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-01:conversation-1:row-07": {
+    "chapter": 1,
+    "conversation": "1",
+    "row": 7,
+    "english": "Who is she ?",
+    "original_roman": "avaru yaaru 7",
+    "sarvam_kannada": "ಅವರು ಯಾರು?",
+    "sarvam_roman": "Avaru yaaru?",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-01:conversation-1:row-08": {
+    "chapter": 1,
+    "conversation": "1",
+    "row": 8,
+    "english": "She is Sheela.",
+    "original_roman": "avaru $iila",
+    "sarvam_kannada": "ಅವರು ಶೀಲಾ.",
+    "sarvam_roman": "Avaru Sheela.",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-01:conversation-1:row-09": {
+    "chapter": 1,
+    "conversation": "1",
+    "row": 9,
+    "english": "He is Shankar.",
+    "original_roman": "ivaru sankar",
+    "sarvam_kannada": "ಅವರು ಶಂಕರ್.",
+    "sarvam_roman": "Avaru Shankar.",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-01:conversation-2:row-01": {
+    "chapter": 1,
+    "conversation": "2",
+    "row": 1,
+    "english": "My name is Raju.",
+    "original_roman": "nanna hesaru raaju",
+    "sarvam_kannada": "ನನ್ನ ಹೆಸರು ರಾಜು.",
+    "sarvam_roman": "Nanna hesaru Raju.",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-01:conversation-2:row-02": {
+    "chapter": 1,
+    "conversation": "2",
+    "row": 2,
+    "english": "I am a Kannada teacher.",
+    "original_roman": "naanu kannada mee§tru",
+    "sarvam_kannada": "ನಾನು ಒಬ್ಬ ಕನ್ನಡ ಟೀಚರ್.",
+    "sarvam_roman": "Naanu obba Kannada teacher.",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-01:conversation-2:row-03": {
+    "chapter": 1,
+    "conversation": "2",
+    "row": 3,
+    "english": "He is my friend.",
+    "original_roman": "ivaru nanna sneehitru",
+    "sarvam_kannada": "ಅವರು ನನ್ನ ಫ್ರೆಂಡ್.",
+    "sarvam_roman": "Avaru nanna friend.",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-01:conversation-2:row-04": {
+    "chapter": 1,
+    "conversation": "2",
+    "row": 4,
+    "english": "His name is Mohan.",
+    "original_roman": "ivara hesaru moohan",
+    "sarvam_kannada": "ಅವರ ಹೆಸರು ಮೋಹನ್.",
+    "sarvam_roman": "Avara hesaru Mohan.",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-01:conversation-2:row-05": {
+    "chapter": 1,
+    "conversation": "2",
+    "row": 5,
+    "english": "Who are you ?",
+    "original_roman": "nivu yaaru ?",
+    "sarvam_kannada": "ನೀವು ಯಾರು?",
+    "sarvam_roman": "Neevu yaaru?",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-01:conversation-2:row-06": {
+    "chapter": 1,
+    "conversation": "2",
+    "row": 6,
+    "english": "I am a doctor.",
+    "original_roman": "naanu daaktar",
+    "sarvam_kannada": "ನಾನು ಡಾಕ್ಟರ್.",
+    "sarvam_roman": "Naanu doctor.",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-01:conversation-2:row-07": {
+    "chapter": 1,
+    "conversation": "2",
+    "row": 7,
+    "english": "What is your name ?",
+    "original_roman": "nimma hesaru eenu ?",
+    "sarvam_kannada": "ನಿಮ್ಮ ಹೆಸರೇನು?",
+    "sarvam_roman": "Nimma hesarenu?",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-01:conversation-2:row-08": {
+    "chapter": 1,
+    "conversation": "2",
+    "row": 8,
+    "english": "My name is Shekhar.",
+    "original_roman": "nanna hesaru $eekhar",
+    "sarvam_kannada": "ನನ್ನ ಹೆಸರು ಶೇಖರ್.",
+    "sarvam_roman": "Nanna hesaru Shekhar.",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-01:conversation-2:row-09": {
+    "chapter": 1,
+    "conversation": "2",
+    "row": 9,
+    "english": "Is her name Lalitha?",
+    "original_roman": "avara hesaru lalitaanaa ?",
+    "sarvam_kannada": "ಅವರ ಹೆಸರು ಲಲಿತಾ ಅಲ್ವಾ?",
+    "sarvam_roman": "Avara hesaru Lalitha alva?",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-01:conversation-2:row-10": {
+    "chapter": 1,
+    "conversation": "2",
+    "row": 10,
+    "english": "Yes,",
+    "original_roman": "haudu,",
+    "sarvam_kannada": "ಹೌದು,",
+    "sarvam_roman": "Howdu,",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-01:conversation-2:row-11": {
+    "chapter": 1,
+    "conversation": "2",
+    "row": 11,
+    "english": "Her name is Lalita.",
+    "original_roman": "avara hesaru ialita",
+    "sarvam_kannada": "ಅವರ ಹೆಸರು ಲಲಿತಾ.",
+    "sarvam_roman": "Avara hesaru Lalita.",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-01:conversation-2:row-12": {
+    "chapter": 1,
+    "conversation": "2",
+    "row": 12,
+    "english": "Is she a doctor ?",
+    "original_roman": "avaru ^aaktraa ?",
+    "sarvam_kannada": "ಅವರು ಡಾಕ್ಟರ್-ಆ?",
+    "sarvam_roman": "Avaru doctor-aa?",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-01:conversation-2:row-13": {
+    "chapter": 1,
+    "conversation": "2",
+    "row": 13,
+    "english": "No, she is not a doctor,",
+    "original_roman": "alia, avaru daaktralla",
+    "sarvam_kannada": "ಇಲ್ಲ, ಅವರು ಡಾಕ್ಟರ್ ಅಲ್ಲ,",
+    "sarvam_roman": "Illa, avaru doctor alla,",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-01:conversation-2:row-14": {
+    "chapter": 1,
+    "conversation": "2",
+    "row": 14,
+    "english": "she is a nurse.",
+    "original_roman": "avaru na^su",
+    "sarvam_kannada": "ಅವರು ನರ್ಸ್.",
+    "sarvam_roman": "Avaru nurse.",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-01:conversation-3:row-01": {
+    "chapter": 1,
+    "conversation": "3",
+    "row": 1,
+    "english": "What’s you name, child ?",
+    "original_roman": "ninna hesru eenu, magu ?",
+    "sarvam_kannada": "ನಿಮ್ಮ ಹೆಸರೇನು ಮಗು?",
+    "sarvam_roman": "Nimma hesarenu magu?",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-01:conversation-3:row-02": {
+    "chapter": 1,
+    "conversation": "3",
+    "row": 2,
+    "english": "My name is Kiran.",
+    "original_roman": "nanna hesaru kiraj?",
+    "sarvam_kannada": "ನನ್ನ ಹೆಸರು ಕಿರಣ್.",
+    "sarvam_roman": "Nanna hesaru Kiran.",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-01:conversation-3:row-03": {
+    "chapter": 1,
+    "conversation": "3",
+    "row": 3,
+    "english": "Is he your father ?",
+    "original_roman": "avaru nimma tandenaa?",
+    "sarvam_kannada": "ಅವರು ನಿಮ್ಮ ಫಾದರ್-ಆ?",
+    "sarvam_roman": "Avaru nimma father-aa?",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-01:conversation-3:row-04": {
+    "chapter": 1,
+    "conversation": "3",
+    "row": 4,
+    "english": "Yes, he is my father.",
+    "original_roman": "haudu, avaru namma tande",
+    "sarvam_kannada": "ಹೌದು, ಅವರು ನನ್ನ ಫಾದರ್.",
+    "sarvam_roman": "Howdu, avaru nanna father.",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-01:conversation-Continuation:row-01": {
+    "chapter": 1,
+    "conversation": "Continuation",
+    "row": 1,
+    "english": "Is her name Saroja ?",
+    "original_roman": "ava|a hesaru soroojaanaa ?",
+    "sarvam_kannada": "ಅವರ ಹೆಸರು ಸರೋಜಾ ಅಲ್ವಾ?",
+    "sarvam_roman": "Avara hesaru Saroja alva?",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-01:conversation-Continuation:row-02": {
+    "chapter": 1,
+    "conversation": "Continuation",
+    "row": 2,
+    "english": "No,",
+    "original_roman": "alia,",
+    "sarvam_kannada": "ಇಲ್ಲ,",
+    "sarvam_roman": "Illa,",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-01:conversation-Continuation:row-03": {
+    "chapter": 1,
+    "conversation": "Continuation",
+    "row": 3,
+    "english": "her name is not Saroja.",
+    "original_roman": "avaa hesaru sarooja alia",
+    "sarvam_kannada": "ಅವರ ಹೆಸರು ಸರೋಜಾ ಅಲ್ಲ.",
+    "sarvam_roman": "Avara hesaru Saroja alla.",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-01:conversation-Continuation:row-04": {
+    "chapter": 1,
+    "conversation": "Continuation",
+    "row": 4,
+    "english": "Who is she ?",
+    "original_roman": "avaju yaaru ?",
+    "sarvam_kannada": "ಅವರು ಯಾರು?",
+    "sarvam_roman": "Avaru yaaru?",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-01:conversation-Continuation:row-05": {
+    "chapter": 1,
+    "conversation": "Continuation",
+    "row": 5,
+    "english": "She is my younger sister.",
+    "original_roman": "ava|u nanna tangi",
+    "sarvam_kannada": "ಅವರು ನನ್ನ ಯಂಗರ್ ಸಿಸ್ಟರ್.",
+    "sarvam_roman": "Avaru nanna younger sister.",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-01:conversation-Continuation:row-06": {
+    "chapter": 1,
+    "conversation": "Continuation",
+    "row": 6,
+    "english": "What is her name ?",
+    "original_roman": "avaja hesaru eenu ?",
+    "sarvam_kannada": "ಅವರ ನೇಮ್ ಏನು?",
+    "sarvam_roman": "Avara name enu?",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-01:conversation-Continuation:row-07": {
+    "chapter": 1,
+    "conversation": "Continuation",
+    "row": 7,
+    "english": "Her name is Manju.",
+    "original_roman": "avaja hesaru manju",
+    "sarvam_kannada": "ಅವರ ಹೆಸರು ಮಂಜು.",
+    "sarvam_roman": "Avara hesaru Manju.",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-02:conversation-1:row-01": {
+    "chapter": 2,
+    "conversation": "1",
+    "row": 1,
+    "english": "Good morning Mr. Naidu",
+    "original_roman": "namaskaara, Mr. Naidu.",
+    "sarvam_kannada": "ಗುಡ್ ಮಾರ್ನಿಂಗ್ ಮಿಸ್ಟರ್. ನಾಯ್ಡು",
+    "sarvam_roman": "Good morning Mr. Naidu",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-02:conversation-1:row-02": {
+    "chapter": 2,
+    "conversation": "1",
+    "row": 2,
+    "english": "Hello ! good morning",
+    "original_roman": "oohoo, namaskaara",
+    "sarvam_kannada": "ಹೆಲೋ! ಗುಡ್ ಮಾರ್ನಿಂಗ್",
+    "sarvam_roman": "Hello! Good Morning",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-02:conversation-1:row-03": {
+    "chapter": 2,
+    "conversation": "1",
+    "row": 3,
+    "english": "Please come, be seated.",
+    "original_roman": "banni kuutkoli",
+    "sarvam_kannada": "ದಯವಿಟ್ಟು ಬನ್ನಿ, ಕೂತ್ಕೊಳ್ಳಿ.",
+    "sarvam_roman": "Dayavittu banni, kutkolla.",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-02:conversation-1:row-04": {
+    "chapter": 2,
+    "conversation": "1",
+    "row": 4,
+    "english": "He is Mr. Prakash.",
+    "original_roman": "*A : ivaru Mr. Prakaas.",
+    "sarvam_kannada": "ಅವರು ಮಿಸ್ಟರ್ ಪ್ರಕಾಶ್.",
+    "sarvam_roman": "Avaru Mr. Prakash.",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-02:conversation-1:row-05": {
+    "chapter": 2,
+    "conversation": "1",
+    "row": 5,
+    "english": "Hello, please sit down.",
+    "original_roman": "namaskaara kuulkoji",
+    "sarvam_kannada": "ಹೆಲೋ, ಪ್ಲೀಸ್ ಕೂತ್ಕೊಳ್ಳಿ.",
+    "sarvam_roman": "Hello, please kutkolli.",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-02:conversation-1:row-06": {
+    "chapter": 2,
+    "conversation": "1",
+    "row": 6,
+    "english": "Is he your friend ?",
+    "original_roman": "ivaru nimma sneehitraa?",
+    "sarvam_kannada": "ಅವರು ನಿಮ್ಮ ಫ್ರೆಂಡ್-ಆ?",
+    "sarvam_roman": "Avaru nimma friend-aa?",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-02:conversation-1:row-07": {
+    "chapter": 2,
+    "conversation": "1",
+    "row": 7,
+    "english": "No, he is my elder brother.",
+    "original_roman": "alia, ivaru narama anna.",
+    "sarvam_kannada": "ಇಲ್ಲ, ಅವರು ನನ್ನ ಎಲ್ಡರ್ ಬ್ರದರ್.",
+    "sarvam_roman": "Illa, avaru nanna elder brother.",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-02:conversation-1:row-08": {
+    "chapter": 2,
+    "conversation": "1",
+    "row": 8,
+    "english": "Is he a lawyer ?",
+    "original_roman": "ivaru laayaraa ?",
+    "sarvam_kannada": "ಅವರು ಲಾಯರ್-ಆ?",
+    "sarvam_roman": "Avaru lawyer-aa?",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-02:conversation-1:row-09": {
+    "chapter": 2,
+    "conversation": "1",
+    "row": 9,
+    "english": "No, he is a poet.",
+    "original_roman": "alia, ivaru kavi",
+    "sarvam_kannada": "ಇಲ್ಲ, ಅವರು ಪೊಯೆಟ್.",
+    "sarvam_roman": "Illa, avaru poet.",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-02:conversation-2:row-01": {
+    "chapter": 2,
+    "conversation": "2",
+    "row": 1,
+    "english": "Mr. Shekhar, which is your house ?",
+    "original_roman": "Mr. Naaigu, adu eenu ? Mr. Naidu, what is that ?",
+    "sarvam_kannada": "ಮಿಸ್ಟರ್ ಶೇಖರ್, ನಿಮ್ಮ ಹೌಸ್ ಯಾವುದು?",
+    "sarvam_roman": "Mr. Shekhar, nimma house yaavudu?",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-02:conversation-2:row-02": {
+    "chapter": 2,
+    "conversation": "2",
+    "row": 2,
+    "english": "This is a story book.",
+    "original_roman": "idu kate pustaka.",
+    "sarvam_kannada": "ಇದು ಒಂದು ಸ್ಟೋರಿ ಬುಕ್.",
+    "sarvam_roman": "Idu ondu story book.",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-02:conversation-2:row-03": {
+    "chapter": 2,
+    "conversation": "2",
+    "row": 3,
+    "english": "Is this your book ?",
+    "original_roman": "idu nimma pustakanaa ?",
+    "sarvam_kannada": "ಇದು ನಿಮ್ಮ ಬುಕ್-ಆ?",
+    "sarvam_roman": "Idu nimma book-aa?",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-02:conversation-2:row-04": {
+    "chapter": 2,
+    "conversation": "2",
+    "row": 4,
+    "english": "No this is not my book.",
+    "original_roman": "alia, idu nanna pustaka alia",
+    "sarvam_kannada": "ಇಲ್ಲ, ಇದು ನನ್ನ ಬುಕ್ ಅಲ್ಲ.",
+    "sarvam_roman": "Illa, idu nanna book alla.",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-02:conversation-2:row-05": {
+    "chapter": 2,
+    "conversation": "2",
+    "row": 5,
+    "english": "What is its name ?",
+    "original_roman": "adara hesaru eenu ?",
+    "sarvam_kannada": "ಅದರ ನೇಮ್ ಏನು?",
+    "sarvam_roman": "Adara name enu?",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-02:conversation-2:row-06": {
+    "chapter": 2,
+    "conversation": "2",
+    "row": 6,
+    "english": "That is my house.",
+    "original_roman": "idara hesaru ‘Milana* Its name is ‘Milana*.",
+    "sarvam_kannada": "ಅದು ನನ್ನ ಮನೆ.",
+    "sarvam_roman": "Adu nanna mane.",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-02:conversation-2:row-07": {
+    "chapter": 2,
+    "conversation": "2",
+    "row": 7,
+    "english": "It’s a bad book.",
+    "original_roman": "idu ketta pustaka",
+    "sarvam_kannada": "ಅದು ಒಂದು ಬ್ಯಾಡ್ ಬುಕ್.",
+    "sarvam_roman": "Adu ondu bad book.",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-02:conversation-2:row-08": {
+    "chapter": 2,
+    "conversation": "2",
+    "row": 8,
+    "english": "Which is your book ?",
+    "original_roman": "nimma pustaka yaavdu ?",
+    "sarvam_kannada": "ನಿಮ್ಮ ಬುಕ್ ಯಾವುದು?",
+    "sarvam_roman": "Nimma book yaavudu?",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-02:conversation-2:row-09": {
+    "chapter": 2,
+    "conversation": "2",
+    "row": 9,
+    "english": "This is my new book.",
+    "original_roman": "idu nanna hosa pustaka ?",
+    "sarvam_kannada": "ಇದು ನನ್ನ ನ್ಯೂ ಬುಕ್.",
+    "sarvam_roman": "Idu nanna new book.",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-02:conversation-2:row-10": {
+    "chapter": 2,
+    "conversation": "2",
+    "row": 10,
+    "english": "This is a very good book.",
+    "original_roman": "idu oUee pustaka",
+    "sarvam_kannada": "ಇದು ತುಂಬಾ ಒಳ್ಳೆಯ ಬುಕ್.",
+    "sarvam_roman": "Idu tumba olleya book.",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-02:conversation-2:row-11": {
+    "chapter": 2,
+    "conversation": "2",
+    "row": 11,
+    "english": "Which is your new book ?",
+    "original_roman": "nimma hosa pustaka yaavdu",
+    "sarvam_kannada": "ನಿಮ್ಮ ನ್ಯೂ ಬುಕ್ ಯಾವುದು?",
+    "sarvam_roman": "Nimma new book yaavudu?",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-02:conversation-2:row-12": {
+    "chapter": 2,
+    "conversation": "2",
+    "row": 12,
+    "english": "Which one ? That big house ?",
+    "original_roman": "‘preema’ nanna hosa pustaka »Prema* is my new book.",
+    "sarvam_kannada": "ಯಾವುದು? ಆ ಬಿಗ್ ಹೌಸ್-ಆ?",
+    "sarvam_roman": "Yaavudu? Aa big house-aa?",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-02:conversation-2:row-13": {
+    "chapter": 2,
+    "conversation": "2",
+    "row": 13,
+    "english": "That is a very big book.",
+    "original_roman": "adu tumba do<J<Ja pustaka",
+    "sarvam_kannada": "ಅದೊಂದು ತುಂಬಾ ಬಿಗ್ ಬುಕ್.",
+    "sarvam_roman": "Adondu tumba big book.",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-02:conversation-3:row-01": {
+    "chapter": 2,
+    "conversation": "3",
+    "row": 1,
+    "english": "No, the small house.",
+    "original_roman": "Mr. seekhar, nimma mane yaavadu?",
+    "sarvam_kannada": "ಇಲ್ಲ, ಸ್ಮಾಲ್ ಹೌಸ್.",
+    "sarvam_roman": "Illa, small house.",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-02:conversation-3:row-02": {
+    "chapter": 2,
+    "conversation": "3",
+    "row": 2,
+    "english": "Which is his house ?",
+    "original_roman": "adu namma mane",
+    "sarvam_kannada": "ಅವರ ಯಾವ ಹೌಸ್ ಅದು?",
+    "sarvam_roman": "Avara yaava house adu?",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-02:conversation-3:row-03": {
+    "chapter": 2,
+    "conversation": "3",
+    "row": 3,
+    "english": "That is his house",
+    "original_roman": "yaavdu ? dodda maneenaa ?",
+    "sarvam_kannada": "ಅದು ಅವರ ಮನೆ",
+    "sarvam_roman": "Adu avara mane",
+    "source": "sarvam_translate_mayura_v1"
+  },
+  "chapter-02:conversation-3:row-04": {
+    "chapter": 2,
+    "conversation": "3",
+    "row": 4,
+    "english": "That is a very big house.",
+    "original_roman": "alia, cikka mane",
+    "sarvam_kannada": "ಅದಂತೂ ತುಂಬಾ ದೊಡ್ಡ ಹೌಸ್.",
+    "sarvam_roman": "Adantu tumba dodda house.",
+    "source": "sarvam_translate_mayura_v1"
+  }
+}

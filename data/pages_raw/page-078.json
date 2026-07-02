@@ -1,0 +1,24 @@
+{
+  "page": 78, "lesson": null,
+  "blocks": [
+    {"type":"conversation","number":"4","rows":[
+      {"speaker":"B","roman":"elliguu hoogalla ; reedio keeltaa","english":"I am not going anywhere ;  I will be"},
+      {"speaker":"","roman":"maneyallirtiini.","english":"at home listening to the radio."},
+      {"speaker":"A","roman":"nan jote sinemaage barrtliraa ?","english":"Will you be coming to a movie with me?"},
+      {"speaker":"B","roman":"oohoo; adakkeenante.","english":"By all means."}
+    ]},
+    {"type":"vocab","rows":[
+      {"speaker":"","roman":"darji","english":"tailor"},
+      {"speaker":"","roman":"Vyaapaari","english":"merchant"},
+      {"speaker":"","roman":"raita","english":"farmer"},
+      {"speaker":"","roman":"badagi","english":"carpenter"},
+      {"speaker":"","roman":"kammaara","english":"blacksmith"},
+      {"speaker":"","roman":"cammaara","english":"cobbler"},
+      {"speaker":"","roman":"capli","english":"sandals"},
+      {"speaker":"","roman":"holi","english":"stitch"},
+      {"speaker":"","roman":"maaru","english":"sell"},
+      {"speaker":"","roman":"ulu","english":"plough"},
+      {"speaker":"","roman":"neeyu","english":"weave"}
+    ]}
+  ]
+}

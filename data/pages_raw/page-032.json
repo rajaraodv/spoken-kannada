@@ -1,0 +1,35 @@
+{
+  "page": 32,
+  "lesson": null,
+  "blocks": [
+    {
+      "type": "conversation",
+      "number": "3",
+      "rows": [
+        {"speaker": "A", "roman": "illa, namge eradu hola maatra ide.", "english": "No. We have two fields only."},
+        {"speaker": "", "roman": "nim tootadalli mavin maragalu iveyaa ?", "english": "Are there mango trees in your farm ?"},
+        {"speaker": "B", "roman": "ondee ondu maavin mara ide.", "english": "There is only one mango tree."},
+        {"speaker": "", "roman": "aadree, tengin maragalu beekaa dastive.", "english": "But, there are plenty of coconut trees."},
+        {"speaker": "B", "roman": "tengina kaayi tumba ideyaa ?", "english": "Are there many coconuts ?"},
+        {"speaker": "A", "roman": "iiga tengina kaayi asteenu illa.", "english": "There are n't many coconuts now."},
+        {"speaker": "", "roman": "aadre, elaniiru beekaadastive.", "english": "But there are Plenty of tender coconuts."}
+      ]
+    },
+    {
+      "type": "vocab",
+      "rows": [
+        {"speaker": "", "roman": "ide", "english": "(it) is"},
+        {"speaker": "", "roman": "ive", "english": "(they) are"},
+        {"speaker": "", "roman": "illa", "english": "is/are not"},
+        {"speaker": "", "roman": "hosaba (ru)", "english": "new persons"},
+        {"speaker": "", "roman": "beekaadastu", "english": "plenty"},
+        {"speaker": "", "roman": "toota", "english": "farm/garden"},
+        {"speaker": "", "roman": "hola", "english": "flield"},
+        {"speaker": "", "roman": "naayi", "english": "dog"},
+        {"speaker": "", "roman": "tenginamara", "english": "coconut tree"},
+        {"speaker": "", "roman": "tengina kaayi", "english": "coconut"},
+        {"speaker": "", "roman": "elaniiru", "english": "tender coconut"}
+      ]
+    }
+  ]
+}

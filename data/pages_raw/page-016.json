@@ -1,0 +1,29 @@
+{
+  "page": 16,
+  "lesson": null,
+  "blocks": [
+    {"type":"conversation","number":"4","rows":[
+      {"speaker":"","roman":"aa hale pennu nandu","english":"That old pen is mine."},
+      {"speaker":"","roman":"aa baal pennu nandu","english":"That ballpen is also mine."},
+      {"speaker":"A","roman":"ii hosa pennu nimdalvaa ?","english":"Isn't this new pen yours ?"},
+      {"speaker":"B","roman":"aduu nandu","english":"That is also mine."},
+      {"speaker":"","roman":"aa ellaa pennugalu nandu","english":"All those pens are mine"},
+      {"speaker":"A","roman":"avu avara pustakagalalvaa ?","english":"Aren't those books theirs ?"},
+      {"speaker":"B","roman":"aa eradu pustakagalu avardu","english":"Those two are his books."},
+      {"speaker":"","roman":"ii cikka nootbukku nimdaa ?","english":"Is this small note book yours ?"},
+      {"speaker":"A","roman":"alla, adu nandalla","english":"No, that is not mine."},
+      {"speaker":"","roman":"nanna nootbukku doddu","english":"My note book is big."}
+    ]},
+    {"type":"vocab","rows":[
+      {"speaker":"","roman":"aa","english":"that"},
+      {"speaker":"","roman":"ii","english":"this"},
+      {"speaker":"","roman":"siire","english":"sari"},
+      {"speaker":"","roman":"eradu","english":"two"},
+      {"speaker":"","roman":"nandu","english":"mine"},
+      {"speaker":"","roman":"avaldu","english":"hers"},
+      {"speaker":"","roman":"yaava","english":"which"},
+      {"speaker":"","roman":"yaara","english":"whose"},
+      {"speaker":"","roman":"yaardu","english":"whose one"}
+    ]}
+  ]
+}

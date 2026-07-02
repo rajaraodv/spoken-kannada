@@ -1,0 +1,34 @@
+{
+  "page": 52, "lesson": 14,
+  "blocks": [
+    {"type":"conversation","number":"1","rows":[
+      {"speaker":"A","roman":"surees ivattu beligge niinu snana maadlilvaa ?","english":"Suresh, did you not bathe this morning ?"},
+      {"speaker":"B","roman":"illa, madlilla.","english":"No, I didn't."},
+      {"speaker":"A","roman":"yaake, mey cennaagilvaa ?","english":"Why ? Are you not feeling well ?"},
+      {"speaker":"B","roman":"illa, eenoo tumbaa sustu, adakke madlilla.","english":"No, I am very much exhausted. So I did not bathe."},
+      {"speaker":"A","roman":"uuta, kuuda madlilvaa ?","english":"Did you not take your meal even ?"},
+      {"speaker":"B","roman":"illa. uutaanuu madlilla.","english":"No, I did not take my meal even."},
+      {"speaker":"A","roman":"haagaadre eenuu tinlilvaa ?","english":"If so, did you not eat anything ?"},
+      {"speaker":"B","roman":"illa.","english":"No. (nothing)"},
+      {"speaker":"A","roman":"iiga heegide ?","english":"How do you feel now ?"},
+      {"speaker":"B","roman":"haagee ide. jvaraanuu ide.","english":"It is the same, I have fever too."},
+      {"speaker":"A","roman":"ayyoo paapa, daaktra hattra hooglilva ?","english":"Too bad ! didn't you go to the doctor ?"},
+      {"speaker":"B","roman":"illa, hooglilla, taavu dayavittu daaktrannu karitiiraa ?","english":"No, I didn't go, will you kindly call the doctor ?"},
+      {"speaker":"A","roman":"oo, ilglee karitiini.","english":"Yes, I will call him just now."}
+    ]},
+    {"type":"conversation","number":"2","rows":[
+      {"speaker":"A","roman":"nim naayige eenaaytu ?","english":"What happened to your dog ?"},
+      {"speaker":"B","roman":"adar kaal meele bassu hariitu","english":"The bus ran over its leg."},
+      {"speaker":"A","roman":"elli ?","english":"Where ?"},
+      {"speaker":"B","roman":"illee, nam mane mundin rasteeli.","english":"Here, on the road in front of our house."},
+      {"speaker":"A","roman":"heeg hariitu ?","english":"How did it happen ?"},
+      {"speaker":"B","roman":"naayi madhya rasteeli oodtu, aaga bassu bantu.","english":"The dog ran in the middle of the road and the bus came just then."},
+      {"speaker":"A","roman":"tumba eetu tagaltaa?","english":"Was it hurt much ?"},
+      {"speaker":"B","roman":"haudu, ond kaal muriitu.","english":"Yes, one leg is broken."},
+      {"speaker":"A","roman":"Ayyoo paapa.","english":"Poor thing !"}
+    ]},
+    {"type":"conversation","number":"3","rows":[
+      {"speaker":"A","roman":"ivattu beligge niivu klaasge yaake barlilla ?","english":"Why did you not come to the class this morning ?"}
+    ]}
+  ]
+}

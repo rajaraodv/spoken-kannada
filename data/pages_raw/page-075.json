@@ -1,0 +1,37 @@
+{
+  "page": 75, "lesson": 23,
+  "blocks": [
+    {"type":"conversation","number":"1","rows":[
+      {"speaker":"A","roman":"niivu dehlige hoogiddraa ?","english":"Had you been to Delhi ?"},
+      {"speaker":"B","roman":"ayyoo erdu sala hoogidde.","english":"Sure 1 Twice, once in January"},
+      {"speaker":"","roman":"janavariili, navambaralli.","english":"and then November."},
+      {"speaker":"A","roman":"modalne sala eeneen noodiddri ?","english":"What did you see there the first time ?"},
+      {"speaker":"B","roman":"kempu koote, kutub miinaar","english":"I had been the Red fort and the"},
+      {"speaker":"","roman":"noodidde jantarmantar","english":"Qutub Minar, but hadn't seen"},
+      {"speaker":"","roman":"noodiralilla, ii sala noodde.","english":"Jantar Mantar.  I saw it this time."},
+      {"speaker":"A","roman":"nimmanna yaar karkondhogidru ?","english":"Who had taken you to Delhi ?"},
+      {"speaker":"B","roman":"nammanna karkondoogiddru ?","english":"My elder brother."},
+      {"speaker":"A","roman":"taajmahal noodirlilvaa ?","english":"Had you not seen Taj Mahal ?"},
+      {"speaker":"B","roman":"noodidde.  een cennaagittu antiiri.","english":"I had.  How magnificent !"}
+    ]},
+    {"type":"conversation","number":"2","rows":[
+      {"speaker":"A","roman":"nimma naayi ellige hoogittu ?","english":"Where had your dog gone ?"},
+      {"speaker":"B","roman":"adu oodhoogittu.","english":"It had run away."},
+      {"speaker":"A","roman":"adakke eenaagittu ?","english":"What was the matter?"},
+      {"speaker":"B","roman":"jvara bandittu.","english":"It had fever."},
+      {"speaker":"A","roman":"aaspatrege karkondhoogiddraa ?","english":"Had you taken it to the hospital ?"},
+      {"speaker":"B","roman":"karkond hoogidde.","english":"Yes.  I had."},
+      {"speaker":"A","roman":"daaktru austi kottiddraa ?","english":"Had the doctor treated the dog ?"},
+      {"speaker":"B","roman":"kottiddru.  iig vaasi.","english":"Yes, he had.  It is well now."}
+    ]},
+    {"type":"vocab","rows":[
+      {"speaker":"","roman":"Vaasi aagu","english":"to get cured"},
+      {"speaker":"","roman":"hooda","english":"previous, last"},
+      {"speaker":"","roman":"emme","english":"buffalo"},
+      {"speaker":"","roman":"meeyu","english":"to graze"},
+      {"speaker":"","roman":"bayalu","english":"open field"},
+      {"speaker":"","roman":"kuni","english":"to dance"},
+      {"speaker":"","roman":"meele","english":"above"}
+    ]}
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "page": 63,
+  "lesson": null,
+  "blocks": [
+    {
+      "type": "conversation",
+      "number": "3",
+      "rows": [
+        {"speaker": "B", "roman": "niivu 'pallavi' noodilvaa ?", "english": "Did you not see 'pallavi' ?"},
+        {"speaker": "A", "roman": "illa, noodlilla.", "english": "No, I didn't see."},
+        {"speaker": "B", "roman": "aa sinema niivu noodbeekagittu.", "english": "You ought to have seen that film."},
+        {"speaker": "A", "roman": "aaga naanu maisuurallidde.", "english": "Then I was at Mysore."},
+        {"speaker": "B", "roman": "ond dina barbeekaagittu.", "english": "You ought to have come down for a day."},
+        {"speaker": "", "roman": "kaar tarbeekagittu.", "english": "You ought to have brought your car."}
+      ]
+    },
+    {
+      "type": "vocab",
+      "rows": [
+        {"speaker": "", "roman": "Svaami", "english": "Sir"},
+        {"speaker": "", "roman": "agi", "english": "to dig"},
+        {"speaker": "", "roman": "naayimari", "english": "puppy"},
+        {"speaker": "", "roman": "loota", "english": "glass"},
+        {"speaker": "", "roman": "nidaanvaagi", "english": "slowly"},
+        {"speaker": "", "roman": "gattiyaagi", "english": "loudly"}
+      ]
+    }
+  ]
+}

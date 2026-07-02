@@ -1,0 +1,45 @@
+{
+  "page": 24,
+  "lesson": null,
+  "blocks": [
+    {"type":"conversation","number":"","rows":[
+      {"speaker":"A","roman":"ivanu nimma muurane maga alvaa ?","english":"Is not he your third son ?"},
+      {"speaker":"B","roman":"haudu","english":"Yes."},
+      {"speaker":"A","roman":"eenu magu ?","english":"Well, child ?"},
+      {"speaker":"","roman":"niinu estnee klaasu ?","english":"In what class are you studying ?"},
+      {"speaker":"C","roman":"naanu naakanee klaasu ?","english":"I'm in the fourth class."},
+      {"speaker":"","roman":"mundina varsa aidanee klaasu","english":"Next year I will go to the fifth class."},
+      {"speaker":"A","roman":"haudaa !","english":"Is it so !"}
+    ]},
+    {"type":"conversation","number":"3","rows":[
+      {"speaker":"A","roman":"ivanu nimma modalnee maganaa ?","english":"Is he your first son ?"},
+      {"speaker":"B","roman":"alla,","english":"No."},
+      {"speaker":"","roman":"modalneyavalu magalu","english":"The first child is a daughter."},
+      {"speaker":"","roman":"ivanu eradaneyavanu","english":"He is the second son."},
+      {"speaker":"A","roman":"ivanee koneyavanaa ?","english":"Is he the last one ?"},
+      {"speaker":"B","roman":"haudu, koneyavanu","english":"Yes, the last one."}
+    ]},
+    {"type":"conversation","number":"4","rows":[
+      {"speaker":"A","roman":"adu ivattina peeparaa ?","english":"Is it today's paper ?"},
+      {"speaker":"B","roman":"ivattu tariikhu estu ?","english":"What is the date to-day ?"},
+      {"speaker":"A","roman":"ivattu hattanee taariikhu","english":"Today is the tenth."},
+      {"speaker":"B","roman":"idu ivattinadalla","english":"This is not to-day's."},
+      {"speaker":"A","roman":"aa peepar yavattindu ?","english":"Which day's paper is that ?"},
+      {"speaker":"B","roman":"ninneedu","english":"It is yesterday',"},
+      {"speaker":"","roman":"idu ivattindu","english":"This one is today's"},
+      {"speaker":"A","roman":"ivattina peeparalli een viseesa ?","english":"What is special in today's paper ?"},
+      {"speaker":"B","roman":"viseesa eenuu illa","english":"There is nothing speciai."},
+      {"speaker":"A","roman":"kannadadalli ollee peeparu yaavdu ?","english":"Which newspaper is good in Kannada ?"},
+      {"speaker":"B","roman":"'vaartaa' kannadadalli ollee peeparu.","english":"Varta' is a good paper in Kannada."},
+      {"speaker":"A","roman":"'patrike' astu olleedalvaa ?","english":"Isn't 'Patrike' that good ?"},
+      {"speaker":"B","roman":"aduu olleedu","english":"It is also good."},
+      {"speaker":"","roman":"aa eradaralli 'vaarta' olleedu","english":"Of the two 'Varta' is good."}
+    ]},
+    {"type":"vocab","rows":[
+      {"speaker":"","roman":"uuru","english":"town, place"},
+      {"speaker":"","roman":"duura","english":"far"},
+      {"speaker":"","roman":"sumaaru","english":"about"},
+      {"speaker":"","roman":"uuta","english":"meal"}
+    ]}
+  ]
+}

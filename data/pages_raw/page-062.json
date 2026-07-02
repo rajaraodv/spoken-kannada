@@ -1,0 +1,43 @@
+{
+  "page": 62,
+  "lesson": 17,
+  "blocks": [
+    {
+      "type": "conversation",
+      "number": "1",
+      "rows": [
+        {"speaker": "A", "roman": "svaami, niivu iiga tootakke baralvaa ?", "english": "Sir, are you not coming to the garden now ?"},
+        {"speaker": "B", "roman": "illa, naanu baralla.", "english": "No, I am not."},
+        {"speaker": "A", "roman": "naavella iivatu een kelsa muadbeeku ?", "english": "What work should we all do today ?"},
+        {"speaker": "B", "roman": "niivella agiiri ; hattu gantege tindi tinni.", "english": "All of you dig ; at ten O' clock have breakfast."},
+        {"speaker": "A", "roman": "naanu een maadli ?", "english": "What should I do ?"},
+        {"speaker": "B", "roman": "niinuu agi ; hattu gantege tindi tinnu.", "english": "You also dig ; have breakfast at ten"},
+        {"speaker": "A", "roman": "iiga naanu hooglaa ? ond ganntege manege hoogbooda ?", "english": "May I leave now ? Shall we go home at one O' clock ?"},
+        {"speaker": "B", "roman": "ond gantege ellaruu manege hoogi.", "english": "All of you go home at one."}
+      ]
+    },
+    {
+      "type": "conversation",
+      "number": "2",
+      "rows": [
+        {"speaker": "A", "roman": "ammaa, naayimari aadtaa ide.", "english": "Mummy, the puppy is playing."},
+        {"speaker": "B", "roman": "adu aadli, naayi een maadtide ?", "english": "Let it play. What is the dog doing ?"},
+        {"speaker": "A", "roman": "aduu aadtide.", "english": "It is also playing."},
+        {"speaker": "B", "roman": "avu adli. elligaadruu hoogli iig ningeenu ?", "english": "Let them play, Let them go anywhere. Why do you bother ?"},
+        {"speaker": "A", "roman": "raadhaa rangaanuu aadtiddaare", "english": "Radha and Ranga are also playing."},
+        {"speaker": "B", "roman": "oohoo ! raadhaa aadli, rangaanuu adli ; ellaruaadli.", "english": "Oh ! Let Radha play and Ranga too. Let all play."},
+        {"speaker": "A", "roman": "naan een madli ? naanuu adlaa ?", "english": "What shall I do ? Shall I also play ?"},
+        {"speaker": "B", "roman": "elligaadruu tolgu, niinuu aadu.", "english": "Get lost, you too go and play."}
+      ]
+    },
+    {
+      "type": "conversation",
+      "number": "3",
+      "rows": [
+        {"speaker": "A", "roman": "ivattu sinema noodoovnaa ?", "english": "Shall we go to a movie to-day ?"},
+        {"speaker": "B", "roman": "noodoona, yaav thiyeetarg hoagoona ?", "english": "Let us see, to which theatre shall we go ?"},
+        {"speaker": "A", "roman": "'Sangam' ge hoogoonva ? alli 'grahana' ide.", "english": "Shall we go to 'Sangam' ? 'Grahana' is running there."}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "page": 65, "lesson": 18,
+  "blocks": [
+    {"type":"conversation","number":"1","rows":[
+      {"speaker":"A","roman":"naale beligge markettige hoogoonavaa ?","english":"Shall we go to the market tomorrow morning ?"},
+      {"speaker":"B","roman":"beeg eddu snaana maadi hoogoona.","english":"Let's rise early and leave after the bath."},
+      {"speaker":"C","roman":"anna, tindi tindu hoogoona.","english":"Dad, let's leave after breakfast,"},
+      {"speaker":"A","roman":"puuje maadi hoogbeeku  puuje maadde hoogbaardu.","english":"We should go only after worshipping. We shouldn't leave without worshipping."},
+      {"speaker":"C","roman":"puuje maadi, tindi, tindu hoogona.","english":"Let's go after worshipping and having breakfast."},
+      {"speaker":"B","roman":"allee hootlalli uutamaadi baroona.","english":"Let's dine out and return home."},
+      {"speaker":"C","roman":"amma, kaamat hootlige hoogi uuta maadoona.","english":"Mummy, let's go to Hotel 'Kamat' and dine there."},
+      {"speaker":"A","roman":"naayiina maneelee bittu, pakkada maneyavarge heeli hoogoona.","english":"Let's leave the dog at home, request the nighbours to mind the house and go."}
+    ]},
+    {"type":"conversation","number":"2","rows":[
+      {"speaker":"A","roman":"oohoo ! banni banni, uurige yavaag bandri ?","english":"Oh ! please come in ; when did you arrive in town ?"},
+      {"speaker":"B","roman":"ninne bandvi","english":"We came yesterday."},
+      {"speaker":"A","roman":"illee uutakk eeli","english":"Please dine with us."},
+      {"speaker":"B","roman":"illa, uuta maadi bandvi","english":"Excuse us, we have had lunch."},
+      {"speaker":"A","roman":"naale uuta maadde barbeeku. iiga svalpa kaafi kudiiri. Kaafi kudiide hoogbaardu.","english":"Please come without lunch tomorrow. Have a sip of coffee now ; you should not leave without a cup of coffee."},
+      {"speaker":"B","roman":"iig beeda, kaafi kandre aagalla. naale uuta maadde bartiivi. illee uuta maadtiivi. iig hoogbeeku.","english":"Not now, please, Can't stand coffee. We will come on an empty stomach tomorrow and eat here. We have to leave now."},
+      {"speaker":"A","roman":"hoog banni.","english":"Bye, bye !"},
+      {"speaker":"B","roman":"hoog bartiivi.","english":"Good bye !"}
+    ]},
+    {"type":"vocab","rows":[
+      {"speaker":"","roman":"eelu","english":"to wake up"},
+      {"speaker":"","roman":"kitaki","english":"window"},
+      {"speaker":"","roman":"puuje","english":"worship"},
+      {"speaker":"","roman":"baaglu","english":"door"},
+      {"speaker":"","roman":"pakkada","english":"one by the side"},
+      {"speaker":"","roman":"angdi","english":"shop"}
+    ]}
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "page": 67, "lesson": 19,
+  "blocks": [
+    {"type":"conversation","number":"1","rows":[
+      {"speaker":"A","roman":"niinu sigreet seedoodu yaake ?","english":"Why do you smoke cigarettes ?"},
+      {"speaker":"B","roman":"nange sigreet seedoodu ista. sigreet seedoodralli een tappu ?","english":"I like smoking cigarettes. What is wrong in smoking cigarettes ?"},
+      {"speaker":"A","roman":"seedoodrinda een laabha ? seedoodakke ninge yaar heeldru ?","english":"What is the benefit of smoking ? Who asked you to smoke ?"},
+      {"speaker":"B","roman":"seedoodralli nange sukha ide.","english":"I enjoy smoking."},
+      {"speaker":"A","roman":"adrinda aaroogya kedatte seedoodanna bidu.","english":"But it is harmful to health. Quit smoking."},
+      {"speaker":"B","roman":"haagaadre seedoodu beeda, khandita bidtiini.","english":"Then I won't smoke. I will certainly give it up."},
+      {"speaker":"A","roman":"aaroogya noodkoo. seedoodanna nilsu.","english":"Take care of your health. Stop smooking."},
+      {"speaker":"B","roman":"inn meele sigreet seedoodilla.","english":"I won't smoke cigarette any more."}
+    ]},
+    {"type":"conversation","number":"2","rows":[
+      {"speaker":"A","roman":"raaju, saddu madbeedi.","english":"Raju, please don't make any noise."},
+      {"speaker":"B","roman":"pakkad maneelanna kuugoodu.","english":"Dad, the noise is from the neighbouring house."},
+      {"speaker":"A","roman":"hoogli baaglu hakoodu tegiyoodu yaaroo ?","english":"But who is it that is meddling with the door ?"},
+      {"speaker":"B","roman":"raamuunee, avnu nanna bariyoo dakkee bidalla.","english":"It's Ramu ! He does not let me write."},
+      {"speaker":"A","roman":"alli oodood yaaroo ?","english":"Now, who is it that is racing there ?"},
+      {"speaker":"B","roman":"avanee, bariyoodanna kedsi oodtaane.","english":"He runs off after spoiling my writing."},
+      {"speaker":"A","roman":"ninge oedood illveenoo ?","english":"Don't you have any reading to do ?"},
+      {"speaker":"B","roman":"oodoodakkuu bidallanna. maataadidre alood ond gottu avange.","english":"He does not let me read. He knows only crying for everything."}
+    ]},
+    {"type":"vocab","rows":[
+      {"speaker":"","roman":"seedu","english":"smoke"},
+      {"speaker":"","roman":"kedu","english":"to get spoilt"},
+      {"speaker":"","roman":"hoogli","english":"don't bother"}
+    ]}
+  ]
+}

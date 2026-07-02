@@ -1,0 +1,55 @@
+Create one line-specific image for a spoken Kannada learning card.
+
+Purpose:
+This image is one sentence from Conversation 2. Use the attached shared base scene as the visual anchor, but update the characters' gaze, pointing, posture, and focus so this specific sentence makes sense. The app will add the speech bubble and exact English/Kannada text after generation.
+
+Chapter:
+Chapter 1
+
+Conversation id:
+Conversation 2
+
+Conversation summary:
+Raju introduces himself, says he is a Kannada teacher, introduces his friend Mohan, asks Shekhar's name and profession, then asks about Lalitha and whether she is a doctor.
+
+Full conversation excerpt:
+A: My name is Raju. A: I am a Kannada teacher. A: He is my friend. A: His name is Mohan. A: Who are you ? B: I am a doctor. A: What is your name ? B: My name is Shekhar. A: Is her name Lalitha? B: Yes, B: Her name is Lalita. A: Is she a doctor ? B: No, she is not a doctor, B: she is a nurse.
+
+Current line:
+13
+
+Speaker:
+Shekhar
+
+Listener:
+Raju
+
+What is happening in this exact image:
+Shekhar is answering while gesturing toward Lalita in the background. The sentence is: "No, she is not a doctor,"
+
+English sentence for context only, do not render:
+No, she is not a doctor,
+
+Kannada sentence for context only, do not render:
+ಇಲ್ಲ, ಅವರು ವೈದ್ಯರಲ್ಲ,
+
+Romanized Kannada for context only, do not render:
+Illa, avaru vaidyaralla,
+
+Stable cast:
+Raju: adult Indian male Kannada teacher, slim, side-parted black hair, blue teacher shirt, holding a book or folder, left foreground.
+Mohan: adult Indian male friend, tan/orange shirt, wavy hair, center/background.
+Lalita: adult Indian woman nurse, nurse uniform or clear medical cue, center-right/background.
+Shekhar: adult Indian male doctor, rounder face, white doctor coat and stethoscope, right foreground.
+
+Scene continuity:
+The shared Conversation 2 base scene is attached, and the previous line image may also be attached. Preserve the same room, character identities, clothing, relative positions, lighting, and cartoon style.
+
+Composition:
+Keep all four characters recognizable and in roughly the same positions as the base scene. Change only gaze, hand gesture, slight body direction, and focus needed for this sentence. Leave clean top space for a smaller app-overlaid speech bubble. Do not draw speech bubbles, text, name badges, labels, signs, or blank label boxes.
+
+Style:
+Modern colorful children's storybook cartoon, warm Indian classroom, expressive characters, clean readable 16:9 composition.
+
+Negative instructions:
+No text, no letters, no captions, no UI, no watermarks, no fake writing, no chalk writing, no random symbols, no generated speech bubble, no generated name labels, no blank white label rectangles.

@@ -1,0 +1,21 @@
+{
+  "page": 47,
+  "lesson": null,
+  "blocks": [
+    {
+      "type": "vocab",
+      "rows": [
+        {"speaker": "", "roman": "niiru", "english": "water"},
+        {"speaker": "", "roman": "buduga", "english": "boy"},
+        {"speaker": "", "roman": "agasa", "english": "washerman"},
+        {"speaker": "", "roman": "kere", "english": "tank"},
+        {"speaker": "", "roman": "kola", "english": "pool"},
+        {"speaker": "", "roman": "darji", "english": "tailor"},
+        {"speaker": "", "roman": "gida", "english": "plant"},
+        {"speaker": "", "roman": "amma", "english": "mother"},
+        {"speaker": "", "roman": "adgeemane", "english": "kitchen"},
+        {"speaker": "", "roman": "maali", "english": "gardener"}
+      ]
+    }
+  ]
+}

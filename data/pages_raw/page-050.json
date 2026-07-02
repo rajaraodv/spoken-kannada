@@ -1,0 +1,29 @@
+{
+  "page": 50, "lesson": null,
+  "blocks": [
+    {"type":"vocab","rows":[
+      {"speaker":"","roman":"vimaana","english":"plane"},
+      {"speaker":"","roman":"prayaana","english":"journey"},
+      {"speaker":"","roman":"ayyoo","english":"alas"},
+      {"speaker":"","roman":"kasta","english":"difficult"},
+      {"speaker":"","roman":"betta","english":"hill"},
+      {"speaker":"","roman":"beega","english":"early"},
+      {"speaker":"","roman":"ellaru","english":"all"},
+      {"speaker":"","roman":"sneehita","english":"friend"},
+      {"speaker":"","roman":"adge","english":"food"},
+      {"speaker":"","roman":"gojju","english":"gravy"},
+      {"speaker":"","roman":"yajmaanru","english":"husband"},
+      {"speaker":"","roman":"paatre","english":"vessels"},
+      {"speaker":"","roman":"kelsad hengsu","english":"maid servant"},
+      {"speaker":"","roman":"tarkaari","english":"vegetables"},
+      {"speaker":"","roman":"horadu","english":"to start"},
+      {"speaker":"","roman":"eelu","english":"to get up"},
+      {"speaker":"","roman":"tadavagi","english":"late"},
+      {"speaker":"","roman":"toli","english":"to wash"},
+      {"speaker":"","roman":"gudsu","english":"to sweep"},
+      {"speaker":"","roman":"iigtaane","english":"just now only"},
+      {"speaker":"","roman":"aaglee","english":"already"},
+      {"speaker":"","roman":"eeneenu","english":"what ali"}
+    ]}
+  ]
+}

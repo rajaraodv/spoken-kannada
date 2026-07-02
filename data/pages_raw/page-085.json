@@ -1,0 +1,25 @@
+{
+  "page": 85,
+  "lesson": null,
+  "blocks": [
+    {
+      "type": "conversation",
+      "number": "",
+      "rows": [
+        {"speaker": "A", "roman": "nimge ii pustaka beekaa ?", "english": "Do you need this book ?"},
+        {"speaker": "B", "roman": "beeda, ii pustaka naanu oodiddu.", "english": "No, I have (already) read it."},
+        {"speaker": "A", "roman": "adu?", "english": "That one?"},
+        {"speaker": "B", "roman": "aduu naanu oodiddu.", "english": "That one is also read by me."},
+        {"speaker": "A", "roman": "ii pustakaanuu oodadooru suddha soomaarigalu alvaa ?", "english": "Aren't those fellows lazy who don't red even this book ?"}
+      ]
+    },
+    {
+      "type": "vocab",
+      "rows": [
+        {"speaker": "", "roman": "Soomari", "english": "lazy"},
+        {"speaker": "", "roman": "kali", "english": "learn"},
+        {"speaker": "", "roman": "klaas togollu", "english": "to handle class (teach)"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "page": 83,
+  "lesson": null,
+  "blocks": [
+    {
+      "type": "conversation",
+      "number": "4",
+      "rows": [
+        {"speaker": "A", "roman": "all nintiroo manusya yaaru ?", "english": "Who is it, that is standing there ?"},
+        {"speaker": "B", "roman": "avanu illi gumaasta, suddha tarle.", "english": "He is a clerk here ; he is a regular nuisance."}
+      ]
+    },
+    {
+      "type": "vocab",
+      "rows": [
+        {"speaker": "", "roman": "haadu", "english": "sing/song"},
+        {"speaker": "", "roman": "gumaasta", "english": "clerk"},
+        {"speaker": "", "roman": "sabhe", "english": "meeting"},
+        {"speaker": "", "roman": "pitiilu nudsu", "english": "to play on violin"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "page": 19,
+  "lesson": 4,
+  "blocks": [
+    {"type":"conversation","number":"1","rows":[
+      {"speaker":"A","roman":"nimma mane ideenaa ?","english":"Is this your house ?"},
+      {"speaker":"B","roman":"haudu, idee namma mane","english":"Yes, this is my house."},
+      {"speaker":"A","roman":"svantaddaa ?","english":"Is it your own ?"},
+      {"speaker":"B","roman":"alla, baadge mane","english":"No, it is a rented house"},
+      {"speaker":"A","roman":"mane tumba doddadallava ?","english":"Isn't the house too big ?"},
+      {"speaker":"B","roman":"alla astu doddadalla","english":"No, it is not so big."},
+      {"speaker":"A","roman":"nimma manege baadige estu ?","english":"What is the rent of your house ?"},
+      {"speaker":"B","roman":"tinglge nuura aivattu ruupaayi","english":"Rs. 150/- per month."},
+      {"speaker":"A","roman":"tumba sundaravaada mane","english":"It is a very beautiful house."},
+      {"speaker":"","roman":"aa ettaravaada mara yaavdu ?","english":"Which is that tall tree ?"},
+      {"speaker":"B","roman":"adu raviyavara maavin mara","english":"It's Mr. Ravi's mango tree."},
+      {"speaker":"A","roman":"aa marada hannu tumba sihinaa ?","english":"Are the fruits of that tree very sweet ?"},
+      {"speaker":"B","roman":"haudu,","english":"Yes,"},
+      {"speaker":"","roman":"avu bahala sihiyaada hannugalu","english":"Those are very sweet fruits."}
+    ]},
+    {"type":"conversation","number":"2","rows":[
+      {"speaker":"A","roman":"aa hudugaru yaaru ?","english":"Who are those boys ?"},
+      {"speaker":"B","roman":"avaru namma annana maklu","english":"They are my elder brother's children."},
+      {"speaker":"A","roman":"nimge estu jana annandiru ?","english":"How many elder brothers do you have ?"},
+      {"speaker":"B","roman":"obbru anna, ibbru tangiiru","english":"One elder brother, two younger sisters."},
+      {"speaker":"A","roman":"aa hudugaru eliruu obbra makkalaa ?","english":"Are all those children of the same person ?"},
+      {"speaker":"B","roman":"chee chee alla","english":"oh ! no ! not at all."},
+      {"speaker":"","roman":"aa muuru hudugaru, obba hudugi annana makkalu","english":"Those three boys and a girl are elder brother's children."},
+      {"speaker":"A","roman":"aa hudugiiru yaaru ?","english":"Who are those girls ?"},
+      {"speaker":"B","roman":"avaru nanna tangii makkalu","english":"They are my younger sister's children."},
+      {"speaker":"A","roman":"nimge estu jana makkalu","english":"How many children do you have ?"},
+      {"speaker":"B","roman":"muuru juna","english":"Three"},
+      {"speaker":"","roman":"ibbru ganndmakklu","english":"Two sons."},
+      {"speaker":"","roman":"oblu magalu","english":"a daughter."}
+    ]}
+  ]
+}

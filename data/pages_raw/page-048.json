@@ -1,0 +1,52 @@
+{
+  "page": 48,
+  "lesson": 13,
+  "blocks": [
+    {
+      "type": "conversation",
+      "number": "1",
+      "rows": [
+        {"speaker": "A", "roman": "niivu dehliyinda yaavaag bandri ?", "english": "When did you come from Delhi ?"},
+        {"speaker": "B", "roman": "naan hood tinglu bande.", "english": "I came last month."},
+        {"speaker": "A", "roman": "niivu heege bandri ?", "english": "How did you come ?"},
+        {"speaker": "B", "roman": "naanu dehliyinda madraasge", "english": "I came by plane from Delhi to"},
+        {"speaker": "", "roman": "vimaanadalli bande.", "english": "Madras."},
+        {"speaker": "A", "roman": "allinda heege bandri ?", "english": "How did you come here from there ?"},
+        {"speaker": "B", "roman": "allinda trainalli bande.", "english": "I came by train from there."},
+        {"speaker": "A", "roman": "prayaana heegittu ?", "english": "How was the journey ?"},
+        {"speaker": "B", "roman": "ayyoo, tumba kastavaagittu.", "english": "Oh, it was awful."}
+      ]
+    },
+    {
+      "type": "conversation",
+      "number": "2",
+      "rows": [
+        {"speaker": "A", "roman": "ninne niivu ellige hoodri ?", "english": "Where did you go yesterday ?"},
+        {"speaker": "B", "roman": "ninne naavu nandi bettakke", "english": "We went to Nandi hills yesterday."},
+        {"speaker": "", "roman": "hoodvi.", "english": ""},
+        {"speaker": "A", "roman": "estu ganntege horatri ?", "english": "At what time did you leave ?"},
+        {"speaker": "B", "roman": "beligge aidu gantege horatvi.", "english": "We started at five in the morning."},
+        {"speaker": "A", "roman": "astu beega niivu eddraa ?", "english": "Did you get up so early ?"},
+        {"speaker": "B", "roman": "haudu, naavu naalku gantege eddvi.", "english": "Yes, we got up at 4'o clock."},
+        {"speaker": "A", "roman": "ellaaru astottige bandraa ?", "english": "Did every body come by that time ?"},
+        {"speaker": "B", "roman": "haudu, obba sneehita maatra", "english": "Yes, just one friend came late."},
+        {"speaker": "", "roman": "tadvaag banda.", "english": ""}
+      ]
+    },
+    {
+      "type": "conversation",
+      "number": "3",
+      "rows": [
+        {"speaker": "A", "roman": "ivattu beligge eenu kuddri ?", "english": "What did you drink this morning ?"},
+        {"speaker": "B", "roman": "beligge naanu haalu kudde.", "english": "I drank milk this morning."},
+        {"speaker": "A", "roman": "tindi een tindri ?", "english": "What snacks did you eat ?"},
+        {"speaker": "B", "roman": "erad idli ond doose ond vade", "english": "I ate two iddlies, one pancake and"},
+        {"speaker": "", "roman": "tinde.", "english": "one vade."},
+        {"speaker": "A", "roman": "beligge snaana maaddra ?", "english": "Did you bathe in the morning ?"},
+        {"speaker": "B", "roman": "haudu maadde.", "english": "Yes, I did."},
+        {"speaker": "A", "roman": "ivattin peeper bantaa ? ooddraa ?", "english": "Has today's paper come and did"},
+        {"speaker": "", "roman": "", "english": "you read it ?"}
+      ]
+    }
+  ]
+}

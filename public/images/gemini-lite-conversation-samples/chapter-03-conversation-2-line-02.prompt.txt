@@ -1,0 +1,51 @@
+Create one image for a spoken Kannada learning card.
+
+Purpose:
+This image teaches kids and English speakers one moment from a spoken Kannada conversation. It must show one person speaking to another person. The app will add the speech bubble and text after generation.
+
+Chapter:
+Chapter 03
+
+Conversation id:
+Conversation 2
+
+Conversation summary:
+The same two students remain outside the classroom. Raju answers that the nearby classroom is a Kannada class.
+
+Full conversation excerpt:
+A: Raju, which class is this? B: This is a Kannada class. A: Whose Kannada class is this? B: This is our Kannada class.
+
+Speaker:
+Raju
+
+Listener:
+Student A
+
+What is happening in this exact image:
+Raju is saying this sentence to Student A: "This is a Kannada class."
+
+English sentence for context only, do not render:
+This is a Kannada class.
+
+Kannada sentence for context only, do not render:
+ಇದು ಕನ್ನಡ ತರಗತಿ.
+
+Romanized Kannada for context only, do not render:
+Idu Kannada taragati.
+
+Scene location:
+Same Indian school corridor and classroom doorway as the previous image.
+
+Scene details and props:
+Open classroom door, visible desks, books, school bags, blank green board, warm sunlight, picture-only posters.
+
+Character continuity:
+Use the same two children across both sample images: Student A has a blue backpack and stands on the left in the first image; Raju has a yellow or green backpack and stands on the right. Keep school uniforms, age, style, lighting, and corridor layout consistent.
+
+Art direction:
+Create a 16:9 modern colorful children's storybook cartoon.
+Scene: Same Indian school corridor outside the nearby classroom as the previous image. Keep two students with consistent school uniforms and character appearance. Raju now stands on the right foreground and answers confidently while gesturing toward the open classroom. Student A stands on the left foreground listening. The classroom is visible behind them with desks, books, school bags, a blank green board, warm sunlight, and picture-only posters.
+Conversation context: Raju is answering that this nearby class is a Kannada class.
+Composition: listener on left, speaker Raju on right, clear empty sky/wall space at top-right for a speech bubble that will be added later. No speech bubble in the generated art.
+Style: polished modern children's storybook cartoon, warm Indian school setting, expressive characters, clean uncluttered composition. Match the first image style closely.
+Negative: no text, no letters, no captions, no chalk writing, no random symbols, no watermark.

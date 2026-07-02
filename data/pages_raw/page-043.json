@@ -1,0 +1,44 @@
+{
+  "page": 43,
+  "lesson": null,
+  "blocks": [
+    {
+      "type": "conversation",
+      "number": "3",
+      "rows": [
+        {"speaker": "A", "roman": "niivu dinaa beligge naditiiraa ?", "english": "Do you walk every morning ?"},
+        {"speaker": "B", "roman": "haudu, dinaa beligge ondu maili naditiini, niivu eenu maadtiiri?", "english": "Yes, I walk a mile in the morning. everyday. What do you do ?"},
+        {"speaker": "A", "roman": "naanu maneyallee irtiini.", "english": "I will just stay at home."},
+        {"speaker": "B", "roman": "haagadare beejaaraagalvaa?", "english": "If so don't you feel bored ?"},
+        {"speaker": "A", "roman": "asteenuu illa, beligge beere kelsa iratte.", "english": "Not so much, I will have some other work in the morning."},
+        {"speaker": "", "roman": "naan sanje hottu tiragaadtiini.", "english": "I stroll about in the evening."},
+        {"speaker": "B", "roman": "elli varege hoogtiiri ?", "english": "Upto where do you go ?"},
+        {"speaker": "A", "roman": "laalbaag varege hoogtiini, alli aidu nimisa niltiini athvaa hullin meele kuudtiini.", "english": "I go upto Lalbagh, there I stop for five minutes or sit on the grass."},
+        {"speaker": "B", "roman": "estu gantege vaapas bartiiri ?", "english": "At what time you come back ?"},
+        {"speaker": "A", "roman": "entu gantege vaapas bartiini. aaga nim maneeli nim hendti obbareirtaara ?", "english": "I come back at eight O' clock. Will your wife be alone at home at that time ?"},
+        {"speaker": "B", "roman": "illa, kelsadavalu joteyalli irtaale.", "english": "No, the maid servant will be with her."}
+      ]
+    },
+    {
+      "type": "vocab",
+      "rows": [
+        {"speaker": "", "roman": "naataka", "english": "drama"},
+        {"speaker": "", "roman": "beejaaru", "english": "boring"},
+        {"speaker": "", "roman": "athvaa", "english": "or"},
+        {"speaker": "", "roman": "sustu", "english": "tiredness or weakess"},
+        {"speaker": "", "roman": "maili", "english": "mile"},
+        {"speaker": "", "roman": "nadi", "english": "to walk"},
+        {"speaker": "", "roman": "tirgaadu", "english": "to roam"},
+        {"speaker": "", "roman": "vaapas baru", "english": "to return"},
+        {"speaker": "", "roman": "varege", "english": "upto, until"},
+        {"speaker": "", "roman": "ondond dina", "english": "some days"},
+        {"speaker": "", "roman": "heccin dina", "english": "most of the days"},
+        {"speaker": "", "roman": "hoogu", "english": "to go"},
+        {"speaker": "", "roman": "baru", "english": "to come"},
+        {"speaker": "", "roman": "malgu", "english": "to sleep"},
+        {"speaker": "", "roman": "maadu", "english": "to do"},
+        {"speaker": "", "roman": "kuudu", "english": "to sit"}
+      ]
+    }
+  ]
+}

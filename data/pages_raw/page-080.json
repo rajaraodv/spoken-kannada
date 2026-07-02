@@ -1,0 +1,43 @@
+{
+  "page": 80,
+  "lesson": 25,
+  "blocks": [
+    {
+      "type": "conversation",
+      "number": "1",
+      "rows": [
+        {"speaker": "A", "roman": "ninne saayankaala niivu een maadtaa iddri?", "english": "What were you doing yesterday eveining ?"},
+        {"speaker": "B", "roman": "gidgalge niir haaktidde.", "english": "I was watering the plants."},
+        {"speaker": "A", "roman": "naanu nim mane muulka hoogtidde.", "english": "1 was passing through your house."},
+        {"speaker": "B", "roman": "niivu nannannu nooddraa ?", "english": "Did you see me ?"},
+        {"speaker": "A", "roman": "ilia, makklannu noodde. rasteeli aadtaa iddru.", "english": "No, (I didn't see you) but saw the chidren ; they were playing in the street."},
+        {"speaker": "B", "roman": "naanu manee hinde gidakke niir haaktidde.", "english": "I was wateiing the plants in the backyard."}
+      ]
+    },
+    {
+      "type": "conversation",
+      "number": "2",
+      "rows": [
+        {"speaker": "A", "roman": "ninne raatri nim magu aadtitta ?", "english": "Was your child playing yesterday night ?"},
+        {"speaker": "B", "roman": "solpa hottu aadtittu. aammeele tumba hottu altittu.", "english": "It was playing for a while and later it was crying for a longtime."},
+        {"speaker": "A", "roman": "yaake, jvara bandittaa ?", "english": "Why ? Was it having fever ?"},
+        {"speaker": "B", "roman": "haudu, tumba jvara bandittu.", "english": "Yes, it was having high fever."},
+        {"speaker": "A", "roman": "ayyoo paapa ; cikka magu.", "english": "Poor thing, it is too young."}
+      ]
+    },
+    {
+      "type": "conversation",
+      "number": "3",
+      "rows": [
+        {"speaker": "A", "roman": "nim hola niivee noodkootiddraa ?", "english": "Were you looking after your field (yourself) ?"},
+        {"speaker": "B", "roman": "haudu, naavee noodkootiddvi.", "english": "Yes, we ourselves were looking after the field."},
+        {"speaker": "A", "roman": "eeneen beliitiddri ?", "english": "What are the crops you were growing ?"},
+        {"speaker": "B", "roman": "goodhi, bhatta, joola mattu hatti beliitiddvi.", "english": "We were growing wheat, paddy, maize and cotton."},
+        {"speaker": "A", "roman": "iiga yaake beliitilla?", "english": "Why are you not growing now ?"},
+        {"speaker": "B", "roman": "iiga eenu laabha bartilla.", "english": "Now we are not getting any profit."},
+        {"speaker": "A", "roman": "niivu raagiinuu beliitiddraa ?", "english": "Were you growing raagi also ?"},
+        {"speaker": "B", "roman": "illa, belitirlilla.", "english": "No, we were not growing raggi."}
+      ]
+    }
+  ]
+}

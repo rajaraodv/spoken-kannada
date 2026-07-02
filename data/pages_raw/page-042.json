@@ -1,0 +1,33 @@
+{
+  "page": 42,
+  "lesson": 11,
+  "blocks": [
+    {
+      "type": "conversation",
+      "number": "1",
+      "rows": [
+        {"speaker": "A", "roman": "naanu hoogtiini, bartiira ?", "english": "I am leaving, are you going with me ?"},
+        {"speaker": "B", "roman": "ellige hoogtiiri?", "english": "Where are you going ?"},
+        {"speaker": "A", "roman": "nim tangi kuuda nim jote bartaalaa ?", "english": "Is your younger sister also coming with you ?"},
+        {"speaker": "A", "roman": "haudu, bartaale", "english": "Yes, she is coming."},
+        {"speaker": "B", "roman": "naatakadinda yaavaga vaapas bartiiri ?", "english": "When are you coming back from the drama ?"},
+        {"speaker": "A", "roman": "hattu gantege bartiini, niivu bartiiraa ?", "english": "I will come at 10 o'clock. Are you coming ?"},
+        {"speaker": "B", "roman": "illa, nange tumba sustu ; naanu malagtiini, beekaadre naale bartiini.", "english": "No, I am very much tired ; I will sleep now. If you want, I will come tomorrow."}
+      ]
+    },
+    {
+      "type": "conversation",
+      "number": "2",
+      "rows": [
+        {"speaker": "A", "roman": "nim afiisu estu gante vargee ide ?", "english": "Upto what time does your office work ?"},
+        {"speaker": "B", "roman": "beligge hattu ganteyinda sanje aidu gantegevarege ide.", "english": "It works from ten O'clock in the morning to five in the evening."},
+        {"speaker": "A", "roman": "dinaa aidu gantege afiisinda manege bartiiraa ?", "english": "Do you come home from the office at five O'clock everyday ?"},
+        {"speaker": "B", "roman": "heccin dina aidu gantege bartiini, ondond dina maatra aaru gantege barthiini.", "english": "Most of the days I come at five O'clock. Occassionally I return at six O'clock."},
+        {"speaker": "A", "roman": "adeenu, aafiisalll tumba kelsa irattaa ?", "english": "Why i Will there be much work in the office ?"},
+        {"speaker": "B", "roman": "haudu, tumba kelsa iratte.", "english": "Yes, there is too much work in the office."},
+        {"speaker": "A", "roman": "nimage taipist ilvaa ?", "english": "Don't you have a typist ?"},
+        {"speaker": "B", "roman": "iddare, nam ibbariguu tumba kelsa iratte.", "english": "There is a typist. We both will have too much work."}
+      ]
+    }
+  ]
+}

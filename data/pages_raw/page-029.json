@@ -1,0 +1,37 @@
+{
+  "page": 29,
+  "lesson": null,
+  "blocks": [
+    {
+      "type": "conversation",
+      "number": "2",
+      "rows": [
+        {"speaker": "", "roman": "aadre nimma gadiyaarakkinta", "english": "But it is newer than your watch."},
+        {"speaker": "", "roman": "hosadu.", "english": ""},
+        {"speaker": "A", "roman": "ii uuralli dodda thiyeetar yaavdu ?", "english": "Which is the big theatre in this town ?"},
+        {"speaker": "B", "roman": "lidoo ii uuralli dodda thiyeetaru.", "english": "Lido is a big theatre in this town ?"},
+        {"speaker": "A", "roman": "saalimaar dodddalvaa ?", "english": "Isn't Shalimar a big one ?"},
+        {"speaker": "B", "roman": "saalimaar kuuda doddu.", "english": "Shalimar is also big."},
+        {"speaker": "", "roman": "adara pakkadduu. doddu.", "english": "The one next to it is also big."},
+        {"speaker": "", "roman": "avakkinta lidoonee doddu.", "english": "Lido is bigger than those."},
+        {"speaker": "", "roman": "ellakkinta 'anjali' cennaagide.", "english": "'Anjali' is the best of all."}
+      ]
+    },
+    {
+      "type": "vocab",
+      "rows": [
+        {"speaker": "", "roman": "jaane", "english": "smart (female)"},
+        {"speaker": "", "roman": "jaana", "english": "smart (male)"},
+        {"speaker": "", "roman": "heccu", "english": "more"},
+        {"speaker": "", "roman": "kadime", "english": "less"},
+        {"speaker": "", "roman": "atte", "english": "mother-in-law"},
+        {"speaker": "", "roman": "maava", "english": "father-in-law"},
+        {"speaker": "", "roman": "aadre", "english": "but"},
+        {"speaker": "", "roman": "maatra", "english": "only"},
+        {"speaker": "", "roman": "innuu", "english": "still"},
+        {"speaker": "", "roman": "cikkavanu", "english": "younger (male)"},
+        {"speaker": "", "roman": "doddavalu", "english": "elder (female)"}
+      ]
+    }
+  ]
+}

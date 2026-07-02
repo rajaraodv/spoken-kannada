@@ -1,0 +1,43 @@
+{
+  "page": 55,
+  "lesson": 15,
+  "blocks": [
+    {
+      "type": "conversation",
+      "number": "1",
+      "rows": [
+        {"speaker": "A", "roman": "namaskaara, nimge eenu beeku ?", "english": "Good morning, what do you want ?"},
+        {"speaker": "B", "roman": "nange ondu mane beeku.", "english": "I want a house."},
+        {"speaker": "A", "roman": "nimge eradu ruum mane saakaa ? innuu dodda mane beekaa ?", "english": "Will a two room house do ? Do you want a still bigger one ?"},
+        {"speaker": "B", "roman": "nange erdu ruumu saaku, tumba dodda mane beeda.", "english": "Two rooms are enough for me.   I don't want too big a house."},
+        {"speaker": "A", "roman": "niivu obbreenaa ?", "english": "Are you single ?"},
+        {"speaker": "B", "roman": "Alla.  naavu naak jana, estu baadge ?", "english": "No, we are four.   What is the rent ?"},
+        {"speaker": "A", "roman": "tinglige muunuurn ruupaayi.", "english": "Three hundred rupees per month."},
+        {"speaker": "B", "roman": "advansu beekaa ?", "english": "Do you want an advance ?"},
+        {"speaker": "A", "roman": "parvaagilla, asteenu jaasti beeda.", "english": "Dosen't matter.   Don't require heavy advance."}
+      ]
+    },
+    {
+      "type": "conversation",
+      "number": "2",
+      "rows": [
+        {"speaker": "A", "roman": "banni saar, eenu beeku ?", "english": "Please come, sir.   What do you want ?"},
+        {"speaker": "B", "roman": "tarkaari beeku. eeneen ide ?", "english": "I want vegetables.   What all do you have ?"},
+        {"speaker": "A", "roman": "ellaa ide.  badane kaayi, huruli kaayi, siime badane kaayi, don menisina kaayi ide.", "english": "I have all.  brinjals, beans, khush khush, big chillies, etc."},
+        {"speaker": "B", "roman": "badadekaayi cennagideyaa ?", "english": "Are the brinjals good ?"}
+      ]
+    },
+    {
+      "type": "conversation",
+      "number": "3",
+      "rows": [
+        {"speaker": "A", "roman": "nimge gavarment kaaleeju gottaa ?", "english": "Do you know the Government College ?"},
+        {"speaker": "B", "roman": "gottu. alli nimge kelsa ideyaa ?", "english": "Yes.   Do you have any work there ?"},
+        {"speaker": "A", "roman": "haudu, nimge prinsipaalru gottaa ?", "english": "Yes.   Do you know the Principal ?"},
+        {"speaker": "B", "roman": "gottilla, yaoke ?", "english": "I don't know, why ?"},
+        {"speaker": "A", "roman": "alli nam hudugange ondu siitu beeku.", "english": "I want a seat for my boy there."},
+        {"speaker": "B", "roman": "haagaadaree alli nange klaark obbru gottu.", "english": "If so, I know a clerk there."}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "page": 46,
+  "lesson": null,
+  "blocks": [
+    {
+      "type": "conversation",
+      "number": "4",
+      "rows": [
+        {"speaker": "A", "roman": "yaake ? beere kelsa ideyaa ?", "english": "Why ? Do you have some other work ?"},
+        {"speaker": "B", "roman": "naale pariikse ide, aadrinda", "english": "I have a test tomorrow, hence I don't"},
+        {"speaker": "", "roman": "ivattu aadalla", "english": "play today."}
+      ]
+    },
+    {
+      "type": "conversation",
+      "number": "5",
+      "rows": [
+        {"speaker": "A", "roman": "ivattu niivu goopaalge kaagda", "english": "Would you write a letter to Gopal"},
+        {"speaker": "", "roman": "bariitiiraa ?", "english": "today ?"},
+        {"speaker": "B", "roman": "haudu, iiglee bariitiini.", "english": "Yes, I am writing just now."},
+        {"speaker": "A", "roman": "naanuu bariitiini.", "english": "I too will write."},
+        {"speaker": "B", "roman": "niivu iiglee bariitiiraa ?", "english": "Do you write now itself ?"},
+        {"speaker": "A", "roman": "nange iiga purasattilla, beere", "english": "No, I do not have time now. I have"},
+        {"speaker": "", "roman": "kelsa ide", "english": "some other work."}
+      ]
+    },
+    {
+      "type": "conversation",
+      "number": "6",
+      "rows": [
+        {"speaker": "A", "roman": "nim magu iiga heegide ?", "english": "How is your child now ?"},
+        {"speaker": "B", "roman": "cennaagide, aata aadatte.", "english": "It is well and it is playing."},
+        {"speaker": "A", "roman": "cennaagi nadiyattaa ?", "english": "Does it walk well ?"},
+        {"speaker": "B", "roman": "nadiyatte, aata aadatte.", "english": "It walks and it plays."},
+        {"speaker": "A", "roman": "maataadattaa ?", "english": "Does it talk ?"},
+        {"speaker": "B", "roman": "astu cennaagi maataadalla.", "english": "It does not speak so well."},
+        {"speaker": "A", "roman": "raatri cennaagi nidde", "english": "Does it sleep well in the night ?"},
+        {"speaker": "", "roman": "maadatta ?", "english": ""},
+        {"speaker": "B", "roman": "maadatte, ondond dina", "english": "Yes, it does ; but some days it"},
+        {"speaker": "", "roman": "maadalla", "english": "doesn't"}
+      ]
+    },
+    {
+      "type": "vocab",
+      "rows": [
+        {"speaker": "", "roman": "doose", "english": "pancake"},
+        {"speaker": "", "roman": "idli", "english": "iddli"},
+        {"speaker": "", "roman": "maamsa", "english": "meat"},
+        {"speaker": "", "roman": "motte", "english": "egg"},
+        {"speaker": "", "roman": "baalehannu", "english": "plantain"},
+        {"speaker": "", "roman": "biskat", "english": "biscuit"},
+        {"speaker": "", "roman": "capaati", "english": "chapati"},
+        {"speaker": "", "roman": "mudde", "english": "ragi balls"},
+        {"speaker": "", "roman": "hasu", "english": "cow"},
+        {"speaker": "", "roman": "naale", "english": "tomorrow"},
+        {"speaker": "", "roman": "kappu", "english": "black"},
+        {"speaker": "", "roman": "kaadu", "english": "forest"},
+        {"speaker": "", "roman": "ruci", "english": "taste"},
+        {"speaker": "", "roman": "tinnu", "english": "to eate"},
+        {"speaker": "", "roman": "kudi", "english": "to drink"},
+        {"speaker": "", "roman": "bari", "english": "to write"},
+        {"speaker": "", "roman": "bogalu", "english": "to bark"},
+        {"speaker": "", "roman": "noodu", "english": "to see"},
+        {"speaker": "", "roman": "meeyu", "english": "to graze"},
+        {"speaker": "", "roman": "iiju", "english": "to swim"},
+        {"speaker": "", "roman": "holi", "english": "to stitch"},
+        {"speaker": "", "roman": "adakke", "english": "for that because"},
+        {"speaker": "", "roman": "yaake", "english": "why"},
+        {"speaker": "", "roman": "aadrinda", "english": "hence"},
+        {"speaker": "", "roman": "ogi", "english": "to wash clothes"}
+      ]
+    }
+  ]
+}

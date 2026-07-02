@@ -1,0 +1,2833 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chapter 15 · Spoken Kannada</title>
+  <style>
+    :root {
+      --ink: #1d1d1f;
+      --muted: #6e6e73;
+      --line: #d2d2d7;
+      --paper: #f5f5f7;
+      --panel: #ffffff;
+      --soft: #f9f9fb;
+      --accent: #0071e3;
+      --accent-soft: rgba(0, 113, 227, .10);
+      --kannada: #167d6b;
+      --practice: #1d1d1f;
+      --warn: #8a4b1f;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 24% 0%, rgba(255, 255, 255, .95), transparent 34%),
+        linear-gradient(135deg, #f7f8fb 0%, #fffaf2 100%);
+      line-height: 1.5;
+    }
+    main { max-width: 1180px; margin: 0 auto; padding: 32px 18px 72px; }
+    main:has(.learning-app) { max-width: none; padding: 0; }
+    h1 { margin: 0; font-size: clamp(2rem, 5vw, 3.7rem); line-height: 1; letter-spacing: 0; }
+    .intro { max-width: 860px; color: var(--muted); }
+    .note { border-left: 4px solid var(--warn); background: #fff7ed; padding: 12px 14px; max-width: 920px; }
+    .chapter-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; margin-top: 28px; }
+    .chapter-card { display: grid; gap: 8px; text-decoration: none; color: inherit; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 16px; }
+    .chapter-card strong { font-size: 1.1rem; }
+    .chapter-card span { color: var(--muted); }
+    .topbar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between; margin-bottom: 22px; }
+    .topbar a { color: var(--accent); font-weight: 800; text-decoration: none; }
+    .chapter-nav { display: flex; gap: 10px; flex-wrap: wrap; margin: 22px 0; }
+    .chapter-nav a { color: var(--ink); text-decoration: none; border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; background: var(--panel); }
+    nav { display: flex; flex-wrap: wrap; gap: 8px; margin: 24px 0 36px; }
+    nav a {
+      color: var(--ink); text-decoration: none; background: var(--panel);
+      border: 1px solid var(--line); border-radius: 8px; padding: 7px 10px;
+    }
+    section { margin: 42px 0; }
+    h2 { margin: 0 0 14px; font-size: 1.55rem; }
+    .app-main {
+      max-width: none;
+      padding: 0;
+    }
+    .learning-app {
+      display: grid;
+      grid-template-columns: 116px minmax(0, 1fr);
+      min-height: 100vh;
+    }
+    .side-rail {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      padding: 30px 18px;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      justify-items: center;
+      gap: 28px;
+      background: rgba(255, 255, 255, .72);
+      border-right: 1px solid rgba(210, 210, 215, .72);
+      box-shadow: 12px 0 40px rgba(29, 29, 31, .04);
+      backdrop-filter: blur(22px);
+    }
+    .rail-logo {
+      width: 54px;
+      height: 54px;
+      border-radius: 16px;
+      display: grid;
+      place-items: center;
+      color: #e75f1b;
+      background: #ffffff;
+      border: 2px solid rgba(231, 95, 27, .35);
+      box-shadow: 0 10px 24px rgba(231, 95, 27, .10);
+      font-size: 1.65rem;
+      text-decoration: none;
+    }
+    .chapter-rail {
+      width: 100%;
+      display: grid;
+      gap: 8px;
+      overflow-y: auto;
+      padding: 2px 0;
+      scrollbar-width: thin;
+    }
+    .chapter-rail a {
+      display: grid;
+      place-items: center;
+      min-height: 44px;
+      border-radius: 14px;
+      color: #6b7280;
+      text-decoration: none;
+      font-weight: 800;
+      border: 1px solid transparent;
+    }
+    .chapter-rail a.active {
+      color: #e75f1b;
+      background: #fff2e9;
+      border-color: rgba(231, 95, 27, .16);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.74);
+    }
+    .rail-tools {
+      display: grid;
+      gap: 18px;
+      width: 100%;
+      color: var(--muted);
+      font-size: .82rem;
+      font-weight: 700;
+      text-align: center;
+    }
+    .rail-tool {
+      display: grid;
+      justify-items: center;
+      gap: 5px;
+      text-decoration: none;
+      color: inherit;
+    }
+    .rail-tool .avatar {
+      width: 44px;
+      height: 44px;
+      display: grid;
+      place-items: center;
+      border-radius: 999px;
+      background: #ffe2a7;
+      font-size: 1.45rem;
+    }
+    .lesson-workspace {
+      width: min(100%, 1180px);
+      margin: 0 auto;
+      padding: 44px 32px 72px;
+    }
+    .lesson-header {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 330px;
+      gap: 28px;
+      align-items: start;
+      margin-bottom: 28px;
+    }
+    .lesson-kicker {
+      margin: 0 0 6px;
+      color: #e75f1b;
+      font-weight: 850;
+      font-size: .95rem;
+    }
+    .lesson-title {
+      margin: 0;
+      font-size: clamp(2.1rem, 4.5vw, 3.35rem);
+      line-height: 1.03;
+      font-weight: 850;
+      color: #111827;
+    }
+    .lesson-subtitle {
+      max-width: 680px;
+      margin: 14px 0 0;
+      color: #5d6470;
+      font-size: clamp(1rem, 1.8vw, 1.14rem);
+      line-height: 1.6;
+    }
+    .progress-card {
+      display: grid;
+      grid-template-columns: 58px minmax(0, 1fr);
+      gap: 16px;
+      align-items: center;
+      padding: 16px 18px;
+      border: 1px solid rgba(210, 210, 215, .78);
+      border-radius: 20px;
+      background: rgba(255, 255, 255, .72);
+      box-shadow: 0 16px 34px rgba(29, 29, 31, .06);
+      backdrop-filter: blur(18px);
+    }
+    .progress-icon {
+      width: 54px;
+      height: 54px;
+      border-radius: 999px;
+      display: grid;
+      place-items: center;
+      color: #d97706;
+      background: #fff7ed;
+      border: 1px solid rgba(217, 119, 6, .16);
+      font-size: 1.55rem;
+    }
+    .progress-label {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      color: var(--muted);
+      font-weight: 700;
+    }
+    .progress-count {
+      color: var(--ink);
+      font-weight: 850;
+    }
+    .progress-track {
+      height: 10px;
+      margin-top: 10px;
+      border-radius: 999px;
+      background: #e5e7eb;
+      overflow: hidden;
+    }
+    .progress-fill {
+      width: var(--progress, 8%);
+      height: 100%;
+      border-radius: inherit;
+      background: linear-gradient(90deg, #42b883, #a4d65e);
+      transition: width .22s ease;
+    }
+    .lesson-controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+      margin: 0 0 26px;
+    }
+    .scene-pager {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .scene-pill {
+      min-width: 128px;
+      padding: 11px 16px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: rgba(255, 255, 255, .78);
+      color: #4b5563;
+      text-align: center;
+      font-weight: 800;
+      box-shadow: 0 8px 18px rgba(29, 29, 31, .04);
+    }
+    .scene-arrow {
+      width: 48px;
+      height: 48px;
+      border: 0;
+      border-radius: 999px;
+      display: grid;
+      place-items: center;
+      background: rgba(255,255,255,.72);
+      color: #9ca3af;
+      font-size: 1.35rem;
+      font-weight: 900;
+      cursor: pointer;
+      box-shadow: 0 10px 22px rgba(29, 29, 31, .06);
+    }
+    .scene-arrow.next {
+      color: #ffffff;
+      background: linear-gradient(135deg, #25a46b, #147b5f);
+      box-shadow: 0 14px 24px rgba(20, 123, 95, .22);
+    }
+    .scene-arrow:disabled {
+      opacity: .48;
+      cursor: default;
+    }
+    .visual-practice {
+      margin: 0 0 16px;
+    }
+    .visual-practice h3 { margin: 0 0 4px; font-size: 1.2rem; }
+    .visual-practice > p { margin: 0 0 14px; color: var(--muted); }
+    .snippet-stack {
+      display: grid;
+      gap: 22px;
+    }
+    .snippet-card {
+      position: relative;
+      border: 1px solid var(--line);
+      border-radius: 26px;
+      overflow: hidden;
+      background: var(--panel);
+      box-shadow: 0 18px 48px rgba(0, 0, 0, .08);
+    }
+    .snippet-card.correct {
+      border-color: rgba(52, 199, 89, .55);
+      box-shadow: 0 22px 56px rgba(52, 199, 89, .18);
+    }
+    .snippet-card.retry-shake {
+      animation: retry-shake .32s ease;
+    }
+    .snippet-card img {
+      display: block;
+      width: 100%;
+      height: auto;
+      min-height: 0;
+      object-fit: contain;
+      object-position: center;
+      background: var(--soft);
+    }
+    .snippet-card svg { width: 100%; height: auto; display: block; }
+    .snippet-body {
+      padding: clamp(18px, 3vw, 28px);
+      background: rgba(255, 255, 255, .92);
+      border-bottom: 1px solid var(--line);
+    }
+    .snippet-body h4 {
+      margin: 0;
+      color: #4b5563;
+      font-size: clamp(1rem, 1.7vw, 1.18rem);
+      font-weight: 800;
+    }
+    .snippet-heading {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    .snippet-topic {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      min-width: 0;
+    }
+    .snippet-topic-icon {
+      width: 42px;
+      height: 42px;
+      flex: 0 0 auto;
+      border-radius: 999px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, #43c076, #17825f);
+      color: white;
+      box-shadow: 0 12px 22px rgba(23, 130, 95, .20);
+    }
+    .new-pill {
+      flex: 0 0 auto;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: #eaf8ef;
+      color: #198754;
+      border: 1px solid rgba(25, 135, 84, .14);
+      font-size: .9rem;
+      font-weight: 800;
+    }
+    .snippet-line {
+      display: grid;
+      gap: 8px;
+      margin: 0 0 22px;
+      padding: clamp(28px, 5vw, 48px);
+      border: 1px solid rgba(0, 0, 0, .08);
+      border-radius: 24px;
+      background: #ffffff;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, .72), 0 10px 26px rgba(29,29,31,.035);
+    }
+    .snippet-line strong {
+      font-size: clamp(2.6rem, 5.8vw, 4.1rem);
+      line-height: 1.04;
+      color: var(--ink);
+      font-weight: 850;
+    }
+    .snippet-line span {
+      color: var(--kannada);
+      font-weight: 760;
+      font-size: clamp(1.45rem, 3.4vw, 2.15rem);
+      line-height: 1.15;
+      font-style: italic;
+    }
+    .kannada-script {
+      color: #c7511a;
+      font-size: clamp(2.1rem, 4.8vw, 3.65rem);
+      font-weight: 850;
+      line-height: 1.18;
+    }
+    .original-roman {
+      margin: 0 0 16px;
+      color: var(--muted);
+      font-size: .95rem;
+      font-weight: 650;
+    }
+    .grammar-note {
+      margin: -2px 0 12px;
+      color: var(--muted);
+      font-size: .96rem;
+      line-height: 1.45;
+    }
+    .grammar-note strong { color: var(--ink); }
+    .listen-row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 26px; align-items: center; }
+    .speak-btn {
+      border: 1px solid rgba(0, 0, 0, .10);
+      background: #ffffff;
+      color: var(--ink);
+      border-radius: 16px;
+      padding: 18px 22px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      font: inherit;
+      font-size: clamp(1rem, 2.1vw, 1.18rem);
+      font-weight: 850;
+      cursor: pointer;
+      min-width: 0;
+      box-shadow: 0 10px 24px rgba(29, 29, 31, .05);
+      transition: transform .16s ease, box-shadow .16s ease, background .16s ease, border-color .16s ease;
+    }
+    .speak-btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, .08);
+    }
+    .speak-btn[data-lang="en-IN"] {
+      color: #1764d8;
+      border-color: rgba(23, 100, 216, .22);
+      background: #eef5ff;
+    }
+    .speak-btn[data-lang="kn-IN"] {
+      color: #177f62;
+      border-color: rgba(23, 127, 98, .22);
+      background: #eef8f3;
+    }
+    .practice-btn {
+      color: #5b2fc6;
+      border-color: rgba(91, 47, 198, .22);
+      background: #f4efff;
+      min-width: 0;
+    }
+    .practice-btn:hover { box-shadow: 0 10px 22px rgba(91, 47, 198, .12); }
+    .speak-btn:active { transform: translateY(1px); }
+    .speak-btn[disabled] { opacity: .6; cursor: wait; }
+    .btn-icon {
+      width: 34px;
+      height: 34px;
+      border-radius: 999px;
+      display: inline-grid;
+      place-items: center;
+      flex: 0 0 auto;
+      color: #ffffff;
+      font-size: .95rem;
+      line-height: 1;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.32);
+    }
+    .speak-btn[data-lang="en-IN"] .btn-icon { background: #1764d8; }
+    .speak-btn[data-lang="kn-IN"] .btn-icon { background: #177f62; }
+    .practice-btn .btn-icon { background: #6d3bd1; }
+    .practice-feedback {
+      display: none;
+      margin-top: 12px;
+      padding: 13px 15px;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      background: #f9f9fb;
+      color: var(--muted);
+      font-weight: 700;
+    }
+    .practice-feedback.show { display: block; }
+    .practice-feedback.good {
+      border: 3px solid rgba(22, 163, 74, .65);
+      background:
+        radial-gradient(circle at 12% 18%, rgba(250, 204, 21, .42), transparent 24%),
+        radial-gradient(circle at 88% 18%, rgba(45, 212, 191, .36), transparent 26%),
+        linear-gradient(135deg, #f0fdf4, #ecfeff);
+      color: #166534;
+      font-size: clamp(1.45rem, 4vw, 2.45rem);
+      line-height: 1.12;
+      padding: 22px 24px;
+      box-shadow: 0 14px 30px rgba(22, 163, 74, .18);
+      animation: success-pop .44s cubic-bezier(.2, 1.35, .35, 1);
+    }
+    .practice-feedback.retry {
+      border-color: rgba(255, 149, 0, .38);
+      background: #fff8ed;
+      color: #8a4b1f;
+      animation: retry-nudge .28s ease;
+    }
+    .practice-btn.correct {
+      background: #34c759;
+      border-color: #34c759;
+      color: #ffffff;
+      transform: scale(1.02);
+      box-shadow: 0 12px 26px rgba(52, 199, 89, .22);
+    }
+    .celebration-sprinkles {
+      pointer-events: none;
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      z-index: 3;
+    }
+    .celebration-sprinkles span {
+      position: absolute;
+      top: 44%;
+      left: 50%;
+      width: 12px;
+      height: 22px;
+      border-radius: 3px;
+      background: var(--sprinkle-color, #facc15);
+      transform: translate(-50%, -50%) rotate(var(--sprinkle-rotate, 0deg));
+      animation: sprinkle-burst .95s ease-out forwards;
+      animation-delay: var(--sprinkle-delay, 0s);
+    }
+    @keyframes success-pop {
+      0% { transform: scale(.86); opacity: .2; }
+      70% { transform: scale(1.035); opacity: 1; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    @keyframes retry-shake {
+      0%, 100% { transform: translateX(0); }
+      22% { transform: translateX(-6px); }
+      48% { transform: translateX(5px); }
+      72% { transform: translateX(-3px); }
+    }
+    @keyframes retry-nudge {
+      0% { transform: scale(.98); opacity: .65; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    @keyframes sprinkle-burst {
+      0% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(.7) rotate(var(--sprinkle-rotate, 0deg));
+      }
+      100% {
+        opacity: 0;
+        transform:
+          translate(
+            calc(-50% + var(--sprinkle-x, 0px)),
+            calc(-50% + var(--sprinkle-y, -120px))
+          )
+          scale(1.1)
+          rotate(calc(var(--sprinkle-rotate, 0deg) + 220deg));
+      }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .practice-feedback.good,
+      .celebration-sprinkles span {
+        animation: none;
+      }
+    }
+    .voice-toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      margin: 0;
+      color: var(--muted);
+      font-weight: 800;
+    }
+    .voice-toolbar select {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 12px 42px 12px 18px;
+      background: rgba(255,255,255,.78);
+      color: var(--ink);
+      font: inherit;
+      font-weight: 800;
+      box-shadow: 0 8px 18px rgba(29, 29, 31, .05);
+    }
+    .voice-wave { color: #5b5ff0; font-weight: 900; font-size: 1.4rem; }
+    .lesson-tip {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin: 28px 0 0;
+      padding: 18px 22px;
+      border-radius: 14px;
+      border: 1px solid rgba(245, 158, 11, .32);
+      background: #fff8e9;
+      color: #4b5563;
+      font-weight: 650;
+    }
+    .lesson-tip strong { color: var(--ink); }
+    .tip-chip {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      white-space: nowrap;
+      padding: 10px 18px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #ffffff;
+      color: var(--ink);
+      font-weight: 850;
+      box-shadow: 0 8px 18px rgba(29,29,31,.06);
+    }
+    .source-panel {
+      margin-top: 26px;
+      padding: 0;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, .72);
+      overflow: hidden;
+    }
+    .source-panel > summary {
+      padding: 18px 22px;
+      color: var(--ink);
+      font-weight: 850;
+    }
+    .source-panel section {
+      margin: 0;
+      padding: 0 18px 18px;
+    }
+    .source-panel details.raw {
+      margin: 0 18px 18px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #ffffff;
+    }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      margin: 14px 0;
+    }
+    .translation-block {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin: 0 0 14px;
+    }
+    .translation-block h3 { margin: 0 0 8px; }
+    .translation-block ol { margin: 0; padding-left: 24px; }
+    .translation-block li { padding: 3px 0; }
+    article header {
+      display: flex; justify-content: space-between; gap: 16px; align-items: baseline;
+      padding: 14px 16px; background: var(--soft); border-bottom: 1px solid var(--line);
+    }
+    h3 { margin: 0; font-size: 1.1rem; }
+    article header p { margin: 0; color: var(--muted); font-size: .9rem; }
+    table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+    th, td { padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+    th { color: var(--muted); text-align: left; font-size: .82rem; text-transform: uppercase; }
+    th:first-child, td:first-child { width: 52px; text-align: center; color: var(--accent); font-weight: 700; }
+    td:nth-child(2), td:nth-child(3) { width: calc((100% - 52px) / 2); }
+    details { padding: 12px 16px 16px; }
+    summary { cursor: pointer; color: var(--accent); font-weight: 700; }
+    pre { white-space: pre-wrap; overflow-wrap: anywhere; color: var(--muted); font-size: .9rem; }
+    @media (max-width: 760px) {
+      .learning-app { display: block; }
+      .side-rail {
+        position: sticky;
+        z-index: 10;
+        top: 0;
+        height: auto;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto;
+        padding: 10px 12px;
+      }
+      .chapter-rail { display: flex; overflow-x: auto; }
+      .chapter-rail a { min-width: 44px; }
+      .rail-tools { display: none; }
+      .lesson-workspace { padding: 24px 14px 48px; }
+      .lesson-header { grid-template-columns: 1fr; }
+      .lesson-controls { align-items: stretch; flex-direction: column; }
+      .scene-pager { justify-content: space-between; }
+      .listen-row { grid-template-columns: 1fr; gap: 12px; }
+      .snippet-heading { align-items: flex-start; }
+      .new-pill { display: none; }
+      article { overflow-x: auto; }
+      article header { position: sticky; left: 0; min-width: 760px; }
+      table { min-width: 760px; }
+      .snippet-card { overflow-x: visible; }
+      .snippet-card img { min-width: 0; }
+      .speak-btn { flex: 1 1 100%; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    
+      <div class="learning-app" data-scene-total="60">
+        
+      <aside class="side-rail" aria-label="Chapter navigation">
+        <a class="rail-logo" href="../conversations-page-by-page.html" aria-label="All chapters">🌷</a>
+        <nav class="chapter-rail" aria-label="Chapters">
+          <a class="" href="chapter-01.html" aria-label="Chapter 1">1</a><a class="" href="chapter-02.html" aria-label="Chapter 2">2</a><a class="" href="chapter-03.html" aria-label="Chapter 3">3</a><a class="" href="chapter-04.html" aria-label="Chapter 4">4</a><a class="" href="chapter-05.html" aria-label="Chapter 5">5</a><a class="" href="chapter-06.html" aria-label="Chapter 6">6</a><a class="" href="chapter-07.html" aria-label="Chapter 7">7</a><a class="" href="chapter-08.html" aria-label="Chapter 8">8</a><a class="" href="chapter-09.html" aria-label="Chapter 9">9</a><a class="" href="chapter-10.html" aria-label="Chapter 10">10</a><a class="" href="chapter-11.html" aria-label="Chapter 11">11</a><a class="" href="chapter-12.html" aria-label="Chapter 12">12</a><a class="" href="chapter-13.html" aria-label="Chapter 13">13</a><a class="" href="chapter-14.html" aria-label="Chapter 14">14</a><a class="active" href="chapter-15.html" aria-label="Chapter 15">15</a><a class="" href="chapter-16.html" aria-label="Chapter 16">16</a><a class="" href="chapter-17.html" aria-label="Chapter 17">17</a><a class="" href="chapter-18.html" aria-label="Chapter 18">18</a><a class="" href="chapter-19.html" aria-label="Chapter 19">19</a><a class="" href="chapter-20.html" aria-label="Chapter 20">20</a><a class="" href="chapter-21.html" aria-label="Chapter 21">21</a><a class="" href="chapter-22.html" aria-label="Chapter 22">22</a><a class="" href="chapter-23.html" aria-label="Chapter 23">23</a><a class="" href="chapter-24.html" aria-label="Chapter 24">24</a><a class="" href="chapter-25.html" aria-label="Chapter 25">25</a><a class="" href="chapter-26.html" aria-label="Chapter 26">26</a><a class="" href="chapter-27.html" aria-label="Chapter 27">27</a><a class="" href="chapter-28.html" aria-label="Chapter 28">28</a><a class="" href="chapter-29.html" aria-label="Chapter 29">29</a><a class="" href="chapter-30.html" aria-label="Chapter 30">30</a><a class="" href="chapter-31.html" aria-label="Chapter 31">31</a>
+        </nav>
+        <div class="rail-tools" aria-label="Learning tools">
+          <span class="rail-tool"><span>📖</span><span>Review</span></span>
+          <span class="rail-tool"><span>▥</span><span>Progress</span></span>
+          <span class="rail-tool"><span>▣</span><span>Vocabulary</span></span>
+          <span class="rail-tool"><span class="avatar">👦</span><span>Kid Mode</span></span>
+          <span class="rail-tool"><span>?</span><span>Help</span></span>
+        </div>
+      </aside>
+    
+        <div class="lesson-workspace">
+          <header class="lesson-header">
+            <div>
+              <p class="lesson-kicker">Chapter 15</p>
+              <h1 class="lesson-title">Chapter 15 Visual Practice</h1>
+              <p class="lesson-subtitle">Renting, shopping, college, languages. Scroll scene by scene; each image shows one sentence from this chapter.</p>
+            </div>
+            <div class="progress-card">
+              <div class="progress-icon">📖</div>
+              <div>
+                <div class="progress-label"><span>Chapter Progress</span><span class="progress-count"><span data-current-scene>1</span> / 60 scenes</span></div>
+                <div class="progress-track"><div class="progress-fill" data-progress-fill style="--progress: 1.67%"></div></div>
+              </div>
+            </div>
+          </header>
+          <div class="lesson-controls">
+            
+      <label class="voice-toolbar">
+        Kannada voice
+        <select data-kannada-speaker>
+          <option value="priya">Priya</option>
+          <option value="shubh">Shubh</option>
+          <option value="aditya">Aditya</option>
+          <option value="ritu">Ritu</option>
+          <option value="neha">Neha</option>
+          <option value="rahul">Rahul</option>
+          <option value="pooja">Pooja</option>
+          <option value="rohan">Rohan</option>
+          <option value="kavya">Kavya</option>
+          <option value="amit">Amit</option>
+        </select>
+        <span class="voice-wave" aria-hidden="true">⌁</span>
+      </label>
+    
+            <div class="scene-pager">
+              <button class="scene-arrow prev" type="button" data-scene-prev aria-label="Previous scene">←</button>
+              <span class="scene-pill">Scene <span data-current-scene>1</span> of 60</span>
+              <button class="scene-arrow next" type="button" data-scene-next aria-label="Next scene">→</button>
+            </div>
+          </div>
+          
+      <div class="visual-practice">
+        <div class="snippet-stack">
+      <article class="snippet-card" data-scene-card data-scene-index="1">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation 1 · At Home</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>Good morning, what do you want ?</strong>
+            <div class="kannada-script">ಶುಭೋದಯ, ನಿಮಗೆ ಏನು ಬೇಕು?</div>
+            <span>Shubhodaya, nimage enu beku?</span>
+          </div>
+          <div class="original-roman">Original PDF: namaskaara, nimge eenu becku ?</div>
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Good morning, what do you want ?"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಶುಭೋದಯ, ನಿಮಗೆ ಏನು ಬೇಕು?"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Shubhodaya, nimage enu beku?"><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-1-01.svg" alt="Good morning, what do you want ?" loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="2">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation 1 · At Home</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>I want a house.</strong>
+            <div class="kannada-script">ನನಗೆ ಒಂದು ಮನೆ ಬೇಕು.</div>
+            <span>Nanage ondu mane beku.</span>
+          </div>
+          <div class="original-roman">Original PDF: nange ondu mane beeku.</div>
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="I want a house."><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನನಗೆ ಒಂದು ಮನೆ ಬೇಕು."><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Nanage ondu mane beku."><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-1-02.svg" alt="I want a house." loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="3">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation 1 · At Home</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>Will a two room house do ?</strong>
+            <div class="kannada-script">ಎರಡು ಕೋಣೆಗಳ ಮನೆ ಸಾಕೇ?</div>
+            <span>Eradu kothadigala mane saake?</span>
+          </div>
+          <div class="original-roman">Original PDF: nimge eratfu ruum mane saakaa ?</div>
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Will a two room house do ?"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಎರಡು ಕೋಣೆಗಳ ಮನೆ ಸಾಕೇ?"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Eradu kothadigala mane saake?"><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-1-03.svg" alt="Will a two room house do ?" loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="4">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation 1 · At Home</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>Do you want a still bigger one ?</strong>
+            <div class="kannada-script">ಇನ್ನು ದೊಡ್ಡದಾದದ್ದು ಬೇಕೆ?</div>
+            <span>Innu doddadaddu bek?</span>
+          </div>
+          <div class="original-roman">Original PDF: innuu dodda mane beekaa ?</div>
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Do you want a still bigger one ?"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಇನ್ನು ದೊಡ್ಡದಾದದ್ದು ಬೇಕೆ?"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Innu doddadaddu bek?"><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-1-04.svg" alt="Do you want a still bigger one ?" loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="5">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation 1 · At Home</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>Two rooms are enough for me. I don’t</strong>
+            <div class="kannada-script">ನನಗೆ ಎರಡು ಕೊಠಡಿಗಳು ಸಾಕು. ನನಗೆ ತಿಳಿದಿಲ್ಲ.</div>
+            <span>Nanage eradu kothadigalu saakaguttave. Nanage tilidilla.</span>
+          </div>
+          <div class="original-roman">Original PDF: nange enju mumu saaku, tumba</div>
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Two rooms are enough for me. I don’t"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನನಗೆ ಎರಡು ಕೊಠಡಿಗಳು ಸಾಕು. ನನಗೆ ತಿಳಿದಿಲ್ಲ."><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Nanage eradu kothadigalu saakaguttave. Nanage tilidilla."><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-1-05.svg" alt="Two rooms are enough for me. I don’t" loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="6">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation 1 · At Home</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>want too big a house.</strong>
+            <div class="kannada-script">ನನಗೆ ತುಂಬಾ ದೊಡ್ಡ ಮನೆ ಬೇಕು.</div>
+            <span>Nanage tumba dodda mane beku.</span>
+          </div>
+          <div class="original-roman">Original PDF: dod&lt;Ja mane beetja.</div>
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="want too big a house."><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನನಗೆ ತುಂಬಾ ದೊಡ್ಡ ಮನೆ ಬೇಕು."><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Nanage tumba dodda mane beku."><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-1-06.svg" alt="want too big a house." loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="7">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation 1 · At Home</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>Are you single ?</strong>
+            <div class="kannada-script">ನೀವು ಒಂಟಿಯೇ?</div>
+            <span>Neevu onteeya?</span>
+          </div>
+          <div class="original-roman">Original PDF: niivu obbreenaa ?</div>
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Are you single ?"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನೀವು ಒಂಟಿಯೇ?"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Neevu onteeya?"><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-1-07.svg" alt="Are you single ?" loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="8">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation 1 · At Home</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>No, we are four. What is the rent ?</strong>
+            <div class="kannada-script">ಇಲ್ಲ, ನಮ್ಮಲ್ಲಿ ನಾಲ್ಕು ಜನ ಇದ್ದೇವೆ. ಬಾಡಿಗೆ ಎಷ್ಟು?</div>
+            <span>Illa, nammalli naalku jana iddaave. Bedige eshtu?</span>
+          </div>
+          <div class="original-roman">Original PDF: Alla, naavu naak jana, e§tu</div>
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="No, we are four. What is the rent ?"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಇಲ್ಲ, ನಮ್ಮಲ್ಲಿ ನಾಲ್ಕು ಜನ ಇದ್ದೇವೆ. ಬಾಡಿಗೆ ಎಷ್ಟು?"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Illa, nammalli naalku jana iddaave. Bedige eshtu?"><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-1-08.svg" alt="No, we are four. What is the rent ?" loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="9">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation 1 · At Home</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>Three hundred rupees per month.</strong>
+            <div class="kannada-script">ಮೂನೂರು ರೂಪಾಯಿಗಳು.</div>
+            <span>Munnuru roopaayigalu.</span>
+          </div>
+          <div class="original-roman">Original PDF: baa&lt;Jge ?</div>
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Three hundred rupees per month."><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಮೂನೂರು ರೂಪಾಯಿಗಳು."><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Munnuru roopaayigalu."><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-1-09.svg" alt="Three hundred rupees per month." loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="10">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation 1 · At Home</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>Do you want an advance ?</strong>
+            <div class="kannada-script">ನಿಮಗೆ ಮುಂಗಡವಾಗಿ ಬೇಕೇ?</div>
+            <span>Nimage mungadavaagi beke?</span>
+          </div>
+          <div class="original-roman">Original PDF: tinglige muunuurn ruupaayi.</div>
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Do you want an advance ?"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನಿಮಗೆ ಮುಂಗಡವಾಗಿ ಬೇಕೇ?"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Nimage mungadavaagi beke?"><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-1-10.svg" alt="Do you want an advance ?" loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="11">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation 1 · At Home</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>Dosen’t matter. Don’t require heavy</strong>
+            <div class="kannada-script">ಪರವಾಗಿಲ್ಲ. ಭಾರವಾದ ಅಗತ್ಯವಿಲ್ಲ</div>
+            <span>Paravagilla. Bhaaravaada agatyavilla</span>
+          </div>
+          <div class="original-roman">Original PDF: atjvansu beekaa ?</div>
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Dosen’t matter. Don’t require heavy"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಪರವಾಗಿಲ್ಲ. ಭಾರವಾದ ಅಗತ್ಯವಿಲ್ಲ"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Paravagilla. Bhaaravaada agatyavilla"><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-1-11.svg" alt="Dosen’t matter. Don’t require heavy" loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="12">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation 1 · At Home</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>advance.</strong>
+            <div class="kannada-script">ಮೊದಲೇ ಕೊಟ್ಟ.</div>
+            <span>Munchitavaagi kotta.</span>
+          </div>
+          <div class="original-roman">Original PDF: parvaagilla, a$teenu jaasti bee^a.</div>
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="advance."><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಮೊದಲೇ ಕೊಟ್ಟ."><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Munchitavaagi kotta."><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-1-12.svg" alt="advance." loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="13">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation 2 · Shopping and Food</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>Please come, sir. What do you want ?</strong>
+            <div class="kannada-script">ದಯವಿಟ್ಟು ಬನ್ನಿ ಸರ್. ನಿಮಗೆ ಏನು ಬೇಕು?</div>
+            <span>Dayavittu banni sir. Nimage enu beku?</span>
+          </div>
+          <div class="original-roman">Original PDF: banni saar, eenu beeku ?</div>
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Please come, sir. What do you want ?"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ದಯವಿಟ್ಟು ಬನ್ನಿ ಸರ್. ನಿಮಗೆ ಏನು ಬೇಕು?"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Dayavittu banni sir. Nimage enu beku?"><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-2-01.svg" alt="Please come, sir. What do you want ?" loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="14">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation 2 · Shopping and Food</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>I want vegetables. What all do you</strong>
+            <div class="kannada-script">ನನಗೆ ತರಕಾರಿ ಬೇಕು. ನೀವು ಏನು ಮಾಡುತ್ತೀರಿ?</div>
+            <span>Nanage tarakaari beku. Neevu enu maadutteeera?</span>
+          </div>
+          <div class="original-roman">Original PDF: tarkaari beeku. eeneen ide ?</div>
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="I want vegetables. What all do you"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನನಗೆ ತರಕಾರಿ ಬೇಕು. ನೀವು ಏನು ಮಾಡುತ್ತೀರಿ?"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Nanage tarakaari beku. Neevu enu maadutteeera?"><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-2-02.svg" alt="I want vegetables. What all do you" loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="15">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation 2 · Shopping and Food</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>have ?</strong>
+            <div class="kannada-script">ಹೊಂದಿಕೊಂಡಿರಾ?</div>
+            <span>Hondiruttaare?</span>
+          </div>
+          <div class="original-roman">Original PDF: ellaa ide. badane kaayi, huruli</div>
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="have ?"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಹೊಂದಿಕೊಂಡಿರಾ?"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Hondiruttaare?"><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-2-03.svg" alt="have ?" loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="16">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation 2 · Shopping and Food</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>I have all. brinjals, beans, khush khush,</strong>
+            <div class="kannada-script">ನನ್ನ ಬಳಿ ಇದೆ. ಬ್ರೊಕೊಲಿ, ಬೀನ್ಸ್, ಖುಷ್ ಖುಷ್</div>
+            <span>Nanna hattira ide. Broccoli, beans, khushkhush</span>
+          </div>
+          <div class="original-roman">Original PDF: kaayi, siime badane kaayi, don</div>
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="I have all. brinjals, beans, khush khush,"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನನ್ನ ಬಳಿ ಇದೆ. ಬ್ರೊಕೊಲಿ, ಬೀನ್ಸ್, ಖುಷ್ ಖುಷ್"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Nanna hattira ide. Broccoli, beans, khushkhush"><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-2-04.svg" alt="I have all. brinjals, beans, khush khush," loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="17">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation 2 · Shopping and Food</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>big chillies, etc.</strong>
+            <div class="kannada-script">ದೊಡ್ಡ ಮೆಣಸಿನಕಾಯಿಗಳು, ಇತ್ಯಾದಿ.</div>
+            <span>Dodda menasinakayigalu, ityaadi.</span>
+          </div>
+          <div class="original-roman">Original PDF: meoisina kaayi ide.</div>
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="big chillies, etc."><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ದೊಡ್ಡ ಮೆಣಸಿನಕಾಯಿಗಳು, ಇತ್ಯಾದಿ."><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Dodda menasinakayigalu, ityaadi."><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-2-05.svg" alt="big chillies, etc." loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="18">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation 2 · Shopping and Food</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>Are the brinjals good ?</strong>
+            <div class="kannada-script">ಆ ಬೆಳ್ಳುಳ್ಳಿ ಚೆನ್ನಾಗಿರುತ್ತದೆಯೇ?</div>
+            <span>Aa bellulli chennaagiruttadeye?</span>
+          </div>
+          <div class="original-roman">Original PDF: badadekaayi cennagideyaa ?</div>
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Are the brinjals good ?"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಆ ಬೆಳ್ಳುಳ್ಳಿ ಚೆನ್ನಾಗಿರುತ್ತದೆಯೇ?"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Aa bellulli chennaagiruttadeye?"><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-2-06.svg" alt="Are the brinjals good ?" loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="19">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation 3 · Office and Work</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>Do you know the Government College ?</strong>
+            <div class="kannada-script">ನಿಮಗೆ ಸರ್ಕಾರಿ ಕಾಲೇಜು ಗೊತ್ತೇ?</div>
+            <span>Nimage sarkari collegena gottideya?</span>
+          </div>
+          <div class="original-roman">Original PDF: nimge gavarment kaaleeju gottaa ?</div>
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Do you know the Government College ?"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನಿಮಗೆ ಸರ್ಕಾರಿ ಕಾಲೇಜು ಗೊತ್ತೇ?"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Nimage sarkari collegena gottideya?"><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-3-01.svg" alt="Do you know the Government College ?" loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="20">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation 3 · Office and Work</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>Yes. Do you have any work there ?</strong>
+            <div class="kannada-script">ಹೌದು. ಅಲ್ಲಿ ನಿಮಗೆ ಏನಾದರೂ ಕೆಲಸ ಇದೆಯೇ?</div>
+            <span>Howdu. Alli nimage enaadaru kelasa ideye?</span>
+          </div>
+          <div class="original-roman">Original PDF: gottu. alii nimge kelsa ideyaa?</div>
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Yes. Do you have any work there ?"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಹೌದು. ಅಲ್ಲಿ ನಿಮಗೆ ಏನಾದರೂ ಕೆಲಸ ಇದೆಯೇ?"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Howdu. Alli nimage enaadaru kelasa ideye?"><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-3-02.svg" alt="Yes. Do you have any work there ?" loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="21">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation 3 · Office and Work</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>Yes. Do you know the Principal ?</strong>
+            <div class="kannada-script">ಹೌದು. ನಿಮಗೆ ಪ್ರಾಂಶುಪಾಲರಿಗೆ ಗೊತ್ತೇ?</div>
+            <span>Howdu. Nimage praanshupaalari-ge gottideya?</span>
+          </div>
+          <div class="original-roman">Original PDF: haudu, nimge prinsipaatru gottaa ?</div>
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Yes. Do you know the Principal ?"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಹೌದು. ನಿಮಗೆ ಪ್ರಾಂಶುಪಾಲರಿಗೆ ಗೊತ್ತೇ?"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Howdu. Nimage praanshupaalari-ge gottideya?"><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-3-03.svg" alt="Yes. Do you know the Principal ?" loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="22">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation 3 · Office and Work</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>I don’t know, why ?</strong>
+            <div class="kannada-script">ಯಾಕೆ ಎಂದು ನನಗೆ ತಿಳಿದಿಲ್ಲ.</div>
+            <span>Yaake endu nanage tilidilla.</span>
+          </div>
+          <div class="original-roman">Original PDF: gottilla, yaoke ?</div>
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="I don’t know, why ?"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಯಾಕೆ ಎಂದು ನನಗೆ ತಿಳಿದಿಲ್ಲ."><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Yaake endu nanage tilidilla."><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-3-04.svg" alt="I don’t know, why ?" loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="23">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation 3 · Office and Work</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>I want a seat for my boy there.</strong>
+            <div class="kannada-script">ನನಗೆ ನನ್ನ ಮಗನಿಗಾಗಿ ಆಸನ ಬೇಕು.</div>
+            <span>Nanage nanna maganigaagi asana beku.</span>
+          </div>
+          <div class="original-roman">Original PDF: alii nam bu^ugange ondu siitu</div>
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="I want a seat for my boy there."><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನನಗೆ ನನ್ನ ಮಗನಿಗಾಗಿ ಆಸನ ಬೇಕು."><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Nanage nanna maganigaagi asana beku."><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-3-05.svg" alt="I want a seat for my boy there." loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="24">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation 3 · Shopping and Food</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>If so, I know a clerk there.</strong>
+            <div class="kannada-script">ಹಾಗಾದರೆ, ನನಗೆ ಅಲ್ಲಿ ಒಬ್ಬ ಗುಮಾಸ್ತರು ತಿಳಿದಿದ್ದಾರೆ.</div>
+            <span>Hagaadare, nanage alli obba gumaastaru tilididdaare.</span>
+          </div>
+          <div class="original-roman">Original PDF: beeku.</div>
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="If so, I know a clerk there."><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಹಾಗಾದರೆ, ನನಗೆ ಅಲ್ಲಿ ಒಬ್ಬ ಗುಮಾಸ್ತರು ತಿಳಿದಿದ್ದಾರೆ."><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Hagaadare, nanage alli obba gumaastaru tilididdaare."><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-3-06.svg" alt="If so, I know a clerk there." loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="25">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation 3 · Office and Work</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>English line needs cleanup</strong>
+            
+            <span>haagaadaree alii nange k)aark</span>
+          </div>
+          
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="English line needs cleanup"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="haagaadaree alii nange k)aark"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="haagaadaree alii nange k)aark"><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-3-07.svg" alt="English line needs cleanup" loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="26">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation 3 · Office and Work</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>English line needs cleanup</strong>
+            
+            <span>obbru gottu.</span>
+          </div>
+          
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="English line needs cleanup"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="obbru gottu."><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="obbru gottu."><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-3-08.svg" alt="English line needs cleanup" loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="27">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation Continuation · Shopping and Food</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>What are all the subjects available there.7</strong>
+            <div class="kannada-script">ಅಲ್ಲಿ ಯಾವ ಯಾವ ವಿಷಯಗಳು ಲಭ್ಯವಿವೆ?7</div>
+            <span>Alli yaava yaava vishayagalu labhyavive?7</span>
+          </div>
+          <div class="original-roman">Original PDF: alii yaav yaav sub jectu idc ?</div>
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="What are all the subjects available there.7"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಅಲ್ಲಿ ಯಾವ ಯಾವ ವಿಷಯಗಳು ಲಭ್ಯವಿವೆ?7"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Alli yaava yaava vishayagalu labhyavive?7"><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-continuation-01.svg" alt="What are all the subjects available there.7" loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="28">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation Continuation · Shopping and Food</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>All are available. What group does your</strong>
+            <div class="kannada-script">ಎಲ್ಲವೂ ಲಭ್ಯವಿದೆ. ನಿಮ್ಮ</div>
+            <span>Ellavoo labhyavide. Nimma</span>
+          </div>
+          <div class="original-roman">Original PDF: cl la ive. nim hu&lt;Jugange yaav</div>
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="All are available. What group does your"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಎಲ್ಲವೂ ಲಭ್ಯವಿದೆ. ನಿಮ್ಮ"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Ellavoo labhyavide. Nimma"><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-continuation-02.svg" alt="All are available. What group does your" loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="29">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation Continuation · Shopping and Food</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>boy want ?</strong>
+            <div class="kannada-script">ಹುಡುಗನಿಗೆ ಬೇಕಾ?</div>
+            <span>Hudugige beka?</span>
+          </div>
+          <div class="original-roman">Original PDF: gruup beeku ?</div>
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="boy want ?"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಹುಡುಗನಿಗೆ ಬೇಕಾ?"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Hudugige beka?"><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-continuation-03.svg" alt="boy want ?" loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="30">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation Continuation · Shopping and Food</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>He wants the science group.</strong>
+            <div class="kannada-script">ಅವರಿಗೆ ವಿಜ್ಞಾನದ ತರಗತಿ ಬೇಕು.</div>
+            <span>Avarige vijnanada klaasati beku.</span>
+          </div>
+          <div class="original-roman">Original PDF: avangc sainsu gruupu beeku</div>
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="He wants the science group."><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಅವರಿಗೆ ವಿಜ್ಞಾನದ ತರಗತಿ ಬೇಕು."><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Avarige vijnanada klaasati beku."><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-continuation-04.svg" alt="He wants the science group." loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="31">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation Continuation · Shopping and Food</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>Does he not want Commerce ?</strong>
+            <div class="kannada-script">ಅವನಿಗೆ ವಾಣಿಜ್ಯವೇ ಬೇಡವೇ?</div>
+            <span>Avanige vyaapaave bedave?</span>
+          </div>
+          <div class="original-roman">Original PDF: kaamarsu beedvaa ?</div>
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Does he not want Commerce ?"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಅವನಿಗೆ ವಾಣಿಜ್ಯವೇ ಬೇಡವೇ?"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Avanige vyaapaave bedave?"><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-continuation-05.svg" alt="Does he not want Commerce ?" loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="32">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation Continuation · Shopping and Food</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>No, he doesn’t like Commerce, he likes</strong>
+            <div class="kannada-script">ಇಲ್ಲ, ಅವನಿಗೆ ವಾಣಿಜ್ಯ ಇಷ್ಟವಿಲ್ಲ, ಅವನಿಗೆ</div>
+            <span>Illa, avanige vyaapaara ishtavilla, avanige</span>
+          </div>
+          <div class="original-roman">Original PDF: beeda, avange kaamarsu i§tg ilia,</div>
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="No, he doesn’t like Commerce, he likes"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಇಲ್ಲ, ಅವನಿಗೆ ವಾಣಿಜ್ಯ ಇಷ್ಟವಿಲ್ಲ, ಅವನಿಗೆ"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Illa, avanige vyaapaara ishtavilla, avanige"><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-continuation-06.svg" alt="No, he doesn’t like Commerce, he likes" loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="33">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation Continuation · Shopping and Food</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>science too much.</strong>
+            <div class="kannada-script">ವಿಜ್ಞಾನದ ಮೇಲೆ ಅತಿಯಾದ ಅವಲಂಬನೆ.</div>
+            <span>Vijnanada mele atiyaada avalambek.</span>
+          </div>
+          <div class="original-roman">Original PDF: sainsee tumba i§ta.</div>
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="science too much."><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ವಿಜ್ಞಾನದ ಮೇಲೆ ಅತಿಯಾದ ಅವಲಂಬನೆ."><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Vijnanada mele atiyaada avalambek."><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-continuation-07.svg" alt="science too much." loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="34">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation Continuation · Shopping and Food</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>If he wants science, does be like mathe¬</strong>
+            <div class="kannada-script">ಅವನಿಗೆ ವಿಜ್ಞಾನ ಬೇಕಿದ್ದರೆ, ನೀನು ಗಣಿತದಂತಿರಬೇಕು</div>
+            <span>Avanige vijnya bekaadare, neenu ganitadantirabeku</span>
+          </div>
+          <div class="original-roman">Original PDF: sainsu beekaadre avange ganita</div>
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="If he wants science, does be like mathe¬"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಅವನಿಗೆ ವಿಜ್ಞಾನ ಬೇಕಿದ್ದರೆ, ನೀನು ಗಣಿತದಂತಿರಬೇಕು"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Avanige vijnya bekaadare, neenu ganitadantirabeku"><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-continuation-08.svg" alt="If he wants science, does be like mathe¬" loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="35">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation Continuation · Shopping and Food</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>matics ?</strong>
+            <div class="kannada-script">ಗಣಕಯಂತ್ರಗಳು?</div>
+            <span>Ganakayantragalu?</span>
+          </div>
+          <div class="original-roman">Original PDF: i§taanaa ?</div>
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="matics ?"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಗಣಕಯಂತ್ರಗಳು?"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Ganakayantragalu?"><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-continuation-09.svg" alt="matics ?" loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="36">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation Continuation · Shopping and Food</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>Yes. he is mad after algebra and geo¬</strong>
+            <div class="kannada-script">ಹೌದು. ಅವನು ಬೀಜಗಣಿತ ಮತ್ತು ಭೂಗೋಳಶಾಸ್ತ್ರದಿಂದ ಹುಚ್ಚನಾಗಿದ್ದಾನೆ</div>
+            <span>Howdu. Avanu beejaganita mattu bhoogola shaastradinda hucchaagiddaane</span>
+          </div>
+          <div class="original-roman">Original PDF: haudu, avange aal jiibra.</div>
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Yes. he is mad after algebra and geo¬"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಹೌದು. ಅವನು ಬೀಜಗಣಿತ ಮತ್ತು ಭೂಗೋಳಶಾಸ್ತ್ರದಿಂದ ಹುಚ್ಚನಾಗಿದ್ದಾನೆ"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Howdu. Avanu beejaganita mattu bhoogola shaastradinda hucchaagiddaane"><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-continuation-10.svg" alt="Yes. he is mad after algebra and geo¬" loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="37">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation Continuation · Shopping and Food</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>metry.</strong>
+            <div class="kannada-script">ಅಳತೆ</div>
+            <span>Alate</span>
+          </div>
+          <div class="original-roman">Original PDF: jaamitri andre huccu.</div>
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="metry."><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಅಳತೆ"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Alate"><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-continuation-11.svg" alt="metry." loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="38">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation Continuation · Shopping and Food</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>If so, it is o k.</strong>
+            <div class="kannada-script">ಹಾಗಾದರೆ, ಅದು ಕೆ.</div>
+            <span>Hagaadare, adu K.</span>
+          </div>
+          <div class="original-roman">Original PDF: B • haagaadre parvaagilla.</div>
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="If so, it is o k."><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಹಾಗಾದರೆ, ಅದು ಕೆ."><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Hagaadare, adu K."><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-continuation-12.svg" alt="If so, it is o k." loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="39">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation 4 · At Home</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>Now where did you come from ?</strong>
+            <div class="kannada-script">ಈಗ ನೀವು ಎಲ್ಲಿಂದ ಬಂದಿರಿ?</div>
+            <span>Eega neevu elliinda bandhiri?</span>
+          </div>
+          <div class="original-roman">Original PDF: niivu iigaellinda bandri ?</div>
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Now where did you come from ?"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಈಗ ನೀವು ಎಲ್ಲಿಂದ ಬಂದಿರಿ?"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Eega neevu elliinda bandhiri?"><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-4-01.svg" alt="Now where did you come from ?" loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="40">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation 4 · At Home</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>From Tanjavur.</strong>
+            <div class="kannada-script">ತಂಜಾವೂರಿನಿಂದ.</div>
+            <span>Tanjavur-ninda.</span>
+          </div>
+          <div class="original-roman">Original PDF: tanjaavuurinda.</div>
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="From Tanjavur."><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ತಂಜಾವೂರಿನಿಂದ."><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Tanjavur-ninda."><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-4-02.svg" alt="From Tanjavur." loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="41">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation 4 · At Home</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>Do you know Tamil ?</strong>
+            <div class="kannada-script">ನಿಮಗೆ ತಮಿಳು ಬರುತ್ತದೆಯೆ?</div>
+            <span>Nimage Tamil baruttadeye?</span>
+          </div>
+          <div class="original-roman">Original PDF: nimge tamiju gotta ?</div>
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Do you know Tamil ?"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನಿಮಗೆ ತಮಿಳು ಬರುತ್ತದೆಯೆ?"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Nimage Tamil baruttadeye?"><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-4-03.svg" alt="Do you know Tamil ?" loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="42">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation 4 · At Home</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>I know very well, that is my mother</strong>
+            <div class="kannada-script">ನನಗೆ ಚೆನ್ನಾಗಿ ತಿಳಿದಿದೆ, ಅದು ನನ್ನ ತಾಯಿ.</div>
+            <span>Nanage chennaagi tilidide, adu nanna taayi.</span>
+          </div>
+          <div class="original-roman">Original PDF: cennagi gottu. adee nan</div>
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="I know very well, that is my mother"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನನಗೆ ಚೆನ್ನಾಗಿ ತಿಳಿದಿದೆ, ಅದು ನನ್ನ ತಾಯಿ."><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Nanage chennaagi tilidide, adu nanna taayi."><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-4-04.svg" alt="I know very well, that is my mother" loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="43">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation 4 · At Home</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>tongue.</strong>
+            <div class="kannada-script">ನಾಲಿಗೆ.</div>
+            <span>Naalige.</span>
+          </div>
+          <div class="original-roman">Original PDF: matrubhaa§e.</div>
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="tongue."><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನಾಲಿಗೆ."><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Naalige."><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-4-05.svg" alt="tongue." loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="44">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation 4 · Learning and Class</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>Don&#x27;t know you Kannada?</strong>
+            <div class="kannada-script">ನಿಮಗೆ ಕನ್ನಡ ತಿಳಿದಿಲ್ಲವೇ?</div>
+            <span>Nimage Kannada tilidillave?</span>
+          </div>
+          <div class="original-roman">Original PDF: kanna&lt;ja gottilvaa ?</div>
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Don&#x27;t know you Kannada?"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನಿಮಗೆ ಕನ್ನಡ ತಿಳಿದಿಲ್ಲವೇ?"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Nimage Kannada tilidillave?"><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-4-06.svg" alt="Don&#x27;t know you Kannada?" loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="45">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation 4 · At Home</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>Not even a bit.</strong>
+            <div class="kannada-script">ಒಂದಿಷ್ಟು ಕೂಡ ಇಲ್ಲ.</div>
+            <span>Ondi-nchu kooda illa.</span>
+          </div>
+          <div class="original-roman">Original PDF: solpa kuu&lt;Ja gottilla. .</div>
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Not even a bit."><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಒಂದಿಷ್ಟು ಕೂಡ ಇಲ್ಲ."><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Ondi-nchu kooda illa."><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-4-07.svg" alt="Not even a bit." loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="46">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation 4 · At Home</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>What other language do you know ?</strong>
+            <div class="kannada-script">ನಿಮಗೆ ಇನ್ನೇನು ಭಾಷೆಗಳು ತಿಳಿದಿವೆ?</div>
+            <span>Nimage innavudaadaru bhaashe tilidideye?</span>
+          </div>
+          <div class="original-roman">Original PDF: nimge beere yaav bhaa§e gottu ?</div>
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="What other language do you know ?"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನಿಮಗೆ ಇನ್ನೇನು ಭಾಷೆಗಳು ತಿಳಿದಿವೆ?"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Nimage innavudaadaru bhaashe tilidideye?"><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-4-08.svg" alt="What other language do you know ?" loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="47">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation 4 · At Home</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>I know English and a little Telugu</strong>
+            <div class="kannada-script">ನನಗೆ ಇಂಗ್ಲಿಷ್ ಮತ್ತು ಸ್ವಲ್ಪ ತೆಲುಗು ಭಾಷೆ ತಿಳಿದಿದೆ.</div>
+            <span>Nanage English mattu swalpa Telugu bhaashe tilidide.</span>
+          </div>
+          <div class="original-roman">Original PDF: ingli§u gottu-solpa teluguunuu</div>
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="I know English and a little Telugu"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನನಗೆ ಇಂಗ್ಲಿಷ್ ಮತ್ತು ಸ್ವಲ್ಪ ತೆಲುಗು ಭಾಷೆ ತಿಳಿದಿದೆ."><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Nanage English mattu swalpa Telugu bhaashe tilidide."><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-4-09.svg" alt="I know English and a little Telugu" loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="48">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation 4 · At Home</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>too.</strong>
+            <div class="kannada-script">ತುಂಬಾ.</div>
+            <span>Tumba.</span>
+          </div>
+          <div class="original-roman">Original PDF: gottu.</div>
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="too."><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ತುಂಬಾ."><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Tumba."><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-4-10.svg" alt="too." loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="49">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation 4 · At Home</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>Do you like music ?</strong>
+            <div class="kannada-script">ನಿಮಗೆ ಸಂಗೀತ ಇಷ್ಟವೇ?</div>
+            <span>Nimage sangeeta ishte?</span>
+          </div>
+          <div class="original-roman">Original PDF: nimge sangiita i§taanaa?</div>
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Do you like music ?"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನಿಮಗೆ ಸಂಗೀತ ಇಷ್ಟವೇ?"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Nimage sangeeta ishte?"><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-4-11.svg" alt="Do you like music ?" loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="50">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation 4 · At Home</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>Who does not like music ? I also</strong>
+            <div class="kannada-script">ಸಂಗೀತವನ್ನು ಯಾರು ಇಷ್ಟಪಡುವುದಿಲ್ಲ? ನಾನೂ</div>
+            <span>Sangeetavannu yaaru ishtapaduvudilla? Naanu</span>
+          </div>
+          <div class="original-roman">Original PDF: sangiita yaarigh i§to ilia !</div>
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Who does not like music ? I also"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಸಂಗೀತವನ್ನು ಯಾರು ಇಷ್ಟಪಡುವುದಿಲ್ಲ? ನಾನೂ"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Sangeetavannu yaaru ishtapaduvudilla? Naanu"><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-4-12.svg" alt="Who does not like music ? I also" loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="51">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation 4 · At Home</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>like it. I play on the Veena.</strong>
+            <div class="kannada-script">ಇಷ್ಟವಾಯಿತು. ನಾನು ವೀಣೆ ನುಡಿಸುತ್ತೇನೆ.</div>
+            <span>Ishtavaayitu. Naanu veene nudisuttene.</span>
+          </div>
+          <div class="original-roman">Original PDF: nanguu tumba i$ta.</div>
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="like it. I play on the Veena."><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಇಷ್ಟವಾಯಿತು. ನಾನು ವೀಣೆ ನುಡಿಸುತ್ತೇನೆ."><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Ishtavaayitu. Naanu veene nudisuttene."><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-4-13.svg" alt="like it. I play on the Veena." loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="52">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation 4 · At Home</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>Don’t you like Violin ?</strong>
+            <div class="kannada-script">ನಿಮಗೆ ಪಿಟೀಲು ಇಷ್ಟವಿಲ್ಲವೇ?</div>
+            <span>Nimage pitiilu ishtavillave?</span>
+          </div>
+          <div class="original-roman">Original PDF: viine nudistiini,</div>
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Don’t you like Violin ?"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನಿಮಗೆ ಪಿಟೀಲು ಇಷ್ಟವಿಲ್ಲವೇ?"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Nimage pitiilu ishtavillave?"><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-4-14.svg" alt="Don’t you like Violin ?" loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="53">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation 4 · At Home</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>I like it but I am crazy about the Veena</strong>
+            <div class="kannada-script">ನನಗೆ ಅದು ಇಷ್ಟ, ಆದರೆ ವೀಣೆ ನನಗೆ ತುಂಬಾ ಇಷ್ಟ.</div>
+            <span>Nanage adu ishta, aadare veene nanage tumba ishta.</span>
+          </div>
+          <div class="original-roman">Original PDF: pitiilu i^ta ilvaa ?</div>
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="I like it but I am crazy about the Veena"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನನಗೆ ಅದು ಇಷ್ಟ, ಆದರೆ ವೀಣೆ ನನಗೆ ತುಂಬಾ ಇಷ್ಟ."><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Nanage adu ishta, aadare veene nanage tumba ishta."><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-4-15.svg" alt="I like it but I am crazy about the Veena" loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="54">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation 4 · At Home</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>from my childhood.</strong>
+            <div class="kannada-script">ನನ್ನ ಬಾಲ್ಯದಿಂದಲೂ.</div>
+            <span>Nanna baalyadindaloo.</span>
+          </div>
+          <div class="original-roman">Original PDF: i$taanee. cikkandinida viine</div>
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="from my childhood."><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನನ್ನ ಬಾಲ್ಯದಿಂದಲೂ."><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Nanna baalyadindaloo."><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-4-16.svg" alt="from my childhood." loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="55">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation 4 · At Home</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>Do you practise everyday ?</strong>
+            <div class="kannada-script">ನೀವು ಪ್ರತಿದಿನ ಅಭ್ಯಾಸ ಮಾಡುತ್ತೀರಾ?</div>
+            <span>Neevu pratidina abhyaasa maadutteera?</span>
+          </div>
+          <div class="original-roman">Original PDF: andre huccu.</div>
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Do you practise everyday ?"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನೀವು ಪ್ರತಿದಿನ ಅಭ್ಯಾಸ ಮಾಡುತ್ತೀರಾ?"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Neevu pratidina abhyaasa maadutteera?"><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-4-17.svg" alt="Do you practise everyday ?" loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="56">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation 4 · At Home</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>Yes. I practise it early in the</strong>
+            <div class="kannada-script">ಹೌದು, ನಾನು ಅದನ್ನು ಬೇಗನೆ ಅಭ್ಯಾಸ ಮಾಡುತ್ತೇನೆ.</div>
+            <span>Howdu, naanu adannu begane abhyaasa maaduttene.</span>
+          </div>
+          <div class="original-roman">Original PDF: dinaa abhyaasa maa&lt;jtiiraa ?</div>
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Yes. I practise it early in the"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಹೌದು, ನಾನು ಅದನ್ನು ಬೇಗನೆ ಅಭ್ಯಾಸ ಮಾಡುತ್ತೇನೆ."><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Howdu, naanu adannu begane abhyaasa maaduttene."><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-4-18.svg" alt="Yes. I practise it early in the" loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="57">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation 4 · At Home</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>morning everyday.</strong>
+            <div class="kannada-script">ಪ್ರತಿದಿನ ಬೆಳಿಗ್ಗೆ.</div>
+            <span>Pratidina beligge.</span>
+          </div>
+          <div class="original-roman">Original PDF: haudu, dinaa belginjaava</div>
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="morning everyday."><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಪ್ರತಿದಿನ ಬೆಳಿಗ್ಗೆ."><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Pratidina beligge."><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-4-19.svg" alt="morning everyday." loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="58">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation 4 · At Home</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>maatru bhaa$e mother tongue</strong>
+            <div class="kannada-script">ಮಾತೃಭಾಷೆ</div>
+            <span>MatrBhaashe</span>
+          </div>
+          <div class="original-roman">Original PDF: abhyaasa maadtiini.</div>
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="maatru bhaa$e mother tongue"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಮಾತೃಭಾಷೆ"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="MatrBhaashe"><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-4-20.svg" alt="maatru bhaa$e mother tongue" loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="59">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation 4 · At Home</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>sangiita music</strong>
+            <div class="kannada-script">ಸಂಗೀತ</div>
+            <span>Sangeeta</span>
+          </div>
+          <div class="original-roman">Original PDF: obbru one person</div>
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="sangiita music"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಸಂಗೀತ"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Sangeeta"><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-4-21.svg" alt="sangiita music" loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="60">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation 4 · At Home</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>English line needs cleanup</strong>
+            
+            <span>jana people</span>
+          </div>
+          
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="English line needs cleanup"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="jana people"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="jana people"><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/chapter-visuals/chapter-15/conversation-4-22.svg" alt="English line needs cleanup" loading="lazy" />
+      </article>
+    </div>
+      </div>
+    
+          <div class="lesson-tip"><span>💡 <strong>Tip:</strong> Listen to each word, then try saying it out loud. Practice makes it easy!</span><span class="tip-chip">🎧 Listening Tips</span></div>
+          <details class="source-panel">
+            <summary>Source conversations from PDF pages 55-56</summary>
+            <section>
+              <h2>Source Conversations</h2>
+              
+      <article>
+        <header>
+          <h3>Chapter 15 · Conversation 1</h3>
+          <p>12 paired lines from PDF page 55</p>
+        </header>
+        <table>
+          <thead><tr><th>Who</th><th>Kannada from source PDF</th><th>English</th></tr></thead>
+          <tbody><tr><td>A</td><td>namaskaara, nimge eenu becku ?</td><td>Good morning, what do you want ?</td></tr>
+<tr><td>B</td><td>nange ondu mane beeku.</td><td>I want a house.</td></tr>
+<tr><td>A</td><td>nimge eratfu ruum mane saakaa ?</td><td>Will a two room house do ?</td></tr>
+<tr><td>A</td><td>innuu dodda mane beekaa ?</td><td>Do you want a still bigger one ?</td></tr>
+<tr><td>B</td><td>nange enju mumu saaku, tumba</td><td>Two rooms are enough for me. I don’t</td></tr>
+<tr><td>B</td><td>dod&lt;Ja mane beetja.</td><td>want too big a house.</td></tr>
+<tr><td>A</td><td>niivu obbreenaa ?</td><td>Are you single ?</td></tr>
+<tr><td>B</td><td>Alla, naavu naak jana, e§tu</td><td>No, we are four. What is the rent ?</td></tr>
+<tr><td>B</td><td>baa&lt;Jge ?</td><td>Three hundred rupees per month.</td></tr>
+<tr><td>A</td><td>tinglige muunuurn ruupaayi.</td><td>Do you want an advance ?</td></tr>
+<tr><td>B</td><td>atjvansu beekaa ?</td><td>Dosen’t matter. Don’t require heavy</td></tr>
+<tr><td>A</td><td>parvaagilla, a$teenu jaasti bee^a.</td><td>advance.</td></tr></tbody>
+        </table>
+      </article>
+    
+      <article>
+        <header>
+          <h3>Chapter 15 · Conversation 2</h3>
+          <p>6 paired lines from PDF page 55</p>
+        </header>
+        <table>
+          <thead><tr><th>Who</th><th>Kannada from source PDF</th><th>English</th></tr></thead>
+          <tbody><tr><td>A</td><td>banni saar, eenu beeku ?</td><td>Please come, sir. What do you want ?</td></tr>
+<tr><td>B</td><td>tarkaari beeku. eeneen ide ?</td><td>I want vegetables. What all do you</td></tr>
+<tr><td>A</td><td>ellaa ide. badane kaayi, huruli</td><td>have ?</td></tr>
+<tr><td>A</td><td>kaayi, siime badane kaayi, don</td><td>I have all. brinjals, beans, khush khush,</td></tr>
+<tr><td>A</td><td>meoisina kaayi ide.</td><td>big chillies, etc.</td></tr>
+<tr><td>B</td><td>badadekaayi cennagideyaa ?</td><td>Are the brinjals good ?</td></tr></tbody>
+        </table>
+      </article>
+    
+      <article>
+        <header>
+          <h3>Chapter 15 · Conversation 3</h3>
+          <p>8 paired lines from PDF page 55</p>
+        </header>
+        <table>
+          <thead><tr><th>Who</th><th>Kannada from source PDF</th><th>English</th></tr></thead>
+          <tbody><tr><td>A</td><td>nimge gavarment kaaleeju gottaa ?</td><td>Do you know the Government College ?</td></tr>
+<tr><td>B</td><td>gottu. alii nimge kelsa ideyaa?</td><td>Yes. Do you have any work there ?</td></tr>
+<tr><td>A</td><td>haudu, nimge prinsipaatru gottaa ?</td><td>Yes. Do you know the Principal ?</td></tr>
+<tr><td>B</td><td>gottilla, yaoke ?</td><td>I don’t know, why ?</td></tr>
+<tr><td>A</td><td>alii nam bu^ugange ondu siitu</td><td>I want a seat for my boy there.</td></tr>
+<tr><td>A</td><td>beeku.</td><td>If so, I know a clerk there.</td></tr>
+<tr><td>B</td><td>haagaadaree alii nange k)aark</td><td></td></tr>
+<tr><td>B</td><td>obbru gottu.</td><td></td></tr></tbody>
+        </table>
+      </article>
+    
+      <article>
+        <header>
+          <h3>Chapter 15 · Conversation Continuation</h3>
+          <p>12 paired lines from PDF page 56</p>
+        </header>
+        <table>
+          <thead><tr><th>Who</th><th>Kannada from source PDF</th><th>English</th></tr></thead>
+          <tbody><tr><td>A</td><td>alii yaav yaav sub jectu idc ?</td><td>What are all the subjects available there.7</td></tr>
+<tr><td>B</td><td>cl la ive. nim hu&lt;Jugange yaav</td><td>All are available. What group does your</td></tr>
+<tr><td>B</td><td>gruup beeku ?</td><td>boy want ?</td></tr>
+<tr><td>A</td><td>avangc sainsu gruupu beeku</td><td>He wants the science group.</td></tr>
+<tr><td>B</td><td>kaamarsu beedvaa ?</td><td>Does he not want Commerce ?</td></tr>
+<tr><td>A</td><td>beeda, avange kaamarsu i§tg ilia,</td><td>No, he doesn’t like Commerce, he likes</td></tr>
+<tr><td>A</td><td>sainsee tumba i§ta.</td><td>science too much.</td></tr>
+<tr><td>B</td><td>sainsu beekaadre avange ganita</td><td>If he wants science, does be like mathe¬</td></tr>
+<tr><td>B</td><td>i§taanaa ?</td><td>matics ?</td></tr>
+<tr><td>A</td><td>haudu, avange aal jiibra.</td><td>Yes. he is mad after algebra and geo¬</td></tr>
+<tr><td>A</td><td>jaamitri andre huccu.</td><td>metry.</td></tr>
+<tr><td>A</td><td>B • haagaadre parvaagilla.</td><td>If so, it is o k.</td></tr></tbody>
+        </table>
+      </article>
+    
+      <article>
+        <header>
+          <h3>Chapter 15 · Conversation 4</h3>
+          <p>22 paired lines from PDF page 56</p>
+        </header>
+        <table>
+          <thead><tr><th>Who</th><th>Kannada from source PDF</th><th>English</th></tr></thead>
+          <tbody><tr><td>A</td><td>niivu iigaellinda bandri ?</td><td>Now where did you come from ?</td></tr>
+<tr><td>B</td><td>tanjaavuurinda.</td><td>From Tanjavur.</td></tr>
+<tr><td>A</td><td>nimge tamiju gotta ?</td><td>Do you know Tamil ?</td></tr>
+<tr><td>A</td><td>cennagi gottu. adee nan</td><td>I know very well, that is my mother</td></tr>
+<tr><td>A</td><td>matrubhaa§e.</td><td>tongue.</td></tr>
+<tr><td>B</td><td>kanna&lt;ja gottilvaa ?</td><td>Don&#x27;t know you Kannada?</td></tr>
+<tr><td>A</td><td>solpa kuu&lt;Ja gottilla. .</td><td>Not even a bit.</td></tr>
+<tr><td>B</td><td>nimge beere yaav bhaa§e gottu ?</td><td>What other language do you know ?</td></tr>
+<tr><td>A</td><td>ingli§u gottu-solpa teluguunuu</td><td>I know English and a little Telugu</td></tr>
+<tr><td>A</td><td>gottu.</td><td>too.</td></tr>
+<tr><td>A</td><td>nimge sangiita i§taanaa?</td><td>Do you like music ?</td></tr>
+<tr><td>A</td><td>sangiita yaarigh i§to ilia !</td><td>Who does not like music ? I also</td></tr>
+<tr><td>A</td><td>nanguu tumba i$ta.</td><td>like it. I play on the Veena.</td></tr>
+<tr><td>A</td><td>viine nudistiini,</td><td>Don’t you like Violin ?</td></tr>
+<tr><td>B</td><td>pitiilu i^ta ilvaa ?</td><td>I like it but I am crazy about the Veena</td></tr>
+<tr><td>A</td><td>i$taanee. cikkandinida viine</td><td>from my childhood.</td></tr>
+<tr><td>A</td><td>andre huccu.</td><td>Do you practise everyday ?</td></tr>
+<tr><td>A</td><td>dinaa abhyaasa maa&lt;jtiiraa ?</td><td>Yes. I practise it early in the</td></tr>
+<tr><td>A</td><td>haudu, dinaa belginjaava</td><td>morning everyday.</td></tr>
+<tr><td>A</td><td>abhyaasa maadtiini.</td><td>maatru bhaa$e mother tongue</td></tr>
+<tr><td>A</td><td>obbru one person</td><td>sangiita music</td></tr>
+<tr><td>A</td><td>jana people</td><td></td></tr></tbody>
+        </table>
+      </article>
+    
+            </section>
+            
+            <details class="raw">
+              <summary>Raw OCR for PDF page 55</summary>
+              <pre>Lesson 15
+Conversation 1
+A : namaskaara, nimge eenu becku ?
+B : nange ondu mane beeku.
+A : nimge eratfu ruum mane saakaa ?
+innuu dodda mane beekaa ?
+B : nange enju mumu saaku, tumba
+dod&lt;Ja mane beetja.
+A : niivu obbreenaa ?
+B : Alla, naavu naak jana, e§tu
+baa&lt;Jge ?
+A : tinglige muunuurn ruupaayi.
+B : atjvansu beekaa ?
+A : parvaagilla, a$teenu jaasti bee^a.
+Conversation 2
+A : banni saar, eenu beeku ?
+B : tarkaari beeku. eeneen ide ?
+A : ellaa ide. badane kaayi, huruli
+kaayi, siime badane kaayi, don
+meoisina kaayi ide.
+B : badadekaayi cennagideyaa ?
+Conversation 3
+A : nimge gavarment kaaleeju gottaa ?
+B : gottu. alii nimge kelsa ideyaa?
+A : haudu, nimge prinsipaatru gottaa ?
+B : gottilla, yaoke ?
+A : alii nam bu^ugange ondu siitu
+beeku.
+B : haagaadaree alii nange k)aark
+obbru gottu.
+Good morning, what do you want ?
+I want a house.
+Will a two room house do ?
+Do you want a still bigger one ?
+Two rooms are enough for me. I don’t
+want too big a house.
+Are you single ?
+No, we are four. What is the rent ?
+Three hundred rupees per month.
+Do you want an advance ?
+Dosen’t matter. Don’t require heavy
+advance.
+Please come, sir. What do you want ?
+I want vegetables. What all do you
+have ?
+I have all. brinjals, beans, khush khush,
+big chillies, etc.
+Are the brinjals good ?
+Do you know the Government College ?
+Yes. Do you have any work there ?
+Yes. Do you know the Principal ?
+I don’t know, why ?
+I want a seat for my boy there.
+If so, I know a clerk there.</pre>
+            </details>
+            
+            <details class="raw">
+              <summary>Raw OCR for PDF page 56</summary>
+              <pre>48
+A : alii yaav yaav sub jectu idc ?
+B : cl la ive. nim hu&lt;Jugange yaav
+gruup beeku ?
+A : avangc sainsu gruupu beeku
+B : kaamarsu beedvaa ?
+A : beeda, avange kaamarsu i§tg ilia,
+sainsee tumba i§ta.
+B : sainsu beekaadre avange ganita
+i§taanaa ?
+A : haudu, avange aal jiibra.
+jaamitri andre huccu.
+B • haagaadre parvaagilla.
+Conversation 4
+A : niivu iigaellinda bandri ?
+B : tanjaavuurinda.
+A : nimge tamiju gotta ?
+A : cennagi gottu. adee nan
+matrubhaa§e.
+B : kanna&lt;ja gottilvaa ?
+A : solpa kuu&lt;Ja gottilla. .
+B : nimge beere yaav bhaa§e gottu ?
+A : ingli§u gottu-solpa teluguunuu
+gottu.
+A : nimge sangiita i§taanaa?
+A : sangiita yaarigh i§to ilia !
+nanguu tumba i$ta.
+viine nudistiini,
+B : pitiilu i^ta ilvaa ?
+A : i$taanee. cikkandinida viine
+andre huccu.
+A : dinaa abhyaasa maa&lt;jtiiraa ?
+A : haudu, dinaa belginjaava
+abhyaasa maadtiini.
+Vocabulary :
+obbru one person
+jana people
+What are all the subjects available there.7
+All are available. What group does your
+boy want ?
+He wants the science group.
+Does he not want Commerce ?
+No, he doesn’t like Commerce, he likes
+science too much.
+If he wants science, does be like mathe¬
+matics ?
+Yes. he is mad after algebra and geo¬
+metry.
+If so, it is o k.
+Now where did you come from ?
+From Tanjavur.
+Do you know Tamil ?
+I know very well, that is my mother
+tongue.
+Don&#x27;t know you Kannada?
+Not even a bit.
+What other language do you know ?
+I know English and a little Telugu
+too.
+Do you like music ?
+Who does not like music ? I also
+like it. I play on the Veena.
+Don’t you like Violin ?
+I like it but I am crazy about the Veena
+from my childhood.
+Do you practise everyday ?
+Yes. I practise it early in the
+morning everyday.
+maatru bhaa$e mother tongue
+sangiita music</pre>
+            </details>
+            
+          </details>
+        </div>
+      </div>
+    
+  </main>
+  <script>
+    const audioCache = new Map();
+    let activeAudio = null;
+    let activeRecorder = null;
+    let activeStream = null;
+    let feedbackAudioContext = null;
+
+    document.addEventListener("click", function (event) {
+      const button = event.target.closest("[data-speak]");
+      if (!button) return;
+      const text = button.getAttribute("data-speak") || "";
+      const languageCode = button.getAttribute("data-lang") || "kn-IN";
+      if (!text.trim()) return;
+      playSarvamAudio(button, text, languageCode);
+    });
+
+    document.addEventListener("click", function (event) {
+      const button = event.target.closest("[data-practice]");
+      if (!button) return;
+      const expected = button.getAttribute("data-expected") || "";
+      if (!expected.trim()) return;
+      recordKannadaPractice(button, expected);
+    });
+
+    setupSceneProgress();
+
+    async function playSarvamAudio(button, text, languageCode) {
+      const speaker = document.querySelector("[data-kannada-speaker]")?.value || "";
+      const cacheKey = [languageCode, speaker, text].join("::");
+      const originalHtml = button.innerHTML;
+      try {
+        if (activeAudio) {
+          activeAudio.pause();
+          activeAudio = null;
+        }
+        button.disabled = true;
+        button.textContent = "Loading...";
+
+        let url = audioCache.get(cacheKey);
+        if (!url) {
+          const response = await fetch("/api/tts", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ text, languageCode, speaker }),
+          });
+          if (!response.ok) {
+            throw new Error("Could not load audio");
+          }
+          const blob = await response.blob();
+          url = URL.createObjectURL(blob);
+          audioCache.set(cacheKey, url);
+        }
+
+        const audio = new Audio(url);
+        activeAudio = audio;
+        button.textContent = "Playing...";
+        audio.onended = () => {
+          button.disabled = false;
+          button.innerHTML = originalHtml;
+        };
+        audio.onerror = () => {
+          button.disabled = false;
+          button.innerHTML = originalHtml;
+        };
+        await audio.play();
+      } catch (error) {
+        button.textContent = "Try again";
+        setTimeout(() => {
+          button.disabled = false;
+          button.innerHTML = originalHtml;
+        }, 1200);
+      }
+    }
+
+    function setupSceneProgress() {
+      const cards = Array.from(document.querySelectorAll("[data-scene-card]"));
+      if (!cards.length) return;
+      const total = cards.length;
+      const currentLabels = Array.from(document.querySelectorAll("[data-current-scene]"));
+      const fill = document.querySelector("[data-progress-fill]");
+      const prev = document.querySelector("[data-scene-prev]");
+      const next = document.querySelector("[data-scene-next]");
+      let current = 1;
+
+      const setCurrent = (index) => {
+        current = Math.min(total, Math.max(1, index));
+        currentLabels.forEach((label) => {
+          label.textContent = String(current);
+        });
+        if (fill) {
+          fill.style.setProperty("--progress", ((current / total) * 100).toFixed(2) + "%");
+        }
+        if (prev) prev.disabled = current <= 1;
+        if (next) next.disabled = current >= total;
+      };
+
+      const scrollToScene = (index) => {
+        const target = cards[Math.min(total, Math.max(1, index)) - 1];
+        if (!target) return;
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
+        setCurrent(index);
+      };
+
+      if (prev) {
+        prev.addEventListener("click", () => scrollToScene(current - 1));
+      }
+      if (next) {
+        next.addEventListener("click", () => scrollToScene(current + 1));
+      }
+
+      if ("IntersectionObserver" in window) {
+        const observer = new IntersectionObserver((entries) => {
+          const visible = entries
+            .filter((entry) => entry.isIntersecting)
+            .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+          if (!visible) return;
+          const index = Number(visible.target.getAttribute("data-scene-index") || "1");
+          setCurrent(index);
+        }, { threshold: [0.28, 0.45, 0.62], rootMargin: "-18% 0px -48% 0px" });
+        cards.forEach((card) => observer.observe(card));
+      }
+
+      setCurrent(1);
+    }
+
+    function setPracticeFeedback(button, kind, message) {
+      const card = button.closest(".snippet-card");
+      const feedback = card ? card.querySelector(".practice-feedback") : null;
+      if (!feedback) return;
+      feedback.className = "practice-feedback show " + kind;
+      feedback.textContent = message;
+      if (card) {
+        card.classList.toggle("correct", kind === "good");
+        if (kind !== "good") {
+          const oldSprinkles = card.querySelector(".celebration-sprinkles");
+          if (oldSprinkles) oldSprinkles.remove();
+        }
+      }
+    }
+
+    function launchCelebration(button) {
+      const card = button.closest(".snippet-card");
+      if (!card || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+      const oldSprinkles = card.querySelector(".celebration-sprinkles");
+      if (oldSprinkles) oldSprinkles.remove();
+      const colors = ["#facc15", "#22c55e", "#2dd4bf", "#3b82f6", "#f97316", "#ec4899"];
+      const layer = document.createElement("div");
+      layer.className = "celebration-sprinkles";
+      for (let index = 0; index < 42; index += 1) {
+        const piece = document.createElement("span");
+        const angle = (Math.PI * 2 * index) / 42;
+        const distance = 120 + Math.random() * 210;
+        piece.style.setProperty("--sprinkle-x", Math.cos(angle) * distance + "px");
+        piece.style.setProperty("--sprinkle-y", Math.sin(angle) * distance - 90 + "px");
+        piece.style.setProperty("--sprinkle-rotate", Math.round(Math.random() * 360) + "deg");
+        piece.style.setProperty("--sprinkle-delay", Math.random() * 0.16 + "s");
+        piece.style.setProperty("--sprinkle-color", colors[index % colors.length]);
+        layer.appendChild(piece);
+      }
+      card.appendChild(layer);
+      window.setTimeout(() => layer.remove(), 1300);
+    }
+
+    function playRetrySound() {
+      try {
+        const AudioContextCtor = window.AudioContext || window.webkitAudioContext;
+        if (!AudioContextCtor) return;
+        feedbackAudioContext = feedbackAudioContext || new AudioContextCtor();
+        const context = feedbackAudioContext;
+        const now = context.currentTime;
+        const gain = context.createGain();
+        gain.gain.setValueAtTime(0.0001, now);
+        gain.gain.exponentialRampToValueAtTime(0.08, now + 0.02);
+        gain.gain.exponentialRampToValueAtTime(0.0001, now + 0.28);
+        gain.connect(context.destination);
+        [260, 190].forEach((frequency, index) => {
+          const oscillator = context.createOscillator();
+          oscillator.type = "sine";
+          oscillator.frequency.setValueAtTime(frequency, now + index * 0.12);
+          oscillator.connect(gain);
+          oscillator.start(now + index * 0.12);
+          oscillator.stop(now + index * 0.12 + 0.11);
+        });
+      } catch (error) {
+        // Audio feedback is optional.
+      }
+    }
+
+    function launchRetryFeedback(button) {
+      const card = button.closest(".snippet-card");
+      if (card && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        card.classList.remove("retry-shake");
+        void card.offsetWidth;
+        card.classList.add("retry-shake");
+        window.setTimeout(() => card.classList.remove("retry-shake"), 420);
+      }
+      playRetrySound();
+    }
+
+    function preferredAudioMimeType() {
+      const types = ["audio/webm;codecs=opus", "audio/webm", "audio/mp4"];
+      return types.find((type) => MediaRecorder.isTypeSupported(type)) || "";
+    }
+
+    function recordingFilename(mimeType) {
+      if (mimeType.includes("webm")) return "practice.webm";
+      if (mimeType.includes("mp4")) return "practice.m4a";
+      if (mimeType.includes("mpeg")) return "practice.mp3";
+      return "practice.webm";
+    }
+
+    function readableApiError(result, fallback) {
+      if (!result) return fallback;
+      const pickMessage = (value) => {
+        if (!value) return "";
+        if (typeof value === "string") return value;
+        if (typeof value.message === "string") return value.message;
+        if (value.error) return pickMessage(value.error);
+        try {
+          return JSON.stringify(value);
+        } catch {
+          return "";
+        }
+      };
+      const rawDetail = result.detail || result.error || "";
+      const detail = pickMessage(rawDetail).trim();
+      if (!detail) return fallback;
+      try {
+        const parsed = JSON.parse(detail);
+        const parsedMessage = pickMessage(parsed);
+        return parsedMessage || detail;
+      } catch {
+        return detail.length > 180 ? detail.slice(0, 177) + "..." : detail;
+      }
+    }
+
+    async function readJsonResponse(response) {
+      const contentType = response.headers.get("content-type") || "";
+      const text = await response.text();
+      if (!text) return {};
+      if (contentType.includes("application/json")) {
+        return JSON.parse(text);
+      }
+      try {
+        return JSON.parse(text);
+      } catch {
+        const htmlTitle = text.match(/<title[^>]*>(.*?)<\/title>/i);
+        const nextError = text.match(/"message":"([^"]+)"/);
+        const message = nextError ? nextError[1].replace(/\\n/g, " ") : htmlTitle ? htmlTitle[1] : "The speech check server returned an HTML error page.";
+        return { error: message, detail: text.slice(0, 500) };
+      }
+    }
+
+    async function recordKannadaPractice(button, expected) {
+      const originalHtml = button.innerHTML;
+      if (!navigator.mediaDevices || !window.MediaRecorder) {
+        setPracticeFeedback(button, "retry", "Microphone recording is not available in this browser.");
+        return;
+      }
+      if (activeRecorder && activeRecorder.state !== "inactive") {
+        activeRecorder.stop();
+        return;
+      }
+      try {
+        if (activeAudio) {
+          activeAudio.pause();
+          activeAudio = null;
+        }
+        const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+        activeStream = stream;
+        const chunks = [];
+        const mimeType = preferredAudioMimeType();
+        const recorder = new MediaRecorder(stream, mimeType ? { mimeType } : undefined);
+        activeRecorder = recorder;
+        button.disabled = false;
+        button.textContent = "Recording... tap to stop";
+        setPracticeFeedback(button, "", "Listening now. Say the Kannada phrase.");
+        recorder.ondataavailable = (event) => {
+          if (event.data && event.data.size) chunks.push(event.data);
+        };
+        recorder.onerror = () => {
+          setPracticeFeedback(button, "retry", "Recording failed. Please try again.");
+        };
+        recorder.onstop = async () => {
+          stream.getTracks().forEach((track) => track.stop());
+          activeStream = null;
+          activeRecorder = null;
+          button.disabled = true;
+          button.textContent = "Checking...";
+          try {
+            const cleanType = (mimeType || "audio/webm").split(";")[0];
+            const blob = new Blob(chunks, { type: cleanType });
+            const form = new FormData();
+            form.set("file", blob, recordingFilename(blob.type));
+            form.set("expected", expected);
+            const response = await fetch("/api/stt", { method: "POST", body: form });
+            const result = await readJsonResponse(response);
+            if (!response.ok) {
+              throw new Error(readableApiError(result, "Speech check failed"));
+            }
+            if (result.matched) {
+              setPracticeFeedback(button, "good", "Correct! We heard: " + (result.transcript || expected));
+              button.classList.add("correct");
+              button.textContent = "✓ Correct";
+              launchCelebration(button);
+            } else {
+              button.classList.remove("correct");
+              launchRetryFeedback(button);
+              setPracticeFeedback(
+                button,
+                "retry",
+                "Oops, try again. We heard: " + (result.transcript || "not enough audio")
+              );
+              button.textContent = "Try again";
+            }
+          } catch (error) {
+            const message = error instanceof Error ? error.message : "Could not check that recording.";
+            launchRetryFeedback(button);
+            setPracticeFeedback(button, "retry", message + " Please try again.");
+            button.textContent = "Try again";
+          } finally {
+            setTimeout(() => {
+              button.disabled = false;
+              if (button.textContent === "✓ Correct") {
+                return;
+              }
+              button.innerHTML = originalHtml;
+            }, 1600);
+          }
+        };
+        recorder.start();
+        window.setTimeout(() => {
+          if (recorder.state === "recording") recorder.stop();
+        }, 4500);
+      } catch (error) {
+        if (activeStream) {
+          activeStream.getTracks().forEach((track) => track.stop());
+          activeStream = null;
+        }
+        activeRecorder = null;
+        button.innerHTML = originalHtml;
+        setPracticeFeedback(button, "retry", "Please allow microphone access and try again.");
+      }
+    }
+
+  </script>
+</body>
+</html>

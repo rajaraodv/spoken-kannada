@@ -1,0 +1,51 @@
+{
+  "page": 9,
+  "lesson": 1,
+  "blocks": [
+    {
+      "type": "conversation",
+      "number": "1",
+      "rows": [
+        { "speaker": "A", "roman": "namaskaara", "english": "Good Morning;" },
+        { "speaker": "B", "roman": "namaskaara", "english": "Good Morning:" },
+        { "speaker": "A", "roman": "naanu raju", "english": "I am Raju." },
+        { "speaker": "", "roman": "ivaru moohan", "english": "He is Mohan." },
+        { "speaker": "", "roman": "niivu yaaru ?", "english": "Who are you ?" },
+        { "speaker": "B", "roman": "naanu seekhar", "english": "I am Shekhar." },
+        { "speaker": "A", "roman": "avaru yaaru ?", "english": "Who is she ?" },
+        { "speaker": "B", "roman": "avaru siila", "english": "She is Sheela." },
+        { "speaker": "", "roman": "ivaru sankar", "english": "He is Shankar." }
+      ]
+    },
+    {
+      "type": "conversation",
+      "number": "2",
+      "rows": [
+        { "speaker": "A", "roman": "nanna hesaru raaju", "english": "My name is Raju." },
+        { "speaker": "", "roman": "naanu kannada meeshtru", "english": "I am a Kannada teacher." },
+        { "speaker": "", "roman": "ivaru nanna sneehitru", "english": "He is my friend." },
+        { "speaker": "", "roman": "ivara hesaru moohan", "english": "His name is Mohan." },
+        { "speaker": "", "roman": "nivu yaaru ?", "english": "Who are you ?" },
+        { "speaker": "B", "roman": "naanu daaktar", "english": "I am a doctor." },
+        { "speaker": "A", "roman": "nimma hesaru eenu ?", "english": "What is your name ?" },
+        { "speaker": "B", "roman": "nanna hesaru seekhar", "english": "My name is Shekhar." },
+        { "speaker": "A", "roman": "avara hesaru lalitaanaa ?", "english": "Is her name Lalitha ?" },
+        { "speaker": "B", "roman": "haudu,", "english": "Yes," },
+        { "speaker": "", "roman": "avara hesaru lalita", "english": "Her name is Lalita." },
+        { "speaker": "A", "roman": "avaru daaktraa ?", "english": "Is she a doctor ?" },
+        { "speaker": "B", "roman": "alla, avaru daaktralla", "english": "No, she is not a doctor," },
+        { "speaker": "", "roman": "avaru narsu", "english": "she is a nurse." }
+      ]
+    },
+    {
+      "type": "conversation",
+      "number": "3",
+      "rows": [
+        { "speaker": "A", "roman": "ninna hesru eenu, magu ?", "english": "What's you name, child ?" },
+        { "speaker": "B", "roman": "nanna hesaru kiran", "english": "My name is Kiran." },
+        { "speaker": "A", "roman": "avaru nimma tandenaa ?", "english": "Is he your father ?" },
+        { "speaker": "B", "roman": "haudu, avaru namma tande", "english": "Yes, he is my father." }
+      ]
+    }
+  ]
+}

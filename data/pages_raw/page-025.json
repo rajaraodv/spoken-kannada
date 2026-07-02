@@ -1,0 +1,49 @@
+{
+  "page": 25,
+  "lesson": null,
+  "blocks": [
+    {
+      "type": "vocab",
+      "rows": [
+        {"speaker": "", "roman": "hatra", "english": "near"},
+        {"speaker": "", "roman": "illi", "english": "here"},
+        {"speaker": "", "roman": "alli", "english": "there"},
+        {"speaker": "", "roman": "elli", "english": "where"},
+        {"speaker": "", "roman": "istu", "english": "this much"},
+        {"speaker": "", "roman": "astu", "english": "that much"},
+        {"speaker": "", "roman": "estu", "english": "how much"},
+        {"speaker": "", "roman": "haale", "english": "sheet of paper"},
+        {"speaker": "", "roman": "aadre", "english": "but"},
+        {"speaker": "", "roman": "raja", "english": "holiday"},
+        {"speaker": "", "roman": "ivattu", "english": "today (this day)"},
+        {"speaker": "", "roman": "avattu", "english": "that day"},
+        {"speaker": "", "roman": "yaavattu", "english": "which day"},
+        {"speaker": "", "roman": "pakka", "english": "next to"},
+        {"speaker": "", "roman": "hinde", "english": "behind"},
+        {"speaker": "", "roman": "munde", "english": "in front of"},
+        {"speaker": "", "roman": "vaara", "english": "week day"},
+        {"speaker": "", "roman": "dina", "english": "day"},
+        {"speaker": "", "roman": "varsa", "english": "year"}
+      ]
+    },
+    {
+      "type": "vocab",
+      "rows": [
+        {"speaker": "", "roman": "aaceemonne", "english": "2 days before yesterday"},
+        {"speaker": "", "roman": "monne", "english": "day before yesterday"},
+        {"speaker": "", "roman": "minne", "english": "yesterday"},
+        {"speaker": "", "roman": "ivattu", "english": "today"},
+        {"speaker": "", "roman": "naale", "english": "tomorrow"},
+        {"speaker": "", "roman": "naadiddu", "english": "day after tomorrow"},
+        {"speaker": "", "roman": "aacee naadiddu", "english": "2 days after tomorrow"},
+        {"speaker": "", "roman": "bhaanuvaara", "english": "Sunday"},
+        {"speaker": "", "roman": "soomavaara", "english": "Monday"},
+        {"speaker": "", "roman": "managalavaara", "english": "Tuesday"},
+        {"speaker": "", "roman": "budhavaara", "english": "Wednesday"},
+        {"speaker": "", "roman": "guruvaara", "english": "Thursday"},
+        {"speaker": "", "roman": "sukravaara", "english": "Friday"},
+        {"speaker": "", "roman": "sanivaara", "english": "Saturday"}
+      ]
+    }
+  ]
+}

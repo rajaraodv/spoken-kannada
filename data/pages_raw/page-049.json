@@ -1,0 +1,61 @@
+{
+  "page": 49,
+  "lesson": null,
+  "blocks": [
+    {
+      "type": "conversation",
+      "number": "3",
+      "rows": [
+        {"speaker": "B", "roman": "oo, bantu, oodde.", "english": "Yes, it has arrived and I read"}
+      ]
+    },
+    {
+      "type": "conversation",
+      "number": "4",
+      "rows": [
+        {"speaker": "A", "roman": "kamalamma, adge maaddra ?", "english": "Mrs. Kamalamma, did you cook food ?"},
+        {"speaker": "B", "roman": "haudu, aaglee maadde.", "english": "Yes, I cooked it a already."},
+        {"speaker": "A", "roman": "eeneen maaddri ?", "english": "What all did you prepare ?"},
+        {"speaker": "B", "roman": "anna, saaru, mudde, gojju.", "english": "I prepared rice, sauce, ragi balls and"},
+        {"speaker": "", "roman": "", "english": "gravy."},
+        {"speaker": "A", "roman": "palya een maaddri ?", "english": "What vegetable did you cook ?"},
+        {"speaker": "B", "roman": "bendeekaayi palya maadde.", "english": "I prepared okra curry."},
+        {"speaker": "A", "roman": "nim yajmaanru estottig bandru ?", "english": "At what time did your husband come ?"},
+        {"speaker": "B", "roman": "avru hannerdu gantege bandru.", "english": "He came at 12'o clock."},
+        {"speaker": "A", "roman": "niivu yaavaaga uuta maaddri ?", "english": "At what time did you eat lunch ?"},
+        {"speaker": "B", "roman": "naanu iigataane uuta maadde.", "english": "I just now had my lunch."}
+      ]
+    },
+    {
+      "type": "conversation",
+      "number": "5",
+      "rows": [
+        {"speaker": "A", "roman": "ivattu niivu paatre toladraa ?", "english": "Did you wash the vessels today ?"},
+        {"speaker": "B", "roman": "haudu, ivattu kelsad hengsu", "english": "Yes, today the maid servant did not"},
+        {"speaker": "", "roman": "barlilla.", "english": "turn up."},
+        {"speaker": "A", "roman": "ellaa kelsa niive maddva ?", "english": "Did you do all the work yourself ?"},
+        {"speaker": "B", "roman": "haudu, kasa gudside, paattre tolde", "english": "Yes, I swept, washed the vessels and"},
+        {"speaker": "", "roman": "aameele adge maadde.", "english": "cooked food."},
+        {"speaker": "A", "roman": "batteenuu niive ogdraa ?", "english": "Did you yourself wash clothes also ?"},
+        {"speaker": "B", "roman": "haudu.", "english": "Yes."},
+        {"speaker": "A", "roman": "nimge ellaa kelsa baratte, niivu", "english": "You know all the work.   You are a"},
+        {"speaker": "", "roman": "tumba jaanaramma.", "english": "clever woman."}
+      ]
+    },
+    {
+      "type": "conversation",
+      "number": "6",
+      "rows": [
+        {"speaker": "A", "roman": "nim annanannu nooddraa ?", "english": "Did you see your elder brother ?"},
+        {"speaker": "B", "roman": "haudu, ivattu beligge nodde.", "english": "Yes, I saw him this morning."},
+        {"speaker": "A", "roman": "avarannu uutak kardraa ?", "english": "Did you invite him for food ?"},
+        {"speaker": "B", "roman": "haudu, ivattu raatri uutakke", "english": "Yes, he will come for food tonight."},
+        {"speaker": "", "roman": "bartaaree.", "english": ""},
+        {"speaker": "A", "roman": "maarkettinda tarkaari tandraa ?", "english": "Did you bring vegetables from the"},
+        {"speaker": "", "roman": "", "english": "market ?"},
+        {"speaker": "B", "roman": "haudu, tarkaari mattu hannu", "english": "Yes, I brought vegetables and fruits."},
+        {"speaker": "", "roman": "tande.", "english": ""}
+      ]
+    }
+  ]
+}

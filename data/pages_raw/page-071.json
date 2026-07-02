@@ -1,0 +1,40 @@
+{
+  "page": 71,
+  "lesson": 21,
+  "blocks": [
+    {
+      "type": "conversation",
+      "number": "1",
+      "rows": [
+        {"speaker": "A", "roman": "bengluurge istu jana yaake bartaare ?", "english": "Why do so many people come to Bangalore ?"},
+        {"speaker": "B", "roman": "uuru noodokke, kelavru kaliyokke.", "english": "Some come for sight-seeing and others for education."},
+        {"speaker": "A", "roman": "ulidavru ?", "english": "The rest ?"},
+        {"speaker": "B", "roman": "bahala jana kelsa maadokke bartaare.", "english": "Quite a number come for work."},
+        {"speaker": "A", "roman": "ivarigella irokke manegalu sigatvaa ?", "english": "Are houses available for all to live in ?"},
+        {"speaker": "B", "roman": "manegalna kattokke sarkaara sahaaya maadatte.", "english": "The Government helps in building houses."},
+        {"speaker": "A", "roman": "eenee aagli, kudiyokke niiru, tinnokke tarkaari sikkoodu kasta.", "english": "Even so, it is difficult to get enough water and vegetables."},
+        {"speaker": "B", "roman": "nija, ii uuralli vaasa maadoodu tumba himse.", "english": "True, it is hell to live in this city."}
+      ]
+    },
+    {
+      "type": "conversation",
+      "number": "2",
+      "rows": [
+        {"speaker": "A", "roman": "bartiira, sinema noodokke hoogona?", "english": "Do you care to come ? we shall go to a movie ?"},
+        {"speaker": "B", "roman": "illa, tarkaari tarokkooskara naanu markettige hoogbeeku.", "english": "Sorry, I have to go to the market to buy vegetables."},
+        {"speaker": "A", "roman": "nadiiri, haage tindi tinnokke hootlige hoogoona", "english": "Come on then, let's go to a restaurant for snacks."},
+        {"speaker": "B", "roman": "tindi tinnokkoskara hootlige yaake ? ramaan noodokke avla maneg hoogoona.", "english": "Why go to a hotel for snacks ? Let's go visiting to Rama's house."},
+        {"speaker": "A", "roman": "hoodree een laabha ? nange hasivu.", "english": "What good would it do ? I'm hungry."},
+        {"speaker": "B", "roman": "alli kudiyookke tanniiru, tinnokke aiskriimu, ella sikkutte.", "english": "We will get clooled water and ice-cream there."}
+      ]
+    },
+    {
+      "type": "vocab",
+      "rows": [
+        {"speaker": "", "roman": "Kali", "english": "to learn"},
+        {"speaker": "", "roman": "ulidavru", "english": "the rest (human) (remaining persons)"},
+        {"speaker": "", "roman": "bahala", "english": "much"}
+      ]
+    }
+  ]
+}

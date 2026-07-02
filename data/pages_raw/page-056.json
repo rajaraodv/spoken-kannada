@@ -1,0 +1,49 @@
+{
+  "page": 56,
+  "lesson": null,
+  "blocks": [
+    {
+      "type": "conversation",
+      "number": "3",
+      "rows": [
+        {"speaker": "A", "roman": "alli yaav yaav subjectu ide ?", "english": "What are all the subjects available  there ?"},
+        {"speaker": "B", "roman": "ella ive. nim hudugange yaav gruup beeku ?", "english": "All are available.  What  group does your boy want ?"},
+        {"speaker": "A", "roman": "avange sainsu gruupu beeku", "english": "He wants the science group."},
+        {"speaker": "B", "roman": "kaamarsu beedvaa ?", "english": "Does he not want Commerce ?"},
+        {"speaker": "A", "roman": "beeda, avange kaamarsu istg illa. sainsee tumba ista.", "english": "No, he doesn't like Commerce, he likes science too much."},
+        {"speaker": "B", "roman": "sainsu beekaadre avange ganita istaanaa ?", "english": "If he wants science, does he like mathematics ?"},
+        {"speaker": "A", "roman": "haudu, avange aaljiibra. jaamitri andre huccu.", "english": "Yes. he is mad after algebra and geometry."},
+        {"speaker": "B", "roman": "haagaadre parvaagilla.", "english": "If so, it is o k."}
+      ]
+    },
+    {
+      "type": "conversation",
+      "number": "4",
+      "rows": [
+        {"speaker": "A", "roman": "niivu iiga ellinda bandri ?", "english": "Now where did you come from ?"},
+        {"speaker": "B", "roman": "tanjaavuurinda.", "english": "From Tanjavur."},
+        {"speaker": "A", "roman": "nimge tamilu gotta ?", "english": "Do you know Tamil ?"},
+        {"speaker": "A", "roman": "cennagi gottu. adee nan matrubhaase.", "english": "I know very well, that is my mother tongue."},
+        {"speaker": "B", "roman": "kannada gottilvaa ?", "english": "Don't know you Kannada ?"},
+        {"speaker": "A", "roman": "solpa kuuda gottilla. .", "english": "Not even a bit."},
+        {"speaker": "B", "roman": "nimge beere yaav bhaase gottu ?", "english": "What other language do you know ?"},
+        {"speaker": "A", "roman": "inglisu gottu-solpa teluguunuu gottu.", "english": "I know English and a little Telugu too."},
+        {"speaker": "A", "roman": "nimge sangiita istaanaa ?", "english": "Do you like music ?"},
+        {"speaker": "A", "roman": "sangiita yaarigh isto illa ! nanguu tumba ista. viine nudistiini,", "english": "Who does not like music ?   I also like it.   I play on the Veena."},
+        {"speaker": "B", "roman": "pitiilu ista ilvaa ?", "english": "Don't you like Violin ?"},
+        {"speaker": "A", "roman": "istaanee. cikkandinida viine andre huccu.", "english": "I like it but I am crazy about the Veena from my childhood."},
+        {"speaker": "A", "roman": "dinaa abhyaasa maadtiiraa ?", "english": "Do you practise everyday ?"},
+        {"speaker": "A", "roman": "haudu, dinaa belginjaava abhyaasa maadtiini.", "english": "Yes.  I practise it early in the morning everyday."}
+      ]
+    },
+    {
+      "type": "vocab",
+      "rows": [
+        {"speaker": "", "roman": "obbru", "english": "one person"},
+        {"speaker": "", "roman": "jana", "english": "people"},
+        {"speaker": "", "roman": "maatru bhaase", "english": "mother tongue"},
+        {"speaker": "", "roman": "sangiita", "english": "music"}
+      ]
+    }
+  ]
+}

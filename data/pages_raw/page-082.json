@@ -1,0 +1,48 @@
+{
+  "page": 82,
+  "lesson": 26,
+  "blocks": [
+    {
+      "type": "conversation",
+      "number": "1",
+      "rows": [
+        {"speaker": "A", "roman": "niivu kelsa maadoo aafiisu ideenaa ?", "english": "Is this the office where you are working ?"},
+        {"speaker": "B", "roman": "haudu. naanu illee kelsa maadtiddiini", "english": "Yes. I am working here."},
+        {"speaker": "A", "roman": "niivu kuudoo ruumu yaavudu ?", "english": "Which is the room you work in ?"},
+        {"speaker": "B", "roman": "idee naanu kuudoo ruumu", "english": "This is the room where I sit."},
+        {"speaker": "A", "roman": "niivu maado kelsa eenu ?", "english": "What is the work you are doing ?"},
+        {"speaker": "B", "roman": "naanu illi taipistu.", "english": "I am a typist here."}
+      ]
+    },
+    {
+      "type": "conversation",
+      "number": "2",
+      "rows": [
+        {"speaker": "A", "roman": "ninne sabheyalli haadid hudgi yaaru ?", "english": "Who is the girl that sang in yesterday's meeting ?"},
+        {"speaker": "B", "roman": "avalu nan tangi.", "english": "She is my younger sister."},
+        {"speaker": "A", "roman": "avalu haadid haadu cennagittu, avara jote pitiilu nudisida hudga yaaru ?", "english": "The song that she sang was good. Who is the boy that accompanied her on the violin ?"},
+        {"speaker": "B", "roman": "avanu nan tamma.", "english": "He is my younger brother."}
+      ]
+    },
+    {
+      "type": "conversation",
+      "number": "3",
+      "rows": [
+        {"speaker": "A", "roman": "idu niivu keelid haadaa ?", "english": "Is this the song you had heard ?"},
+        {"speaker": "B", "roman": "haudu, idu naanu keelid haadu.", "english": "Yes. this is the song I had heard"},
+        {"speaker": "A", "roman": "idu sipaay raamu sinemaaddu.", "english": "This is from the film 'Sepoy Ramu'"},
+        {"speaker": "B", "roman": "haudaa, adu naanu noodad sinema", "english": "Is that so ? that is an unseen film (by me)."}
+      ]
+    },
+    {
+      "type": "conversation",
+      "number": "4",
+      "rows": [
+        {"speaker": "A", "roman": "niivu oodid skuulu ?", "english": "Which is the school where you studied ?"},
+        {"speaker": "B", "roman": "naanu oodid skuulu, niivu oodid skulee.", "english": "I studed in the same school where you studied."},
+        {"speaker": "A", "roman": "avru yaaru ?", "english": "Who is he ?"},
+        {"speaker": "B", "roman": "avru nange kannada kalsid meestru.", "english": "He is the master who taught me Kannada."}
+      ]
+    }
+  ]
+}

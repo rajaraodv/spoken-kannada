@@ -1,0 +1,37 @@
+Create one reusable base scene image for a spoken Kannada learning conversation.
+
+Purpose:
+This base image will be reused for every sentence card in Conversation 2. The app will add different speech bubbles and exact name badges later. Do not draw any speech bubbles, names, labels, signs, writing, or text.
+
+Chapter:
+Chapter 1
+
+Conversation id:
+Conversation 2
+
+Conversation summary:
+Raju introduces himself, says he is a Kannada teacher, introduces his friend Mohan, asks Shekhar's name and profession, then asks about Lalitha and whether she is a doctor.
+
+Full conversation excerpt:
+A: My name is Raju. A: I am a Kannada teacher. A: He is my friend. A: His name is Mohan. A: Who are you ? B: I am a doctor. A: What is your name ? B: My name is Shekhar. A: Is her name Lalitha? B: Yes, B: Her name is Lalita. A: Is she a doctor ? B: No, she is not a doctor, B: she is a nurse.
+
+Conversation setting:
+A warm Kannada classroom or training room in Karnataka. The conversation stays in this same room for all lines.
+
+Stable cast and exact layout:
+Raju: adult Indian male Kannada teacher, slim, side-parted black hair, blue teacher shirt, holding a book or folder. Place him on the left foreground.
+Mohan: adult Indian male friend, tan/orange shirt, wavy hair, calm expression. Place him in the center or center-left background, distinct from Shekhar.
+Lalita: adult Indian woman nurse, nurse uniform or clear medical cue. Place her farther back near the center-right background, visible but not blocking the main speakers.
+Shekhar: adult Indian male doctor, rounder face, short wavy hair, white doctor coat and stethoscope. Place him on the right foreground.
+
+Scene props:
+Books, school bags, a blank board with no writing, teacher desk, simple medical bag or stethoscope cue, warm Indian classroom details. No readable background text.
+
+Composition:
+Show all four people in one stable wide 16:9 scene. Keep their positions stable and leave clean wall space near the top for the app to overlay speech bubbles. Make each person visually distinct by age, role, face, hair, clothing, and accessories. Do not make the people look like copies of each other.
+
+Style:
+Modern colorful children's storybook cartoon, warm Indian environment, expressive characters, clean readable 16:9 composition.
+
+Negative instructions:
+No text, no letters, no captions, no UI, no watermarks, no fake writing, no chalk writing, no random symbols, no generated speech bubble, no generated name labels, no blank white label rectangles.

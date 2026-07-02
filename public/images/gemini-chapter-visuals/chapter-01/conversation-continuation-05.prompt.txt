@@ -1,0 +1,55 @@
+Create one line-specific image for a spoken Kannada learning card.
+
+Purpose:
+This image is one sentence from the Chapter 1 family conversation covering cards 27-34. Use the attached shared family base scene as the visual anchor, but update gaze, pointing, posture, and focus so this specific sentence makes sense. The app will add the speech bubble and exact English/Kannada text after generation.
+
+Chapter:
+Chapter 1
+
+Conversation id:
+Conversation 3 continuation / family introduction
+
+Conversation summary:
+Kiran tells the teacher that the adult man is his father. The teacher asks about a girl, guesses Saroja, and Kiran explains that the girl is his younger sister Manju.
+
+Full conversation excerpt:
+A: Is her name Saroja ? B: No, B: her name is not Saroja. A: Who is she ? B: She is my younger sister. A: What is her name ? B: Her name is Manju.
+
+Current line:
+5
+
+Speaker:
+Kiran
+
+Listener:
+Adult teacher
+
+What is happening in this exact image:
+Kiran is answering proudly and pointing toward Manju, showing that she is his younger sister. The sentence is: "She is my younger sister."
+
+English sentence for context only, do not render:
+She is my younger sister.
+
+Kannada sentence for context only, do not render:
+ಅವರು ನನ್ನ ತಂಗಿ.
+
+Romanized Kannada for context only, do not render:
+Avaru nanna tangi.
+
+Stable cast:
+Teacher: adult Indian woman teacher in a sari, left foreground, kind expression.
+Kiran: young Indian boy in a yellow shirt, center foreground.
+Father: adult Indian man, right background, clearly older than Kiran.
+Manju: young Indian girl, younger sister, right or center-right background. Manju is the only girl being discussed; do not create a separate Saroja character.
+
+Scene continuity:
+The shared family base scene is attached, and the previous family line image may also be attached. Preserve the same room, character identities, clothing, relative positions, lighting, and cartoon style.
+
+Composition:
+Keep all family characters recognizable and in roughly the same positions as the base scene. Change only gaze, hand gesture, slight body direction, and focus needed for this sentence. If the sentence mentions father, make the adult man the referenced person. If the sentence says she/her/Saroja/Manju/sister, make Manju the referenced person. Leave clean top space for a compact app-overlaid speech bubble. Do not draw speech bubbles, text, name badges, labels, signs, or blank label boxes.
+
+Style:
+Modern colorful children's storybook cartoon, warm Indian school setting, expressive characters, clean readable 16:9 composition.
+
+Negative instructions:
+No text, no letters, no captions, no UI, no watermarks, no fake writing, no chalk writing, no random symbols, no generated speech bubble, no generated name labels, no blank white label rectangles, no character named Saroja.

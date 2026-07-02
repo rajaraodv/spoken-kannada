@@ -1,0 +1,25 @@
+{
+  "page": 13,
+  "lesson": null,
+  "blocks": [
+    {"type":"vocab","rows":[
+      {"speaker":"","roman":"olle","english":"good"},
+      {"speaker":"","roman":"ketta","english":"bad"},
+      {"speaker":"","roman":"hosa","english":"new"},
+      {"speaker":"","roman":"hale","english":"old"},
+      {"speaker":"","roman":"dodda","english":"big"},
+      {"speaker":"","roman":"cikka","english":"small"},
+      {"speaker":"","roman":"tumba","english":"much"},
+      {"speaker":"","roman":"i du","english":"this"},
+      {"speaker":"","roman":"idara","english":"its"},
+      {"speaker":"","roman":"sneehitru","english":"friend"},
+      {"speaker":"","roman":"kate","english":"story"},
+      {"speaker":"","roman":"mane","english":"house"},
+      {"speaker":"","roman":"pustaka","english":"book"},
+      {"speaker":"","roman":"naataka","english":"play"},
+      {"speaker":"","roman":"anna","english":"elder brother"},
+      {"speaker":"","roman":"yaavdu","english":"which one"},
+      {"speaker":"","roman":"bangle","english":"bungalow"}
+    ]}
+  ]
+}

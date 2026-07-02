@@ -1,0 +1,34 @@
+{
+  "page": 77, "lesson": 24,
+  "blocks": [
+    {"type":"conversation","number":"1","rows":[
+      {"speaker":"A","roman":"namaskaara, nimmanna maneyalli-","english":"Good morning, is your elder brother"},
+      {"speaker":"","roman":"ddaaraa ?","english":"at home ?"},
+      {"speaker":"A","roman":"iddaare, kuutkolli.","english":"Yes, he is; please be seated."},
+      {"speaker":"A","roman":"een maadtiddaare ?","english":"What is he doing ?"},
+      {"speaker":"B","roman":"snaana maadtiddaare.","english":"He is bathing."},
+      {"speaker":"A","roman":"nim taayi een maadtiddaare ?","english":"What is your mother doing ?"},
+      {"speaker":"B","roman":"avaru adge maadtaa iddaare ;","english":"She is cooking (food).  Please"},
+      {"speaker":"","roman":"solpa paepar oodtaa iri, bartaare","english":"be reading the newspaper; she will come"}
+    ]},
+    {"type":"conversation","number":"2","rows":[
+      {"speaker":"A","roman":"nim naayi een maadtaa ide ?","english":"What is your dog doing ?"},
+      {"speaker":"B","roman":"adu rasteeli bogaltaa ide.","english":"It is barking in the road."},
+      {"speaker":"A","roman":"yaake bogaltaa ide ?","english":"Why is it barking ?"},
+      {"speaker":"B","roman":"alli obba hucca hoogtaa idaane.","english":"There is a mad man going in the road"},
+      {"speaker":"","roman":"adakke bogaltaa ide.","english":"It 's barking at him."}
+    ]},
+    {"type":"conversation","number":"3","rows":[
+      {"speaker":"A","roman":"niivu sanje hottu aadtirtiiraa ?","english":"Would you be usually playing in the evening ?"},
+      {"speaker":"B","roman":"haudu; dinaa aiduuvare ganteyinda","english":"Yes, I will be usually playing"},
+      {"speaker":"","roman":"aaruu vare gante varege aadtirtiini.","english":"from 5-30 to 6-30 P.M."},
+      {"speaker":"A","roman":"beligge een maadtirtiiri ?","english":"What will you be usually doing in the morning ?"},
+      {"speaker":"B","roman":"naanu beligge oodtirtiini.","english":"I will be reading during morning hours."}
+    ]},
+    {"type":"conversation","number":"4","rows":[
+      {"speaker":"A","roman":"namaskaara, een maadtiddiiri ?","english":"Good morning, what are you doing ?"},
+      {"speaker":"B","roman":"namaskaara, batte istri maadtiddiini","english":"Hello, I am ironing the clothes."},
+      {"speaker":"A","roman":"ivattu sanje ellig hoogtiiri ?","english":"Where are you going this evening ?"}
+    ]}
+  ]
+}

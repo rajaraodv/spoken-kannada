@@ -1,0 +1,47 @@
+{
+  "page": 90,
+  "lesson": 29,
+  "blocks": [
+    {
+      "type": "conversation",
+      "number": "1",
+      "rows": [
+        {"speaker": "A", "roman": "niivu cennaagi maataadoo varege kaannada kaliibeeku.", "english": "You have to learn Kannada till you speak well."},
+        {"speaker": "B", "roman": "hagaadre etsu tinglu kaliibeeku.", "english": "If so, how many months should I learn ?"},
+        {"speaker": "A", "roman": "naalku tinglu kaliibeeku.", "english": "You have to learn for four months."},
+        {"speaker": "B", "roman": "naanu aaru tinglu kaliitiini.", "english": "I will learn for six months."}
+      ]
+    },
+    {
+      "type": "conversation",
+      "number": "2",
+      "rows": [
+        {"speaker": "A", "roman": "ninne klaas mugid meele ellig hoodri ?", "english": "Where did you go after the class yesterday ?"},
+        {"speaker": "B", "roman": "naanu klaass mugidmeele sabhege hoode, niiyu ?", "english": "After the class, I want to the meeting and you ?"},
+        {"speaker": "A", "roman": "naanu klaas mugid meele haastalge hoode.", "english": "I went to the hostel after the class was over."},
+        {"speaker": "B", "roman": "haastalge hood meele een maadtiddri ?", "english": "What were you doing after going to the hostel?"},
+        {"speaker": "A", "roman": "haalu kudde. haalu kudidmeele nidde baroovarge oottidde.", "english": "I drank milk. After drinking milk, I was reading until I got sleep."}
+      ]
+    },
+    {
+      "type": "conversation",
+      "number": "3",
+      "rows": [
+        {"speaker": "A", "roman": "ninne niivu estu gante varege oottiddri?", "english": "Yesterday till what time were you studying ?"},
+        {"speaker": "B", "roman": "namma meestru baroo varege oottidde.", "english": "I was reading till the master came."},
+        {"speaker": "A", "roman": "avaru hoodmeele malgadraa ?", "english": "Did you go to bed after he left ?"},
+        {"speaker": "B", "roman": "illa, avaru hood meeluu solpa oottidde.", "english": "No, I was reading for some time even after he left."},
+        {"speaker": "A", "roman": "asaadhya manusyarappa niivu", "english": "You are a terrible person."}
+      ]
+    },
+    {
+      "type": "vocab",
+      "rows": [
+        {"speaker": "", "roman": "varege", "english": "upto, until"},
+        {"speaker": "", "roman": "meele", "english": "after/afterwards"},
+        {"speaker": "", "roman": "mugi", "english": "to be complete"},
+        {"speaker": "", "roman": "mugisu", "english": "to complete"}
+      ]
+    }
+  ]
+}

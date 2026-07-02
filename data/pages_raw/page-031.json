@@ -1,0 +1,48 @@
+{
+  "page": 31,
+  "lesson": 7,
+  "blocks": [
+    {
+      "type": "conversation",
+      "number": "1",
+      "rows": [
+        {"speaker": "A", "roman": "namaskara, svaami.", "english": "Good afternoon, sir."},
+        {"speaker": "", "roman": "ii uuralli bus staand ellide ?", "english": "Where is the bus stand in this town ?"},
+        {"speaker": "B", "roman": "iddee rastee koneeli poolissteesan ide.", "english": "There is a police station at the end of this road."},
+        {"speaker": "", "roman": "adara hinde bas staand ide.", "english": "Behind it is the bus-stand."},
+        {"speaker": "A", "roman": "ii uuralli railve steesan ideyaa ?", "english": "Is there a railway station in this town ?"},
+        {"speaker": "B", "roman": "ide, aduu bastaand pakkadallee ide.", "english": "Yes, it is also beside the bus stand."},
+        {"speaker": "", "roman": "niivu ii uurige hosabarra ?", "english": "Are you new to this place ?"},
+        {"speaker": "A", "roman": "haudu, naanu illige hosaba.", "english": "Yes, I am new to this place."},
+        {"speaker": "B", "roman": "niivu yaava uurinavaru ?", "english": "Which place do you belong to ?"},
+        {"speaker": "A", "roman": "naanu dhaarvaddavanu.", "english": "I belong to Dharwar."}
+      ]
+    },
+    {
+      "type": "conversation",
+      "number": "2",
+      "rows": [
+        {"speaker": "A", "roman": "iiga hampige bassu ideyaa ?", "english": "Is there a bus to Hampi now ?"},
+        {"speaker": "B", "roman": "beekadastive.", "english": "There are plenty."},
+        {"speaker": "", "roman": "ardha gantege ond bassu ide.", "english": "There is a bus every half an hour."},
+        {"speaker": "A", "roman": "mundin bassu estu gantege ide ?", "english": "At what time is the next bus ?"},
+        {"speaker": "B", "roman": "onduuvare gantege eradu bas ive.", "english": "There are two buses at one thirty."},
+        {"speaker": "", "roman": "ond bassu muurnee platfarm-nallide.", "english": "There is a bus in the third platform."},
+        {"speaker": "", "roman": "innondu naakneedralli ide.", "english": "Another one is in the fourth."},
+        {"speaker": "A", "roman": "ii bassalli siit ideay ?", "english": "Are there seats available in this bus ?"},
+        {"speaker": "B", "roman": "ive, beekaadasttive.", "english": "Yes, there are plenty."}
+      ]
+    },
+    {
+      "type": "conversation",
+      "number": "3",
+      "rows": [
+        {"speaker": "A", "roman": "nimma maneeli naayi ideyaa ?", "english": "Is there a dog in yonr house ?"},
+        {"speaker": "B", "roman": "illa, namma maneeli naayi illa.", "english": "No. There is no dog in our house."},
+        {"speaker": "", "roman": "nam tootadalli ond naayi ide.", "english": "There is one in our farm."},
+        {"speaker": "A", "roman": "oohoo ! nimge toota ideyaa ?", "english": "Oh ! Do you own a farm ?"},
+        {"speaker": "B", "roman": "haudu, nimagilvaa ?", "english": "Yes, don't you have one ?"}
+      ]
+    }
+  ]
+}

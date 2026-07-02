@@ -1,0 +1,43 @@
+{
+  "page": 34,
+  "lesson": 8,
+  "blocks": [
+    {
+      "type": "conversation",
+      "number": "1",
+      "rows": [
+        {"speaker": "A", "roman": "Krisnappanavaru maneyallli-iddaara ?", "english": "Is Mr. Krishnappa at home ?"},
+        {"speaker": "B", "roman": "iddaare saar.", "english": "Yes, he is."},
+        {"speaker": "", "roman": "olage iddare, kutkoli.", "english": "He is inside, please be seated."},
+        {"speaker": "A", "roman": "niinu avara maganaa ?", "english": "Are you his son ?"},
+        {"speaker": "B", "roman": "alla saar.", "english": "No, sir."},
+        {"speaker": "", "roman": "naanu avara soodaraliya.", "english": "I am his nephew."},
+        {"speaker": "A", "roman": "niinu nim maavan maneelee idiiyaa ?", "english": "Do you live in your uncle's house?"},
+        {"speaker": "B", "roman": "haudu saar.", "english": "Yes sir."},
+        {"speaker": "", "roman": "naanu illee iddiini.", "english": "I live here."},
+        {"speaker": "", "roman": "nanna tanginu idaale,", "english": "My younger sister is also here."},
+        {"speaker": "", "roman": "tammanuu idaane.", "english": "Younger brother is also here."},
+        {"speaker": "", "roman": "nam taayiinu ille iddare.", "english": "Our mother also is here."},
+        {"speaker": "", "roman": "naavu ellruu nam maavan maneeli iddiivi.", "english": "All of us live in my uncle's house."}
+      ]
+    },
+    {
+      "type": "conversation",
+      "number": "2",
+      "rows": [
+        {"speaker": "A", "roman": "eenu magu,", "english": "Well Child,"},
+        {"speaker": "", "roman": "nim tande maneeli iddaaraa ?", "english": "Is your father at home ?"},
+        {"speaker": "B", "roman": "avaru iiga uuralli illa.", "english": "Now he does not live in this town."},
+        {"speaker": "", "roman": "iiga avaru sirsiiliddare.", "english": "He is at Sirsi now."},
+        {"speaker": "A", "roman": "yaavaagininda alliddaare ?", "english": "Since when is he there ?"},
+        {"speaker": "B", "roman": "ond tingalinda alliddaare.", "english": "Since a month he is there."},
+        {"speaker": "A", "roman": "sari, nim taayi iddaara ?", "english": "Alright, is your mother at home ?"},
+        {"speaker": "B", "roman": "illa, nam taayiinuu maneelilla", "english": "No, my mother is also not at home?"},
+        {"speaker": "", "roman": "avaruu ond vaaradinda allee iddaare.", "english": "She also is there since one week."},
+        {"speaker": "A", "roman": "nin hatra ond ruupaayi cilre ideyaa ?", "english": "Do you have change for a rupee ?"},
+        {"speaker": "B", "roman": "illa sir.", "english": "No, Sir."},
+        {"speaker": "", "roman": "nan hatra ond paisaanu illa.", "english": "I don't have even a single paisa."}
+      ]
+    }
+  ]
+}

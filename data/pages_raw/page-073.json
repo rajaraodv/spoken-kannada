@@ -1,0 +1,44 @@
+{
+  "page": 73,
+  "lesson": 22,
+  "blocks": [
+    {
+      "type": "conversation",
+      "number": "1",
+      "rows": [
+        {"speaker": "A", "roman": "raamuu eddiddiieenoo ?", "english": "Ramu, are you awake ?"},
+        {"speaker": "B", "roman": "eddiddiinamma. raajuunuu eddiddaane.", "english": "Yes. mummy. Raju also has got up."},
+        {"speaker": "A", "roman": "laksmi eddiddaaleenoo ?", "english": "Is Lakshmi awake ?"},
+        {"speaker": "B", "roman": "avaluu eddiddaale. naayiinuu eddide, ellaruu eddiddaare.", "english": "Yes, she is awake and the dog too Everyone is up and ready."},
+        {"speaker": "A", "roman": "haagaadre yaaru eddilla innuu ?", "english": "Then, who is not awake yet ?"},
+        {"speaker": "B", "roman": "naayimarigalu eddillamma.", "english": "The puppies are not awake yet."},
+        {"speaker": "A", "roman": "saaku, banroo. kaafii kuidiri naavella aaglee kuddiddiivi.", "english": "Enough of it, come in and drink coffee. We have had it."},
+        {"speaker": "B", "roman": "bartiivamma.", "english": "We are coming, mummy."}
+      ]
+    },
+    {
+      "type": "conversation",
+      "number": "2",
+      "rows": [
+        {"speaker": "A", "roman": "meeneejar bandiddaaraa ?", "english": "Has the Manager come ?"},
+        {"speaker": "B", "roman": "avaru innuu bandilla, saar.", "english": "No, sir ! He hasn't turned up yet."},
+        {"speaker": "A", "roman": "rajaa haakiddaaraa ? nimhatra eenaadru heeliddaara ?", "english": "Has he applied for leave ? Has he left any message with you ?"},
+        {"speaker": "B", "roman": "gottilla saar. nannhatra eenuu heelilla.", "english": "I don't know, sir. He has not told me anything."},
+        {"speaker": "A", "roman": "dehaliyinda tanti baandide, aadit ripoort kolsiddiiraa ?", "english": "There is a telegram from Delhi. Have you despatched the audit report ?"},
+        {"speaker": "", "roman": "illa saar. ella redi maadiddiini. ivatte kalstiini.", "english": "No, sir. I have it ready. I'll despatch it to-day."},
+        {"speaker": "A", "roman": "naanu illee irtiini. ripoort tanni.", "english": "I will be here. Bring the report."},
+        {"speaker": "B", "roman": "tandiddiini saar. ruju maadi.", "english": "I have it here, sir. Please sign it."}
+      ]
+    },
+    {
+      "type": "vocab",
+      "rows": [
+        {"speaker": "", "roman": "innuu", "english": "still"},
+        {"speaker": "", "roman": "raja", "english": "leave"},
+        {"speaker": "", "roman": "tanti", "english": "telegram"},
+        {"speaker": "", "roman": "ruju", "english": "signature"},
+        {"speaker": "", "roman": "tegi", "english": "to open"}
+      ]
+    }
+  ]
+}

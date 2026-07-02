@@ -1,0 +1,37 @@
+Create one reusable base scene image for a spoken Kannada learning family conversation.
+
+Purpose:
+This base image will anchor cards 27-34 in Chapter 1. The app will add sentence-specific speech bubbles and exact name badges later. Do not draw any speech bubbles, names, labels, signs, writing, or text.
+
+Chapter:
+Chapter 1
+
+Conversation id:
+Conversation 3 continuation / family introduction
+
+Conversation summary:
+Kiran answers the adult teacher that the man is his father. The adult then asks about a girl, incorrectly guessing the name Saroja. Kiran says no, explains she is his younger sister, and says her name is Manju.
+
+Full conversation excerpt:
+B: Yes, he is my father. A: Is her name Saroja ? B: No, B: her name is not Saroja. A: Who is she ? B: She is my younger sister. A: What is her name ? B: Her name is Manju.
+
+Conversation setting:
+A warm school visiting area or classroom doorway in Karnataka. This is one continuous conversation in one place.
+
+Stable cast and exact layout:
+Teacher: adult Indian woman teacher in a sari, kind expression, left foreground. She is the adult asking questions.
+Kiran: young Indian boy, short child, yellow shirt, center foreground. He answers the teacher.
+Father: adult Indian man, taller than Kiran, mature face or moustache, simple shirt and trousers, right background. He is Kiran's father.
+Manju: young Indian girl, visibly younger sister, dress or school frock, right or center-right background but closer than Father. She is the girl being discussed; do not create any separate person named Saroja.
+
+Scene props:
+Warm Indian classroom/school doorway, simple picture-only posters, school bag, potted plant, open walking space. No readable background text.
+
+Composition:
+Show all four people in one stable wide 16:9 scene. Keep their identities, clothing, and relative positions clear. Teacher and Kiran should be the foreground speakers. Father and Manju should be visible as referenced family members. Make Manju visually distinct from Father and Kiran, and make Father clearly older than Kiran. Leave clean top space for compact app-overlaid speech bubbles.
+
+Style:
+Modern colorful children's storybook cartoon, warm Indian environment, expressive characters, clean readable 16:9 composition.
+
+Negative instructions:
+No text, no letters, no captions, no UI, no watermarks, no fake writing, no chalk writing, no random symbols, no generated speech bubble, no generated name labels, no blank white label rectangles, no character labeled Saroja.

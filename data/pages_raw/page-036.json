@@ -1,0 +1,21 @@
+{
+  "page": 36,
+  "lesson": null,
+  "blocks": [
+    {
+      "type": "vocab",
+      "rows": [
+        {"speaker": "", "roman": "madhyaaanha", "english": "afternoon"},
+        {"speaker": "", "roman": "sanje", "english": "evening"},
+        {"speaker": "", "roman": "raatri", "english": "night"},
+        {"speaker": "", "roman": "soodaraliya", "english": "nephew"},
+        {"speaker": "", "roman": "maava", "english": "uncle (maternal)"},
+        {"speaker": "", "roman": "estu hottu", "english": "what time at/over/during"},
+        {"speaker": "", "roman": "yaavaagluu", "english": "always"},
+        {"speaker": "", "roman": "saamaanyavaagi", "english": "usually"},
+        {"speaker": "", "roman": "matte yaaru", "english": "who else"},
+        {"speaker": "", "roman": "yaavagininda", "english": "since when"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "page": 60,
+  "lesson": null,
+  "blocks": [
+    {
+      "type": "conversation",
+      "number": "",
+      "rows": [
+        {"speaker": "B", "roman": "puuje maadleebeekaa ?", "english": "Must I worship ?"},
+        {"speaker": "A", "roman": "haudu, puuje maadleebeeku, aameele tindi tinnaboodu", "english": "Yes, you must. Afterwards you may have breakfast."},
+        {"speaker": "B", "roman": "haagaadre naanu beeg malagbeeku.", "english": "Then I should go to bed early."}
+      ]
+    },
+    {
+      "type": "vocab",
+      "rows": [
+        {"speaker": "", "roman": "paatha", "english": "lesson"},
+        {"speaker": "", "roman": "tarkaari", "english": "vegetables"},
+        {"speaker": "", "roman": "kiilu", "english": "to gather"},
+        {"speaker": "", "roman": "huu", "english": "flowers"},
+        {"speaker": "", "roman": "dhoobi", "english": "washerman"},
+        {"speaker": "", "roman": "batte", "english": "clothes"},
+        {"speaker": "", "roman": "beligge", "english": "morning"},
+        {"speaker": "", "roman": "tindi", "english": "snacks"},
+        {"speaker": "", "roman": "malagu", "english": "to sleep"},
+        {"speaker": "", "roman": "kaceeri", "english": "office"},
+        {"speaker": "", "roman": "tapaal", "english": "post"},
+        {"speaker": "", "roman": "kaagda", "english": "letter"},
+        {"speaker": "", "roman": "hancu", "english": "to distribute"},
+        {"speaker": "", "roman": "uttara", "english": "reply"}
+      ]
+    }
+  ]
+}

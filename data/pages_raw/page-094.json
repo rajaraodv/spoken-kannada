@@ -1,0 +1,46 @@
+{
+  "page": 94,
+  "lesson": 31,
+  "blocks": [
+    {
+      "type": "conversation",
+      "number": "1",
+      "rows": [
+        {"speaker": "A", "roman": "nimma maga cennaagi oottaanaa ?", "english": "Does your son study well ?"},
+        {"speaker": "B", "roman": "haudu, avanu oodoo haage avana klaasnalli yaaruu oodalla.", "english": "Yes, nobody else studies like him in his class."},
+        {"speaker": "A", "roman": "avanu cennaagi bariltaanaa ?", "english": "Does he write well ?"},
+        {"speaker": "B", "roman": "haudu, tumba cennaagi baritaane.", "english": "Yes, he writes very well."},
+        {"speaker": "A", "roman": "niivu avanannu noodkolloo haage mokkalannu yaaruu noodkolalla.", "english": "No body looks after the children. so well as you do."}
+      ]
+    },
+    {
+      "type": "conversation",
+      "number": "2",
+      "rows": [
+        {"speaker": "A", "roman": "noodu, niinu batte sariyaagi ogdilla.", "english": "Look here, you havn't washed the clothes properly."},
+        {"speaker": "B", "roman": "innu heege ogibeeku.", "english": "How (else) should I wash ?"},
+        {"speaker": "A", "roman": "noodu avanu ogda haage ogibeeku.", "english": "Look, you should wash clothes like him (as he washes)."},
+        {"speaker": "B", "roman": "hageenee ogiitiini.", "english": "I will wash in the same way."},
+        {"speaker": "A", "roman": "illa, ninge estu helidruu ondee.", "english": "No, you won't, any amount of instruction will not do any good."}
+      ]
+    },
+    {
+      "type": "conversation",
+      "number": "3",
+      "rows": [
+        {"speaker": "A", "roman": "ii doose yaaru maadiddu ?", "english": "Who made this pancrake ?"},
+        {"speaker": "B", "roman": "nam adgeyavanu maadiddu.", "english": "This was made by our cook."},
+        {"speaker": "A", "roman": "tumba cennaagi maadtaane.", "english": "He makes them very well."},
+        {"speaker": "B", "roman": "haudu avanu adge maadoo haage yaaru maadalla.", "english": "Its true, nobody cooks like him."}
+      ]
+    },
+    {
+      "type": "vocab",
+      "rows": [
+        {"speaker": "", "roman": "sariyaagi", "english": "correctly"},
+        {"speaker": "", "roman": "inyaaru", "english": "none else/who else"},
+        {"speaker": "", "roman": "noodkollu", "english": "to look after/to take eare of"}
+      ]
+    }
+  ]
+}

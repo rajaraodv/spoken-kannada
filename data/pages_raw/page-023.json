@@ -1,0 +1,39 @@
+{
+  "page": 23,
+  "lesson": 5,
+  "blocks": [
+    {"type":"conversation","number":"1","rows":[
+      {"speaker":"A","roman":"namaskaara svaami","english":"Good morning, Sir;"},
+      {"speaker":"","roman":"ii uuralli ollee hootlu yaavdu ?","english":"Which is the good hotel in this town ?"},
+      {"speaker":"B","roman":"illi sujaata ollee hootlu","english":"Sujaatha is a good hotel here."},
+      {"speaker":"A","roman":"adu tumba doddaa ?","english":"Is it very big ?"},
+      {"speaker":"B","roman":"astu dodalla","english":"It is not so big,"},
+      {"speaker":"","roman":"aadre tumba olle hootlu","english":"but it is a very good hotel."},
+      {"speaker":"A","roman":"mayuura ollee hootlalvaa ?","english":"Isn't Mayura a good hotel ?"},
+      {"speaker":"B","roman":"aduu ollee hootlu","english":"It is also a good hotel."},
+      {"speaker":"","roman":"aadre adu tumba duura","english":"But it's very far."},
+      {"speaker":"A","roman":"sujaata illige hatraanna ?","english":"Is Sujatha near here ?"},
+      {"speaker":"B","roman":"haudu, tumba hatra","english":"Yes, it's very near."},
+      {"speaker":"A","roman":"sujaatadalli ond ruumige","english":"What is the rent for a room in"},
+      {"speaker":"","roman":"baadige estu ?","english":"Sujatha ?"},
+      {"speaker":"B","roman":"singal ruumge sumaaru hattu","english":"About ten rupees for a single room."},
+      {"speaker":"","roman":"ruupaayi, dabbalge hadinaidu","english":"and fifteen for a double-room."},
+      {"speaker":"A","roman":"aa hootlalli uutakke estu ?","english":"What does a meal cost there ?"},
+      {"speaker":"B","roman":"ond uutakke eradu ruupaayi","english":"Two rupees per meal."}
+    ]},
+    {"type":"conversation","number":"2","rows":[
+      {"speaker":"A","roman":"namaskaara saar","english":"Good morning, sir."},
+      {"speaker":"","roman":"ivattu aafiisige rajaanaa ?","english":"Is it a holiday for the office to-day ?"},
+      {"speaker":"B","roman":"haudu, ivattu bhaanuvaara alvaa ?","english":"Yes. Is't it Sunday today ?"},
+      {"speaker":"","roman":"nim angdige raja yaavattu ?","english":"What day is a holiday for your shop ?"},
+      {"speaker":"A","roman":"nam angdige mangalavaara raja","english":"Tuesday is a holiday for our shop."},
+      {"speaker":"B","roman":"haudaa ? matteenu viseesa","english":"It it so ? What is news ?"},
+      {"speaker":"A","roman":"eenuu iila,","english":"Nothing."},
+      {"speaker":"","roman":"ii biidiili raajannoora mane estaneedu ?","english":"In this street, which is Rajann's house ?"},
+      {"speaker":"B","roman":"idee saalalli koneedu","english":"Last one in this very row."},
+      {"speaker":"A","roman":"adara pakkada mane maniidalvaa ?","english":"Isn't the next house Mani's ?"},
+      {"speaker":"B","roman":"adu maniidalla","english":"That's not Mani's"},
+      {"speaker":"","roman":"mani mane adara hindindu","english":"Mani's house is the one behind it."}
+    ]}
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "page": 53, "lesson": null,
+  "blocks": [
+    {"type":"conversation","number":"3","rows":[
+      {"speaker":"B","roman":"nange tumba talenoovu negdi ittu. maneyallee idde.","english":"I had severe headache and cold, I was just at home."},
+      {"speaker":"A","roman":"avsti tagondraa ?","english":"Did you take medicine ?"},
+      {"speaker":"B","roman":"illa, eenuu tagollilla.","english":"No, I did not take any."},
+      {"speaker":"A","roman":"yaake, avsti yaaruu kodlilvaa ?","english":"Why, didn't anyone give you medicine ?"},
+      {"speaker":"B","roman":"yaaruu kodlilla,","english":"No one gave me."},
+      {"speaker":"A","roman":"naan kodtiini, ii eradu anaasin gulge tagoli.","english":"I will give you, please take these two anacin pills."}
+    ]},
+    {"type":"vocab","rows":[
+      {"speaker":"","roman":"kaalu","english":"leg"},
+      {"speaker":"","roman":"jvara","english":"fever"},
+      {"speaker":"","roman":"taavu","english":"you (respectful)"},
+      {"speaker":"","roman":"austi","english":"medicine"},
+      {"speaker":"","roman":"tale noovu","english":"headache"},
+      {"speaker":"","roman":"negdi","english":"cold"},
+      {"speaker":"","roman":"kaage","english":"crow"},
+      {"speaker":"","roman":"baayaarke","english":"thirst"},
+      {"speaker":"","roman":"niiru","english":"water"},
+      {"speaker":"","roman":"koda","english":"pot"},
+      {"speaker":"","roman":"kokku","english":"beak"},
+      {"speaker":"","roman":"cikka","english":"small"},
+      {"speaker":"","roman":"kallu","english":"stone"},
+      {"speaker":"","roman":"patra","english":"letter"},
+      {"speaker":"","roman":"dayavittu","english":"kindly (please)"},
+      {"speaker":"","roman":"kari","english":"call"},
+      {"speaker":"","roman":"hari","english":"to run over"},
+      {"speaker":"","roman":"eetu taglu","english":"to get hurt"},
+      {"speaker":"","roman":"oodu","english":"to run"},
+      {"speaker":"","roman":"sikku","english":"find"},
+      {"speaker":"","roman":"aarsu","english":"gather"},
+      {"speaker":"","roman":"haaku","english":"to put"}
+    ]}
+  ]
+}

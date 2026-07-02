@@ -1,0 +1,60 @@
+{
+  "page": 38,
+  "lesson": 9,
+  "blocks": [
+    {
+      "type": "conversation",
+      "number": "1",
+      "rows": [
+        {"speaker": "A", "roman": "ninne niivu maneyalliddraa ?", "english": "Were you at home yesterday ?"},
+        {"speaker": "B", "roman": "illa, naanu maneyallirlilla.", "english": "No, I was not at home yesterday."},
+        {"speaker": "A", "roman": "matte elliddri ?", "english": "Then, where were you ?"},
+        {"speaker": "B", "roman": "naanu nan tootadallidde.", "english": "I was in my garden."},
+        {"speaker": "A", "roman": "sanje varege alliddraa ?", "english": "Were you there till evening ?"},
+        {"speaker": "B", "roman": "haudu, sanje varege allidde.", "english": "Yes, I was there till the evening."},
+        {"speaker": "A", "roman": "nim tande elliddru ?", "english": "Where was your father ?"},
+        {"speaker": "B", "roman": "avru maneyallee iddru.", "english": "He was at home."}
+      ]
+    },
+    {
+      "type": "conversation",
+      "number": "2",
+      "rows": [
+        {"speaker": "A", "roman": "nam guddli ninne ellittu ?", "english": "Where was our spade yesterday ?"},
+        {"speaker": "B", "roman": "adu tootadallittu.", "english": "It was in the garden."},
+        {"speaker": "A", "roman": "tootadalli ellittu ?", "english": "Where was it in the garden ?"},
+        {"speaker": "B", "roman": "baavi mattu kaalve madhyadallittu.", "english": "It was inbetween the well and the canal."},
+        {"speaker": "A", "roman": "sari, adanna tagolli, beeg banni, hottaaytu.", "english": "Yes, take it, come quickly. It is getting late."}
+      ]
+    },
+    {
+      "type": "conversation",
+      "number": "3",
+      "rows": [
+        {"speaker": "A", "roman": "hood varsa niivu elliddri ?", "english": "Where were you last year ?"},
+        {"speaker": "B", "roman": "hood varsa naanu halliallidde.", "english": "I was in my village last year."},
+        {"speaker": "A", "roman": "nim makklu ellidru ?", "english": "Where were your children ?"},
+        {"speaker": "B", "roman": "avru ii uuralle iddru.", "english": "They were in this town."},
+        {"speaker": "A", "roman": "illi skuulalliddraa ?", "english": "Were they in school here ?"},
+        {"speaker": "B", "roman": "haudu skuul haastlallidru.", "english": "Yes, they were in the school-hostel."}
+      ]
+    },
+    {
+      "type": "vocab",
+      "rows": [
+        {"speaker": "", "roman": "guddli", "english": "spade"},
+        {"speaker": "", "roman": "baavi", "english": "well"},
+        {"speaker": "", "roman": "kaalve", "english": "canal"},
+        {"speaker": "", "roman": "toota", "english": "garden"},
+        {"speaker": "", "roman": "halli", "english": "village"},
+        {"speaker": "", "roman": "hottu", "english": "time"},
+        {"speaker": "", "roman": "sanje", "english": "evening"},
+        {"speaker": "", "roman": "madhya", "english": "middle, between"},
+        {"speaker": "", "roman": "matte", "english": "then, in that time"},
+        {"speaker": "", "roman": "beega", "english": "quick"},
+        {"speaker": "", "roman": "banni", "english": "please come"},
+        {"speaker": "", "roman": "tagoli", "english": "please take"}
+      ]
+    }
+  ]
+}

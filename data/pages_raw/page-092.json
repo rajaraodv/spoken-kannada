@@ -1,0 +1,38 @@
+{
+  "page": 92,
+  "lesson": 30,
+  "blocks": [
+    {
+      "type": "conversation",
+      "number": "1",
+      "rows": [
+        {"speaker": "A", "roman": "ii sartu naale kodtiira ?", "english": "Will you give this shirt tomorrow ?"},
+        {"speaker": "B", "roman": "illa, naale kodakke aagalla.", "english": "No, I can't give tommorrow."},
+        {"speaker": "A", "roman": "naanu ond maduvege hoogbekaagittu", "english": "I have to attend a wedding."},
+        {"speaker": "B", "roman": "niivu ninne heeliddre holiitaa idde.", "english": "If you had told me yesterday. I would have stitched."},
+        {"speaker": "A", "roman": "nange ninneenee gottagiddre, heeltiddee", "english": "Had I known yesterday, I would have told."}
+      ]
+    },
+    {
+      "type": "conversation",
+      "number": "2",
+      "rows": [
+        {"speaker": "A", "roman": "ivattu yaake pusteka tarlilla ?", "english": "Why didn't you bring the book to-day ?"},
+        {"speaker": "B", "roman": "byaankge raja irde iddiddre tarboodaagittu.", "english": "If it were not a bank-holiday, I would have brought."},
+        {"speaker": "A", "roman": "naale khandita tartiiraa ?", "english": "Will you bring tomorrow without fail ?"},
+        {"speaker": "B", "roman": "naale beere kelsa ide, aadruu heegaadruu maadi tartiini.", "english": "Tomorrow, I have some other work, but still I will bring it some how."},
+        {"speaker": "A", "roman": "ivattu yaake saambaar maadlilla ?", "english": "Why did you not prepare sambar to-day ?"},
+        {"speaker": "B", "roman": "niivu tarkaari tandiddre maadtidde.", "english": "If you had brought vegetables, I would have prepared."},
+        {"speaker": "A", "roman": "niivu heeliddre tartidde. hoogli, naale tartiini maadi.", "english": "If you had told me, I would have brought. Its o. k. I will bring tomorrow. You may prepare it then."}
+      ]
+    },
+    {
+      "type": "vocab",
+      "rows": [
+        {"speaker": "", "roman": "saambaar", "english": "sambaar"},
+        {"speaker": "", "roman": "maduve", "english": "marriage"},
+        {"speaker": "", "roman": "gottaagu", "english": "to come to know"}
+      ]
+    }
+  ]
+}

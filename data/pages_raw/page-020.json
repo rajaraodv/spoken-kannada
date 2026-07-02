@@ -1,0 +1,59 @@
+{
+  "page": 20,
+  "lesson": null,
+  "blocks": [
+    {"type":"conversation","number":"","rows":[
+      {"speaker":"","roman":"obba mogana hersaru sureesa","english":"The name of one of my sons Is Suresha"},
+      {"speaker":"","roman":"innobbana hesaru remeesa","english":"Another's name is Ramesha."},
+      {"speaker":"","roman":"magala hesaru sarooja","english":"Daughter's name is Saroja."}
+    ]},
+    {"type":"conversation","number":"3","rows":[
+      {"speaker":"A","roman":"ivu yaava pustakagalu,","english":"What are these books,"},
+      {"speaker":"","roman":"prasaadavaree ?","english":"Mr. Prasad ?"},
+      {"speaker":"B","roman":"ivu makkala pustakagalu","english":"These are children's books."},
+      {"speaker":"A","roman":"nimma makkaligeenaa ?","english":"Are these books for your children ?"},
+      {"speaker":"B","roman":"haudu, nanna makkalige","english":"Yes, these books are for my children."},
+      {"speaker":"A","roman":"ondu pustakakke bele estu ?","english":"What is the price of one book ?"},
+      {"speaker":"B","roman":"nuuru putada pustakakke","english":"For a 100 page book, it is"},
+      {"speaker":"","roman":"eppattaidu paise","english":"75 paise."},
+      {"speaker":"","roman":"ii eradakke erduuvareruupaayi","english":"These two books cost 2½ rupees."},
+      {"speaker":"","roman":"idakke aiduukaalu ruupaayi","english":"This costs 5¼ rupees."},
+      {"speaker":"A","roman":"yaavudakke aiduukaalu ruupaayi","english":"Which one costs 5¼ rupees ?"},
+      {"speaker":"B","roman":"ii pennige aidukaala","english":"For this pen 5¼ Rs."}
+    ]},
+    {"type":"vocab","rows":[
+      {"speaker":"","roman":"ondu","english":"one"},
+      {"speaker":"","roman":"erdu","english":"two"},
+      {"speaker":"","roman":"muuru","english":"three"},
+      {"speaker":"","roman":"obba","english":"one person (male)"},
+      {"speaker":"","roman":"oblu","english":"one person (female)"},
+      {"speaker":"","roman":"ibbru","english":"two persons"},
+      {"speaker":"","roman":"innobba","english":"another person"},
+      {"speaker":"","roman":"eraduukaalu","english":"2¼"},
+      {"speaker":"","roman":"muuruuvare","english":"3½"},
+      {"speaker":"","roman":"naakuumukkaalu","english":"4¾"},
+      {"speaker":"","roman":"sihi","english":"sweet"},
+      {"speaker":"","roman":"baadge","english":"rent"},
+      {"speaker":"","roman":"tingalu","english":"month"},
+      {"speaker":"","roman":"mara","english":"tree"},
+      {"speaker":"","roman":"hannu","english":"fruit"},
+      {"speaker":"","roman":"anna","english":"elder brother"},
+      {"speaker":"","roman":"makkalu","english":"chlldren"},
+      {"speaker":"","roman":"tangi","english":"younger sister"},
+      {"speaker":"","roman":"huduga","english":"boy"},
+      {"speaker":"","roman":"hudugi","english":"girl"},
+      {"speaker":"","roman":"gandumakkalu","english":"male children"},
+      {"speaker":"","roman":"hennumakkalu","english":"female children"},
+      {"speaker":"","roman":"bele","english":"price"},
+      {"speaker":"","roman":"dina","english":"day"},
+      {"speaker":"","roman":"sambla","english":"salary"},
+      {"speaker":"","roman":"niiru","english":"water"},
+      {"speaker":"","roman":"uuru","english":"town, place"},
+      {"speaker":"","roman":"sundaravaada","english":"beautiful"},
+      {"speaker":"","roman":"ettaravaada","english":"tall"},
+      {"speaker":"","roman":"sihiyaada","english":"sweet"},
+      {"speaker":"","roman":"estu","english":"How many/much"},
+      {"speaker":"","roman":"estu jana","english":"How many persons"}
+    ]}
+  ]
+}

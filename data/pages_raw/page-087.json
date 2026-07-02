@@ -1,0 +1,39 @@
+{
+  "page": 87,
+  "lesson": 28,
+  "blocks": [
+    {
+      "type": "conversation",
+      "number": "1",
+      "rows": [
+        {"speaker": "A", "roman": "naale niivu nam manege banni.", "english": "Tomorrow you please come to my house."},
+        {"speaker": "B", "roman": "bartiini, aadre naanu baroovaga niivu maneeli iralla.", "english": "I will come, but you won't be at home when I come."},
+        {"speaker": "A", "roman": "naale niivu bandaga khandita irtiini.", "english": "Tomorrow when you come, I will definitely be at home."},
+        {"speaker": "B", "roman": "naale entu gantege irtiiraa ?", "english": "Will you be at home tomorrow at 8'o clock ?"},
+        {"speaker": "A", "roman": "irtiini.", "english": "Yes. I will be."}
+      ]
+    },
+    {
+      "type": "conversation",
+      "number": "2",
+      "rows": [
+        {"speaker": "A", "roman": "ninne niivu manege hoodaaga estu gante ?", "english": "What was the time when you went home yesterday ?"},
+        {"speaker": "B", "roman": "ninne naanu manege hoodaaga hattu gante.", "english": "It was 10'o clock when I went home yesterday."},
+        {"speaker": "A", "roman": "niivu manege hoodaaga nimma sneehitru iddraa ?", "english": "Was your friend at home when you went ?"},
+        {"speaker": "B", "roman": "illa naanu hoodaaga avru aafisge hoogiddru.", "english": "No. when I went. he had gone to the office."},
+        {"speaker": "A", "roman": "punaha yaavaaga avarannu noodidri ?", "english": "When did you see him again ?"},
+        {"speaker": "B", "roman": "sanje hoodaaga noodde.", "english": "I saw him when I went in the evening."}
+      ]
+    },
+    {
+      "type": "conversation",
+      "number": "3",
+      "rows": [
+        {"speaker": "A", "roman": "ivattu kannada klaasge yaake tadavaagi bandri ?", "english": "Why did you come late to the kannada class to-day ?"},
+        {"speaker": "B", "roman": "ayyoo, haalu bassee siglilla. yaavaagaluu ondalla ondu goolu.", "english": "Oh ! I could not get the wretched bus ; always there is some trouble or the other"},
+        {"speaker": "A", "roman": "niivu horaduvaaga tadavaaytaa ?", "english": "Was it late when you left ?"},
+        {"speaker": "B", "roman": "haudu, naanu eeluvaaglee eelu gante, aadrinda tadavaaytu.", "english": "When I woke up, it was already seven, therefore I was delayed."}
+      ]
+    }
+  ]
+}

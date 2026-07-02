@@ -1,0 +1,53 @@
+{
+  "page": 45,
+  "lesson": 12,
+  "blocks": [
+    {
+      "type": "conversation",
+      "number": "1",
+      "rows": [
+        {"speaker": "A", "roman": "niivu beligge een tintiiri ?", "english": "What do you eat in the morinag ?"},
+        {"speaker": "B", "roman": "ondu doose mattu naaku idli tintini.", "english": "I eat one pancake and four idlies."},
+        {"speaker": "A", "roman": "niivu maamsa tinnalvaa ?", "english": "Don't you eat meat ?"},
+        {"speaker": "B", "roman": "illa, naanu maamsa tinnalla.", "english": "No, I don't eat meat."},
+        {"speaker": "A", "roman": "motte kuuda tinnalvaa ?", "english": "Don't you eat even eggs ?"},
+        {"speaker": "B", "roman": "illa tinnalla.", "english": "No, I don't eat."},
+        {"speaker": "A", "roman": "matteen tintiiri ?", "english": "Then what do you eat ?"},
+        {"speaker": "B", "roman": "naanu baalehannu maatra tintini.", "english": "I eat only plantains [bananas]"},
+        {"speaker": "A", "roman": "niivu kaafi kuditiiraa ?", "english": "Do you drink coffee ?"},
+        {"speaker": "B", "roman": "illa naanu eennu kudiyalla.", "english": "No, I don't drink anything."}
+      ]
+    },
+    {
+      "type": "conversation",
+      "number": "2",
+      "rows": [
+        {"speaker": "A", "roman": "nim naayi een tinnatte ?", "english": "What does your dog eat ?"},
+        {"speaker": "B", "roman": "adu biskat, capaati, mudde", "english": "It eats biscuits, chapathi and ragi"},
+        {"speaker": "", "roman": "tinnatte mattu haalu kudiyatte.", "english": "balls and drinks milk."},
+        {"speaker": "A", "roman": "adu tumba bogalattaa ?", "english": "Does it bark much ?"},
+        {"speaker": "B", "roman": "haudu, tumba bogalatte", "english": "Yes, it barks much."}
+      ]
+    },
+    {
+      "type": "conversation",
+      "number": "3",
+      "rows": [
+        {"speaker": "A", "roman": "niivu nim aafiisar maganannu", "english": "Do you see your officer's son today ?"},
+        {"speaker": "", "roman": "ivattu noodtiiraa", "english": ""},
+        {"speaker": "B", "roman": "haudu, noodtiini", "english": "Yes, I am seeing him."},
+        {"speaker": "A", "roman": "avarannu yaake noodtiiri ?", "english": "Why do you see him ?"},
+        {"speaker": "B", "roman": "naanu avrige paatha heeltiini,", "english": "I see him because I am teaching him."},
+        {"speaker": "", "roman": "adakke noodtiini.", "english": ""}
+      ]
+    },
+    {
+      "type": "conversation",
+      "number": "4",
+      "rows": [
+        {"speaker": "A", "roman": "moohan, nan jote aata aadtiiyaa ?", "english": "Mohan, would you play with me ?"},
+        {"speaker": "B", "roman": "illa, naanu aadalla", "english": "No I won't play"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "page": 59,
+  "lesson": 16,
+  "blocks": [
+    {
+      "type": "conversation",
+      "number": "1",
+      "rows": [
+        {"speaker": "A", "roman": "niinu ellig hoogbeeku ?", "english": "Where do you have to go ?"},
+        {"speaker": "B", "roman": "naanu skuulig hoogbeeku.", "english": "I have to go to school."},
+        {"speaker": "A", "roman": "yaavaag hoogbeeku ?", "english": "When do you have to go ?"},
+        {"speaker": "B", "roman": "hattu gatntege hoogbeeku.", "english": "I have to go at ten O'clock."},
+        {"speaker": "A", "roman": "haagaadre niinu iiga padya oodbeeku.", "english": "Then, you have to read poetry now."},
+        {"speaker": "B", "roman": "ila, naanu iiga paatha bariibeeku.", "english": "No, I have to write the lesson now."},
+        {"speaker": "A", "roman": "beeda, niinu iiga padya oodleebeeku ; aameele paatha bariiboodu.", "english": "No, you must read poetry new ; later on you may write the lesson."},
+        {"speaker": "B", "roman": "ayyoo, nange padya kandre aagalla.", "english": "Goodness. I  just cannot bear the sight of poetry."}
+      ]
+    },
+    {
+      "type": "conversation",
+      "number": "2",
+      "rows": [
+        {"speaker": "A", "roman": "naanu maarkettige hoogbeekaa ?", "english": "Should I go to the market ?"},
+        {"speaker": "B", "roman": "haudu, ivattu niivu hoogleebeeku.", "english": "Yes, you must go to the market to-day."},
+        {"speaker": "A", "roman": "allinda een tarbeeku ?", "english": "What should I bring from there ?"},
+        {"speaker": "B", "roman": "tarkaari tarbeeku, huu harabeeku.", "english": "Vegetables and flowers should be brought."},
+        {"speaker": "A", "roman": "mithaayi tarbeekaa ?", "english": "Should I get sweets ?"},
+        {"speaker": "B", "roman": "mithaayi tarbeedi, adanna kandre nange aagalla.", "english": "Don't bring sweets, 1 hate them."},
+        {"speaker": "A", "roman": "hannu tarabooda ?", "english": "May I bring fruits ?"},
+        {"speaker": "B", "roman": "oohoo, taraboodu ; haage dhoobiige batte kodabeeku.", "english": "Oh, yes.   You may bring fruits.  On the way you should handover the clothes to the dhobi."}
+      ]
+    },
+    {
+      "type": "conversation",
+      "number": "3",
+      "rows": [
+        {"speaker": "A", "roman": "raamuu, naale beligge beeg eelabeeku.", "english": "Ramu, you should wake up early in the morning tomorrow."},
+        {"speaker": "B", "roman": "eddu een maadbeeku ?", "english": "What should I do when I wake up ?"},
+        {"speaker": "A", "roman": "snaana maadbeeku ; aameele puuje maadbeeku.", "english": "You should bathe ; and then worship."}
+      ]
+    }
+  ]
+}

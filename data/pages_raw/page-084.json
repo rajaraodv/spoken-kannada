@@ -1,0 +1,40 @@
+{
+  "page": 84,
+  "lesson": 27,
+  "blocks": [
+    {
+      "type": "conversation",
+      "number": "1",
+      "rows": [
+        {"speaker": "A", "roman": "nim klaasnalli kannada kalyooru estu jana ?", "english": "How many Kannada learners are there in your class ?"},
+        {"speaker": "B", "roman": "nam klaasnalli kannada kalyooru entu jana ?", "english": "There are eight Kannada learners in our class."},
+        {"speaker": "A", "roman": "niivella yaava kelsa maadooru ?", "english": "In which profession all of you are engaged in ?"},
+        {"speaker": "B", "roman": "naavella aafiis kelsa maadooru.", "english": "All of us do office work"},
+        {"speaker": "A", "roman": "niivella yaava aafiisnalli kelsa maadooru ?", "english": "In which office all of you are working ?"},
+        {"speaker": "B", "roman": "naavella bii tii es aafisnalli kelsa maadooru.", "english": "All of us work in B. T. S. office."}
+      ]
+    },
+    {
+      "type": "conversation",
+      "number": "2",
+      "rows": [
+        {"speaker": "A", "roman": "ninne kannada klaasge bandooru yaaru ?", "english": "Who are those that came to Kannada class yesterday ?"},
+        {"speaker": "B", "roman": "ninne bandooru naavu ibbree.", "english": "We are the only two (that came to the Kannada class yesterday)."},
+        {"speaker": "A", "roman": "ninne tadavaagi bandooru yaaru ?", "english": "Who is it that came late yesterday ?"},
+        {"speaker": "B", "roman": "ninne tadavaagi bandooru Surees.", "english": "Mr. Suresh."},
+        {"speaker": "A", "roman": "illinda gamaka klaasge hoogooru yaaru ?", "english": "Who are those that go to gamaka classes from here ?"},
+        {"speaker": "B", "roman": "illinda gamaka klaasge hoogoonu naanu.", "english": "I attend the classes."}
+      ]
+    },
+    {
+      "type": "conversation",
+      "number": "3",
+      "rows": [
+        {"speaker": "A", "roman": "niivella muukajji kansugalu oodiddiiraa ?", "english": "Have all of you read 'Muukajji's Visions' ?"},
+        {"speaker": "B", "roman": "haudu, naavu kelavaru oodiddiivi.", "english": "Yes, some of us have read it."},
+        {"speaker": "A", "roman": "innu oodadavaru yaaru ?", "english": "Who are those that haven't still read ?"},
+        {"speaker": "B", "roman": "avribbree innuu oodadavaru.", "english": "These are the only two that have not read."}
+      ]
+    }
+  ]
+}

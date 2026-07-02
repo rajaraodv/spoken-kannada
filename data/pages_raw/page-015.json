@@ -1,0 +1,39 @@
+{
+  "page": 15,
+  "lesson": 3,
+  "blocks": [
+    {"type":"conversation","number":"1","rows":[
+      {"speaker":"A","roman":"banni, vaasu, kuutukoli.","english":"Please come Vasu, be seated."},
+      {"speaker":"","roman":"cennagiddiiraa ?","english":"How do you do ?"},
+      {"speaker":"B","roman":"cennagiddiini saar","english":"Fine sir."},
+      {"speaker":"","roman":"namaskaara ;","english":"Good morning ;"},
+      {"speaker":"","roman":"niivu cennagiddiraa ?","english":"how do you do, sir ?"},
+      {"speaker":"A","roman":"cennagiddini","english":"Fine, thankyou."}
+    ]},
+    {"type":"conversation","number":"2","rows":[
+      {"speaker":"A","roman":"raaju, idu yaava klaasu ?","english":"Raju, which class is this ?"},
+      {"speaker":"B","roman":"idu kannada klaasu","english":"This is a Kannada class."},
+      {"speaker":"A","roman":"idu yaara kannada klaasu ?","english":"Whose Kannada class is this?"},
+      {"speaker":"B","roman":"idu namma kannada klasu","english":"This is our Kannada class."},
+      {"speaker":"A","roman":"vaasu, aa klasu yaavdu ?","english":"Vaasu, which is that class ?"},
+      {"speaker":"C","roman":"adu tamil klasu","english":"That is a Tamil class."},
+      {"speaker":"","roman":"aa klaasu avardu","english":"That class is theirs."},
+      {"speaker":"","roman":"ii klasu namdu","english":"This class is ours."}
+    ]},
+    {"type":"conversation","number":"3","rows":[
+      {"speaker":"A","roman":"nimma pustaka yaavdu ?","english":"Which is your book ?"},
+      {"speaker":"B","roman":"ii cikka pustaka nandu","english":"This small book is mine."},
+      {"speaker":"A","roman":"yaava pustaka avardu ?","english":"Which book is his ?"},
+      {"speaker":"B","roman":"adu avardu","english":"That one is his."},
+      {"speaker":"A","roman":"raju, ii pennu yaardu ?","english":"Raju, whose pen is this ?"},
+      {"speaker":"B","roman":"aa pennu nimdu, saar","english":"That pen is yours, sir."},
+      {"speaker":"A","roman":"alla, aa pennu nandalla","english":"No, that pen is not mine."},
+      {"speaker":"","roman":"idu avara pennu","english":"This is his pen."},
+      {"speaker":"","roman":"ii hosa pennu nandu","english":"This new pen is mine."}
+    ]},
+    {"type":"conversation","number":"4","rows":[
+      {"speaker":"A","roman":"ravi, aa hale pennu nimmadaa?","english":"Ravi, is that open yours ?"},
+      {"speaker":"B","roman":"haudu, saar","english":"Yes, sir."}
+    ]}
+  ]
+}

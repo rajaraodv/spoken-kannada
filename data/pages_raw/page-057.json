@@ -1,0 +1,37 @@
+{
+  "page": 57,
+  "lesson": null,
+  "blocks": [
+    {
+      "type": "vocab",
+      "rows": [
+        {"speaker": "", "roman": "baadige", "english": "rent"},
+        {"speaker": "", "roman": "munnuuru", "english": "three hundred"},
+        {"speaker": "", "roman": "advaansu", "english": "advance"},
+        {"speaker": "", "roman": "badneekaayi", "english": "brinjal"},
+        {"speaker": "", "roman": "huralikaayi", "english": "beans"},
+        {"speaker": "", "roman": "scemebadanekaayi", "english": "khush khush"},
+        {"speaker": "", "roman": "tenginakaayi", "english": "coconut"},
+        {"speaker": "", "roman": "bele", "english": "price"},
+        {"speaker": "", "roman": "kadme", "english": "less"},
+        {"speaker": "", "roman": "male", "english": "rain"},
+        {"speaker": "", "roman": "onduuvare", "english": "one and a half"},
+        {"speaker": "", "roman": "iigtaane", "english": "just now"},
+        {"speaker": "", "roman": "parvaagilla", "english": "it is o.k. does not matter."},
+        {"speaker": "", "roman": "bhaase", "english": "language"},
+        {"speaker": "", "roman": "cikkandu", "english": "childhood"},
+        {"speaker": "", "roman": "abhyaasa", "english": "practice"},
+        {"speaker": "", "roman": "belaginjaava", "english": "early morning"},
+        {"speaker": "", "roman": "sambla", "english": "salary"},
+        {"speaker": "", "roman": "kaadambari", "english": "novel"},
+        {"speaker": "", "roman": "saaku", "english": "enough"},
+        {"speaker": "", "roman": "beeku", "english": "want"},
+        {"speaker": "", "roman": "beeda", "english": "don't want"},
+        {"speaker": "", "roman": "saaldu", "english": "not enough"},
+        {"speaker": "", "roman": "ista", "english": "liking"},
+        {"speaker": "", "roman": "solpa", "english": "a little"},
+        {"speaker": "", "roman": "nudisu", "english": "to play on an instrument"}
+      ]
+    }
+  ]
+}
