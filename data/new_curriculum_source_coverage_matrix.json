@@ -1,0 +1,2317 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Map concepts from the original PDF-derived curriculum to the improved kid-focused curriculum and identify gaps before replacing chapter data.",
+  "summary": {
+    "covered": 30,
+    "partially_covered": 0,
+    "needs_work": 6
+  },
+  "coverage_rows": [
+    {
+      "concept_id": "greetings_introductions_names",
+      "source_concept": "Greetings, introductions, names",
+      "status": "covered",
+      "new_curriculum_chapters": [
+        {
+          "chapter": 1,
+          "title": "New friend, ice cream, and names"
+        },
+        {
+          "chapter": 3,
+          "title": "Family, car drive, and weekend fun"
+        },
+        {
+          "chapter": 4,
+          "title": "Classroom games and asking again"
+        },
+        {
+          "chapter": 5,
+          "title": "My toys, books, and game board"
+        },
+        {
+          "chapter": 16,
+          "title": "Animals"
+        },
+        {
+          "chapter": 25,
+          "title": "Festival sweets and family fun"
+        },
+        {
+          "chapter": 29,
+          "title": "Review: meeting people"
+        }
+      ],
+      "search_terms": [
+        "greeting",
+        "greetings",
+        "name",
+        "nice to meet",
+        "introductions"
+      ]
+    },
+    {
+      "concept_id": "family_people_roles",
+      "source_concept": "Family members, friends, people roles",
+      "status": "covered",
+      "new_curriculum_chapters": [
+        {
+          "chapter": 1,
+          "title": "New friend, ice cream, and names"
+        },
+        {
+          "chapter": 2,
+          "title": "How are you, and what do you want to do?"
+        },
+        {
+          "chapter": 3,
+          "title": "Family, car drive, and weekend fun"
+        },
+        {
+          "chapter": 4,
+          "title": "Classroom games and asking again"
+        },
+        {
+          "chapter": 5,
+          "title": "My toys, books, and game board"
+        },
+        {
+          "chapter": 6,
+          "title": "Pasta, ice cream, and snacks"
+        },
+        {
+          "chapter": 7,
+          "title": "Games we like"
+        },
+        {
+          "chapter": 8,
+          "title": "Where is the candy?"
+        },
+        {
+          "chapter": 10,
+          "title": "Counting candies and birthdays"
+        },
+        {
+          "chapter": 14,
+          "title": "Body and health"
+        },
+        {
+          "chapter": 15,
+          "title": "Weather"
+        },
+        {
+          "chapter": 16,
+          "title": "Animals"
+        },
+        {
+          "chapter": 19,
+          "title": "Directions"
+        },
+        {
+          "chapter": 21,
+          "title": "Library"
+        },
+        {
+          "chapter": 22,
+          "title": "Screen time"
+        },
+        {
+          "chapter": 23,
+          "title": "Homework"
+        },
+        {
+          "chapter": 24,
+          "title": "Helping at home"
+        },
+        {
+          "chapter": 25,
+          "title": "Festival sweets and family fun"
+        },
+        {
+          "chapter": 26,
+          "title": "Phone call"
+        },
+        {
+          "chapter": 27,
+          "title": "Planning a playdate"
+        },
+        {
+          "chapter": 28,
+          "title": "Story words"
+        },
+        {
+          "chapter": 29,
+          "title": "Review: meeting people"
+        },
+        {
+          "chapter": 30,
+          "title": "Review: asking for things"
+        },
+        {
+          "chapter": 31,
+          "title": "Big review: playground adventure"
+        }
+      ],
+      "search_terms": [
+        "family",
+        "mom",
+        "dad",
+        "mother",
+        "father",
+        "sister",
+        "brother",
+        "friend",
+        "people"
+      ]
+    },
+    {
+      "concept_id": "professions_jobs_reframed",
+      "source_concept": "Professions/jobs reframed for kids",
+      "status": "covered",
+      "new_curriculum_chapters": [
+        {
+          "chapter": 4,
+          "title": "Classroom games and asking again"
+        },
+        {
+          "chapter": 9,
+          "title": "Can I play?"
+        },
+        {
+          "chapter": 12,
+          "title": "Polite words"
+        },
+        {
+          "chapter": 14,
+          "title": "Body and health"
+        }
+      ],
+      "search_terms": [
+        "teacher",
+        "nurse",
+        "doctor",
+        "shopkeeper",
+        "librarian",
+        "profession"
+      ]
+    },
+    {
+      "concept_id": "home_house_rooms",
+      "source_concept": "Home, house, rooms, at home",
+      "status": "covered",
+      "new_curriculum_chapters": [
+        {
+          "chapter": 3,
+          "title": "Family, car drive, and weekend fun"
+        },
+        {
+          "chapter": 4,
+          "title": "Classroom games and asking again"
+        },
+        {
+          "chapter": 5,
+          "title": "My toys, books, and game board"
+        },
+        {
+          "chapter": 7,
+          "title": "Games we like"
+        },
+        {
+          "chapter": 8,
+          "title": "Where is the candy?"
+        },
+        {
+          "chapter": 9,
+          "title": "Can I play?"
+        },
+        {
+          "chapter": 11,
+          "title": "Morning routine"
+        },
+        {
+          "chapter": 12,
+          "title": "Polite words"
+        },
+        {
+          "chapter": 14,
+          "title": "Body and health"
+        },
+        {
+          "chapter": 22,
+          "title": "Screen time"
+        },
+        {
+          "chapter": 23,
+          "title": "Homework"
+        },
+        {
+          "chapter": 24,
+          "title": "Helping at home"
+        },
+        {
+          "chapter": 25,
+          "title": "Festival sweets and family fun"
+        },
+        {
+          "chapter": 27,
+          "title": "Planning a playdate"
+        },
+        {
+          "chapter": 30,
+          "title": "Review: asking for things"
+        }
+      ],
+      "search_terms": [
+        "home",
+        "house",
+        "room",
+        "bedroom",
+        "living room",
+        "front door"
+      ]
+    },
+    {
+      "concept_id": "school_class_learning",
+      "source_concept": "School, class, learning Kannada",
+      "status": "covered",
+      "new_curriculum_chapters": [
+        {
+          "chapter": 1,
+          "title": "New friend, ice cream, and names"
+        },
+        {
+          "chapter": 2,
+          "title": "How are you, and what do you want to do?"
+        },
+        {
+          "chapter": 3,
+          "title": "Family, car drive, and weekend fun"
+        },
+        {
+          "chapter": 4,
+          "title": "Classroom games and asking again"
+        },
+        {
+          "chapter": 5,
+          "title": "My toys, books, and game board"
+        },
+        {
+          "chapter": 6,
+          "title": "Pasta, ice cream, and snacks"
+        },
+        {
+          "chapter": 7,
+          "title": "Games we like"
+        },
+        {
+          "chapter": 9,
+          "title": "Can I play?"
+        },
+        {
+          "chapter": 11,
+          "title": "Morning routine"
+        },
+        {
+          "chapter": 12,
+          "title": "Polite words"
+        },
+        {
+          "chapter": 13,
+          "title": "Clothes for a fun day out"
+        },
+        {
+          "chapter": 19,
+          "title": "Directions"
+        },
+        {
+          "chapter": 21,
+          "title": "Library"
+        },
+        {
+          "chapter": 22,
+          "title": "Screen time"
+        },
+        {
+          "chapter": 23,
+          "title": "Homework"
+        },
+        {
+          "chapter": 28,
+          "title": "Story words"
+        },
+        {
+          "chapter": 29,
+          "title": "Review: meeting people"
+        }
+      ],
+      "search_terms": [
+        "school",
+        "class",
+        "teacher",
+        "student",
+        "classroom",
+        "word game",
+        "homework",
+        "read"
+      ]
+    },
+    {
+      "concept_id": "books_pens_supplies",
+      "source_concept": "Books, pens, pencils, classroom objects",
+      "status": "covered",
+      "new_curriculum_chapters": [
+        {
+          "chapter": 5,
+          "title": "My toys, books, and game board"
+        },
+        {
+          "chapter": 9,
+          "title": "Can I play?"
+        },
+        {
+          "chapter": 16,
+          "title": "Animals"
+        },
+        {
+          "chapter": 21,
+          "title": "Library"
+        },
+        {
+          "chapter": 30,
+          "title": "Review: asking for things"
+        }
+      ],
+      "search_terms": [
+        "book",
+        "pencil",
+        "crayon",
+        "supplies",
+        "story book"
+      ]
+    },
+    {
+      "concept_id": "this_that_here_there",
+      "source_concept": "This/that/here/there deixis",
+      "status": "covered",
+      "new_curriculum_chapters": [
+        {
+          "chapter": 1,
+          "title": "New friend, ice cream, and names"
+        },
+        {
+          "chapter": 2,
+          "title": "How are you, and what do you want to do?"
+        },
+        {
+          "chapter": 3,
+          "title": "Family, car drive, and weekend fun"
+        },
+        {
+          "chapter": 4,
+          "title": "Classroom games and asking again"
+        },
+        {
+          "chapter": 5,
+          "title": "My toys, books, and game board"
+        },
+        {
+          "chapter": 7,
+          "title": "Games we like"
+        },
+        {
+          "chapter": 8,
+          "title": "Where is the candy?"
+        },
+        {
+          "chapter": 9,
+          "title": "Can I play?"
+        },
+        {
+          "chapter": 11,
+          "title": "Morning routine"
+        },
+        {
+          "chapter": 12,
+          "title": "Polite words"
+        },
+        {
+          "chapter": 13,
+          "title": "Clothes for a fun day out"
+        },
+        {
+          "chapter": 16,
+          "title": "Animals"
+        },
+        {
+          "chapter": 18,
+          "title": "Buying candy at a shop"
+        },
+        {
+          "chapter": 19,
+          "title": "Directions"
+        },
+        {
+          "chapter": 21,
+          "title": "Library"
+        },
+        {
+          "chapter": 28,
+          "title": "Story words"
+        },
+        {
+          "chapter": 30,
+          "title": "Review: asking for things"
+        },
+        {
+          "chapter": 31,
+          "title": "Big review: playground adventure"
+        }
+      ],
+      "search_terms": [
+        "this",
+        "that",
+        "here",
+        "there",
+        "over there",
+        "right here"
+      ]
+    },
+    {
+      "concept_id": "possessives_mine_yours_his_ours",
+      "source_concept": "Possessives: my/your/his/her/our/their/mine/yours",
+      "status": "covered",
+      "new_curriculum_chapters": [
+        {
+          "chapter": 1,
+          "title": "New friend, ice cream, and names"
+        },
+        {
+          "chapter": 2,
+          "title": "How are you, and what do you want to do?"
+        },
+        {
+          "chapter": 3,
+          "title": "Family, car drive, and weekend fun"
+        },
+        {
+          "chapter": 4,
+          "title": "Classroom games and asking again"
+        },
+        {
+          "chapter": 5,
+          "title": "My toys, books, and game board"
+        },
+        {
+          "chapter": 6,
+          "title": "Pasta, ice cream, and snacks"
+        },
+        {
+          "chapter": 8,
+          "title": "Where is the candy?"
+        },
+        {
+          "chapter": 9,
+          "title": "Can I play?"
+        },
+        {
+          "chapter": 10,
+          "title": "Counting candies and birthdays"
+        },
+        {
+          "chapter": 11,
+          "title": "Morning routine"
+        },
+        {
+          "chapter": 12,
+          "title": "Polite words"
+        },
+        {
+          "chapter": 13,
+          "title": "Clothes for a fun day out"
+        },
+        {
+          "chapter": 14,
+          "title": "Body and health"
+        },
+        {
+          "chapter": 15,
+          "title": "Weather"
+        },
+        {
+          "chapter": 16,
+          "title": "Animals"
+        },
+        {
+          "chapter": 17,
+          "title": "At the park: slides, swings, and games"
+        },
+        {
+          "chapter": 18,
+          "title": "Buying candy at a shop"
+        },
+        {
+          "chapter": 19,
+          "title": "Directions"
+        },
+        {
+          "chapter": 20,
+          "title": "Bus ride, car drive, and going places"
+        },
+        {
+          "chapter": 21,
+          "title": "Library"
+        },
+        {
+          "chapter": 27,
+          "title": "Planning a playdate"
+        },
+        {
+          "chapter": 28,
+          "title": "Story words"
+        },
+        {
+          "chapter": 29,
+          "title": "Review: meeting people"
+        },
+        {
+          "chapter": 30,
+          "title": "Review: asking for things"
+        },
+        {
+          "chapter": 31,
+          "title": "Big review: playground adventure"
+        }
+      ],
+      "search_terms": [
+        "my ",
+        "your",
+        "his",
+        "her",
+        "our",
+        "their",
+        "mine",
+        "yours"
+      ]
+    },
+    {
+      "concept_id": "who_what_where_which_whose",
+      "source_concept": "Question words: who/what/where/which/whose",
+      "status": "covered",
+      "new_curriculum_chapters": [
+        {
+          "chapter": 1,
+          "title": "New friend, ice cream, and names"
+        },
+        {
+          "chapter": 2,
+          "title": "How are you, and what do you want to do?"
+        },
+        {
+          "chapter": 3,
+          "title": "Family, car drive, and weekend fun"
+        },
+        {
+          "chapter": 5,
+          "title": "My toys, books, and game board"
+        },
+        {
+          "chapter": 6,
+          "title": "Pasta, ice cream, and snacks"
+        },
+        {
+          "chapter": 7,
+          "title": "Games we like"
+        },
+        {
+          "chapter": 8,
+          "title": "Where is the candy?"
+        },
+        {
+          "chapter": 10,
+          "title": "Counting candies and birthdays"
+        },
+        {
+          "chapter": 11,
+          "title": "Morning routine"
+        },
+        {
+          "chapter": 12,
+          "title": "Polite words"
+        },
+        {
+          "chapter": 13,
+          "title": "Clothes for a fun day out"
+        },
+        {
+          "chapter": 14,
+          "title": "Body and health"
+        },
+        {
+          "chapter": 16,
+          "title": "Animals"
+        },
+        {
+          "chapter": 17,
+          "title": "At the park: slides, swings, and games"
+        },
+        {
+          "chapter": 19,
+          "title": "Directions"
+        },
+        {
+          "chapter": 20,
+          "title": "Bus ride, car drive, and going places"
+        },
+        {
+          "chapter": 28,
+          "title": "Story words"
+        },
+        {
+          "chapter": 29,
+          "title": "Review: meeting people"
+        },
+        {
+          "chapter": 30,
+          "title": "Review: asking for things"
+        },
+        {
+          "chapter": 31,
+          "title": "Big review: playground adventure"
+        }
+      ],
+      "search_terms": [
+        "who",
+        "what",
+        "where",
+        "which",
+        "whose",
+        "how many",
+        "how old"
+      ]
+    },
+    {
+      "concept_id": "yes_no_negatives",
+      "source_concept": "Yes/no answers and negatives",
+      "status": "covered",
+      "new_curriculum_chapters": [
+        {
+          "chapter": 1,
+          "title": "New friend, ice cream, and names"
+        },
+        {
+          "chapter": 2,
+          "title": "How are you, and what do you want to do?"
+        },
+        {
+          "chapter": 3,
+          "title": "Family, car drive, and weekend fun"
+        },
+        {
+          "chapter": 4,
+          "title": "Classroom games and asking again"
+        },
+        {
+          "chapter": 5,
+          "title": "My toys, books, and game board"
+        },
+        {
+          "chapter": 6,
+          "title": "Pasta, ice cream, and snacks"
+        },
+        {
+          "chapter": 7,
+          "title": "Games we like"
+        },
+        {
+          "chapter": 8,
+          "title": "Where is the candy?"
+        },
+        {
+          "chapter": 9,
+          "title": "Can I play?"
+        },
+        {
+          "chapter": 10,
+          "title": "Counting candies and birthdays"
+        },
+        {
+          "chapter": 11,
+          "title": "Morning routine"
+        },
+        {
+          "chapter": 12,
+          "title": "Polite words"
+        },
+        {
+          "chapter": 17,
+          "title": "At the park: slides, swings, and games"
+        },
+        {
+          "chapter": 20,
+          "title": "Bus ride, car drive, and going places"
+        },
+        {
+          "chapter": 23,
+          "title": "Homework"
+        },
+        {
+          "chapter": 24,
+          "title": "Helping at home"
+        },
+        {
+          "chapter": 26,
+          "title": "Phone call"
+        },
+        {
+          "chapter": 27,
+          "title": "Planning a playdate"
+        },
+        {
+          "chapter": 31,
+          "title": "Big review: playground adventure"
+        }
+      ],
+      "search_terms": [
+        "yes",
+        "no",
+        "not",
+        "nope",
+        "don’t",
+        "do not",
+        "didn’t",
+        "not yet"
+      ]
+    },
+    {
+      "concept_id": "numbers_age_counting",
+      "source_concept": "Numbers, age, counting, quantities",
+      "status": "covered",
+      "new_curriculum_chapters": [
+        {
+          "chapter": 1,
+          "title": "New friend, ice cream, and names"
+        },
+        {
+          "chapter": 2,
+          "title": "How are you, and what do you want to do?"
+        },
+        {
+          "chapter": 3,
+          "title": "Family, car drive, and weekend fun"
+        },
+        {
+          "chapter": 4,
+          "title": "Classroom games and asking again"
+        },
+        {
+          "chapter": 6,
+          "title": "Pasta, ice cream, and snacks"
+        },
+        {
+          "chapter": 10,
+          "title": "Counting candies and birthdays"
+        },
+        {
+          "chapter": 12,
+          "title": "Polite words"
+        },
+        {
+          "chapter": 17,
+          "title": "At the park: slides, swings, and games"
+        },
+        {
+          "chapter": 18,
+          "title": "Buying candy at a shop"
+        },
+        {
+          "chapter": 26,
+          "title": "Phone call"
+        }
+      ],
+      "search_terms": [
+        "one",
+        "two",
+        "three",
+        "seven",
+        "how many",
+        "how old",
+        "birthday",
+        "counting",
+        "scoop"
+      ]
+    },
+    {
+      "concept_id": "days_dates_time",
+      "source_concept": "Days, dates, clock time, today/yesterday/tomorrow",
+      "status": "covered",
+      "new_curriculum_chapters": [
+        {
+          "chapter": 1,
+          "title": "New friend, ice cream, and names"
+        },
+        {
+          "chapter": 2,
+          "title": "How are you, and what do you want to do?"
+        },
+        {
+          "chapter": 3,
+          "title": "Family, car drive, and weekend fun"
+        },
+        {
+          "chapter": 5,
+          "title": "My toys, books, and game board"
+        },
+        {
+          "chapter": 6,
+          "title": "Pasta, ice cream, and snacks"
+        },
+        {
+          "chapter": 7,
+          "title": "Games we like"
+        },
+        {
+          "chapter": 9,
+          "title": "Can I play?"
+        },
+        {
+          "chapter": 10,
+          "title": "Counting candies and birthdays"
+        },
+        {
+          "chapter": 11,
+          "title": "Morning routine"
+        },
+        {
+          "chapter": 12,
+          "title": "Polite words"
+        },
+        {
+          "chapter": 17,
+          "title": "At the park: slides, swings, and games"
+        },
+        {
+          "chapter": 20,
+          "title": "Bus ride, car drive, and going places"
+        },
+        {
+          "chapter": 22,
+          "title": "Screen time"
+        },
+        {
+          "chapter": 27,
+          "title": "Planning a playdate"
+        },
+        {
+          "chapter": 31,
+          "title": "Big review: playground adventure"
+        }
+      ],
+      "search_terms": [
+        "today",
+        "yesterday",
+        "tomorrow",
+        "o’clock",
+        "minute",
+        "after",
+        "before",
+        "weekend",
+        "birthday"
+      ]
+    },
+    {
+      "concept_id": "location_directions_places",
+      "source_concept": "Location and directions: near/behind/under/left/right/next to",
+      "status": "covered",
+      "new_curriculum_chapters": [
+        {
+          "chapter": 1,
+          "title": "New friend, ice cream, and names"
+        },
+        {
+          "chapter": 2,
+          "title": "How are you, and what do you want to do?"
+        },
+        {
+          "chapter": 3,
+          "title": "Family, car drive, and weekend fun"
+        },
+        {
+          "chapter": 5,
+          "title": "My toys, books, and game board"
+        },
+        {
+          "chapter": 7,
+          "title": "Games we like"
+        },
+        {
+          "chapter": 8,
+          "title": "Where is the candy?"
+        },
+        {
+          "chapter": 9,
+          "title": "Can I play?"
+        },
+        {
+          "chapter": 11,
+          "title": "Morning routine"
+        },
+        {
+          "chapter": 12,
+          "title": "Polite words"
+        },
+        {
+          "chapter": 13,
+          "title": "Clothes for a fun day out"
+        },
+        {
+          "chapter": 17,
+          "title": "At the park: slides, swings, and games"
+        },
+        {
+          "chapter": 18,
+          "title": "Buying candy at a shop"
+        },
+        {
+          "chapter": 19,
+          "title": "Directions"
+        },
+        {
+          "chapter": 20,
+          "title": "Bus ride, car drive, and going places"
+        },
+        {
+          "chapter": 21,
+          "title": "Library"
+        },
+        {
+          "chapter": 28,
+          "title": "Story words"
+        },
+        {
+          "chapter": 31,
+          "title": "Big review: playground adventure"
+        }
+      ],
+      "search_terms": [
+        "near",
+        "behind",
+        "under",
+        "left",
+        "right",
+        "where",
+        "there",
+        "park",
+        "bus",
+        "library",
+        "shop"
+      ]
+    },
+    {
+      "concept_id": "town_transport_travel",
+      "source_concept": "Town, transport, travel, car/bus/train/trips",
+      "status": "covered",
+      "new_curriculum_chapters": [
+        {
+          "chapter": 3,
+          "title": "Family, car drive, and weekend fun"
+        },
+        {
+          "chapter": 5,
+          "title": "My toys, books, and game board"
+        },
+        {
+          "chapter": 6,
+          "title": "Pasta, ice cream, and snacks"
+        },
+        {
+          "chapter": 15,
+          "title": "Weather"
+        },
+        {
+          "chapter": 17,
+          "title": "At the park: slides, swings, and games"
+        },
+        {
+          "chapter": 20,
+          "title": "Bus ride, car drive, and going places"
+        },
+        {
+          "chapter": 22,
+          "title": "Screen time"
+        },
+        {
+          "chapter": 26,
+          "title": "Phone call"
+        },
+        {
+          "chapter": 31,
+          "title": "Big review: playground adventure"
+        }
+      ],
+      "search_terms": [
+        "car",
+        "drive",
+        "bus",
+        "train",
+        "travel",
+        "trip",
+        "going",
+        "go to",
+        "disneyland",
+        "zoo",
+        "grandma"
+      ]
+    },
+    {
+      "concept_id": "garden_farm_fruits_trees",
+      "source_concept": "Garden/farm/fruits/trees/plants",
+      "status": "covered",
+      "new_curriculum_chapters": [
+        {
+          "chapter": 1,
+          "title": "New friend, ice cream, and names"
+        },
+        {
+          "chapter": 6,
+          "title": "Pasta, ice cream, and snacks"
+        },
+        {
+          "chapter": 7,
+          "title": "Games we like"
+        }
+      ],
+      "search_terms": [
+        "garden",
+        "farm",
+        "fruit",
+        "mango",
+        "coconut",
+        "tree",
+        "plants",
+        "watering"
+      ]
+    },
+    {
+      "concept_id": "food_snacks_meals",
+      "source_concept": "Food, snacks, meals, drinks",
+      "status": "covered",
+      "new_curriculum_chapters": [
+        {
+          "chapter": 1,
+          "title": "New friend, ice cream, and names"
+        },
+        {
+          "chapter": 2,
+          "title": "How are you, and what do you want to do?"
+        },
+        {
+          "chapter": 3,
+          "title": "Family, car drive, and weekend fun"
+        },
+        {
+          "chapter": 4,
+          "title": "Classroom games and asking again"
+        },
+        {
+          "chapter": 5,
+          "title": "My toys, books, and game board"
+        },
+        {
+          "chapter": 6,
+          "title": "Pasta, ice cream, and snacks"
+        },
+        {
+          "chapter": 8,
+          "title": "Where is the candy?"
+        },
+        {
+          "chapter": 9,
+          "title": "Can I play?"
+        },
+        {
+          "chapter": 10,
+          "title": "Counting candies and birthdays"
+        },
+        {
+          "chapter": 11,
+          "title": "Morning routine"
+        },
+        {
+          "chapter": 14,
+          "title": "Body and health"
+        },
+        {
+          "chapter": 15,
+          "title": "Weather"
+        },
+        {
+          "chapter": 18,
+          "title": "Buying candy at a shop"
+        },
+        {
+          "chapter": 27,
+          "title": "Planning a playdate"
+        },
+        {
+          "chapter": 31,
+          "title": "Big review: playground adventure"
+        }
+      ],
+      "search_terms": [
+        "food",
+        "pasta",
+        "ice cream",
+        "water",
+        "snack",
+        "candy",
+        "cheese",
+        "sauce",
+        "hungry",
+        "eat"
+      ]
+    },
+    {
+      "concept_id": "market_shopping_price",
+      "source_concept": "Market/shop/shopping/price/buying",
+      "status": "covered",
+      "new_curriculum_chapters": [
+        {
+          "chapter": 1,
+          "title": "New friend, ice cream, and names"
+        },
+        {
+          "chapter": 8,
+          "title": "Where is the candy?"
+        },
+        {
+          "chapter": 18,
+          "title": "Buying candy at a shop"
+        },
+        {
+          "chapter": 31,
+          "title": "Big review: playground adventure"
+        }
+      ],
+      "search_terms": [
+        "shop",
+        "shopping",
+        "price",
+        "rupee",
+        "buy",
+        "how much",
+        "candy"
+      ]
+    },
+    {
+      "concept_id": "weather",
+      "source_concept": "Weather: rain, cold, umbrella",
+      "status": "covered",
+      "new_curriculum_chapters": [
+        {
+          "chapter": 15,
+          "title": "Weather"
+        }
+      ],
+      "search_terms": [
+        "weather",
+        "rain",
+        "cold",
+        "umbrella"
+      ]
+    },
+    {
+      "concept_id": "health_medicine_body",
+      "source_concept": "Health, body, medicine, hospital/rest",
+      "status": "covered",
+      "new_curriculum_chapters": [
+        {
+          "chapter": 2,
+          "title": "How are you, and what do you want to do?"
+        },
+        {
+          "chapter": 12,
+          "title": "Polite words"
+        },
+        {
+          "chapter": 14,
+          "title": "Body and health"
+        }
+      ],
+      "search_terms": [
+        "health",
+        "hurt",
+        "cold",
+        "stomach",
+        "medicine",
+        "rest",
+        "nurse",
+        "doctor",
+        "hospital",
+        "tired"
+      ]
+    },
+    {
+      "concept_id": "animals_pets",
+      "source_concept": "Animals and pets",
+      "status": "covered",
+      "new_curriculum_chapters": [
+        {
+          "chapter": 4,
+          "title": "Classroom games and asking again"
+        },
+        {
+          "chapter": 16,
+          "title": "Animals"
+        }
+      ],
+      "search_terms": [
+        "animal",
+        "dog",
+        "pet",
+        "bark"
+      ]
+    },
+    {
+      "concept_id": "cinema_movies_entertainment",
+      "source_concept": "Cinema/movie/radio/entertainment",
+      "status": "covered",
+      "new_curriculum_chapters": [
+        {
+          "chapter": 12,
+          "title": "Polite words"
+        },
+        {
+          "chapter": 22,
+          "title": "Screen time"
+        }
+      ],
+      "search_terms": [
+        "movie",
+        "cinema",
+        "cartoon",
+        "screen time",
+        "show"
+      ]
+    },
+    {
+      "concept_id": "daily_routine_habitual",
+      "source_concept": "Daily routine and habitual actions",
+      "status": "covered",
+      "new_curriculum_chapters": [
+        {
+          "chapter": 7,
+          "title": "Games we like"
+        },
+        {
+          "chapter": 11,
+          "title": "Morning routine"
+        },
+        {
+          "chapter": 22,
+          "title": "Screen time"
+        },
+        {
+          "chapter": 23,
+          "title": "Homework"
+        }
+      ],
+      "search_terms": [
+        "wake",
+        "brush",
+        "school starts",
+        "every day",
+        "usually",
+        "routine",
+        "morning",
+        "homework"
+      ]
+    },
+    {
+      "concept_id": "present_tense_now",
+      "source_concept": "Present tense / now",
+      "status": "covered",
+      "new_curriculum_chapters": [
+        {
+          "chapter": 1,
+          "title": "New friend, ice cream, and names"
+        },
+        {
+          "chapter": 2,
+          "title": "How are you, and what do you want to do?"
+        },
+        {
+          "chapter": 3,
+          "title": "Family, car drive, and weekend fun"
+        },
+        {
+          "chapter": 4,
+          "title": "Classroom games and asking again"
+        },
+        {
+          "chapter": 5,
+          "title": "My toys, books, and game board"
+        },
+        {
+          "chapter": 6,
+          "title": "Pasta, ice cream, and snacks"
+        },
+        {
+          "chapter": 7,
+          "title": "Games we like"
+        },
+        {
+          "chapter": 8,
+          "title": "Where is the candy?"
+        },
+        {
+          "chapter": 10,
+          "title": "Counting candies and birthdays"
+        },
+        {
+          "chapter": 11,
+          "title": "Morning routine"
+        },
+        {
+          "chapter": 12,
+          "title": "Polite words"
+        },
+        {
+          "chapter": 13,
+          "title": "Clothes for a fun day out"
+        },
+        {
+          "chapter": 14,
+          "title": "Body and health"
+        },
+        {
+          "chapter": 15,
+          "title": "Weather"
+        },
+        {
+          "chapter": 16,
+          "title": "Animals"
+        },
+        {
+          "chapter": 17,
+          "title": "At the park: slides, swings, and games"
+        },
+        {
+          "chapter": 18,
+          "title": "Buying candy at a shop"
+        },
+        {
+          "chapter": 19,
+          "title": "Directions"
+        },
+        {
+          "chapter": 20,
+          "title": "Bus ride, car drive, and going places"
+        },
+        {
+          "chapter": 21,
+          "title": "Library"
+        },
+        {
+          "chapter": 22,
+          "title": "Screen time"
+        },
+        {
+          "chapter": 23,
+          "title": "Homework"
+        },
+        {
+          "chapter": 24,
+          "title": "Helping at home"
+        },
+        {
+          "chapter": 26,
+          "title": "Phone call"
+        },
+        {
+          "chapter": 27,
+          "title": "Planning a playdate"
+        },
+        {
+          "chapter": 28,
+          "title": "Story words"
+        },
+        {
+          "chapter": 29,
+          "title": "Review: meeting people"
+        },
+        {
+          "chapter": 30,
+          "title": "Review: asking for things"
+        },
+        {
+          "chapter": 31,
+          "title": "Big review: playground adventure"
+        }
+      ],
+      "search_terms": [
+        "now",
+        "i’m",
+        "i am",
+        "are you",
+        "is ",
+        "playing",
+        "eating",
+        "making",
+        "coming"
+      ]
+    },
+    {
+      "concept_id": "past_tense",
+      "source_concept": "Past tense / completed actions",
+      "status": "covered",
+      "new_curriculum_chapters": [
+        {
+          "chapter": 1,
+          "title": "New friend, ice cream, and names"
+        },
+        {
+          "chapter": 2,
+          "title": "How are you, and what do you want to do?"
+        },
+        {
+          "chapter": 4,
+          "title": "Classroom games and asking again"
+        },
+        {
+          "chapter": 5,
+          "title": "My toys, books, and game board"
+        },
+        {
+          "chapter": 6,
+          "title": "Pasta, ice cream, and snacks"
+        },
+        {
+          "chapter": 7,
+          "title": "Games we like"
+        },
+        {
+          "chapter": 8,
+          "title": "Where is the candy?"
+        },
+        {
+          "chapter": 11,
+          "title": "Morning routine"
+        },
+        {
+          "chapter": 14,
+          "title": "Body and health"
+        },
+        {
+          "chapter": 15,
+          "title": "Weather"
+        },
+        {
+          "chapter": 16,
+          "title": "Animals"
+        },
+        {
+          "chapter": 17,
+          "title": "At the park: slides, swings, and games"
+        },
+        {
+          "chapter": 19,
+          "title": "Directions"
+        },
+        {
+          "chapter": 20,
+          "title": "Bus ride, car drive, and going places"
+        },
+        {
+          "chapter": 21,
+          "title": "Library"
+        },
+        {
+          "chapter": 22,
+          "title": "Screen time"
+        },
+        {
+          "chapter": 23,
+          "title": "Homework"
+        },
+        {
+          "chapter": 24,
+          "title": "Helping at home"
+        },
+        {
+          "chapter": 26,
+          "title": "Phone call"
+        },
+        {
+          "chapter": 27,
+          "title": "Planning a playdate"
+        },
+        {
+          "chapter": 28,
+          "title": "Story words"
+        },
+        {
+          "chapter": 29,
+          "title": "Review: meeting people"
+        },
+        {
+          "chapter": 30,
+          "title": "Review: asking for things"
+        },
+        {
+          "chapter": 31,
+          "title": "Big review: playground adventure"
+        }
+      ],
+      "search_terms": [
+        "yesterday",
+        "did you",
+        "ate",
+        "played",
+        "went",
+        "got",
+        "found",
+        "brought",
+        "was"
+      ]
+    },
+    {
+      "concept_id": "future_tense",
+      "source_concept": "Future tense / later plans",
+      "status": "covered",
+      "new_curriculum_chapters": [
+        {
+          "chapter": 1,
+          "title": "New friend, ice cream, and names"
+        },
+        {
+          "chapter": 2,
+          "title": "How are you, and what do you want to do?"
+        },
+        {
+          "chapter": 5,
+          "title": "My toys, books, and game board"
+        },
+        {
+          "chapter": 6,
+          "title": "Pasta, ice cream, and snacks"
+        },
+        {
+          "chapter": 7,
+          "title": "Games we like"
+        },
+        {
+          "chapter": 9,
+          "title": "Can I play?"
+        },
+        {
+          "chapter": 14,
+          "title": "Body and health"
+        },
+        {
+          "chapter": 15,
+          "title": "Weather"
+        },
+        {
+          "chapter": 16,
+          "title": "Animals"
+        },
+        {
+          "chapter": 17,
+          "title": "At the park: slides, swings, and games"
+        },
+        {
+          "chapter": 19,
+          "title": "Directions"
+        },
+        {
+          "chapter": 20,
+          "title": "Bus ride, car drive, and going places"
+        },
+        {
+          "chapter": 21,
+          "title": "Library"
+        },
+        {
+          "chapter": 22,
+          "title": "Screen time"
+        },
+        {
+          "chapter": 23,
+          "title": "Homework"
+        },
+        {
+          "chapter": 24,
+          "title": "Helping at home"
+        },
+        {
+          "chapter": 26,
+          "title": "Phone call"
+        },
+        {
+          "chapter": 27,
+          "title": "Planning a playdate"
+        },
+        {
+          "chapter": 28,
+          "title": "Story words"
+        },
+        {
+          "chapter": 29,
+          "title": "Review: meeting people"
+        },
+        {
+          "chapter": 30,
+          "title": "Review: asking for things"
+        },
+        {
+          "chapter": 31,
+          "title": "Big review: playground adventure"
+        }
+      ],
+      "search_terms": [
+        "tomorrow",
+        "will",
+        "i’ll",
+        "later",
+        "next time",
+        "going to",
+        "see you"
+      ]
+    },
+    {
+      "concept_id": "past_continuous",
+      "source_concept": "Past continuous: was/were doing",
+      "status": "needs_work",
+      "new_curriculum_chapters": [],
+      "search_terms": [
+        "was playing",
+        "were playing",
+        "was drawing",
+        "were doing",
+        "what were you doing",
+        "was watering"
+      ],
+      "gap_fix": {
+        "recommended_kid_scene": "Playground or art table: “What were you doing when I called?” “I was drawing ice cream.”",
+        "suggested_chapters": [
+          17,
+          25,
+          31
+        ],
+        "sample_english": [
+          "What were you doing when I came?",
+          "I was playing on the slide.",
+          "Maya was drawing a castle.",
+          "We were looking for the ball."
+        ]
+      }
+    },
+    {
+      "concept_id": "present_perfect_not_yet",
+      "source_concept": "Present perfect / not yet / has come",
+      "status": "covered",
+      "new_curriculum_chapters": [
+        {
+          "chapter": 3,
+          "title": "Family, car drive, and weekend fun"
+        },
+        {
+          "chapter": 23,
+          "title": "Homework"
+        }
+      ],
+      "search_terms": [
+        "not yet",
+        "has",
+        "have you been",
+        "haven’t",
+        "already"
+      ]
+    },
+    {
+      "concept_id": "past_perfect_had_been",
+      "source_concept": "Past perfect / had been / had gone",
+      "status": "needs_work",
+      "new_curriculum_chapters": [],
+      "search_terms": [
+        "had been",
+        "had gone",
+        "had run",
+        "had seen"
+      ],
+      "gap_fix": {
+        "recommended_kid_scene": "Theme park/zoo/grandma trip: “Have you been there before?” / “I had been there once.” Keep this later and optional.",
+        "suggested_chapters": [
+          20,
+          23,
+          31
+        ],
+        "sample_english": [
+          "Have you been to Disneyland before?",
+          "Yes, I had been there once.",
+          "Had you gone on the big ride?",
+          "No, I had not gone on that ride."
+        ]
+      }
+    },
+    {
+      "concept_id": "obligation_should_must_have_to_may",
+      "source_concept": "Obligation/permission: should, must, have to, may",
+      "status": "covered",
+      "new_curriculum_chapters": [
+        {
+          "chapter": 2,
+          "title": "How are you, and what do you want to do?"
+        },
+        {
+          "chapter": 5,
+          "title": "My toys, books, and game board"
+        },
+        {
+          "chapter": 6,
+          "title": "Pasta, ice cream, and snacks"
+        },
+        {
+          "chapter": 7,
+          "title": "Games we like"
+        },
+        {
+          "chapter": 9,
+          "title": "Can I play?"
+        },
+        {
+          "chapter": 17,
+          "title": "At the park: slides, swings, and games"
+        },
+        {
+          "chapter": 20,
+          "title": "Bus ride, car drive, and going places"
+        },
+        {
+          "chapter": 22,
+          "title": "Screen time"
+        },
+        {
+          "chapter": 24,
+          "title": "Helping at home"
+        },
+        {
+          "chapter": 31,
+          "title": "Big review: playground adventure"
+        }
+      ],
+      "search_terms": [
+        "should",
+        "must",
+        "have to",
+        "may i",
+        "can i",
+        "permission"
+      ]
+    },
+    {
+      "concept_id": "conditionals_if_then",
+      "source_concept": "Conditionals: if/then/would",
+      "status": "needs_work",
+      "new_curriculum_chapters": [],
+      "search_terms": [
+        "if ",
+        "would",
+        "otherwise"
+      ],
+      "gap_fix": {
+        "recommended_kid_scene": "Homework/play reward: “If we finish homework, we can play Snake and Ladder.”",
+        "suggested_chapters": [
+          20,
+          22,
+          23,
+          30
+        ],
+        "sample_english": [
+          "If you finish homework, we can play.",
+          "If it rains, we will play inside.",
+          "If you told me yesterday, I would have brought the game."
+        ]
+      }
+    },
+    {
+      "concept_id": "when_after_until_clauses",
+      "source_concept": "When/after/until/till clauses",
+      "status": "covered",
+      "new_curriculum_chapters": [
+        {
+          "chapter": 1,
+          "title": "New friend, ice cream, and names"
+        },
+        {
+          "chapter": 2,
+          "title": "How are you, and what do you want to do?"
+        },
+        {
+          "chapter": 3,
+          "title": "Family, car drive, and weekend fun"
+        },
+        {
+          "chapter": 4,
+          "title": "Classroom games and asking again"
+        },
+        {
+          "chapter": 5,
+          "title": "My toys, books, and game board"
+        },
+        {
+          "chapter": 6,
+          "title": "Pasta, ice cream, and snacks"
+        },
+        {
+          "chapter": 7,
+          "title": "Games we like"
+        },
+        {
+          "chapter": 8,
+          "title": "Where is the candy?"
+        },
+        {
+          "chapter": 9,
+          "title": "Can I play?"
+        },
+        {
+          "chapter": 12,
+          "title": "Polite words"
+        },
+        {
+          "chapter": 13,
+          "title": "Clothes for a fun day out"
+        },
+        {
+          "chapter": 20,
+          "title": "Bus ride, car drive, and going places"
+        },
+        {
+          "chapter": 22,
+          "title": "Screen time"
+        }
+      ],
+      "search_terms": [
+        "when",
+        "after",
+        "until",
+        "till",
+        "before"
+      ]
+    },
+    {
+      "concept_id": "relative_clauses_who_that_where",
+      "source_concept": "Relative clauses: who/that/where",
+      "status": "needs_work",
+      "new_curriculum_chapters": [],
+      "search_terms": [
+        "the friend who",
+        "the game that",
+        "place where",
+        "where you"
+      ],
+      "gap_fix": {
+        "recommended_kid_scene": "Classroom/show-and-tell: “The girl who sang is my friend.” “This is the shop where we bought ice cream.”",
+        "suggested_chapters": [
+          21,
+          26,
+          28,
+          31
+        ],
+        "sample_english": [
+          "The boy who won the game is my friend.",
+          "This is the place where we ate ice cream.",
+          "The book that I read was funny."
+        ]
+      }
+    },
+    {
+      "concept_id": "comparisons",
+      "source_concept": "Comparisons: bigger/newer/like/as/nobody like him",
+      "status": "needs_work",
+      "new_curriculum_chapters": [],
+      "search_terms": [
+        "bigger",
+        "newer",
+        "smaller",
+        "more than",
+        "like him",
+        "same as",
+        "better"
+      ],
+      "gap_fix": {
+        "recommended_kid_scene": "Games/food/toys: bigger scoop, smaller car, faster runner, nobody plays like her.",
+        "suggested_chapters": [
+          6,
+          7,
+          10,
+          31
+        ],
+        "sample_english": [
+          "My scoop is bigger than yours.",
+          "This car is faster than that car.",
+          "Nobody plays Snake and Ladder like Sara."
+        ]
+      }
+    },
+    {
+      "concept_id": "passive_made_by",
+      "source_concept": "Passive / made by",
+      "status": "needs_work",
+      "new_curriculum_chapters": [],
+      "search_terms": [
+        "made by",
+        "was made",
+        "is made"
+      ],
+      "gap_fix": {
+        "recommended_kid_scene": "Food/art/festival: “This cake was made by mom.” “This drawing was made by Tara.”",
+        "suggested_chapters": [
+          12,
+          25,
+          28,
+          31
+        ],
+        "sample_english": [
+          "This pasta was made by dad.",
+          "This card was made by Meena.",
+          "The laddus were made by grandma."
+        ]
+      }
+    },
+    {
+      "concept_id": "some_all_only_many",
+      "source_concept": "Quantifiers: some/all/only/many/plenty",
+      "status": "covered",
+      "new_curriculum_chapters": [
+        {
+          "chapter": 1,
+          "title": "New friend, ice cream, and names"
+        },
+        {
+          "chapter": 2,
+          "title": "How are you, and what do you want to do?"
+        },
+        {
+          "chapter": 3,
+          "title": "Family, car drive, and weekend fun"
+        },
+        {
+          "chapter": 4,
+          "title": "Classroom games and asking again"
+        },
+        {
+          "chapter": 6,
+          "title": "Pasta, ice cream, and snacks"
+        },
+        {
+          "chapter": 8,
+          "title": "Where is the candy?"
+        },
+        {
+          "chapter": 9,
+          "title": "Can I play?"
+        },
+        {
+          "chapter": 10,
+          "title": "Counting candies and birthdays"
+        },
+        {
+          "chapter": 12,
+          "title": "Polite words"
+        },
+        {
+          "chapter": 14,
+          "title": "Body and health"
+        },
+        {
+          "chapter": 17,
+          "title": "At the park: slides, swings, and games"
+        },
+        {
+          "chapter": 18,
+          "title": "Buying candy at a shop"
+        },
+        {
+          "chapter": 19,
+          "title": "Directions"
+        },
+        {
+          "chapter": 26,
+          "title": "Phone call"
+        },
+        {
+          "chapter": 28,
+          "title": "Story words"
+        },
+        {
+          "chapter": 31,
+          "title": "Big review: playground adventure"
+        }
+      ],
+      "search_terms": [
+        "some",
+        "all",
+        "only",
+        "many",
+        "plenty",
+        "everyone"
+      ]
+    },
+    {
+      "concept_id": "polite_requests_invitations",
+      "source_concept": "Polite requests, invitations, refusal/acceptance",
+      "status": "covered",
+      "new_curriculum_chapters": [
+        {
+          "chapter": 2,
+          "title": "How are you, and what do you want to do?"
+        },
+        {
+          "chapter": 4,
+          "title": "Classroom games and asking again"
+        },
+        {
+          "chapter": 5,
+          "title": "My toys, books, and game board"
+        },
+        {
+          "chapter": 6,
+          "title": "Pasta, ice cream, and snacks"
+        },
+        {
+          "chapter": 7,
+          "title": "Games we like"
+        },
+        {
+          "chapter": 8,
+          "title": "Where is the candy?"
+        },
+        {
+          "chapter": 9,
+          "title": "Can I play?"
+        },
+        {
+          "chapter": 10,
+          "title": "Counting candies and birthdays"
+        },
+        {
+          "chapter": 12,
+          "title": "Polite words"
+        },
+        {
+          "chapter": 17,
+          "title": "At the park: slides, swings, and games"
+        },
+        {
+          "chapter": 18,
+          "title": "Buying candy at a shop"
+        },
+        {
+          "chapter": 19,
+          "title": "Directions"
+        },
+        {
+          "chapter": 20,
+          "title": "Bus ride, car drive, and going places"
+        },
+        {
+          "chapter": 21,
+          "title": "Library"
+        },
+        {
+          "chapter": 22,
+          "title": "Screen time"
+        },
+        {
+          "chapter": 23,
+          "title": "Homework"
+        },
+        {
+          "chapter": 24,
+          "title": "Helping at home"
+        },
+        {
+          "chapter": 30,
+          "title": "Review: asking for things"
+        },
+        {
+          "chapter": 31,
+          "title": "Big review: playground adventure"
+        }
+      ],
+      "search_terms": [
+        "please",
+        "can i",
+        "can you",
+        "want to",
+        "come over",
+        "join",
+        "thanks",
+        "thank you"
+      ]
+    }
+  ],
+  "recommended_changes": [
+    {
+      "concept_id": "past_continuous",
+      "source_concept": "Past continuous: was/were doing",
+      "status": "needs_work",
+      "new_curriculum_chapters": [],
+      "search_terms": [
+        "was playing",
+        "were playing",
+        "was drawing",
+        "were doing",
+        "what were you doing",
+        "was watering"
+      ],
+      "gap_fix": {
+        "recommended_kid_scene": "Playground or art table: “What were you doing when I called?” “I was drawing ice cream.”",
+        "suggested_chapters": [
+          17,
+          25,
+          31
+        ],
+        "sample_english": [
+          "What were you doing when I came?",
+          "I was playing on the slide.",
+          "Maya was drawing a castle.",
+          "We were looking for the ball."
+        ]
+      }
+    },
+    {
+      "concept_id": "past_perfect_had_been",
+      "source_concept": "Past perfect / had been / had gone",
+      "status": "needs_work",
+      "new_curriculum_chapters": [],
+      "search_terms": [
+        "had been",
+        "had gone",
+        "had run",
+        "had seen"
+      ],
+      "gap_fix": {
+        "recommended_kid_scene": "Theme park/zoo/grandma trip: “Have you been there before?” / “I had been there once.” Keep this later and optional.",
+        "suggested_chapters": [
+          20,
+          23,
+          31
+        ],
+        "sample_english": [
+          "Have you been to Disneyland before?",
+          "Yes, I had been there once.",
+          "Had you gone on the big ride?",
+          "No, I had not gone on that ride."
+        ]
+      }
+    },
+    {
+      "concept_id": "conditionals_if_then",
+      "source_concept": "Conditionals: if/then/would",
+      "status": "needs_work",
+      "new_curriculum_chapters": [],
+      "search_terms": [
+        "if ",
+        "would",
+        "otherwise"
+      ],
+      "gap_fix": {
+        "recommended_kid_scene": "Homework/play reward: “If we finish homework, we can play Snake and Ladder.”",
+        "suggested_chapters": [
+          20,
+          22,
+          23,
+          30
+        ],
+        "sample_english": [
+          "If you finish homework, we can play.",
+          "If it rains, we will play inside.",
+          "If you told me yesterday, I would have brought the game."
+        ]
+      }
+    },
+    {
+      "concept_id": "relative_clauses_who_that_where",
+      "source_concept": "Relative clauses: who/that/where",
+      "status": "needs_work",
+      "new_curriculum_chapters": [],
+      "search_terms": [
+        "the friend who",
+        "the game that",
+        "place where",
+        "where you"
+      ],
+      "gap_fix": {
+        "recommended_kid_scene": "Classroom/show-and-tell: “The girl who sang is my friend.” “This is the shop where we bought ice cream.”",
+        "suggested_chapters": [
+          21,
+          26,
+          28,
+          31
+        ],
+        "sample_english": [
+          "The boy who won the game is my friend.",
+          "This is the place where we ate ice cream.",
+          "The book that I read was funny."
+        ]
+      }
+    },
+    {
+      "concept_id": "comparisons",
+      "source_concept": "Comparisons: bigger/newer/like/as/nobody like him",
+      "status": "needs_work",
+      "new_curriculum_chapters": [],
+      "search_terms": [
+        "bigger",
+        "newer",
+        "smaller",
+        "more than",
+        "like him",
+        "same as",
+        "better"
+      ],
+      "gap_fix": {
+        "recommended_kid_scene": "Games/food/toys: bigger scoop, smaller car, faster runner, nobody plays like her.",
+        "suggested_chapters": [
+          6,
+          7,
+          10,
+          31
+        ],
+        "sample_english": [
+          "My scoop is bigger than yours.",
+          "This car is faster than that car.",
+          "Nobody plays Snake and Ladder like Sara."
+        ]
+      }
+    },
+    {
+      "concept_id": "passive_made_by",
+      "source_concept": "Passive / made by",
+      "status": "needs_work",
+      "new_curriculum_chapters": [],
+      "search_terms": [
+        "made by",
+        "was made",
+        "is made"
+      ],
+      "gap_fix": {
+        "recommended_kid_scene": "Food/art/festival: “This cake was made by mom.” “This drawing was made by Tara.”",
+        "suggested_chapters": [
+          12,
+          25,
+          28,
+          31
+        ],
+        "sample_english": [
+          "This pasta was made by dad.",
+          "This card was made by Meena.",
+          "The laddus were made by grandma."
+        ]
+      }
+    }
+  ],
+  "summary_note": "The new proposal covers most old source topics and common grammar, but the advanced grammar from later PDF chapters still needs deliberate kid-friendly scenes before we can say coverage is complete."
+}
