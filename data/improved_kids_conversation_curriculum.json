@@ -252,6 +252,12 @@
       "grammar_targets": [
         "people_place_thing",
         "pronouns"
+      ],
+      "source_concepts_currently_covered": [
+        "greetings",
+        "introductions",
+        "names",
+        "likes"
       ]
     },
     {
@@ -440,6 +446,12 @@
         "tense_future",
         "tense_past",
         "tense_present"
+      ],
+      "source_concepts_currently_covered": [
+        "play invitations",
+        "feelings through context",
+        "permission",
+        "later/again"
       ]
     },
     {
@@ -642,6 +654,12 @@
       "grammar_targets": [
         "people_place_thing",
         "pronouns"
+      ],
+      "source_concepts_currently_covered": [
+        "family",
+        "he/she/we",
+        "future plans",
+        "food"
       ]
     },
     {
@@ -806,6 +824,11 @@
       "grammar_targets": [
         "people_place_thing",
         "pronouns"
+      ],
+      "source_concepts_currently_covered": [
+        "classroom commands",
+        "asking again",
+        "listening/speaking"
       ]
     },
     {
@@ -998,6 +1021,13 @@
         "deixis_here_there",
         "people_place_thing",
         "pronouns"
+      ],
+      "source_concepts_currently_covered": [
+        "this/that",
+        "things",
+        "where",
+        "school supplies",
+        "games"
       ]
     },
     {
@@ -1290,6 +1320,11 @@
         "tense_future",
         "tense_past",
         "tense_present"
+      ],
+      "source_concepts_currently_covered": [
+        "food/snacks",
+        "want/request",
+        "past/present/future"
       ]
     },
     {
@@ -1565,6 +1600,12 @@
         "tense_future",
         "tense_past",
         "tense_present"
+      ],
+      "source_concepts_currently_covered": [
+        "games",
+        "turn-taking",
+        "past/present/future",
+        "try again"
       ]
     },
     {
@@ -1734,6 +1775,11 @@
         "deixis_here_there",
         "people_place_thing",
         "pronouns"
+      ],
+      "source_concepts_currently_covered": [
+        "where/here/there",
+        "under/behind",
+        "things/places"
       ]
     },
     {
@@ -1869,7 +1915,12 @@
         }
       ],
       "tone": "playful, kid-first, practical spoken Kannada",
-      "grammar_targets": []
+      "grammar_targets": [],
+      "source_concepts_currently_covered": [
+        "permission",
+        "borrow/return",
+        "polite requests"
+      ]
     },
     {
       "chapter": 10,
@@ -2006,7 +2057,13 @@
         }
       ],
       "tone": "playful, kid-first, practical spoken Kannada",
-      "grammar_targets": []
+      "grammar_targets": [],
+      "source_concepts_currently_covered": [
+        "numbers",
+        "age",
+        "birthday",
+        "how many"
+      ]
     },
     {
       "chapter": 11,
@@ -2157,6 +2214,11 @@
         "tense_future",
         "tense_past",
         "tense_present"
+      ],
+      "source_concepts_currently_covered": [
+        "daily routine",
+        "ready/not ready",
+        "school time"
       ]
     },
     {
@@ -2308,7 +2370,12 @@
           ]
         }
       ],
-      "grammar_targets": []
+      "grammar_targets": [],
+      "source_concepts_currently_covered": [
+        "sorry/help",
+        "polite language",
+        "are you okay"
+      ]
     },
     {
       "chapter": 13,
@@ -2370,7 +2437,12 @@
         }
       ],
       "tone": "playful, kid-first, practical spoken Kannada",
-      "grammar_targets": []
+      "grammar_targets": [],
+      "source_concepts_currently_covered": [
+        "clothes/colors",
+        "where is it",
+        "getting ready"
+      ]
     },
     {
       "chapter": 14,
@@ -2423,7 +2495,12 @@
           ]
         }
       ],
-      "grammar_targets": []
+      "grammar_targets": [],
+      "source_concepts_currently_covered": [
+        "health",
+        "body",
+        "medicine/rest"
+      ]
     },
     {
       "chapter": 15,
@@ -2476,7 +2553,13 @@
           ]
         }
       ],
-      "grammar_targets": []
+      "grammar_targets": [],
+      "source_concepts_currently_covered": [
+        "weather",
+        "rain",
+        "umbrella",
+        "outing preparation"
+      ]
     },
     {
       "chapter": 16,
@@ -2538,7 +2621,12 @@
           ]
         }
       ],
-      "grammar_targets": []
+      "grammar_targets": [],
+      "source_concepts_currently_covered": [
+        "animals",
+        "likes",
+        "what is this"
+      ]
     },
     {
       "chapter": 17,
@@ -2708,6 +2796,11 @@
         "tense_future",
         "tense_past",
         "tense_present"
+      ],
+      "source_concepts_currently_covered": [
+        "park/play",
+        "past/present/future",
+        "movement"
       ]
     },
     {
@@ -2768,6 +2861,12 @@
       "tone": "playful, kid-first, practical spoken Kannada",
       "grammar_targets": [
         "deixis_here_there"
+      ],
+      "source_concepts_currently_covered": [
+        "shopping",
+        "price",
+        "one/two",
+        "candy"
       ]
     },
     {
@@ -2827,7 +2926,12 @@
           ]
         }
       ],
-      "grammar_targets": []
+      "grammar_targets": [],
+      "source_concepts_currently_covered": [
+        "directions",
+        "left/right",
+        "places"
+      ]
     },
     {
       "chapter": 20,
@@ -2994,6 +3098,11 @@
         "tense_future",
         "tense_past",
         "tense_present"
+      ],
+      "source_concepts_currently_covered": [
+        "transport",
+        "car/bus",
+        "past/present/future"
       ]
     },
     {
@@ -3049,7 +3158,12 @@
           ]
         }
       ],
-      "grammar_targets": []
+      "grammar_targets": [],
+      "source_concepts_currently_covered": [
+        "library/books",
+        "reading",
+        "requests"
+      ]
     },
     {
       "chapter": 22,
@@ -3105,7 +3219,12 @@
           ]
         }
       ],
-      "grammar_targets": []
+      "grammar_targets": [],
+      "source_concepts_currently_covered": [
+        "screen time",
+        "after/before",
+        "permission"
+      ]
     },
     {
       "chapter": 23,
@@ -3162,7 +3281,12 @@
           ]
         }
       ],
-      "grammar_targets": []
+      "grammar_targets": [],
+      "source_concepts_currently_covered": [
+        "homework",
+        "not yet",
+        "now/later"
+      ]
     },
     {
       "chapter": 24,
@@ -3215,7 +3339,12 @@
           ]
         }
       ],
-      "grammar_targets": []
+      "grammar_targets": [],
+      "source_concepts_currently_covered": [
+        "helping at home",
+        "bring/take",
+        "chores"
+      ]
     },
     {
       "chapter": 25,
@@ -3266,7 +3395,12 @@
         }
       ],
       "tone": "playful, kid-first, practical spoken Kannada",
-      "grammar_targets": []
+      "grammar_targets": [],
+      "source_concepts_currently_covered": [
+        "festival/family",
+        "sweets",
+        "greetings"
+      ]
     },
     {
       "chapter": 26,
@@ -3324,7 +3458,12 @@
           ]
         }
       ],
-      "grammar_targets": []
+      "grammar_targets": [],
+      "source_concepts_currently_covered": [
+        "phone calls",
+        "how are you",
+        "family"
+      ]
     },
     {
       "chapter": 27,
@@ -3388,6 +3527,11 @@
         "tense_future",
         "tense_past",
         "tense_present"
+      ],
+      "source_concepts_currently_covered": [
+        "playdates",
+        "time",
+        "visiting homes"
       ]
     },
     {
@@ -3450,7 +3594,12 @@
           ]
         }
       ],
-      "grammar_targets": []
+      "grammar_targets": [],
+      "source_concepts_currently_covered": [
+        "stories",
+        "who/what",
+        "people/actions"
+      ]
     },
     {
       "chapter": 29,
@@ -3513,7 +3662,12 @@
           ]
         }
       ],
-      "grammar_targets": []
+      "grammar_targets": [],
+      "source_concepts_currently_covered": [
+        "review greetings",
+        "names",
+        "feelings"
+      ]
     },
     {
       "chapter": 30,
@@ -3578,7 +3732,12 @@
           ]
         }
       ],
-      "grammar_targets": []
+      "grammar_targets": [],
+      "source_concepts_currently_covered": [
+        "review wants",
+        "which/that",
+        "take/give"
+      ]
     },
     {
       "chapter": 31,
@@ -3763,6 +3922,12 @@
         "tense_future",
         "tense_past",
         "tense_present"
+      ],
+      "source_concepts_currently_covered": [
+        "review games",
+        "where",
+        "future plans",
+        "tense review"
       ]
     }
   ],
@@ -3832,5 +3997,98 @@
       }
     ],
     "spiral_rule": "Every 2-3 chapters should include at least one line that contrasts now, before, and later, or here/there, or he/she/they."
+  },
+  "source_curriculum_audit_file": "data/source_curriculum_concept_audit.json",
+  "source_coverage_policy": {
+    "goal": "Teach the same breadth of language from the original source, but through kid-natural conversations.",
+    "preserve_from_source": [
+      {
+        "social_language": [
+          "greetings",
+          "introductions",
+          "polite visiting",
+          "goodbye",
+          "invitations",
+          "requests"
+        ],
+        "people": [
+          "family members",
+          "friends",
+          "children",
+          "professions",
+          "classmates",
+          "some/all/only two people"
+        ],
+        "places": [
+          "home",
+          "school/class",
+          "garden/farm",
+          "bus stand",
+          "market/shop",
+          "hotel/restaurant",
+          "cinema",
+          "office",
+          "hospital",
+          "town/travel"
+        ],
+        "things": [
+          "books",
+          "pens",
+          "toys/game board",
+          "food/snacks",
+          "vegetables/fruits",
+          "clothes",
+          "tools",
+          "vehicles",
+          "newspaper/date items"
+        ],
+        "grammar": [
+          "pronouns",
+          "this/that/here/there",
+          "possessives",
+          "questions",
+          "negatives",
+          "numbers",
+          "comparisons",
+          "present/past/future",
+          "past continuous",
+          "present perfect/past perfect",
+          "should/must/may/have to",
+          "if/when/until/after clauses",
+          "relative clauses",
+          "passive/made by",
+          "habitual actions"
+        ]
+      }
+    ],
+    "reframe_examples": {
+      "rent/house ownership": "my room, friend’s house, big/small rooms, where toys are kept",
+      "office leave/messages": "class attendance, teacher message, friend has not come yet",
+      "hotel/town": "ice cream shop, pasta place, kid-friendly restaurant",
+      "smoking health advice": "too much candy or screen time is not good",
+      "college subjects/admission": "school subjects, favorite class, joining a club/team",
+      "tailor/shirt conditionals": "party clothes, forgot game board, if you told me yesterday...",
+      "farm/crops": "garden, fruit trees, mango/coconut, watering plants",
+      "cinema": "movie night, cartoon, theme park show",
+      "travel to Delhi": "car drive, bus ride, zoo, Disneyland/theme park, grandma’s house"
+    },
+    "must_cover_concept_groups": [
+      "social_language",
+      "people",
+      "places",
+      "things",
+      "questions",
+      "negatives",
+      "numbers",
+      "time",
+      "location",
+      "comparison",
+      "present_past_future",
+      "obligation_permission",
+      "conditionals",
+      "relative_clauses",
+      "habitual_actions",
+      "passive_made_by"
+    ]
   }
 }

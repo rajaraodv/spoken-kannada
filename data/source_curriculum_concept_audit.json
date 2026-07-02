@@ -1,0 +1,1366 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Audit the original PDF-derived chapter JSON so the new kid curriculum can preserve the same breadth of topics and grammar while making examples natural, playful, and child-centered.",
+  "summary": {
+    "source_chapters": 31,
+    "source_total_visual_lines": 961,
+    "proposal_chapters": 31,
+    "principle": "Do not copy old adult/formal scenarios directly. Preserve the underlying language concept and reframe it as a kid scene: games, food, school, family, parks, trips, pets, toys, festivals, and playdates."
+  },
+  "high_level_source_coverage": {
+    "social_language": [
+      "greetings",
+      "introductions",
+      "polite visiting",
+      "goodbye",
+      "invitations",
+      "requests"
+    ],
+    "people": [
+      "family members",
+      "friends",
+      "children",
+      "professions",
+      "classmates",
+      "some/all/only two people"
+    ],
+    "places": [
+      "home",
+      "school/class",
+      "garden/farm",
+      "bus stand",
+      "market/shop",
+      "hotel/restaurant",
+      "cinema",
+      "office",
+      "hospital",
+      "town/travel"
+    ],
+    "things": [
+      "books",
+      "pens",
+      "toys/game board",
+      "food/snacks",
+      "vegetables/fruits",
+      "clothes",
+      "tools",
+      "vehicles",
+      "newspaper/date items"
+    ],
+    "grammar": [
+      "pronouns",
+      "this/that/here/there",
+      "possessives",
+      "questions",
+      "negatives",
+      "numbers",
+      "comparisons",
+      "present/past/future",
+      "past continuous",
+      "present perfect/past perfect",
+      "should/must/may/have to",
+      "if/when/until/after clauses",
+      "relative clauses",
+      "passive/made by",
+      "habitual actions"
+    ]
+  },
+  "source_chapter_audit": [
+    {
+      "source_chapter": 1,
+      "source_theme_label": "Greetings, introductions, names, and people",
+      "source_line_count": 34,
+      "source_samples_english": [
+        "Good Morning",
+        "I am Raju.",
+        "He is Mohan.",
+        "Who are you ?",
+        "I am Shekhar,",
+        "Who is she ?",
+        "She is Sheela.",
+        "He is Shankar."
+      ],
+      "source_topics_and_situations": [
+        "greetings",
+        "introductions",
+        "names",
+        "who is this/that",
+        "he/she",
+        "family roles",
+        "jobs"
+      ],
+      "source_language_concepts": [
+        "pronouns",
+        "questions: who/what name",
+        "identity sentences"
+      ],
+      "kid_friendly_reframe": "Keep introductions, but make them child-first: new friend, teacher, family, classmates, favorite treat."
+    },
+    {
+      "source_chapter": 2,
+      "source_theme_label": "At Home",
+      "source_line_count": 29,
+      "source_samples_english": [
+        "Good morning Mr. Naidu",
+        "Hello ! good morning ;",
+        "Please come, be seated.",
+        "He is Mr. Prakash.",
+        "Hello, please sit down.",
+        "Is he your friend ?",
+        "No, he is my elder brother.",
+        "Is he a lawyer ?"
+      ],
+      "source_topics_and_situations": [
+        "visiting home",
+        "guests",
+        "sit down",
+        "friend/brother",
+        "professions",
+        "this/that house/book",
+        "big/small"
+      ],
+      "source_language_concepts": [
+        "this/that",
+        "possessives: my/your/his",
+        "which questions",
+        "yes/no negatives"
+      ],
+      "kid_friendly_reframe": "Use visiting a friend, showing a room, favorite book, and family member introductions instead of formal adult visits."
+    },
+    {
+      "source_chapter": 3,
+      "source_theme_label": "Learning and Class",
+      "source_line_count": 31,
+      "source_samples_english": [
+        "Please come Vasu, be seated.",
+        "How do you do ?",
+        "Fine sir.",
+        "Good morning ;",
+        "how do you do, sir ?",
+        "Fine, thankyou.",
+        "Raju, which class is this ?",
+        "This is a Kannada class."
+      ],
+      "source_topics_and_situations": [
+        "classroom",
+        "classes/languages",
+        "books/pens",
+        "mine/yours/his/theirs"
+      ],
+      "source_language_concepts": [
+        "possessives",
+        "whose",
+        "ours/theirs",
+        "this/that",
+        "adjectives: small/new/old"
+      ],
+      "kid_friendly_reframe": "Use classroom games, lost school supplies, team materials, and “is this yours?” scenes."
+    },
+    {
+      "source_chapter": 4,
+      "source_theme_label": "At Home",
+      "source_line_count": 43,
+      "source_samples_english": [
+        "Is this your house ?",
+        "Yes, this is my house.",
+        "Is it your own ?",
+        "No, it is a rented house",
+        "Isn’t the house too big ?",
+        "No, it is not so big.",
+        "What is the rent of your house ?",
+        "Rs. 150/- per month."
+      ],
+      "source_topics_and_situations": [
+        "house",
+        "rent/own",
+        "rooms",
+        "trees",
+        "relatives/children",
+        "children’s books"
+      ],
+      "source_language_concepts": [
+        "this/that",
+        "how many",
+        "comparatives: big/small",
+        "family plurals",
+        "for whom"
+      ],
+      "kid_friendly_reframe": "Keep home and family but replace rent with rooms, toys, bookshelves, mango tree, cousins visiting."
+    },
+    {
+      "source_chapter": 5,
+      "source_theme_label": "At Home",
+      "source_line_count": 57,
+      "source_samples_english": [
+        "Good morning, Sir;",
+        "Which is the good hotel in this town ?",
+        "Sujaalha is a good hotel here.",
+        "Is it very big ? v",
+        "It is not so big,",
+        "but it is a very good hotel.",
+        "Isn’t Mayura a good hotel ?",
+        "It is also a good hotel."
+      ],
+      "source_topics_and_situations": [
+        "hotel/town",
+        "holidays/days/dates",
+        "birth order",
+        "newspaper/date",
+        "school class"
+      ],
+      "source_language_concepts": [
+        "which",
+        "days of week",
+        "ordinal order",
+        "today/yesterday",
+        "dates"
+      ],
+      "kid_friendly_reframe": "Use kid calendar: birthday, school holiday, weekend plans, first/second/last turn in games."
+    },
+    {
+      "source_chapter": 6,
+      "source_theme_label": "At Home",
+      "source_line_count": 37,
+      "source_samples_english": [
+        "Good morning, sir.",
+        "How are you ?",
+        "Who is it ?",
+        "Are you not Pandit's children ?",
+        "Yes sir. “",
+        "Aren't yon Gopi ?",
+        "No sir, I am Venu.",
+        "Gopi is elder to me."
+      ],
+      "source_topics_and_situations": [
+        "visiting children",
+        "house location",
+        "post office",
+        "rent comparisons",
+        "watch/theatre comparisons"
+      ],
+      "source_language_concepts": [
+        "near/next to",
+        "bigger/newer than",
+        "not as big as",
+        "which place"
+      ],
+      "kid_friendly_reframe": "Teach places around town with kid destinations: library, park, ice cream shop, movie theater."
+    },
+    {
+      "source_chapter": 7,
+      "source_theme_label": "Garden and Outside",
+      "source_line_count": 36,
+      "source_samples_english": [
+        "Good afternoon, sir.",
+        "Where is the bus stand in this town ?",
+        "There is a police station at the end of",
+        "this road.",
+        "Behind it is the bus-stand.",
+        "Is there a railway station in this town ?",
+        "Yes, it is also beside the bus stand.",
+        "Are you new to this place ?"
+      ],
+      "source_topics_and_situations": [
+        "bus stand",
+        "police station",
+        "road directions",
+        "bus times/platforms",
+        "farm",
+        "mango/coconut trees"
+      ],
+      "source_language_concepts": [
+        "there is/are",
+        "behind/in front/end of",
+        "time frequency",
+        "many/plenty"
+      ],
+      "kid_friendly_reframe": "Use maps, park, bus stop, farm visit, fruit trees, and “where is Disneyland/park?” style directions."
+    },
+    {
+      "source_chapter": 8,
+      "source_theme_label": "At Home",
+      "source_line_count": 37,
+      "source_samples_english": [
+        "Is Mr. Krishnappa at home 7",
+        "Yes, he is.",
+        "He is inside, please be seated.",
+        "Are you his son 7",
+        "No, sir.",
+        "I am his nephew.",
+        "Do you live in ycur uncle’s house?",
+        "Yes sir."
+      ],
+      "source_topics_and_situations": [
+        "at home/not at home",
+        "father lives elsewhere",
+        "since when",
+        "future location tomorrow",
+        "object location in room"
+      ],
+      "source_language_concepts": [
+        "at/in",
+        "now/tomorrow",
+        "will be",
+        "since when",
+        "room/location"
+      ],
+      "kid_friendly_reframe": "Use playdate availability: home now, at school later, toy will be in room, friend coming tomorrow."
+    },
+    {
+      "source_chapter": 9,
+      "source_theme_label": "At Home",
+      "source_line_count": 21,
+      "source_samples_english": [
+        "Were you at home yesterday ?",
+        "No, I was not at home yesterday.",
+        "Then, where were you ?",
+        "I was in my garden.",
+        "Were you there til 1 evening ?",
+        "Yes, I was there till the evening.",
+        "Where was your father ?",
+        "He was at home."
+      ],
+      "source_topics_and_situations": [
+        "past location yesterday",
+        "garden/tools",
+        "village last year",
+        "children in hostel"
+      ],
+      "source_language_concepts": [
+        "past tense: was/were",
+        "where were you",
+        "between",
+        "last year"
+      ],
+      "kid_friendly_reframe": "Use “where were you yesterday?” with park, party, school, grandma’s house, missing ball/tool."
+    },
+    {
+      "source_chapter": 10,
+      "source_theme_label": "Coffee and Snacks",
+      "source_line_count": 23,
+      "source_samples_english": [
+        "Is this coffee or tea ?",
+        "This is coffee.",
+        "Is coffee hot ?",
+        "Yes, it is very hot.",
+        "What snackes do you have ?",
+        "There are pancakes.",
+        "Is pancake hot ?",
+        "Not quite hot."
+      ],
+      "source_topics_and_situations": [
+        "coffee/tea/snacks",
+        "weather/rain/cold",
+        "new car comparison"
+      ],
+      "source_language_concepts": [
+        "or questions",
+        "hot/cold",
+        "weather past/future",
+        "like/same as"
+      ],
+      "kid_friendly_reframe": "Use kid snacks: milk/juice/ice cream/pasta, weather for outdoor play, family car ride."
+    },
+    {
+      "source_chapter": 11,
+      "source_theme_label": "Office and Work",
+      "source_line_count": 46,
+      "source_samples_english": [
+        "I am leaving, are you going with me ?",
+        "Where are you going ?",
+        "Is your younger sister also coming with",
+        "you ?",
+        "Yes, she is coming.",
+        "When are you coming back from",
+        "the drama ?",
+        "I will come at 10 o’clock. Are you"
+      ],
+      "source_topics_and_situations": [
+        "going with someone",
+        "office hours",
+        "daily walking",
+        "boredom",
+        "morning habits"
+      ],
+      "source_language_concepts": [
+        "present habitual",
+        "going/coming",
+        "from-to time",
+        "every day"
+      ],
+      "kid_friendly_reframe": "Use daily routine: school, practice, walk to park, play time, screen time, bedtime."
+    },
+    {
+      "source_chapter": 12,
+      "source_theme_label": "Meals and Food",
+      "source_line_count": 42,
+      "source_samples_english": [
+        "What do you eat in the morinag ?",
+        "I eat one pancake and four idlies.",
+        "Don’t you eat meat ?",
+        "No, I don’t eat meat.",
+        "Don’t you eat even eggs ?",
+        "No, I don’t eat.",
+        "Then what do you eat ?",
+        "I eat only plantains [bananas]"
+      ],
+      "source_topics_and_situations": [
+        "meals",
+        "diet",
+        "dog eating/barking",
+        "seeing/teaching",
+        "would/will write/play"
+      ],
+      "source_language_concepts": [
+        "simple present",
+        "present continuous",
+        "future/willingness",
+        "because"
+      ],
+      "kid_friendly_reframe": "Use meals kids care about, pets, homework help, writing a card, playing with friends."
+    },
+    {
+      "source_chapter": 13,
+      "source_theme_label": "Meals and Food",
+      "source_line_count": 43,
+      "source_samples_english": [
+        "When did you come from Delhi ?",
+        "I came last month.",
+        "How did you come ?",
+        "I came by plane from Delhi to",
+        "Madras.",
+        "How did you come here from there ?",
+        "I came by train from there.",
+        "How was the journey ?"
+      ],
+      "source_topics_and_situations": [
+        "travel from Delhi",
+        "Nandi Hills trip",
+        "cooking food",
+        "washing dishes",
+        "inviting brother",
+        "vegetables"
+      ],
+      "source_language_concepts": [
+        "past tense: came/went/started/got up/prepared/saw/invited/brought",
+        "by plane"
+      ],
+      "kid_friendly_reframe": "Use trips: Disneyland, zoo, car drive, picnic; cooking pasta; helping wash plates; inviting cousins."
+    },
+    {
+      "source_chapter": 14,
+      "source_theme_label": "Doctor and Health",
+      "source_line_count": 36,
+      "source_samples_english": [
+        "Suresh, did you not bathe this morning ?",
+        "No, I didn’t.",
+        "Why ? Are you not feeling well ?",
+        "No, I am very much exhausted.",
+        "So I did not bathe.",
+        "Did you not take your meal even ?",
+        "No, I did not take my meal even.",
+        "If so, did you not eat any thing ?"
+      ],
+      "source_topics_and_situations": [
+        "bathing/not feeling well",
+        "headache/cold/medicine",
+        "accident/dog hurt"
+      ],
+      "source_language_concepts": [
+        "negative past",
+        "why/because",
+        "health symptoms",
+        "did you take"
+      ],
+      "kid_friendly_reframe": "Use kid health: tired, cold, stomach ache, nurse, medicine, rest, careful near road."
+    },
+    {
+      "source_chapter": 15,
+      "source_theme_label": "At Home",
+      "source_line_count": 60,
+      "source_samples_english": [
+        "Good morning, what do you want ?",
+        "I want a house.",
+        "Will a two room house do ?",
+        "Do you want a still bigger one ?",
+        "Two rooms are enough for me. I don’t",
+        "want too big a house.",
+        "Are you single ?",
+        "No, we are four. What is the rent ?"
+      ],
+      "source_topics_and_situations": [
+        "wanting a house",
+        "buying vegetables",
+        "college admission/subjects",
+        "languages/mother tongue"
+      ],
+      "source_language_concepts": [
+        "want/need",
+        "availability",
+        "know/don’t know",
+        "subjects/languages"
+      ],
+      "kid_friendly_reframe": "Use wanting toys/snacks/books, market vegetables/fruits, school subjects, languages spoken at home."
+    },
+    {
+      "source_chapter": 16,
+      "source_theme_label": "Learning and Class",
+      "source_line_count": 40,
+      "source_samples_english": [
+        "Where do you have to go ?",
+        "I have to go to school.",
+        "When do you have to go ?",
+        "I have to go at ten O’clock.",
+        "Then, you have to read poetry now.",
+        "No, I have to write the lesson now.",
+        "No, you must read poetry new ; later on",
+        "you may write the lesson."
+      ],
+      "source_topics_and_situations": [
+        "have to/should/must/may",
+        "school timing",
+        "bring vegetables/flowers/sweets/fruits",
+        "morning duties"
+      ],
+      "source_language_concepts": [
+        "obligation",
+        "permission",
+        "should/must/may",
+        "when/what"
+      ],
+      "kid_friendly_reframe": "Use kid responsibilities: have to go to school, should brush, may bring fruit, must clean toys."
+    },
+    {
+      "source_chapter": 17,
+      "source_theme_label": "At the Cinema",
+      "source_line_count": 30,
+      "source_samples_english": [
+        "a<J!i; ellaruaadli.",
+        "A : naan een ma<Jli ? naanuu a<J|aa ?",
+        "B : elligaadruu tolgu, niinuu aa<Ju."
+      ],
+      "source_topics_and_situations": [
+        "cinema/garden",
+        "what should we do",
+        "ought to have seen/come"
+      ],
+      "source_language_concepts": [
+        "should/ought to",
+        "past missed opportunity",
+        "not coming"
+      ],
+      "kid_friendly_reframe": "Use movie/theme-park/playground plans: should we go, missed movie, should have come yesterday."
+    },
+    {
+      "source_chapter": 18,
+      "source_theme_label": "Coffee and Snacks",
+      "source_line_count": 26,
+      "source_samples_english": [
+        "Shall we go to the market tomorrow",
+        "morning ?",
+        "Let’s rise early and leave after the bath.",
+        "Dad, let’s leave after breakfast,",
+        "We should go onjy after worshipping. We",
+        "shouldn’t leave without worshipping.",
+        "Let’s go after worshipping and having",
+        "breakfast."
+      ],
+      "source_topics_and_situations": [
+        "market tomorrow",
+        "sequence after bath/breakfast/worship",
+        "arrived yesterday",
+        "meal invitation"
+      ],
+      "source_language_concepts": [
+        "shall/let’s",
+        "after/before",
+        "arrived/came",
+        "polite invitation/refusal"
+      ],
+      "kid_friendly_reframe": "Use weekend outing sequence: wake up, breakfast, car drive, snacks; inviting friend for lunch."
+    },
+    {
+      "source_chapter": 19,
+      "source_theme_label": "Learning and Class",
+      "source_line_count": 26,
+      "source_samples_english": [
+        "I enjoy smoking.",
+        "But it is harmful to health.",
+        "Quit smoking.",
+        "Then I won’t smoke. I will",
+        "certainly give it up.",
+        "Take care of your health. Stop",
+        "smooking.",
+        "I won’t smoke cigarette any more."
+      ],
+      "source_topics_and_situations": [
+        "health advice/quit smoking",
+        "writing disturbed",
+        "reading to do"
+      ],
+      "source_language_concepts": [
+        "enjoy doing",
+        "harmful",
+        "will give up",
+        "don’t you have"
+      ],
+      "kid_friendly_reframe": "For kids, replace smoking with too much candy/screen time; teach advice: too much is not good, take a break."
+    },
+    {
+      "source_chapter": 20,
+      "source_theme_label": "Going Places",
+      "source_line_count": 23,
+      "source_samples_english": [
+        "Are you going to Delhi ?",
+        "If you accompany, I will go.",
+        "If I hear from Delhi, I will join you,",
+        "otherwise, lam sorry. If at al| we leave",
+        "which train shall we take ?",
+        "If we get tickets let’s leave by G.T.,",
+        "otherwise we will go by K.K. Express.",
+        "When does G. T. reach Madras ?"
+      ],
+      "source_topics_and_situations": [
+        "Delhi travel with conditions",
+        "train choice",
+        "money/chocolate bargain school"
+      ],
+      "source_language_concepts": [
+        "if...will",
+        "otherwise",
+        "which train",
+        "conditional reward"
+      ],
+      "kid_friendly_reframe": "Use “if you finish homework, we’ll play/go for ice cream”; trip planning by car/train/bus."
+    },
+    {
+      "source_chapter": 21,
+      "source_theme_label": "Shopping and Food",
+      "source_line_count": 16,
+      "source_samples_english": [
+        "Why do so many people come to",
+        "and others for education.",
+        "A : ujidavru ? The rest ?",
+        "Do you care to come ? we shall go to a",
+        "I have to go to the",
+        "Why go to a hotel for snacks ?"
+      ],
+      "source_topics_and_situations": [
+        "people come for education",
+        "going to a place"
+      ],
+      "source_language_concepts": [
+        "why do people",
+        "many people",
+        "purpose"
+      ],
+      "kid_friendly_reframe": "Use “why do people go to school/library/park/Disneyland?” with child-friendly reasons."
+    },
+    {
+      "source_chapter": 22,
+      "source_theme_label": "Office and Work",
+      "source_line_count": 23,
+      "source_samples_english": [
+        "Ramu, are you awake ?",
+        "Yes. mummy. Raju also has got up.",
+        "Is Lakshmi awake ?",
+        "Yes, she is awake and the dog too",
+        "Everyone is up and ready.",
+        "Then, who is not awake yet ?",
+        "The puppies are not awake yet.",
+        "Enough of it, come in and drink coffee."
+      ],
+      "source_topics_and_situations": [
+        "waking up family/pet",
+        "has got up",
+        "not turned up/applied leave/message"
+      ],
+      "source_language_concepts": [
+        "present perfect",
+        "everyone/also/too",
+        "not yet",
+        "message"
+      ],
+      "kid_friendly_reframe": "Use morning family readiness and classroom attendance: who woke up, who hasn’t come yet, message to teacher."
+    },
+    {
+      "source_chapter": 23,
+      "source_theme_label": "Doctor and Health",
+      "source_line_count": 18,
+      "source_samples_english": [
+        "Had you been to Delhi 7",
+        "Sure ! Twice, once in January",
+        "and ihen November.",
+        "What did you see there the first time?",
+        "I had been the Red fort and the",
+        "Qutub Minar, but hadn*t seen",
+        "Jantar Mantar. I saw it this time.",
+        "• Who had taken you to Delhi ?"
+      ],
+      "source_topics_and_situations": [
+        "had been to Delhi",
+        "what did you see",
+        "dog ran away/fever/hospital"
+      ],
+      "source_language_concepts": [
+        "past perfect / had been",
+        "twice/once",
+        "had run away",
+        "hospital"
+      ],
+      "kid_friendly_reframe": "Use “Have you been to Disneyland/zoo?” and pet health story, simplified for kids."
+    },
+    {
+      "source_chapter": 24,
+      "source_theme_label": "At Home",
+      "source_line_count": 20,
+      "source_samples_english": [
+        "Good morning, is your elder brother",
+        "What is >our dog doiog ?",
+        "It is barking in the road.",
+        "Why is it barking ?",
+        "There is a mad man going in the road *",
+        "It’s barking at him.",
+        "Would you be usually playing in the",
+        "Yes, I will be usually playing"
+      ],
+      "source_topics_and_situations": [
+        "dog barking",
+        "habitual playing",
+        "ironing clothes",
+        "evening plans/movie/radio"
+      ],
+      "source_language_concepts": [
+        "present continuous",
+        "habitual future/would usually",
+        "this evening"
+      ],
+      "kid_friendly_reframe": "Use after-school habits: usually play, reading, music, movie, helping fold clothes."
+    },
+    {
+      "source_chapter": 25,
+      "source_theme_label": "At Home",
+      "source_line_count": 25,
+      "source_samples_english": [
+        "What were you doing yesterday eveining ?",
+        "I was watering the plants.",
+        "1 was passing through your house.",
+        "Did you see me ?",
+        "No, (I didn't see you) but saw the",
+        "chidren ; they were playing in the street*",
+        "I was watering the plants in the",
+        "backyard."
+      ],
+      "source_topics_and_situations": [
+        "what were you doing",
+        "watering plants",
+        "saw/didn’t see",
+        "baby crying/fever",
+        "crops growing"
+      ],
+      "source_language_concepts": [
+        "past continuous",
+        "while/later",
+        "reflexive ourselves",
+        "growing crops"
+      ],
+      "kid_friendly_reframe": "Use past continuous in fun scenes: was playing, was drawing, baby crying, garden plants/fruits growing."
+    },
+    {
+      "source_chapter": 26,
+      "source_theme_label": "Office and Work",
+      "source_line_count": 32,
+      "source_samples_english": [
+        "Is this the office where you are",
+        "working ?",
+        "Yes. I am working here.",
+        "Which is the room you work in ?",
+        "This is the room where I sit.",
+        "What is the work you are doing ?",
+        "I am a typist here.",
+        "Who is the girl that sang in yesterday’s"
+      ],
+      "source_topics_and_situations": [
+        "office where you work",
+        "relative clauses: girl that sang/song heard/school studied",
+        "standing there"
+      ],
+      "source_language_concepts": [
+        "where/that clauses",
+        "here/there",
+        "same school",
+        "unseen film"
+      ],
+      "kid_friendly_reframe": "Reframe relative clauses with kid content: friend who sang, game that we played, place where we ate ice cream."
+    },
+    {
+      "source_chapter": 27,
+      "source_theme_label": "Learning and Class",
+      "source_line_count": 24,
+      "source_samples_english": [
+        "How many Kannada (earners are",
+        "there in your class ?",
+        "There are eight Kannada learners",
+        "in our class.",
+        "In which profession all of you are",
+        "engaged in ?",
+        "All of us do office work",
+        "In which office all of you are"
+      ],
+      "source_topics_and_situations": [
+        "Kannada learners/class professions",
+        "who came late",
+        "some haven’t read"
+      ],
+      "source_language_concepts": [
+        "how many",
+        "professions",
+        "only/some/all",
+        "haven’t yet"
+      ],
+      "kid_friendly_reframe": "Use class roster: how many kids, who came late, who finished reading, some/all/only two."
+    },
+    {
+      "source_chapter": 28,
+      "source_theme_label": "At Home",
+      "source_line_count": 26,
+      "source_samples_english": [
+        "Tomorrow you please come to my house.",
+        "I will come, but you won’t be at home",
+        "when I come.",
+        "Tomorrow when you come, I will",
+        "definitely be at home.",
+        "Will you be at home tomorrow at 8’o",
+        "clock ?",
+        "Yes. I will be."
+      ],
+      "source_topics_and_situations": [
+        "tomorrow visit promise",
+        "when you come I’ll be home",
+        "time when went home"
+      ],
+      "source_language_concepts": [
+        "when clauses",
+        "definitely",
+        "future with when",
+        "past time"
+      ],
+      "kid_friendly_reframe": "Use playdate timing: when you come, I’ll be home; when dad arrives, we’ll go."
+    },
+    {
+      "source_chapter": 29,
+      "source_theme_label": "Learning and Class",
+      "source_line_count": 23,
+      "source_samples_english": [
+        "You have tp learn Kannada till you",
+        "speak well.",
+        "If so, how many months should I",
+        "learn ?",
+        "You have to learn for four months.",
+        "I will learn for six months.",
+        "Where did you go after the class",
+        "yesterday ?"
+      ],
+      "source_topics_and_situations": [
+        "learn Kannada until fluent",
+        "how many months",
+        "after class meeting",
+        "reading until sleepy"
+      ],
+      "source_language_concepts": [
+        "until/till",
+        "after",
+        "duration",
+        "have to"
+      ],
+      "kid_friendly_reframe": "Use learning goals: practice until you can speak, read until bedtime, after class go play."
+    },
+    {
+      "source_chapter": 30,
+      "source_theme_label": "Office and Work",
+      "source_line_count": 16,
+      "source_samples_english": [
+        "Will you give this shirt tomorrow ?",
+        "No, I can’t give tommorrow.",
+        "I have to attend a wedding.",
+        "If you had told me yesterday.",
+        "I would have stitched.",
+        "Had I known yesterday, I would",
+        "Why didn’t you bring the book",
+        "to-day ?"
+      ],
+      "source_topics_and_situations": [
+        "tailor/shirt tomorrow",
+        "wedding",
+        "if you had told me",
+        "would have brought"
+      ],
+      "source_language_concepts": [
+        "conditionals past/future",
+        "without fail",
+        "would have"
+      ],
+      "kid_friendly_reframe": "Use child-friendly conditionals: if you told me yesterday, I would have brought the game/snack."
+    },
+    {
+      "source_chapter": 31,
+      "source_theme_label": "Learning and Class",
+      "source_line_count": 18,
+      "source_samples_english": [
+        "Does your son study well ?",
+        "Yes, nobody else studies like",
+        "him in his class.",
+        "Does he write well ?",
+        "Yes, he writes very well.",
+        "No body looks after the children,",
+        "so well as you do.",
+        "Look here, you havn't washed the"
+      ],
+      "source_topics_and_situations": [
+        "study/write well",
+        "wash like him",
+        "made by cook",
+        "nobody cooks like him"
+      ],
+      "source_language_concepts": [
+        "like/as comparisons",
+        "passive made by",
+        "well/better",
+        "nobody else"
+      ],
+      "kid_friendly_reframe": "Use comparisons and passive with school/art/food: draw like her, cake made by mom, nobody plays like him."
+    }
+  ],
+  "current_proposal_summary": [
+    {
+      "proposal_chapter": 1,
+      "title": "New friend, ice cream, and names",
+      "concepts_currently_taught": [
+        "greetings",
+        "name exchange",
+        "likes",
+        "food",
+        "goodbye",
+        "past experience",
+        "future plan"
+      ],
+      "conversation_count": 2,
+      "line_count": 17
+    },
+    {
+      "proposal_chapter": 2,
+      "title": "How are you, and what do you want to do?",
+      "concepts_currently_taught": [
+        "feelings",
+        "choice",
+        "play",
+        "permission",
+        "feeling tired",
+        "need water",
+        "later/again"
+      ],
+      "conversation_count": 2,
+      "line_count": 17
+    },
+    {
+      "proposal_chapter": 3,
+      "title": "Family, car drive, and weekend fun",
+      "concepts_currently_taught": [
+        "family",
+        "people",
+        "future plan",
+        "food",
+        "sister",
+        "coming",
+        "we"
+      ],
+      "conversation_count": 2,
+      "line_count": 15
+    },
+    {
+      "proposal_chapter": 4,
+      "title": "Classroom games and asking again",
+      "concepts_currently_taught": [
+        "classroom commands",
+        "listening",
+        "turn-taking",
+        "asking again",
+        "practice",
+        "confidence"
+      ],
+      "conversation_count": 2,
+      "line_count": 14
+    },
+    {
+      "proposal_chapter": 5,
+      "title": "My toys, books, and game board",
+      "concepts_currently_taught": [
+        "this/that",
+        "things",
+        "game names",
+        "where",
+        "here",
+        "under"
+      ],
+      "conversation_count": 2,
+      "line_count": 15
+    },
+    {
+      "proposal_chapter": 6,
+      "title": "Pasta, ice cream, and snacks",
+      "concepts_currently_taught": [
+        "hungry",
+        "want",
+        "please",
+        "food",
+        "choice",
+        "yes/no",
+        "want/don’t want",
+        "past tense",
+        "present tense",
+        "future tense",
+        "tense_past",
+        "tense_present",
+        "tense_future",
+        "pronouns"
+      ],
+      "conversation_count": 3,
+      "line_count": 25
+    },
+    {
+      "proposal_chapter": 7,
+      "title": "Games we like",
+      "concepts_currently_taught": [
+        "game play",
+        "turns",
+        "past result",
+        "try again",
+        "likes",
+        "choices",
+        "games",
+        "past tense",
+        "present tense",
+        "future tense",
+        "tense_past",
+        "tense_present",
+        "tense_future",
+        "pronouns"
+      ],
+      "conversation_count": 3,
+      "line_count": 21
+    },
+    {
+      "proposal_chapter": 8,
+      "title": "Where is the candy?",
+      "concepts_currently_taught": [
+        "where",
+        "here/there",
+        "under/behind",
+        "sharing",
+        "there",
+        "come here",
+        "play"
+      ],
+      "conversation_count": 2,
+      "line_count": 13
+    },
+    {
+      "proposal_chapter": 9,
+      "title": "Can I play?",
+      "concepts_currently_taught": [
+        "permission",
+        "place",
+        "polite request",
+        "borrow",
+        "give/take",
+        "thanks"
+      ],
+      "conversation_count": 2,
+      "line_count": 10
+    },
+    {
+      "proposal_chapter": 10,
+      "title": "Counting candies and birthdays",
+      "concepts_currently_taught": [
+        "age",
+        "numbers",
+        "birthday",
+        "candies",
+        "how many"
+      ],
+      "conversation_count": 2,
+      "line_count": 11
+    },
+    {
+      "proposal_chapter": 11,
+      "title": "Morning routine",
+      "concepts_currently_taught": [
+        "morning routine",
+        "commands",
+        "present action",
+        "ready",
+        "school",
+        "future movement"
+      ],
+      "conversation_count": 2,
+      "line_count": 12
+    },
+    {
+      "proposal_chapter": 12,
+      "title": "Polite words",
+      "concepts_currently_taught": [
+        "sorry",
+        "are you okay",
+        "response",
+        "help",
+        "please",
+        "show me"
+      ],
+      "conversation_count": 2,
+      "line_count": 12
+    },
+    {
+      "proposal_chapter": 13,
+      "title": "Clothes for a fun day out",
+      "concepts_currently_taught": [
+        "ಅಂಗಿ",
+        "ನೀಲಿ",
+        "ಮೇಲೆ"
+      ],
+      "conversation_count": 1,
+      "line_count": 3
+    },
+    {
+      "proposal_chapter": 14,
+      "title": "Body and health",
+      "concepts_currently_taught": [
+        "ಏನಾಯಿತು",
+        "ನೋವು",
+        "ನೀರು"
+      ],
+      "conversation_count": 1,
+      "line_count": 3
+    },
+    {
+      "proposal_chapter": 15,
+      "title": "Weather",
+      "concepts_currently_taught": [
+        "ಮಳೆ",
+        "ಛತ್ರಿ",
+        "ಅಜ್ಜಿ"
+      ],
+      "conversation_count": 1,
+      "line_count": 3
+    },
+    {
+      "proposal_chapter": 16,
+      "title": "Animals",
+      "concepts_currently_taught": [
+        "ಪ್ರಾಣಿ",
+        "ನಾಯಿ",
+        "ಇಷ್ಟ"
+      ],
+      "conversation_count": 1,
+      "line_count": 3
+    },
+    {
+      "proposal_chapter": 17,
+      "title": "At the park: slides, swings, and games",
+      "concepts_currently_taught": [
+        "ಆಡು",
+        "ಆಡೋಣ",
+        "ಮೊದಲು",
+        "yesterday",
+        "now",
+        "tomorrow",
+        "I",
+        "we",
+        "tense_past",
+        "tense_present",
+        "tense_future",
+        "pronouns"
+      ],
+      "conversation_count": 2,
+      "line_count": 11
+    },
+    {
+      "proposal_chapter": 18,
+      "title": "Buying candy at a shop",
+      "concepts_currently_taught": [
+        "ಎಷ್ಟು",
+        "ಹತ್ತು",
+        "ಒಂದು"
+      ],
+      "conversation_count": 1,
+      "line_count": 3
+    },
+    {
+      "proposal_chapter": 19,
+      "title": "Directions",
+      "concepts_currently_taught": [
+        "ಎಲ್ಲಿ",
+        "ಅಲ್ಲಿ",
+        "ಎಡಕ್ಕೆ"
+      ],
+      "conversation_count": 1,
+      "line_count": 3
+    },
+    {
+      "proposal_chapter": 20,
+      "title": "Bus ride, car drive, and going places",
+      "concepts_currently_taught": [
+        "ಹೇಗೆ",
+        "ಬಸ್",
+        "ಹೋಗೋಣ",
+        "yesterday",
+        "now",
+        "tomorrow",
+        "I",
+        "we",
+        "tense_past",
+        "tense_present",
+        "tense_future",
+        "pronouns"
+      ],
+      "conversation_count": 2,
+      "line_count": 11
+    },
+    {
+      "proposal_chapter": 21,
+      "title": "Library",
+      "concepts_currently_taught": [
+        "ಪುಸ್ತಕ",
+        "ಓದು",
+        "ಬೇಕು"
+      ],
+      "conversation_count": 1,
+      "line_count": 3
+    },
+    {
+      "proposal_chapter": 22,
+      "title": "Screen time",
+      "concepts_currently_taught": [
+        "ನೋಡಬಹುದಾ",
+        "ಮೇಲೆ",
+        "ಸರಿ"
+      ],
+      "conversation_count": 1,
+      "line_count": 3
+    },
+    {
+      "proposal_chapter": 23,
+      "title": "Homework",
+      "concepts_currently_taught": [
+        "ಮುಗಿದಿದೆ",
+        "ಇನ್ನೂ",
+        "ಈಗ"
+      ],
+      "conversation_count": 1,
+      "line_count": 3
+    },
+    {
+      "proposal_chapter": 24,
+      "title": "Helping at home",
+      "concepts_currently_taught": [
+        "ಸಹಾಯ",
+        "ತಟ್ಟೆ",
+        "ತಂದುಕೊ"
+      ],
+      "conversation_count": 1,
+      "line_count": 3
+    },
+    {
+      "proposal_chapter": 25,
+      "title": "Festival sweets and family fun",
+      "concepts_currently_taught": [
+        "ಹಬ್ಬ",
+        "ಅಜ್ಜ",
+        "ಒಳ್ಳೆಯದಾಗಲಿ"
+      ],
+      "conversation_count": 1,
+      "line_count": 3
+    },
+    {
+      "proposal_chapter": 26,
+      "title": "Phone call",
+      "concepts_currently_taught": [
+        "ಹಲೋ",
+        "ಅಜ್ಜಿ",
+        "ಹೇಗಿದ್ದೀಯ"
+      ],
+      "conversation_count": 1,
+      "line_count": 3
+    },
+    {
+      "proposal_chapter": 27,
+      "title": "Planning a playdate",
+      "concepts_currently_taught": [
+        "ಬರ್ತೀಯಾ",
+        "ಮನೆ",
+        "ಗಂಟೆ"
+      ],
+      "conversation_count": 1,
+      "line_count": 3
+    },
+    {
+      "proposal_chapter": 28,
+      "title": "Story words",
+      "concepts_currently_taught": [
+        "ಕಥೆ",
+        "ಯಾರು",
+        "ಏನು"
+      ],
+      "conversation_count": 1,
+      "line_count": 3
+    },
+    {
+      "proposal_chapter": 29,
+      "title": "Review: meeting people",
+      "concepts_currently_taught": [
+        "ಹೆಸರು",
+        "ಹೇಗಿದ್ದೀಯ",
+        "ಚೆನ್ನಾಗಿದೆ"
+      ],
+      "conversation_count": 1,
+      "line_count": 3
+    },
+    {
+      "proposal_chapter": 30,
+      "title": "Review: asking for things",
+      "concepts_currently_taught": [
+        "ಬೇಕು",
+        "ಯಾವ",
+        "ತೆಗೆದುಕೋ"
+      ],
+      "conversation_count": 1,
+      "line_count": 4
+    },
+    {
+      "proposal_chapter": 31,
+      "title": "Big review: playground adventure",
+      "concepts_currently_taught": [
+        "ಆಡು",
+        "ಚೆಂಡು",
+        "ಅಲ್ಲಿ",
+        "ಸರಿ",
+        "yesterday",
+        "now",
+        "tomorrow",
+        "I",
+        "we",
+        "tense_past",
+        "tense_present",
+        "tense_future",
+        "pronouns"
+      ],
+      "conversation_count": 2,
+      "line_count": 12
+    }
+  ],
+  "recommended_next_revision": [
+    "Expand the new curriculum so every old source concept appears at least once in a kid-natural scene.",
+    "Add explicit source_concepts_covered to each new chapter/conversation.",
+    "Move adult topics such as rent, office leave, smoking, college admission, and tailoring into kid equivalents: room size, classroom attendance, too much candy/screen time, favorite subject, clothes for a party.",
+    "Keep advanced grammar later, but introduce it through stories: if we finish homework, we will play; when you come, I will be home; I was drawing when you called; the cake was made by mom."
+  ]
+}
