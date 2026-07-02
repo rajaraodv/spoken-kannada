@@ -10,7 +10,7 @@
     "build:chapters": "python3 scripts/generate_comic.py && python3 scripts/crop_chapter_1_visuals.py && python3 scripts/build_page_by_page_html.py"
   },
   "dependencies": {
-    "next": "15.1.6",
+    "next": "15.1.11",
     "react": "19.0.0",
     "react-dom": "19.0.0"
   },
