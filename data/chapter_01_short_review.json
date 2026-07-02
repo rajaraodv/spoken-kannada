@@ -1,0 +1,327 @@
+{
+  "chapter": 1,
+  "title": "Ice Cream After School: greetings, names, flavors",
+  "translation_mode": "classic-colloquial",
+  "conversations": [
+    {
+      "id": "1A",
+      "title": "Meeting Meena",
+      "setting": "near an ice cream shop after school",
+      "goal": "Say hi, ask if someone is in your class, and exchange names.",
+      "lines": [
+        {
+          "speaker": "Raju",
+          "english": "Hello.",
+          "kannada": "ಹೆಲೋ.",
+          "roman": "Hello.",
+          "grammar": [
+            "greeting"
+          ],
+          "translation_mode": "classic-colloquial"
+        },
+        {
+          "speaker": "Meena",
+          "english": "Hello.",
+          "kannada": "ಹೆಲೋ.",
+          "roman": "Hello.",
+          "grammar": [
+            "greeting"
+          ],
+          "translation_mode": "classic-colloquial"
+        },
+        {
+          "speaker": "Raju",
+          "english": "Are you in my class?",
+          "kannada": "ನೀವು ನನ್ನ ಕ್ಲಾಸ್-ನಲ್ಲಿದ್ದೀರಾ?",
+          "roman": "Neevu nanna class-nalli iddeera?",
+          "grammar": [
+            "you",
+            "question"
+          ],
+          "translation_mode": "classic-colloquial"
+        },
+        {
+          "speaker": "Meena",
+          "english": "Yes, I am.",
+          "kannada": "ಹೌದು, ನಾನು ಇದ್ದೀನಿ.",
+          "roman": "Howdu, naanu iddeeni.",
+          "grammar": [
+            "yes",
+            "I"
+          ],
+          "translation_mode": "classic-colloquial"
+        },
+        {
+          "speaker": "Raju",
+          "english": "I am Raju.",
+          "kannada": "ನಾನು ರಾಜು.",
+          "roman": "Naanu Raju.",
+          "grammar": [
+            "I",
+            "identity"
+          ],
+          "translation_mode": "classic-colloquial"
+        },
+        {
+          "speaker": "Meena",
+          "english": "I am Meena.",
+          "kannada": "ನಾನು ಮೀನಾ.",
+          "roman": "Naanu Meena.",
+          "grammar": [
+            "I",
+            "identity"
+          ],
+          "translation_mode": "classic-colloquial"
+        },
+        {
+          "speaker": "Raju",
+          "english": "Nice to meet you, Meena.",
+          "kannada": "ಮೀನಾ, ನಿಮ್ಮನ್ನು ಭೇಟಿ ಮಾಡಿ ಸಂತೋಷ ಆಯ್ತು.",
+          "roman": "Meena, nimmannu bheti maadi santosha aaytu.",
+          "grammar": [
+            "greeting",
+            "you"
+          ],
+          "translation_mode": "classic-colloquial"
+        },
+        {
+          "speaker": "Meena",
+          "english": "Nice to meet you too.",
+          "kannada": "ನಿನ್ನನ್ನೂ ಭೇಟಿ ಮಾಡಿ ಸಂತೋಷ ಆಯ್ತು.",
+          "roman": "Ninnannu bheti maadi santosha aaytu.",
+          "grammar": [
+            "greeting",
+            "you"
+          ],
+          "translation_mode": "classic-colloquial"
+        }
+      ],
+      "keywords": [
+        "hi",
+        "class",
+        "name",
+        "nice to meet you"
+      ],
+      "grammar_targets": [
+        "greetings",
+        "I/you",
+        "questions",
+        "identity"
+      ],
+      "concepts_taught": [
+        "greetings",
+        "name exchange",
+        "classmates"
+      ]
+    },
+    {
+      "id": "1B",
+      "title": "Choosing Ice Cream",
+      "setting": "inside the ice cream shop",
+      "goal": "Ask for ice cream and talk about mango and chocolate flavors.",
+      "lines": [
+        {
+          "speaker": "Raju",
+          "english": "Do you want ice cream?",
+          "kannada": "ನಿಮಗೆ ಐಸ್ ಕ್ರೀಮ್ ಬೇಕಾ?",
+          "roman": "Nimage ice cream beka?",
+          "grammar": [
+            "you",
+            "want",
+            "question"
+          ],
+          "translation_mode": "classic-colloquial"
+        },
+        {
+          "speaker": "Meena",
+          "english": "Yes!",
+          "kannada": "ಹೌದು!",
+          "roman": "Howdu!",
+          "grammar": [
+            "yes"
+          ],
+          "translation_mode": "classic-colloquial"
+        },
+        {
+          "speaker": "Raju",
+          "english": "Which flavor do you like?",
+          "kannada": "ನಿಮಗೆ ಯಾವ ಫ್ಲೇವರ್ ಇಷ್ಟ?",
+          "roman": "Nimage yaava flavor ishta?",
+          "grammar": [
+            "which",
+            "you",
+            "like",
+            "question"
+          ],
+          "translation_mode": "classic-colloquial"
+        },
+        {
+          "speaker": "Meena",
+          "english": "I like chocolate flavor.",
+          "kannada": "ನನಗೆ ಚಾಕ್ಲೆಟ್ ಫ್ಲೇವರ್ ಇಷ್ಟ.",
+          "roman": "Nanage chocolate flavor ishta.",
+          "grammar": [
+            "I",
+            "like"
+          ],
+          "translation_mode": "classic-colloquial"
+        },
+        {
+          "speaker": "Raju",
+          "english": "I like mango flavor.",
+          "kannada": "ನನಗೆ ಮಾವಿನಹಣ್ಣಿನ ಫ್ಲೇವರ್ ಇಷ್ಟ.",
+          "roman": "Nanage maavinahannina flavor ishṭa.",
+          "grammar": [
+            "I",
+            "like"
+          ],
+          "translation_mode": "classic-colloquial"
+        },
+        {
+          "speaker": "Meena",
+          "english": "Mango is yummy too.",
+          "kannada": "ಮಾವಿನಹಣ್ಣು ಕೂಡ ರುಚಿಕರ.",
+          "roman": "Maavinahannu kooda ruchikara.",
+          "grammar": [
+            "like"
+          ],
+          "translation_mode": "classic-colloquial"
+        },
+        {
+          "speaker": "Raju",
+          "english": "Let us get ice cream.",
+          "kannada": "ಐಸ್‌ಕ್ರೀಮ್ ತಗೊಳ್ಳೋಣ.",
+          "roman": "Icecream tagolona.",
+          "grammar": [
+            "we",
+            "suggestion"
+          ],
+          "translation_mode": "classic-colloquial"
+        },
+        {
+          "speaker": "Meena",
+          "english": "Okay!",
+          "kannada": "ಸರಿ!",
+          "roman": "Sari!",
+          "grammar": [
+            "agreement"
+          ],
+          "translation_mode": "classic-colloquial"
+        }
+      ],
+      "keywords": [
+        "ice cream",
+        "which",
+        "flavor",
+        "chocolate flavor",
+        "mango flavor",
+        "yummy"
+      ],
+      "grammar_targets": [
+        "want",
+        "which",
+        "likes",
+        "we"
+      ],
+      "concepts_taught": [
+        "food",
+        "flavors",
+        "likes",
+        "suggestions"
+      ]
+    },
+    {
+      "id": "1C",
+      "title": "After Ice Cream",
+      "setting": "outside the shop after eating ice cream",
+      "goal": "Say something was good and make a simple tomorrow plan.",
+      "lines": [
+        {
+          "speaker": "Meena",
+          "english": "My ice cream was good.",
+          "kannada": "ನನ್ನ ಐಸ್ ಕ್ರೀಮ್ ಚೆನ್ನಾಗಿತ್ತು.",
+          "roman": "Nanna ice cream chennaagittu.",
+          "grammar": [
+            "my",
+            "tense_past"
+          ],
+          "translation_mode": "classic-colloquial"
+        },
+        {
+          "speaker": "Raju",
+          "english": "Mine was good too.",
+          "kannada": "ನನ್ನದು ಕೂಡ ಚೆನ್ನಾಗಿತ್ತು.",
+          "roman": "Nannadoo kooda chennaagittu.",
+          "grammar": [
+            "mine",
+            "tense_past"
+          ],
+          "translation_mode": "classic-colloquial"
+        },
+        {
+          "speaker": "Meena",
+          "english": "See you at school tomorrow?",
+          "kannada": "ನಾಳೆ ಸ್ಕೂಲ್‌ನಲ್ಲಿ ಸಿಗೋಣವಾ?",
+          "roman": "Naale schoolnalli sigonava?",
+          "grammar": [
+            "you",
+            "tomorrow",
+            "tense_future"
+          ],
+          "translation_mode": "classic-colloquial+manual_spoken_fix"
+        },
+        {
+          "speaker": "Raju",
+          "english": "Yes, see you tomorrow.",
+          "kannada": "ಹೌದು, ನಾಳೆ ಭೇಟಿ ಆಗೋಣ.",
+          "roman": "Howdu, naale bheti aagona.",
+          "grammar": [
+            "yes",
+            "tomorrow",
+            "tense_future"
+          ],
+          "translation_mode": "classic-colloquial"
+        },
+        {
+          "speaker": "Meena",
+          "english": "See you, Raju.",
+          "kannada": "ಸಿಗೋಣ, ರಾಜು.",
+          "roman": "Sigona, Raju.",
+          "grammar": [
+            "goodbye"
+          ],
+          "translation_mode": "classic-colloquial+manual_spoken_fix"
+        },
+        {
+          "speaker": "Raju",
+          "english": "See you, Meena.",
+          "kannada": "ಸಿಗೋಣ, ಮೀನಾ.",
+          "roman": "Sigona, Meena.",
+          "grammar": [
+            "goodbye"
+          ],
+          "translation_mode": "classic-colloquial+manual_spoken_fix"
+        }
+      ],
+      "keywords": [
+        "my",
+        "mine",
+        "good",
+        "school",
+        "tomorrow",
+        "bye"
+      ],
+      "grammar_targets": [
+        "my/mine",
+        "past",
+        "tomorrow",
+        "goodbye"
+      ],
+      "concepts_taught": [
+        "goodbye",
+        "past experience",
+        "future plan"
+      ]
+    }
+  ]
+}

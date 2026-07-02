@@ -8978,5 +8978,255 @@
     "sarvam_kannada": "ಮೊದಲನೆಯದು: (ಎ) ಈ ಕೆಳಗಿನ ವಾಕ್ಯಗಳನ್ನು ಕನ್ನಡಕ್ಕೆ ಅನುವಾದಿಸಿ.",
     "sarvam_roman": "Modalaneyadu: (a) Ee kelagina vaakyangalannu Kannada-kke anuvaadisi.",
     "source": "sarvam_translate_mayura_v1_formal"
+  },
+  "chapter-01:conversation-1A:row-01": {
+    "chapter": 1,
+    "conversation": "1A",
+    "row": 1,
+    "english": "Hello.",
+    "original_roman": "Hello.",
+    "sarvam_kannada": "ಹೆಲೋ.",
+    "sarvam_roman": "Hello.",
+    "source": "sarvam_translate_mayura_v1_classic-colloquial+manual_spoken_fix_new_curriculum_chapter_1"
+  },
+  "chapter-01:conversation-1A:row-02": {
+    "chapter": 1,
+    "conversation": "1A",
+    "row": 2,
+    "english": "Hello.",
+    "original_roman": "Hello.",
+    "sarvam_kannada": "ಹೆಲೋ.",
+    "sarvam_roman": "Hello.",
+    "source": "sarvam_translate_mayura_v1_classic-colloquial+manual_spoken_fix_new_curriculum_chapter_1"
+  },
+  "chapter-01:conversation-1A:row-03": {
+    "chapter": 1,
+    "conversation": "1A",
+    "row": 3,
+    "english": "Are you in my class?",
+    "original_roman": "Neevu nanna class-nalli iddeera?",
+    "sarvam_kannada": "ನೀವು ನನ್ನ ಕ್ಲಾಸ್-ನಲ್ಲಿ ಇದ್ದೀರಾ?",
+    "sarvam_roman": "Neevu nanna class-nalli iddeera?",
+    "source": "sarvam_translate_mayura_v1_classic-colloquial_new_curriculum_chapter_1"
+  },
+  "chapter-01:conversation-1A:row-04": {
+    "chapter": 1,
+    "conversation": "1A",
+    "row": 4,
+    "english": "Yes, I am.",
+    "original_roman": "Howdu, naanu iddeeni.",
+    "sarvam_kannada": "ಹೌದು, ನಾನು ಇದ್ದೀನಿ.",
+    "sarvam_roman": "Howdu, naanu iddeeni.",
+    "source": "sarvam_translate_mayura_v1_classic-colloquial_new_curriculum_chapter_1"
+  },
+  "chapter-01:conversation-1A:row-05": {
+    "chapter": 1,
+    "conversation": "1A",
+    "row": 5,
+    "english": "I am Raju.",
+    "original_roman": "Naanu Raju.",
+    "sarvam_kannada": "ನಾನು ರಾಜು.",
+    "sarvam_roman": "Naanu Raju.",
+    "source": "sarvam_translate_mayura_v1_classic-colloquial_new_curriculum_chapter_1"
+  },
+  "chapter-01:conversation-1A:row-06": {
+    "chapter": 1,
+    "conversation": "1A",
+    "row": 6,
+    "english": "I am Meena.",
+    "original_roman": "Naanu Meena.",
+    "sarvam_kannada": "ನಾನು ಮೀನಾ.",
+    "sarvam_roman": "Naanu Meena.",
+    "source": "sarvam_translate_mayura_v1_classic-colloquial_new_curriculum_chapter_1"
+  },
+  "chapter-01:conversation-1A:row-07": {
+    "chapter": 1,
+    "conversation": "1A",
+    "row": 7,
+    "english": "Nice to meet you, Meena.",
+    "original_roman": "Meena, nimmannu bheti maadi santosha aaytu.",
+    "sarvam_kannada": "ಮೀನಾ, ನಿಮ್ಮನ್ನು ಭೇಟಿ ಮಾಡಿ ಸಂತೋಷ ಆಯ್ತು.",
+    "sarvam_roman": "Meena, nimmannu bheti maadi santosha aaytu.",
+    "source": "sarvam_translate_mayura_v1_classic-colloquial_new_curriculum_chapter_1"
+  },
+  "chapter-01:conversation-1A:row-08": {
+    "chapter": 1,
+    "conversation": "1A",
+    "row": 8,
+    "english": "Nice to meet you too.",
+    "original_roman": "Ninnannu bheti maadi santosha aaytu.",
+    "sarvam_kannada": "ನಿನ್ನನ್ನೂ ಭೇಟಿ ಮಾಡಿ ಸಂತೋಷ ಆಯ್ತು.",
+    "sarvam_roman": "Ninnannu bheti maadi santosha aaytu.",
+    "source": "sarvam_translate_mayura_v1_classic-colloquial_new_curriculum_chapter_1"
+  },
+  "chapter-01:conversation-1A:row-09": {
+    "chapter": 1,
+    "conversation": "1A",
+    "row": 9,
+    "english": "Mine is mango.",
+    "original_roman": "Nanage maavina hannu ishta.",
+    "sarvam_kannada": "ನನಗೆ ಮಾವಿನ ಹಣ್ಣು ಇಷ್ಟ.",
+    "sarvam_roman": "Nanage maavina hannu ishta.",
+    "source": "sarvam_translate_mayura_v1_new_curriculum_chapter_1"
+  },
+  "chapter-01:conversation-1A:row-10": {
+    "chapter": 1,
+    "conversation": "1A",
+    "row": 10,
+    "english": "Let’s get one scoop each.",
+    "original_roman": "Naavu ondondhu scoop tagollona.",
+    "sarvam_kannada": "ನಾವು ಒಂದೊಂದು ಸ್ಕೂಪ್ ತಗೊಳ್ಳೋಣ.",
+    "sarvam_roman": "Naavu ondondhu scoop tagollona.",
+    "source": "sarvam_translate_mayura_v1_new_curriculum_chapter_1"
+  },
+  "chapter-01:conversation-1A:row-11": {
+    "chapter": 1,
+    "conversation": "1A",
+    "row": 11,
+    "english": "Good idea!",
+    "original_roman": "Olleya alochane!",
+    "sarvam_kannada": "ಒಳ್ಳೆಯ ಆಲೋಚನೆ!",
+    "sarvam_roman": "Olleya alochane!",
+    "source": "sarvam_translate_mayura_v1_new_curriculum_chapter_1"
+  },
+  "chapter-01:conversation-1B:row-01": {
+    "chapter": 1,
+    "conversation": "1B",
+    "row": 1,
+    "english": "Do you want ice cream?",
+    "original_roman": "Nimage ice cream beka?",
+    "sarvam_kannada": "ನಿಮಗೆ ಐಸ್ ಕ್ರೀಮ್ ಬೇಕಾ?",
+    "sarvam_roman": "Nimage ice cream beka?",
+    "source": "sarvam_translate_mayura_v1_classic-colloquial_new_curriculum_chapter_1"
+  },
+  "chapter-01:conversation-1B:row-02": {
+    "chapter": 1,
+    "conversation": "1B",
+    "row": 2,
+    "english": "Yes!",
+    "original_roman": "Howdu!",
+    "sarvam_kannada": "ಹೌದು!",
+    "sarvam_roman": "Howdu!",
+    "source": "sarvam_translate_mayura_v1_classic-colloquial_new_curriculum_chapter_1"
+  },
+  "chapter-01:conversation-1B:row-03": {
+    "chapter": 1,
+    "conversation": "1B",
+    "row": 3,
+    "english": "Which flavor do you like?",
+    "original_roman": "Nimage yaava flavor ishta anta helteera?",
+    "sarvam_kannada": "ನಿಮಗೆ ಯಾವ ಫ್ಲೇವರ್ ಇಷ್ಟ?",
+    "sarvam_roman": "Nimage yaava flavor ishta anta helteera?",
+    "source": "sarvam_translate_mayura_v1_classic-colloquial_new_curriculum_chapter_1"
+  },
+  "chapter-01:conversation-1B:row-04": {
+    "chapter": 1,
+    "conversation": "1B",
+    "row": 4,
+    "english": "I like chocolate flavor.",
+    "original_roman": "Nanage chocolate flavor ishṭa.",
+    "sarvam_kannada": "ನನಗೆ ಚಾಕ್ಲೆಟ್ ಫ್ಲೇವರ್ ಇಷ್ಟ.",
+    "sarvam_roman": "Nanage chocolate flavor ishṭa.",
+    "source": "sarvam_translate_mayura_v1_classic-colloquial_new_curriculum_chapter_1"
+  },
+  "chapter-01:conversation-1B:row-05": {
+    "chapter": 1,
+    "conversation": "1B",
+    "row": 5,
+    "english": "I like mango flavor.",
+    "original_roman": "Nanage maavinahannina flavor ishṭa.",
+    "sarvam_kannada": "ನನಗೆ ಮಾವಿನಹಣ್ಣಿನ ಫ್ಲೇವರ್ ಇಷ್ಟ.",
+    "sarvam_roman": "Nanage maavinahannina flavor ishṭa.",
+    "source": "sarvam_translate_mayura_v1_classic-colloquial_new_curriculum_chapter_1"
+  },
+  "chapter-01:conversation-1B:row-06": {
+    "chapter": 1,
+    "conversation": "1B",
+    "row": 6,
+    "english": "Mango is yummy too.",
+    "original_roman": "Maavinahannu kooda ruchikara.",
+    "sarvam_kannada": "ಮಾವಿನಹಣ್ಣು ಕೂಡ ರುಚಿಕರ.",
+    "sarvam_roman": "Maavinahannu kooda ruchikara.",
+    "source": "sarvam_translate_mayura_v1_classic-colloquial_new_curriculum_chapter_1"
+  },
+  "chapter-01:conversation-1B:row-07": {
+    "chapter": 1,
+    "conversation": "1B",
+    "row": 7,
+    "english": "Let us get ice cream.",
+    "original_roman": "Icecream tagolona.",
+    "sarvam_kannada": "ಐಸ್‌ಕ್ರೀಮ್ ತಗೊಳ್ಳೋಣ.",
+    "sarvam_roman": "Icecream tagolona.",
+    "source": "sarvam_translate_mayura_v1_classic-colloquial_new_curriculum_chapter_1"
+  },
+  "chapter-01:conversation-1B:row-08": {
+    "chapter": 1,
+    "conversation": "1B",
+    "row": 8,
+    "english": "Okay!",
+    "original_roman": "Sari!",
+    "sarvam_kannada": "ಸರಿ!",
+    "sarvam_roman": "Sari!",
+    "source": "sarvam_translate_mayura_v1_classic-colloquial_new_curriculum_chapter_1"
+  },
+  "chapter-01:conversation-1C:row-01": {
+    "chapter": 1,
+    "conversation": "1C",
+    "row": 1,
+    "english": "My ice cream was good.",
+    "original_roman": "Nanna ice cream chennaagittu.",
+    "sarvam_kannada": "ನನ್ನ ಐಸ್ ಕ್ರೀಮ್ ಚೆನ್ನಾಗಿತ್ತು.",
+    "sarvam_roman": "Nanna ice cream chennaagittu.",
+    "source": "sarvam_translate_mayura_v1_classic-colloquial_new_curriculum_chapter_1"
+  },
+  "chapter-01:conversation-1C:row-02": {
+    "chapter": 1,
+    "conversation": "1C",
+    "row": 2,
+    "english": "Mine was good too.",
+    "original_roman": "Nannadoo kooda chennaagittu.",
+    "sarvam_kannada": "ನನ್ನದು ಕೂಡ ಚೆನ್ನಾಗಿತ್ತು.",
+    "sarvam_roman": "Nannadoo kooda chennaagittu.",
+    "source": "sarvam_translate_mayura_v1_classic-colloquial_new_curriculum_chapter_1"
+  },
+  "chapter-01:conversation-1C:row-03": {
+    "chapter": 1,
+    "conversation": "1C",
+    "row": 3,
+    "english": "See you at school tomorrow?",
+    "original_roman": "Naale schoolnalli sigonava?",
+    "sarvam_kannada": "ನಾಳೆ ಸ್ಕೂಲ್‌ನಲ್ಲಿ ಸಿಗೋಣವಾ?",
+    "sarvam_roman": "Naale schoolnalli sigonava?",
+    "source": "sarvam_translate_mayura_v1_classic-colloquial+manual_spoken_fix_new_curriculum_chapter_1"
+  },
+  "chapter-01:conversation-1C:row-04": {
+    "chapter": 1,
+    "conversation": "1C",
+    "row": 4,
+    "english": "Yes, see you tomorrow.",
+    "original_roman": "Howdu, naale bheti aagona.",
+    "sarvam_kannada": "ಹೌದು, ನಾಳೆ ಭೇಟಿ ಆಗೋಣ.",
+    "sarvam_roman": "Howdu, naale bheti aagona.",
+    "source": "sarvam_translate_mayura_v1_classic-colloquial_new_curriculum_chapter_1"
+  },
+  "chapter-01:conversation-1C:row-05": {
+    "chapter": 1,
+    "conversation": "1C",
+    "row": 5,
+    "english": "See you, Raju.",
+    "original_roman": "Sigona, Raju.",
+    "sarvam_kannada": "ಸಿಗೋಣ, ರಾಜು.",
+    "sarvam_roman": "Sigona, Raju.",
+    "source": "sarvam_translate_mayura_v1_classic-colloquial+manual_spoken_fix_new_curriculum_chapter_1"
+  },
+  "chapter-01:conversation-1C:row-06": {
+    "chapter": 1,
+    "conversation": "1C",
+    "row": 6,
+    "english": "See you, Meena.",
+    "original_roman": "Sigona, Meena.",
+    "sarvam_kannada": "ಸಿಗೋಣ, ಮೀನಾ.",
+    "sarvam_roman": "Sigona, Meena.",
+    "source": "sarvam_translate_mayura_v1_classic-colloquial+manual_spoken_fix_new_curriculum_chapter_1"
   }
 }

@@ -1,0 +1,67 @@
+Create one image for a spoken Kannada learning card.
+
+Purpose:
+This image teaches kids and English speakers one moment from a spoken Kannada conversation. It must show one person speaking to another person. The app will add the exact speech bubble text later.
+
+Chapter:
+Chapter 1: Ice Cream After School: greetings, names, flavors
+
+Conversation id:
+1C
+
+Conversation summary:
+After Ice Cream. Say something was good and make a simple tomorrow plan.
+
+Full conversation excerpt:
+Meena: My ice cream was good. Raju: Mine was good too. Meena: See you at school tomorrow? Raju: Yes, see you tomorrow. Meena: See you, Raju. Raju: See you, Meena.
+
+Current line:
+1
+
+Speaker:
+Meena
+
+Listener:
+Raju
+
+What is happening in this exact image:
+Meena is saying this sentence to Raju: "My ice cream was good."
+
+English sentence for context only, do not render:
+My ice cream was good.
+
+Kannada sentence for context only, do not render:
+ನನ್ನ ಐಸ್ ಕ್ರೀಮ್ ಚೆನ್ನಾಗಿತ್ತು.
+
+Romanized Kannada for context only, do not render:
+Nanna ice cream chennaagittu.
+
+Scene location:
+outside the same ice cream shop near school bags and a sunny sidewalk
+
+Scene details and props:
+finished ice cream cups, shop doorway, school bags, sunny sidewalk, no readable signs
+
+Character profiles and dress code:
+Raju: same Indian school-age boy from earlier in the chapter, blue school shirt, holding mango ice cream or school bag. Meena: same Indian school-age girl from earlier in the chapter, purple outfit, holding chocolate ice cream or school bag.
+
+Visible name badges:
+Named people who must be visible and unobstructed: Raju and Meena. Do not render any name text yourself; the app will overlay exact badges.
+
+Character continuity:
+Use the attached previous image as visual reference. Keep the same characters, faces, clothing, color palette, shop layout, lighting, and storybook style, but update gaze and gestures for the current line.
+
+Speech bubble:
+Do not draw a speech bubble and do not render any text. Leave clean open space near the top left for an app-added compact speech bubble.
+
+Composition:
+Make the speaker/listener relationship immediately clear with eye contact, body direction, and natural gestures. Keep faces, hands, ice cream, and important props unobstructed. Use a simple 16:9 composition.
+
+Style:
+Modern colorful children's storybook cartoon, warm Indian setting, expressive characters, polished and kid-friendly.
+
+Negative instructions:
+No text, no letters, no captions, no UI, no watermarks, no fake writing, no shop sign text, no speech bubble, no name labels, no blank label boxes.
+
+Continuity override for this regeneration:
+Use the attached previous image from Conversation 1B as the strongest visual reference. Keep Raju and Meena's faces, ages, clothing colors, body proportions, and the ice cream shop style consistent with that reference. Do not redesign the characters.

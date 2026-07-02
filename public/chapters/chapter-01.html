@@ -8,13 +8,13 @@
     :root {
       --ink: #1d1d1f;
       --muted: #6e6e73;
-      --line: #d2d2d7;
+      --line: #e5e5ea;
       --paper: #f5f5f7;
       --panel: #ffffff;
       --soft: #f9f9fb;
       --accent: #0071e3;
       --accent-soft: rgba(0, 113, 227, .10);
-      --kannada: #167d6b;
+      --kannada: #2f6f63;
       --practice: #1d1d1f;
       --warn: #8a4b1f;
     }
@@ -23,9 +23,7 @@
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", sans-serif;
       color: var(--ink);
-      background:
-        radial-gradient(circle at 24% 0%, rgba(255, 255, 255, .95), transparent 34%),
-        linear-gradient(135deg, #f7f8fb 0%, #fffaf2 100%);
+      background: #f7f7f8;
       line-height: 1.5;
     }
     main { max-width: 1180px; margin: 0 auto; padding: 32px 18px 72px; }
@@ -54,40 +52,40 @@
     }
     .learning-app {
       display: grid;
-      grid-template-columns: 116px minmax(0, 1fr);
+      grid-template-columns: 76px minmax(0, 1fr);
       min-height: 100vh;
     }
     .side-rail {
       position: sticky;
       top: 0;
       height: 100vh;
-      padding: 30px 18px;
+      padding: 20px 12px;
       display: grid;
-      grid-template-rows: auto 1fr auto;
+      grid-template-rows: auto 1fr;
       justify-items: center;
-      gap: 28px;
-      background: rgba(255, 255, 255, .72);
-      border-right: 1px solid rgba(210, 210, 215, .72);
-      box-shadow: 12px 0 40px rgba(29, 29, 31, .04);
-      backdrop-filter: blur(22px);
+      gap: 18px;
+      background: rgba(255, 255, 255, .86);
+      border-right: 1px solid var(--line);
+      box-shadow: 8px 0 24px rgba(29, 29, 31, .035);
+      backdrop-filter: blur(18px);
     }
     .rail-logo {
-      width: 54px;
-      height: 54px;
-      border-radius: 16px;
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
       display: grid;
       place-items: center;
-      color: #e75f1b;
+      color: #0f766e;
       background: #ffffff;
-      border: 2px solid rgba(231, 95, 27, .35);
-      box-shadow: 0 10px 24px rgba(231, 95, 27, .10);
-      font-size: 1.65rem;
+      border: 1px solid var(--line);
+      box-shadow: 0 8px 20px rgba(29, 29, 31, .05);
+      font-size: 1.25rem;
       text-decoration: none;
     }
     .chapter-rail {
       width: 100%;
       display: grid;
-      gap: 8px;
+      gap: 4px;
       overflow-y: auto;
       padding: 2px 0;
       scrollbar-width: thin;
@@ -95,17 +93,18 @@
     .chapter-rail a {
       display: grid;
       place-items: center;
-      min-height: 44px;
-      border-radius: 14px;
+      min-height: 34px;
+      border-radius: 10px;
       color: #6b7280;
       text-decoration: none;
-      font-weight: 800;
+      font-size: .92rem;
+      font-weight: 750;
       border: 1px solid transparent;
     }
     .chapter-rail a.active {
-      color: #e75f1b;
-      background: #fff2e9;
-      border-color: rgba(231, 95, 27, .16);
+      color: #1d1d1f;
+      background: #ffffff;
+      border-color: var(--line);
       box-shadow: inset 0 1px 0 rgba(255,255,255,.74);
     }
     .rail-tools {
@@ -134,65 +133,59 @@
       font-size: 1.45rem;
     }
     .lesson-workspace {
-      width: min(100%, 1180px);
+      width: min(100%, 1120px);
       margin: 0 auto;
-      padding: 44px 32px 72px;
+      padding: 24px 28px 56px;
     }
     .lesson-header {
       display: grid;
-      grid-template-columns: minmax(0, 1fr) 330px;
-      gap: 28px;
-      align-items: start;
-      margin-bottom: 28px;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 18px;
+      align-items: end;
+      margin-bottom: 14px;
     }
     .lesson-kicker {
       margin: 0 0 6px;
-      color: #e75f1b;
+      color: var(--muted);
       font-weight: 850;
-      font-size: .95rem;
+      font-size: .82rem;
+      text-transform: uppercase;
+      letter-spacing: .04em;
     }
     .lesson-title {
       margin: 0;
-      font-size: clamp(2.1rem, 4.5vw, 3.35rem);
-      line-height: 1.03;
+      font-size: clamp(1.35rem, 2.4vw, 1.85rem);
+      line-height: 1.12;
       font-weight: 850;
       color: #111827;
     }
     .lesson-subtitle {
       max-width: 680px;
-      margin: 14px 0 0;
+      margin: 6px 0 0;
       color: #5d6470;
-      font-size: clamp(1rem, 1.8vw, 1.14rem);
-      line-height: 1.6;
+      font-size: .92rem;
+      line-height: 1.45;
     }
     .progress-card {
-      display: grid;
-      grid-template-columns: 58px minmax(0, 1fr);
-      gap: 16px;
+      display: block;
+      min-width: 190px;
       align-items: center;
-      padding: 16px 18px;
-      border: 1px solid rgba(210, 210, 215, .78);
-      border-radius: 20px;
-      background: rgba(255, 255, 255, .72);
-      box-shadow: 0 16px 34px rgba(29, 29, 31, .06);
-      backdrop-filter: blur(18px);
+      padding: 0;
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+      box-shadow: none;
+      backdrop-filter: none;
     }
     .progress-icon {
-      width: 54px;
-      height: 54px;
-      border-radius: 999px;
-      display: grid;
-      place-items: center;
-      color: #d97706;
-      background: #fff7ed;
-      border: 1px solid rgba(217, 119, 6, .16);
-      font-size: 1.55rem;
+      display: none;
     }
     .progress-label {
       display: flex;
       justify-content: space-between;
       gap: 10px;
       color: var(--muted);
+      font-size: .84rem;
       font-weight: 700;
     }
     .progress-count {
@@ -200,8 +193,8 @@
       font-weight: 850;
     }
     .progress-track {
-      height: 10px;
-      margin-top: 10px;
+      height: 4px;
+      margin-top: 7px;
       border-radius: 999px;
       background: #e5e7eb;
       overflow: hidden;
@@ -210,15 +203,17 @@
       width: var(--progress, 8%);
       height: 100%;
       border-radius: inherit;
-      background: linear-gradient(90deg, #42b883, #a4d65e);
+      background: #2f8f7a;
       transition: width .22s ease;
     }
     .lesson-controls {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 18px;
-      margin: 0 0 26px;
+      gap: 12px;
+      margin: 0 0 12px;
+      padding: 10px 0 0;
+      border-top: 1px solid var(--line);
     }
     .scene-pager {
       display: flex;
@@ -226,34 +221,35 @@
       gap: 12px;
     }
     .scene-pill {
-      min-width: 128px;
-      padding: 11px 16px;
-      border: 1px solid var(--line);
-      border-radius: 14px;
-      background: rgba(255, 255, 255, .78);
-      color: #4b5563;
+      min-width: 112px;
+      padding: 0;
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+      color: var(--muted);
       text-align: center;
-      font-weight: 800;
-      box-shadow: 0 8px 18px rgba(29, 29, 31, .04);
+      font-size: .9rem;
+      font-weight: 700;
+      box-shadow: none;
     }
     .scene-arrow {
-      width: 48px;
-      height: 48px;
-      border: 0;
-      border-radius: 999px;
+      width: 34px;
+      height: 34px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
       display: grid;
       place-items: center;
-      background: rgba(255,255,255,.72);
-      color: #9ca3af;
-      font-size: 1.35rem;
+      background: #ffffff;
+      color: #4b5563;
+      font-size: 1.1rem;
       font-weight: 900;
       cursor: pointer;
-      box-shadow: 0 10px 22px rgba(29, 29, 31, .06);
+      box-shadow: none;
     }
     .scene-arrow.next {
-      color: #ffffff;
-      background: linear-gradient(135deg, #25a46b, #147b5f);
-      box-shadow: 0 14px 24px rgba(20, 123, 95, .22);
+      color: #1d1d1f;
+      background: #ffffff;
+      box-shadow: none;
     }
     .scene-arrow:disabled {
       opacity: .48;
@@ -266,15 +262,15 @@
     .visual-practice > p { margin: 0 0 14px; color: var(--muted); }
     .snippet-stack {
       display: grid;
-      gap: 22px;
+      gap: 18px;
     }
     .snippet-card {
       position: relative;
       border: 1px solid var(--line);
-      border-radius: 26px;
+      border-radius: 22px;
       overflow: hidden;
       background: var(--panel);
-      box-shadow: 0 18px 48px rgba(0, 0, 0, .08);
+      box-shadow: 0 12px 34px rgba(0, 0, 0, .06);
     }
     .snippet-card.correct {
       border-color: rgba(52, 199, 89, .55);
@@ -294,8 +290,8 @@
     }
     .snippet-card svg { width: 100%; height: auto; display: block; }
     .snippet-body {
-      padding: clamp(18px, 3vw, 28px);
-      background: rgba(255, 255, 255, .92);
+      padding: clamp(14px, 2.2vw, 22px);
+      background: rgba(255, 255, 255, .96);
       border-bottom: 1px solid var(--line);
     }
     .snippet-body h4 {
@@ -309,7 +305,7 @@
       align-items: center;
       justify-content: space-between;
       gap: 16px;
-      margin-bottom: 24px;
+      margin-bottom: 14px;
     }
     .snippet-topic {
       display: flex;
@@ -324,51 +320,52 @@
       border-radius: 999px;
       display: grid;
       place-items: center;
-      background: linear-gradient(135deg, #43c076, #17825f);
-      color: white;
-      box-shadow: 0 12px 22px rgba(23, 130, 95, .20);
+      background: #f5f5f7;
+      border: 1px solid var(--line);
+      color: #4b5563;
+      box-shadow: none;
     }
     .new-pill {
       flex: 0 0 auto;
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      padding: 8px 14px;
+      padding: 6px 10px;
       border-radius: 999px;
-      background: #eaf8ef;
-      color: #198754;
-      border: 1px solid rgba(25, 135, 84, .14);
-      font-size: .9rem;
+      background: #f5f5f7;
+      color: #6b7280;
+      border: 1px solid var(--line);
+      font-size: .78rem;
       font-weight: 800;
     }
     .snippet-line {
       display: grid;
-      gap: 8px;
-      margin: 0 0 22px;
-      padding: clamp(28px, 5vw, 48px);
+      gap: 2px;
+      margin: 0 0 12px;
+      padding: 14px 18px;
       border: 1px solid rgba(0, 0, 0, .08);
-      border-radius: 24px;
+      border-radius: 14px;
       background: #ffffff;
-      box-shadow: inset 0 1px 0 rgba(255, 255, 255, .72), 0 10px 26px rgba(29,29,31,.035);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, .72);
     }
     .snippet-line strong {
-      font-size: clamp(2.6rem, 5.8vw, 4.1rem);
-      line-height: 1.04;
+      font-size: clamp(1.28rem, 2.4vw, 1.9rem);
+      line-height: 1.12;
       color: var(--ink);
       font-weight: 850;
     }
     .snippet-line span {
-      color: var(--kannada);
-      font-weight: 760;
-      font-size: clamp(1.45rem, 3.4vw, 2.15rem);
+      color: var(--ink);
+      font-weight: 720;
+      font-size: clamp(1rem, 1.8vw, 1.28rem);
       line-height: 1.15;
       font-style: italic;
     }
     .kannada-script {
-      color: #c7511a;
-      font-size: clamp(2.1rem, 4.8vw, 3.65rem);
+      color: var(--ink);
+      font-size: clamp(1.18rem, 2.25vw, 1.72rem);
       font-weight: 850;
-      line-height: 1.18;
+      line-height: 1.12;
     }
     .original-roman {
       margin: 0 0 16px;
@@ -383,63 +380,73 @@
       line-height: 1.45;
     }
     .grammar-note strong { color: var(--ink); }
-    .listen-row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 26px; align-items: center; }
+    .listen-row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; align-items: center; }
     .speak-btn {
-      border: 1px solid rgba(0, 0, 0, .10);
-      background: #ffffff;
-      color: var(--ink);
-      border-radius: 16px;
-      padding: 18px 22px;
+      border: 1px solid #d9d9df;
+      background: linear-gradient(#ffffff, #fafafa);
+      color: #1d1d1f;
+      border-radius: 10px;
+      padding: 10px 14px;
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: 12px;
+      gap: 8px;
       font: inherit;
-      font-size: clamp(1rem, 2.1vw, 1.18rem);
-      font-weight: 850;
+      font-size: .96rem;
+      font-weight: 750;
+      line-height: 1;
+      white-space: nowrap;
       cursor: pointer;
       min-width: 0;
-      box-shadow: 0 10px 24px rgba(29, 29, 31, .05);
-      transition: transform .16s ease, box-shadow .16s ease, background .16s ease, border-color .16s ease;
+      min-height: 46px;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, .04), 0 8px 18px rgba(29, 29, 31, .035);
+      transition: transform .14s ease, box-shadow .14s ease, background .14s ease, border-color .14s ease;
     }
     .speak-btn:hover {
       transform: translateY(-1px);
-      box-shadow: 0 8px 18px rgba(0, 0, 0, .08);
+      border-color: #c7c7cf;
+      background: linear-gradient(#ffffff, #f5f5f7);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, .06), 0 10px 22px rgba(29, 29, 31, .055);
     }
     .speak-btn[data-lang="en-IN"] {
-      color: #1764d8;
-      border-color: rgba(23, 100, 216, .22);
-      background: #eef5ff;
+      color: #1d1d1f;
+      border-color: #d9d9df;
+      background: linear-gradient(#ffffff, #fafafa);
     }
     .speak-btn[data-lang="kn-IN"] {
-      color: #177f62;
-      border-color: rgba(23, 127, 98, .22);
-      background: #eef8f3;
+      color: #1d1d1f;
+      border-color: #d9d9df;
+      background: linear-gradient(#ffffff, #fafafa);
     }
     .practice-btn {
-      color: #5b2fc6;
-      border-color: rgba(91, 47, 198, .22);
-      background: #f4efff;
+      color: #ffffff;
+      border-color: #1d1d1f;
+      background: #1d1d1f;
       min-width: 0;
     }
-    .practice-btn:hover { box-shadow: 0 10px 22px rgba(91, 47, 198, .12); }
+    .practice-btn:hover {
+      border-color: #000000;
+      background: #000000;
+      box-shadow: 0 10px 22px rgba(29, 29, 31, .16);
+    }
     .speak-btn:active { transform: translateY(1px); }
     .speak-btn[disabled] { opacity: .6; cursor: wait; }
     .btn-icon {
-      width: 34px;
-      height: 34px;
+      width: 24px;
+      height: 24px;
       border-radius: 999px;
       display: inline-grid;
       place-items: center;
       flex: 0 0 auto;
-      color: #ffffff;
-      font-size: .95rem;
+      color: currentColor;
+      font-size: .78rem;
       line-height: 1;
-      box-shadow: inset 0 1px 0 rgba(255,255,255,.32);
+      background: transparent;
+      box-shadow: none;
     }
-    .speak-btn[data-lang="en-IN"] .btn-icon { background: #1764d8; }
-    .speak-btn[data-lang="kn-IN"] .btn-icon { background: #177f62; }
-    .practice-btn .btn-icon { background: #6d3bd1; }
+    .speak-btn[data-lang="en-IN"] .btn-icon { background: transparent; }
+    .speak-btn[data-lang="kn-IN"] .btn-icon { background: transparent; }
+    .practice-btn .btn-icon { background: transparent; color: #ffffff; }
     .practice-feedback {
       display: none;
       margin-top: 12px;
@@ -536,23 +543,24 @@
     .voice-toolbar {
       display: flex;
       flex-wrap: wrap;
-      gap: 10px;
+      gap: 8px;
       align-items: center;
       margin: 0;
       color: var(--muted);
-      font-weight: 800;
+      font-size: .9rem;
+      font-weight: 700;
     }
     .voice-toolbar select {
       border: 1px solid var(--line);
-      border-radius: 14px;
-      padding: 12px 42px 12px 18px;
+      border-radius: 10px;
+      padding: 7px 30px 7px 10px;
       background: rgba(255,255,255,.78);
       color: var(--ink);
       font: inherit;
-      font-weight: 800;
-      box-shadow: 0 8px 18px rgba(29, 29, 31, .05);
+      font-weight: 700;
+      box-shadow: none;
     }
-    .voice-wave { color: #5b5ff0; font-weight: 900; font-size: 1.4rem; }
+    .voice-wave { display: none; }
     .lesson-tip {
       display: flex;
       justify-content: space-between;
@@ -667,34 +675,26 @@
 <body>
   <main>
     
-      <div class="learning-app" data-scene-total="34">
+      <div class="learning-app" data-scene-total="22">
         
       <aside class="side-rail" aria-label="Chapter navigation">
-        <a class="rail-logo" href="../conversations-page-by-page.html" aria-label="All chapters">🌷</a>
+        <a class="rail-logo" href="../conversations-page-by-page.html" aria-label="All chapters">ಕ</a>
         <nav class="chapter-rail" aria-label="Chapters">
           <a class="active" href="chapter-01.html" aria-label="Chapter 1">1</a><a class="" href="chapter-02.html" aria-label="Chapter 2">2</a><a class="" href="chapter-03.html" aria-label="Chapter 3">3</a><a class="" href="chapter-04.html" aria-label="Chapter 4">4</a><a class="" href="chapter-05.html" aria-label="Chapter 5">5</a><a class="" href="chapter-06.html" aria-label="Chapter 6">6</a><a class="" href="chapter-07.html" aria-label="Chapter 7">7</a><a class="" href="chapter-08.html" aria-label="Chapter 8">8</a><a class="" href="chapter-09.html" aria-label="Chapter 9">9</a><a class="" href="chapter-10.html" aria-label="Chapter 10">10</a><a class="" href="chapter-11.html" aria-label="Chapter 11">11</a><a class="" href="chapter-12.html" aria-label="Chapter 12">12</a><a class="" href="chapter-13.html" aria-label="Chapter 13">13</a><a class="" href="chapter-14.html" aria-label="Chapter 14">14</a><a class="" href="chapter-15.html" aria-label="Chapter 15">15</a><a class="" href="chapter-16.html" aria-label="Chapter 16">16</a><a class="" href="chapter-17.html" aria-label="Chapter 17">17</a><a class="" href="chapter-18.html" aria-label="Chapter 18">18</a><a class="" href="chapter-19.html" aria-label="Chapter 19">19</a><a class="" href="chapter-20.html" aria-label="Chapter 20">20</a><a class="" href="chapter-21.html" aria-label="Chapter 21">21</a><a class="" href="chapter-22.html" aria-label="Chapter 22">22</a><a class="" href="chapter-23.html" aria-label="Chapter 23">23</a><a class="" href="chapter-24.html" aria-label="Chapter 24">24</a><a class="" href="chapter-25.html" aria-label="Chapter 25">25</a><a class="" href="chapter-26.html" aria-label="Chapter 26">26</a><a class="" href="chapter-27.html" aria-label="Chapter 27">27</a><a class="" href="chapter-28.html" aria-label="Chapter 28">28</a><a class="" href="chapter-29.html" aria-label="Chapter 29">29</a><a class="" href="chapter-30.html" aria-label="Chapter 30">30</a><a class="" href="chapter-31.html" aria-label="Chapter 31">31</a>
         </nav>
-        <div class="rail-tools" aria-label="Learning tools">
-          <span class="rail-tool"><span>📖</span><span>Review</span></span>
-          <span class="rail-tool"><span>▥</span><span>Progress</span></span>
-          <span class="rail-tool"><span>▣</span><span>Vocabulary</span></span>
-          <span class="rail-tool"><span class="avatar">👦</span><span>Kid Mode</span></span>
-          <span class="rail-tool"><span>?</span><span>Help</span></span>
-        </div>
       </aside>
     
         <div class="lesson-workspace">
           <header class="lesson-header">
             <div>
               <p class="lesson-kicker">Chapter 1</p>
-              <h1 class="lesson-title">Chapter 1 Visual Practice</h1>
-              <p class="lesson-subtitle">Greetings, names, family. Scroll scene by scene; each image shows one sentence from this chapter.</p>
+              <h1 class="lesson-title">Names and ice cream: greetings, names, likes</h1>
+              <p class="lesson-subtitle">Scene-by-scene practice with audio and speaking checks.</p>
             </div>
             <div class="progress-card">
-              <div class="progress-icon">📖</div>
               <div>
-                <div class="progress-label"><span>Chapter Progress</span><span class="progress-count"><span data-current-scene>1</span> / 34 scenes</span></div>
-                <div class="progress-track"><div class="progress-fill" data-progress-fill style="--progress: 2.94%"></div></div>
+                <div class="progress-label"><span>Progress</span><span class="progress-count"><span data-current-scene>1</span> / 22</span></div>
+                <div class="progress-track"><div class="progress-fill" data-progress-fill style="--progress: 4.55%"></div></div>
               </div>
             </div>
           </header>
@@ -719,7 +719,7 @@
     
             <div class="scene-pager">
               <button class="scene-arrow prev" type="button" data-scene-prev aria-label="Previous scene">←</button>
-              <span class="scene-pill">Scene <span data-current-scene>1</span> of 34</span>
+              <span class="scene-pill">Scene <span data-current-scene>1</span> of 22</span>
               <button class="scene-arrow next" type="button" data-scene-next aria-label="Next scene">→</button>
             </div>
           </div>
@@ -731,24 +731,24 @@
           <div class="snippet-heading">
             <div class="snippet-topic">
               <span class="snippet-topic-icon">👥</span>
-              <h4>Conversation 1 · Introductions and people</h4>
+              <h4>Conversation 1A · Meeting Meena</h4>
             </div>
             <span class="new-pill">✦ New</span>
           </div>
           <div class="snippet-line">
-            <strong>Good Morning</strong>
-            <div class="kannada-script">ನಮಸ್ಕಾರ</div>
-            <span>Namaskara</span>
+            <strong>Hello.</strong>
+            <div class="kannada-script">ಹೆಲೋ.</div>
+            <span>Hello.</span>
           </div>
-          <div class="original-roman">Original PDF: namaskaara</div>
+
           <div class="listen-row">
-            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Good Morning"><span class="btn-icon">▶</span>Play English</button>
-            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನಮಸ್ಕಾರ"><span class="btn-icon">▶</span>Play Kannada</button>
-            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Namaskara"><span class="btn-icon">🎙</span>Practice Kannada</button>
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Hello." data-audio="../audio/chapter-01/conversation-1a-01-en.wav"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಹೆಲೋ." data-audio="../audio/chapter-01/conversation-1a-01-kn.wav"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Hello."><span class="btn-icon">🎙</span>Practice Kannada</button>
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/gemini-chapter-visuals/chapter-01/conversation-1-01.jpg" alt="Good Morning" loading="lazy" />
+        <img src="../images/gemini-chapter-visuals/chapter-01-new/conversation-1a-01.jpg" alt="Hello." loading="lazy" />
       </article>
     
       <article class="snippet-card" data-scene-card data-scene-index="2">
@@ -756,24 +756,24 @@
           <div class="snippet-heading">
             <div class="snippet-topic">
               <span class="snippet-topic-icon">👥</span>
-              <h4>Conversation 1 · Introductions and people</h4>
+              <h4>Conversation 1A · Meeting Meena</h4>
             </div>
             <span class="new-pill">✦ New</span>
           </div>
           <div class="snippet-line">
-            <strong>Good Morning</strong>
-            <div class="kannada-script">ನಮಸ್ಕಾರ</div>
-            <span>Namaskara</span>
+            <strong>Hello.</strong>
+            <div class="kannada-script">ಹೆಲೋ.</div>
+            <span>Hello.</span>
           </div>
-          <div class="original-roman">Original PDF: namaskaara</div>
+
           <div class="listen-row">
-            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Good Morning"><span class="btn-icon">▶</span>Play English</button>
-            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನಮಸ್ಕಾರ"><span class="btn-icon">▶</span>Play Kannada</button>
-            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Namaskara"><span class="btn-icon">🎙</span>Practice Kannada</button>
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Hello." data-audio="../audio/chapter-01/conversation-1a-02-en.wav"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಹೆಲೋ." data-audio="../audio/chapter-01/conversation-1a-02-kn.wav"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Hello."><span class="btn-icon">🎙</span>Practice Kannada</button>
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/gemini-chapter-visuals/chapter-01/conversation-1-02.jpg" alt="Good Morning" loading="lazy" />
+        <img src="../images/gemini-chapter-visuals/chapter-01-new/conversation-1a-02.jpg" alt="Hello." loading="lazy" />
       </article>
     
       <article class="snippet-card" data-scene-card data-scene-index="3">
@@ -781,7 +781,57 @@
           <div class="snippet-heading">
             <div class="snippet-topic">
               <span class="snippet-topic-icon">👥</span>
-              <h4>Conversation 1 · Introductions and people</h4>
+              <h4>Conversation 1A · Meeting Meena</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>Are you in my class?</strong>
+            <div class="kannada-script">ನೀವು ನನ್ನ ಕ್ಲಾಸ್-ನಲ್ಲಿ ಇದ್ದೀರಾ?</div>
+            <span>Neevu nanna class-nalli iddeera?</span>
+          </div>
+
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Are you in my class?" data-audio="../audio/chapter-01/conversation-1a-03-en.wav"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನೀವು ನನ್ನ ಕ್ಲಾಸ್-ನಲ್ಲಿ ಇದ್ದೀರಾ?" data-audio="../audio/chapter-01/conversation-1a-03-kn.wav"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Neevu nanna class-nalli iddeera?"><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/gemini-chapter-visuals/chapter-01-new/conversation-1a-03.jpg" alt="Are you in my class?" loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="4">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation 1A · Meeting Meena</h4>
+            </div>
+            <span class="new-pill">✦ New</span>
+          </div>
+          <div class="snippet-line">
+            <strong>Yes, I am.</strong>
+            <div class="kannada-script">ಹೌದು, ನಾನು ಇದ್ದೀನಿ.</div>
+            <span>Howdu, naanu iddeeni.</span>
+          </div>
+
+          <div class="listen-row">
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Yes, I am." data-audio="../audio/chapter-01/conversation-1a-04-en.wav"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಹೌದು, ನಾನು ಇದ್ದೀನಿ." data-audio="../audio/chapter-01/conversation-1a-04-kn.wav"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Howdu, naanu iddeeni."><span class="btn-icon">🎙</span>Practice Kannada</button>
+          </div>
+          <div class="practice-feedback" aria-live="polite"></div>
+        </div>
+        <img src="../images/gemini-chapter-visuals/chapter-01-new/conversation-1a-04.jpg" alt="Yes, I am." loading="lazy" />
+      </article>
+    
+      <article class="snippet-card" data-scene-card data-scene-index="5">
+        <div class="snippet-body">
+          <div class="snippet-heading">
+            <div class="snippet-topic">
+              <span class="snippet-topic-icon">👥</span>
+              <h4>Conversation 1A · Meeting Meena</h4>
             </div>
             <span class="new-pill">✦ New</span>
           </div>
@@ -790,65 +840,15 @@
             <div class="kannada-script">ನಾನು ರಾಜು.</div>
             <span>Naanu Raju.</span>
           </div>
-          <div class="original-roman">Original PDF: naanu raju</div>
+
           <div class="listen-row">
-            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="I am Raju."><span class="btn-icon">▶</span>Play English</button>
-            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನಾನು ರಾಜು."><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="I am Raju." data-audio="../audio/chapter-01/conversation-1a-05-en.wav"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನಾನು ರಾಜು." data-audio="../audio/chapter-01/conversation-1a-05-kn.wav"><span class="btn-icon">▶</span>Play Kannada</button>
             <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Naanu Raju."><span class="btn-icon">🎙</span>Practice Kannada</button>
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/gemini-chapter-visuals/chapter-01/conversation-1-03.jpg" alt="I am Raju." loading="lazy" />
-      </article>
-    
-      <article class="snippet-card" data-scene-card data-scene-index="4">
-        <div class="snippet-body">
-          <div class="snippet-heading">
-            <div class="snippet-topic">
-              <span class="snippet-topic-icon">👥</span>
-              <h4>Conversation 1 · Introductions and people</h4>
-            </div>
-            <span class="new-pill">✦ New</span>
-          </div>
-          <div class="snippet-line">
-            <strong>He is Mohan.</strong>
-            <div class="kannada-script">ಅವರ ಹೆಸರು ಮೋಹನ್.</div>
-            <span>Avara hesaru Mohan.</span>
-          </div>
-          <div class="original-roman">Original PDF: ivaru moohan</div>
-          <div class="listen-row">
-            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="He is Mohan."><span class="btn-icon">▶</span>Play English</button>
-            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಅವರ ಹೆಸರು ಮೋಹನ್."><span class="btn-icon">▶</span>Play Kannada</button>
-            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Avara hesaru Mohan."><span class="btn-icon">🎙</span>Practice Kannada</button>
-          </div>
-          <div class="practice-feedback" aria-live="polite"></div>
-        </div>
-        <img src="../images/gemini-chapter-visuals/chapter-01/conversation-1-04.jpg" alt="He is Mohan." loading="lazy" />
-      </article>
-    
-      <article class="snippet-card" data-scene-card data-scene-index="5">
-        <div class="snippet-body">
-          <div class="snippet-heading">
-            <div class="snippet-topic">
-              <span class="snippet-topic-icon">👥</span>
-              <h4>Conversation 1 · Introductions and people</h4>
-            </div>
-            <span class="new-pill">✦ New</span>
-          </div>
-          <div class="snippet-line">
-            <strong>Who are you ?</strong>
-            <div class="kannada-script">ನೀವು ಯಾರು?</div>
-            <span>Neevu yaaru?</span>
-          </div>
-          <div class="original-roman">Original PDF: niivu yaaru ?</div>
-          <div class="listen-row">
-            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Who are you ?"><span class="btn-icon">▶</span>Play English</button>
-            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನೀವು ಯಾರು?"><span class="btn-icon">▶</span>Play Kannada</button>
-            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Neevu yaaru?"><span class="btn-icon">🎙</span>Practice Kannada</button>
-          </div>
-          <div class="practice-feedback" aria-live="polite"></div>
-        </div>
-        <img src="../images/gemini-chapter-visuals/chapter-01/conversation-1-05.jpg" alt="Who are you ?" loading="lazy" />
+        <img src="../images/gemini-chapter-visuals/chapter-01-new/conversation-1a-05.jpg" alt="I am Raju." loading="lazy" />
       </article>
     
       <article class="snippet-card" data-scene-card data-scene-index="6">
@@ -856,24 +856,24 @@
           <div class="snippet-heading">
             <div class="snippet-topic">
               <span class="snippet-topic-icon">👥</span>
-              <h4>Conversation 1 · Introductions and people</h4>
+              <h4>Conversation 1A · Meeting Meena</h4>
             </div>
             <span class="new-pill">✦ New</span>
           </div>
           <div class="snippet-line">
-            <strong>I am Shekhar,</strong>
-            <div class="kannada-script">ನಾನು ಶೇಖರ್.</div>
-            <span>Naanu Shekhar.</span>
+            <strong>I am Meena.</strong>
+            <div class="kannada-script">ನಾನು ಮೀನಾ.</div>
+            <span>Naanu Meena.</span>
           </div>
-          <div class="original-roman">Original PDF: naanu seekhar</div>
+
           <div class="listen-row">
-            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="I am Shekhar,"><span class="btn-icon">▶</span>Play English</button>
-            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನಾನು ಶೇಖರ್."><span class="btn-icon">▶</span>Play Kannada</button>
-            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Naanu Shekhar."><span class="btn-icon">🎙</span>Practice Kannada</button>
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="I am Meena." data-audio="../audio/chapter-01/conversation-1a-06-en.wav"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನಾನು ಮೀನಾ." data-audio="../audio/chapter-01/conversation-1a-06-kn.wav"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Naanu Meena."><span class="btn-icon">🎙</span>Practice Kannada</button>
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/gemini-chapter-visuals/chapter-01/conversation-1-06.jpg" alt="I am Shekhar," loading="lazy" />
+        <img src="../images/gemini-chapter-visuals/chapter-01-new/conversation-1a-06.jpg" alt="I am Meena." loading="lazy" />
       </article>
     
       <article class="snippet-card" data-scene-card data-scene-index="7">
@@ -881,24 +881,24 @@
           <div class="snippet-heading">
             <div class="snippet-topic">
               <span class="snippet-topic-icon">👥</span>
-              <h4>Conversation 1 · Introductions and people</h4>
+              <h4>Conversation 1A · Meeting Meena</h4>
             </div>
             <span class="new-pill">✦ New</span>
           </div>
           <div class="snippet-line">
-            <strong>Who is she ?</strong>
-            <div class="kannada-script">ಅವರು ಯಾರು?</div>
-            <span>Avaru yaaru?</span>
+            <strong>Nice to meet you, Meena.</strong>
+            <div class="kannada-script">ಮೀನಾ, ನಿಮ್ಮನ್ನು ಭೇಟಿ ಮಾಡಿ ಸಂತೋಷ ಆಯ್ತು.</div>
+            <span>Meena, nimmannu bheti maadi santosha aaytu.</span>
           </div>
-          <div class="original-roman">Original PDF: avaru yaaru 7</div>
+
           <div class="listen-row">
-            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Who is she ?"><span class="btn-icon">▶</span>Play English</button>
-            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಅವರು ಯಾರು?"><span class="btn-icon">▶</span>Play Kannada</button>
-            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Avaru yaaru?"><span class="btn-icon">🎙</span>Practice Kannada</button>
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Nice to meet you, Meena." data-audio="../audio/chapter-01/conversation-1a-07-en.wav"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಮೀನಾ, ನಿಮ್ಮನ್ನು ಭೇಟಿ ಮಾಡಿ ಸಂತೋಷ ಆಯ್ತು." data-audio="../audio/chapter-01/conversation-1a-07-kn.wav"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Meena, nimmannu bheti maadi santosha aaytu."><span class="btn-icon">🎙</span>Practice Kannada</button>
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/gemini-chapter-visuals/chapter-01/conversation-1-07.jpg" alt="Who is she ?" loading="lazy" />
+        <img src="../images/gemini-chapter-visuals/chapter-01-new/conversation-1a-07.jpg" alt="Nice to meet you, Meena." loading="lazy" />
       </article>
     
       <article class="snippet-card" data-scene-card data-scene-index="8">
@@ -906,24 +906,24 @@
           <div class="snippet-heading">
             <div class="snippet-topic">
               <span class="snippet-topic-icon">👥</span>
-              <h4>Conversation 1 · Introductions and people</h4>
+              <h4>Conversation 1A · Meeting Meena</h4>
             </div>
             <span class="new-pill">✦ New</span>
           </div>
           <div class="snippet-line">
-            <strong>She is Sheela.</strong>
-            <div class="kannada-script">ಅವಳು ಶೀಲಾ.</div>
-            <span>Avalu Sheela.</span>
+            <strong>Nice to meet you too.</strong>
+            <div class="kannada-script">ನಿನ್ನನ್ನೂ ಭೇಟಿ ಮಾಡಿ ಸಂತೋಷ ಆಯ್ತು.</div>
+            <span>Ninnannu bheti maadi santosha aaytu.</span>
           </div>
-          <div class="original-roman">Original PDF: avaru $iila</div>
+
           <div class="listen-row">
-            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="She is Sheela."><span class="btn-icon">▶</span>Play English</button>
-            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಅವಳು ಶೀಲಾ."><span class="btn-icon">▶</span>Play Kannada</button>
-            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Avalu Sheela."><span class="btn-icon">🎙</span>Practice Kannada</button>
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Nice to meet you too." data-audio="../audio/chapter-01/conversation-1a-08-en.wav"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನಿನ್ನನ್ನೂ ಭೇಟಿ ಮಾಡಿ ಸಂತೋಷ ಆಯ್ತು." data-audio="../audio/chapter-01/conversation-1a-08-kn.wav"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Ninnannu bheti maadi santosha aaytu."><span class="btn-icon">🎙</span>Practice Kannada</button>
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/gemini-chapter-visuals/chapter-01/conversation-1-08.jpg" alt="She is Sheela." loading="lazy" />
+        <img src="../images/gemini-chapter-visuals/chapter-01-new/conversation-1a-08.jpg" alt="Nice to meet you too." loading="lazy" />
       </article>
     
       <article class="snippet-card" data-scene-card data-scene-index="9">
@@ -931,24 +931,24 @@
           <div class="snippet-heading">
             <div class="snippet-topic">
               <span class="snippet-topic-icon">👥</span>
-              <h4>Conversation 1 · Introductions and people</h4>
+              <h4>Conversation 1B · Choosing Ice Cream</h4>
             </div>
             <span class="new-pill">✦ New</span>
           </div>
           <div class="snippet-line">
-            <strong>He is Shankar.</strong>
-            <div class="kannada-script">ಅವರ ಹೆಸರು ಶಂಕರ್.</div>
-            <span>Avara hesaru Shankar.</span>
+            <strong>Do you want ice cream?</strong>
+            <div class="kannada-script">ನಿಮಗೆ ಐಸ್ ಕ್ರೀಮ್ ಬೇಕಾ?</div>
+            <span>Nimage ice cream beka?</span>
           </div>
-          <div class="original-roman">Original PDF: ivaru sankar</div>
+
           <div class="listen-row">
-            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="He is Shankar."><span class="btn-icon">▶</span>Play English</button>
-            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಅವರ ಹೆಸರು ಶಂಕರ್."><span class="btn-icon">▶</span>Play Kannada</button>
-            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Avara hesaru Shankar."><span class="btn-icon">🎙</span>Practice Kannada</button>
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Do you want ice cream?" data-audio="../audio/chapter-01/conversation-1b-01-en.wav"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನಿಮಗೆ ಐಸ್ ಕ್ರೀಮ್ ಬೇಕಾ?" data-audio="../audio/chapter-01/conversation-1b-01-kn.wav"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Nimage ice cream beka?"><span class="btn-icon">🎙</span>Practice Kannada</button>
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/gemini-chapter-visuals/chapter-01/conversation-1-09.jpg" alt="He is Shankar." loading="lazy" />
+        <img src="../images/gemini-chapter-visuals/chapter-01-new/conversation-1b-01.jpg" alt="Do you want ice cream?" loading="lazy" />
       </article>
     
       <article class="snippet-card" data-scene-card data-scene-index="10">
@@ -956,24 +956,24 @@
           <div class="snippet-heading">
             <div class="snippet-topic">
               <span class="snippet-topic-icon">👥</span>
-              <h4>Conversation 2 · Introductions and people</h4>
+              <h4>Conversation 1B · Choosing Ice Cream</h4>
             </div>
             <span class="new-pill">✦ New</span>
           </div>
           <div class="snippet-line">
-            <strong>My name is Raju.</strong>
-            <div class="kannada-script">ನಾನು ರಾಜು.</div>
-            <span>Naanu Raju.</span>
+            <strong>Yes!</strong>
+            <div class="kannada-script">ಹೌದು!</div>
+            <span>Howdu!</span>
           </div>
-          <div class="original-roman">Original PDF: nanna hesaru raaju</div>
+
           <div class="listen-row">
-            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="My name is Raju."><span class="btn-icon">▶</span>Play English</button>
-            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನಾನು ರಾಜು."><span class="btn-icon">▶</span>Play Kannada</button>
-            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Naanu Raju."><span class="btn-icon">🎙</span>Practice Kannada</button>
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Yes!" data-audio="../audio/chapter-01/conversation-1b-02-en.wav"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಹೌದು!" data-audio="../audio/chapter-01/conversation-1b-02-kn.wav"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Howdu!"><span class="btn-icon">🎙</span>Practice Kannada</button>
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/gemini-chapter-visuals/chapter-01/conversation-2-01.jpg" alt="My name is Raju." loading="lazy" />
+        <img src="../images/gemini-chapter-visuals/chapter-01-new/conversation-1b-02.jpg" alt="Yes!" loading="lazy" />
       </article>
     
       <article class="snippet-card" data-scene-card data-scene-index="11">
@@ -981,24 +981,24 @@
           <div class="snippet-heading">
             <div class="snippet-topic">
               <span class="snippet-topic-icon">👥</span>
-              <h4>Conversation 2 · Introductions and people</h4>
+              <h4>Conversation 1B · Choosing Ice Cream</h4>
             </div>
             <span class="new-pill">✦ New</span>
           </div>
           <div class="snippet-line">
-            <strong>I am a Kannada teacher.</strong>
-            <div class="kannada-script">ನಾನು ಕನ್ನಡ ಮೇಷ್ಟ್ರು.</div>
-            <span>Naanu Kannada meshtru.</span>
+            <strong>Which flavor do you like?</strong>
+            <div class="kannada-script">ನಿಮಗೆ ಯಾವ ಫ್ಲೇವರ್ ಇಷ್ಟ?</div>
+            <span>Nimage yaava flavor ishta anta helteera?</span>
           </div>
-          <div class="original-roman">Original PDF: naanu kannada mee§tru</div>
+
           <div class="listen-row">
-            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="I am a Kannada teacher."><span class="btn-icon">▶</span>Play English</button>
-            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನಾನು ಕನ್ನಡ ಮೇಷ್ಟ್ರು."><span class="btn-icon">▶</span>Play Kannada</button>
-            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Naanu Kannada meshtru."><span class="btn-icon">🎙</span>Practice Kannada</button>
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Which flavor do you like?" data-audio="../audio/chapter-01/conversation-1b-03-en.wav"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನಿಮಗೆ ಯಾವ ಫ್ಲೇವರ್ ಇಷ್ಟ?" data-audio="../audio/chapter-01/conversation-1b-03-kn.wav"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Nimage yaava flavor ishta anta helteera?"><span class="btn-icon">🎙</span>Practice Kannada</button>
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/gemini-chapter-visuals/chapter-01/conversation-2-02.jpg" alt="I am a Kannada teacher." loading="lazy" />
+        <img src="../images/gemini-chapter-visuals/chapter-01-new/conversation-1b-03.jpg" alt="Which flavor do you like?" loading="lazy" />
       </article>
     
       <article class="snippet-card" data-scene-card data-scene-index="12">
@@ -1006,24 +1006,24 @@
           <div class="snippet-heading">
             <div class="snippet-topic">
               <span class="snippet-topic-icon">👥</span>
-              <h4>Conversation 2 · Introductions and people</h4>
+              <h4>Conversation 1B · Choosing Ice Cream</h4>
             </div>
             <span class="new-pill">✦ New</span>
           </div>
           <div class="snippet-line">
-            <strong>He is my friend.</strong>
-            <div class="kannada-script">ಇವರು ನನ್ನ ಸ್ನೇಹಿತರು.</div>
-            <span>Ivaru nanna snehitaru.</span>
+            <strong>I like chocolate flavor.</strong>
+            <div class="kannada-script">ನನಗೆ ಚಾಕ್ಲೆಟ್ ಫ್ಲೇವರ್ ಇಷ್ಟ.</div>
+            <span>Nanage chocolate flavor ishṭa.</span>
           </div>
-          <div class="original-roman">Original PDF: ivaru nanna sneehitru</div>
+
           <div class="listen-row">
-            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="He is my friend."><span class="btn-icon">▶</span>Play English</button>
-            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಇವರು ನನ್ನ ಸ್ನೇಹಿತರು."><span class="btn-icon">▶</span>Play Kannada</button>
-            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Ivaru nanna snehitaru."><span class="btn-icon">🎙</span>Practice Kannada</button>
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="I like chocolate flavor." data-audio="../audio/chapter-01/conversation-1b-04-en.wav"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನನಗೆ ಚಾಕ್ಲೆಟ್ ಫ್ಲೇವರ್ ಇಷ್ಟ." data-audio="../audio/chapter-01/conversation-1b-04-kn.wav"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Nanage chocolate flavor ishṭa."><span class="btn-icon">🎙</span>Practice Kannada</button>
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/gemini-chapter-visuals/chapter-01/conversation-2-03.jpg" alt="He is my friend." loading="lazy" />
+        <img src="../images/gemini-chapter-visuals/chapter-01-new/conversation-1b-04.jpg" alt="I like chocolate flavor." loading="lazy" />
       </article>
     
       <article class="snippet-card" data-scene-card data-scene-index="13">
@@ -1031,24 +1031,24 @@
           <div class="snippet-heading">
             <div class="snippet-topic">
               <span class="snippet-topic-icon">👥</span>
-              <h4>Conversation 2 · Introductions and people</h4>
+              <h4>Conversation 1B · Choosing Ice Cream</h4>
             </div>
             <span class="new-pill">✦ New</span>
           </div>
           <div class="snippet-line">
-            <strong>His name is Mohan.</strong>
-            <div class="kannada-script">ಇವರ ಹೆಸರು ಮೋಹನ್.</div>
-            <span>Ivara hesaru Mohan.</span>
+            <strong>I like mango flavor.</strong>
+            <div class="kannada-script">ನನಗೆ ಮಾವಿನಹಣ್ಣಿನ ಫ್ಲೇವರ್ ಇಷ್ಟ.</div>
+            <span>Nanage maavinahannina flavor ishṭa.</span>
           </div>
-          <div class="original-roman">Original PDF: ivara hesaru moohan</div>
+
           <div class="listen-row">
-            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="His name is Mohan."><span class="btn-icon">▶</span>Play English</button>
-            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಇವರ ಹೆಸರು ಮೋಹನ್."><span class="btn-icon">▶</span>Play Kannada</button>
-            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Ivara hesaru Mohan."><span class="btn-icon">🎙</span>Practice Kannada</button>
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="I like mango flavor." data-audio="../audio/chapter-01/conversation-1b-05-en.wav"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನನಗೆ ಮಾವಿನಹಣ್ಣಿನ ಫ್ಲೇವರ್ ಇಷ್ಟ." data-audio="../audio/chapter-01/conversation-1b-05-kn.wav"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Nanage maavinahannina flavor ishṭa."><span class="btn-icon">🎙</span>Practice Kannada</button>
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/gemini-chapter-visuals/chapter-01/conversation-2-04.jpg" alt="His name is Mohan." loading="lazy" />
+        <img src="../images/gemini-chapter-visuals/chapter-01-new/conversation-1b-05.jpg" alt="I like mango flavor." loading="lazy" />
       </article>
     
       <article class="snippet-card" data-scene-card data-scene-index="14">
@@ -1056,24 +1056,24 @@
           <div class="snippet-heading">
             <div class="snippet-topic">
               <span class="snippet-topic-icon">👥</span>
-              <h4>Conversation 2 · Introductions and people</h4>
+              <h4>Conversation 1B · Choosing Ice Cream</h4>
             </div>
             <span class="new-pill">✦ New</span>
           </div>
           <div class="snippet-line">
-            <strong>Who are you ?</strong>
-            <div class="kannada-script">ನೀವು ಯಾರು?</div>
-            <span>Neevu yaaru?</span>
+            <strong>Mango is yummy too.</strong>
+            <div class="kannada-script">ಮಾವಿನಹಣ್ಣು ಕೂಡ ರುಚಿಕರ.</div>
+            <span>Maavinahannu kooda ruchikara.</span>
           </div>
-          <div class="original-roman">Original PDF: nivu yaaru ?</div>
+
           <div class="listen-row">
-            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Who are you ?"><span class="btn-icon">▶</span>Play English</button>
-            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನೀವು ಯಾರು?"><span class="btn-icon">▶</span>Play Kannada</button>
-            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Neevu yaaru?"><span class="btn-icon">🎙</span>Practice Kannada</button>
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Mango is yummy too." data-audio="../audio/chapter-01/conversation-1b-06-en.wav"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಮಾವಿನಹಣ್ಣು ಕೂಡ ರುಚಿಕರ." data-audio="../audio/chapter-01/conversation-1b-06-kn.wav"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Maavinahannu kooda ruchikara."><span class="btn-icon">🎙</span>Practice Kannada</button>
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/gemini-chapter-visuals/chapter-01/conversation-2-05.jpg" alt="Who are you ?" loading="lazy" />
+        <img src="../images/gemini-chapter-visuals/chapter-01-new/conversation-1b-06.jpg" alt="Mango is yummy too." loading="lazy" />
       </article>
     
       <article class="snippet-card" data-scene-card data-scene-index="15">
@@ -1081,24 +1081,24 @@
           <div class="snippet-heading">
             <div class="snippet-topic">
               <span class="snippet-topic-icon">👥</span>
-              <h4>Conversation 2 · Introductions and people</h4>
+              <h4>Conversation 1B · Choosing Ice Cream</h4>
             </div>
             <span class="new-pill">✦ New</span>
           </div>
           <div class="snippet-line">
-            <strong>I am a doctor.</strong>
-            <div class="kannada-script">ನಾನು ವೈದ್ಯ.</div>
-            <span>Naanu vaidya.</span>
+            <strong>Let us get ice cream.</strong>
+            <div class="kannada-script">ಐಸ್‌ಕ್ರೀಮ್ ತಗೊಳ್ಳೋಣ.</div>
+            <span>Icecream tagolona.</span>
           </div>
-          <div class="original-roman">Original PDF: naanu daaktar</div>
+
           <div class="listen-row">
-            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="I am a doctor."><span class="btn-icon">▶</span>Play English</button>
-            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನಾನು ವೈದ್ಯ."><span class="btn-icon">▶</span>Play Kannada</button>
-            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Naanu vaidya."><span class="btn-icon">🎙</span>Practice Kannada</button>
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Let us get ice cream." data-audio="../audio/chapter-01/conversation-1b-07-en.wav"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಐಸ್‌ಕ್ರೀಮ್ ತಗೊಳ್ಳೋಣ." data-audio="../audio/chapter-01/conversation-1b-07-kn.wav"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Icecream tagolona."><span class="btn-icon">🎙</span>Practice Kannada</button>
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/gemini-chapter-visuals/chapter-01/conversation-2-06.jpg" alt="I am a doctor." loading="lazy" />
+        <img src="../images/gemini-chapter-visuals/chapter-01-new/conversation-1b-07.jpg" alt="Let us get ice cream." loading="lazy" />
       </article>
     
       <article class="snippet-card" data-scene-card data-scene-index="16">
@@ -1106,24 +1106,24 @@
           <div class="snippet-heading">
             <div class="snippet-topic">
               <span class="snippet-topic-icon">👥</span>
-              <h4>Conversation 2 · Introductions and people</h4>
+              <h4>Conversation 1B · Choosing Ice Cream</h4>
             </div>
             <span class="new-pill">✦ New</span>
           </div>
           <div class="snippet-line">
-            <strong>What is your name ?</strong>
-            <div class="kannada-script">ನಿಮ್ಮ ಹೆಸರೇನು?</div>
-            <span>Nimma hesarenu?</span>
+            <strong>Okay!</strong>
+            <div class="kannada-script">ಸರಿ!</div>
+            <span>Sari!</span>
           </div>
-          <div class="original-roman">Original PDF: nimma hesaru eenu ?</div>
+
           <div class="listen-row">
-            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="What is your name ?"><span class="btn-icon">▶</span>Play English</button>
-            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನಿಮ್ಮ ಹೆಸರೇನು?"><span class="btn-icon">▶</span>Play Kannada</button>
-            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Nimma hesarenu?"><span class="btn-icon">🎙</span>Practice Kannada</button>
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Okay!" data-audio="../audio/chapter-01/conversation-1b-08-en.wav"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಸರಿ!" data-audio="../audio/chapter-01/conversation-1b-08-kn.wav"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Sari!"><span class="btn-icon">🎙</span>Practice Kannada</button>
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/gemini-chapter-visuals/chapter-01/conversation-2-07.jpg" alt="What is your name ?" loading="lazy" />
+        <img src="../images/gemini-chapter-visuals/chapter-01-new/conversation-1b-08.jpg" alt="Okay!" loading="lazy" />
       </article>
     
       <article class="snippet-card" data-scene-card data-scene-index="17">
@@ -1131,24 +1131,24 @@
           <div class="snippet-heading">
             <div class="snippet-topic">
               <span class="snippet-topic-icon">👥</span>
-              <h4>Conversation 2 · Introductions and people</h4>
+              <h4>Conversation 1C · After Ice Cream</h4>
             </div>
             <span class="new-pill">✦ New</span>
           </div>
           <div class="snippet-line">
-            <strong>My name is Shekhar.</strong>
-            <div class="kannada-script">ನನ್ನ ಹೆಸರು ಶೇಖರ್.</div>
-            <span>Nanna hesaru Shekhar.</span>
+            <strong>My ice cream was good.</strong>
+            <div class="kannada-script">ನನ್ನ ಐಸ್ ಕ್ರೀಮ್ ಚೆನ್ನಾಗಿತ್ತು.</div>
+            <span>Nanna ice cream chennaagittu.</span>
           </div>
-          <div class="original-roman">Original PDF: nanna hesaru $eekhar</div>
+
           <div class="listen-row">
-            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="My name is Shekhar."><span class="btn-icon">▶</span>Play English</button>
-            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನನ್ನ ಹೆಸರು ಶೇಖರ್."><span class="btn-icon">▶</span>Play Kannada</button>
-            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Nanna hesaru Shekhar."><span class="btn-icon">🎙</span>Practice Kannada</button>
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="My ice cream was good." data-audio="../audio/chapter-01/conversation-1c-01-en.wav"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನನ್ನ ಐಸ್ ಕ್ರೀಮ್ ಚೆನ್ನಾಗಿತ್ತು." data-audio="../audio/chapter-01/conversation-1c-01-kn.wav"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Nanna ice cream chennaagittu."><span class="btn-icon">🎙</span>Practice Kannada</button>
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/gemini-chapter-visuals/chapter-01/conversation-2-08.jpg" alt="My name is Shekhar." loading="lazy" />
+        <img src="../images/gemini-chapter-visuals/chapter-01-new/conversation-1c-01.jpg" alt="My ice cream was good." loading="lazy" />
       </article>
     
       <article class="snippet-card" data-scene-card data-scene-index="18">
@@ -1156,24 +1156,24 @@
           <div class="snippet-heading">
             <div class="snippet-topic">
               <span class="snippet-topic-icon">👥</span>
-              <h4>Conversation 2 · Introductions and people</h4>
+              <h4>Conversation 1C · After Ice Cream</h4>
             </div>
             <span class="new-pill">✦ New</span>
           </div>
           <div class="snippet-line">
-            <strong>Is her name Lalitha?</strong>
-            <div class="kannada-script">ಅವರ ಹೆಸರೇ ಲಲಿತಾನಾ?</div>
-            <span>Avara hesaru Lalitha?</span>
+            <strong>Mine was good too.</strong>
+            <div class="kannada-script">ನನ್ನದು ಕೂಡ ಚೆನ್ನಾಗಿತ್ತು.</div>
+            <span>Nannadoo kooda chennaagittu.</span>
           </div>
-          <div class="original-roman">Original PDF: avara hesaru lalitaanaa ?</div>
+
           <div class="listen-row">
-            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Is her name Lalitha?"><span class="btn-icon">▶</span>Play English</button>
-            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಅವರ ಹೆಸರೇ ಲಲಿತಾನಾ?"><span class="btn-icon">▶</span>Play Kannada</button>
-            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Avara hesaru Lalitha?"><span class="btn-icon">🎙</span>Practice Kannada</button>
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Mine was good too." data-audio="../audio/chapter-01/conversation-1c-02-en.wav"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನನ್ನದು ಕೂಡ ಚೆನ್ನಾಗಿತ್ತು." data-audio="../audio/chapter-01/conversation-1c-02-kn.wav"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Nannadoo kooda chennaagittu."><span class="btn-icon">🎙</span>Practice Kannada</button>
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/gemini-chapter-visuals/chapter-01/conversation-2-09.jpg" alt="Is her name Lalitha?" loading="lazy" />
+        <img src="../images/gemini-chapter-visuals/chapter-01-new/conversation-1c-02.jpg" alt="Mine was good too." loading="lazy" />
       </article>
     
       <article class="snippet-card" data-scene-card data-scene-index="19">
@@ -1181,24 +1181,24 @@
           <div class="snippet-heading">
             <div class="snippet-topic">
               <span class="snippet-topic-icon">👥</span>
-              <h4>Conversation 2 · Introductions and people</h4>
+              <h4>Conversation 1C · After Ice Cream</h4>
             </div>
             <span class="new-pill">✦ New</span>
           </div>
           <div class="snippet-line">
-            <strong>Yes,</strong>
-            <div class="kannada-script">ಹೌದು,</div>
-            <span>Howdu,</span>
+            <strong>See you at school tomorrow?</strong>
+            <div class="kannada-script">ನಾಳೆ ಸ್ಕೂಲ್‌ನಲ್ಲಿ ಸಿಗೋಣವಾ?</div>
+            <span>Naale schoolnalli sigonava?</span>
           </div>
-          <div class="original-roman">Original PDF: haudu,</div>
+
           <div class="listen-row">
-            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Yes,"><span class="btn-icon">▶</span>Play English</button>
-            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಹೌದು,"><span class="btn-icon">▶</span>Play Kannada</button>
-            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Howdu,"><span class="btn-icon">🎙</span>Practice Kannada</button>
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="See you at school tomorrow?" data-audio="../audio/chapter-01/conversation-1c-03-en.wav"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನಾಳೆ ಸ್ಕೂಲ್‌ನಲ್ಲಿ ಸಿಗೋಣವಾ?" data-audio="../audio/chapter-01/conversation-1c-03-kn.wav"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Naale schoolnalli sigonava?"><span class="btn-icon">🎙</span>Practice Kannada</button>
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/gemini-chapter-visuals/chapter-01/conversation-2-10.jpg" alt="Yes," loading="lazy" />
+        <img src="../images/gemini-chapter-visuals/chapter-01-new/conversation-1c-03.jpg" alt="See you at school tomorrow?" loading="lazy" />
       </article>
     
       <article class="snippet-card" data-scene-card data-scene-index="20">
@@ -1206,24 +1206,24 @@
           <div class="snippet-heading">
             <div class="snippet-topic">
               <span class="snippet-topic-icon">👥</span>
-              <h4>Conversation 2 · Introductions and people</h4>
+              <h4>Conversation 1C · After Ice Cream</h4>
             </div>
             <span class="new-pill">✦ New</span>
           </div>
           <div class="snippet-line">
-            <strong>Her name is Lalita.</strong>
-            <div class="kannada-script">ಅವರ ಹೆಸರು ಲಲಿತಾ.</div>
-            <span>Avara hesaru Lalita.</span>
+            <strong>Yes, see you tomorrow.</strong>
+            <div class="kannada-script">ಹೌದು, ನಾಳೆ ಭೇಟಿ ಆಗೋಣ.</div>
+            <span>Howdu, naale bheti aagona.</span>
           </div>
-          <div class="original-roman">Original PDF: avara hesaru ialita</div>
+
           <div class="listen-row">
-            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Her name is Lalita."><span class="btn-icon">▶</span>Play English</button>
-            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಅವರ ಹೆಸರು ಲಲಿತಾ."><span class="btn-icon">▶</span>Play Kannada</button>
-            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Avara hesaru Lalita."><span class="btn-icon">🎙</span>Practice Kannada</button>
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Yes, see you tomorrow." data-audio="../audio/chapter-01/conversation-1c-04-en.wav"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಹೌದು, ನಾಳೆ ಭೇಟಿ ಆಗೋಣ." data-audio="../audio/chapter-01/conversation-1c-04-kn.wav"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Howdu, naale bheti aagona."><span class="btn-icon">🎙</span>Practice Kannada</button>
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/gemini-chapter-visuals/chapter-01/conversation-2-11.jpg" alt="Her name is Lalita." loading="lazy" />
+        <img src="../images/gemini-chapter-visuals/chapter-01-new/conversation-1c-04.jpg" alt="Yes, see you tomorrow." loading="lazy" />
       </article>
     
       <article class="snippet-card" data-scene-card data-scene-index="21">
@@ -1231,24 +1231,24 @@
           <div class="snippet-heading">
             <div class="snippet-topic">
               <span class="snippet-topic-icon">👥</span>
-              <h4>Conversation 2 · Introductions and people</h4>
+              <h4>Conversation 1C · After Ice Cream</h4>
             </div>
             <span class="new-pill">✦ New</span>
           </div>
           <div class="snippet-line">
-            <strong>Is she a doctor ?</strong>
-            <div class="kannada-script">ಅವರು ವೈದ್ಯರಾ?</div>
-            <span>Avaru vaidyara?</span>
+            <strong>See you, Raju.</strong>
+            <div class="kannada-script">ಸಿಗೋಣ, ರಾಜು.</div>
+            <span>Sigona, Raju.</span>
           </div>
-          <div class="original-roman">Original PDF: avaru ^aaktraa ?</div>
+
           <div class="listen-row">
-            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Is she a doctor ?"><span class="btn-icon">▶</span>Play English</button>
-            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಅವರು ವೈದ್ಯರಾ?"><span class="btn-icon">▶</span>Play Kannada</button>
-            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Avaru vaidyara?"><span class="btn-icon">🎙</span>Practice Kannada</button>
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="See you, Raju." data-audio="../audio/chapter-01/conversation-1c-05-en.wav"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಸಿಗೋಣ, ರಾಜು." data-audio="../audio/chapter-01/conversation-1c-05-kn.wav"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Sigona, Raju."><span class="btn-icon">🎙</span>Practice Kannada</button>
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/gemini-chapter-visuals/chapter-01/conversation-2-12.jpg" alt="Is she a doctor ?" loading="lazy" />
+        <img src="../images/gemini-chapter-visuals/chapter-01-new/conversation-1c-05.jpg" alt="See you, Raju." loading="lazy" />
       </article>
     
       <article class="snippet-card" data-scene-card data-scene-index="22">
@@ -1256,324 +1256,24 @@
           <div class="snippet-heading">
             <div class="snippet-topic">
               <span class="snippet-topic-icon">👥</span>
-              <h4>Conversation 2 · Introductions and people</h4>
+              <h4>Conversation 1C · After Ice Cream</h4>
             </div>
             <span class="new-pill">✦ New</span>
           </div>
           <div class="snippet-line">
-            <strong>No, she is not a doctor,</strong>
-            <div class="kannada-script">ಇಲ್ಲ, ಅವರು ವೈದ್ಯರಲ್ಲ,</div>
-            <span>Illa, avaru vaidyaralla,</span>
+            <strong>See you, Meena.</strong>
+            <div class="kannada-script">ಸಿಗೋಣ, ಮೀನಾ.</div>
+            <span>Sigona, Meena.</span>
           </div>
-          <div class="original-roman">Original PDF: alia, avaru daaktralla</div>
+
           <div class="listen-row">
-            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="No, she is not a doctor,"><span class="btn-icon">▶</span>Play English</button>
-            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಇಲ್ಲ, ಅವರು ವೈದ್ಯರಲ್ಲ,"><span class="btn-icon">▶</span>Play Kannada</button>
-            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Illa, avaru vaidyaralla,"><span class="btn-icon">🎙</span>Practice Kannada</button>
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="See you, Meena." data-audio="../audio/chapter-01/conversation-1c-06-en.wav"><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಸಿಗೋಣ, ಮೀನಾ." data-audio="../audio/chapter-01/conversation-1c-06-kn.wav"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Sigona, Meena."><span class="btn-icon">🎙</span>Practice Kannada</button>
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
         </div>
-        <img src="../images/gemini-chapter-visuals/chapter-01/conversation-2-13.jpg" alt="No, she is not a doctor," loading="lazy" />
-      </article>
-    
-      <article class="snippet-card" data-scene-card data-scene-index="23">
-        <div class="snippet-body">
-          <div class="snippet-heading">
-            <div class="snippet-topic">
-              <span class="snippet-topic-icon">👥</span>
-              <h4>Conversation 2 · Introductions and people</h4>
-            </div>
-            <span class="new-pill">✦ New</span>
-          </div>
-          <div class="snippet-line">
-            <strong>she is a nurse.</strong>
-            <div class="kannada-script">ಅವರು ನರ್ಸ್.</div>
-            <span>Avaru nurse.</span>
-          </div>
-          <div class="original-roman">Original PDF: avaru na^su</div>
-          <div class="listen-row">
-            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="she is a nurse."><span class="btn-icon">▶</span>Play English</button>
-            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಅವರು ನರ್ಸ್."><span class="btn-icon">▶</span>Play Kannada</button>
-            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Avaru nurse."><span class="btn-icon">🎙</span>Practice Kannada</button>
-          </div>
-          <div class="practice-feedback" aria-live="polite"></div>
-        </div>
-        <img src="../images/gemini-chapter-visuals/chapter-01/conversation-2-14.jpg" alt="she is a nurse." loading="lazy" />
-      </article>
-    
-      <article class="snippet-card" data-scene-card data-scene-index="24">
-        <div class="snippet-body">
-          <div class="snippet-heading">
-            <div class="snippet-topic">
-              <span class="snippet-topic-icon">👥</span>
-              <h4>Conversation 3 · Introductions and people</h4>
-            </div>
-            <span class="new-pill">✦ New</span>
-          </div>
-          <div class="snippet-line">
-            <strong>What’s you name, child ?</strong>
-            <div class="kannada-script">ನಿಮ್ಮ ಹೆಸರೇನು, ಮಗನೇ?</div>
-            <span>Nimma hesarenu, magane?</span>
-          </div>
-          <div class="original-roman">Original PDF: ninna hesru eenu, magu ?</div>
-          <div class="listen-row">
-            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="What’s you name, child ?"><span class="btn-icon">▶</span>Play English</button>
-            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನಿಮ್ಮ ಹೆಸರೇನು, ಮಗನೇ?"><span class="btn-icon">▶</span>Play Kannada</button>
-            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Nimma hesarenu, magane?"><span class="btn-icon">🎙</span>Practice Kannada</button>
-          </div>
-          <div class="practice-feedback" aria-live="polite"></div>
-        </div>
-        <img src="../images/gemini-chapter-visuals/chapter-01/conversation-3-01.jpg" alt="What’s you name, child ?" loading="lazy" />
-      </article>
-    
-      <article class="snippet-card" data-scene-card data-scene-index="25">
-        <div class="snippet-body">
-          <div class="snippet-heading">
-            <div class="snippet-topic">
-              <span class="snippet-topic-icon">👥</span>
-              <h4>Conversation 3 · Introductions and people</h4>
-            </div>
-            <span class="new-pill">✦ New</span>
-          </div>
-          <div class="snippet-line">
-            <strong>My name is Kiran.</strong>
-            <div class="kannada-script">ನನ್ನ ಹೆಸರು ಕಿರಣ್.</div>
-            <span>Nanna hesaru Kiran.</span>
-          </div>
-          <div class="original-roman">Original PDF: nanna hesaru kiraj?</div>
-          <div class="listen-row">
-            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="My name is Kiran."><span class="btn-icon">▶</span>Play English</button>
-            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ನನ್ನ ಹೆಸರು ಕಿರಣ್."><span class="btn-icon">▶</span>Play Kannada</button>
-            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Nanna hesaru Kiran."><span class="btn-icon">🎙</span>Practice Kannada</button>
-          </div>
-          <div class="practice-feedback" aria-live="polite"></div>
-        </div>
-        <img src="../images/gemini-chapter-visuals/chapter-01/conversation-3-02.jpg" alt="My name is Kiran." loading="lazy" />
-      </article>
-    
-      <article class="snippet-card" data-scene-card data-scene-index="26">
-        <div class="snippet-body">
-          <div class="snippet-heading">
-            <div class="snippet-topic">
-              <span class="snippet-topic-icon">👥</span>
-              <h4>Conversation 3 · Introductions and people</h4>
-            </div>
-            <span class="new-pill">✦ New</span>
-          </div>
-          <div class="snippet-line">
-            <strong>Is he your father ?</strong>
-            <div class="kannada-script">ಅವರು ನಿಮ್ಮ ತಂದೆಯಾ?</div>
-            <span>Avaru nimma tandeya?</span>
-          </div>
-          <div class="original-roman">Original PDF: avaru nimma tandenaa?</div>
-          <div class="listen-row">
-            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Is he your father ?"><span class="btn-icon">▶</span>Play English</button>
-            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಅವರು ನಿಮ್ಮ ತಂದೆಯಾ?"><span class="btn-icon">▶</span>Play Kannada</button>
-            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Avaru nimma tandeya?"><span class="btn-icon">🎙</span>Practice Kannada</button>
-          </div>
-          <div class="practice-feedback" aria-live="polite"></div>
-        </div>
-        <img src="../images/gemini-chapter-visuals/chapter-01/conversation-3-03.jpg" alt="Is he your father ?" loading="lazy" />
-      </article>
-    
-      <article class="snippet-card" data-scene-card data-scene-index="27">
-        <div class="snippet-body">
-          <div class="snippet-heading">
-            <div class="snippet-topic">
-              <span class="snippet-topic-icon">👥</span>
-              <h4>Conversation 3 · Introductions and people</h4>
-            </div>
-            <span class="new-pill">✦ New</span>
-          </div>
-          <div class="snippet-line">
-            <strong>Yes, he is my father.</strong>
-            <div class="kannada-script">ಹೌದು, ಅವರು ನನ್ನ ತಂದೆ.</div>
-            <span>Howdu, avaru nanna tande.</span>
-          </div>
-          <div class="original-roman">Original PDF: haudu, avaru namma tande</div>
-          <div class="listen-row">
-            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Yes, he is my father."><span class="btn-icon">▶</span>Play English</button>
-            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಹೌದು, ಅವರು ನನ್ನ ತಂದೆ."><span class="btn-icon">▶</span>Play Kannada</button>
-            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Howdu, avaru nanna tande."><span class="btn-icon">🎙</span>Practice Kannada</button>
-          </div>
-          <div class="practice-feedback" aria-live="polite"></div>
-        </div>
-        <img src="../images/gemini-chapter-visuals/chapter-01/conversation-3-04.jpg" alt="Yes, he is my father." loading="lazy" />
-      </article>
-    
-      <article class="snippet-card" data-scene-card data-scene-index="28">
-        <div class="snippet-body">
-          <div class="snippet-heading">
-            <div class="snippet-topic">
-              <span class="snippet-topic-icon">👥</span>
-              <h4>Conversation Continuation · Introductions and people</h4>
-            </div>
-            <span class="new-pill">✦ New</span>
-          </div>
-          <div class="snippet-line">
-            <strong>Is her name Saroja ?</strong>
-            <div class="kannada-script">ಅವಳ ಹೆಸರು ಸರೋಜಾ ಎಂದು?</div>
-            <span>Avala hesaru Saroja endu?</span>
-          </div>
-          <div class="original-roman">Original PDF: ava|a hesaru soroojaanaa ?</div>
-          <div class="listen-row">
-            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Is her name Saroja ?"><span class="btn-icon">▶</span>Play English</button>
-            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಅವಳ ಹೆಸರು ಸರೋಜಾ ಎಂದು?"><span class="btn-icon">▶</span>Play Kannada</button>
-            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Avala hesaru Saroja endu?"><span class="btn-icon">🎙</span>Practice Kannada</button>
-          </div>
-          <div class="practice-feedback" aria-live="polite"></div>
-        </div>
-        <img src="../images/gemini-chapter-visuals/chapter-01/conversation-continuation-01.jpg" alt="Is her name Saroja ?" loading="lazy" />
-      </article>
-    
-      <article class="snippet-card" data-scene-card data-scene-index="29">
-        <div class="snippet-body">
-          <div class="snippet-heading">
-            <div class="snippet-topic">
-              <span class="snippet-topic-icon">👥</span>
-              <h4>Conversation Continuation · Introductions and people</h4>
-            </div>
-            <span class="new-pill">✦ New</span>
-          </div>
-          <div class="snippet-line">
-            <strong>No,</strong>
-            <div class="kannada-script">ಇಲ್ಲ,</div>
-            <span>Illa,</span>
-          </div>
-          <div class="original-roman">Original PDF: alia,</div>
-          <div class="listen-row">
-            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="No,"><span class="btn-icon">▶</span>Play English</button>
-            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಇಲ್ಲ,"><span class="btn-icon">▶</span>Play Kannada</button>
-            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Illa,"><span class="btn-icon">🎙</span>Practice Kannada</button>
-          </div>
-          <div class="practice-feedback" aria-live="polite"></div>
-        </div>
-        <img src="../images/gemini-chapter-visuals/chapter-01/conversation-continuation-02.jpg" alt="No," loading="lazy" />
-      </article>
-    
-      <article class="snippet-card" data-scene-card data-scene-index="30">
-        <div class="snippet-body">
-          <div class="snippet-heading">
-            <div class="snippet-topic">
-              <span class="snippet-topic-icon">👥</span>
-              <h4>Conversation Continuation · Introductions and people</h4>
-            </div>
-            <span class="new-pill">✦ New</span>
-          </div>
-          <div class="snippet-line">
-            <strong>her name is not Saroja.</strong>
-            <div class="kannada-script">ಅವಳ ಹೆಸರು ಸರೋಜ ಅಲ್ಲ.</div>
-            <span>Avala hesaru Saroja alla.</span>
-          </div>
-          <div class="original-roman">Original PDF: avaa hesaru sarooja alia</div>
-          <div class="listen-row">
-            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="her name is not Saroja."><span class="btn-icon">▶</span>Play English</button>
-            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಅವಳ ಹೆಸರು ಸರೋಜ ಅಲ್ಲ."><span class="btn-icon">▶</span>Play Kannada</button>
-            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Avala hesaru Saroja alla."><span class="btn-icon">🎙</span>Practice Kannada</button>
-          </div>
-          <div class="practice-feedback" aria-live="polite"></div>
-        </div>
-        <img src="../images/gemini-chapter-visuals/chapter-01/conversation-continuation-03.jpg" alt="her name is not Saroja." loading="lazy" />
-      </article>
-    
-      <article class="snippet-card" data-scene-card data-scene-index="31">
-        <div class="snippet-body">
-          <div class="snippet-heading">
-            <div class="snippet-topic">
-              <span class="snippet-topic-icon">👥</span>
-              <h4>Conversation Continuation · Introductions and people</h4>
-            </div>
-            <span class="new-pill">✦ New</span>
-          </div>
-          <div class="snippet-line">
-            <strong>Who is she ?</strong>
-            <div class="kannada-script">ಅವರು ಯಾರು?</div>
-            <span>Avaru yaaru?</span>
-          </div>
-          <div class="original-roman">Original PDF: avaju yaaru ?</div>
-          <div class="listen-row">
-            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Who is she ?"><span class="btn-icon">▶</span>Play English</button>
-            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಅವರು ಯಾರು?"><span class="btn-icon">▶</span>Play Kannada</button>
-            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Avaru yaaru?"><span class="btn-icon">🎙</span>Practice Kannada</button>
-          </div>
-          <div class="practice-feedback" aria-live="polite"></div>
-        </div>
-        <img src="../images/gemini-chapter-visuals/chapter-01/conversation-continuation-04.jpg" alt="Who is she ?" loading="lazy" />
-      </article>
-    
-      <article class="snippet-card" data-scene-card data-scene-index="32">
-        <div class="snippet-body">
-          <div class="snippet-heading">
-            <div class="snippet-topic">
-              <span class="snippet-topic-icon">👥</span>
-              <h4>Conversation Continuation · Introductions and people</h4>
-            </div>
-            <span class="new-pill">✦ New</span>
-          </div>
-          <div class="snippet-line">
-            <strong>She is my younger sister.</strong>
-            <div class="kannada-script">ಅವರು ನನ್ನ ತಂಗಿ.</div>
-            <span>Avaru nanna tangi.</span>
-          </div>
-          <div class="original-roman">Original PDF: ava|u nanna tangi</div>
-          <div class="listen-row">
-            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="She is my younger sister."><span class="btn-icon">▶</span>Play English</button>
-            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಅವರು ನನ್ನ ತಂಗಿ."><span class="btn-icon">▶</span>Play Kannada</button>
-            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Avaru nanna tangi."><span class="btn-icon">🎙</span>Practice Kannada</button>
-          </div>
-          <div class="practice-feedback" aria-live="polite"></div>
-        </div>
-        <img src="../images/gemini-chapter-visuals/chapter-01/conversation-continuation-05.jpg" alt="She is my younger sister." loading="lazy" />
-      </article>
-    
-      <article class="snippet-card" data-scene-card data-scene-index="33">
-        <div class="snippet-body">
-          <div class="snippet-heading">
-            <div class="snippet-topic">
-              <span class="snippet-topic-icon">👥</span>
-              <h4>Conversation Continuation · Introductions and people</h4>
-            </div>
-            <span class="new-pill">✦ New</span>
-          </div>
-          <div class="snippet-line">
-            <strong>What is her name ?</strong>
-            <div class="kannada-script">ಅವರ ಹೆಸರು ಏನು?</div>
-            <span>Avara hesaru enu?</span>
-          </div>
-          <div class="original-roman">Original PDF: avaja hesaru eenu ?</div>
-          <div class="listen-row">
-            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="What is her name ?"><span class="btn-icon">▶</span>Play English</button>
-            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಅವರ ಹೆಸರು ಏನು?"><span class="btn-icon">▶</span>Play Kannada</button>
-            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Avara hesaru enu?"><span class="btn-icon">🎙</span>Practice Kannada</button>
-          </div>
-          <div class="practice-feedback" aria-live="polite"></div>
-        </div>
-        <img src="../images/gemini-chapter-visuals/chapter-01/conversation-continuation-06.jpg" alt="What is her name ?" loading="lazy" />
-      </article>
-    
-      <article class="snippet-card" data-scene-card data-scene-index="34">
-        <div class="snippet-body">
-          <div class="snippet-heading">
-            <div class="snippet-topic">
-              <span class="snippet-topic-icon">👥</span>
-              <h4>Conversation Continuation · Introductions and people</h4>
-            </div>
-            <span class="new-pill">✦ New</span>
-          </div>
-          <div class="snippet-line">
-            <strong>Her name is Manju.</strong>
-            <div class="kannada-script">ಅವಳ ಹೆಸರು ಮಂಜು.</div>
-            <span>Avala hesaru Manju.</span>
-          </div>
-          <div class="original-roman">Original PDF: avaja hesaru manju</div>
-          <div class="listen-row">
-            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="Her name is Manju."><span class="btn-icon">▶</span>Play English</button>
-            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="ಅವಳ ಹೆಸರು ಮಂಜು."><span class="btn-icon">▶</span>Play Kannada</button>
-            <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="Avala hesaru Manju."><span class="btn-icon">🎙</span>Practice Kannada</button>
-          </div>
-          <div class="practice-feedback" aria-live="polite"></div>
-        </div>
-        <img src="../images/gemini-chapter-visuals/chapter-01/conversation-continuation-07.jpg" alt="Her name is Manju." loading="lazy" />
+        <img src="../images/gemini-chapter-visuals/chapter-01-new/conversation-1c-06.jpg" alt="See you, Meena." loading="lazy" />
       </article>
     </div>
       </div>
@@ -1798,8 +1498,12 @@ B. 1. Ivaru nanna . (friend)
     setupSceneProgress();
 
     async function playSarvamAudio(button, text, languageCode) {
-      const speaker = document.querySelector("[data-kannada-speaker]")?.value || "";
-      const cacheKey = [languageCode, speaker, text].join("::");
+      const speaker = languageCode === "kn-IN"
+        ? (document.querySelector("[data-kannada-speaker]")?.value || "")
+        : "";
+      const prebuiltAudio = button.getAttribute("data-audio") || "";
+      const shouldUsePrebuiltAudio = Boolean(prebuiltAudio) && languageCode !== "kn-IN";
+      const cacheKey = [languageCode, shouldUsePrebuiltAudio ? "prebuilt" : speaker, shouldUsePrebuiltAudio ? prebuiltAudio : text].join("::");
       const originalHtml = button.innerHTML;
       try {
         if (activeAudio) {
@@ -1810,6 +1514,10 @@ B. 1. Ivaru nanna . (friend)
         button.textContent = "Loading...";
 
         let url = audioCache.get(cacheKey);
+        if (!url && shouldUsePrebuiltAudio) {
+          url = prebuiltAudio;
+          audioCache.set(cacheKey, url);
+        }
         if (!url) {
           const response = await fetch("/api/tts", {
             method: "POST",

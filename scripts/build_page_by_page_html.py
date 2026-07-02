@@ -479,7 +479,7 @@ def extract() -> list[PageConversation]:
 
 
 LESSON_THEMES = {
-    1: "Greetings, names, family",
+    1: "Names and ice cream: greetings, names, likes",
     2: "Introductions, this/that, house/book",
     3: "Classes, possessives, books/pens",
     4: "House, rent, family counts",
@@ -600,13 +600,13 @@ def page_shell(title: str, body: str, relative_prefix: str = "") -> str:
     :root {{
       --ink: #1d1d1f;
       --muted: #6e6e73;
-      --line: #d2d2d7;
+      --line: #e5e5ea;
       --paper: #f5f5f7;
       --panel: #ffffff;
       --soft: #f9f9fb;
       --accent: #0071e3;
       --accent-soft: rgba(0, 113, 227, .10);
-      --kannada: #167d6b;
+      --kannada: #2f6f63;
       --practice: #1d1d1f;
       --warn: #8a4b1f;
     }}
@@ -615,9 +615,7 @@ def page_shell(title: str, body: str, relative_prefix: str = "") -> str:
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", sans-serif;
       color: var(--ink);
-      background:
-        radial-gradient(circle at 24% 0%, rgba(255, 255, 255, .95), transparent 34%),
-        linear-gradient(135deg, #f7f8fb 0%, #fffaf2 100%);
+      background: #f7f7f8;
       line-height: 1.5;
     }}
     main {{ max-width: 1180px; margin: 0 auto; padding: 32px 18px 72px; }}
@@ -646,40 +644,40 @@ def page_shell(title: str, body: str, relative_prefix: str = "") -> str:
     }}
     .learning-app {{
       display: grid;
-      grid-template-columns: 116px minmax(0, 1fr);
+      grid-template-columns: 76px minmax(0, 1fr);
       min-height: 100vh;
     }}
     .side-rail {{
       position: sticky;
       top: 0;
       height: 100vh;
-      padding: 30px 18px;
+      padding: 20px 12px;
       display: grid;
-      grid-template-rows: auto 1fr auto;
+      grid-template-rows: auto 1fr;
       justify-items: center;
-      gap: 28px;
-      background: rgba(255, 255, 255, .72);
-      border-right: 1px solid rgba(210, 210, 215, .72);
-      box-shadow: 12px 0 40px rgba(29, 29, 31, .04);
-      backdrop-filter: blur(22px);
+      gap: 18px;
+      background: rgba(255, 255, 255, .86);
+      border-right: 1px solid var(--line);
+      box-shadow: 8px 0 24px rgba(29, 29, 31, .035);
+      backdrop-filter: blur(18px);
     }}
     .rail-logo {{
-      width: 54px;
-      height: 54px;
-      border-radius: 16px;
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
       display: grid;
       place-items: center;
-      color: #e75f1b;
+      color: #0f766e;
       background: #ffffff;
-      border: 2px solid rgba(231, 95, 27, .35);
-      box-shadow: 0 10px 24px rgba(231, 95, 27, .10);
-      font-size: 1.65rem;
+      border: 1px solid var(--line);
+      box-shadow: 0 8px 20px rgba(29, 29, 31, .05);
+      font-size: 1.25rem;
       text-decoration: none;
     }}
     .chapter-rail {{
       width: 100%;
       display: grid;
-      gap: 8px;
+      gap: 4px;
       overflow-y: auto;
       padding: 2px 0;
       scrollbar-width: thin;
@@ -687,17 +685,18 @@ def page_shell(title: str, body: str, relative_prefix: str = "") -> str:
     .chapter-rail a {{
       display: grid;
       place-items: center;
-      min-height: 44px;
-      border-radius: 14px;
+      min-height: 34px;
+      border-radius: 10px;
       color: #6b7280;
       text-decoration: none;
-      font-weight: 800;
+      font-size: .92rem;
+      font-weight: 750;
       border: 1px solid transparent;
     }}
     .chapter-rail a.active {{
-      color: #e75f1b;
-      background: #fff2e9;
-      border-color: rgba(231, 95, 27, .16);
+      color: #1d1d1f;
+      background: #ffffff;
+      border-color: var(--line);
       box-shadow: inset 0 1px 0 rgba(255,255,255,.74);
     }}
     .rail-tools {{
@@ -726,65 +725,59 @@ def page_shell(title: str, body: str, relative_prefix: str = "") -> str:
       font-size: 1.45rem;
     }}
     .lesson-workspace {{
-      width: min(100%, 1180px);
+      width: min(100%, 1120px);
       margin: 0 auto;
-      padding: 44px 32px 72px;
+      padding: 24px 28px 56px;
     }}
     .lesson-header {{
       display: grid;
-      grid-template-columns: minmax(0, 1fr) 330px;
-      gap: 28px;
-      align-items: start;
-      margin-bottom: 28px;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 18px;
+      align-items: end;
+      margin-bottom: 14px;
     }}
     .lesson-kicker {{
       margin: 0 0 6px;
-      color: #e75f1b;
+      color: var(--muted);
       font-weight: 850;
-      font-size: .95rem;
+      font-size: .82rem;
+      text-transform: uppercase;
+      letter-spacing: .04em;
     }}
     .lesson-title {{
       margin: 0;
-      font-size: clamp(2.1rem, 4.5vw, 3.35rem);
-      line-height: 1.03;
+      font-size: clamp(1.35rem, 2.4vw, 1.85rem);
+      line-height: 1.12;
       font-weight: 850;
       color: #111827;
     }}
     .lesson-subtitle {{
       max-width: 680px;
-      margin: 14px 0 0;
+      margin: 6px 0 0;
       color: #5d6470;
-      font-size: clamp(1rem, 1.8vw, 1.14rem);
-      line-height: 1.6;
+      font-size: .92rem;
+      line-height: 1.45;
     }}
     .progress-card {{
-      display: grid;
-      grid-template-columns: 58px minmax(0, 1fr);
-      gap: 16px;
+      display: block;
+      min-width: 190px;
       align-items: center;
-      padding: 16px 18px;
-      border: 1px solid rgba(210, 210, 215, .78);
-      border-radius: 20px;
-      background: rgba(255, 255, 255, .72);
-      box-shadow: 0 16px 34px rgba(29, 29, 31, .06);
-      backdrop-filter: blur(18px);
+      padding: 0;
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+      box-shadow: none;
+      backdrop-filter: none;
     }}
     .progress-icon {{
-      width: 54px;
-      height: 54px;
-      border-radius: 999px;
-      display: grid;
-      place-items: center;
-      color: #d97706;
-      background: #fff7ed;
-      border: 1px solid rgba(217, 119, 6, .16);
-      font-size: 1.55rem;
+      display: none;
     }}
     .progress-label {{
       display: flex;
       justify-content: space-between;
       gap: 10px;
       color: var(--muted);
+      font-size: .84rem;
       font-weight: 700;
     }}
     .progress-count {{
@@ -792,8 +785,8 @@ def page_shell(title: str, body: str, relative_prefix: str = "") -> str:
       font-weight: 850;
     }}
     .progress-track {{
-      height: 10px;
-      margin-top: 10px;
+      height: 4px;
+      margin-top: 7px;
       border-radius: 999px;
       background: #e5e7eb;
       overflow: hidden;
@@ -802,15 +795,17 @@ def page_shell(title: str, body: str, relative_prefix: str = "") -> str:
       width: var(--progress, 8%);
       height: 100%;
       border-radius: inherit;
-      background: linear-gradient(90deg, #42b883, #a4d65e);
+      background: #2f8f7a;
       transition: width .22s ease;
     }}
     .lesson-controls {{
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 18px;
-      margin: 0 0 26px;
+      gap: 12px;
+      margin: 0 0 12px;
+      padding: 10px 0 0;
+      border-top: 1px solid var(--line);
     }}
     .scene-pager {{
       display: flex;
@@ -818,34 +813,35 @@ def page_shell(title: str, body: str, relative_prefix: str = "") -> str:
       gap: 12px;
     }}
     .scene-pill {{
-      min-width: 128px;
-      padding: 11px 16px;
-      border: 1px solid var(--line);
-      border-radius: 14px;
-      background: rgba(255, 255, 255, .78);
-      color: #4b5563;
+      min-width: 112px;
+      padding: 0;
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+      color: var(--muted);
       text-align: center;
-      font-weight: 800;
-      box-shadow: 0 8px 18px rgba(29, 29, 31, .04);
+      font-size: .9rem;
+      font-weight: 700;
+      box-shadow: none;
     }}
     .scene-arrow {{
-      width: 48px;
-      height: 48px;
-      border: 0;
-      border-radius: 999px;
+      width: 34px;
+      height: 34px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
       display: grid;
       place-items: center;
-      background: rgba(255,255,255,.72);
-      color: #9ca3af;
-      font-size: 1.35rem;
+      background: #ffffff;
+      color: #4b5563;
+      font-size: 1.1rem;
       font-weight: 900;
       cursor: pointer;
-      box-shadow: 0 10px 22px rgba(29, 29, 31, .06);
+      box-shadow: none;
     }}
     .scene-arrow.next {{
-      color: #ffffff;
-      background: linear-gradient(135deg, #25a46b, #147b5f);
-      box-shadow: 0 14px 24px rgba(20, 123, 95, .22);
+      color: #1d1d1f;
+      background: #ffffff;
+      box-shadow: none;
     }}
     .scene-arrow:disabled {{
       opacity: .48;
@@ -858,15 +854,15 @@ def page_shell(title: str, body: str, relative_prefix: str = "") -> str:
     .visual-practice > p {{ margin: 0 0 14px; color: var(--muted); }}
     .snippet-stack {{
       display: grid;
-      gap: 22px;
+      gap: 18px;
     }}
     .snippet-card {{
       position: relative;
       border: 1px solid var(--line);
-      border-radius: 26px;
+      border-radius: 22px;
       overflow: hidden;
       background: var(--panel);
-      box-shadow: 0 18px 48px rgba(0, 0, 0, .08);
+      box-shadow: 0 12px 34px rgba(0, 0, 0, .06);
     }}
     .snippet-card.correct {{
       border-color: rgba(52, 199, 89, .55);
@@ -886,8 +882,8 @@ def page_shell(title: str, body: str, relative_prefix: str = "") -> str:
     }}
     .snippet-card svg {{ width: 100%; height: auto; display: block; }}
     .snippet-body {{
-      padding: clamp(18px, 3vw, 28px);
-      background: rgba(255, 255, 255, .92);
+      padding: clamp(14px, 2.2vw, 22px);
+      background: rgba(255, 255, 255, .96);
       border-bottom: 1px solid var(--line);
     }}
     .snippet-body h4 {{
@@ -901,7 +897,7 @@ def page_shell(title: str, body: str, relative_prefix: str = "") -> str:
       align-items: center;
       justify-content: space-between;
       gap: 16px;
-      margin-bottom: 24px;
+      margin-bottom: 14px;
     }}
     .snippet-topic {{
       display: flex;
@@ -916,51 +912,52 @@ def page_shell(title: str, body: str, relative_prefix: str = "") -> str:
       border-radius: 999px;
       display: grid;
       place-items: center;
-      background: linear-gradient(135deg, #43c076, #17825f);
-      color: white;
-      box-shadow: 0 12px 22px rgba(23, 130, 95, .20);
+      background: #f5f5f7;
+      border: 1px solid var(--line);
+      color: #4b5563;
+      box-shadow: none;
     }}
     .new-pill {{
       flex: 0 0 auto;
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      padding: 8px 14px;
+      padding: 6px 10px;
       border-radius: 999px;
-      background: #eaf8ef;
-      color: #198754;
-      border: 1px solid rgba(25, 135, 84, .14);
-      font-size: .9rem;
+      background: #f5f5f7;
+      color: #6b7280;
+      border: 1px solid var(--line);
+      font-size: .78rem;
       font-weight: 800;
     }}
     .snippet-line {{
       display: grid;
-      gap: 8px;
-      margin: 0 0 22px;
-      padding: clamp(28px, 5vw, 48px);
+      gap: 2px;
+      margin: 0 0 12px;
+      padding: 14px 18px;
       border: 1px solid rgba(0, 0, 0, .08);
-      border-radius: 24px;
+      border-radius: 14px;
       background: #ffffff;
-      box-shadow: inset 0 1px 0 rgba(255, 255, 255, .72), 0 10px 26px rgba(29,29,31,.035);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, .72);
     }}
     .snippet-line strong {{
-      font-size: clamp(2.6rem, 5.8vw, 4.1rem);
-      line-height: 1.04;
+      font-size: clamp(1.28rem, 2.4vw, 1.9rem);
+      line-height: 1.12;
       color: var(--ink);
       font-weight: 850;
     }}
     .snippet-line span {{
-      color: var(--kannada);
-      font-weight: 760;
-      font-size: clamp(1.45rem, 3.4vw, 2.15rem);
+      color: var(--ink);
+      font-weight: 720;
+      font-size: clamp(1rem, 1.8vw, 1.28rem);
       line-height: 1.15;
       font-style: italic;
     }}
     .kannada-script {{
-      color: #c7511a;
-      font-size: clamp(2.1rem, 4.8vw, 3.65rem);
+      color: var(--ink);
+      font-size: clamp(1.18rem, 2.25vw, 1.72rem);
       font-weight: 850;
-      line-height: 1.18;
+      line-height: 1.12;
     }}
     .original-roman {{
       margin: 0 0 16px;
@@ -975,63 +972,73 @@ def page_shell(title: str, body: str, relative_prefix: str = "") -> str:
       line-height: 1.45;
     }}
     .grammar-note strong {{ color: var(--ink); }}
-    .listen-row {{ display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 26px; align-items: center; }}
+    .listen-row {{ display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; align-items: center; }}
     .speak-btn {{
-      border: 1px solid rgba(0, 0, 0, .10);
-      background: #ffffff;
-      color: var(--ink);
-      border-radius: 16px;
-      padding: 18px 22px;
+      border: 1px solid #d9d9df;
+      background: linear-gradient(#ffffff, #fafafa);
+      color: #1d1d1f;
+      border-radius: 10px;
+      padding: 10px 14px;
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: 12px;
+      gap: 8px;
       font: inherit;
-      font-size: clamp(1rem, 2.1vw, 1.18rem);
-      font-weight: 850;
+      font-size: .96rem;
+      font-weight: 750;
+      line-height: 1;
+      white-space: nowrap;
       cursor: pointer;
       min-width: 0;
-      box-shadow: 0 10px 24px rgba(29, 29, 31, .05);
-      transition: transform .16s ease, box-shadow .16s ease, background .16s ease, border-color .16s ease;
+      min-height: 46px;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, .04), 0 8px 18px rgba(29, 29, 31, .035);
+      transition: transform .14s ease, box-shadow .14s ease, background .14s ease, border-color .14s ease;
     }}
     .speak-btn:hover {{
       transform: translateY(-1px);
-      box-shadow: 0 8px 18px rgba(0, 0, 0, .08);
+      border-color: #c7c7cf;
+      background: linear-gradient(#ffffff, #f5f5f7);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, .06), 0 10px 22px rgba(29, 29, 31, .055);
     }}
     .speak-btn[data-lang="en-IN"] {{
-      color: #1764d8;
-      border-color: rgba(23, 100, 216, .22);
-      background: #eef5ff;
+      color: #1d1d1f;
+      border-color: #d9d9df;
+      background: linear-gradient(#ffffff, #fafafa);
     }}
     .speak-btn[data-lang="kn-IN"] {{
-      color: #177f62;
-      border-color: rgba(23, 127, 98, .22);
-      background: #eef8f3;
+      color: #1d1d1f;
+      border-color: #d9d9df;
+      background: linear-gradient(#ffffff, #fafafa);
     }}
     .practice-btn {{
-      color: #5b2fc6;
-      border-color: rgba(91, 47, 198, .22);
-      background: #f4efff;
+      color: #ffffff;
+      border-color: #1d1d1f;
+      background: #1d1d1f;
       min-width: 0;
     }}
-    .practice-btn:hover {{ box-shadow: 0 10px 22px rgba(91, 47, 198, .12); }}
+    .practice-btn:hover {{
+      border-color: #000000;
+      background: #000000;
+      box-shadow: 0 10px 22px rgba(29, 29, 31, .16);
+    }}
     .speak-btn:active {{ transform: translateY(1px); }}
     .speak-btn[disabled] {{ opacity: .6; cursor: wait; }}
     .btn-icon {{
-      width: 34px;
-      height: 34px;
+      width: 24px;
+      height: 24px;
       border-radius: 999px;
       display: inline-grid;
       place-items: center;
       flex: 0 0 auto;
-      color: #ffffff;
-      font-size: .95rem;
+      color: currentColor;
+      font-size: .78rem;
       line-height: 1;
-      box-shadow: inset 0 1px 0 rgba(255,255,255,.32);
+      background: transparent;
+      box-shadow: none;
     }}
-    .speak-btn[data-lang="en-IN"] .btn-icon {{ background: #1764d8; }}
-    .speak-btn[data-lang="kn-IN"] .btn-icon {{ background: #177f62; }}
-    .practice-btn .btn-icon {{ background: #6d3bd1; }}
+    .speak-btn[data-lang="en-IN"] .btn-icon {{ background: transparent; }}
+    .speak-btn[data-lang="kn-IN"] .btn-icon {{ background: transparent; }}
+    .practice-btn .btn-icon {{ background: transparent; color: #ffffff; }}
     .practice-feedback {{
       display: none;
       margin-top: 12px;
@@ -1128,23 +1135,24 @@ def page_shell(title: str, body: str, relative_prefix: str = "") -> str:
     .voice-toolbar {{
       display: flex;
       flex-wrap: wrap;
-      gap: 10px;
+      gap: 8px;
       align-items: center;
       margin: 0;
       color: var(--muted);
-      font-weight: 800;
+      font-size: .9rem;
+      font-weight: 700;
     }}
     .voice-toolbar select {{
       border: 1px solid var(--line);
-      border-radius: 14px;
-      padding: 12px 42px 12px 18px;
+      border-radius: 10px;
+      padding: 7px 30px 7px 10px;
       background: rgba(255,255,255,.78);
       color: var(--ink);
       font: inherit;
-      font-weight: 800;
-      box-shadow: 0 8px 18px rgba(29, 29, 31, .05);
+      font-weight: 700;
+      box-shadow: none;
     }}
-    .voice-wave {{ color: #5b5ff0; font-weight: 900; font-size: 1.4rem; }}
+    .voice-wave {{ display: none; }}
     .lesson-tip {{
       display: flex;
       justify-content: space-between;
@@ -1287,8 +1295,12 @@ def page_shell(title: str, body: str, relative_prefix: str = "") -> str:
     setupSceneProgress();
 
     async function playSarvamAudio(button, text, languageCode) {{
-      const speaker = document.querySelector("[data-kannada-speaker]")?.value || "";
-      const cacheKey = [languageCode, speaker, text].join("::");
+      const speaker = languageCode === "kn-IN"
+        ? (document.querySelector("[data-kannada-speaker]")?.value || "")
+        : "";
+      const prebuiltAudio = button.getAttribute("data-audio") || "";
+      const shouldUsePrebuiltAudio = Boolean(prebuiltAudio) && languageCode !== "kn-IN";
+      const cacheKey = [languageCode, shouldUsePrebuiltAudio ? "prebuilt" : speaker, shouldUsePrebuiltAudio ? prebuiltAudio : text].join("::");
       const originalHtml = button.innerHTML;
       try {{
         if (activeAudio) {{
@@ -1299,6 +1311,10 @@ def page_shell(title: str, body: str, relative_prefix: str = "") -> str:
         button.textContent = "Loading...";
 
         let url = audioCache.get(cacheKey);
+        if (!url && shouldUsePrebuiltAudio) {{
+          url = prebuiltAudio;
+          audioCache.set(cacheKey, url);
+        }}
         if (!url) {{
           const response = await fetch("/api/tts", {{
             method: "POST",
@@ -1642,17 +1658,10 @@ def render_chapter_sidebar(chapters: dict[int, list[PageConversation]], current:
         )
     return f"""
       <aside class="side-rail" aria-label="Chapter navigation">
-        <a class="rail-logo" href="../conversations-page-by-page.html" aria-label="All chapters">🌷</a>
+        <a class="rail-logo" href="../conversations-page-by-page.html" aria-label="All chapters">ಕ</a>
         <nav class="chapter-rail" aria-label="Chapters">
           {''.join(links)}
         </nav>
-        <div class="rail-tools" aria-label="Learning tools">
-          <span class="rail-tool"><span>📖</span><span>Review</span></span>
-          <span class="rail-tool"><span>▥</span><span>Progress</span></span>
-          <span class="rail-tool"><span>▣</span><span>Vocabulary</span></span>
-          <span class="rail-tool"><span class="avatar">👦</span><span>Kid Mode</span></span>
-          <span class="rail-tool"><span>?</span><span>Help</span></span>
-        </div>
       </aside>
     """
 
@@ -1676,7 +1685,12 @@ def render_row_practice(item: dict, index: int, prefix: str, corrections: dict[s
         if correction and original_roman and original_roman != practice_roman
         else ""
     )
+    original_html_line = f"          {original_html}" if original_html else ""
     img = prefix + item.get("img", "")
+    audio_en = item.get("audio_en", "")
+    audio_kn = item.get("audio_kn", "")
+    audio_en_attr = f' data-audio="{html.escape(prefix + audio_en)}"' if audio_en else ""
+    audio_kn_attr = f' data-audio="{html.escape(prefix + audio_kn)}"' if audio_kn else ""
     return f"""
       <article class="snippet-card" data-scene-card data-scene-index="{index}">
         <div class="snippet-body">
@@ -1692,10 +1706,10 @@ def render_row_practice(item: dict, index: int, prefix: str, corrections: dict[s
             {kannada_html}
             <span>{html.escape(practice_roman)}</span>
           </div>
-          {original_html}
+{original_html_line}
           <div class="listen-row">
-            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="{html.escape(english)}"><span class="btn-icon">▶</span>Play English</button>
-            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="{html.escape(speak_kn)}"><span class="btn-icon">▶</span>Play Kannada</button>
+            <button class="speak-btn" type="button" data-lang="en-IN" data-speak="{html.escape(english)}"{audio_en_attr}><span class="btn-icon">▶</span>Play English</button>
+            <button class="speak-btn" type="button" data-lang="kn-IN" data-speak="{html.escape(speak_kn)}"{audio_kn_attr}><span class="btn-icon">▶</span>Play Kannada</button>
             <button class="speak-btn practice-btn" type="button" data-practice="kn-IN" data-expected="{html.escape(practice_roman)}"><span class="btn-icon">🎙</span>Practice Kannada</button>
           </div>
           <div class="practice-feedback" aria-live="polite"></div>
@@ -1799,13 +1813,12 @@ def render_chapter_page(
           <header class="lesson-header">
             <div>
               <p class="lesson-kicker">Chapter {chapter}</p>
-              <h1 class="lesson-title">Chapter {chapter} Visual Practice</h1>
-              <p class="lesson-subtitle">{theme}. Scroll scene by scene; each image shows one sentence from this chapter.</p>
+              <h1 class="lesson-title">{theme}</h1>
+              <p class="lesson-subtitle">Scene-by-scene practice with audio and speaking checks.</p>
             </div>
             <div class="progress-card">
-              <div class="progress-icon">📖</div>
               <div>
-                <div class="progress-label"><span>Chapter Progress</span><span class="progress-count"><span data-current-scene>1</span> / {scene_count} scenes</span></div>
+                <div class="progress-label"><span>Progress</span><span class="progress-count"><span data-current-scene>1</span> / {scene_count}</span></div>
                 <div class="progress-track"><div class="progress-fill" data-progress-fill style="--progress: {100 / scene_count:.2f}%"></div></div>
               </div>
             </div>

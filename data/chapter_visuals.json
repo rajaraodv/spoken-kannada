@@ -1,278 +1,226 @@
 {
   "1": {
-    "theme_label": "Greetings, introductions, names, and people",
+    "theme_label": "Ice Cream After School: greetings, names, flavors",
     "items": [
       {
-        "img": "images/gemini-chapter-visuals/chapter-01/conversation-1-01.jpg",
-        "conversation": "1",
+        "img": "images/gemini-chapter-visuals/chapter-01-new/conversation-1a-01.jpg",
+        "audio_en": "audio/chapter-01/conversation-1a-01-en.wav",
+        "audio_kn": "audio/chapter-01/conversation-1a-01-kn.wav",
+        "conversation": "1A",
         "row": 1,
-        "english": "Good Morning",
-        "roman": "namaskaara",
-        "theme_label": "Introductions and people"
+        "english": "Hello.",
+        "roman": "Hello.",
+        "theme_label": "Meeting Meena"
       },
       {
-        "img": "images/gemini-chapter-visuals/chapter-01/conversation-1-02.jpg",
-        "conversation": "1",
+        "img": "images/gemini-chapter-visuals/chapter-01-new/conversation-1a-02.jpg",
+        "audio_en": "audio/chapter-01/conversation-1a-02-en.wav",
+        "audio_kn": "audio/chapter-01/conversation-1a-02-kn.wav",
+        "conversation": "1A",
         "row": 2,
-        "english": "Good Morning",
-        "roman": "namaskaara",
-        "theme_label": "Introductions and people"
+        "english": "Hello.",
+        "roman": "Hello.",
+        "theme_label": "Meeting Meena"
       },
       {
-        "img": "images/gemini-chapter-visuals/chapter-01/conversation-1-03.jpg",
-        "conversation": "1",
+        "img": "images/gemini-chapter-visuals/chapter-01-new/conversation-1a-03.jpg",
+        "audio_en": "audio/chapter-01/conversation-1a-03-en.wav",
+        "audio_kn": "audio/chapter-01/conversation-1a-03-kn.wav",
+        "conversation": "1A",
         "row": 3,
+        "english": "Are you in my class?",
+        "roman": "Neevu nanna class-nalli iddeera?",
+        "theme_label": "Meeting Meena"
+      },
+      {
+        "img": "images/gemini-chapter-visuals/chapter-01-new/conversation-1a-04.jpg",
+        "audio_en": "audio/chapter-01/conversation-1a-04-en.wav",
+        "audio_kn": "audio/chapter-01/conversation-1a-04-kn.wav",
+        "conversation": "1A",
+        "row": 4,
+        "english": "Yes, I am.",
+        "roman": "Howdu, naanu iddeeni.",
+        "theme_label": "Meeting Meena"
+      },
+      {
+        "img": "images/gemini-chapter-visuals/chapter-01-new/conversation-1a-05.jpg",
+        "audio_en": "audio/chapter-01/conversation-1a-05-en.wav",
+        "audio_kn": "audio/chapter-01/conversation-1a-05-kn.wav",
+        "conversation": "1A",
+        "row": 5,
         "english": "I am Raju.",
-        "roman": "naanu raju",
-        "theme_label": "Introductions and people"
+        "roman": "Naanu Raju.",
+        "theme_label": "Meeting Meena"
       },
       {
-        "img": "images/gemini-chapter-visuals/chapter-01/conversation-1-04.jpg",
-        "conversation": "1",
-        "row": 4,
-        "english": "He is Mohan.",
-        "roman": "ivaru moohan",
-        "theme_label": "Introductions and people"
-      },
-      {
-        "img": "images/gemini-chapter-visuals/chapter-01/conversation-1-05.jpg",
-        "conversation": "1",
-        "row": 5,
-        "english": "Who are you ?",
-        "roman": "niivu yaaru ?",
-        "theme_label": "Introductions and people"
-      },
-      {
-        "img": "images/gemini-chapter-visuals/chapter-01/conversation-1-06.jpg",
-        "conversation": "1",
+        "img": "images/gemini-chapter-visuals/chapter-01-new/conversation-1a-06.jpg",
+        "audio_en": "audio/chapter-01/conversation-1a-06-en.wav",
+        "audio_kn": "audio/chapter-01/conversation-1a-06-kn.wav",
+        "conversation": "1A",
         "row": 6,
-        "english": "I am Shekhar,",
-        "roman": "naanu seekhar",
-        "theme_label": "Introductions and people"
+        "english": "I am Meena.",
+        "roman": "Naanu Meena.",
+        "theme_label": "Meeting Meena"
       },
       {
-        "img": "images/gemini-chapter-visuals/chapter-01/conversation-1-07.jpg",
-        "conversation": "1",
+        "img": "images/gemini-chapter-visuals/chapter-01-new/conversation-1a-07.jpg",
+        "audio_en": "audio/chapter-01/conversation-1a-07-en.wav",
+        "audio_kn": "audio/chapter-01/conversation-1a-07-kn.wav",
+        "conversation": "1A",
         "row": 7,
-        "english": "Who is she ?",
-        "roman": "avaru yaaru 7",
-        "theme_label": "Introductions and people"
+        "english": "Nice to meet you, Meena.",
+        "roman": "Meena, nimmannu bheti maadi santosha aaytu.",
+        "theme_label": "Meeting Meena"
       },
       {
-        "img": "images/gemini-chapter-visuals/chapter-01/conversation-1-08.jpg",
-        "conversation": "1",
+        "img": "images/gemini-chapter-visuals/chapter-01-new/conversation-1a-08.jpg",
+        "audio_en": "audio/chapter-01/conversation-1a-08-en.wav",
+        "audio_kn": "audio/chapter-01/conversation-1a-08-kn.wav",
+        "conversation": "1A",
         "row": 8,
-        "english": "She is Sheela.",
-        "roman": "avaru $iila",
-        "theme_label": "Introductions and people"
+        "english": "Nice to meet you too.",
+        "roman": "Ninnannu bheti maadi santosha aaytu.",
+        "theme_label": "Meeting Meena"
       },
       {
-        "img": "images/gemini-chapter-visuals/chapter-01/conversation-1-09.jpg",
-        "conversation": "1",
-        "row": 9,
-        "english": "He is Shankar.",
-        "roman": "ivaru sankar",
-        "theme_label": "Introductions and people"
-      },
-      {
-        "img": "images/gemini-chapter-visuals/chapter-01/conversation-2-01.jpg",
-        "conversation": "2",
+        "img": "images/gemini-chapter-visuals/chapter-01-new/conversation-1b-01.jpg",
+        "audio_en": "audio/chapter-01/conversation-1b-01-en.wav",
+        "audio_kn": "audio/chapter-01/conversation-1b-01-kn.wav",
+        "conversation": "1B",
         "row": 1,
-        "english": "My name is Raju.",
-        "roman": "nanna hesaru raaju",
-        "theme_label": "Introductions and people"
+        "english": "Do you want ice cream?",
+        "roman": "Nimage ice cream beka?",
+        "theme_label": "Choosing Ice Cream"
       },
       {
-        "img": "images/gemini-chapter-visuals/chapter-01/conversation-2-02.jpg",
-        "conversation": "2",
+        "img": "images/gemini-chapter-visuals/chapter-01-new/conversation-1b-02.jpg",
+        "audio_en": "audio/chapter-01/conversation-1b-02-en.wav",
+        "audio_kn": "audio/chapter-01/conversation-1b-02-kn.wav",
+        "conversation": "1B",
         "row": 2,
-        "english": "I am a Kannada teacher.",
-        "roman": "naanu kannada mee§tru",
-        "theme_label": "Introductions and people"
+        "english": "Yes!",
+        "roman": "Howdu!",
+        "theme_label": "Choosing Ice Cream"
       },
       {
-        "img": "images/gemini-chapter-visuals/chapter-01/conversation-2-03.jpg",
-        "conversation": "2",
+        "img": "images/gemini-chapter-visuals/chapter-01-new/conversation-1b-03.jpg",
+        "audio_en": "audio/chapter-01/conversation-1b-03-en.wav",
+        "audio_kn": "audio/chapter-01/conversation-1b-03-kn.wav",
+        "conversation": "1B",
         "row": 3,
-        "english": "He is my friend.",
-        "roman": "ivaru nanna sneehitru",
-        "theme_label": "Introductions and people"
+        "english": "Which flavor do you like?",
+        "roman": "Nimage yaava flavor ishta anta helteera?",
+        "theme_label": "Choosing Ice Cream"
       },
       {
-        "img": "images/gemini-chapter-visuals/chapter-01/conversation-2-04.jpg",
-        "conversation": "2",
+        "img": "images/gemini-chapter-visuals/chapter-01-new/conversation-1b-04.jpg",
+        "audio_en": "audio/chapter-01/conversation-1b-04-en.wav",
+        "audio_kn": "audio/chapter-01/conversation-1b-04-kn.wav",
+        "conversation": "1B",
         "row": 4,
-        "english": "His name is Mohan.",
-        "roman": "ivara hesaru moohan",
-        "theme_label": "Introductions and people"
+        "english": "I like chocolate flavor.",
+        "roman": "Nanage chocolate flavor ishṭa.",
+        "theme_label": "Choosing Ice Cream"
       },
       {
-        "img": "images/gemini-chapter-visuals/chapter-01/conversation-2-05.jpg",
-        "conversation": "2",
+        "img": "images/gemini-chapter-visuals/chapter-01-new/conversation-1b-05.jpg",
+        "audio_en": "audio/chapter-01/conversation-1b-05-en.wav",
+        "audio_kn": "audio/chapter-01/conversation-1b-05-kn.wav",
+        "conversation": "1B",
         "row": 5,
-        "english": "Who are you ?",
-        "roman": "nivu yaaru ?",
-        "theme_label": "Introductions and people"
+        "english": "I like mango flavor.",
+        "roman": "Nanage maavinahannina flavor ishṭa.",
+        "theme_label": "Choosing Ice Cream"
       },
       {
-        "img": "images/gemini-chapter-visuals/chapter-01/conversation-2-06.jpg",
-        "conversation": "2",
+        "img": "images/gemini-chapter-visuals/chapter-01-new/conversation-1b-06.jpg",
+        "audio_en": "audio/chapter-01/conversation-1b-06-en.wav",
+        "audio_kn": "audio/chapter-01/conversation-1b-06-kn.wav",
+        "conversation": "1B",
         "row": 6,
-        "english": "I am a doctor.",
-        "roman": "naanu daaktar",
-        "theme_label": "Introductions and people"
+        "english": "Mango is yummy too.",
+        "roman": "Maavinahannu kooda ruchikara.",
+        "theme_label": "Choosing Ice Cream"
       },
       {
-        "img": "images/gemini-chapter-visuals/chapter-01/conversation-2-07.jpg",
-        "conversation": "2",
+        "img": "images/gemini-chapter-visuals/chapter-01-new/conversation-1b-07.jpg",
+        "audio_en": "audio/chapter-01/conversation-1b-07-en.wav",
+        "audio_kn": "audio/chapter-01/conversation-1b-07-kn.wav",
+        "conversation": "1B",
         "row": 7,
-        "english": "What is your name ?",
-        "roman": "nimma hesaru eenu ?",
-        "theme_label": "Introductions and people"
+        "english": "Let us get ice cream.",
+        "roman": "Icecream tagolona.",
+        "theme_label": "Choosing Ice Cream"
       },
       {
-        "img": "images/gemini-chapter-visuals/chapter-01/conversation-2-08.jpg",
-        "conversation": "2",
+        "img": "images/gemini-chapter-visuals/chapter-01-new/conversation-1b-08.jpg",
+        "audio_en": "audio/chapter-01/conversation-1b-08-en.wav",
+        "audio_kn": "audio/chapter-01/conversation-1b-08-kn.wav",
+        "conversation": "1B",
         "row": 8,
-        "english": "My name is Shekhar.",
-        "roman": "nanna hesaru $eekhar",
-        "theme_label": "Introductions and people"
+        "english": "Okay!",
+        "roman": "Sari!",
+        "theme_label": "Choosing Ice Cream"
       },
       {
-        "img": "images/gemini-chapter-visuals/chapter-01/conversation-2-09.jpg",
-        "conversation": "2",
-        "row": 9,
-        "english": "Is her name Lalitha?",
-        "roman": "avara hesaru lalitaanaa ?",
-        "theme_label": "Introductions and people"
-      },
-      {
-        "img": "images/gemini-chapter-visuals/chapter-01/conversation-2-10.jpg",
-        "conversation": "2",
-        "row": 10,
-        "english": "Yes,",
-        "roman": "haudu,",
-        "theme_label": "Introductions and people"
-      },
-      {
-        "img": "images/gemini-chapter-visuals/chapter-01/conversation-2-11.jpg",
-        "conversation": "2",
-        "row": 11,
-        "english": "Her name is Lalita.",
-        "roman": "avara hesaru ialita",
-        "theme_label": "Introductions and people"
-      },
-      {
-        "img": "images/gemini-chapter-visuals/chapter-01/conversation-2-12.jpg",
-        "conversation": "2",
-        "row": 12,
-        "english": "Is she a doctor ?",
-        "roman": "avaru ^aaktraa ?",
-        "theme_label": "Introductions and people"
-      },
-      {
-        "img": "images/gemini-chapter-visuals/chapter-01/conversation-2-13.jpg",
-        "conversation": "2",
-        "row": 13,
-        "english": "No, she is not a doctor,",
-        "roman": "alia, avaru daaktralla",
-        "theme_label": "Introductions and people"
-      },
-      {
-        "img": "images/gemini-chapter-visuals/chapter-01/conversation-2-14.jpg",
-        "conversation": "2",
-        "row": 14,
-        "english": "she is a nurse.",
-        "roman": "avaru na^su",
-        "theme_label": "Introductions and people"
-      },
-      {
-        "img": "images/gemini-chapter-visuals/chapter-01/conversation-3-01.jpg",
-        "conversation": "3",
+        "img": "images/gemini-chapter-visuals/chapter-01-new/conversation-1c-01.jpg",
+        "audio_en": "audio/chapter-01/conversation-1c-01-en.wav",
+        "audio_kn": "audio/chapter-01/conversation-1c-01-kn.wav",
+        "conversation": "1C",
         "row": 1,
-        "english": "What’s you name, child ?",
-        "roman": "ninna hesru eenu, magu ?",
-        "theme_label": "Introductions and people"
+        "english": "My ice cream was good.",
+        "roman": "Nanna ice cream chennaagittu.",
+        "theme_label": "After Ice Cream"
       },
       {
-        "img": "images/gemini-chapter-visuals/chapter-01/conversation-3-02.jpg",
-        "conversation": "3",
+        "img": "images/gemini-chapter-visuals/chapter-01-new/conversation-1c-02.jpg",
+        "audio_en": "audio/chapter-01/conversation-1c-02-en.wav",
+        "audio_kn": "audio/chapter-01/conversation-1c-02-kn.wav",
+        "conversation": "1C",
         "row": 2,
-        "english": "My name is Kiran.",
-        "roman": "nanna hesaru kiraj?",
-        "theme_label": "Introductions and people"
+        "english": "Mine was good too.",
+        "roman": "Nannadoo kooda chennaagittu.",
+        "theme_label": "After Ice Cream"
       },
       {
-        "img": "images/gemini-chapter-visuals/chapter-01/conversation-3-03.jpg",
-        "conversation": "3",
+        "img": "images/gemini-chapter-visuals/chapter-01-new/conversation-1c-03.jpg",
+        "audio_en": "audio/chapter-01/conversation-1c-03-en.wav",
+        "audio_kn": "audio/chapter-01/conversation-1c-03-kn.wav",
+        "conversation": "1C",
         "row": 3,
-        "english": "Is he your father ?",
-        "roman": "avaru nimma tandenaa?",
-        "theme_label": "Introductions and people"
+        "english": "See you at school tomorrow?",
+        "roman": "Naale schoolnalli sigonava?",
+        "theme_label": "After Ice Cream"
       },
       {
-        "img": "images/gemini-chapter-visuals/chapter-01/conversation-3-04.jpg",
-        "conversation": "3",
+        "img": "images/gemini-chapter-visuals/chapter-01-new/conversation-1c-04.jpg",
+        "audio_en": "audio/chapter-01/conversation-1c-04-en.wav",
+        "audio_kn": "audio/chapter-01/conversation-1c-04-kn.wav",
+        "conversation": "1C",
         "row": 4,
-        "english": "Yes, he is my father.",
-        "roman": "haudu, avaru namma tande",
-        "theme_label": "Introductions and people"
+        "english": "Yes, see you tomorrow.",
+        "roman": "Howdu, naale bheti aagona.",
+        "theme_label": "After Ice Cream"
       },
       {
-        "img": "images/gemini-chapter-visuals/chapter-01/conversation-continuation-01.jpg",
-        "conversation": "Continuation",
-        "row": 1,
-        "english": "Is her name Saroja ?",
-        "roman": "ava|a hesaru soroojaanaa ?",
-        "theme_label": "Introductions and people"
-      },
-      {
-        "img": "images/gemini-chapter-visuals/chapter-01/conversation-continuation-02.jpg",
-        "conversation": "Continuation",
-        "row": 2,
-        "english": "No,",
-        "roman": "alia,",
-        "theme_label": "Introductions and people"
-      },
-      {
-        "img": "images/gemini-chapter-visuals/chapter-01/conversation-continuation-03.jpg",
-        "conversation": "Continuation",
-        "row": 3,
-        "english": "her name is not Saroja.",
-        "roman": "avaa hesaru sarooja alia",
-        "theme_label": "Introductions and people"
-      },
-      {
-        "img": "images/gemini-chapter-visuals/chapter-01/conversation-continuation-04.jpg",
-        "conversation": "Continuation",
-        "row": 4,
-        "english": "Who is she ?",
-        "roman": "avaju yaaru ?",
-        "theme_label": "Introductions and people"
-      },
-      {
-        "img": "images/gemini-chapter-visuals/chapter-01/conversation-continuation-05.jpg",
-        "conversation": "Continuation",
+        "img": "images/gemini-chapter-visuals/chapter-01-new/conversation-1c-05.jpg",
+        "audio_en": "audio/chapter-01/conversation-1c-05-en.wav",
+        "audio_kn": "audio/chapter-01/conversation-1c-05-kn.wav",
+        "conversation": "1C",
         "row": 5,
-        "english": "She is my younger sister.",
-        "roman": "ava|u nanna tangi",
-        "theme_label": "Introductions and people"
+        "english": "See you, Raju.",
+        "roman": "Sigona, Raju.",
+        "theme_label": "After Ice Cream"
       },
       {
-        "img": "images/gemini-chapter-visuals/chapter-01/conversation-continuation-06.jpg",
-        "conversation": "Continuation",
+        "img": "images/gemini-chapter-visuals/chapter-01-new/conversation-1c-06.jpg",
+        "audio_en": "audio/chapter-01/conversation-1c-06-en.wav",
+        "audio_kn": "audio/chapter-01/conversation-1c-06-kn.wav",
+        "conversation": "1C",
         "row": 6,
-        "english": "What is her name ?",
-        "roman": "avaja hesaru eenu ?",
-        "theme_label": "Introductions and people"
-      },
-      {
-        "img": "images/gemini-chapter-visuals/chapter-01/conversation-continuation-07.jpg",
-        "conversation": "Continuation",
-        "row": 7,
-        "english": "Her name is Manju.",
-        "roman": "avaja hesaru manju",
-        "theme_label": "Introductions and people"
+        "english": "See you, Meena.",
+        "roman": "Sigona, Meena.",
+        "theme_label": "After Ice Cream"
       }
     ]
   },
