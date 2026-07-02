@@ -1,0 +1,1852 @@
+{
+  "schema_version": "1.0",
+  "title": "Spoken Kannada Kids Curriculum Proposal",
+  "purpose": "A reviewable replacement/overlay curriculum for children learning spoken Kannada from English.",
+  "design_notes": [
+    "Start with high-frequency real-life classroom and home phrases, not adult phrasebook topics.",
+    "Use short call-and-response exchanges that a child can act out immediately.",
+    "Keep each chapter focused on one communicative goal and a small reusable vocabulary set.",
+    "Prefer natural spoken Kannada over literal English translation.",
+    "Include Kannada script, learner-friendly romanization, and original English intent for each line."
+  ],
+  "current_material_review": {
+    "strengths": [
+      "The source has many paired English/Kannada lines and broad everyday topics.",
+      "It already contains useful categories such as introductions, home, food, health, cinema, shopping, and travel.",
+      "The side-by-side format works well for visual sentence practice."
+    ],
+    "issues_for_kids": [
+      "The first chapter jumps into third-person references like he/she/this person/that person before children have enough personal survival phrases.",
+      "Many scenarios are adult-heavy: rent, lawyers, office situations, formal visitors, and old-fashioned hotel dialogue.",
+      "Some English prompts are unnatural for children today, for example 'How do you do?' or overly formal 'be seated'.",
+      "Several OCR romanizations are noisy, so they are not safe as practice targets without correction.",
+      "The chapters are long; kids usually need smaller scenes with repetition, choice, and familiar settings."
+    ]
+  },
+  "recommended_sequence": [
+    "greetings_and_names",
+    "feelings_and_needs",
+    "family_and_friends",
+    "classroom_language",
+    "home_objects",
+    "food_and_snacks",
+    "play_and_preferences",
+    "places_and_directions",
+    "shopping_small_items",
+    "health_and_help",
+    "daily_routine",
+    "story_review"
+  ],
+  "chapters": [
+    {
+      "chapter": 1,
+      "title": "Hello, my name is...",
+      "why_this_helps_kids": "Kids need a friendly first win: greet, say their name, ask another child their name.",
+      "focus": [
+        "namaskara",
+        "nanna hesaru",
+        "ninna hesarenu"
+      ],
+      "conversations": [
+        {
+          "id": "1A",
+          "title": "Meeting a new friend",
+          "setting": "school entrance",
+          "goal": "Greet and exchange names",
+          "lines": [
+            {
+              "speaker": "Raju",
+              "english": "Hi!",
+              "kannada": "ನಮಸ್ಕಾರ!",
+              "roman": "Namaskara!"
+            },
+            {
+              "speaker": "Meena",
+              "english": "Hi!",
+              "kannada": "ನಮಸ್ಕಾರ!",
+              "roman": "Namaskara!"
+            },
+            {
+              "speaker": "Raju",
+              "english": "My name is Raju.",
+              "kannada": "ನನ್ನ ಹೆಸರು ರಾಜು.",
+              "roman": "Nanna hesaru Raju."
+            },
+            {
+              "speaker": "Raju",
+              "english": "What is your name?",
+              "kannada": "ನಿನ್ನ ಹೆಸರೇನು?",
+              "roman": "Ninna hesarenu?"
+            },
+            {
+              "speaker": "Meena",
+              "english": "My name is Meena.",
+              "kannada": "ನನ್ನ ಹೆಸರು ಮೀನಾ.",
+              "roman": "Nanna hesaru Meena."
+            }
+          ],
+          "keywords": [
+            "ನಮಸ್ಕಾರ",
+            "ಹೆಸರು",
+            "ನಿನ್ನ",
+            "ನನ್ನ"
+          ]
+        },
+        {
+          "id": "1B",
+          "title": "Saying goodbye",
+          "setting": "classroom door",
+          "goal": "Close a short interaction politely",
+          "lines": [
+            {
+              "speaker": "Meena",
+              "english": "See you tomorrow.",
+              "kannada": "ನಾಳೆ ಸಿಗೋಣ.",
+              "roman": "Naale sigona."
+            },
+            {
+              "speaker": "Raju",
+              "english": "Okay, bye!",
+              "kannada": "ಸರಿ, ಬೈ!",
+              "roman": "Sari, bye!"
+            },
+            {
+              "speaker": "Meena",
+              "english": "Bye!",
+              "kannada": "ಬೈ!",
+              "roman": "Bye!"
+            }
+          ],
+          "keywords": [
+            "ನಾಳೆ",
+            "ಸರಿ",
+            "ಬೈ"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 2,
+      "title": "How are you?",
+      "why_this_helps_kids": "Children quickly need words for feelings and simple answers.",
+      "focus": [
+        "hegiddiya",
+        "chennagiddene",
+        "khushi",
+        "sustaagide"
+      ],
+      "conversations": [
+        {
+          "id": "2A",
+          "title": "Checking in",
+          "setting": "morning circle",
+          "goal": "Ask and answer how someone feels",
+          "lines": [
+            {
+              "speaker": "Teacher",
+              "english": "How are you?",
+              "kannada": "ನೀನು ಹೇಗಿದ್ದೀಯ?",
+              "roman": "Neenu hegiddiya?"
+            },
+            {
+              "speaker": "Anu",
+              "english": "I am good.",
+              "kannada": "ನಾನು ಚೆನ್ನಾಗಿದ್ದೇನೆ.",
+              "roman": "Naanu chennagiddene."
+            },
+            {
+              "speaker": "Teacher",
+              "english": "Are you happy?",
+              "kannada": "ನಿನಗೆ ಖುಷಿಯೇ?",
+              "roman": "Ninage khushiye?"
+            },
+            {
+              "speaker": "Anu",
+              "english": "Yes, I am happy.",
+              "kannada": "ಹೌದು, ನನಗೆ ಖುಷಿ.",
+              "roman": "Howdu, nanage khushi."
+            }
+          ],
+          "keywords": [
+            "ಹೇಗಿದ್ದೀಯ",
+            "ಚೆನ್ನಾಗಿದೆ",
+            "ಖುಷಿ"
+          ]
+        },
+        {
+          "id": "2B",
+          "title": "Feeling tired",
+          "setting": "after play time",
+          "goal": "Say a basic feeling or need",
+          "lines": [
+            {
+              "speaker": "Asha",
+              "english": "I am tired.",
+              "kannada": "ನನಗೆ ಸುಸ್ತಾಗಿದೆ.",
+              "roman": "Nanage sustaagide."
+            },
+            {
+              "speaker": "Dad",
+              "english": "Sit here.",
+              "kannada": "ಇಲ್ಲಿ ಕುಳಿತುಕೋ.",
+              "roman": "Illi kulituko."
+            },
+            {
+              "speaker": "Asha",
+              "english": "Thank you.",
+              "kannada": "ಧನ್ಯವಾದ.",
+              "roman": "Dhanyavaada."
+            }
+          ],
+          "keywords": [
+            "ಸುಸ್ತಾಗಿದೆ",
+            "ಇಲ್ಲಿ",
+            "ಧನ್ಯವಾದ"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 3,
+      "title": "This is my family",
+      "why_this_helps_kids": "Family words are familiar and support picture-based learning.",
+      "focus": [
+        "amma",
+        "appa",
+        "akka",
+        "tamma",
+        "ivaru"
+      ],
+      "conversations": [
+        {
+          "id": "3A",
+          "title": "Family photo",
+          "setting": "living room",
+          "goal": "Introduce family members",
+          "lines": [
+            {
+              "speaker": "Kiran",
+              "english": "This is my mother.",
+              "kannada": "ಇವರು ನನ್ನ ಅಮ್ಮ.",
+              "roman": "Ivaru nanna amma."
+            },
+            {
+              "speaker": "Friend",
+              "english": "What is her name?",
+              "kannada": "ಅವರ ಹೆಸರೇನು?",
+              "roman": "Avara hesarenu?"
+            },
+            {
+              "speaker": "Kiran",
+              "english": "Her name is Lakshmi.",
+              "kannada": "ಅವರ ಹೆಸರು ಲಕ್ಷ್ಮಿ.",
+              "roman": "Avara hesaru Lakshmi."
+            },
+            {
+              "speaker": "Kiran",
+              "english": "This is my father.",
+              "kannada": "ಇವರು ನನ್ನ ಅಪ್ಪ.",
+              "roman": "Ivaru nanna appa."
+            }
+          ],
+          "keywords": [
+            "ಅಮ್ಮ",
+            "ಅಪ್ಪ",
+            "ಇವರು",
+            "ಹೆಸರು"
+          ]
+        },
+        {
+          "id": "3B",
+          "title": "Sibling talk",
+          "setting": "home",
+          "goal": "Talk about brothers and sisters",
+          "lines": [
+            {
+              "speaker": "Maya",
+              "english": "Do you have a sister?",
+              "kannada": "ನಿನಗೆ ಅಕ್ಕ ಇದ್ದಾಳಾ?",
+              "roman": "Ninage akka iddaala?"
+            },
+            {
+              "speaker": "Ravi",
+              "english": "Yes, I have a sister.",
+              "kannada": "ಹೌದು, ನನಗೆ ಅಕ್ಕ ಇದ್ದಾಳೆ.",
+              "roman": "Howdu, nanage akka iddaale."
+            },
+            {
+              "speaker": "Maya",
+              "english": "I have a younger brother.",
+              "kannada": "ನನಗೆ ತಮ್ಮ ಇದ್ದಾನೆ.",
+              "roman": "Nanage tamma iddaane."
+            }
+          ],
+          "keywords": [
+            "ಅಕ್ಕ",
+            "ತಮ್ಮ",
+            "ಇದ್ದಾಳೆ",
+            "ಇದ್ದಾನೆ"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 4,
+      "title": "Classroom words",
+      "why_this_helps_kids": "Kids need classroom survival language before complex grammar.",
+      "focus": [
+        "banni",
+        "kelu",
+        "helu",
+        "gottilla",
+        "matte heli"
+      ],
+      "conversations": [
+        {
+          "id": "4A",
+          "title": "Teacher instructions",
+          "setting": "classroom",
+          "goal": "Understand simple classroom commands",
+          "lines": [
+            {
+              "speaker": "Teacher",
+              "english": "Come here.",
+              "kannada": "ಇಲ್ಲಿ ಬಾ.",
+              "roman": "Illi baa."
+            },
+            {
+              "speaker": "Student",
+              "english": "Okay, teacher.",
+              "kannada": "ಸರಿ, ಟೀಚರ್.",
+              "roman": "Sari, teacher."
+            },
+            {
+              "speaker": "Teacher",
+              "english": "Listen carefully.",
+              "kannada": "ಚೆನ್ನಾಗಿ ಕೇಳು.",
+              "roman": "Chennaagi kelu."
+            },
+            {
+              "speaker": "Student",
+              "english": "Okay.",
+              "kannada": "ಸರಿ.",
+              "roman": "Sari."
+            }
+          ],
+          "keywords": [
+            "ಬಾ",
+            "ಕೇಳು",
+            "ಸರಿ"
+          ]
+        },
+        {
+          "id": "4B",
+          "title": "Asking again",
+          "setting": "classroom",
+          "goal": "Ask for repetition without fear",
+          "lines": [
+            {
+              "speaker": "Student",
+              "english": "I don't know.",
+              "kannada": "ನನಗೆ ಗೊತ್ತಿಲ್ಲ.",
+              "roman": "Nanage gottilla."
+            },
+            {
+              "speaker": "Student",
+              "english": "Please say it again.",
+              "kannada": "ದಯವಿಟ್ಟು ಮತ್ತೆ ಹೇಳಿ.",
+              "roman": "Dayavittu matte heli."
+            },
+            {
+              "speaker": "Teacher",
+              "english": "Sure, listen.",
+              "kannada": "ಸರಿ, ಕೇಳು.",
+              "roman": "Sari, kelu."
+            }
+          ],
+          "keywords": [
+            "ಗೊತ್ತಿಲ್ಲ",
+            "ಮತ್ತೆ",
+            "ಹೇಳಿ"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "title": "Things around me",
+      "why_this_helps_kids": "Object naming pairs well with images and pointing.",
+      "focus": [
+        "idu",
+        "adu",
+        "pustaka",
+        "pen",
+        "bag"
+      ],
+      "conversations": [
+        {
+          "id": "5A",
+          "title": "School bag",
+          "setting": "classroom desk",
+          "goal": "Name common school objects",
+          "lines": [
+            {
+              "speaker": "Teacher",
+              "english": "What is this?",
+              "kannada": "ಇದು ಏನು?",
+              "roman": "Idu enu?"
+            },
+            {
+              "speaker": "Child",
+              "english": "This is a book.",
+              "kannada": "ಇದು ಪುಸ್ತಕ.",
+              "roman": "Idu pustaka."
+            },
+            {
+              "speaker": "Teacher",
+              "english": "What is that?",
+              "kannada": "ಅದು ಏನು?",
+              "roman": "Adu enu?"
+            },
+            {
+              "speaker": "Child",
+              "english": "That is my bag.",
+              "kannada": "ಅದು ನನ್ನ ಬ್ಯಾಗ್.",
+              "roman": "Adu nanna bag."
+            }
+          ],
+          "keywords": [
+            "ಇದು",
+            "ಅದು",
+            "ಪುಸ್ತಕ",
+            "ಬ್ಯಾಗ್"
+          ]
+        },
+        {
+          "id": "5B",
+          "title": "Lost pencil",
+          "setting": "classroom",
+          "goal": "Ask where something is",
+          "lines": [
+            {
+              "speaker": "Nila",
+              "english": "Where is my pencil?",
+              "kannada": "ನನ್ನ ಪೆನ್ಸಿಲ್ ಎಲ್ಲಿದೆ?",
+              "roman": "Nanna pencil ellide?"
+            },
+            {
+              "speaker": "Arun",
+              "english": "It is here.",
+              "kannada": "ಅದು ಇಲ್ಲಿದೆ.",
+              "roman": "Adu illide."
+            },
+            {
+              "speaker": "Nila",
+              "english": "Thank you!",
+              "kannada": "ಧನ್ಯವಾದ!",
+              "roman": "Dhanyavaada!"
+            }
+          ],
+          "keywords": [
+            "ಎಲ್ಲಿದೆ",
+            "ಇಲ್ಲಿದೆ",
+            "ಪೆನ್ಸಿಲ್"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 6,
+      "title": "Food and water",
+      "why_this_helps_kids": "Food creates immediate motivation and useful home practice.",
+      "focus": [
+        "neeru",
+        "beku",
+        "beda",
+        "oota",
+        "tindi"
+      ],
+      "conversations": [
+        {
+          "id": "6A",
+          "title": "Asking for water",
+          "setting": "home",
+          "goal": "Ask for something politely",
+          "lines": [
+            {
+              "speaker": "Child",
+              "english": "Mom, I want water.",
+              "kannada": "ಅಮ್ಮ, ನನಗೆ ನೀರು ಬೇಕು.",
+              "roman": "Amma, nanage neeru beku."
+            },
+            {
+              "speaker": "Mom",
+              "english": "Here, drink water.",
+              "kannada": "ಇಲ್ಲಿ, ನೀರು ಕುಡಿ.",
+              "roman": "Illi, neeru kudi."
+            },
+            {
+              "speaker": "Child",
+              "english": "Thank you, mom.",
+              "kannada": "ಧನ್ಯವಾದ ಅಮ್ಮ.",
+              "roman": "Dhanyavaada amma."
+            }
+          ],
+          "keywords": [
+            "ನೀರು",
+            "ಬೇಕು",
+            "ಕುಡಿ"
+          ]
+        },
+        {
+          "id": "6B",
+          "title": "Snack choice",
+          "setting": "kitchen",
+          "goal": "Say want/don't want",
+          "lines": [
+            {
+              "speaker": "Dad",
+              "english": "Do you want dosa?",
+              "kannada": "ನಿನಗೆ ದೋಸೆ ಬೇಕಾ?",
+              "roman": "Ninage dose beka?"
+            },
+            {
+              "speaker": "Child",
+              "english": "Yes, I want dosa.",
+              "kannada": "ಹೌದು, ನನಗೆ ದೋಸೆ ಬೇಕು.",
+              "roman": "Howdu, nanage dose beku."
+            },
+            {
+              "speaker": "Dad",
+              "english": "Do you want coffee?",
+              "kannada": "ನಿನಗೆ ಕಾಫಿ ಬೇಕಾ?",
+              "roman": "Ninage coffee beka?"
+            },
+            {
+              "speaker": "Child",
+              "english": "No, I don't want coffee.",
+              "kannada": "ಇಲ್ಲ, ನನಗೆ ಕಾಫಿ ಬೇಡ.",
+              "roman": "Illa, nanage coffee beda."
+            }
+          ],
+          "keywords": [
+            "ದೋಸೆ",
+            "ಕಾಫಿ",
+            "ಬೇಕು",
+            "ಬೇಡ"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 7,
+      "title": "Likes and favorites",
+      "why_this_helps_kids": "Preference language helps kids talk about themselves.",
+      "focus": [
+        "ishtaa",
+        "yaavudu",
+        "banna",
+        "aata"
+      ],
+      "conversations": [
+        {
+          "id": "7A",
+          "title": "Favorite color",
+          "setting": "art table",
+          "goal": "Ask and answer likes",
+          "lines": [
+            {
+              "speaker": "Riya",
+              "english": "Which color do you like?",
+              "kannada": "ನಿನಗೆ ಯಾವ ಬಣ್ಣ ಇಷ್ಟ?",
+              "roman": "Ninage yaava banna ishta?"
+            },
+            {
+              "speaker": "Mohan",
+              "english": "I like blue.",
+              "kannada": "ನನಗೆ ನೀಲಿ ಇಷ್ಟ.",
+              "roman": "Nanage neeli ishta."
+            },
+            {
+              "speaker": "Mohan",
+              "english": "Which color do you like?",
+              "kannada": "ನಿನಗೆ ಯಾವ ಬಣ್ಣ ಇಷ್ಟ?",
+              "roman": "Ninage yaava banna ishta?"
+            },
+            {
+              "speaker": "Riya",
+              "english": "I like red.",
+              "kannada": "ನನಗೆ ಕೆಂಪು ಇಷ್ಟ.",
+              "roman": "Nanage kempu ishta."
+            }
+          ],
+          "keywords": [
+            "ಬಣ್ಣ",
+            "ಇಷ್ಟ",
+            "ನೀಲಿ",
+            "ಕೆಂಪು"
+          ]
+        },
+        {
+          "id": "7B",
+          "title": "Favorite game",
+          "setting": "playground",
+          "goal": "Talk about games",
+          "lines": [
+            {
+              "speaker": "Arjun",
+              "english": "Do you like cricket?",
+              "kannada": "ನಿನಗೆ ಕ್ರಿಕೆಟ್ ಇಷ್ಟವಾ?",
+              "roman": "Ninage cricket ishtava?"
+            },
+            {
+              "speaker": "Sara",
+              "english": "Yes, I like cricket.",
+              "kannada": "ಹೌದು, ನನಗೆ ಕ್ರಿಕೆಟ್ ಇಷ್ಟ.",
+              "roman": "Howdu, nanage cricket ishta."
+            },
+            {
+              "speaker": "Sara",
+              "english": "Let's play!",
+              "kannada": "ಆಡೋಣ!",
+              "roman": "Aadona!"
+            }
+          ],
+          "keywords": [
+            "ಕ್ರಿಕೆಟ್",
+            "ಆಡೋಣ",
+            "ಇಷ್ಟ"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 8,
+      "title": "Where is it?",
+      "why_this_helps_kids": "Location words are easy to show visually and useful in games.",
+      "focus": [
+        "elli",
+        "illi",
+        "alli",
+        "mele",
+        "kelage"
+      ],
+      "conversations": [
+        {
+          "id": "8A",
+          "title": "Finding the ball",
+          "setting": "playroom",
+          "goal": "Ask and answer location",
+          "lines": [
+            {
+              "speaker": "Child",
+              "english": "Where is the ball?",
+              "kannada": "ಚೆಂಡು ಎಲ್ಲಿದೆ?",
+              "roman": "Chendu ellide?"
+            },
+            {
+              "speaker": "Friend",
+              "english": "The ball is here.",
+              "kannada": "ಚೆಂಡು ಇಲ್ಲಿದೆ.",
+              "roman": "Chendu illide."
+            },
+            {
+              "speaker": "Child",
+              "english": "Is it under the table?",
+              "kannada": "ಅದು ಮೇಜಿನ ಕೆಳಗಿದೆಯಾ?",
+              "roman": "Adu mejina kelagideya?"
+            },
+            {
+              "speaker": "Friend",
+              "english": "Yes, it is under the table.",
+              "kannada": "ಹೌದು, ಅದು ಮೇಜಿನ ಕೆಳಗಿದೆ.",
+              "roman": "Howdu, adu mejina kelagide."
+            }
+          ],
+          "keywords": [
+            "ಚೆಂಡು",
+            "ಎಲ್ಲಿದೆ",
+            "ಇಲ್ಲಿ",
+            "ಕೆಳಗೆ"
+          ]
+        },
+        {
+          "id": "8B",
+          "title": "Come here",
+          "setting": "park",
+          "goal": "Use here/there with movement",
+          "lines": [
+            {
+              "speaker": "Asha",
+              "english": "Come here!",
+              "kannada": "ಇಲ್ಲಿ ಬಾ!",
+              "roman": "Illi baa!"
+            },
+            {
+              "speaker": "Ravi",
+              "english": "I am coming.",
+              "kannada": "ನಾನು ಬರುತ್ತಿದ್ದೇನೆ.",
+              "roman": "Naanu baruttiddene."
+            },
+            {
+              "speaker": "Asha",
+              "english": "Look there.",
+              "kannada": "ಅಲ್ಲಿ ನೋಡು.",
+              "roman": "Alli nodu."
+            }
+          ],
+          "keywords": [
+            "ಇಲ್ಲಿ",
+            "ಅಲ್ಲಿ",
+            "ಬಾ",
+            "ನೋಡು"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 9,
+      "title": "Can I...?",
+      "why_this_helps_kids": "Permission phrases make classroom/home interactions safer and practical.",
+      "focus": [
+        "barabahuda",
+        "kodabahuda",
+        "dayavittu",
+        "sari"
+      ],
+      "conversations": [
+        {
+          "id": "9A",
+          "title": "Bathroom break",
+          "setting": "classroom",
+          "goal": "Ask permission politely",
+          "lines": [
+            {
+              "speaker": "Student",
+              "english": "May I go out?",
+              "kannada": "ನಾನು ಹೊರಗೆ ಹೋಗಬಹುದಾ?",
+              "roman": "Naanu horage hogabahuda?"
+            },
+            {
+              "speaker": "Teacher",
+              "english": "Yes, go.",
+              "kannada": "ಹೌದು, ಹೋಗು.",
+              "roman": "Howdu, hogu."
+            },
+            {
+              "speaker": "Student",
+              "english": "Thank you.",
+              "kannada": "ಧನ್ಯವಾದ.",
+              "roman": "Dhanyavaada."
+            }
+          ],
+          "keywords": [
+            "ಹೋಗಬಹುದಾ",
+            "ಹೋಗು",
+            "ಧನ್ಯವಾದ"
+          ]
+        },
+        {
+          "id": "9B",
+          "title": "Borrowing a crayon",
+          "setting": "art class",
+          "goal": "Ask to borrow/share",
+          "lines": [
+            {
+              "speaker": "Nina",
+              "english": "Can you give me the red crayon?",
+              "kannada": "ಕೆಂಪು ಕ್ರೇಯಾನ್ ಕೊಡ್ತೀಯಾ?",
+              "roman": "Kempu crayon kodtiya?"
+            },
+            {
+              "speaker": "Dev",
+              "english": "Yes, take it.",
+              "kannada": "ಹೌದು, ತೆಗೆದುಕೋ.",
+              "roman": "Howdu, tegeduko."
+            },
+            {
+              "speaker": "Nina",
+              "english": "Thanks!",
+              "kannada": "ಥ್ಯಾಂಕ್ಸ್!",
+              "roman": "Thanks!"
+            }
+          ],
+          "keywords": [
+            "ಕೊಡ್ತೀಯಾ",
+            "ತೆಗೆದುಕೋ",
+            "ಕೆಂಪು"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 10,
+      "title": "Numbers and age",
+      "why_this_helps_kids": "Age, counting, and small quantities are common beginner topics.",
+      "focus": [
+        "ondu",
+        "eradu",
+        "mooru",
+        "vayassu",
+        "eshtu"
+      ],
+      "conversations": [
+        {
+          "id": "10A",
+          "title": "How old are you?",
+          "setting": "birthday party",
+          "goal": "Ask and say age",
+          "lines": [
+            {
+              "speaker": "Friend",
+              "english": "How old are you?",
+              "kannada": "ನಿನಗೆ ಎಷ್ಟು ವರ್ಷ?",
+              "roman": "Ninage eshtu varsha?"
+            },
+            {
+              "speaker": "Child",
+              "english": "I am seven years old.",
+              "kannada": "ನನಗೆ ಏಳು ವರ್ಷ.",
+              "roman": "Nanage elu varsha."
+            },
+            {
+              "speaker": "Friend",
+              "english": "Happy birthday!",
+              "kannada": "ಹುಟ್ಟುಹಬ್ಬದ ಶುಭಾಶಯಗಳು!",
+              "roman": "Huttuhabbada shubhashayagalu!"
+            }
+          ],
+          "keywords": [
+            "ಎಷ್ಟು",
+            "ವರ್ಷ",
+            "ಏಳು"
+          ]
+        },
+        {
+          "id": "10B",
+          "title": "Counting snacks",
+          "setting": "kitchen table",
+          "goal": "Use small numbers",
+          "lines": [
+            {
+              "speaker": "Mom",
+              "english": "How many bananas?",
+              "kannada": "ಎಷ್ಟು ಬಾಳೆಹಣ್ಣು?",
+              "roman": "Eshtu baalehannu?"
+            },
+            {
+              "speaker": "Child",
+              "english": "Two bananas.",
+              "kannada": "ಎರಡು ಬಾಳೆಹಣ್ಣು.",
+              "roman": "Eradu baalehannu."
+            },
+            {
+              "speaker": "Mom",
+              "english": "Good!",
+              "kannada": "ಚೆನ್ನಾಗಿದೆ!",
+              "roman": "Chennaagide!"
+            }
+          ],
+          "keywords": [
+            "ಎಷ್ಟು",
+            "ಎರಡು",
+            "ಬಾಳೆಹಣ್ಣು"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 11,
+      "title": "Morning routine",
+      "why_this_helps_kids": "Routine language gives repeatable daily practice at home.",
+      "focus": [
+        "elu",
+        "hallujju",
+        "snana",
+        "schoolige"
+      ],
+      "conversations": [
+        {
+          "id": "11A",
+          "title": "Wake up",
+          "setting": "bedroom",
+          "goal": "Use morning routine commands",
+          "lines": [
+            {
+              "speaker": "Mom",
+              "english": "Wake up.",
+              "kannada": "ಏಳು.",
+              "roman": "Elu."
+            },
+            {
+              "speaker": "Child",
+              "english": "I am getting up.",
+              "kannada": "ನಾನು ಏಳುತ್ತಿದ್ದೇನೆ.",
+              "roman": "Naanu eluttiddene."
+            },
+            {
+              "speaker": "Mom",
+              "english": "Brush your teeth.",
+              "kannada": "ಹಲ್ಲು ತೊಳೆಯು.",
+              "roman": "Hallu toleyu."
+            },
+            {
+              "speaker": "Child",
+              "english": "Okay.",
+              "kannada": "ಸರಿ.",
+              "roman": "Sari."
+            }
+          ],
+          "keywords": [
+            "ಏಳು",
+            "ಹಲ್ಲು",
+            "ಸರಿ"
+          ]
+        },
+        {
+          "id": "11B",
+          "title": "Going to school",
+          "setting": "front door",
+          "goal": "Say ready/not ready",
+          "lines": [
+            {
+              "speaker": "Dad",
+              "english": "Are you ready?",
+              "kannada": "ನೀನು ರೆಡಿಯಾ?",
+              "roman": "Neenu readya?"
+            },
+            {
+              "speaker": "Child",
+              "english": "Yes, I am ready.",
+              "kannada": "ಹೌದು, ನಾನು ರೆಡಿ.",
+              "roman": "Howdu, naanu ready."
+            },
+            {
+              "speaker": "Dad",
+              "english": "Let's go to school.",
+              "kannada": "ಸ್ಕೂಲಿಗೆ ಹೋಗೋಣ.",
+              "roman": "Schoolige hogona."
+            }
+          ],
+          "keywords": [
+            "ರೆಡಿ",
+            "ಸ್ಕೂಲ್",
+            "ಹೋಗೋಣ"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 12,
+      "title": "Polite words",
+      "why_this_helps_kids": "Please, sorry, thanks, and excuse me are high-value social phrases.",
+      "focus": [
+        "dayavittu",
+        "kshamisi",
+        "dhanyavaada",
+        "paravagilla"
+      ],
+      "conversations": [
+        {
+          "id": "12A",
+          "title": "Saying sorry",
+          "setting": "playground",
+          "goal": "Apologize and respond",
+          "lines": [
+            {
+              "speaker": "Arun",
+              "english": "Sorry, I pushed you.",
+              "kannada": "ಕ್ಷಮಿಸು, ನಾನು ನಿನ್ನ ತಳ್ಳಿದೆ.",
+              "roman": "Kshamisu, naanu ninna tallide."
+            },
+            {
+              "speaker": "Maya",
+              "english": "It's okay.",
+              "kannada": "ಪರವಾಗಿಲ್ಲ.",
+              "roman": "Paravagilla."
+            },
+            {
+              "speaker": "Arun",
+              "english": "Are you okay?",
+              "kannada": "ನೀನು ಸರಿಯಾಗಿದ್ದೀಯಾ?",
+              "roman": "Neenu sariyaagiddiya?"
+            },
+            {
+              "speaker": "Maya",
+              "english": "Yes, I am okay.",
+              "kannada": "ಹೌದು, ನಾನು ಸರಿ.",
+              "roman": "Howdu, naanu sari."
+            }
+          ],
+          "keywords": [
+            "ಕ್ಷಮಿಸು",
+            "ಪರವಾಗಿಲ್ಲ",
+            "ಸರಿ"
+          ]
+        },
+        {
+          "id": "12B",
+          "title": "Please help",
+          "setting": "classroom",
+          "goal": "Ask for help politely",
+          "lines": [
+            {
+              "speaker": "Child",
+              "english": "Please help me.",
+              "kannada": "ದಯವಿಟ್ಟು ನನಗೆ ಸಹಾಯ ಮಾಡಿ.",
+              "roman": "Dayavittu nanage sahaaya maadi."
+            },
+            {
+              "speaker": "Teacher",
+              "english": "Sure, show me.",
+              "kannada": "ಸರಿ, ತೋರಿಸು.",
+              "roman": "Sari, torisu."
+            },
+            {
+              "speaker": "Child",
+              "english": "Thank you.",
+              "kannada": "ಧನ್ಯವಾದ.",
+              "roman": "Dhanyavaada."
+            }
+          ],
+          "keywords": [
+            "ದಯವಿಟ್ಟು",
+            "ಸಹಾಯ",
+            "ಧನ್ಯವಾದ"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 13,
+      "title": "Clothes and colors",
+      "why_this_helps_kids": "Keeps the later curriculum useful while making the context child-centered and image-friendly.",
+      "focus": [
+        "ಅಂಗಿ",
+        "ನೀಲಿ",
+        "ಮೇಲೆ"
+      ],
+      "conversations": [
+        {
+          "id": "13A",
+          "title": "Clothes and colors",
+          "setting": "getting dressed",
+          "goal": "Say clothing and colors",
+          "lines": [
+            {
+              "speaker": "Mom",
+              "english": "Wear your blue shirt.",
+              "kannada": "ನಿನ್ನ ನೀಲಿ ಅಂಗಿ ಹಾಕು.",
+              "roman": "Ninna neeli angi haaku."
+            },
+            {
+              "speaker": "Child",
+              "english": "Where is my shirt?",
+              "kannada": "ನನ್ನ ಅಂಗಿ ಎಲ್ಲಿದೆ?",
+              "roman": "Nanna angi ellide?"
+            },
+            {
+              "speaker": "Mom",
+              "english": "It is on the chair.",
+              "kannada": "ಅದು ಕುರ್ಚಿಯ ಮೇಲೆ ಇದೆ.",
+              "roman": "Adu kurchiya mele ide."
+            }
+          ],
+          "keywords": [
+            "ಅಂಗಿ",
+            "ನೀಲಿ",
+            "ಮೇಲೆ"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 14,
+      "title": "Body and health",
+      "why_this_helps_kids": "Keeps the later curriculum useful while making the context child-centered and image-friendly.",
+      "focus": [
+        "ಏನಾಯಿತು",
+        "ನೋವು",
+        "ನೀರು"
+      ],
+      "conversations": [
+        {
+          "id": "14A",
+          "title": "Body and health",
+          "setting": "nurse room",
+          "goal": "Say what hurts",
+          "lines": [
+            {
+              "speaker": "Nurse",
+              "english": "What happened?",
+              "kannada": "ಏನಾಯಿತು?",
+              "roman": "Enaayitu?"
+            },
+            {
+              "speaker": "Child",
+              "english": "My stomach hurts.",
+              "kannada": "ನನ್ನ ಹೊಟ್ಟೆ ನೋವು.",
+              "roman": "Nanna hotte novu."
+            },
+            {
+              "speaker": "Nurse",
+              "english": "Drink some water.",
+              "kannada": "ಸ್ವಲ್ಪ ನೀರು ಕುಡಿ.",
+              "roman": "Svalpa neeru kudi."
+            }
+          ],
+          "keywords": [
+            "ಏನಾಯಿತು",
+            "ನೋವು",
+            "ನೀರು"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 15,
+      "title": "Weather",
+      "why_this_helps_kids": "Keeps the later curriculum useful while making the context child-centered and image-friendly.",
+      "focus": [
+        "ಮಳೆ",
+        "ಛತ್ರಿ",
+        "ಅಜ್ಜಿ"
+      ],
+      "conversations": [
+        {
+          "id": "15A",
+          "title": "Weather",
+          "setting": "window",
+          "goal": "Talk about weather",
+          "lines": [
+            {
+              "speaker": "Child",
+              "english": "It is raining.",
+              "kannada": "ಮಳೆ ಬರುತ್ತಿದೆ.",
+              "roman": "Male baruttide."
+            },
+            {
+              "speaker": "Grandma",
+              "english": "Take an umbrella.",
+              "kannada": "ಛತ್ರಿ ತೆಗೆದುಕೋ.",
+              "roman": "Chatri tegeduko."
+            },
+            {
+              "speaker": "Child",
+              "english": "Okay, grandma.",
+              "kannada": "ಸರಿ ಅಜ್ಜಿ.",
+              "roman": "Sari ajji."
+            }
+          ],
+          "keywords": [
+            "ಮಳೆ",
+            "ಛತ್ರಿ",
+            "ಅಜ್ಜಿ"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 16,
+      "title": "Animals",
+      "why_this_helps_kids": "Keeps the later curriculum useful while making the context child-centered and image-friendly.",
+      "focus": [
+        "ಪ್ರಾಣಿ",
+        "ನಾಯಿ",
+        "ಇಷ್ಟ"
+      ],
+      "conversations": [
+        {
+          "id": "16A",
+          "title": "Animals",
+          "setting": "picture book",
+          "goal": "Name animals and likes",
+          "lines": [
+            {
+              "speaker": "Teacher",
+              "english": "What animal is this?",
+              "kannada": "ಇದು ಯಾವ ಪ್ರಾಣಿ?",
+              "roman": "Idu yaava praani?"
+            },
+            {
+              "speaker": "Child",
+              "english": "This is a dog.",
+              "kannada": "ಇದು ನಾಯಿ.",
+              "roman": "Idu naayi."
+            },
+            {
+              "speaker": "Teacher",
+              "english": "Do you like dogs?",
+              "kannada": "ನಿನಗೆ ನಾಯಿ ಇಷ್ಟವಾ?",
+              "roman": "Ninage naayi ishtava?"
+            }
+          ],
+          "keywords": [
+            "ಪ್ರಾಣಿ",
+            "ನಾಯಿ",
+            "ಇಷ್ಟ"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 17,
+      "title": "At the park",
+      "why_this_helps_kids": "Keeps the later curriculum useful while making the context child-centered and image-friendly.",
+      "focus": [
+        "ಆಡು",
+        "ಆಡೋಣ",
+        "ಮೊದಲು"
+      ],
+      "conversations": [
+        {
+          "id": "17A",
+          "title": "At the park",
+          "setting": "park",
+          "goal": "Invite someone to play",
+          "lines": [
+            {
+              "speaker": "Ravi",
+              "english": "Do you want to play?",
+              "kannada": "ನೀನು ಆಡ್ತೀಯಾ?",
+              "roman": "Neenu aadtiya?"
+            },
+            {
+              "speaker": "Meena",
+              "english": "Yes, let's play.",
+              "kannada": "ಹೌದು, ಆಡೋಣ.",
+              "roman": "Howdu, aadona."
+            },
+            {
+              "speaker": "Ravi",
+              "english": "You go first.",
+              "kannada": "ನೀನು ಮೊದಲು ಹೋಗು.",
+              "roman": "Neenu modalu hogu."
+            }
+          ],
+          "keywords": [
+            "ಆಡು",
+            "ಆಡೋಣ",
+            "ಮೊದಲು"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 18,
+      "title": "At a shop",
+      "why_this_helps_kids": "Keeps the later curriculum useful while making the context child-centered and image-friendly.",
+      "focus": [
+        "ಎಷ್ಟು",
+        "ಹತ್ತು",
+        "ಒಂದು"
+      ],
+      "conversations": [
+        {
+          "id": "18A",
+          "title": "At a shop",
+          "setting": "small store",
+          "goal": "Ask price and buy one item",
+          "lines": [
+            {
+              "speaker": "Child",
+              "english": "How much is this?",
+              "kannada": "ಇದು ಎಷ್ಟು?",
+              "roman": "Idu eshtu?"
+            },
+            {
+              "speaker": "Shopkeeper",
+              "english": "It is ten rupees.",
+              "kannada": "ಇದು ಹತ್ತು ರೂಪಾಯಿ.",
+              "roman": "Idu hattu rupayi."
+            },
+            {
+              "speaker": "Child",
+              "english": "I want one.",
+              "kannada": "ನನಗೆ ಒಂದು ಬೇಕು.",
+              "roman": "Nanage ondu beku."
+            }
+          ],
+          "keywords": [
+            "ಎಷ್ಟು",
+            "ಹತ್ತು",
+            "ಒಂದು"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 19,
+      "title": "Directions",
+      "why_this_helps_kids": "Keeps the later curriculum useful while making the context child-centered and image-friendly.",
+      "focus": [
+        "ಎಲ್ಲಿ",
+        "ಅಲ್ಲಿ",
+        "ಎಡಕ್ಕೆ"
+      ],
+      "conversations": [
+        {
+          "id": "19A",
+          "title": "Directions",
+          "setting": "school hallway",
+          "goal": "Ask where a place is",
+          "lines": [
+            {
+              "speaker": "Child",
+              "english": "Where is the library?",
+              "kannada": "ಲೈಬ್ರರಿ ಎಲ್ಲಿದೆ?",
+              "roman": "Library ellide?"
+            },
+            {
+              "speaker": "Teacher",
+              "english": "It is there, on the left.",
+              "kannada": "ಅದು ಅಲ್ಲಿ, ಎಡಕ್ಕೆ ಇದೆ.",
+              "roman": "Adu alli, edakke ide."
+            },
+            {
+              "speaker": "Child",
+              "english": "Thank you.",
+              "kannada": "ಧನ್ಯವಾದ.",
+              "roman": "Dhanyavaada."
+            }
+          ],
+          "keywords": [
+            "ಎಲ್ಲಿ",
+            "ಅಲ್ಲಿ",
+            "ಎಡಕ್ಕೆ"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 20,
+      "title": "Transport",
+      "why_this_helps_kids": "Keeps the later curriculum useful while making the context child-centered and image-friendly.",
+      "focus": [
+        "ಹೇಗೆ",
+        "ಬಸ್",
+        "ಹೋಗೋಣ"
+      ],
+      "conversations": [
+        {
+          "id": "20A",
+          "title": "Transport",
+          "setting": "bus stop",
+          "goal": "Talk about going by bus/car",
+          "lines": [
+            {
+              "speaker": "Dad",
+              "english": "How shall we go?",
+              "kannada": "ನಾವು ಹೇಗೆ ಹೋಗೋಣ?",
+              "roman": "Naavu hege hogona?"
+            },
+            {
+              "speaker": "Child",
+              "english": "Let's go by bus.",
+              "kannada": "ಬಸ್ಸಿನಲ್ಲಿ ಹೋಗೋಣ.",
+              "roman": "Bussinalli hogona."
+            },
+            {
+              "speaker": "Dad",
+              "english": "Okay, come.",
+              "kannada": "ಸರಿ, ಬಾ.",
+              "roman": "Sari, baa."
+            }
+          ],
+          "keywords": [
+            "ಹೇಗೆ",
+            "ಬಸ್",
+            "ಹೋಗೋಣ"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 21,
+      "title": "Library",
+      "why_this_helps_kids": "Keeps the later curriculum useful while making the context child-centered and image-friendly.",
+      "focus": [
+        "ಪುಸ್ತಕ",
+        "ಓದು",
+        "ಬೇಕು"
+      ],
+      "conversations": [
+        {
+          "id": "21A",
+          "title": "Library",
+          "setting": "library",
+          "goal": "Ask for a book",
+          "lines": [
+            {
+              "speaker": "Child",
+              "english": "I want this book.",
+              "kannada": "ನನಗೆ ಈ ಪುಸ್ತಕ ಬೇಕು.",
+              "roman": "Nanage ee pustaka beku."
+            },
+            {
+              "speaker": "Librarian",
+              "english": "Take it and read.",
+              "kannada": "ತೆಗೆದುಕೊಂಡು ಓದು.",
+              "roman": "Tegedukondu odu."
+            },
+            {
+              "speaker": "Child",
+              "english": "Thank you.",
+              "kannada": "ಧನ್ಯವಾದ.",
+              "roman": "Dhanyavaada."
+            }
+          ],
+          "keywords": [
+            "ಪುಸ್ತಕ",
+            "ಓದು",
+            "ಬೇಕು"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 22,
+      "title": "Screen time",
+      "why_this_helps_kids": "Keeps the later curriculum useful while making the context child-centered and image-friendly.",
+      "focus": [
+        "ನೋಡಬಹುದಾ",
+        "ಮೇಲೆ",
+        "ಸರಿ"
+      ],
+      "conversations": [
+        {
+          "id": "22A",
+          "title": "Screen time",
+          "setting": "home",
+          "goal": "Ask to watch/play",
+          "lines": [
+            {
+              "speaker": "Child",
+              "english": "Can I watch cartoons?",
+              "kannada": "ನಾನು ಕಾರ್ಟೂನ್ ನೋಡಬಹುದಾ?",
+              "roman": "Naanu cartoon nodabahuda?"
+            },
+            {
+              "speaker": "Mom",
+              "english": "After homework.",
+              "kannada": "ಹೋಮ್‌ವರ್ಕ್ ಆದ ಮೇಲೆ.",
+              "roman": "Homework aada mele."
+            },
+            {
+              "speaker": "Child",
+              "english": "Okay.",
+              "kannada": "ಸರಿ.",
+              "roman": "Sari."
+            }
+          ],
+          "keywords": [
+            "ನೋಡಬಹುದಾ",
+            "ಮೇಲೆ",
+            "ಸರಿ"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 23,
+      "title": "Homework",
+      "why_this_helps_kids": "Keeps the later curriculum useful while making the context child-centered and image-friendly.",
+      "focus": [
+        "ಮುಗಿದಿದೆ",
+        "ಇನ್ನೂ",
+        "ಈಗ"
+      ],
+      "conversations": [
+        {
+          "id": "23A",
+          "title": "Homework",
+          "setting": "study table",
+          "goal": "Ask about homework",
+          "lines": [
+            {
+              "speaker": "Dad",
+              "english": "Did you finish homework?",
+              "kannada": "ಹೋಮ್‌ವರ್ಕ್ ಮುಗಿದಿದೆಯಾ?",
+              "roman": "Homework mugidideya?"
+            },
+            {
+              "speaker": "Child",
+              "english": "Not yet.",
+              "kannada": "ಇನ್ನೂ ಇಲ್ಲ.",
+              "roman": "Innu illa."
+            },
+            {
+              "speaker": "Dad",
+              "english": "Do it now.",
+              "kannada": "ಈಗ ಮಾಡು.",
+              "roman": "Eega maadu."
+            }
+          ],
+          "keywords": [
+            "ಮುಗಿದಿದೆ",
+            "ಇನ್ನೂ",
+            "ಈಗ"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 24,
+      "title": "Helping at home",
+      "why_this_helps_kids": "Keeps the later curriculum useful while making the context child-centered and image-friendly.",
+      "focus": [
+        "ಸಹಾಯ",
+        "ತಟ್ಟೆ",
+        "ತಂದುಕೊ"
+      ],
+      "conversations": [
+        {
+          "id": "24A",
+          "title": "Helping at home",
+          "setting": "kitchen",
+          "goal": "Offer help",
+          "lines": [
+            {
+              "speaker": "Child",
+              "english": "Can I help?",
+              "kannada": "ನಾನು ಸಹಾಯ ಮಾಡಬಹುದಾ?",
+              "roman": "Naanu sahaaya maadabahuda?"
+            },
+            {
+              "speaker": "Mom",
+              "english": "Yes, bring plates.",
+              "kannada": "ಹೌದು, ತಟ್ಟೆ ತಂದುಕೊ.",
+              "roman": "Howdu, tatte tanduko."
+            },
+            {
+              "speaker": "Child",
+              "english": "Okay.",
+              "kannada": "ಸರಿ.",
+              "roman": "Sari."
+            }
+          ],
+          "keywords": [
+            "ಸಹಾಯ",
+            "ತಟ್ಟೆ",
+            "ತಂದುಕೊ"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 25,
+      "title": "Festival day",
+      "why_this_helps_kids": "Keeps the later curriculum useful while making the context child-centered and image-friendly.",
+      "focus": [
+        "ಹಬ್ಬ",
+        "ಅಜ್ಜ",
+        "ಒಳ್ಳೆಯದಾಗಲಿ"
+      ],
+      "conversations": [
+        {
+          "id": "25A",
+          "title": "Festival day",
+          "setting": "home",
+          "goal": "Greet relatives",
+          "lines": [
+            {
+              "speaker": "Grandpa",
+              "english": "Happy festival!",
+              "kannada": "ಹಬ್ಬದ ಶುಭಾಶಯಗಳು!",
+              "roman": "Habbada shubhashayagalu!"
+            },
+            {
+              "speaker": "Child",
+              "english": "Happy festival, ajja!",
+              "kannada": "ಹಬ್ಬದ ಶುಭಾಶಯಗಳು, ಅಜ್ಜ!",
+              "roman": "Habbada shubhashayagalu, ajja!"
+            },
+            {
+              "speaker": "Grandpa",
+              "english": "Bless you.",
+              "kannada": "ಒಳ್ಳೆಯದಾಗಲಿ.",
+              "roman": "Olleyadaagali."
+            }
+          ],
+          "keywords": [
+            "ಹಬ್ಬ",
+            "ಅಜ್ಜ",
+            "ಒಳ್ಳೆಯದಾಗಲಿ"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 26,
+      "title": "Phone call",
+      "why_this_helps_kids": "Keeps the later curriculum useful while making the context child-centered and image-friendly.",
+      "focus": [
+        "ಹಲೋ",
+        "ಅಜ್ಜಿ",
+        "ಹೇಗಿದ್ದೀಯ"
+      ],
+      "conversations": [
+        {
+          "id": "26A",
+          "title": "Phone call",
+          "setting": "phone",
+          "goal": "Start a simple call",
+          "lines": [
+            {
+              "speaker": "Child",
+              "english": "Hello, grandma?",
+              "kannada": "ಹಲೋ, ಅಜ್ಜಿ?",
+              "roman": "Hello, ajji?"
+            },
+            {
+              "speaker": "Grandma",
+              "english": "Yes, how are you?",
+              "kannada": "ಹೌದು, ಹೇಗಿದ್ದೀಯ?",
+              "roman": "Howdu, hegiddiya?"
+            },
+            {
+              "speaker": "Child",
+              "english": "I am good.",
+              "kannada": "ನಾನು ಚೆನ್ನಾಗಿದ್ದೇನೆ.",
+              "roman": "Naanu chennagiddene."
+            }
+          ],
+          "keywords": [
+            "ಹಲೋ",
+            "ಅಜ್ಜಿ",
+            "ಹೇಗಿದ್ದೀಯ"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 27,
+      "title": "Making plans",
+      "why_this_helps_kids": "Keeps the later curriculum useful while making the context child-centered and image-friendly.",
+      "focus": [
+        "ಬರ್ತೀಯಾ",
+        "ಮನೆ",
+        "ಗಂಟೆ"
+      ],
+      "conversations": [
+        {
+          "id": "27A",
+          "title": "Making plans",
+          "setting": "home",
+          "goal": "Plan a visit/playdate",
+          "lines": [
+            {
+              "speaker": "Friend",
+              "english": "Will you come to my house?",
+              "kannada": "ನೀನು ನನ್ನ ಮನೆಗೆ ಬರ್ತೀಯಾ?",
+              "roman": "Neenu nanna manege bartiya?"
+            },
+            {
+              "speaker": "Child",
+              "english": "Yes, I will come.",
+              "kannada": "ಹೌದು, ನಾನು ಬರ್ತೇನೆ.",
+              "roman": "Howdu, naanu bartene."
+            },
+            {
+              "speaker": "Friend",
+              "english": "Come at five.",
+              "kannada": "ಐದು ಗಂಟೆಗೆ ಬಾ.",
+              "roman": "Aidu gantege baa."
+            }
+          ],
+          "keywords": [
+            "ಬರ್ತೀಯಾ",
+            "ಮನೆ",
+            "ಗಂಟೆ"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 28,
+      "title": "Story words",
+      "why_this_helps_kids": "Keeps the later curriculum useful while making the context child-centered and image-friendly.",
+      "focus": [
+        "ಕಥೆ",
+        "ಯಾರು",
+        "ಏನು"
+      ],
+      "conversations": [
+        {
+          "id": "28A",
+          "title": "Story words",
+          "setting": "reading corner",
+          "goal": "Talk about a story",
+          "lines": [
+            {
+              "speaker": "Teacher",
+              "english": "Who is in the story?",
+              "kannada": "ಕಥೆಯಲ್ಲಿ ಯಾರು ಇದ್ದಾರೆ?",
+              "roman": "Katheyalli yaaru iddaare?"
+            },
+            {
+              "speaker": "Child",
+              "english": "A small boy is there.",
+              "kannada": "ಒಬ್ಬ ಚಿಕ್ಕ ಹುಡುಗ ಇದ್ದಾನೆ.",
+              "roman": "Obba chikka huduga iddaane."
+            },
+            {
+              "speaker": "Teacher",
+              "english": "What is he doing?",
+              "kannada": "ಅವನು ಏನು ಮಾಡುತ್ತಿದ್ದಾನೆ?",
+              "roman": "Avanu enu maaduttiddaane?"
+            }
+          ],
+          "keywords": [
+            "ಕಥೆ",
+            "ಯಾರು",
+            "ಏನು"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 29,
+      "title": "Review: meeting people",
+      "why_this_helps_kids": "Keeps the later curriculum useful while making the context child-centered and image-friendly.",
+      "focus": [
+        "ಹೆಸರು",
+        "ಹೇಗಿದ್ದೀಯ",
+        "ಚೆನ್ನಾಗಿದೆ"
+      ],
+      "conversations": [
+        {
+          "id": "29A",
+          "title": "Review: meeting people",
+          "setting": "school",
+          "goal": "Combine greeting, name, feeling",
+          "lines": [
+            {
+              "speaker": "Anu",
+              "english": "Hi, what is your name?",
+              "kannada": "ನಮಸ್ಕಾರ, ನಿನ್ನ ಹೆಸರೇನು?",
+              "roman": "Namaskara, ninna hesarenu?"
+            },
+            {
+              "speaker": "Dev",
+              "english": "My name is Dev. How are you?",
+              "kannada": "ನನ್ನ ಹೆಸರು ದೇವ್. ನೀನು ಹೇಗಿದ್ದೀಯ?",
+              "roman": "Nanna hesaru Dev. Neenu hegiddiya?"
+            },
+            {
+              "speaker": "Anu",
+              "english": "I am good.",
+              "kannada": "ನಾನು ಚೆನ್ನಾಗಿದ್ದೇನೆ.",
+              "roman": "Naanu chennagiddene."
+            }
+          ],
+          "keywords": [
+            "ಹೆಸರು",
+            "ಹೇಗಿದ್ದೀಯ",
+            "ಚೆನ್ನಾಗಿದೆ"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 30,
+      "title": "Review: asking for things",
+      "why_this_helps_kids": "Keeps the later curriculum useful while making the context child-centered and image-friendly.",
+      "focus": [
+        "ಬೇಕು",
+        "ಯಾವ",
+        "ತೆಗೆದುಕೋ"
+      ],
+      "conversations": [
+        {
+          "id": "30A",
+          "title": "Review: asking for things",
+          "setting": "home",
+          "goal": "Combine want, give, thanks",
+          "lines": [
+            {
+              "speaker": "Child",
+              "english": "Dad, I want a book.",
+              "kannada": "ಅಪ್ಪ, ನನಗೆ ಪುಸ್ತಕ ಬೇಕು.",
+              "roman": "Appa, nanage pustaka beku."
+            },
+            {
+              "speaker": "Dad",
+              "english": "Which book?",
+              "kannada": "ಯಾವ ಪುಸ್ತಕ?",
+              "roman": "Yaava pustaka?"
+            },
+            {
+              "speaker": "Child",
+              "english": "That story book.",
+              "kannada": "ಆ ಕಥೆ ಪುಸ್ತಕ.",
+              "roman": "Aa kathe pustaka."
+            },
+            {
+              "speaker": "Dad",
+              "english": "Here, take it.",
+              "kannada": "ಇಲ್ಲಿ, ತೆಗೆದುಕೋ.",
+              "roman": "Illi, tegeduko."
+            }
+          ],
+          "keywords": [
+            "ಬೇಕು",
+            "ಯಾವ",
+            "ತೆಗೆದುಕೋ"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 31,
+      "title": "Review: mini conversation",
+      "why_this_helps_kids": "Keeps the later curriculum useful while making the context child-centered and image-friendly.",
+      "focus": [
+        "ಆಡು",
+        "ಚೆಂಡು",
+        "ಅಲ್ಲಿ",
+        "ಸರಿ"
+      ],
+      "conversations": [
+        {
+          "id": "31A",
+          "title": "Review: mini conversation",
+          "setting": "playground",
+          "goal": "Use a longer natural exchange",
+          "lines": [
+            {
+              "speaker": "Maya",
+              "english": "Hi Ravi, do you want to play?",
+              "kannada": "ನಮಸ್ಕಾರ ರವಿ, ನೀನು ಆಡ್ತೀಯಾ?",
+              "roman": "Namaskara Ravi, neenu aadtiya?"
+            },
+            {
+              "speaker": "Ravi",
+              "english": "Yes. Where is the ball?",
+              "kannada": "ಹೌದು. ಚೆಂಡು ಎಲ್ಲಿದೆ?",
+              "roman": "Howdu. Chendu ellide?"
+            },
+            {
+              "speaker": "Maya",
+              "english": "The ball is there.",
+              "kannada": "ಚೆಂಡು ಅಲ್ಲಿ ಇದೆ.",
+              "roman": "Chendu alli ide."
+            },
+            {
+              "speaker": "Ravi",
+              "english": "Okay, let's play!",
+              "kannada": "ಸರಿ, ಆಡೋಣ!",
+              "roman": "Sari, aadona!"
+            }
+          ],
+          "keywords": [
+            "ಆಡು",
+            "ಚೆಂಡು",
+            "ಅಲ್ಲಿ",
+            "ಸರಿ"
+          ]
+        }
+      ]
+    }
+  ]
+}
