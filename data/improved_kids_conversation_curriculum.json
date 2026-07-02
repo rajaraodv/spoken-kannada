@@ -7,7 +7,10 @@
     "Use short call-and-response exchanges that a child can act out immediately.",
     "Keep each chapter focused on one communicative goal and a small reusable vocabulary set.",
     "Prefer natural spoken Kannada over literal English translation.",
-    "Include Kannada script, learner-friendly romanization, and original English intent for each line."
+    "Include Kannada script, learner-friendly romanization, and original English intent for each line.",
+    "Dialogues should sound like real kids talking, not like grammar worksheets.",
+    "Each conversation still carries concepts_taught so we know what language idea it practices.",
+    "Tense practice should appear inside scenes: food, games, car rides, school, parks, and playdates."
   ],
   "current_material_review": {
     "strengths": [
@@ -54,23 +57,42 @@
           "id": "1A",
           "title": "Meeting a new friend at the ice cream shop",
           "setting": "ice cream shop",
-          "goal": "Greet, exchange names, and talk about a favorite treat",
+          "goal": "Meet someone new and talk about favorite flavors",
           "lines": [
             {
               "speaker": "Raju",
-              "english": "Hi!",
+              "english": "Hi, are you in my class?",
               "kannada": "",
-              "roman": ""
+              "roman": "",
+              "grammar": [
+                "I",
+                "tense_present",
+                "you"
+              ]
             },
             {
               "speaker": "Meena",
-              "english": "Hi!",
+              "english": "Yes! I sit near the window.",
               "kannada": "",
-              "roman": ""
+              "roman": "",
+              "grammar": [
+                "I"
+              ]
             },
             {
               "speaker": "Raju",
-              "english": "My name is Raju.",
+              "english": "I'm Raju. What's your name?",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "I",
+                "tense_present",
+                "you"
+              ]
+            },
+            {
+              "speaker": "Meena",
+              "english": "I'm Meena.",
               "kannada": "",
               "roman": "",
               "grammar": [
@@ -80,7 +102,22 @@
             },
             {
               "speaker": "Raju",
-              "english": "What is your name?",
+              "english": "Nice to meet you, Meena.",
+              "kannada": "",
+              "roman": ""
+            },
+            {
+              "speaker": "Meena",
+              "english": "Nice to meet you too.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "you"
+              ]
+            },
+            {
+              "speaker": "Raju",
+              "english": "Are you getting ice cream?",
               "kannada": "",
               "roman": "",
               "grammar": [
@@ -90,7 +127,18 @@
             },
             {
               "speaker": "Meena",
-              "english": "My name is Meena.",
+              "english": "Yes, chocolate is my favorite.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "I",
+                "tense_past",
+                "tense_present"
+              ]
+            },
+            {
+              "speaker": "Raju",
+              "english": "Mine is mango.",
               "kannada": "",
               "roman": "",
               "grammar": [
@@ -99,59 +147,19 @@
               ]
             },
             {
-              "speaker": "Raju",
-              "english": "Do you like ice cream?",
-              "kannada": "",
-              "roman": "",
-              "grammar": [
-                "you"
-              ]
-            },
-            {
               "speaker": "Meena",
-              "english": "Yes, I love ice cream!",
-              "kannada": "",
-              "roman": "",
-              "grammar": [
-                "I"
-              ]
-            },
-            {
-              "speaker": "Raju",
-              "english": "Which flavor do you like?",
-              "kannada": "",
-              "roman": "",
-              "grammar": [
-                "you"
-              ]
-            },
-            {
-              "speaker": "Meena",
-              "english": "I like chocolate ice cream.",
-              "kannada": "",
-              "roman": "",
-              "grammar": [
-                "I",
-                "tense_past"
-              ]
-            },
-            {
-              "speaker": "Raju",
-              "english": "I like mango ice cream.",
-              "kannada": "",
-              "roman": "",
-              "grammar": [
-                "I"
-              ]
-            },
-            {
-              "speaker": "Meena",
-              "english": "Let us eat ice cream!",
+              "english": "Let’s get one scoop each.",
               "kannada": "",
               "roman": "",
               "grammar": [
                 "we"
               ]
+            },
+            {
+              "speaker": "Raju",
+              "english": "Good idea!",
+              "kannada": "",
+              "roman": ""
             }
           ],
           "keywords": [
@@ -161,17 +169,33 @@
             "chocolate",
             "mango"
           ],
-          "grammar_targets": []
+          "grammar_targets": [],
+          "concepts_taught": [
+            "greetings",
+            "name exchange",
+            "likes",
+            "food"
+          ]
         },
         {
           "id": "1B",
-          "title": "Goodbye after a treat",
+          "title": "After the ice cream",
           "setting": "outside the shop",
-          "goal": "Say goodbye after doing something fun",
+          "goal": "Say goodbye naturally after doing something fun",
           "lines": [
             {
               "speaker": "Meena",
-              "english": "That was yummy!",
+              "english": "That was so good.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "tense_past",
+                "that"
+              ]
+            },
+            {
+              "speaker": "Raju",
+              "english": "Yeah, mango was awesome.",
               "kannada": "",
               "roman": "",
               "grammar": [
@@ -179,29 +203,34 @@
               ]
             },
             {
-              "speaker": "Raju",
-              "english": "Yes, very yummy.",
-              "kannada": "",
-              "roman": ""
-            },
-            {
               "speaker": "Meena",
-              "english": "See you tomorrow.",
+              "english": "See you at school tomorrow?",
               "kannada": "",
               "roman": "",
               "grammar": [
-                "tense_future"
+                "tense_future",
+                "you"
               ]
             },
             {
               "speaker": "Raju",
-              "english": "Okay, bye!",
+              "english": "Yes, see you tomorrow.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "tense_future",
+                "you"
+              ]
+            },
+            {
+              "speaker": "Meena",
+              "english": "Bye, Raju!",
               "kannada": "",
               "roman": ""
             },
             {
-              "speaker": "Meena",
-              "english": "Bye!",
+              "speaker": "Raju",
+              "english": "Bye, Meena!",
               "kannada": "",
               "roman": ""
             }
@@ -211,7 +240,12 @@
             "tomorrow",
             "bye"
           ],
-          "grammar_targets": []
+          "grammar_targets": [],
+          "concepts_taught": [
+            "goodbye",
+            "past experience",
+            "future plan"
+          ]
         }
       ],
       "tone": "playful, kid-first, practical spoken Kannada",
@@ -234,83 +268,71 @@
       "conversations": [
         {
           "id": "2A",
-          "title": "Morning check-in with a fun plan",
-          "setting": "school morning circle",
-          "goal": "Ask how someone feels and suggest something fun",
+          "title": "Choosing a game at recess",
+          "setting": "school playground",
+          "goal": "Talk about mood through a real play plan",
           "lines": [
             {
-              "speaker": "Teacher",
-              "english": "How are you today?",
+              "speaker": "Anu",
+              "english": "Meena, recess started!",
               "kannada": "",
-              "roman": "",
-              "grammar": [
-                "tense_present",
-                "you"
-              ]
+              "roman": ""
+            },
+            {
+              "speaker": "Meena",
+              "english": "Yay, finally!",
+              "kannada": "",
+              "roman": ""
             },
             {
               "speaker": "Anu",
-              "english": "I am happy.",
+              "english": "What should we play?",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "we"
+              ]
+            },
+            {
+              "speaker": "Meena",
+              "english": "Snake and Ladder?",
+              "kannada": "",
+              "roman": ""
+            },
+            {
+              "speaker": "Anu",
+              "english": "Yes! I brought the board.",
               "kannada": "",
               "roman": "",
               "grammar": [
                 "I",
-                "tense_present"
+                "tense_past"
               ]
             },
             {
-              "speaker": "Teacher",
-              "english": "Why are you happy?",
+              "speaker": "Meena",
+              "english": "Can Tara play too?",
               "kannada": "",
-              "roman": "",
-              "grammar": [
-                "tense_present",
-                "you"
-              ]
+              "roman": ""
             },
             {
               "speaker": "Anu",
-              "english": "Today we will play a game.",
+              "english": "Of course. Let’s all play.",
               "kannada": "",
               "roman": "",
               "grammar": [
-                "tense_future",
                 "we"
               ]
             },
             {
               "speaker": "Teacher",
-              "english": "Which game do you want to play?",
-              "kannada": "",
-              "roman": "",
-              "grammar": [
-                "you"
-              ]
-            },
-            {
-              "speaker": "Anu",
-              "english": "I want to play Snake and Ladder.",
-              "kannada": "",
-              "roman": "",
-              "grammar": [
-                "I"
-              ]
-            },
-            {
-              "speaker": "Teacher",
-              "english": "Good idea!",
+              "english": "Stay near the bench, okay?",
               "kannada": "",
               "roman": ""
             },
             {
               "speaker": "Anu",
-              "english": "Can Meena play with me?",
-              "kannada": "",
-              "roman": ""
-            },
-            {
-              "speaker": "Teacher",
-              "english": "Yes, play together.",
+              "english": "Okay!",
               "kannada": "",
               "roman": ""
             }
@@ -321,27 +343,29 @@
             "snake and ladder",
             "together"
           ],
-          "grammar_targets": []
+          "grammar_targets": [],
+          "concepts_taught": [
+            "feelings",
+            "choice",
+            "play",
+            "permission"
+          ]
         },
         {
           "id": "2B",
-          "title": "Tired after playing",
+          "title": "Taking a break after playing",
           "setting": "playground bench",
-          "goal": "Say tired, ask for water, recover politely",
+          "goal": "Say tired, ask for water, and decide what happens next",
           "lines": [
             {
               "speaker": "Asha",
-              "english": "I am tired.",
+              "english": "Dad, I’m tired.",
               "kannada": "",
-              "roman": "",
-              "grammar": [
-                "I",
-                "tense_present"
-              ]
+              "roman": ""
             },
             {
               "speaker": "Dad",
-              "english": "Sit here.",
+              "english": "Come sit here.",
               "kannada": "",
               "roman": "",
               "grammar": [
@@ -350,7 +374,7 @@
             },
             {
               "speaker": "Asha",
-              "english": "I want water.",
+              "english": "Can I have some water?",
               "kannada": "",
               "roman": "",
               "grammar": [
@@ -359,22 +383,23 @@
             },
             {
               "speaker": "Dad",
-              "english": "Here, drink water.",
+              "english": "Here you go.",
               "kannada": "",
               "roman": "",
               "grammar": [
-                "here"
+                "here",
+                "you"
               ]
             },
             {
               "speaker": "Asha",
-              "english": "Thank you.",
+              "english": "Thanks.",
               "kannada": "",
               "roman": ""
             },
             {
               "speaker": "Dad",
-              "english": "Do you want to play again?",
+              "english": "Want to play again?",
               "kannada": "",
               "roman": "",
               "grammar": [
@@ -383,7 +408,13 @@
             },
             {
               "speaker": "Asha",
-              "english": "Yes, after two minutes.",
+              "english": "In two minutes.",
+              "kannada": "",
+              "roman": ""
+            },
+            {
+              "speaker": "Dad",
+              "english": "Deal.",
               "kannada": "",
               "roman": ""
             }
@@ -394,7 +425,12 @@
             "again",
             "two minutes"
           ],
-          "grammar_targets": []
+          "grammar_targets": [],
+          "concepts_taught": [
+            "feeling tired",
+            "need water",
+            "later/again"
+          ]
         }
       ],
       "tone": "playful, kid-first, practical spoken Kannada",
@@ -422,26 +458,27 @@
           "id": "3A",
           "title": "Family photo before a car drive",
           "setting": "living room",
-          "goal": "Introduce family members and talk about going out",
+          "goal": "Introduce family and talk about a weekend plan",
           "lines": [
             {
               "speaker": "Kiran",
-              "english": "This is my mother.",
+              "english": "Look, this is my mom.",
               "kannada": "",
               "roman": "",
               "grammar": [
+                "I",
+                "he_she",
                 "tense_present",
                 "this"
               ]
             },
             {
               "speaker": "Friend",
-              "english": "What is her name?",
+              "english": "What's her name?",
               "kannada": "",
               "roman": "",
               "grammar": [
-                "he_she",
-                "tense_present"
+                "he_she"
               ]
             },
             {
@@ -456,17 +493,19 @@
             },
             {
               "speaker": "Kiran",
-              "english": "This is my father.",
+              "english": "And this is my dad.",
               "kannada": "",
               "roman": "",
               "grammar": [
+                "I",
+                "he_she",
                 "tense_present",
                 "this"
               ]
             },
             {
               "speaker": "Friend",
-              "english": "Where are you going?",
+              "english": "Are you going somewhere?",
               "kannada": "",
               "roman": "",
               "grammar": [
@@ -477,33 +516,33 @@
             },
             {
               "speaker": "Kiran",
-              "english": "We are going on a car drive.",
+              "english": "Yes, we’re going for a car drive.",
               "kannada": "",
               "roman": "",
               "grammar": [
-                "tense_present",
-                "we"
+                "tense_present"
               ]
             },
             {
               "speaker": "Friend",
-              "english": "That sounds fun!",
+              "english": "Nice! Where are you going?",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "here",
+                "tense_present",
+                "you"
+              ]
+            },
+            {
+              "speaker": "Kiran",
+              "english": "To a pasta place.",
               "kannada": "",
               "roman": ""
             },
             {
-              "speaker": "Kiran",
-              "english": "Yes, we will eat pasta.",
-              "kannada": "",
-              "roman": "",
-              "grammar": [
-                "tense_future",
-                "we"
-              ]
-            },
-            {
               "speaker": "Friend",
-              "english": "I like pasta too.",
+              "english": "Lucky! I love pasta.",
               "kannada": "",
               "roman": "",
               "grammar": [
@@ -517,44 +556,33 @@
             "car drive",
             "pasta"
           ],
-          "grammar_targets": []
+          "grammar_targets": [],
+          "concepts_taught": [
+            "family",
+            "people",
+            "future plan",
+            "food"
+          ]
         },
         {
           "id": "3B",
-          "title": "Sister wants to come too",
+          "title": "Everyone wants to come",
           "setting": "front door",
-          "goal": "Include siblings in a plan",
+          "goal": "Use he/she/we while planning to go out",
           "lines": [
             {
               "speaker": "Maya",
-              "english": "Do you have a sister?",
+              "english": "Is your sister coming too?",
               "kannada": "",
               "roman": "",
               "grammar": [
+                "tense_present",
                 "you"
               ]
             },
             {
               "speaker": "Ravi",
-              "english": "Yes, I have a sister.",
-              "kannada": "",
-              "roman": "",
-              "grammar": [
-                "I"
-              ]
-            },
-            {
-              "speaker": "Maya",
-              "english": "Is she coming with us?",
-              "kannada": "",
-              "roman": "",
-              "grammar": [
-                "tense_present"
-              ]
-            },
-            {
-              "speaker": "Ravi",
-              "english": "Yes, she is coming.",
+              "english": "Yes, she’s getting her shoes.",
               "kannada": "",
               "roman": "",
               "grammar": [
@@ -564,9 +592,36 @@
             },
             {
               "speaker": "Maya",
-              "english": "Good! We can all play.",
+              "english": "What about your brother?",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "you"
+              ]
+            },
+            {
+              "speaker": "Ravi",
+              "english": "He’s already in the car.",
               "kannada": "",
               "roman": ""
+            },
+            {
+              "speaker": "Maya",
+              "english": "Great, we can all play after lunch.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "we"
+              ]
+            },
+            {
+              "speaker": "Ravi",
+              "english": "Yes, let’s go!",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "we"
+              ]
             }
           ],
           "keywords": [
@@ -574,7 +629,13 @@
             "coming",
             "play"
           ],
-          "grammar_targets": []
+          "grammar_targets": [],
+          "concepts_taught": [
+            "sister",
+            "coming",
+            "we",
+            "future plan"
+          ]
         }
       ],
       "tone": "playful, kid-first, practical spoken Kannada",
@@ -597,60 +658,53 @@
       "conversations": [
         {
           "id": "4A",
-          "title": "Teacher explains a game",
+          "title": "Teacher explains a word game",
           "setting": "classroom",
-          "goal": "Follow simple classroom instructions during a game",
+          "goal": "Follow classroom directions in a fun game",
           "lines": [
             {
               "speaker": "Teacher",
-              "english": "Come here.",
-              "kannada": "",
-              "roman": "",
-              "grammar": [
-                "here"
-              ]
-            },
-            {
-              "speaker": "Student",
-              "english": "Okay, teacher.",
+              "english": "Everyone, come closer.",
               "kannada": "",
               "roman": ""
             },
             {
-              "speaker": "Teacher",
-              "english": "Today we will play a word game.",
+              "speaker": "Tara",
+              "english": "Are we playing a game?",
               "kannada": "",
               "roman": "",
               "grammar": [
-                "tense_future",
+                "tense_present",
                 "we"
               ]
             },
             {
-              "speaker": "Student",
+              "speaker": "Teacher",
+              "english": "Yes, a word game.",
+              "kannada": "",
+              "roman": ""
+            },
+            {
+              "speaker": "Tara",
               "english": "Yay!",
               "kannada": "",
               "roman": ""
             },
             {
               "speaker": "Teacher",
-              "english": "Listen carefully.",
+              "english": "Listen first, then speak.",
               "kannada": "",
               "roman": ""
             },
             {
-              "speaker": "Student",
-              "english": "Okay, I am listening.",
+              "speaker": "Tara",
+              "english": "Okay, I’m listening.",
               "kannada": "",
-              "roman": "",
-              "grammar": [
-                "I",
-                "tense_present"
-              ]
+              "roman": ""
             },
             {
               "speaker": "Teacher",
-              "english": "Say your name first.",
+              "english": "Say your name and one food you like.",
               "kannada": "",
               "roman": "",
               "grammar": [
@@ -658,8 +712,8 @@
               ]
             },
             {
-              "speaker": "Student",
-              "english": "My name is Tara.",
+              "speaker": "Tara",
+              "english": "I'm Tara. I like pasta.",
               "kannada": "",
               "roman": "",
               "grammar": [
@@ -674,52 +728,64 @@
             "word game",
             "name"
           ],
-          "grammar_targets": []
+          "grammar_targets": [],
+          "concepts_taught": [
+            "classroom commands",
+            "listening",
+            "turn-taking"
+          ]
         },
         {
           "id": "4B",
-          "title": "Can you say it again?",
+          "title": "Say it one more time",
           "setting": "classroom",
-          "goal": "Ask for repetition confidently",
+          "goal": "Ask for repetition without feeling embarrassed",
           "lines": [
             {
               "speaker": "Student",
-              "english": "I do not know.",
+              "english": "Wait, I missed that word.",
               "kannada": "",
               "roman": "",
               "grammar": [
-                "tense_present"
+                "I",
+                "that"
               ]
             },
             {
               "speaker": "Student",
-              "english": "Please say it again.",
+              "english": "Can you say it again?",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "you"
+              ]
+            },
+            {
+              "speaker": "Teacher",
+              "english": "Sure. Ice cream.",
               "kannada": "",
               "roman": ""
             },
             {
-              "speaker": "Teacher",
-              "english": "Sure, listen.",
-              "kannada": "",
-              "roman": ""
-            },
-            {
-              "speaker": "Teacher",
+              "speaker": "Student",
               "english": "Ice cream.",
               "kannada": "",
               "roman": ""
             },
             {
-              "speaker": "Student",
-              "english": "Ice cream!",
+              "speaker": "Teacher",
+              "english": "Yes, that’s it.",
               "kannada": "",
               "roman": ""
             },
             {
-              "speaker": "Teacher",
-              "english": "Very good!",
+              "speaker": "Student",
+              "english": "I got it!",
               "kannada": "",
-              "roman": ""
+              "roman": "",
+              "grammar": [
+                "tense_past"
+              ]
             }
           ],
           "keywords": [
@@ -728,7 +794,12 @@
             "ice cream",
             "very good"
           ],
-          "grammar_targets": []
+          "grammar_targets": [],
+          "concepts_taught": [
+            "asking again",
+            "practice",
+            "confidence"
+          ]
         }
       ],
       "tone": "playful, kid-first, practical spoken Kannada",
@@ -753,69 +824,69 @@
           "id": "5A",
           "title": "Finding the game board",
           "setting": "playroom",
-          "goal": "Use this/that and name favorite objects",
+          "goal": "Use this/that with toys and games",
           "lines": [
             {
               "speaker": "Teacher",
-              "english": "What is this?",
+              "english": "What’s this?",
               "kannada": "",
               "roman": "",
               "grammar": [
-                "tense_present",
                 "this"
               ]
             },
             {
               "speaker": "Child",
-              "english": "This is a book.",
+              "english": "That’s my story book.",
               "kannada": "",
               "roman": "",
               "grammar": [
-                "tense_present",
-                "this"
+                "I"
               ]
             },
             {
               "speaker": "Teacher",
-              "english": "What is that?",
+              "english": "And what’s that over there?",
               "kannada": "",
               "roman": "",
               "grammar": [
-                "tense_present",
-                "that"
+                "here",
+                "that",
+                "there"
               ]
             },
             {
               "speaker": "Child",
-              "english": "That is my game board.",
+              "english": "That’s my Snake and Ladder board.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "I"
+              ]
+            },
+            {
+              "speaker": "Teacher",
+              "english": "Do you want to play now?",
               "kannada": "",
               "roman": "",
               "grammar": [
                 "tense_present",
-                "that"
-              ]
-            },
-            {
-              "speaker": "Teacher",
-              "english": "Which game is it?",
-              "kannada": "",
-              "roman": "",
-              "grammar": [
-                "tense_present"
+                "you"
               ]
             },
             {
               "speaker": "Child",
-              "english": "It is Snake and Ladder.",
+              "english": "Yes, I’ll get the dice.",
               "kannada": "",
               "roman": "",
               "grammar": [
-                "tense_present"
+                "I",
+                "tense_future"
               ]
             },
             {
               "speaker": "Teacher",
-              "english": "Do you want to play?",
+              "english": "Great. You go first.",
               "kannada": "",
               "roman": "",
               "grammar": [
@@ -824,12 +895,9 @@
             },
             {
               "speaker": "Child",
-              "english": "Yes, I want to play.",
+              "english": "Okay!",
               "kannada": "",
-              "roman": "",
-              "grammar": [
-                "I"
-              ]
+              "roman": ""
             }
           ],
           "keywords": [
@@ -838,67 +906,76 @@
             "book",
             "game board"
           ],
-          "grammar_targets": []
+          "grammar_targets": [],
+          "concepts_taught": [
+            "this/that",
+            "things",
+            "game names"
+          ]
         },
         {
           "id": "5B",
-          "title": "Lost pencil before drawing",
+          "title": "Finding crayons before drawing",
           "setting": "art table",
-          "goal": "Ask where an object is",
+          "goal": "Ask where things are using here/there/under",
           "lines": [
             {
               "speaker": "Nila",
-              "english": "Where is my pencil?",
+              "english": "Arun, where’s my pencil?",
               "kannada": "",
               "roman": "",
               "grammar": [
-                "here",
-                "tense_present"
+                "I",
+                "here"
               ]
             },
             {
               "speaker": "Arun",
-              "english": "It is here.",
+              "english": "It’s right here.",
               "kannada": "",
               "roman": "",
               "grammar": [
-                "here",
-                "tense_present"
+                "here"
               ]
             },
             {
               "speaker": "Nila",
-              "english": "Where is the red crayon?",
+              "english": "Oh, thanks. Where’s the red crayon?",
               "kannada": "",
               "roman": "",
               "grammar": [
-                "here",
-                "tense_present"
+                "here"
               ]
             },
             {
               "speaker": "Arun",
-              "english": "It is under the paper.",
-              "kannada": "",
-              "roman": "",
-              "grammar": [
-                "tense_present"
-              ]
-            },
-            {
-              "speaker": "Nila",
-              "english": "Thank you!",
+              "english": "Under the paper.",
               "kannada": "",
               "roman": ""
             },
             {
+              "speaker": "Nila",
+              "english": "Found it!",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "tense_past"
+              ]
+            },
+            {
               "speaker": "Arun",
-              "english": "Let us draw ice cream.",
+              "english": "Let’s draw giant ice creams.",
               "kannada": "",
               "roman": "",
               "grammar": [
                 "we"
               ]
+            },
+            {
+              "speaker": "Nila",
+              "english": "Yes, with sprinkles!",
+              "kannada": "",
+              "roman": ""
             }
           ],
           "keywords": [
@@ -907,7 +984,13 @@
             "under",
             "draw"
           ],
-          "grammar_targets": []
+          "grammar_targets": [],
+          "concepts_taught": [
+            "where",
+            "here",
+            "under",
+            "things"
+          ]
         }
       ],
       "tone": "playful, kid-first, practical spoken Kannada",
@@ -933,30 +1016,26 @@
           "id": "6A",
           "title": "Pasta for dinner",
           "setting": "kitchen",
-          "goal": "Ask for favorite food and respond politely",
+          "goal": "Ask for food naturally and use polite requests",
           "lines": [
             {
               "speaker": "Child",
-              "english": "Mom, I am hungry.",
+              "english": "Mom, I’m hungry.",
+              "kannada": "",
+              "roman": ""
+            },
+            {
+              "speaker": "Mom",
+              "english": "I’m making pasta.",
               "kannada": "",
               "roman": "",
               "grammar": [
-                "I",
                 "tense_present"
               ]
             },
             {
-              "speaker": "Mom",
-              "english": "Do you want pasta?",
-              "kannada": "",
-              "roman": "",
-              "grammar": [
-                "you"
-              ]
-            },
-            {
               "speaker": "Child",
-              "english": "Yes, I want pasta.",
+              "english": "Can I have extra cheese?",
               "kannada": "",
               "roman": "",
               "grammar": [
@@ -965,49 +1044,46 @@
             },
             {
               "speaker": "Mom",
-              "english": "Do you want tomato sauce?",
+              "english": "A little cheese or a lot?",
               "kannada": "",
-              "roman": "",
-              "grammar": [
-                "you"
-              ]
+              "roman": ""
             },
             {
               "speaker": "Child",
-              "english": "Yes, a little sauce.",
+              "english": "A lot, please.",
               "kannada": "",
               "roman": ""
             },
             {
               "speaker": "Mom",
-              "english": "Do you want cheese?",
+              "english": "Okay, pasta is ready.",
               "kannada": "",
               "roman": "",
               "grammar": [
-                "you"
-              ]
-            },
-            {
-              "speaker": "Child",
-              "english": "Yes, more cheese please!",
-              "kannada": "",
-              "roman": ""
-            },
-            {
-              "speaker": "Mom",
-              "english": "Here is your pasta.",
-              "kannada": "",
-              "roman": "",
-              "grammar": [
-                "here",
                 "tense_present"
               ]
             },
             {
               "speaker": "Child",
-              "english": "Thank you, mom.",
+              "english": "It smells so good.",
               "kannada": "",
               "roman": ""
+            },
+            {
+              "speaker": "Mom",
+              "english": "Careful, it’s hot.",
+              "kannada": "",
+              "roman": ""
+            },
+            {
+              "speaker": "Child",
+              "english": "Okay, I’ll wait.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "I",
+                "tense_future"
+              ]
             }
           ],
           "keywords": [
@@ -1016,26 +1092,29 @@
             "sauce",
             "cheese"
           ],
-          "grammar_targets": []
+          "grammar_targets": [],
+          "concepts_taught": [
+            "hungry",
+            "want",
+            "please",
+            "food"
+          ]
         },
         {
           "id": "6B",
           "title": "Ice cream after dinner",
           "setting": "dining table",
-          "goal": "Say want/don’t want and choose flavor",
+          "goal": "Choose a flavor and say yes/no naturally",
           "lines": [
             {
               "speaker": "Dad",
-              "english": "Do you want ice cream?",
+              "english": "Who wants ice cream?",
               "kannada": "",
-              "roman": "",
-              "grammar": [
-                "you"
-              ]
+              "roman": ""
             },
             {
               "speaker": "Child",
-              "english": "Yes, I want ice cream.",
+              "english": "Me!",
               "kannada": "",
               "roman": "",
               "grammar": [
@@ -1044,9 +1123,12 @@
             },
             {
               "speaker": "Dad",
-              "english": "Which flavor?",
+              "english": "Chocolate or mango?",
               "kannada": "",
-              "roman": ""
+              "roman": "",
+              "grammar": [
+                "tense_past"
+              ]
             },
             {
               "speaker": "Child",
@@ -1056,7 +1138,7 @@
             },
             {
               "speaker": "Dad",
-              "english": "Do you want coffee?",
+              "english": "Do you want a big scoop?",
               "kannada": "",
               "roman": "",
               "grammar": [
@@ -1065,18 +1147,21 @@
             },
             {
               "speaker": "Child",
-              "english": "No, I do not want coffee.",
+              "english": "Just a small one.",
+              "kannada": "",
+              "roman": ""
+            },
+            {
+              "speaker": "Dad",
+              "english": "Water too?",
               "kannada": "",
               "roman": ""
             },
             {
               "speaker": "Child",
-              "english": "I want water.",
+              "english": "Yes, please.",
               "kannada": "",
-              "roman": "",
-              "grammar": [
-                "I"
-              ]
+              "roman": ""
             }
           ],
           "keywords": [
@@ -1085,13 +1170,18 @@
             "coffee",
             "water"
           ],
-          "grammar_targets": []
+          "grammar_targets": [],
+          "concepts_taught": [
+            "choice",
+            "yes/no",
+            "want/don’t want"
+          ]
         },
         {
           "id": "6T",
-          "title": "Yesterday, now, and tomorrow: pasta",
+          "title": "Pasta: yesterday, now, tomorrow",
           "setting": "kitchen table",
-          "goal": "Practice past, present, and future using the same fun topic.",
+          "goal": "Practice past/present/future in normal talk",
           "grammar_targets": [
             "tense_past",
             "tense_present",
@@ -1100,17 +1190,18 @@
           ],
           "lines": [
             {
-              "speaker": "Teacher",
-              "english": "What did you do yesterday?",
+              "speaker": "Friend",
+              "english": "Did you eat pasta yesterday?",
               "kannada": "",
               "roman": "",
               "grammar": [
-                "tense_past"
+                "tense_past",
+                "you"
               ]
             },
             {
               "speaker": "Child",
-              "english": "I ate pasta yesterday.",
+              "english": "Yes, I ate pasta yesterday.",
               "kannada": "",
               "roman": "",
               "grammar": [
@@ -1119,8 +1210,8 @@
               ]
             },
             {
-              "speaker": "Teacher",
-              "english": "What are you doing now?",
+              "speaker": "Friend",
+              "english": "Are you eating pasta again now?",
               "kannada": "",
               "roman": "",
               "grammar": [
@@ -1130,49 +1221,49 @@
             },
             {
               "speaker": "Child",
-              "english": "I am eating pasta now.",
+              "english": "Yes, I’m eating pasta now.",
               "kannada": "",
               "roman": "",
               "grammar": [
-                "I",
                 "tense_present"
               ]
             },
             {
-              "speaker": "Teacher",
-              "english": "What will you do tomorrow?",
-              "kannada": "",
-              "roman": "",
-              "grammar": [
-                "tense_future"
-              ]
-            },
-            {
-              "speaker": "Child",
-              "english": "I will eat pasta tomorrow.",
-              "kannada": "",
-              "roman": "",
-              "grammar": [
-                "I",
-                "tense_future"
-              ]
-            },
-            {
               "speaker": "Friend",
-              "english": "Can I join you?",
-              "kannada": "",
-              "roman": "",
-              "grammar": [
-                "question"
-              ]
-            },
-            {
-              "speaker": "Child",
-              "english": "Yes, we will do it together.",
+              "english": "Will you eat pasta tomorrow too?",
               "kannada": "",
               "roman": "",
               "grammar": [
                 "tense_future",
+                "you"
+              ]
+            },
+            {
+              "speaker": "Child",
+              "english": "Maybe! I love pasta.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "I"
+              ]
+            },
+            {
+              "speaker": "Friend",
+              "english": "Can I join you next time?",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "I",
+                "tense_future",
+                "you"
+              ]
+            },
+            {
+              "speaker": "Child",
+              "english": "Yes, we can eat together.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
                 "we"
               ]
             }
@@ -1183,6 +1274,12 @@
             "tomorrow",
             "I",
             "we"
+          ],
+          "concepts_taught": [
+            "past tense",
+            "present tense",
+            "future tense",
+            "food"
           ]
         }
       ],
@@ -1211,11 +1308,11 @@
           "id": "7A",
           "title": "Snake and Ladder",
           "setting": "living room floor",
-          "goal": "Invite a friend to play and talk about turns",
+          "goal": "Invite a friend to play and talk during the game",
           "lines": [
             {
               "speaker": "Arjun",
-              "english": "Do you want to play Snake and Ladder?",
+              "english": "Sara, want to play Snake and Ladder?",
               "kannada": "",
               "roman": "",
               "grammar": [
@@ -1224,51 +1321,67 @@
             },
             {
               "speaker": "Sara",
-              "english": "Yes, I love that game.",
+              "english": "Yes! I love that game.",
               "kannada": "",
               "roman": "",
               "grammar": [
-                "I"
+                "I",
+                "that"
               ]
             },
             {
               "speaker": "Arjun",
               "english": "You go first.",
               "kannada": "",
-              "roman": ""
+              "roman": "",
+              "grammar": [
+                "you"
+              ]
             },
             {
               "speaker": "Sara",
-              "english": "Okay, I will roll the dice.",
+              "english": "Okay, I’m rolling the dice.",
               "kannada": "",
-              "roman": "",
-              "grammar": [
-                "tense_future"
-              ]
+              "roman": ""
             },
             {
               "speaker": "Arjun",
               "english": "You got six!",
               "kannada": "",
-              "roman": ""
+              "roman": "",
+              "grammar": [
+                "tense_past",
+                "you"
+              ]
             },
             {
               "speaker": "Sara",
-              "english": "Yay! I can climb the ladder.",
+              "english": "Nice, I climbed the ladder.",
               "kannada": "",
-              "roman": ""
+              "roman": "",
+              "grammar": [
+                "I",
+                "tense_past"
+              ]
             },
             {
               "speaker": "Arjun",
-              "english": "Oh no, I got a snake.",
+              "english": "Oh no, I landed on a snake.",
               "kannada": "",
-              "roman": ""
+              "roman": "",
+              "grammar": [
+                "I",
+                "tense_past"
+              ]
             },
             {
               "speaker": "Sara",
-              "english": "Try again!",
+              "english": "Try again. You can catch up.",
               "kannada": "",
-              "roman": ""
+              "roman": "",
+              "grammar": [
+                "you"
+              ]
             }
           ],
           "keywords": [
@@ -1277,17 +1390,23 @@
             "six",
             "try again"
           ],
-          "grammar_targets": []
+          "grammar_targets": [],
+          "concepts_taught": [
+            "game play",
+            "turns",
+            "past result",
+            "try again"
+          ]
         },
         {
           "id": "7B",
-          "title": "Favorite game",
+          "title": "What should we play?",
           "setting": "playground",
-          "goal": "Talk about favorite games",
+          "goal": "Choose a game with a friend",
           "lines": [
             {
               "speaker": "Riya",
-              "english": "Which game do you like?",
+              "english": "What do you want to play?",
               "kannada": "",
               "roman": "",
               "grammar": [
@@ -1296,34 +1415,31 @@
             },
             {
               "speaker": "Mohan",
-              "english": "I like cricket.",
+              "english": "Hide and seek.",
               "kannada": "",
-              "roman": "",
-              "grammar": [
-                "I"
-              ]
+              "roman": ""
             },
             {
               "speaker": "Riya",
-              "english": "I like hide and seek.",
+              "english": "Okay, but you count first.",
               "kannada": "",
               "roman": "",
               "grammar": [
-                "I"
+                "you"
               ]
             },
             {
               "speaker": "Mohan",
-              "english": "Let us play hide and seek.",
+              "english": "Fine. You hide near the tree.",
               "kannada": "",
               "roman": "",
               "grammar": [
-                "we"
+                "you"
               ]
             },
             {
               "speaker": "Riya",
-              "english": "Okay, you count first.",
+              "english": "No peeking!",
               "kannada": "",
               "roman": ""
             }
@@ -1334,13 +1450,18 @@
             "hide and seek",
             "count"
           ],
-          "grammar_targets": []
+          "grammar_targets": [],
+          "concepts_taught": [
+            "likes",
+            "choices",
+            "games"
+          ]
         },
         {
           "id": "7T",
-          "title": "Yesterday, now, and tomorrow: games",
+          "title": "Games: yesterday, now, tomorrow",
           "setting": "living room floor",
-          "goal": "Practice past, present, and future using the same fun topic.",
+          "goal": "Practice tense through play plans",
           "grammar_targets": [
             "tense_past",
             "tense_present",
@@ -1349,17 +1470,18 @@
           ],
           "lines": [
             {
-              "speaker": "Teacher",
-              "english": "What did you do yesterday?",
+              "speaker": "Sara",
+              "english": "Did you play yesterday?",
               "kannada": "",
               "roman": "",
               "grammar": [
-                "tense_past"
+                "tense_past",
+                "you"
               ]
             },
             {
-              "speaker": "Child",
-              "english": "I played Snake and Ladder yesterday.",
+              "speaker": "Arjun",
+              "english": "Yes, I played Snake and Ladder.",
               "kannada": "",
               "roman": "",
               "grammar": [
@@ -1368,8 +1490,8 @@
               ]
             },
             {
-              "speaker": "Teacher",
-              "english": "What are you doing now?",
+              "speaker": "Sara",
+              "english": "Are you playing now?",
               "kannada": "",
               "roman": "",
               "grammar": [
@@ -1378,52 +1500,47 @@
               ]
             },
             {
-              "speaker": "Child",
-              "english": "I am playing Snake and Ladder now.",
+              "speaker": "Arjun",
+              "english": "Yes, I’m playing with you.",
               "kannada": "",
               "roman": "",
               "grammar": [
-                "I",
                 "tense_present"
               ]
             },
             {
-              "speaker": "Teacher",
-              "english": "What will you do tomorrow?",
-              "kannada": "",
-              "roman": "",
-              "grammar": [
-                "tense_future"
-              ]
-            },
-            {
-              "speaker": "Child",
-              "english": "I will play Snake and Ladder tomorrow.",
-              "kannada": "",
-              "roman": "",
-              "grammar": [
-                "I",
-                "tense_future"
-              ]
-            },
-            {
-              "speaker": "Friend",
-              "english": "Can I join you?",
-              "kannada": "",
-              "roman": "",
-              "grammar": [
-                "question"
-              ]
-            },
-            {
-              "speaker": "Child",
-              "english": "Yes, we will do it together.",
+              "speaker": "Sara",
+              "english": "Will you play tomorrow?",
               "kannada": "",
               "roman": "",
               "grammar": [
                 "tense_future",
-                "we"
+                "you"
               ]
+            },
+            {
+              "speaker": "Arjun",
+              "english": "Yes, after homework.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "tense_future"
+              ]
+            },
+            {
+              "speaker": "Sara",
+              "english": "Can I come too?",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "I"
+              ]
+            },
+            {
+              "speaker": "Arjun",
+              "english": "Yes, come over.",
+              "kannada": "",
+              "roman": ""
             }
           ],
           "keywords": [
@@ -1432,6 +1549,12 @@
             "tomorrow",
             "I",
             "we"
+          ],
+          "concepts_taught": [
+            "past tense",
+            "present tense",
+            "future tense",
+            "games"
           ]
         }
       ],
@@ -1460,27 +1583,24 @@
           "id": "8A",
           "title": "Finding the hidden candy",
           "setting": "playroom",
-          "goal": "Ask and answer location with a playful search",
+          "goal": "Use where/here/there/under/behind in a fun search",
           "lines": [
             {
               "speaker": "Child",
-              "english": "Where is the candy?",
+              "english": "Where did you hide the candy?",
               "kannada": "",
               "roman": "",
               "grammar": [
                 "here",
-                "tense_present"
+                "tense_past",
+                "you"
               ]
             },
             {
               "speaker": "Friend",
-              "english": "It is not here.",
+              "english": "I’m not telling.",
               "kannada": "",
-              "roman": "",
-              "grammar": [
-                "here",
-                "tense_present"
-              ]
+              "roman": ""
             },
             {
               "speaker": "Child",
@@ -1493,45 +1613,36 @@
             },
             {
               "speaker": "Friend",
-              "english": "No, it is not under the table.",
+              "english": "Nope.",
               "kannada": "",
-              "roman": "",
-              "grammar": [
-                "tense_present"
-              ]
+              "roman": ""
             },
             {
               "speaker": "Child",
-              "english": "Is it behind the box?",
-              "kannada": "",
-              "roman": "",
-              "grammar": [
-                "tense_present"
-              ]
-            },
-            {
-              "speaker": "Friend",
-              "english": "Yes, it is behind the box!",
-              "kannada": "",
-              "roman": "",
-              "grammar": [
-                "tense_present"
-              ]
-            },
-            {
-              "speaker": "Child",
-              "english": "I found it!",
+              "english": "Behind the box?",
               "kannada": "",
               "roman": ""
             },
             {
               "speaker": "Friend",
-              "english": "Share with me!",
+              "english": "Maybe.",
+              "kannada": "",
+              "roman": ""
+            },
+            {
+              "speaker": "Child",
+              "english": "Found it!",
               "kannada": "",
               "roman": "",
               "grammar": [
-                "tense_present"
+                "tense_past"
               ]
+            },
+            {
+              "speaker": "Friend",
+              "english": "Okay, but share with me.",
+              "kannada": "",
+              "roman": ""
             }
           ],
           "keywords": [
@@ -1540,38 +1651,23 @@
             "behind",
             "share"
           ],
-          "grammar_targets": []
+          "grammar_targets": [],
+          "concepts_taught": [
+            "where",
+            "here/there",
+            "under/behind",
+            "sharing"
+          ]
         },
         {
           "id": "8B",
-          "title": "Finding the ball",
+          "title": "Where did the ball go?",
           "setting": "park",
-          "goal": "Use here/there with movement",
+          "goal": "Use here/there and movement words",
           "lines": [
             {
               "speaker": "Asha",
-              "english": "Where is the ball?",
-              "kannada": "",
-              "roman": "",
-              "grammar": [
-                "here",
-                "tense_present"
-              ]
-            },
-            {
-              "speaker": "Ravi",
-              "english": "The ball is there.",
-              "kannada": "",
-              "roman": "",
-              "grammar": [
-                "here",
-                "tense_present",
-                "there"
-              ]
-            },
-            {
-              "speaker": "Asha",
-              "english": "Come here!",
+              "english": "Where did the ball go?",
               "kannada": "",
               "roman": "",
               "grammar": [
@@ -1580,17 +1676,37 @@
             },
             {
               "speaker": "Ravi",
-              "english": "I am coming.",
+              "english": "Over there, near the slide.",
               "kannada": "",
               "roman": "",
               "grammar": [
-                "I",
+                "here",
+                "that",
+                "there"
+              ]
+            },
+            {
+              "speaker": "Asha",
+              "english": "Can you bring it here?",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "here",
+                "you"
+              ]
+            },
+            {
+              "speaker": "Ravi",
+              "english": "I’m coming.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
                 "tense_present"
               ]
             },
             {
               "speaker": "Asha",
-              "english": "Let us play!",
+              "english": "Great, let’s play again.",
               "kannada": "",
               "roman": "",
               "grammar": [
@@ -1604,7 +1720,13 @@
             "come here",
             "play"
           ],
-          "grammar_targets": []
+          "grammar_targets": [],
+          "concepts_taught": [
+            "where",
+            "there",
+            "come here",
+            "play"
+          ]
         }
       ],
       "tone": "playful, kid-first, practical spoken Kannada",
@@ -1627,27 +1749,40 @@
       "conversations": [
         {
           "id": "9A",
-          "title": "Bathroom break",
+          "title": "Can I go out?",
           "setting": "classroom",
           "goal": "Ask permission politely",
           "lines": [
             {
               "speaker": "Student",
-              "english": "May I go out?",
-              "kannada": "ನಾನು ಹೊರಗೆ ಹೋಗಬಹುದಾ?",
-              "roman": "Naanu horage hogabahuda?"
+              "english": "Teacher, can I go outside for a minute?",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "I"
+              ]
             },
             {
               "speaker": "Teacher",
-              "english": "Yes, go.",
-              "kannada": "ಹೌದು, ಹೋಗು.",
-              "roman": "Howdu, hogu."
+              "english": "Yes, but come right back.",
+              "kannada": "",
+              "roman": ""
             },
             {
               "speaker": "Student",
+              "english": "Okay, I’ll be quick.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "I",
+                "tense_future"
+              ]
+            },
+            {
+              "speaker": "Teacher",
               "english": "Thank you.",
-              "kannada": "ಧನ್ಯವಾದ.",
-              "roman": "Dhanyavaada."
+              "kannada": "",
+              "roman": ""
             }
           ],
           "keywords": [
@@ -1655,31 +1790,69 @@
             "ಹೋಗು",
             "ಧನ್ಯವಾದ"
           ],
-          "grammar_targets": []
+          "grammar_targets": [],
+          "concepts_taught": [
+            "permission",
+            "place",
+            "polite request"
+          ]
         },
         {
           "id": "9B",
           "title": "Borrowing a crayon",
           "setting": "art class",
-          "goal": "Ask to borrow/share",
+          "goal": "Borrow and return something politely",
           "lines": [
             {
               "speaker": "Nina",
-              "english": "Can you give me the red crayon?",
-              "kannada": "ಕೆಂಪು ಕ್ರೇಯಾನ್ ಕೊಡ್ತೀಯಾ?",
-              "roman": "Kempu crayon kodtiya?"
+              "english": "Dev, can I use your red crayon?",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "I",
+                "you"
+              ]
             },
             {
               "speaker": "Dev",
-              "english": "Yes, take it.",
-              "kannada": "ಹೌದು, ತೆಗೆದುಕೋ.",
-              "roman": "Howdu, tegeduko."
+              "english": "Sure, here.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "here"
+              ]
             },
             {
               "speaker": "Nina",
-              "english": "Thanks!",
-              "kannada": "ಥ್ಯಾಂಕ್ಸ್!",
-              "roman": "Thanks!"
+              "english": "Thanks. I’ll give it back.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "I",
+                "tense_future"
+              ]
+            },
+            {
+              "speaker": "Dev",
+              "english": "Okay.",
+              "kannada": "",
+              "roman": ""
+            },
+            {
+              "speaker": "Nina",
+              "english": "Here you go.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "here",
+                "you"
+              ]
+            },
+            {
+              "speaker": "Dev",
+              "english": "Thanks.",
+              "kannada": "",
+              "roman": ""
             }
           ],
           "keywords": [
@@ -1687,7 +1860,12 @@
             "ತೆಗೆದುಕೋ",
             "ಕೆಂಪು"
           ],
-          "grammar_targets": []
+          "grammar_targets": [],
+          "concepts_taught": [
+            "borrow",
+            "give/take",
+            "thanks"
+          ]
         }
       ],
       "tone": "playful, kid-first, practical spoken Kannada",
@@ -1707,15 +1885,15 @@
       "conversations": [
         {
           "id": "10A",
-          "title": "How old are you?",
+          "title": "Birthday age",
           "setting": "birthday party",
-          "goal": "Ask and say age",
+          "goal": "Ask and answer age naturally",
           "lines": [
             {
               "speaker": "Friend",
-              "english": "How old are you?",
-              "kannada": "ನಿನಗೆ ಎಷ್ಟು ವರ್ಷ?",
-              "roman": "Ninage eshtu varsha?",
+              "english": "Is it your birthday today?",
+              "kannada": "",
+              "roman": "",
               "grammar": [
                 "tense_present",
                 "you"
@@ -1723,19 +1901,37 @@
             },
             {
               "speaker": "Child",
-              "english": "I am seven years old.",
-              "kannada": "ನನಗೆ ಏಳು ವರ್ಷ.",
-              "roman": "Nanage elu varsha.",
+              "english": "Yes!",
+              "kannada": "",
+              "roman": ""
+            },
+            {
+              "speaker": "Friend",
+              "english": "How old are you now?",
+              "kannada": "",
+              "roman": "",
               "grammar": [
-                "I",
-                "tense_present"
+                "tense_present",
+                "you"
               ]
+            },
+            {
+              "speaker": "Child",
+              "english": "I’m seven.",
+              "kannada": "",
+              "roman": ""
             },
             {
               "speaker": "Friend",
               "english": "Happy birthday!",
-              "kannada": "ಹುಟ್ಟುಹಬ್ಬದ ಶುಭಾಶಯಗಳು!",
-              "roman": "Huttuhabbada shubhashayagalu!"
+              "kannada": "",
+              "roman": ""
+            },
+            {
+              "speaker": "Child",
+              "english": "Thank you!",
+              "kannada": "",
+              "roman": ""
             }
           ],
           "keywords": [
@@ -1743,31 +1939,57 @@
             "ವರ್ಷ",
             "ಏಳು"
           ],
-          "grammar_targets": []
+          "grammar_targets": [],
+          "concepts_taught": [
+            "age",
+            "numbers",
+            "birthday"
+          ]
         },
         {
           "id": "10B",
-          "title": "Counting snacks",
+          "title": "Counting candies",
           "setting": "kitchen table",
-          "goal": "Use small numbers",
+          "goal": "Practice small numbers with treats",
           "lines": [
             {
               "speaker": "Mom",
-              "english": "How many bananas?",
-              "kannada": "ಎಷ್ಟು ಬಾಳೆಹಣ್ಣು?",
-              "roman": "Eshtu baalehannu?"
+              "english": "How many candies do you have?",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "you"
+              ]
             },
             {
               "speaker": "Child",
-              "english": "Two bananas.",
-              "kannada": "ಎರಡು ಬಾಳೆಹಣ್ಣು.",
-              "roman": "Eradu baalehannu."
+              "english": "Three.",
+              "kannada": "",
+              "roman": ""
             },
             {
               "speaker": "Mom",
-              "english": "Good!",
-              "kannada": "ಚೆನ್ನಾಗಿದೆ!",
-              "roman": "Chennaagide!"
+              "english": "Can you give one to your sister?",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "you"
+              ]
+            },
+            {
+              "speaker": "Child",
+              "english": "Okay, then I have two.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "I"
+              ]
+            },
+            {
+              "speaker": "Mom",
+              "english": "Good counting!",
+              "kannada": "",
+              "roman": ""
             }
           ],
           "keywords": [
@@ -1775,7 +1997,12 @@
             "ಎರಡು",
             "ಬಾಳೆಹಣ್ಣು"
           ],
-          "grammar_targets": []
+          "grammar_targets": [],
+          "concepts_taught": [
+            "numbers",
+            "candies",
+            "how many"
+          ]
         }
       ],
       "tone": "playful, kid-first, practical spoken Kannada",
@@ -1794,37 +2021,51 @@
       "conversations": [
         {
           "id": "11A",
-          "title": "Wake up",
+          "title": "Wake up, sleepyhead",
           "setting": "bedroom",
-          "goal": "Use morning routine commands",
+          "goal": "Morning routine in natural home language",
           "lines": [
             {
               "speaker": "Mom",
-              "english": "Wake up.",
-              "kannada": "ಏಳು.",
-              "roman": "Elu."
+              "english": "Wake up, sleepyhead.",
+              "kannada": "",
+              "roman": ""
             },
             {
               "speaker": "Child",
-              "english": "I am getting up.",
-              "kannada": "ನಾನು ಏಳುತ್ತಿದ್ದೇನೆ.",
-              "roman": "Naanu eluttiddene.",
+              "english": "Five more minutes.",
+              "kannada": "",
+              "roman": ""
+            },
+            {
+              "speaker": "Mom",
+              "english": "School starts soon.",
+              "kannada": "",
+              "roman": ""
+            },
+            {
+              "speaker": "Child",
+              "english": "Okay, I’m getting up.",
+              "kannada": "",
+              "roman": "",
               "grammar": [
-                "I",
                 "tense_present"
               ]
             },
             {
               "speaker": "Mom",
-              "english": "Brush your teeth.",
-              "kannada": "ಹಲ್ಲು ತೊಳೆಯು.",
-              "roman": "Hallu toleyu."
+              "english": "Brush your teeth first.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "you"
+              ]
             },
             {
               "speaker": "Child",
               "english": "Okay.",
-              "kannada": "ಸರಿ.",
-              "roman": "Sari."
+              "kannada": "",
+              "roman": ""
             }
           ],
           "keywords": [
@@ -1832,19 +2073,24 @@
             "ಹಲ್ಲು",
             "ಸರಿ"
           ],
-          "grammar_targets": []
+          "grammar_targets": [],
+          "concepts_taught": [
+            "morning routine",
+            "commands",
+            "present action"
+          ]
         },
         {
           "id": "11B",
-          "title": "Going to school",
+          "title": "Ready for school",
           "setting": "front door",
-          "goal": "Say ready/not ready",
+          "goal": "Say ready/not ready and go",
           "lines": [
             {
               "speaker": "Dad",
               "english": "Are you ready?",
-              "kannada": "ನೀನು ರೆಡಿಯಾ?",
-              "roman": "Neenu readya?",
+              "kannada": "",
+              "roman": "",
               "grammar": [
                 "tense_present",
                 "you"
@@ -1852,19 +2098,46 @@
             },
             {
               "speaker": "Child",
-              "english": "Yes, I am ready.",
-              "kannada": "ಹೌದು, ನಾನು ರೆಡಿ.",
-              "roman": "Howdu, naanu ready.",
+              "english": "Almost.",
+              "kannada": "",
+              "roman": ""
+            },
+            {
+              "speaker": "Dad",
+              "english": "Where’s your bag?",
+              "kannada": "",
+              "roman": "",
               "grammar": [
-                "I",
-                "tense_present"
+                "here",
+                "you"
+              ]
+            },
+            {
+              "speaker": "Child",
+              "english": "Right here.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "here"
               ]
             },
             {
               "speaker": "Dad",
-              "english": "Let's go to school.",
-              "kannada": "ಸ್ಕೂಲಿಗೆ ಹೋಗೋಣ.",
-              "roman": "Schoolige hogona."
+              "english": "Good, let’s go.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "we"
+              ]
+            },
+            {
+              "speaker": "Child",
+              "english": "Wait, my water bottle!",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "I"
+              ]
             }
           ],
           "keywords": [
@@ -1872,7 +2145,12 @@
             "ಸ್ಕೂಲ್",
             "ಹೋಗೋಣ"
           ],
-          "grammar_targets": []
+          "grammar_targets": [],
+          "concepts_taught": [
+            "ready",
+            "school",
+            "future movement"
+          ]
         }
       ],
       "grammar_targets": [
@@ -1894,27 +2172,30 @@
       "conversations": [
         {
           "id": "12A",
-          "title": "Saying sorry",
+          "title": "Saying sorry after a bump",
           "setting": "playground",
-          "goal": "Apologize and respond",
+          "goal": "Apologize and check on someone",
           "lines": [
             {
               "speaker": "Arun",
-              "english": "Sorry, I pushed you.",
-              "kannada": "ಕ್ಷಮಿಸು, ನಾನು ನಿನ್ನ ತಳ್ಳಿದೆ.",
-              "roman": "Kshamisu, naanu ninna tallide."
+              "english": "Oops, sorry! I bumped into you.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "I"
+              ]
             },
             {
               "speaker": "Maya",
-              "english": "It's okay.",
-              "kannada": "ಪರವಾಗಿಲ್ಲ.",
-              "roman": "Paravagilla."
+              "english": "It’s okay.",
+              "kannada": "",
+              "roman": ""
             },
             {
               "speaker": "Arun",
-              "english": "Are you okay?",
-              "kannada": "ನೀನು ಸರಿಯಾಗಿದ್ದೀಯಾ?",
-              "roman": "Neenu sariyaagiddiya?",
+              "english": "Are you hurt?",
+              "kannada": "",
+              "roman": "",
               "grammar": [
                 "tense_present",
                 "you"
@@ -1922,13 +2203,25 @@
             },
             {
               "speaker": "Maya",
-              "english": "Yes, I am okay.",
-              "kannada": "ಹೌದು, ನಾನು ಸರಿ.",
-              "roman": "Howdu, naanu sari.",
+              "english": "No, I’m fine.",
+              "kannada": "",
+              "roman": ""
+            },
+            {
+              "speaker": "Arun",
+              "english": "Want to keep playing?",
+              "kannada": "",
+              "roman": "",
               "grammar": [
-                "I",
-                "tense_present"
+                "tense_present",
+                "you"
               ]
+            },
+            {
+              "speaker": "Maya",
+              "english": "Yes.",
+              "kannada": "",
+              "roman": ""
             }
           ],
           "keywords": [
@@ -1936,31 +2229,70 @@
             "ಪರವಾಗಿಲ್ಲ",
             "ಸರಿ"
           ],
-          "grammar_targets": []
+          "grammar_targets": [],
+          "concepts_taught": [
+            "sorry",
+            "are you okay",
+            "response"
+          ]
         },
         {
           "id": "12B",
-          "title": "Please help",
+          "title": "Please help me",
           "setting": "classroom",
-          "goal": "Ask for help politely",
+          "goal": "Ask for help naturally",
           "lines": [
             {
               "speaker": "Child",
-              "english": "Please help me.",
-              "kannada": "ದಯವಿಟ್ಟು ನನಗೆ ಸಹಾಯ ಮಾಡಿ.",
-              "roman": "Dayavittu nanage sahaaya maadi."
+              "english": "Teacher, can you help me?",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "you"
+              ]
             },
             {
               "speaker": "Teacher",
-              "english": "Sure, show me.",
-              "kannada": "ಸರಿ, ತೋರಿಸು.",
-              "roman": "Sari, torisu."
+              "english": "Sure. What happened?",
+              "kannada": "",
+              "roman": ""
             },
             {
               "speaker": "Child",
-              "english": "Thank you.",
-              "kannada": "ಧನ್ಯವಾದ.",
-              "roman": "Dhanyavaada."
+              "english": "I don’t understand this word.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "he_she",
+                "tense_present",
+                "this"
+              ]
+            },
+            {
+              "speaker": "Teacher",
+              "english": "Show me.",
+              "kannada": "",
+              "roman": ""
+            },
+            {
+              "speaker": "Child",
+              "english": "This one.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "he_she",
+                "tense_present",
+                "this"
+              ]
+            },
+            {
+              "speaker": "Teacher",
+              "english": "Okay, let’s read it together.",
+              "kannada": "",
+              "roman": "",
+              "grammar": [
+                "we"
+              ]
             }
           ],
           "keywords": [
@@ -1968,7 +2300,12 @@
             "ಸಹಾಯ",
             "ಧನ್ಯವಾದ"
           ],
-          "grammar_targets": []
+          "grammar_targets": [],
+          "concepts_taught": [
+            "help",
+            "please",
+            "show me"
+          ]
         }
       ],
       "grammar_targets": []
@@ -1993,7 +2330,10 @@
               "speaker": "Mom",
               "english": "Wear your blue shirt.",
               "kannada": "ನಿನ್ನ ನೀಲಿ ಅಂಗಿ ಹಾಕು.",
-              "roman": "Ninna neeli angi haaku."
+              "roman": "Ninna neeli angi haaku.",
+              "grammar": [
+                "you"
+              ]
             },
             {
               "speaker": "Child",
@@ -2001,6 +2341,7 @@
               "kannada": "ನನ್ನ ಅಂಗಿ ಎಲ್ಲಿದೆ?",
               "roman": "Nanna angi ellide?",
               "grammar": [
+                "I",
                 "here",
                 "tense_present"
               ]
@@ -2020,7 +2361,12 @@
             "ನೀಲಿ",
             "ಮೇಲೆ"
           ],
-          "grammar_targets": []
+          "grammar_targets": [],
+          "concepts_taught": [
+            "ಅಂಗಿ",
+            "ನೀಲಿ",
+            "ಮೇಲೆ"
+          ]
         }
       ],
       "tone": "playful, kid-first, practical spoken Kannada",
@@ -2052,7 +2398,10 @@
               "speaker": "Child",
               "english": "My stomach hurts.",
               "kannada": "ನನ್ನ ಹೊಟ್ಟೆ ನೋವು.",
-              "roman": "Nanna hotte novu."
+              "roman": "Nanna hotte novu.",
+              "grammar": [
+                "I"
+              ]
             },
             {
               "speaker": "Nurse",
@@ -2066,7 +2415,12 @@
             "ನೋವು",
             "ನೀರು"
           ],
-          "grammar_targets": []
+          "grammar_targets": [],
+          "concepts_taught": [
+            "ಏನಾಯಿತು",
+            "ನೋವು",
+            "ನೀರು"
+          ]
         }
       ],
       "grammar_targets": []
@@ -2114,7 +2468,12 @@
             "ಛತ್ರಿ",
             "ಅಜ್ಜಿ"
           ],
-          "grammar_targets": []
+          "grammar_targets": [],
+          "concepts_taught": [
+            "ಮಳೆ",
+            "ಛತ್ರಿ",
+            "ಅಜ್ಜಿ"
+          ]
         }
       ],
       "grammar_targets": []
@@ -2141,7 +2500,8 @@
               "kannada": "ಇದು ಯಾವ ಪ್ರಾಣಿ?",
               "roman": "Idu yaava praani?",
               "grammar": [
-                "tense_present"
+                "tense_present",
+                "this"
               ]
             },
             {
@@ -2150,6 +2510,7 @@
               "kannada": "ಇದು ನಾಯಿ.",
               "roman": "Idu naayi.",
               "grammar": [
+                "he_she",
                 "tense_present",
                 "this"
               ]
@@ -2169,7 +2530,12 @@
             "ನಾಯಿ",
             "ಇಷ್ಟ"
           ],
-          "grammar_targets": []
+          "grammar_targets": [],
+          "concepts_taught": [
+            "ಪ್ರಾಣಿ",
+            "ನಾಯಿ",
+            "ಇಷ್ಟ"
+          ]
         }
       ],
       "grammar_targets": []
@@ -2203,13 +2569,19 @@
               "speaker": "Meena",
               "english": "Yes, let's play.",
               "kannada": "ಹೌದು, ಆಡೋಣ.",
-              "roman": "Howdu, aadona."
+              "roman": "Howdu, aadona.",
+              "grammar": [
+                "we"
+              ]
             },
             {
               "speaker": "Ravi",
               "english": "You go first.",
               "kannada": "ನೀನು ಮೊದಲು ಹೋಗು.",
-              "roman": "Neenu modalu hogu."
+              "roman": "Neenu modalu hogu.",
+              "grammar": [
+                "you"
+              ]
             }
           ],
           "keywords": [
@@ -2217,7 +2589,12 @@
             "ಆಡೋಣ",
             "ಮೊದಲು"
           ],
-          "grammar_targets": []
+          "grammar_targets": [],
+          "concepts_taught": [
+            "ಆಡು",
+            "ಆಡೋಣ",
+            "ಮೊದಲು"
+          ]
         },
         {
           "id": "17T",
@@ -2237,7 +2614,8 @@
               "kannada": "",
               "roman": "",
               "grammar": [
-                "tense_past"
+                "tense_past",
+                "you"
               ]
             },
             {
@@ -2276,7 +2654,8 @@
               "kannada": "",
               "roman": "",
               "grammar": [
-                "tense_future"
+                "tense_future",
+                "you"
               ]
             },
             {
@@ -2285,7 +2664,6 @@
               "kannada": "",
               "roman": "",
               "grammar": [
-                "I",
                 "tense_future"
               ]
             },
@@ -2295,7 +2673,7 @@
               "kannada": "",
               "roman": "",
               "grammar": [
-                "question"
+                "I"
               ]
             },
             {
@@ -2310,6 +2688,13 @@
             }
           ],
           "keywords": [
+            "yesterday",
+            "now",
+            "tomorrow",
+            "I",
+            "we"
+          ],
+          "concepts_taught": [
             "yesterday",
             "now",
             "tomorrow",
@@ -2347,7 +2732,8 @@
               "kannada": "ಇದು ಎಷ್ಟು?",
               "roman": "Idu eshtu?",
               "grammar": [
-                "tense_present"
+                "tense_present",
+                "this"
               ]
             },
             {
@@ -2363,10 +2749,7 @@
               "speaker": "Child",
               "english": "I want one.",
               "kannada": "ನನಗೆ ಒಂದು ಬೇಕು.",
-              "roman": "Nanage ondu beku.",
-              "grammar": [
-                "I"
-              ]
+              "roman": "Nanage ondu beku."
             }
           ],
           "keywords": [
@@ -2374,7 +2757,12 @@
             "ಹತ್ತು",
             "ಒಂದು"
           ],
-          "grammar_targets": []
+          "grammar_targets": [],
+          "concepts_taught": [
+            "ಎಷ್ಟು",
+            "ಹತ್ತು",
+            "ಒಂದು"
+          ]
         }
       ],
       "tone": "playful, kid-first, practical spoken Kannada",
@@ -2431,7 +2819,12 @@
             "ಅಲ್ಲಿ",
             "ಎಡಕ್ಕೆ"
           ],
-          "grammar_targets": []
+          "grammar_targets": [],
+          "concepts_taught": [
+            "ಎಲ್ಲಿ",
+            "ಅಲ್ಲಿ",
+            "ಎಡಕ್ಕೆ"
+          ]
         }
       ],
       "grammar_targets": []
@@ -2454,15 +2847,21 @@
           "lines": [
             {
               "speaker": "Dad",
-              "english": "How shall we go?",
+              "english": "How should we go?",
               "kannada": "ನಾವು ಹೇಗೆ ಹೋಗೋಣ?",
-              "roman": "Naavu hege hogona?"
+              "roman": "Naavu hege hogona?",
+              "grammar": [
+                "we"
+              ]
             },
             {
               "speaker": "Child",
               "english": "Let's go by bus.",
               "kannada": "ಬಸ್ಸಿನಲ್ಲಿ ಹೋಗೋಣ.",
-              "roman": "Bussinalli hogona."
+              "roman": "Bussinalli hogona.",
+              "grammar": [
+                "we"
+              ]
             },
             {
               "speaker": "Dad",
@@ -2476,7 +2875,12 @@
             "ಬಸ್",
             "ಹೋಗೋಣ"
           ],
-          "grammar_targets": []
+          "grammar_targets": [],
+          "concepts_taught": [
+            "ಹೇಗೆ",
+            "ಬಸ್",
+            "ಹೋಗೋಣ"
+          ]
         },
         {
           "id": "20T",
@@ -2496,7 +2900,8 @@
               "kannada": "",
               "roman": "",
               "grammar": [
-                "tense_past"
+                "tense_past",
+                "you"
               ]
             },
             {
@@ -2535,7 +2940,8 @@
               "kannada": "",
               "roman": "",
               "grammar": [
-                "tense_future"
+                "tense_future",
+                "you"
               ]
             },
             {
@@ -2544,7 +2950,6 @@
               "kannada": "",
               "roman": "",
               "grammar": [
-                "I",
                 "tense_future"
               ]
             },
@@ -2554,7 +2959,7 @@
               "kannada": "",
               "roman": "",
               "grammar": [
-                "question"
+                "I"
               ]
             },
             {
@@ -2569,6 +2974,13 @@
             }
           ],
           "keywords": [
+            "yesterday",
+            "now",
+            "tomorrow",
+            "I",
+            "we"
+          ],
+          "concepts_taught": [
             "yesterday",
             "now",
             "tomorrow",
@@ -2606,13 +3018,14 @@
               "kannada": "ನನಗೆ ಈ ಪುಸ್ತಕ ಬೇಕು.",
               "roman": "Nanage ee pustaka beku.",
               "grammar": [
-                "I",
-                "tense_present"
+                "he_she",
+                "tense_present",
+                "this"
               ]
             },
             {
               "speaker": "Librarian",
-              "english": "Take it and read.",
+              "english": "Sure, take it and read it.",
               "kannada": "ತೆಗೆದುಕೊಂಡು ಓದು.",
               "roman": "Tegedukondu odu."
             },
@@ -2628,7 +3041,12 @@
             "ಓದು",
             "ಬೇಕು"
           ],
-          "grammar_targets": []
+          "grammar_targets": [],
+          "concepts_taught": [
+            "ಪುಸ್ತಕ",
+            "ಓದು",
+            "ಬೇಕು"
+          ]
         }
       ],
       "grammar_targets": []
@@ -2653,13 +3071,19 @@
               "speaker": "Child",
               "english": "Can I watch cartoons?",
               "kannada": "ನಾನು ಕಾರ್ಟೂನ್ ನೋಡಬಹುದಾ?",
-              "roman": "Naanu cartoon nodabahuda?"
+              "roman": "Naanu cartoon nodabahuda?",
+              "grammar": [
+                "I"
+              ]
             },
             {
               "speaker": "Mom",
               "english": "After homework.",
               "kannada": "ಹೋಮ್‌ವರ್ಕ್ ಆದ ಮೇಲೆ.",
-              "roman": "Homework aada mele."
+              "roman": "Homework aada mele.",
+              "grammar": [
+                "tense_future"
+              ]
             },
             {
               "speaker": "Child",
@@ -2673,7 +3097,12 @@
             "ಮೇಲೆ",
             "ಸರಿ"
           ],
-          "grammar_targets": []
+          "grammar_targets": [],
+          "concepts_taught": [
+            "ನೋಡಬಹುದಾ",
+            "ಮೇಲೆ",
+            "ಸರಿ"
+          ]
         }
       ],
       "grammar_targets": []
@@ -2700,7 +3129,8 @@
               "kannada": "ಹೋಮ್‌ವರ್ಕ್ ಮುಗಿದಿದೆಯಾ?",
               "roman": "Homework mugidideya?",
               "grammar": [
-                "tense_past"
+                "tense_past",
+                "you"
               ]
             },
             {
@@ -2711,7 +3141,7 @@
             },
             {
               "speaker": "Dad",
-              "english": "Do it now.",
+              "english": "Please do it now.",
               "kannada": "ಈಗ ಮಾಡು.",
               "roman": "Eega maadu.",
               "grammar": [
@@ -2724,7 +3154,12 @@
             "ಇನ್ನೂ",
             "ಈಗ"
           ],
-          "grammar_targets": []
+          "grammar_targets": [],
+          "concepts_taught": [
+            "ಮುಗಿದಿದೆ",
+            "ಇನ್ನೂ",
+            "ಈಗ"
+          ]
         }
       ],
       "grammar_targets": []
@@ -2747,13 +3182,16 @@
           "lines": [
             {
               "speaker": "Child",
-              "english": "Can I help?",
+              "english": "Can I help you?",
               "kannada": "ನಾನು ಸಹಾಯ ಮಾಡಬಹುದಾ?",
-              "roman": "Naanu sahaaya maadabahuda?"
+              "roman": "Naanu sahaaya maadabahuda?",
+              "grammar": [
+                "I"
+              ]
             },
             {
               "speaker": "Mom",
-              "english": "Yes, bring plates.",
+              "english": "Yes, bring the plates, please.",
               "kannada": "ಹೌದು, ತಟ್ಟೆ ತಂದುಕೊ.",
               "roman": "Howdu, tatte tanduko."
             },
@@ -2769,7 +3207,12 @@
             "ತಟ್ಟೆ",
             "ತಂದುಕೊ"
           ],
-          "grammar_targets": []
+          "grammar_targets": [],
+          "concepts_taught": [
+            "ಸಹಾಯ",
+            "ತಟ್ಟೆ",
+            "ತಂದುಕೊ"
+          ]
         }
       ],
       "grammar_targets": []
@@ -2814,7 +3257,12 @@
             "ಅಜ್ಜ",
             "ಒಳ್ಳೆಯದಾಗಲಿ"
           ],
-          "grammar_targets": []
+          "grammar_targets": [],
+          "concepts_taught": [
+            "ಹಬ್ಬ",
+            "ಅಜ್ಜ",
+            "ಒಳ್ಳೆಯದಾಗಲಿ"
+          ]
         }
       ],
       "tone": "playful, kid-first, practical spoken Kannada",
@@ -2868,7 +3316,12 @@
             "ಅಜ್ಜಿ",
             "ಹೇಗಿದ್ದೀಯ"
           ],
-          "grammar_targets": []
+          "grammar_targets": [],
+          "concepts_taught": [
+            "ಹಲೋ",
+            "ಅಜ್ಜಿ",
+            "ಹೇಗಿದ್ದೀಯ"
+          ]
         }
       ],
       "grammar_targets": []
@@ -2895,7 +3348,9 @@
               "kannada": "ನೀನು ನನ್ನ ಮನೆಗೆ ಬರ್ತೀಯಾ?",
               "roman": "Neenu nanna manege bartiya?",
               "grammar": [
-                "tense_future"
+                "I",
+                "tense_future",
+                "you"
               ]
             },
             {
@@ -2904,12 +3359,13 @@
               "kannada": "ಹೌದು, ನಾನು ಬರ್ತೇನೆ.",
               "roman": "Howdu, naanu bartene.",
               "grammar": [
+                "I",
                 "tense_future"
               ]
             },
             {
               "speaker": "Friend",
-              "english": "Come at five.",
+              "english": "Come at five o’clock.",
               "kannada": "ಐದು ಗಂಟೆಗೆ ಬಾ.",
               "roman": "Aidu gantege baa."
             }
@@ -2919,7 +3375,12 @@
             "ಮನೆ",
             "ಗಂಟೆ"
           ],
-          "grammar_targets": []
+          "grammar_targets": [],
+          "concepts_taught": [
+            "ಬರ್ತೀಯಾ",
+            "ಮನೆ",
+            "ಗಂಟೆ"
+          ]
         }
       ],
       "tone": "playful, kid-first, practical spoken Kannada",
@@ -2971,6 +3432,7 @@
               "kannada": "ಅವನು ಏನು ಮಾಡುತ್ತಿದ್ದಾನೆ?",
               "roman": "Avanu enu maaduttiddaane?",
               "grammar": [
+                "he_she",
                 "tense_present"
               ]
             }
@@ -2980,7 +3442,12 @@
             "ಯಾರು",
             "ಏನು"
           ],
-          "grammar_targets": []
+          "grammar_targets": [],
+          "concepts_taught": [
+            "ಕಥೆ",
+            "ಯಾರು",
+            "ಏನು"
+          ]
         }
       ],
       "grammar_targets": []
@@ -3038,7 +3505,12 @@
             "ಹೇಗಿದ್ದೀಯ",
             "ಚೆನ್ನಾಗಿದೆ"
           ],
-          "grammar_targets": []
+          "grammar_targets": [],
+          "concepts_taught": [
+            "ಹೆಸರು",
+            "ಹೇಗಿದ್ದೀಯ",
+            "ಚೆನ್ನಾಗಿದೆ"
+          ]
         }
       ],
       "grammar_targets": []
@@ -3078,7 +3550,10 @@
               "speaker": "Child",
               "english": "That story book.",
               "kannada": "ಆ ಕಥೆ ಪುಸ್ತಕ.",
-              "roman": "Aa kathe pustaka."
+              "roman": "Aa kathe pustaka.",
+              "grammar": [
+                "that"
+              ]
             },
             {
               "speaker": "Dad",
@@ -3095,7 +3570,12 @@
             "ಯಾವ",
             "ತೆಗೆದುಕೋ"
           ],
-          "grammar_targets": []
+          "grammar_targets": [],
+          "concepts_taught": [
+            "ಬೇಕು",
+            "ಯಾವ",
+            "ತೆಗೆದುಕೋ"
+          ]
         }
       ],
       "grammar_targets": []
@@ -3151,7 +3631,10 @@
               "speaker": "Ravi",
               "english": "Okay, let's play!",
               "kannada": "ಸರಿ, ಆಡೋಣ!",
-              "roman": "Sari, aadona!"
+              "roman": "Sari, aadona!",
+              "grammar": [
+                "we"
+              ]
             }
           ],
           "keywords": [
@@ -3160,7 +3643,13 @@
             "ಅಲ್ಲಿ",
             "ಸರಿ"
           ],
-          "grammar_targets": []
+          "grammar_targets": [],
+          "concepts_taught": [
+            "ಆಡು",
+            "ಚೆಂಡು",
+            "ಅಲ್ಲಿ",
+            "ಸರಿ"
+          ]
         },
         {
           "id": "31T",
@@ -3180,7 +3669,8 @@
               "kannada": "",
               "roman": "",
               "grammar": [
-                "tense_past"
+                "tense_past",
+                "you"
               ]
             },
             {
@@ -3219,7 +3709,8 @@
               "kannada": "",
               "roman": "",
               "grammar": [
-                "tense_future"
+                "tense_future",
+                "you"
               ]
             },
             {
@@ -3228,7 +3719,6 @@
               "kannada": "",
               "roman": "",
               "grammar": [
-                "I",
                 "tense_future"
               ]
             },
@@ -3238,7 +3728,7 @@
               "kannada": "",
               "roman": "",
               "grammar": [
-                "question"
+                "I"
               ]
             },
             {
@@ -3253,6 +3743,13 @@
             }
           ],
           "keywords": [
+            "yesterday",
+            "now",
+            "tomorrow",
+            "I",
+            "we"
+          ],
+          "concepts_taught": [
             "yesterday",
             "now",
             "tomorrow",
